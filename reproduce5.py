@@ -111,6 +111,47 @@ def certify_graph(level, gi, adj, pool, max_orders=8, cap=15_000_000,
                         submit_range(oi, lo + k * w, lo + (k + 1) * w)
 
 # ---------------------------------------------------------------------------
+def _bulk_task(args):
+    """Phase A: one full search on the first decomposition (must be
+    circle-free for a single task to be a complete certificate)."""
+    global _DATA
+    level, gi, cap = args
+    if level not in _DATA:
+        _DATA[level] = load_level(level)
+    adj = _DATA[level][gi]
+    decs = gen_orders(adj, level, kmax=1)
+    if not decs:
+        return gi, "NOORDER", 0
+    seed, order = decs[0]
+    if ncirc_of(adj, level, seed, order) != 0:
+        return gi, "HASCIRCLE", 0
+    st, nodes, unres = decide5(adj, level, seed=seed, order=order,
+                               max_nodes=cap)
+    return gi, st, nodes
+
+def bulk_certify(level, graphs, pool, results, cap=10_000_000):
+    """Certify all zero-circle graphs with one shared pool (one task per
+    graph — a KILLED unrestricted search on one order is a complete
+    certificate). Returns list of graphs needing phase B."""
+    todo = [gi for gi in range(len(graphs))
+            if results.get(gi) is None]
+    print(f"phase A: {len(todo)} graphs, single-task bulk", flush=True)
+    t0 = time.time()
+    phase_b = []
+    done = 0
+    for gi, st, nodes in pool.imap_unordered(
+            _bulk_task, [(level, gi, cap) for gi in todo], chunksize=8):
+        done += 1
+        if st == "KILLED":
+            results[gi] = 0
+        else:
+            phase_b.append(gi)
+        if done % 1000 == 0 or done == len(todo):
+            print(f"  bulk {done}/{len(todo)} killed={done-len(phase_b)} "
+                  f"deferred={len(phase_b)} t={time.time()-t0:.0f}s",
+                  flush=True)
+    return phase_b
+
 def _control_slice(args):
     which, lo, hi, theta_min, cap = args
     from controls5 import cross_polytope, halfcube16, apex_cross
@@ -160,6 +201,10 @@ def main():
     ap.add_argument("--from-graph", type=int, default=0)
     ap.add_argument("--to-graph", type=int, default=None)
     ap.add_argument("--controls", action="store_true")
+    ap.add_argument("--bulk", action="store_true",
+                    help="phase A: certify all zero-circle graphs with one "
+                         "shared pool (fast); remaining graphs get the "
+                         "full racing treatment")
     ap.add_argument("--workers", type=int, default=max(1, cpu_count() - 2))
     ap.add_argument("--budget", type=float, default=7200)
     args = ap.parse_args()
@@ -184,6 +229,13 @@ def main():
     if os.path.exists(resfile):
         results = {int(k): v for k, v in json.load(open(resfile)).items()}
     t0 = time.time()
+    if args.bulk:
+        with Pool(args.workers) as pool:
+            phase_b = bulk_certify(args.level, graphs, pool, results)
+        json.dump(results, open(resfile, "w"))
+        print(f"phase A done in {time.time()-t0:.0f}s; "
+              f"{len(phase_b)} graphs to phase B: {phase_b[:30]}", flush=True)
+        targets = phase_b
     for gi in targets:
         if gi in results and results[gi] is not None:
             continue

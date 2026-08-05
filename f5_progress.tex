@@ -15,11 +15,11 @@
 \newcommand{\R}{\mathbb{R}}
 
 \title{\vspace{-1.2cm}Progress on the maximum size of an almost-equidistant
-set in $\R^5$:\\ $f(5)\le 18$, toward the exact value\\[4pt]
+set in $\R^5$:\\ $f(5)\le 17$, toward the exact value\\[4pt]
 \large A computer-assisted campaign, with certified non-realizability at
-$19$ and $20$ points}
+$18$, $19$ and $20$ points}
 \author{}
-\date{August 5, 2026 (snapshot; campaign in progress)}
+\date{August 5, 2026, second snapshot (level 17 in progress)}
 
 \begin{document}
 \maketitle
@@ -50,22 +50,25 @@ $f(4)=12$, generalized from $\R^4$ to $\R^5$. All code and data are in this
 repository.
 
 \begin{result}
-$f(5) \le 18$. More precisely: there is no almost-equidistant set of $19$
-points in $\R^5$ (and none of $20$ points), by certified elimination of all
-candidate unit-distance graphs. Combined with the Larman--Rogers set,
-$16 \le f(5) \le 18$.
+$f(5) \le 17$. More precisely: there is no almost-equidistant set of $18$
+points in $\R^5$ (and none of $19$ or $20$ points), by certified
+elimination of all candidate unit-distance graphs at each of the three
+levels. Combined with the Larman--Rogers set, $16 \le f(5) \le 17$.
 \end{result}
 
 \begin{wip}
-The two remaining levels are being processed by the same pipeline:
-all $8825$ candidate graphs on $18$ vertices (certification under way;
-partial results in \texttt{results\_n18.json}), then all $12654$ on $17$
-vertices. Independent numerical optimization over the $17$-vertex
-candidates (Levenberg--Marquardt, $300$ restarts per graph) has so far
-found no graph anywhere near realizable --- the smallest residual over the
-first ${\sim}5000$ graphs is $\approx 0.5$, against $10^{-30}$ for
-realizable controls. If every $17$-vertex candidate is eliminated,
-$f(5)=16$; a certified survivor would instead pin $f(5)$ at $17$ or $18$.
+One level remains: of the $12654$ candidate graphs on $17$ vertices,
+$12534$ are already certified non-realizable at the time of this snapshot
+($12518$ of them by circle-free searches taking six seconds in total);
+the remaining $120$, which involve a circle stage (and include the only
+two graphs without a $K_6$), are in the racing/slicing pipeline
+(\texttt{results\_n17.json} is updated continuously). Independent
+numerical optimization over \emph{all} $12654$ candidates
+(Levenberg--Marquardt, up to $300$ restarts per graph) found no graph
+anywhere near realizable: the smallest residual is $0.409$, against
+$10^{-30}$ for realizable controls. If every $17$-vertex candidate is
+eliminated, $f(5)=16$; a certified survivor would instead pin $f(5)$
+at $17$.
 \end{wip}
 
 \section*{Reduction}
@@ -200,13 +203,18 @@ circle-free orders) is entirely killed.
 \item \textbf{$n=19$:} all $340$ graphs certified non-realizable with
       $19$ distinct points (${\sim}170$ seconds wall under load).
       Consequence: $f(5)\le 18$.
+\item \textbf{$n=18$:} all $8825$ graphs certified non-realizable with
+      $18$ distinct points ($8813$ circle-free searches bulk-certified in
+      ${\sim}10$ seconds of wall time on $20$ workers; the $12$ graphs
+      with a circle stage certified by the racing driver in ${\sim}1$
+      second each). Consequence: \textbf{$f(5)\le 17$}.
 \end{itemize}
 
 Per-graph verdicts and the winning decomposition indices are recorded in
-\texttt{results\_n20.json} and \texttt{results\_n19.json}. Numerical
-corroboration: Levenberg--Marquardt over all $8$ graphs at $n=20$ and all
-$340$ at $n=19$ finds best residuals $\ge 2.6$ (distinct-point solutions),
-i.e.\ nowhere near realizable.
+\texttt{results\_n20.json}, \texttt{results\_n19.json} and
+\texttt{results\_n18.json}. Numerical corroboration: Levenberg--Marquardt
+finds best residuals $\ge 2.6$ at $n=19,20$ and $\ge 0.4$ over all of
+$n=17$ (distinct-point solutions), i.e.\ nowhere near realizable.
 
 \section*{Caveats}
 

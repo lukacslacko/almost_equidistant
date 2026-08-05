@@ -2,10 +2,12 @@
 
 ## NEW: progress on f(5) (2026-08-05, in progress)
 
-`f5_progress.pdf` documents the current state: **f(5) <= 18** (was 20),
+`f5_progress.pdf` documents the current state: **f(5) <= 17** (was 20),
 by certified elimination of all minimal abstract almost-equidistant graphs
-on 20 vertices (8 graphs) and 19 vertices (340 graphs) in R^5, using the
-d=5 port of the certified engine below (`ckernel5.c`). The candidate lists
+on 20 vertices (8 graphs), 19 vertices (340) and 18 vertices (8825) in
+R^5, using the d=5 port of the certified engine below (`ckernel5.c`).
+Of the final level's 12654 graphs on 17 vertices, 12534 are certified at
+this snapshot; the last 120 are in the pipeline. The candidate lists
 were generated with `triangleramsey` + `filter_mtf.c` and independently
 cross-validated (`enumaeq5.c`, `compare_sets.py`); the 16-point lower
 bound is verified in integer arithmetic (`verify_lower_bound_16.py`).
@@ -17,6 +19,8 @@ partial verdicts in `results_n18.json`; numerical corroboration in
 python reproduce5.py --controls          # d=5 engine validation controls
 python reproduce5.py --level 20          # 8 graphs, seconds => f(5) <= 19
 python reproduce5.py --level 19          # 340 graphs, minutes => f(5) <= 18
+python reproduce5.py --level 18 --bulk   # 8825 graphs, ~30 s => f(5) <= 17
+python reproduce5.py --level 17 --bulk   # 12654 graphs (running)
 ```
 
 The f(4) = 12 package below is unchanged.
