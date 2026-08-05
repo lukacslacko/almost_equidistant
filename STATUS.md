@@ -93,3 +93,26 @@ caps, 8-fold splits, deep internal theta floor).
 
 d=6 remains fully paused per instruction (3,055,474 / 3,971,787 done,
 safely on disk and pushed).
+
+## 22:50 append — ladder convergence measurements
+
+Initial wave: ~29,400 of ~29,600 slice tasks killed in 3 minutes.
+Hot residue in flight: 568 -> 284 -> 192 over ~24 min (kills outpacing
+8-fold splits = converging; sustained growth would be the bad sign).
+Task rate 165/s -> 18.6/s as caps escalate on the deep rungs (expected).
+Still 12616/12654: a graph registers only when its LAST hot slice dies.
+If decay holds: first completions within the hour, most of the 38 in
+1-3 h; stragglers unknown. Next append when completions start.
+
+## 23:25 append — deep-rung reality check
+
+<500 task completions in the last ~30 min: the ~192 in-flight tasks are
+all deep-rung (4M-node-cap) searches, ~minutes each; survivors split
+8-fold into 30M-cap tasks (tens of minutes each), then the decomposition
+is abandoned and the graph's second decomposition repeats the cycle.
+Realistic window for the 38: several more hours, and convergence is NOT
+guaranteed — a core surviving all rungs of both decompositions would
+need a different method entirely (two-parameter search stage, or
+per-graph analysis). Plan: let this run grind overnight untouched; if
+graphs remain, implement the 2-sphere stage as the principled fix.
+CPU: all 26 workers busy; the run is sound and resumable.
