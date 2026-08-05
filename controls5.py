@@ -39,6 +39,19 @@ def apex_cross():
     adj = [m | (1 << 10) for m in base] + [(1 << 10) - 1]
     return adj
 
+def k7_minus_edge():
+    """K_7 minus one edge: two unit 5-simplices sharing a 5-point facet
+    (the two apexes are mirror images through the facet's hyperplane, at
+    distance != 1 -- a non-edge, unconstrained). Realizable in R^5;
+    admits a K_6 seed and one sphere step: the engine must NOT kill it."""
+    n = 7
+    adj = [0] * n
+    for i in range(n):
+        for j in range(n):
+            if i != j and {i, j} != {5, 6}:
+                adj[i] |= 1 << j
+    return adj
+
 def halfcube16():
     """Unit-distance graph of the Larman-Rogers set: vertices = odd-weight
     +-1 vectors in R^5, adjacent iff Hamming distance 2 (squared dist 1

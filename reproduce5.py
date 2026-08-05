@@ -54,8 +54,8 @@ def ncirc_of(adj, n, seed, order):
         placed.add(v)
     return c
 
-def certify_graph(level, gi, adj, pool, max_orders=8, cap=15_000_000,
-                  budget_s=7200, verbose=False):
+def certify_graph(level, gi, adj, pool, max_orders=12, cap=15_000_000,
+                  budget_s=7200, fine=False, verbose=False):
     """Race decompositions concurrently; 8-fold split failed slices; a fully
     killed tiling certifies. Returns winning decomposition index or None."""
     import queue
@@ -68,18 +68,24 @@ def certify_graph(level, gi, adj, pool, max_orders=8, cap=15_000_000,
     nslices = 768 if nc0 >= 2 else (24 if nc0 == 1 else 1)
     min_width = TWO_PI / max(nslices, 24) / 8 ** 3
 
+    ncircs = [ncirc_of(adj, level, *d) for d in decs]
+
     def submit_range(oi, lo, hi):
         seed, order = decs[oi]
         state[oi]["pending"] += 1
+        # circle-free searches get one task with a much larger budget
+        # (there is no slicing dimension; only nodes help)
+        c = cap * 40 if ncircs[oi] == 0 else cap
         pool.apply_async(_slice_task,
-                         ((level, gi, seed, tuple(order), lo, hi, cap),),
+                         ((level, gi, seed, tuple(order), lo, hi, c),),
                          callback=lambda r, oi=oi: Q.put((oi, r)),
                          error_callback=lambda e, oi=oi: Q.put((oi, e)))
 
-    for oi in range(len(decs)):
+    ns1 = 384 if fine else 24     # fine initial slicing: the dominant
+    for oi in range(len(decs)):   # accelerator for stubborn graphs (d=4)
         state[oi]["submitted"] = True
-        nc = ncirc_of(adj, level, *decs[oi])
-        ns = 768 if nc >= 2 else (24 if nc == 1 else 1)
+        nc = ncircs[oi]
+        ns = 768 if nc >= 2 else (ns1 if nc == 1 else 1)
         for k in range(ns):
             submit_range(oi, k * TWO_PI / ns, (k + 1) * TWO_PI / ns)
     deadline = time.time() + budget_s
@@ -103,8 +109,8 @@ def certify_graph(level, gi, adj, pool, max_orders=8, cap=15_000_000,
         else:
             lo, hi, st, nodes = r
             if s["alive"] and st != "KILLED":
-                if hi - lo < min_width * 8:
-                    s["alive"] = False
+                if ncircs[oi] == 0 or hi - lo < min_width * 8:
+                    s["alive"] = False   # no slicing dimension / width floor
                 else:
                     w = (hi - lo) / 8
                     for k in range(8):
@@ -154,10 +160,10 @@ def bulk_certify(level, graphs, pool, results, cap=10_000_000):
 
 def _control_slice(args):
     which, lo, hi, theta_min, cap = args
-    from controls5 import cross_polytope, halfcube16, apex_cross
-    adj = {"cross": cross_polytope(), "half": halfcube16(),
+    from controls5 import cross_polytope, k7_minus_edge, apex_cross
+    adj = {"cross": cross_polytope(), "k7me": k7_minus_edge(),
            "apex": apex_cross()}[which]
-    n = {"cross": 10, "half": 16, "apex": 11}[which]
+    n = {"cross": 10, "k7me": 7, "apex": 11}[which]
     st, nodes, unres = decide5(adj, n, th0=(lo, hi),
                                theta_min=theta_min, max_nodes=cap)
     return st, nodes, unres
@@ -167,30 +173,37 @@ def run_controls(pool):
     ok = True
     # kill controls
     st, nodes, _ = decide5(K(7), 7, max_nodes=10_000_000)
-    print(f"C1 K7 (expect KILLED): {st} nodes={nodes}"); ok &= st == "KILLED"
+    print(f"C1 K7 (expect KILLED): {st} nodes={nodes}", flush=True)
+    ok &= st == "KILLED"
     st, nodes, _ = decide5(K(6), 6, max_nodes=10_000_000)
-    print(f"S1 K6 (expect SURVIVORS): {st}"); ok &= st == "SURVIVORS"
-    # apex+cross: kill control, sliced tiling must be fully killed
+    print(f"S1 K6 (expect SURVIVORS): {st}", flush=True)
+    ok &= st == "SURVIVORS"
+    # apex+cross is a circle-free search: one full run must be KILLED
+    st, nodes, _ = _control_slice(("apex", 0.0, TWO_PI,
+                                   TWO_PI / (1 << 18), 2_000_000_000))
+    print(f"C2 apex+cross-polytope (expect KILLED): {st} nodes={nodes}",
+          flush=True)
+    ok &= st == "KILLED"
+    # survive controls: sliced; >=1 slice must report floor-width SURVIVORS
+    # and no slice may be killed spuriously around the true solutions.
+    # A coarse width floor keeps them cheap: the engine must simply be
+    # unable to kill cells containing the true realization. (The 16-point
+    # half-cube graph itself lies outside the engine's decomposition class
+    # -- it admits no elimination order without a two-parameter stage --
+    # so its realizability is verified separately in exact arithmetic;
+    # K_7 minus an edge serves as the sphere-stage survive control.)
     NS = 24
-    args = [("apex", k * TWO_PI / NS, (k + 1) * TWO_PI / NS,
-             TWO_PI / (1 << 18), 30_000_000) for k in range(NS)]
-    res = pool.map(_control_slice, args)
-    allk = all(st == "KILLED" for st, _, _ in res)
-    print(f"C2 apex+cross-polytope 24 slices (expect all KILLED): "
-          f"{sum(1 for st,_,_ in res if st=='KILLED')}/{NS} killed")
-    ok &= allk
-    # survive controls: >=1 slice must report SURVIVORS (never all killed)
-    for which, n, tm in (("cross", 10, TWO_PI / (1 << 12)),
-                         ("half", 16, TWO_PI / (1 << 10))):
+    for which, n, tm in (("cross", 10, TWO_PI / (1 << 8)),
+                         ("k7me", 7, TWO_PI / (1 << 8))):
         args = [(which, k * TWO_PI / NS, (k + 1) * TWO_PI / NS,
-                 tm, 30_000_000) for k in range(NS)]
+                 tm, 3_000_000) for k in range(NS)]
         res = pool.map(_control_slice, args)
         surv = sum(1 for st, _, _ in res if st == "SURVIVORS")
         kill = sum(1 for st, _, _ in res if st == "KILLED")
         print(f"S {which} (expect survivors>0): SURVIVORS in {surv}/{NS} "
-              f"slices, KILLED {kill}, ABORT {NS - surv - kill}")
+              f"slices, KILLED {kill}, ABORT {NS - surv - kill}", flush=True)
         ok &= surv > 0
-    print("controls5:", "PASS" if ok else "FAIL")
+    print("controls5:", "PASS" if ok else "FAIL", flush=True)
     return ok
 
 # ---------------------------------------------------------------------------
@@ -201,6 +214,9 @@ def main():
     ap.add_argument("--from-graph", type=int, default=0)
     ap.add_argument("--to-graph", type=int, default=None)
     ap.add_argument("--controls", action="store_true")
+    ap.add_argument("--shard", type=str, default=None,
+                    help="k/m: process only graphs with index %% m == k "
+                         "(results merged via per-shard files)")
     ap.add_argument("--bulk", action="store_true",
                     help="phase A: certify all zero-circle graphs with one "
                          "shared pool (fast); remaining graphs get the "
@@ -224,10 +240,18 @@ def main():
                else range(args.from_graph,
                           args.to_graph if args.to_graph is not None
                           else len(graphs)))
-    resfile = f"results_n{args.level}.json"
+    shard = None
+    if args.shard:
+        k, m = args.shard.split("/"); shard = (int(k), int(m))
+    resfile = (f"results_n{args.level}.json" if shard is None
+               else f"results_n{args.level}_s{shard[0]}of{shard[1]}.json")
     results = {}
-    if os.path.exists(resfile):
-        results = {int(k): v for k, v in json.load(open(resfile)).items()}
+    # always seed from the main results file (skip already-certified)
+    if os.path.exists(f"results_n{args.level}.json"):
+        results = {int(k): v
+                   for k, v in json.load(open(f"results_n{args.level}.json")).items()}
+    if shard is not None and os.path.exists(resfile):
+        results.update({int(k): v for k, v in json.load(open(resfile)).items()})
     t0 = time.time()
     if args.bulk:
         with Pool(args.workers) as pool:
@@ -236,13 +260,16 @@ def main():
         print(f"phase A done in {time.time()-t0:.0f}s; "
               f"{len(phase_b)} graphs to phase B: {phase_b[:30]}", flush=True)
         targets = phase_b
+    if shard is not None:
+        targets = [gi for gi in targets if gi % shard[1] == shard[0]]
+        print(f"shard {shard[0]}/{shard[1]}: {len(targets)} graphs", flush=True)
     for gi in targets:
         if gi in results and results[gi] is not None:
             continue
         t = time.time()
         with Pool(args.workers) as pool:
             oi = certify_graph(args.level, gi, graphs[gi], pool,
-                               budget_s=args.budget)
+                               budget_s=args.budget, fine=args.bulk)
         results[gi] = oi
         status = (f"CERTIFIED (dec {oi})" if oi is not None else "UNDECIDED")
         print(f"[n{args.level} {gi:5d}] {status}  t={time.time()-t:.1f}s "

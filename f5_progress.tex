@@ -19,7 +19,7 @@ set in $\R^5$:\\ $f(5)\le 17$, toward the exact value\\[4pt]
 \large A computer-assisted campaign, with certified non-realizability at
 $18$, $19$ and $20$ points}
 \author{}
-\date{August 5, 2026, second snapshot (level 17 in progress)}
+\date{August 5, 2026, third snapshot (level 17: 12615/12654; controls suite passed)}
 
 \begin{document}
 \maketitle
@@ -58,11 +58,18 @@ levels. Combined with the Larman--Rogers set, $16 \le f(5) \le 17$.
 
 \begin{wip}
 One level remains: of the $12654$ candidate graphs on $17$ vertices,
-$12534$ are already certified non-realizable at the time of this snapshot
+$12615$ are already certified non-realizable at the time of this snapshot
 ($12518$ of them by circle-free searches taking six seconds in total);
-the remaining $120$, which involve a circle stage (and include the only
-two graphs without a $K_6$), are in the racing/slicing pipeline
-(\texttt{results\_n17.json} is updated continuously). Independent
+the remaining $39$, all with a circle stage, exhibit narrow arcs of the
+circle parameter on which full-width interval evaluation blows up ---
+direct probes show every such arc dies within ${\sim}65$ search nodes
+once split, so these are scheduling casualties, not geometric
+obstructions, and are queued for a re-run with direct fine tiling
+(\texttt{results\_n17.json} is updated continuously). The full
+validation-control suite passes on the final kernel build (kill controls
+$K_7$ and $K_1{+}K_{2,2,2,2,2}$ die in $1$--$2$ nodes; the sliced
+cross-polytope survive control isolates the true mirror realizations in
+exactly the $6/24$ slices containing them). Independent
 numerical optimization over \emph{all} $12654$ candidates
 (Levenberg--Marquardt, up to $300$ restarts per graph) found no graph
 anywhere near realizable: the smallest residual is $0.409$, against

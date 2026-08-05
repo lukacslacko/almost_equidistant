@@ -19,9 +19,12 @@
 #include <math.h>
 #include <stdint.h>
 
-#define D 5
+#ifndef D
+#define D 5              /* compile with -DD=6 for the R^6 sweep */
+#endif
 #define MAXN 22
 #define MAXE 260
+#define NVMAX (MAXN * D)
 
 typedef struct { int n, m; int ei[MAXE], ej[MAXE]; } Graph;
 
@@ -52,7 +55,7 @@ static double residual(const Graph *g, const double *p, double *r){
 
 /* solve (A + lam*diag(A)) x = b in-place via Cholesky; A is NxN sym (packed full) */
 static int chol_solve(int N, double *A, double lam, const double *b, double *x){
-    static double L[110*110];
+    static double L[NVMAX*NVMAX];
     for (int i = 0; i < N; i++)
         for (int j = 0; j <= i; j++){
             double v = A[i*N+j];
@@ -69,7 +72,7 @@ static int chol_solve(int N, double *A, double lam, const double *b, double *x){
             } else L[i*N+j] = s / L[j*N+j];
         }
     }
-    static double y[110];
+    static double y[NVMAX];
     for (int i = 0; i < N; i++){
         double s = b[i];
         for (int k = 0; k < i; k++) s -= L[i*N+k]*y[k];
@@ -86,7 +89,7 @@ static int chol_solve(int N, double *A, double lam, const double *b, double *x){
 /* one LM run from p; returns final F */
 static double lm_run(const Graph *g, double *p, int iters){
     int N = g->n * D;
-    static double r[MAXE], JtJ[110*110], Jtr[110], delta[110], pn[110], rn[MAXE];
+    static double r[MAXE], JtJ[NVMAX*NVMAX], Jtr[NVMAX], delta[NVMAX], pn[NVMAX], rn[MAXE];
     double F = residual(g, p, r);
     double lam = 1e-3;
     for (int it = 0; it < iters; it++){
@@ -138,23 +141,24 @@ static double lm_run(const Graph *g, double *p, int iters){
 /* greedy placement initializer: exact unit-simplex on a (max<=6)-clique,
    then vertices in max-placed-neighbour order, each solved by a small
    Gauss-Newton on its own 5 coordinates from a random kick. */
-static const double SIMP[6][5] = {
-    {0,0,0,0,0},
-    {1,0,0,0,0},
-    {0.5, 0.8660254037844386, 0, 0, 0},
-    {0.5, 0.2886751345948129, 0.816496580927726, 0, 0},
-    {0.5, 0.2886751345948129, 0.2041241452319315, 0.7905694150420949, 0},
-    {0.5, 0.2886751345948129, 0.2041241452319315, 0.15811388300841897, 0.7745966692414834},
+static const double SIMP[7][6] = {
+    {0,0,0,0,0,0},
+    {1,0,0,0,0,0},
+    {0.5, 0.8660254037844386, 0, 0, 0, 0},
+    {0.5, 0.2886751345948129, 0.816496580927726, 0, 0, 0},
+    {0.5, 0.2886751345948129, 0.2041241452319315, 0.7905694150420949, 0, 0},
+    {0.5, 0.2886751345948129, 0.2041241452319315, 0.15811388300841897, 0.7745966692414834, 0},
+    {0.5, 0.2886751345948129, 0.2041241452319315, 0.15811388300841897, 0.12909944487358055, 0.7637626158259734},
 };
 static void place_init(const uint32_t *adj, int n, double *p){
-    /* greedy clique up to 6 */
-    int clq[6], nc = 0;
+    /* greedy clique up to D+1 */
+    int clq[7], nc = 0;
     uint32_t cand = (1u << n) - 1;
     int best = 0, bd = -1;
     for (int v = 0; v < n; v++){ int d = 0; for (int u = 0; u < n; u++) d += (adj[v]>>u)&1;
         if (d > bd){ bd = d; best = v; } }
     clq[nc++] = best; cand &= adj[best];
-    while (nc < 6 && cand){
+    while (nc < D + 1 && cand){
         int bv = -1, bcnt = -1;
         uint32_t t = cand;
         while (t){
@@ -262,7 +266,7 @@ int main(int argc, char **argv){
         double bestF = 1e30;              /* over all runs (degenerate ok) */
         double bestFd = 1e30, bestFd_mind = 0;  /* over distinct solutions */
         int nsol = 0, nsold = 0;
-        static double p[110];
+        static double p[NVMAX];
         const double sigmas[3] = {0.35, 0.5, 0.75};
         for (int rs = 0; rs < restarts; rs++){
             rng_s = seedbase * 1000003ULL + (uint64_t)idx * 7919ULL + rs + 1;
