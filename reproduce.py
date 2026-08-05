@@ -92,49 +92,70 @@ def gen_orders(adj, n, kmax=8):
 # ---------------------------------------------------------------------------
 # sharded certification of one graph under one decomposition
 # ---------------------------------------------------------------------------
+_DATA = None
 def _slice_task(args):
+    global _DATA
     gi, seed, order, lo, hi, cap = args
     from cdriver import decide_c
-    data = json.load(open("aeq_d4_n13.json"))
-    st, nodes, unres = decide_c(data["graphs"][gi], 13, seed=seed, order=order,
+    if _DATA is None:
+        _DATA = json.load(open("aeq_d4_n13.json"))
+    st, nodes, unres = decide_c(_DATA["graphs"][gi], 13, seed=seed, order=order,
                                 th0=(lo, hi), max_nodes=cap)
     return lo, hi, st, nodes
 
-def certify_decomposition(gi, seed, order, pool, nslices=24, cap=250_000_000,
-                          min_width=TWO_PI / (24 * 8 ** 3),
-                          budget_s=5400, verbose=True):
-    """True iff every slice of a tiling of [0, 2pi) is certified KILLED."""
-    frontier = [(k * TWO_PI / nslices, (k + 1) * TWO_PI / nslices)
-                for k in range(nslices)]
-    t0 = time.time()
-    while frontier:
-        if time.time() - t0 > budget_s:
-            if verbose: print(f"    g{gi}: decomposition budget exceeded", flush=True)
-            return False
-        tasks = [(gi, seed, order, lo, hi, cap) for lo, hi in frontier]
-        frontier = []
-        for lo, hi, st, nodes in pool.imap_unordered(_slice_task, tasks):
-            if st == "KILLED": continue
-            if hi - lo < min_width * 8:      # about to fall below the floor
-                if verbose:
-                    print(f"    g{gi}: slice [{lo:.6f},{hi:.6f}] undecided "
-                          f"({st}); abandoning this decomposition", flush=True)
-                return False
-            w = (hi - lo) / 8
-            frontier += [(lo + i * w, lo + (i + 1) * w) for i in range(8)]
-        if verbose and frontier:
-            print(f"    g{gi}: refining {len(frontier)} slices "
-                  f"(width {frontier[0][1]-frontier[0][0]:.2e})", flush=True)
-    return True
+def certify_graph(gi, adj, pool, max_orders=8, cap=15_000_000,
+                  min_width=TWO_PI / (24 * 8 ** 3), budget_s=7200,
+                  verbose=True):
+    """Race decompositions concurrently: each maintains a frontier of circle
+    slices; failed slices split 8-fold; a decomposition whose tiling is fully
+    KILLED certifies the graph. Slice budgets/splitting affect only search
+    management, never verdict soundness."""
+    import queue
+    decs = gen_orders(adj, 13, kmax=max_orders)
+    Q = queue.Queue()
+    state = [{"pending": 0, "alive": True, "submitted": False} for _ in decs]
 
-def certify_graph(gi, adj, pool, max_orders=8, verbose=True):
-    for oi, (seed, order) in enumerate(gen_orders(adj, 13, kmax=max_orders)):
-        if verbose:
-            print(f"  g{gi}: trying decomposition {oi} "
-                  f"(seed {seed})", flush=True)
-        if certify_decomposition(gi, seed, order, pool, verbose=verbose):
-            return oi
-    return None
+    def submit_range(oi, lo, hi):
+        seed, order = decs[oi]
+        state[oi]["pending"] += 1
+        pool.apply_async(_slice_task, ((gi, seed, order, lo, hi, cap),),
+                         callback=lambda r, oi=oi: Q.put((oi, r)),
+                         error_callback=lambda e, oi=oi: Q.put((oi, e)))
+
+    def submit_dec(oi):
+        state[oi]["submitted"] = True
+        for k in range(24):
+            submit_range(oi, k * TWO_PI / 24, (k + 1) * TWO_PI / 24)
+
+    for oi in range(len(decs)):        # all decompositions race from the start
+        submit_dec(oi)
+    deadline = time.time() + budget_s
+    while True:
+        alive = [oi for oi, s in enumerate(state) if s["alive"]]
+        if not alive:
+            return None
+        for oi in alive:
+            if state[oi]["submitted"] and state[oi]["pending"] == 0:
+                return oi                      # fully killed tiling: certified
+        if time.time() > deadline:
+            return None                        # per-graph wall budget exceeded
+        try:
+            oi, r = Q.get(timeout=30)
+        except queue.Empty:
+            continue                           # slices still in flight: wait
+        s = state[oi]
+        s["pending"] -= 1
+        if isinstance(r, Exception):
+            s["alive"] = False
+        else:
+            lo, hi, st, nodes = r
+            if s["alive"] and st != "KILLED":
+                if hi - lo < min_width * 8:
+                    s["alive"] = False         # width floor: give up this order
+                else:
+                    w = (hi - lo) / 8
+                    for k in range(8):
+                        submit_range(oi, lo + k * w, lo + (k + 1) * w)
 
 # ---------------------------------------------------------------------------
 # validation controls
