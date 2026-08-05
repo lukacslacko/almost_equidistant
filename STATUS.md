@@ -116,3 +116,30 @@ need a different method entirely (two-parameter search stage, or
 per-graph analysis). Plan: let this run grind overnight untouched; if
 graphs remain, implement the 2-sphere stage as the principled fix.
 CPU: all 26 workers busy; the run is sound and resumable.
+
+## 00:15 append — overnight plan
+
+Ladder status: the ~192 deep-rung tasks (4M-node caps, ~10-20 min each
+on shared cores) are draining; survivors escalate to 30M. No mid-flight
+changes will be made while it grinds — every earlier stall had a
+identified cause and fix, and the current design is measured-sound
+(in-flight decayed 568 -> 284 -> 192; hot arcs provably die when
+sufficiently split; margins would need to be below ~5e-10 radians on
+both raced decompositions to defeat the ladder's floors).
+
+Convergence-theory note (why patience is justified): a hot arc's cost is
+width-driven with a sharp threshold - split slices die at ~65 nodes, so
+the ladder needs depth proportional to log(1/margin) where the margin is
+the near-tangency gap of the underlying sphere-system discriminants.
+The floors cover margins down to ~5e-10 rad.
+
+If any graph survives the night: next tool is a certified centred-form
+(mean-value) enclosure for the circle parametrization - width O(w^2)
+instead of O(w) on narrow cells - which attacks the exact mechanism that
+makes these arcs expensive, and would also accelerate the deferred d=6
+tail massively. It is deliberately NOT being hot-patched into a running
+campaign.
+
+Pushed so far tonight: pending-38 data + structural analysis + the
+hot-core dump result (zero parked survivors in 3M nodes - the "still
+considered" set is empty; the arcs are kill-trees, not candidates).
