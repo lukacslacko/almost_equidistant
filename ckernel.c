@@ -1,12 +1,26 @@
-/* Certified branch-and-prune kernel (C port of decide.py's Prover).
+/* Certified branch-and-prune kernel deciding unit-distance realizability
+ * in R^4 (algorithm documented in Appendix B of f4_equals_12.pdf).
  * Interval arithmetic with outward rounding via nextafter (IEEE basic ops
  * are correctly rounded); cos/sin get 8-ulp padding.
- * Compile: cc -O2 -shared -o ckernel.dylib ckernel.c -lm
+ * Compiled automatically by cdriver.py:
+ *   POSIX:   cc -O2 -shared -o ckernel.so ckernel.c -lm
+ *   Windows: cl /O2 /LD ckernel.c /Fe:ckernel.dll   (from a VS x64 prompt)
  */
 #include <math.h>
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdint.h>
+
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
+
+#ifdef _WIN32
+#define EXPORT __declspec(dllexport)
+#else
+#define EXPORT
+#endif
 
 #define D 4
 #define MAXN 13
@@ -136,10 +150,10 @@ typedef struct {
     int order_len, order[MAXN];
     double seedc[5][D][2];
     double theta_min, max_width;
-    long max_nodes;
+    int64_t max_nodes;
     double th0_lo, th0_hi;
     /* runtime */
-    long nodes, unresolved;
+    int64_t nodes, unresolved;
     int aborted, th0_used;
 } Prob;
 
@@ -594,7 +608,7 @@ static void circle_stage_c(Prob *P, State *st, int oi, int v,
             }
         }
         if (dead) continue;
-        long before = P->unresolved;
+        int64_t before = P->unresolved;
         State st2 = *st;
         memcpy(st2.p[v], x, sizeof(V4));
         st2.placedmask |= (unsigned short)(1<<v);
@@ -638,7 +652,7 @@ static void segment_stage_c(Prob *P, State *st, int oi, int v,
             if (!edge_ok(x, st->p[nbrids[w]])){ dead=1; break; }
         if (dead) continue;
         if (noninjective_c(P, st, v, x)) continue;
-        long before = P->unresolved;
+        int64_t before = P->unresolved;
         State st2 = *st;
         memcpy(st2.p[v], x, sizeof(V4));
         st2.placedmask |= (unsigned short)(1<<v);
@@ -732,10 +746,10 @@ static void dfs(Prob *P, State *st, int oi, double cellw, int has_cellw){
 }
 
 /* entry point */
-long decide_c(int n, unsigned short *adj, int seed_len, int *seed,
+EXPORT int64_t decide_c(int n, unsigned short *adj, int seed_len, int *seed,
               int order_len, int *order, double *seedc /*5*4*2*/,
               double theta_min, double th0_lo, double th0_hi,
-              long max_nodes, long *nodes_out, long *unres_out){
+              int64_t max_nodes, int64_t *nodes_out, int64_t *unres_out){
     Prob P;
     memset(&P, 0, sizeof P);
     P.n = n;

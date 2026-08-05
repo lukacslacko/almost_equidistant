@@ -14,80 +14,17 @@ Steps (see README.md and Appendices A-C of f4_equals_12.pdf):
                    their node budget are split 8-fold and retried. A graph is
                    CERTIFIED as soon as one order's tiling is fully killed.
 
-Requirements: a C compiler (cc), Python >= 3.9, numpy.
+Requirements: a C compiler (cc/gcc/clang, or MSVC on Windows), Python >= 3.9.
 The C kernel is compiled automatically on first run.
 """
 import argparse, json, math, os, subprocess, sys, time
 from multiprocessing import Pool, cpu_count
 
+from cdriver import decide_c, gen_orders, ensure_kernel
+
 TWO_PI = 2 * math.pi
 HERE = os.path.dirname(os.path.abspath(__file__))
 os.chdir(HERE)
-
-def ensure_kernel():
-    dylib, src = "ckernel.dylib", "ckernel.c"
-    if (not os.path.exists(dylib)
-            or os.path.getmtime(dylib) < os.path.getmtime(src)):
-        print("compiling C kernel ...", flush=True)
-        subprocess.check_call(["cc", "-O2", "-shared", "-o", dylib, src, "-lm"])
-
-# ---------------------------------------------------------------------------
-# elimination orders (layered, circles as late as possible; several tie-breaks)
-# ---------------------------------------------------------------------------
-def _cliques(adj, n, k):
-    res = []
-    def ext(clq, cand, start):
-        if len(clq) == k: res.append(tuple(clq)); return
-        for v in range(start, n):
-            if (cand >> v) & 1: ext(clq + [v], cand & adj[v], v + 1)
-    ext([], (1 << n) - 1, 0)
-    return res
-
-def _layered_order(adj, n, seed, pick):
-    placed = set(seed); order = []
-    while len(placed) < n:
-        while True:
-            cands = [(sum(1 for u in placed if (adj[v] >> u) & 1), v)
-                     for v in range(n) if v not in placed]
-            cands = [(k, v) for k, v in cands if k >= 4]
-            if not cands: break
-            k, v = max(cands); order.append(v); placed.add(v)
-        if len(placed) == n: break
-        c3 = [v for v in range(n) if v not in placed
-              and sum(1 for u in placed if (adj[v] >> u) & 1) == 3]
-        if not c3: return None
-        v = pick(c3, placed); order.append(v); placed.add(v)
-    return order
-
-def gen_orders(adj, n, kmax=8):
-    seeds = _cliques(adj, n, 5) or _cliques(adj, n, 4)
-    def closure_size(w, placed):
-        P = set(placed); P.add(w); grew = True
-        while grew:
-            grew = False
-            for x in range(n):
-                if x not in P and sum(1 for u in P if (adj[x] >> u) & 1) >= 4:
-                    P.add(x); grew = True
-        return len(P)
-    picks = [lambda c3, p: max(c3, key=lambda w: closure_size(w, p)),
-             lambda c3, p: min(c3, key=lambda w: closure_size(w, p)),
-             lambda c3, p: max(c3), lambda c3, p: min(c3)]
-    outs, seen = [], set()
-    for seed in seeds:
-        for pick in picks:
-            o = _layered_order(adj, n, seed, pick)
-            if o and (seed, tuple(o)) not in seen:
-                seen.add((seed, tuple(o))); outs.append((seed, o))
-        if len(outs) >= kmax * 4: break
-    def score(so):
-        seed, order = so
-        placed = set(seed); circ = []
-        for i, v in enumerate(order):
-            if sum(1 for u in placed if (adj[v] >> u) & 1) == 3: circ.append(i)
-            placed.add(v)
-        return (len(circ), [-c for c in circ])
-    outs.sort(key=score)
-    return outs[:kmax]
 
 # ---------------------------------------------------------------------------
 # sharded certification of one graph under one decomposition
@@ -96,7 +33,6 @@ _DATA = None
 def _slice_task(args):
     global _DATA
     gi, seed, order, lo, hi, cap = args
-    from cdriver import decide_c
     if _DATA is None:
         _DATA = json.load(open("aeq_d4_n13.json"))
     st, nodes, unres = decide_c(_DATA["graphs"][gi], 13, seed=seed, order=order,
@@ -115,6 +51,18 @@ def certify_graph(gi, adj, pool, max_orders=8, cap=15_000_000,
     Q = queue.Queue()
     state = [{"pending": 0, "alive": True, "submitted": False} for _ in decs]
 
+    def ncirc(seed, order):
+        placed = set(seed); c = 0
+        for v in order:
+            if sum(1 for u in placed if (adj[v] >> u) & 1) == 3: c += 1
+            placed.add(v)
+        return c
+    # Two-parameter searches (>= 2 circle stages) start at fine slicing:
+    # coarse slices there burn their whole node budget before splitting
+    # (the "finer initial slicing" lesson of Appendix C.3).
+    nslices = 768 if ncirc(*decs[0]) >= 2 else 24
+    min_width = min(min_width, TWO_PI / (nslices * 8 ** 3))
+
     def submit_range(oi, lo, hi):
         seed, order = decs[oi]
         state[oi]["pending"] += 1
@@ -124,8 +72,8 @@ def certify_graph(gi, adj, pool, max_orders=8, cap=15_000_000,
 
     def submit_dec(oi):
         state[oi]["submitted"] = True
-        for k in range(24):
-            submit_range(oi, k * TWO_PI / 24, (k + 1) * TWO_PI / 24)
+        for k in range(nslices):
+            submit_range(oi, k * TWO_PI / nslices, (k + 1) * TWO_PI / nslices)
 
     for oi in range(len(decs)):        # all decompositions race from the start
         submit_dec(oi)
@@ -161,7 +109,6 @@ def certify_graph(gi, adj, pool, max_orders=8, cap=15_000_000,
 # validation controls
 # ---------------------------------------------------------------------------
 def run_controls():
-    from cdriver import decide_c
     # G10: BPSSV Lemma 12 graph, proven non-realizable -> must be KILLED
     n = 10; E = set()
     for i in range(8):
@@ -202,6 +149,11 @@ def main():
     ap.add_argument("--workers", type=int, default=max(1, cpu_count() - 1))
     args = ap.parse_args()
     ensure_kernel()
+    import hashlib
+    from cdriver import HERE as _kh, LIBNAME as _kl
+    print(f"kernel: {os.path.join(_kh, _kl)} (ckernel.c sha256 "
+          f"{hashlib.sha256(open(os.path.join(_kh, 'ckernel.c'), 'rb').read()).hexdigest()[:12]})",
+          flush=True)
 
     if args.enumerate:
         subprocess.check_call([sys.executable, "enumerate_aeq.py"])
@@ -215,17 +167,23 @@ def main():
     graphs = data["graphs"]
     targets = [args.graph] if args.graph is not None else range(len(graphs))
     results = {}
+    if os.path.exists("reproduce_results.json"):   # merge on --graph reruns
+        results = {int(k): v
+                   for k, v in json.load(open("reproduce_results.json")).items()}
     t0 = time.time()
-    with Pool(args.workers) as pool:
-        for gi in targets:
-            t = time.time()
+    for gi in targets:
+        t = time.time()
+        # A fresh pool per graph: leaving the with-block terminates it,
+        # cancelling the losing decompositions' abandoned slice tasks --
+        # with a shared pool those pile up and starve every later graph.
+        with Pool(args.workers) as pool:
             oi = certify_graph(gi, graphs[gi], pool)
-            results[gi] = oi
-            status = (f"CERTIFIED non-realizable (decomposition {oi})"
-                      if oi is not None else "UNDECIDED - see README")
-            print(f"[{gi:2d}] {status}  t={time.time()-t:.1f}s "
-                  f"(total {time.time()-t0:.0f}s)", flush=True)
-            json.dump(results, open("reproduce_results.json", "w"), indent=1)
+        results[gi] = oi
+        status = (f"CERTIFIED non-realizable (decomposition {oi})"
+                  if oi is not None else "UNDECIDED - see README")
+        print(f"[{gi:2d}] {status}  t={time.time()-t:.1f}s "
+              f"(total {time.time()-t0:.0f}s)", flush=True)
+        json.dump(results, open("reproduce_results.json", "w"), indent=1)
     bad = [g for g, o in results.items() if o is None]
     if not bad and args.graph is None:
         print("\nAll 59 graphs certified non-realizable with 13 distinct "

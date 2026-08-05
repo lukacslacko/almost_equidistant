@@ -13,45 +13,70 @@ states the result; its Appendices A–C document the algorithms implemented here
 | `f4_equals_12.pdf` / `.tex` | the result note with method appendices |
 | `enumerate_aeq.py` | enumerates the abstract almost-equidistant graphs in R^4 and verifies all counts against BPSSV Table 3 (Appendix A) |
 | `aeq_d4_n13.json` | the resulting 59 candidate graphs on 13 vertices (regenerable by the above) |
-| `ival.py` | rigorous outward-rounded interval arithmetic (Appendix B.1) |
-| `decide.py` | the certified branch-and-prune engine — readable Python reference (Appendix B) |
-| `ckernel.c` | the same engine in C (~1000x faster); produces node-for-node identical search trees |
-| `cdriver.py` | ctypes driver for the C kernel |
+| `ckernel.c` | the certified branch-and-prune decision engine (Appendix B) |
+| `cdriver.py` | compiles and drives the C kernel; constructs the exact seed-simplex enclosures and the elimination orders |
+| `ival.py` | minimal outward-rounded interval arithmetic used only for the seed enclosures (Appendix B.1; the full interval engine is in `ckernel.c`) |
 | `reproduce.py` | one-command orchestration: controls, slicing, alternate decompositions (Appendix C) |
 
 ## Requirements
 
-POSIX system, a C compiler (`cc`), Python >= 3.9, `numpy`.
-The C kernel compiles automatically on first use.
+Python >= 3.9 and a C compiler; the kernel compiles automatically on first
+use, and there are no Python package dependencies.
+
+| OS | C toolchain |
+|---|---|
+| Linux | `cc`/`gcc`/`clang` (e.g. `apt install build-essential`) |
+| macOS | Xcode Command Line Tools (`xcode-select --install`) |
+| Windows | any one of: LLVM clang (`winget install LLVM.LLVM`), Visual Studio 2022 or Build Tools with the C++ workload (located automatically via `vswhere`), or a `gcc` on `PATH` |
 
 ## How to reproduce
 
+The same three commands on every OS — on Linux/macOS write `python3`, on
+Windows write `python` (any shell: cmd, PowerShell, or Git Bash):
+
 ```sh
 # 1. Regenerate the 59 candidate graphs and check every count against the
-#    published tables (~15 s):
+#    published tables (~10 s):
 python3 reproduce.py --enumerate
 
-# 2. Validation controls (~2 min): the engine must kill BPSSV's known
+# 2. Validation controls (~3 min): the engine must kill BPSSV's known
 #    non-realizable graph G10, and must NOT kill the realizable
 #    cross-polytope graph:
 python3 reproduce.py --controls
 
-# 3. Certify all 59 graphs (hours; uses all cores minus one by default):
+# 3. Certify all 59 graphs (~10 min on a modern 16-core machine; uses all
+#    cores minus one by default):
 python3 reproduce.py
 # or a single graph:
 python3 reproduce.py --graph 44
 ```
 
-Most graphs certify in milliseconds to seconds. Three graphs (18, 20, 44 in
-this ordering) require the slicing machinery and take the bulk of the time;
-graph 18 in addition requires an alternate elimination order (the driver finds
-it automatically — historically decomposition 6). A full run took roughly half
-a day on a 12-core machine. Per-decomposition budgets and slice caps are
-parameters of `certify_decomposition()` in `reproduce.py` and can be raised.
+The first command's last line must read `n=17: 0 abstract graphs`, the second
+must end `controls: PASS`, and the third must end with
 
-Progress is printed per graph and saved to `reproduce_results.json`. The final
-message states the conclusion. The computation is deterministic: identical
-hardware/libm produce identical search trees.
+```
+All 59 graphs certified non-realizable with 13 distinct points.
+==> no 13-point almost-equidistant set in R^4; with the known 12-point construction, f(4) = 12.
+```
+
+At startup the driver prints which kernel binary it bound and a hash of
+`ckernel.c` — check it against the repository if you have ever built the
+kernel elsewhere on the machine.
+
+The driver races all candidate elimination orders concurrently and certifies
+with whichever completes first; two-parameter graphs (two circle stages —
+graph 44) automatically start at fine initial slicing. Measured on a Ryzen
+9950X3D (16C/32T, LLVM clang kernel): 58 of the 59 graphs certify in under a
+second of wall time each, graph 44 in ~5 minutes; the whole run, controls
+included, takes under 10 minutes. Per-graph budgets and slice caps are
+parameters of `certify_graph()` in `reproduce.py` and can be raised.
+
+Progress is printed per graph and saved to `reproduce_results.json`. (The
+decomposition index recorded per graph depends on race timing and is not a
+stable fingerprint; the verdicts are.) The final message states the
+conclusion. The engine is deterministic — and observed to be *bit-identical*
+across Apple clang/ARM64, MSVC/x86-64, and LLVM clang/x86-64 on every matched
+instance tested, node counts and all.
 
 ## What "certified" means
 
@@ -66,9 +91,15 @@ be reported as SURVIVORS/UNDECIDED — never silently dropped.
 
 ## Provenance
 
-Computation carried out 2026-08-04/05. The original run logs are preserved
-separately (directory `f4_proof_artifacts` of the same project); this package
-is the minimal, cleaned re-derivation path.
+Original computation carried out 2026-08-03/05 on an M2 Pro (the three
+hardest graphs by a ~20 h C slicing campaign whose logs are preserved in
+directory `f4_proof_artifacts` of the same project); independently
+re-certified end-to-end 2026-08-05 on Windows (Ryzen 9950X3D) under both MSVC
+and LLVM clang builds of the kernel. This package is the minimal, cleaned
+re-derivation path. During development the engine existed in two independent
+implementations (a Python reference and the C version); they produced
+node-for-node identical search trees on matched instances. The package ships
+the C engine.
 
 ## License
 

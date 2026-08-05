@@ -97,12 +97,23 @@ which coincidence is \emph{forced}.
 \emph{Validation.} The engine kills the ten-vertex graph proved non-realizable
 in Lemma~12 of \cite{BPSSV}, and does \emph{not} kill the realizable
 cross-polytope graph $K_{2,2,2,2}$ --- for which it isolates exactly the two
-mirror-image unit cross-polytopes. Two independent implementations (a Python
-reference and a C production version, roughly $1000\times$ faster) produce
-identical search trees node-for-node on matched instances. A runtime canary
-aborts the computation if a parametrized circle point ever violates its own
-defining constraint; during development this caught a genuine bug, after which
-all affected results were discarded and recomputed.
+mirror-image unit cross-polytopes. During development the engine was
+maintained in two independent implementations (a Python reference and a C
+production version, roughly $1000\times$ faster), which produced identical
+search trees node-for-node on matched instances; the reproduction package
+ships the C implementation. The C engine's determinism was additionally
+verified \emph{across platforms}: on a matched battery of instances ---
+including full searches of both control graphs --- Apple clang/libm on ARM64
+(M2 Pro, macOS 14.5), MSVC/UCRT on x86-64, and LLVM clang/UCRT on x86-64
+(Ryzen 9950X3D, Windows 11) produce bit-identical search trees, node and
+unresolved-cell counts agreeing exactly both on zero-circle instances
+(exercising only correctly rounded basic operations) and on circle-bearing
+instances (additionally exercising the padded library $\cos/\sin$
+enclosures). During development a genuine bug in the circle
+parametrization (a Gram--Schmidt error) was caught by manual inspection of a
+single cell; a runtime canary --- aborting the computation if a parametrized
+circle point ever violates its own defining constraint --- was added in
+response, and every result predating the fix was discarded and recomputed.
 
 \emph{Execution.} Fifty-six of the 59 graphs die quickly (milliseconds to
 minutes). The three hardest --- including the unique graph requiring a
@@ -191,8 +202,9 @@ subgraph), we certified all $59$.
 \section{The certified decision procedure}
 \label{app:engine}
 
-\emph{(Reference implementation \texttt{decide.py} + \texttt{ival.py};
-production port \texttt{ckernel.c}. The two produce identical search trees.)}
+\emph{(Implemented in \texttt{ckernel.c}, compiled and driven by
+\texttt{cdriver.py}; the exact seed enclosures of \S B.2 are constructed in
+\texttt{ival.py}.)}
 
 \subsection{Interval arithmetic}
 All geometry is computed in interval arithmetic over IEEE doubles with
@@ -320,7 +332,8 @@ repeated re-exploration that adaptive splitting of coarse cells entails ---
 pieces that ran for hours at coarse slicing die in milliseconds two refinement
 levels down. Fifty-six graphs need no slicing at all; two need one or two
 levels; the graph with two circle stages (a two-parameter search) needed three
-levels on part of its range.
+levels on part of its range. The driver therefore starts two-parameter
+searches directly at fine initial slicing.
 
 \subsection{Alternate decompositions}
 One graph exhibits, under its default decomposition, an
@@ -328,21 +341,27 @@ One graph exhibits, under its default decomposition, an
 the discriminant of the relevant sphere systems vanishes identically, two
 vertex pairs coincide exactly (a degenerate configuration family), and the
 coincidence rules of \S B.6 are structurally inconclusive there (merged roots;
-vanishing affine volumes). Rather than analyse the channel, the driver switches
-decomposition: a different elimination order re-parametrizes the geometry, the
-degenerate family no longer sits at a tangency of the new parametrization, and
-the standard machinery certifies all $24$ slices of the full circle directly.
-The final certificate for that graph rests entirely on the alternate
-decomposition and is self-contained.
+vanishing affine volumes). Rather than analyse the channel, the driver races
+all candidate decompositions concurrently: a different elimination order
+re-parametrizes the geometry, the degenerate family no longer sits at a
+tangency of the new parametrization, and the standard machinery certifies all
+$24$ slices of the full circle directly. The final certificate for that graph
+rests entirely on the alternate decomposition and is self-contained.
 
 \subsection{Reproduction}
 The package provides: \texttt{enumerate\_aeq.py} (Appendix~A; also verifies
-all published counts), \texttt{ival.py}/\texttt{decide.py} (reference engine),
-\texttt{ckernel.c}/\texttt{cdriver.py} (fast engine), the graph list
-\texttt{aeq\_d4\_n13.json}, and \texttt{reproduce.py}, which runs the two
-validation controls (Lemma-12 graph killed; cross-polytope graph preserved)
-and then certifies all $59$ graphs by the strategy above. On a 12-core machine
-the full run takes on the order of half a day; the computation is
-deterministic, so identical hardware reproduces identical search trees.
+all published counts), \texttt{ckernel.c} (the certified engine, Appendix~B)
+with \texttt{cdriver.py}/\texttt{ival.py} (compilation, seed enclosures,
+elimination orders), the graph list \texttt{aeq\_d4\_n13.json}, and
+\texttt{reproduce.py}, which runs the two validation controls (Lemma-12 graph
+killed; cross-polytope graph preserved) and then certifies all $59$ graphs by
+the strategy above. The kernel compiles automatically (any C compiler on
+POSIX; MSVC, clang or gcc on Windows); there are no further dependencies
+beyond Python~$\ge$~3.9. A full run takes on the order of ten minutes on a
+modern 16-core machine (the original campaign, which predated the driver's
+fine-slicing default and concurrent-race cancellation, took on the order of
+half a day for the hardest graphs on 12 cores); the computation is
+deterministic, and was observed to reproduce bit-identical search trees
+across the three compiler/libm/ISA stacks tested.
 
 \end{document}

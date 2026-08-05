@@ -1,6 +1,11 @@
 __pycache__/
 ckernel.dylib
+ckernel.dll
 *.so
+*.obj
+*.lib
+*.exp
+*.pdb
 *.aux
 *.log
 *.out
@@ -10,3 +15,4 @@ aeq_d4_n14.json
 aeq_d4_n15.json
 aeq_d4_n16.json
 aeq_d4_n17.json
+reproduce_run.log
