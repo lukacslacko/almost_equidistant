@@ -1,0 +1,12 @@
+__pycache__/
+ckernel.dylib
+*.so
+*.aux
+*.log
+*.out
+reproduce_results.json
+aeq_d4_n12.json
+aeq_d4_n14.json
+aeq_d4_n15.json
+aeq_d4_n16.json
+aeq_d4_n17.json
