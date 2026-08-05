@@ -16,3 +16,11 @@ aeq_d4_n15.json
 aeq_d4_n16.json
 aeq_d4_n17.json
 reproduce_run.log
+ckernel5.dll
+*.exe
+*.bin
+*.mc
+sweep/
+controls5_run.log
+aeq_d5_n13_tr.txt
+aeq_d5_n14_tr.txt

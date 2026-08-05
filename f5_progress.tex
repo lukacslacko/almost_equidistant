@@ -1,0 +1,253 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=2.6cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\setlist{itemsep=2pt,topsep=4pt}
+
+\newtheorem*{result}{Result}
+\newtheorem*{wip}{Work in progress}
+\newcommand{\R}{\mathbb{R}}
+
+\title{\vspace{-1.2cm}Progress on the maximum size of an almost-equidistant
+set in $\R^5$:\\ $f(5)\le 18$, toward the exact value\\[4pt]
+\large A computer-assisted campaign, with certified non-realizability at
+$19$ and $20$ points}
+\author{}
+\date{August 5, 2026 (snapshot; campaign in progress)}
+
+\begin{document}
+\maketitle
+\vspace{-1.2cm}
+
+\section*{Background}
+
+A finite point set in $\R^d$ is \emph{almost equidistant} if among any three
+of its points some two are at unit distance; $f(d)$ denotes the maximum size
+of such a set. The known values are $f(1)=4$, $f(2)=7$, $f(3)=10$
+\cite{Gyorey,BPSSV} and $f(4)=12$ (computer-assisted resolution of
+Conjecture~1 of \cite{BPSSV}; see the accompanying note
+\texttt{f4\_equals\_12.pdf} in this repository). For $d=5$ the published
+state of the art is
+\[
+  16 \;\le\; f(5) \;\le\; 20,
+\]
+the lower bound by Larman--Rogers \cite{LR} (the odd half-cube
+$\{v\in\{\pm1\}^5:\ v\ \text{has an odd number of}\ {+}1\text{s}\}/\sqrt8$,
+whose non-unit-distance graph is the Clebsch graph), the upper bound by
+Balko, P\'or, Scheucher, Swanepoel and Valtr \cite{BPSSV}. We found no
+later improvement in the literature (2020--2026); the asymptotic bound is
+$f(d)=O(d^{4/3})$ \cite{KMS}.
+
+This note records the state of an ongoing computer-assisted campaign to
+determine $f(5)$ exactly, run with the same certified machinery that proved
+$f(4)=12$, generalized from $\R^4$ to $\R^5$. All code and data are in this
+repository.
+
+\begin{result}
+$f(5) \le 18$. More precisely: there is no almost-equidistant set of $19$
+points in $\R^5$ (and none of $20$ points), by certified elimination of all
+candidate unit-distance graphs. Combined with the Larman--Rogers set,
+$16 \le f(5) \le 18$.
+\end{result}
+
+\begin{wip}
+The two remaining levels are being processed by the same pipeline:
+all $8825$ candidate graphs on $18$ vertices (certification under way;
+partial results in \texttt{results\_n18.json}), then all $12654$ on $17$
+vertices. Independent numerical optimization over the $17$-vertex
+candidates (Levenberg--Marquardt, $300$ restarts per graph) has so far
+found no graph anywhere near realizable --- the smallest residual over the
+first ${\sim}5000$ graphs is $\approx 0.5$, against $10^{-30}$ for
+realizable controls. If every $17$-vertex candidate is eliminated,
+$f(5)=16$; a certified survivor would instead pin $f(5)$ at $17$ or $18$.
+\end{wip}
+
+\section*{Reduction}
+
+Following \cite{BPSSV}, if $P\subset\R^5$ is almost equidistant then its
+unit-distance graph $G$ satisfies: (i) $\alpha(G)\le 2$ (the complement is
+triangle-free --- this is almost-equidistance itself); (ii) $G$ has no
+$K_7$ (at most $d{+}1$ points of $\R^d$ are pairwise at unit distance);
+(iii) $G$ has no $K_{3,3,3}$ subgraph (\cite{BPSSV}, Lemma~11: for odd $d$,
+$K_{(d+1)/2}(3,\dots,3)$ is not a unit-distance graph in $\R^d$; three
+$3$-point classes with all cross distances $1$ would need three pairwise
+orthogonal $\ge2$-dimensional affine hulls, i.e.\ dimension $\ge 6$).
+Graphs with (i)--(iii) are the \emph{abstract almost-equidistant graphs in
+$\R^5$}.
+
+Deleting edges of $G$ that are removable without violating (i) yields a
+spanning \emph{minimal} abstract almost-equidistant subgraph $G'$
+((ii),(iii) survive edge deletion). Any realization of $G$ restricts to
+one of $G'$: $n$ distinct points with every $G'$-edge at distance exactly
+$1$ (non-edges unconstrained). Hence: \emph{if no minimal abstract
+almost-equidistant graph on $n$ vertices is realizable with $n$ distinct
+points, then $f(5)<n$.} Minimal graphs are exactly the complements of
+\emph{maximal triangle-free} graphs satisfying (ii) and (iii).
+
+\section*{Candidate generation, independently verified}
+
+Maximal triangle-free graphs were generated with \texttt{triangleramsey}
+\cite{BGS,BBH} and filtered by our own checkers for (ii) and (iii)
+(\texttt{filter\_mtf.c}); every input graph is re-verified to be maximal
+triangle-free from scratch. The resulting counts reproduce
+\cite{BPSSV} (Table~2, $d=5$ column) exactly:
+
+\begin{center}
+\begin{tabular}{lrrrrr}
+\toprule
+$n$ & 17 & 18 & 19 & 20 & 21\\
+\midrule
+maximal triangle-free graphs & 164\,796 & 1\,337\,848 & 13\,734\,745 &
+178\,587\,364 & 2\,911\,304\,940\\
+minimal abstract a.e.\ graphs & 12\,654 & 8\,825 & 340 & 8 & 0\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The $n=21$ row is an independent re-verification of $f(5)\le 20$
+\cite{BPSSV}: all $2.9$ billion maximal triangle-free graphs on $21$
+vertices were regenerated and none passes the filter.
+
+As an independent check of the entire pipeline, a from-scratch enumerator
+(\texttt{enumaeq5.c}, growing graphs vertex-by-vertex with incremental
+tests of (i)--(iii), minimum-degree normalization, and isomorphism
+rejection --- the method of Appendix~A of the $f(4)$ note) reproduces the
+$d=5$ column of \cite{BPSSV} Table~3 at every order it reaches
+($7$, $14$, $38$, $106$, $402$, $1817$, $11\,132$, $86\,053$, $803\,299$,
+$7\,623\,096$ for $n=4,\dots,13$), and its minimal counts
+($2,3,4,6,9,14,25,46,106,242$) match Table~2. At $n=13$ the $242$ minimal
+graphs from the two independent routes agree \emph{as sets}, matched
+one-to-one up to isomorphism (\texttt{compare\_sets.py}).
+
+The lower bound is re-verified in integer arithmetic
+(\texttt{verify\_lower\_bound\_16.py}): the $16$ half-cube points are
+pairwise at squared distance $8$ or $16$ (unscaled), any three contain a
+pair at $8$, and the non-unit graph is the $5$-regular triangle-free
+Clebsch graph; scaling by $1/\sqrt8$ gives an almost-equidistant $16$-point
+set, so $f(5)\ge 16$.
+
+\section*{The certified decision engine in $\R^5$}
+
+\texttt{ckernel5.c} is a direct port of the certified $\R^4$ engine
+(\texttt{ckernel.c}; Appendix~B of the $f(4)$ note), with the
+dimension-forced changes and nothing else:
+\begin{itemize}
+\item points are $5$-dimensional interval vectors (outward-rounded IEEE
+      doubles; $\cos/\sin$ padded by $8$ ulp);
+\item seeds are $K_6$ (canonical unit $5$-simplex, exact interval
+      enclosures, rigid) or $K_5$ (mirror explored by branching);
+      $12\,652$ of the $12\,654$ graphs on $17$ vertices contain $K_6$;
+\item a vertex with $\ge5$ placed neighbours is placed via the
+      $5$-sphere system ($4$ difference equations, $5$ unknowns,
+      $1$-dimensional nullspace, quadratic --- at most two roots),
+      contracted by a $5{\times}5$ Krawczyk operator on the
+      best-conditioned $5$-subset of neighbours, all others acting as
+      certified pruning constraints;
+\item a vertex with exactly $4$ placed neighbours lies on a circle
+      ($3{\times}3$ interval Gram system for the circumcentre,
+      $2$-dimensional orthogonal complement basis by interval
+      Gram--Schmidt), subdivided adaptively with the same runtime canary;
+\item near-tangent (merged-root) cases are resolved by the same
+      one-dimensional segment subdivision;
+\item the two distinctness rules discard branches on which coincidence of
+      non-adjacent vertices is forced: root separation now uses
+      $5$-subsets of common placed neighbours; the bisector-hyperplane
+      rule needs $6$ common placed neighbours with certifiably nonzero
+      affine volume ($5{\times}5$ interval determinant).
+\end{itemize}
+A branch is discarded only when an interval certifiably excludes a
+required value or when coincidence (fewer than $n$ distinct points) is
+forced; eliminating all branches of one elimination order proves
+non-realizability with $n$ distinct points. Elimination orders are
+generated circle-late; for the dense graphs at $n\ge18$ almost all
+searches are circle-free binary trees ($8813/8825$ at $n=18$; $339/340$ at
+$n=19$; $7/8$ at $n=20$), and every one of the $21\,827$ candidate graphs
+at levels $17$--$20$ admits a valid order (no two-parameter stage is ever
+needed).
+
+\emph{Controls.} Verified at the time of this snapshot: the engine kills
+$K_7$ (no seven pairwise-unit points in $\R^5$) and does \emph{not} kill
+the realizable controls $K_6$ (the unit $5$-simplex) and $K_{2,2,2,2,2}$
+(the unit cross-polytope, recovered numerically with distinct points and
+not killable by the engine within large node budgets). The remaining suite
+--- the sliced survive controls for the cross-polytope and the $16$-vertex
+half-cube graph, and the kill control $K_1+K_{2,2,2,2,2}$ (an apex joined
+to the cross-polytope graph is non-realizable: the apex would have to be
+the centre, at distance $1/\sqrt2\ne1$) --- is running at snapshot time;
+its outcome will be recorded in \texttt{controls5\_run.log} and in a
+revised note. (Survive controls run as sliced tilings and pass when slices
+report floor-width survivors; kill controls require every slice to die.)
+
+\section*{Certified results at $20$ and $19$ points}
+
+For each graph, the driver (\texttt{reproduce5.py}) races the candidate
+elimination orders concurrently; a graph is certified when one order's
+tiling of the first circle parameter (a single unrestricted search for
+circle-free orders) is entirely killed.
+
+\begin{itemize}
+\item \textbf{$n=20$:} all $8$ minimal abstract almost-equidistant graphs
+      certified non-realizable with $20$ distinct points. Wall time
+      ${\sim}5$ seconds total (Ryzen 9950X3D, LLVM clang build).
+      Consequence: no $20$-point almost-equidistant set in $\R^5$, i.e.\
+      $f(5)\le 19$.
+\item \textbf{$n=19$:} all $340$ graphs certified non-realizable with
+      $19$ distinct points (${\sim}170$ seconds wall under load).
+      Consequence: $f(5)\le 18$.
+\end{itemize}
+
+Per-graph verdicts and the winning decomposition indices are recorded in
+\texttt{results\_n20.json} and \texttt{results\_n19.json}. Numerical
+corroboration: Levenberg--Marquardt over all $8$ graphs at $n=20$ and all
+$340$ at $n=19$ finds best residuals $\ge 2.6$ (distinct-point solutions),
+i.e.\ nowhere near realizable.
+
+\section*{Caveats}
+
+The proof of $f(5)\le18$ is computer-assisted, with the same trust base as
+the $f(4)=12$ note: IEEE-754 correctly rounded arithmetic, library
+$\cos/\sin$ accurate to $8$ ulp (padded), the engine logic of Appendix~B
+of that note with the $\R^5$ modifications above, and --- for the
+\emph{completeness} of the candidate lists --- the \texttt{triangleramsey}
+generator \cite{BGS}, cross-validated here against \cite{BPSSV} at
+$n=17,\dots,21$ and against a fully independent enumeration up to $n=13$
+(counts at every order, sets at $n=13$). The numerical sweeps are
+heuristic corroboration only; no conclusion rests on them. A reproduction
+run is one command per level (\texttt{python reproduce5.py --level 20},
+etc.); the kernel compiles automatically and validation controls run
+first.
+
+\begin{thebibliography}{9}\small
+\bibitem{BPSSV} M.~Balko, A.~P\'or, M.~Scheucher, K.~Swanepoel, P.~Valtr,
+\emph{Almost-equidistant sets}, Graphs and Combinatorics \textbf{36}
+(2020), 729--754. arXiv:1706.06375.
+
+\bibitem{LR} D.~G.~Larman, C.~A.~Rogers, \emph{The realization of
+distances within sets in Euclidean space}, Mathematika \textbf{19} (1972),
+1--24.
+
+\bibitem{KMS} A.~Kupavskii, N.~Mustafa, K.~Swanepoel, \emph{Bounding the
+size of an almost-equidistant set in Euclidean space}, Combinatorics,
+Probability and Computing \textbf{28} (2019), 280--286.
+
+\bibitem{Gyorey} B.~Gy\"orey, \emph{Diszkr\'et metrikus terek
+be\'agyaz\'asai}, Master's thesis, E\"otv\"os Lor\'and University,
+Budapest, 2004.
+
+\bibitem{BGS} G.~Brinkmann, J.~Goedgebeur, J.-C.~Schlage-Puchta,
+\emph{Ramsey numbers $R(K_3,G)$ for graphs of order 10}, Electron.\ J.
+Combin.\ \textbf{19} (2012), \#P36. Software \texttt{triangleramsey},
+\url{https://caagt.ugent.be/triangleramsey/}.
+
+\bibitem{BBH} S.~Brandt, G.~Brinkmann, T.~Harmuth, \emph{The generation of
+maximal triangle-free graphs}, Graphs and Combinatorics \textbf{16}
+(2000), 149--157.
+\end{thebibliography}
+
+\end{document}
