@@ -91,3 +91,17 @@ continues.
 (This file will be superseded by the final result note when the last
 certificates land; the survivor-box dump from a live hot core and
 LM restarts seeded from those boxes are appended below when available.)
+
+## Appendix: survivor-box dump from the live hot core (completed)
+
+The debug kernel (env-gated dump of any parked survivor leaf) was run on
+the hottest known sub-arc of the hardest family's graph 11402
+(decomposition 0, theta in [78.28, 78.75] degrees, coarse floor, 3M-node
+budget). Result: **ABORT at the node budget with zero unresolved cells
+and zero survivor leaves** — in three million nodes the search parked
+nothing at all: no candidate constellation ever reached even the
+"unresolved, report later" state. The hot arc is an expensive kill-tree,
+not a reservoir of candidate configurations. Consequently there are no
+box midpoints to seed LM from — the closest thing to "surviving
+structure" is the empty set; the standard sweeps (clique-seeded and
+random, all far from solvability) remain the operative numerics.
