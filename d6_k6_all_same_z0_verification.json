@@ -1,0 +1,125 @@
+{
+  "all_archived_Z0_system_booleans_matched": true,
+  "all_archived_zero_forcing_component_certificates_matched": true,
+  "all_first_impossible_seeds_matched": true,
+  "all_graph_core_fields_matched": [
+    "rejected",
+    "seeds_checked",
+    "impossible_seeds",
+    "z0_considered",
+    "z0_matchable",
+    "z0_zero_forcing_passed",
+    "z0_zero_forcing_failed",
+    "z0_block_passed_after_zero_forcing",
+    "z0_block_failed_after_zero_forcing",
+    "z0_nonbipartite_failed"
+  ],
+  "certificate_summaries": [
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        1,
+        3,
+        10,
+        11,
+        14,
+        17
+      ],
+      "histogram": {
+        "block+zero_forcing": 32,
+        "nonbipartite": 22,
+        "zero_forcing+nonbipartite": 10
+      },
+      "index": 652900
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        2,
+        4,
+        10,
+        12,
+        14,
+        18
+      ],
+      "histogram": {
+        "block+nonbipartite": 6,
+        "nonbipartite": 25,
+        "zero_forcing+nonbipartite": 1
+      },
+      "index": 2301548
+    },
+    {
+      "Z0_choices": 127,
+      "first_impossible_seed": [
+        0,
+        3,
+        4,
+        14,
+        15,
+        17
+      ],
+      "histogram": {
+        "block+zero_forcing": 96,
+        "nonbipartite": 15,
+        "zero_forcing+nonbipartite": 16
+      },
+      "index": 2842523
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        4,
+        11,
+        12,
+        14,
+        15,
+        18
+      ],
+      "histogram": {
+        "block+nonbipartite": 6,
+        "nonbipartite": 25,
+        "zero_forcing+nonbipartite": 1
+      },
+      "index": 3289061
+    }
+  ],
+  "graphs_recomputed": 990,
+  "graphs_rejected": 4,
+  "graphs_surviving": 986,
+  "inputs": {
+    "d6_current_residue_manifest.json": "d06cdb23b03b1f8523fbe3c3ede5bc297ace21a844282830c5cf51a6cee3512d",
+    "d6_k6_all_same_z0.py": "d15fe376993393a5106e5d01f8c0b2316f43945c5fd9ee01b1ebdabfb4fe2b94",
+    "d6_k6_all_same_z0_certificates.json": "bce608e936cc6826962ecae8ea26baf3b9162072a861f568fc15570350e3f401",
+    "d6_k6_all_same_z0_report.json": "8fa616455d930a1ac3c2255ecb123d8095f7731780f6b6d0bec1ba71c173edeb",
+    "d6_k6_bipartite_rank_input.json": "dfee979e6ca2759e80cf803c3054c8954d98543875d467644b91ee434c22e845",
+    "test_d6_k6_lorentz.py": "f4fc8544a4311f742267808e6c785f82139accb9da99b496d206283b52831a47",
+    "verify_d6_k6_all_same_z0.py": "9ad84985cffbc6f53562730f1aa536a6d7046709c21af0dfd1bfbab907a32162",
+    "verify_d6_k6_same_z0.py": "4db05ff06910a11395e4bbdd2fd13161d6c19f58f81cc99851b8c37558d7000f"
+  },
+  "method": "frozen independent block/nonbipartite reconstruction plus a new independent ordinary-zero-forcing subset/parallel-closure solver",
+  "new_rejected_indices": [
+    2301548,
+    3289061
+  ],
+  "positive_control": {
+    "K6_seeds": 32,
+    "name": "known realizable 18-point construction",
+    "passed": true
+  },
+  "rejected_indices": [
+    652900,
+    2301548,
+    2842523,
+    3289061
+  ],
+  "runtime": {
+    "command": "verify_d6_k6_all_same_z0.py --output d6_k6_all_same_z0_verification.json",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "wall_seconds": 11.608416666000267,
+    "workers": 1
+  },
+  "schema": "d6-k6-all-same-z0-verification-v1",
+  "status": "PASS"
+}
