@@ -1,5 +1,94 @@
 # Status — f(5) and f(6) campaigns (2026-08-05, ~21:00 push)
 
+## REMOTE REVIEW HANDOFF — exact d=6 profiling milestone (2026-08-06)
+
+Branch: `codex/dimension6`
+
+Implementation commit: `20d057d7f664b6358c026e4dec106e33d2aafa65`
+(the handoff text is the immediately following documentation-only commit).
+
+Goal of this milestone: replace blind cap increases on the 916,313
+deferred level-19 graphs by exact graph filters, and measure the true
+`K7`/`K6` split.
+
+Commands run: official `triangleramsey-1.1` streamed through
+`filter_mtf6.c`; `profile_d6.c` over the regenerated 3,971,787-candidate
+corpus and the uncompressed kill log; `python3 verify_profile_d6.py`.
+Exact commands are in `d6_profile_manifest.json`.
+
+Machine/compiler: Mac arm64, macOS 14.5; Apple clang 16.0.0; Python
+3.11.15.  The exact profiler took 128.88 s wall / 125.57 s user.
+
+Corpus and result hashes: candidate corpus SHA-256
+`12bc7e87e6e67eb9ff2851982e206410784c6737a6397874c170cc1280b225b5`;
+compressed kill log SHA-256
+`0522aa926713f36a26bc0223c310059655ae67182c339fa8986c5895d97f4a67`;
+result SHA-256
+`14a9cba30ddbd0c4880d73a1070910dd55fa0c7b889b09f14cdb3f831bf03b26`.
+The Mac regeneration of the n=14 corpus is byte-identical to the
+independently committed Windows corpus (SHA-256 `0e3d74...78f0`), and
+the level-19 count again matches 3,971,787.
+
+Tests and controls: `verify_profile_d6.py` PASS.  The realizable
+18-point Larman--Rogers-plus-apices graph passes all link/reflection
+rules; synthetic `K5`-link, wrong-reflection-edge, and forced-collision
+controls are rejected.  The profiler independently validates graph
+symmetry, looplessness and `alpha(G)<=2`; zero corpus validation errors.
+
+Exact mathematical conclusions:
+
+- Full corpus clique split: 3,795,968 contain `K7`; 175,819 have clique
+  number exactly 6.  Every one of the old 3,055,474 easy certificates
+  is a `K7` graph; every `K6`-only graph was deferred.
+- Safe clique-link bounds reject 201,785 graphs in all, but only 1,684
+  deferred graphs; every violation is the `K5` circle bound.
+- Exact `K7` facet-reflection propagation rejects 978,108 graphs in
+  all, including 12,221 deferred graphs.
+- The discrete `K7` defect-support CSP is exhaustive for its stated
+  support/multiplicity rules but rejects exactly the same graphs as the
+  simpler reflection rule: it adds zero coverage.
+- Union of the exact new rules rejects 12,466 deferred graphs.  The
+  remaining split is 728,028 `K7` graphs and 175,819 `K6`-only graphs,
+  total 903,847.  No direct engine run was restarted.
+
+Heuristic/numerical observations only: the n=14 obstruction pilot has
+89 patterns whose distinct-point LM residual stayed above `1e-6`.
+None is an obstruction until certified.  The original Python
+containment pilot was stopped after proving too slow; its reservoir
+sampling and LM-column bugs are fixed, but no coverage percentage is
+claimed here.
+
+Unresolved graphs or cases: all 903,847 remaining deferred graphs.
+The `K7` algebraic layer beyond discrete supports is unimplemented; the
+`K6` codimension-one simplex coordinate reduction is not yet derived in
+the repository; the obstruction library has no newly certified core.
+
+Known trust assumptions: the new decisions are integer graph logic.
+The link bounds using `f(4)=12` and `f(5)=16` inherit those
+computer-assisted results.  The facet-reflection and defect-support
+proofs are documented in `d6_theory_filters.md`.  Candidate nonedges
+are always treated as optional zeros/unit distances.
+
+Files the reviewer should read first: `d6_profile.json`,
+`d6_theory_filters.md`, `profile_d6.c`, and
+`d6_profile_manifest.json`.
+
+Specific questions for the reviewer:
+
+1. For a fixed `K7`, can the rank-one positive-semidefinite Schur
+   complement of `M_ij=||p_i-p_j||^2-1` yield a cheap exact obstruction
+   strictly stronger than the defect-support CSP?
+2. What is the cleanest explicit `K6` coordinate/Schur formulation for
+   the 175,819 `K6`-only graphs, including the correct inertia
+   restriction on its rank-at-most-two Schur complement?
+3. Is it preferable to certify a handful of the 89 n=14 numerical
+   candidates before optimizing containment, or first obtain a fast C
+   coverage estimate to decide whether certification effort is useful?
+
+Recommended next local action: implement a fast C obstruction-coverage
+pilot while the reviewer checks the `K7` rank-one and `K6` rank-two
+algebra; do not resume the 903,847-case interval grind.
+
 ## Where things stand
 
 | item | state |
