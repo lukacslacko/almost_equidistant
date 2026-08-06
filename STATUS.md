@@ -373,3 +373,26 @@ half-hour regardless of wakeup mechanics.
   expected within the next block or two.
 - No stuck-flag beyond the above: this is measurement latency, not a
   silent stall; the decision rule from the 13:25 block is unchanged.
+
+## 14:40 append — COVERAGE VERDICT: 70.7%. Obstruction strategy is GO.
+
+- Measured on 600 random uncertified level-19 graphs: **424 (70.7%)
+  contain at least one of the 89 candidate 14-vertex patterns as a
+  subgraph.** Concentration is extreme: pattern #569 alone covers 33%
+  of the population; the top 10 patterns cover ~69.5%.
+- Economics if certification succeeds: each certified pattern kills its
+  covered share of the ~916k remaining graphs by containment
+  (microseconds per test) — pattern #569 alone would retire ~300,000
+  graphs. The pre-committed >50% rule fires: certification of the top
+  10 patterns started (certify_patterns.py, hotmap-style tilings over
+  all parametrizations of each 14-vertex pattern).
+- Honest early signal: pattern #569 has only 2 parametrizations and its
+  slices are not dying instantly (these 14-vertex minimal patterns are
+  underdetermined — 57-59 edges vs 63 DOF — so searches are wide even
+  though LM says they are infeasible). Certification cost per pattern
+  may be minutes-to-hours; that is still a bargain against 300k graphs,
+  but if the top patterns resist certification the pool pivots to
+  higher-edge patterns (lower frequency, easier kills) — decision on
+  data at the next block.
+- Certified count unchanged (3,055,480/3,971,787) while the library is
+  built — expected; the next big jump comes from the containment sweep.
