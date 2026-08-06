@@ -286,3 +286,20 @@ survives 24/24. PASS.
 Result note f5_equals_16.pdf finalized; README updated. f(5) = 16.
 Next: resume d=6 (port the quota + mean-value upgrades to ckernel6.c,
 then finish the 916,313 deferred level-19 graphs).
+
+## 11:55 append — d=6 cadence: STUCK flag raised, diagnosing
+
+f(5) = 16 landed and pushed earlier this hour (commit b821aa6).
+
+d=6 pass 2 (the 916,313 deferred level-19 graphs) on the upgraded
+kernel: **zero new certificates in ~40 minutes across two relaunches**
+(chunking reduced 64->4, cap 4M->1.5M). 26 workers busy, so work is
+happening but nothing returns KILLED. Stuck-criterion: met. A
+single-graph diagnostic is running to time one deferred graph directly.
+Working hypothesis: the deferred population consists exactly of graphs
+that survived 5M-node searches pre-upgrade; if their kill-trees are
+simply large (not circle-width-dominated), cap-grinding is the wrong
+tool and the level-17 endgame winner — parametrization diversity
+(hotmap) — is the right one; a d=6 hotmap port is the queued action.
+Next wake: 30 min; expect either diagnostic numbers + a decision, or
+first kills.
