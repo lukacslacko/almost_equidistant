@@ -1,0 +1,219 @@
+{
+  "description": "Compact exact failing-seed and formerly-passing-cover audit for the incremental K7 labeled-support sample rejections.",
+  "incremental_rejections": 6,
+  "inputs": {
+    "decisions": "/Users/lukacs/chatgpt/almost_equidistant/d6_k7_support_propagation_sample_decisions.tsv",
+    "decisions_sha256": "9c8936d6e6b03374b288a56c9536c63acd1d0fbd1bad69a15bc3d41c2eb48265",
+    "frozen_reference_sha256": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+    "propagation_source_sha256": "578103f70d2906fbb3d449b7b7b5c1b6c86e5ae17afb0c341602a543bea69f0c",
+    "report": "/Users/lukacs/chatgpt/almost_equidistant/d6_k7_support_propagation_report.json",
+    "report_sha256": "d0743b4e0977fa9333e152d6c290b1ca2e5d121ac0c9d829e092093e547c58f0",
+    "sample": "/Users/lukacs/chatgpt/almost_equidistant/d6_k7_rank_sample.json",
+    "sample_sha256": "bf699f36a1c90b6d6751498e52fab73e6b58db322c5b71b04accf32623c2c0dd"
+  },
+  "schema": 1,
+  "witnesses": [
+    {
+      "baseline_passing_covers": 1,
+      "cover_exhaustions": [
+        {
+          "failure_counts": {
+            "disjoint_required_edge": 1
+          },
+          "labeled_support_families_exhausted": 1,
+          "z_allowed_masks": [
+            97
+          ],
+          "z_global_vertices": [
+            18
+          ],
+          "zmask_outside_local": 2048
+        }
+      ],
+      "eligible_cap3_covers": 130,
+      "failing_seed_mask_global": 148555,
+      "failing_seed_vertices": [
+        0,
+        1,
+        3,
+        6,
+        10,
+        14,
+        17
+      ],
+      "index": 265354,
+      "refined_passing_covers": 0
+    },
+    {
+      "baseline_passing_covers": 1,
+      "cover_exhaustions": [
+        {
+          "failure_counts": {
+            "disjoint_required_edge": 5
+          },
+          "labeled_support_families_exhausted": 5,
+          "z_allowed_masks": [
+            75
+          ],
+          "z_global_vertices": [
+            15
+          ],
+          "zmask_outside_local": 2048
+        }
+      ],
+      "eligible_cap3_covers": 64,
+      "failing_seed_mask_global": 475209,
+      "failing_seed_vertices": [
+        0,
+        3,
+        6,
+        14,
+        16,
+        17,
+        18
+      ],
+      "index": 2215178,
+      "refined_passing_covers": 0
+    },
+    {
+      "baseline_passing_covers": 1,
+      "cover_exhaustions": [
+        {
+          "failure_counts": {
+            "disjoint_required_edge": 1
+          },
+          "labeled_support_families_exhausted": 1,
+          "z_allowed_masks": [
+            88
+          ],
+          "z_global_vertices": [
+            18
+          ],
+          "zmask_outside_local": 2048
+        }
+      ],
+      "eligible_cap3_covers": 130,
+      "failing_seed_mask_global": 184528,
+      "failing_seed_vertices": [
+        4,
+        6,
+        7,
+        12,
+        14,
+        15,
+        17
+      ],
+      "index": 2646332,
+      "refined_passing_covers": 0
+    },
+    {
+      "baseline_passing_covers": 1,
+      "cover_exhaustions": [
+        {
+          "failure_counts": {
+            "disjoint_required_edge": 1
+          },
+          "labeled_support_families_exhausted": 1,
+          "z_allowed_masks": [
+            70
+          ],
+          "z_global_vertices": [
+            11
+          ],
+          "zmask_outside_local": 256
+        }
+      ],
+      "eligible_cap3_covers": 29,
+      "failing_seed_mask_global": 238856,
+      "failing_seed_vertices": [
+        3,
+        8,
+        10,
+        13,
+        15,
+        16,
+        17
+      ],
+      "index": 2743446,
+      "refined_passing_covers": 0
+    },
+    {
+      "baseline_passing_covers": 2,
+      "cover_exhaustions": [
+        {
+          "failure_counts": {
+            "disjoint_required_edge": 1
+          },
+          "labeled_support_families_exhausted": 1,
+          "z_allowed_masks": [
+            100
+          ],
+          "z_global_vertices": [
+            15
+          ],
+          "zmask_outside_local": 1024
+        },
+        {
+          "failure_counts": {
+            "disjoint_required_edge": 5,
+            "empty_propagated_mask": 8
+          },
+          "labeled_support_families_exhausted": 13,
+          "z_allowed_masks": [
+            100,
+            110
+          ],
+          "z_global_vertices": [
+            15,
+            16
+          ],
+          "zmask_outside_local": 3072
+        }
+      ],
+      "eligible_cap3_covers": 16,
+      "failing_seed_mask_global": 398881,
+      "failing_seed_vertices": [
+        0,
+        5,
+        9,
+        10,
+        12,
+        17,
+        18
+      ],
+      "index": 3331579,
+      "refined_passing_covers": 0
+    },
+    {
+      "baseline_passing_covers": 1,
+      "cover_exhaustions": [
+        {
+          "failure_counts": {
+            "disjoint_required_edge": 1
+          },
+          "labeled_support_families_exhausted": 1,
+          "z_allowed_masks": [
+            42
+          ],
+          "z_global_vertices": [
+            18
+          ],
+          "zmask_outside_local": 2048
+        }
+      ],
+      "eligible_cap3_covers": 176,
+      "failing_seed_mask_global": 84007,
+      "failing_seed_vertices": [
+        0,
+        1,
+        2,
+        5,
+        11,
+        14,
+        16
+      ],
+      "index": 3558001,
+      "refined_passing_covers": 0
+    }
+  ]
+}
