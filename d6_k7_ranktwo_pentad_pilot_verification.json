@@ -1,0 +1,29 @@
+{
+  "checked": {
+    "certificate_pentad_index": 9,
+    "cores": 1,
+    "covers": 1,
+    "pentads_reconstructed": 21,
+    "positive_terms": 201
+  },
+  "claim": "The 12-term pentad was independently derived and expanded to zero on five generic 2D vectors. The stored exact Sherman substitution is coefficientwise strictly positive, so this one rank-at-most-two Schur cover is impossible.",
+  "kind": "d6_k7_ranktwo_pentad_first_core_verification",
+  "report": {
+    "path": "d6_k7_ranktwo_pentad_pilot_report.json",
+    "sha256": "b7441585ef35d36723c517bb51dfc9932a846c91b8354ce54cbaddcdbaf6d318"
+  },
+  "schema": 1,
+  "status": "PASS",
+  "symbolic_checks": {
+    "elimination_derivation": {
+      "degree": 5,
+      "formal_variables": 10,
+      "terms": 12
+    },
+    "generic_rank_two_gram_substitution": {
+      "coordinate_variables": 10,
+      "formal_products_before_cancellation": 384,
+      "residual_terms": 0
+    }
+  }
+}
