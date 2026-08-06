@@ -1,4 +1,135 @@
-# Status — f(5) and f(6) campaigns (2026-08-05, ~21:00 push)
+# Status — f(5) and f(6) campaigns
+
+## CURRENT LOCAL CAMPAIGN — exact d=6 residue 14,038 (2026-08-06 20:48 CEST)
+
+Branch: `codex/dimension6`
+
+Auditable result boundary: `50d998089331cef190842a04630f79098234ec64`.
+The current block supersedes the residue counts in the historical remote-review
+handoffs below.  The user has ended the separate remote review session; local
+work continues with regular pushes.
+
+### Exact result accounting
+
+The post-rank `K7` population contains 17,764 graphs.  The following exact
+layers have now been unioned by graph index:
+
+- labeled-support singleton propagation rejects 1,536;
+- strict affine `H` rejects 132 among the support survivors;
+- the one/two-defect sparse-value layer rejects 3,195 support survivors, with
+  47 overlapping strict `H`, so those two layers reject 3,280 in union;
+- the independently verified interval benchmark at cap 20,000 rejects six
+  further current survivors: 532351, 1169330, 2235541, 3331589, 3394713,
+  and 3961600;
+- the exact positive-polynomial sample certificate rejects one further current
+  survivor, 3649646.  Its other sample rejection, 3950926, is already rejected
+  by the sparse-value layer.
+
+Therefore the current exact `K7` residue is
+
+```text
+17,764 - 1,536 - 3,280 - 6 - 1 = 12,941.
+```
+
+The independently checked `K6`-only residue is 1,097.  The combined exact
+dimension-six residue is consequently **14,038 graphs**.  This is not yet a
+proof of `f(6)=18`; every one of those 14,038 cases remains unresolved.
+
+### New exact mathematics
+
+For a fixed regular unit `K7`, normalize a two-defect point by
+`w_i=sqrt(7) u_i/(s+1)`.  Its two nonzero coordinates satisfy
+
+```text
+(w_i-sqrt(7))(w_j-sqrt(7)) = 3.
+```
+
+Moving between overlapping two-defect types applies the projective map
+
+```text
+T(x) = (x-sqrt(7))/(sqrt(7)x-4),       T^6 = identity projectively.
+```
+
+No power `T^k`, `1 <= k < 6`, has a real fixed point.  Hence every simple
+cycle in the exact two-defect type graph has length divisible by six.  Exact
+one-defect endpoints, path/branch/sign rules, and the fact that an exact
+support type of size `k` has multiplicity at most `k` give the remaining
+sparse-value rules.  Candidate nonedges are never forced non-unit.
+
+The positive-polynomial layer uses the exact Sherman--Morrison Schur equations
+with positive variables.  A rational linear combination whose nonzero output
+polynomial has only nonnegative coefficients is strictly positive on the
+positive orthant but vanishes on every solution.  Numerical LP is only an
+untrusted locator; a separate checker rebuilds every polynomial and verifies
+the rational identity.
+
+### Full runs, controls, and immutable hashes
+
+The full sparse-value command was
+
+```text
+caffeinate -dimsu python3 run_d6_k7_small_support_value_full.py \
+  --workers 11 --batch-size 64 --map-chunksize 1 \
+  --checkpoint-every 32 --progress-every 64
+```
+
+It processed all 16,228 support survivors in 148.8 seconds, rejected 3,195,
+and left 13,033 before union with strict `H`.  Its immutable artifacts are:
+
+- report SHA-256 `cea64f3dde804e0766c5b77e373aa50338d5bee6e5e54f44749f4e387cf529aa`;
+- compressed decisions SHA-256
+  `9f70e0e267fe97bc2f6a2890cae47d8b1c882974d5f054f16b4673bfb45ee003`;
+- uncompressed decisions SHA-256
+  `0ce9d2d2aeb18403fce17a0611594843946d4c07764fbb24946069f0997aab4c`;
+- checkpoint-copy SHA-256
+  `ae91cc60463f728697d0cc8fb807ca430c0842ba2e56b205b37d9ba877ddad9e`.
+
+The preceding 1,536 support-propagation rejections were independently replayed
+without importing the production propagation kernel.  The checker exhausted
+2,354 baseline-passing covers and 35,035 labeled support families: 22,807
+ended in an empty propagated mask and 12,228 in a disjoint required edge, with
+no surviving family.  The full verification took 21.56 seconds on 11 workers.
+Its report SHA-256 is
+`69e07f23f615dd0ce12f04b6c36929d8512e24e979ff69bf9593b172156c3787`.
+
+The hardened interval benchmark independently reconstructs its 18,862-graph
+base population and deterministic 64-graph sample, replays every winning
+slice, exercises all 48 control slices, and verifies zero-recomputation resume.
+It certifies nested kill counts 3/7/10 at caps 1,000/5,000/20,000 with no
+infrastructure errors.  Aggregate SHA-256:
+`e246c3896e7ff2b9b40a598efdaffcc465ff005700a0d51fb17b66b2d6f68481`.
+
+Focused controls currently pass:
+
+```text
+python3 -m unittest -v test_d6_k7_support_propagation.py
+python3 -m unittest -v test_verify_d6_k7_support_full.py
+python3 -m unittest -v test_d6_k7_small_support_value.py \
+  test_run_d6_k7_small_support_value_full.py
+python3 -m unittest -v test_d6_k7_positive_polynomial_dual.py \
+  test_d6_k7_arbitrary_basis_psd_dual.py
+python3 verify_d6_interval_benchmarks.py
+```
+
+### Trust boundary and next work
+
+All new theorem-level decisions above use exact integer bit masks, arbitrary-
+precision rational arithmetic, or archived interval certificates.  The
+interval layer retains its documented IEEE-754 and padded transcendental
+assumptions.  Numerical LP and least squares never decide a rejection.
+
+Immediate work in progress:
+
+1. independently replay the 3,195 full sparse-value rejections;
+2. run the positive-polynomial dual on the full current `K7` residue with
+   atomic checkpoints and compact rational certificates;
+3. build a single hash-bound current-residue manifest over all exact layers;
+4. use the resulting structure to strengthen the support-capacity CSP and the
+   `K6` Lorentz layer before committing to a large interval campaign.
+
+An auxiliary 113,136-case consistency replay may run whenever stronger jobs
+are not using the CPU.  It is checkpointed and is not part of the residue
+claim above.
 
 ## REMOTE REVIEW HANDOFF — K7 Schur/cover milestone (2026-08-06)
 
