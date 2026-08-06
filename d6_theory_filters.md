@@ -679,3 +679,38 @@ control satisfies `alpha(G)<=2` and has clique number exactly six; relative
 to its distinguished seed, all seven outside vertices are ineligible for
 `Z0` and form one connected non-bipartite component of `L`, which cannot fit
 in either six-dimensional orthonormal bin.
+
+### Bipartite-component zero-forcing rank refinement
+
+The preceding pruning of zero candidates in initially bipartite components
+is safe only while those components are ignored.  The following stronger
+rule uses them and therefore returns to **every** eligible `Z0` of size at
+most six.
+
+Fix a connected bipartite component `C=A union B` of `L-Z0`.  If its Lorentz
+direction is generic, connectivity puts the nonzero factors on one
+non-lightlike projective line over `A` and its orthogonal line over `B`.
+Within `A`, the Gram matrix of the defect vectors has off-diagonal graph
+exactly `G[A]`: a required edge has a nonzero Lorentz product, while a
+candidate nonedge has disjoint allowed masks by `alpha(G)<=2`.  The analogous
+statement holds on `B`.  Every cross-side defect-vector pair is orthogonal,
+as are all the unit vectors indexed by `Z0`.  Ordinary zero forcing therefore
+gives
+
+```text
+|Z0| + (|A|-Zf(G[A])) + (|B|-Zf(G[B])) <= 6.       (K6-bip-rank)
+```
+
+If the component direction is lightlike, its orthogonal line is itself.  All
+component defect vectors are then orthonormal, giving the stronger bound
+`|Z0|+|A|+|B|<=6`, so `K6-bip-rank` remains necessary.  An isolated component
+vertex contributes zero because `Zf(K1)=1`.
+
+The combined exact search exhausts every eligible `Z0`, applies this rule to
+every bipartite component of `L-Z0`, and applies the earlier two-light-ray
+coloring and joint actual-support rules to the non-bipartite components.  On
+the complete 1,098-graph residue after the actual-support refinement it
+rejects one further graph, corpus index `461363`, leaving 1,097.  The full
+proof, all-eligible-`Z0` regression control, source-bound report, and complete
+verifier are in `d6_k6_bipartite_rank_audit.md` and the associated
+`d6_k6_bipartite_rank_*` files.
