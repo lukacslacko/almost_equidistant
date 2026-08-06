@@ -1,0 +1,18 @@
+{
+  "exact_residue": 258,
+  "exact_union": 12581,
+  "graphs": 12839,
+  "intersection": 2724,
+  "manifest": {
+    "path": "d6_k7_rankone_pattern_union.json",
+    "sha256": "1a54fabeb3ebf7f8e5485a88bc52fcfd07fb9ab8706d29ab2a664a895f79e599"
+  },
+  "pattern_954_rejected": 3403,
+  "residue_indices_sha256": "55ab329dbe3ae4dbfa10378ff023a168fc6ab306ffc7af14bbd9790a68108a09",
+  "residue_profiles_checked": 258,
+  "schema": "d6-k7-rankone-pattern-union-verification-v1",
+  "status": "PASS",
+  "tetrad_decision_rows_checked": 12839,
+  "tetrad_rejected": 11902,
+  "verifier_source_sha256": "5b7348f8dc090b945d0ff86f9d9767809656585934064d33b4d45737158779cb"
+}
