@@ -1,6 +1,132 @@
 # Status — f(5) and f(6) campaigns (2026-08-05, ~21:00 push)
 
-## REMOTE REVIEW HANDOFF — exact d=6 profiling milestone (2026-08-06)
+## REMOTE REVIEW HANDOFF — K7 Schur/cover milestone (2026-08-06)
+
+Branch: `codex/dimension6`
+
+Implementation commit: `0380903e1b848fbd3607e8bb91b612d30de75fa3`
+(the handoff text is the immediately following documentation-only commit).
+This supersedes the historical profiling handoff below.
+
+Goal of this milestone: implement the exact `K7`/`K6` Schur-complement
+rules in `REMOTE_STEERING.md`, measure them on all 3,971,787 level-19
+candidates, independently cross-check the decisions, and finish the
+bounded obstruction-library pilot before considering more interval grind.
+
+Commands run: production and sanitizer builds of `profile_d6.c`; exact
+full-corpus profiling with 12 pthread workers; Python and C control
+suites; deterministic sample regeneration; individual C/Python
+cross-checks; the 12-thread obstruction pilot and its exact-rule
+postfilter.  Exact commands are in `d6_profile_manifest.json` and
+`d6_obstruction_pilot_manifest.json`.
+
+Machine/compiler: Apple M2 Pro MacBook Pro, 12 CPU cores, 16 GB RAM,
+macOS 14.5 arm64; Apple clang 16.0.0; Python 3.11.15.  The final exact
+profile took 26.13 s wall / 158.18 s user with all 12 logical CPU cores.
+The integrated 19-core GPU was not used: these kernels are irregular
+integer bitset enumeration and tiny branch-and-bound DFS, not dense
+batched arithmetic for which a Metal port would help.
+
+Corpus and result hashes:
+
+- candidate corpus: `12bc7e87e6e67eb9ff2851982e206410784c6737a6397874c170cc1280b225b5`;
+- raw kill log: `11c790b12d3543f4476f1eb4c221203f806f1c434f06360b7d25346cace5e305`;
+- final profiler source: `46a06aa31f624e1d8b1db254f1179a478273905c964eb6b9d4feb0bb4299a0c0`;
+- final profile JSON: `2229bb5cdea73cb7fd37669747af743e4f673f88aaf2620e37b1d5513e949fde`;
+- 52-graph reference sample: `329a2d7d1490f09f9443911b5080f8418fff2af1d557122d195522d1c1856d63`;
+- obstruction companion manifest: `11ea9a761c7a866795e5bd18145199ddcacae58cc0767c6ea9d6caf87dd2c810`.
+
+Tests and controls:
+
+- `python3 verify_profile_d6.py`: PASS, including fixed totals,
+  population partitions, and manifest hashes;
+- independent Python controls: 8/8 PASS;
+- the same algorithmic controls through compiled C kernels: 7/7 PASS;
+- AddressSanitizer and UndefinedBehaviorSanitizer: PASS on 10,000 corpus
+  graphs with 12 workers;
+- deterministic extraction is byte-identical; C and independent Python
+  decisions agree individually on all 52 graphs, including all four
+  tight-cover witnesses and the two that add new coverage;
+- positive controls include the realizable 18-point lower-bound set and
+  one/two `K7` facet reflections.  Negative controls include Hall/K8,
+  ineligible cover edges, the sharp cover cap, and tight-cover matching.
+
+Exact mathematical conclusions:
+
+- For a fixed `K7`, the exact Schur complement is `R=cc^T/7`.
+  Required outside cliques give the documented support-Hall rule.  It
+  rejects zero corpus graphs because every failure is already a required
+  `K8`; the independent checker constructs that `K8` explicitly.
+- For disjoint allowed defect masks on a required outside edge,
+  `c_x c_y=0`.  Thus `Z={x:c_x=0}` is an eligible vertex cover of `L`,
+  with `|D_x|>=3` for `x in Z` and `|Z|<=7`.  Failure of this bounded
+  cover test rejects 627,356 of the 916,313 deferred graphs.
+- If the eligible cover number is exactly seven, equality in the
+  fourteen-vector `N<=2r` proof forces the seven lifted `Z` vectors to
+  be a second orthonormal basis.  Every possible size-seven cover must
+  therefore have allowed masks admitting a coordinate perfect matching.
+  This tight-cover rule fires on 73 graphs overall and four deferred
+  graphs; two of those four are outside the first cover filter.
+- The `K6` Schur identity is
+  `6R=cc^T-zz^T`, with one positive and one negative direction at most.
+  Its virtual-coordinate Hall rule also rejects zero graphs because its
+  failures are `K8`s.
+- The previous exact union rejected 12,466 deferred graphs, all already
+  contained in the new cover set.  The final exact union rejects 627,358
+  deferred graphs, adding 614,892 over the prior milestone and reducing
+  its 903,847 residue by 68.03%.
+- Final unresolved split: 113,136 `K7` graphs plus 175,819 `K6`-only
+  graphs, total **288,955**.  No interval-engine campaign was restarted.
+
+Heuristic/numerical observations only:
+
+- The audited non-induced containment pilot used 800 deterministic
+  targets, 89 LM-selected `n=14` patterns, 71,200 searches, and 12
+  threads.  Its six timeouts count conservatively as misses.
+- Exact graph rules already certify 81/89 patterns, and their containment
+  coverage is provably redundant with the direct filters.  All 89 contain
+  `K7`, so their coverage of the 175,819 `K6`-only graphs is exactly zero.
+- The eight still-heuristic patterns are 317, 367, 368, 803, 905, 936,
+  952, and 954.  They hit 10/21 sampled current `K7` survivors; the four
+  existing-engine-usable patterns hit 9/21, led by 954 (8) and 952 (+1).
+  This is not a rejection claim.  The population-weighted point estimate
+  over the full residue is 0.186445, with a very wide approximate interval
+  0.110977--0.264797.
+
+Unresolved graphs or cases: all 288,955 final residue graphs.  No one of
+the eight remaining patterns is a certified obstruction.  The exact
+quadratic/bilinear `K7` equations after cover selection and the genuinely
+rank-two Lorentzian `K6` Schur system remain unsolved.
+
+Known trust assumptions: the new decisions are exact integer graph logic;
+candidate nonedges are always optional unit distances/zeros.  The cover
+and tight-frame proofs use the validated `alpha(G)<=2` precondition.  The
+link inputs `f(4)=12` and `f(5)=16` inherit their computer-assisted proof
+assumptions.  No floating-point value decides an exact rejection here.
+
+Files the reviewer should read first: `d6_theory_filters.md`,
+`d6_profile.json`, `d6_profile_manifest.json`, `profile_d6.c`,
+`d6_reference_filters.py`, and `d6_obstruction_pilot_incremental.json`.
+
+Specific questions for the reviewer:
+
+1. What is the strongest next cheap exact consequence of the selected
+   `K7` cover `Z` and `R=cc^T/7` on the 113,136 survivors—support CSP,
+   orthogonal zero-pattern constraints, or direct rational quadrics?
+2. For the larger 175,819 `K6`-only class, can disjoint-support edges in
+   the `1+1` Lorentz factors `(c,z)` yield a finite projective/light-cone
+   propagation rule stronger than the redundant Hall test?
+3. Is it worth rigorously certifying patterns 954 and 952 first, given
+   their 9/21 sampled incremental `K7` coverage, or should effort move
+   immediately to the larger untouched `K6` class?
+4. Can the `N<=2r` proof give useful stable/near-equality restrictions
+   when `|Z|=6`, rather than only the tight `|Z|=7` frame conclusion?
+
+Recommended next local action: do not restart the 288,955-case interval
+grind.  Develop the `K6` Lorentz-factor CSP while, if useful, attempting
+small rigorous certificates only for patterns 954 and 952.
+
+## HISTORICAL REMOTE REVIEW HANDOFF — exact d=6 profiling milestone (2026-08-06)
 
 Branch: `codex/dimension6`
 
