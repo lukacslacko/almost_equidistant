@@ -170,7 +170,14 @@ typedef struct {
     /* runtime */
     int64_t nodes, unresolved;
     int aborted, th0_used;
+    /* per-cell node quota: a circle cell whose subtree exceeds the quota
+       is abandoned and split (management only; never affects kill
+       soundness). cellq_limit==0 means no quota active. */
+    int64_t cellq_start, cellq_limit;
+    int cellq_over;
 } Prob;
+
+#define CELL_QUOTA 4000
 
 typedef struct { V5 p[MAXN]; uint32_t placedmask; int porder[MAXN]; int np; } State;
 
@@ -662,13 +669,48 @@ static void circle_stage_c(Prob *P, State *st, int oi, int v,
         stack[sp].t1 = lo0 + (i+1)*(hi0-lo0)/NINIT; sp++;
     }
     while (sp > 0){
-        if (P->aborted) break;
+        if (P->aborted || P->cellq_over) break;
         Cell cl = stack[--sp];
+        /* own the per-cell quota if no outer stage holds one; cells at
+           the width floor run quota-free (they cannot split further, so
+           abandoning them would only park work that might complete) */
+        int own = (P->cellq_limit == 0 && (cl.t1 - cl.t0) > floor_);
+        if (own){
+            P->cellq_limit = CELL_QUOTA;
+            P->cellq_start = P->nodes;
+            P->cellq_over = 0;
+        }
         IV th = iv(cl.t0, cl.t1);
         V5 x, tc, ts, sum;
-        IV rc_ = imul(r, icosI(th)), rs_ = imul(r, isinI(th));
+        IV cth = icosI(th), sth = isinI(th);
+        IV rc_ = imul(r, cth), rs_ = imul(r, sth);
         vscalev(rc_, u1, tc); vscalev(rs_, u2, ts);
         vaddv(tc, ts, sum); vaddv(c, sum, x);
+        /* certified mean-value form: for every real theta in the cell and
+           every real configuration in the branch, coordinatewise
+             x_i(theta) = x_i(tm) + x_i'(xi) (theta - tm)   for some xi in
+           the cell; enclosing x_i(tm) and x_i' over the whole cell gives a
+           second valid enclosure, O(w^2)-tight on narrow cells. Intersect
+           with the direct form (both contain the true value). */
+        {
+            double tmv = 0.5*(cl.t0 + cl.t1);
+            IV thm = iv(tmv, tmv);
+            IV cm = icosI(thm), sm = isinI(thm);
+            IV dth = isub(th, thm);
+            int deadmv = 0;
+            for (int i=0;i<D && !deadmv;i++){
+                IV base = iadd(c[i], imul(r,
+                              iadd(imul(cm, u1[i]), imul(sm, u2[i]))));
+                IV deriv = imul(r, iadd(imul(ineg(sth), u1[i]),
+                                        imul(cth, u2[i])));
+                IV xmv = iadd(base, imul(deriv, dth));
+                double lo = fmax(x[i].a, xmv.a), hi = fmin(x[i].b, xmv.b);
+                if (lo > hi){ deadmv = 1; break; }
+                x[i] = iv(lo, hi);
+            }
+            if (deadmv) goto cell_done;  /* enclosures disjoint: empty */
+        }
+        {
         int dead = 0;
         for (int w=0; w<nnb; w++){
             if (!edge_ok(x, st->p[nbrids[w]])){
@@ -678,14 +720,28 @@ static void circle_stage_c(Prob *P, State *st, int oi, int v,
                 dead = 1; break;
             }
         }
-        if (dead) continue;
+        if (dead) goto cell_done;
         int64_t before = P->unresolved;
         State st2 = *st;
         memcpy(st2.p[v], x, sizeof(V5));
         st2.placedmask |= (uint32_t)1<<v;
         st2.porder[st2.np++] = v;
-        if (!local_sweep_c(P, &st2, v)) continue;
+        if (!local_sweep_c(P, &st2, v)) goto cell_done;
         dfs(P, &st2, oi+1, cl.t1-cl.t0, 1);
+        if (own && P->cellq_over){
+            /* subtree too expensive at this width: abandon and split
+               (children re-explore; partial parks are discarded) */
+            P->cellq_over = 0;
+            if (cl.t1-cl.t0 > floor_ && sp+2 <= cap){
+                P->unresolved = before;
+                double tm = 0.5*(cl.t0+cl.t1);
+                stack[sp].t0=cl.t0; stack[sp].t1=tm; sp++;
+                stack[sp].t0=tm; stack[sp].t1=cl.t1; sp++;
+            } else {
+                P->unresolved = before + 1;   /* park at width floor */
+            }
+            goto cell_done;
+        }
         if (P->unresolved > before){
             if (cl.t1-cl.t0 > floor_ && sp+2 <= cap){
                 P->unresolved = before;
@@ -694,6 +750,9 @@ static void circle_stage_c(Prob *P, State *st, int oi, int v,
                 stack[sp].t0=tm; stack[sp].t1=cl.t1; sp++;
             }
         }
+        }
+      cell_done:
+        if (own){ P->cellq_limit = 0; P->cellq_over = 0; }
     }
     free(stack);
 }
@@ -714,7 +773,7 @@ static void segment_stage_c(Prob *P, State *st, int oi, int v,
         stack[sp].t1 = lo + (i+1)*(hi-lo)/NIN; sp++;
     }
     while (sp > 0){
-        if (P->aborted) break;
+        if (P->aborted || P->cellq_over) break;
         Cell cl = stack[--sp];
         IV tc = iv(cl.t0, cl.t1);
         V5 x, tn; vscalev(tc, seg->nv, tn); vaddv(seg->xp, tn, x);
@@ -744,8 +803,11 @@ static void segment_stage_c(Prob *P, State *st, int oi, int v,
 
 static int dump_left = -1;   /* CK5_DUMP=N: print first N parked leaves */
 static void dfs(Prob *P, State *st, int oi, double cellw, int has_cellw){
-    if (P->aborted) return;
+    if (P->aborted || P->cellq_over) return;
     if (++P->nodes > P->max_nodes){ P->aborted = 1; return; }
+    if (P->cellq_limit && P->nodes - P->cellq_start > P->cellq_limit){
+        P->cellq_over = 1; return;     /* unwind to the quota owner */
+    }
     if (oi == P->order_len){
         if (final_sweep_c(P, st)){
             P->unresolved++;

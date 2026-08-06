@@ -189,7 +189,7 @@ def main():
     with Pool(args.workers) as pool:
         argsit = ((idx, adj, args.cap) for idx, adj, _ in gen)
         for idx, st, nodes in pool.imap_unordered(_bulk_task, argsit,
-                                                  chunksize=64):
+                                                  chunksize=4):
             if st == "KILLED":
                 killed += 1
                 log.write(f"{idx} 0\n")
