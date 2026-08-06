@@ -1,0 +1,3388 @@
+{
+  "cpu_extraction_seconds": 127.74591391626745,
+  "cpu_workers": 12,
+  "description": "Heuristic batched Apple-MPS optimization of exact-strict-H survivors. No numerical result is a proof or rejection.",
+  "input_sample": {
+    "file": "d6_k7_rank_sample.json",
+    "sha256": "bf699f36a1c90b6d6751498e52fab73e6b58db322c5b71b04accf32623c2c0dd"
+  },
+  "proof_status": "HEURISTIC_ONLY",
+  "schema": 1,
+  "selected_graphs": 84,
+  "selected_indices": [
+    58186,
+    128297,
+    150757,
+    189400,
+    265354,
+    332406,
+    343017,
+    369959,
+    370952,
+    378605,
+    388922,
+    397295,
+    572379,
+    632013,
+    667715,
+    825432,
+    842369,
+    912798,
+    915245,
+    1357170,
+    1462119,
+    1468026,
+    1468149,
+    1605929,
+    1633693,
+    1661903,
+    2193803,
+    2256574,
+    2373890,
+    2453663,
+    2545347,
+    2548658,
+    2592168,
+    2592595,
+    2594493,
+    2619928,
+    2641803,
+    2646137,
+    2646332,
+    2666858,
+    2681964,
+    2682549,
+    2714355,
+    2743446,
+    2744629,
+    2873261,
+    2890993,
+    2934777,
+    2957278,
+    3058835,
+    3088288,
+    3128141,
+    3129009,
+    3164461,
+    3328143,
+    3330537,
+    3330881,
+    3331537,
+    3333486,
+    3336048,
+    3423153,
+    3452028,
+    3470976,
+    3558001,
+    3562725,
+    3576900,
+    3610050,
+    3649646,
+    3726256,
+    3732572,
+    3733344,
+    3830718,
+    3917524,
+    3939503,
+    3946949,
+    3950247,
+    3950770,
+    3950926,
+    3952705,
+    3958767,
+    3959628,
+    3959829,
+    3961502,
+    3968216
+  ],
+  "selection_report": {
+    "file": "d6_k7_strict_h_report.json",
+    "sha256": "d2ff29f493d9997887a392d0e56f228b2395e48a324f3118dcbeeff9949f266f"
+  },
+  "source": {
+    "file": "d6_k7_h_mps_triage.py",
+    "sha256": "6d052258bbe774cdc6bf2bde2855a285eac05312285d160d234ead800cf5c1d2"
+  },
+  "triage": {
+    "batch_shape": [
+      85,
+      32
+    ],
+    "device": "mps",
+    "dtype": "torch.float32",
+    "learning_rate": 0.03,
+    "max_free_parameters": 19,
+    "max_inequalities": 52,
+    "seed": 600719,
+    "steps": 3000,
+    "systems": 85,
+    "targets": [
+      {
+        "best_normalized_minimum_strict_slack": -0.005258760415017605,
+        "best_special_identity_rms": 0.012905804440379143,
+        "clique": [
+          1,
+          3,
+          4,
+          5,
+          7,
+          9
+        ],
+        "free_parameters": 11,
+        "graph_index": 2592168,
+        "nvertices": [
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          15,
+          17
+        ],
+        "problem": 10,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          16,
+          18
+        ],
+        "u": 6,
+        "zmask": 1
+      },
+      {
+        "best_normalized_minimum_strict_slack": -0.004953712224960327,
+        "best_special_identity_rms": 0.014947016723453999,
+        "clique": [
+          1,
+          3,
+          4,
+          5,
+          8,
+          9
+        ],
+        "free_parameters": 11,
+        "graph_index": 2592168,
+        "nvertices": [
+          0,
+          2,
+          3,
+          5,
+          7,
+          10,
+          11,
+          12,
+          13,
+          16,
+          17
+        ],
+        "problem": 17,
+        "seed": [
+          1,
+          6,
+          8,
+          9,
+          14,
+          15,
+          18
+        ],
+        "u": 6,
+        "zmask": 8
+      },
+      {
+        "best_normalized_minimum_strict_slack": -0.00437660189345479,
+        "best_special_identity_rms": 0.011742692440748215,
+        "clique": [
+          2,
+          3,
+          4,
+          5,
+          7,
+          9
+        ],
+        "free_parameters": 11,
+        "graph_index": 2592168,
+        "nvertices": [
+          1,
+          3,
+          5,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          15,
+          17
+        ],
+        "problem": 13,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          16,
+          18
+        ],
+        "u": 6,
+        "zmask": 8
+      },
+      {
+        "best_normalized_minimum_strict_slack": -0.002681434154510498,
+        "best_special_identity_rms": 0.018318744376301765,
+        "clique": [
+          0,
+          3,
+          4,
+          5,
+          8,
+          9
+        ],
+        "free_parameters": 11,
+        "graph_index": 2592168,
+        "nvertices": [
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          11,
+          12,
+          13,
+          16,
+          17
+        ],
+        "problem": 15,
+        "seed": [
+          1,
+          6,
+          8,
+          9,
+          14,
+          15,
+          18
+        ],
+        "u": 6,
+        "zmask": 1
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.000981533550657332,
+        "best_special_identity_rms": 0.009057658724486828,
+        "clique": [
+          2,
+          3,
+          4,
+          6,
+          8,
+          10
+        ],
+        "free_parameters": 11,
+        "graph_index": 2681964,
+        "nvertices": [
+          0,
+          1,
+          2,
+          5,
+          7,
+          9,
+          10,
+          12,
+          14,
+          15,
+          18
+        ],
+        "problem": 65,
+        "seed": [
+          3,
+          4,
+          6,
+          11,
+          13,
+          16,
+          17
+        ],
+        "u": 6,
+        "zmask": 32
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.0003073960542678833,
+        "best_special_identity_rms": 0.008765306323766708,
+        "clique": [
+          0,
+          2,
+          3,
+          6,
+          7,
+          10
+        ],
+        "free_parameters": 11,
+        "graph_index": 3950926,
+        "nvertices": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          7,
+          9,
+          10,
+          11,
+          13,
+          16
+        ],
+        "problem": 72,
+        "seed": [
+          1,
+          6,
+          8,
+          12,
+          14,
+          15,
+          18
+        ],
+        "u": 6,
+        "zmask": 2048
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.023939967155456543,
+        "best_special_identity_rms": 0.0034926533699035645,
+        "clique": [
+          0,
+          2,
+          4,
+          5,
+          7,
+          9
+        ],
+        "free_parameters": 11,
+        "graph_index": 3950926,
+        "nvertices": [
+          1,
+          2,
+          5,
+          7,
+          8,
+          11,
+          12,
+          13,
+          14,
+          15,
+          18
+        ],
+        "problem": 67,
+        "seed": [
+          0,
+          3,
+          4,
+          9,
+          10,
+          16,
+          17
+        ],
+        "u": 6,
+        "zmask": 8
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.008937021717429161,
+        "best_special_identity_rms": 0.003235508454963565,
+        "clique": [
+          0,
+          3,
+          5,
+          7,
+          9,
+          10,
+          11
+        ],
+        "free_parameters": 18,
+        "graph_index": 3950926,
+        "nvertices": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          8,
+          11,
+          12,
+          13,
+          14,
+          15,
+          18
+        ],
+        "problem": 66,
+        "seed": [
+          0,
+          3,
+          4,
+          9,
+          10,
+          16,
+          17
+        ],
+        "u": 7,
+        "zmask": 0
+      },
+      {
+        "best_normalized_minimum_strict_slack": 6.263667455641553e-05,
+        "best_special_identity_rms": 0.0029285207856446505,
+        "clique": [
+          1,
+          3,
+          4,
+          5,
+          7,
+          9
+        ],
+        "free_parameters": 11,
+        "graph_index": 3649646,
+        "nvertices": [
+          0,
+          2,
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          11,
+          13,
+          15
+        ],
+        "problem": 49,
+        "seed": [
+          1,
+          5,
+          8,
+          12,
+          14,
+          16,
+          17
+        ],
+        "u": 6,
+        "zmask": 2048
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.013467639684677124,
+        "best_special_identity_rms": 0.0026237836573272943,
+        "clique": [
+          0,
+          4,
+          6,
+          8,
+          9,
+          10
+        ],
+        "free_parameters": 11,
+        "graph_index": 3950926,
+        "nvertices": [
+          1,
+          2,
+          5,
+          7,
+          8,
+          11,
+          12,
+          13,
+          14,
+          15,
+          18
+        ],
+        "problem": 68,
+        "seed": [
+          0,
+          3,
+          4,
+          9,
+          10,
+          16,
+          17
+        ],
+        "u": 6,
+        "zmask": 8
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.022851169109344482,
+        "best_special_identity_rms": 0.002595978556200862,
+        "clique": [
+          0,
+          3,
+          5,
+          7,
+          9,
+          10
+        ],
+        "free_parameters": 11,
+        "graph_index": 3950926,
+        "nvertices": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          8,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "problem": 70,
+        "seed": [
+          0,
+          3,
+          4,
+          9,
+          10,
+          16,
+          17
+        ],
+        "u": 6,
+        "zmask": 2048
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.023561179637908936,
+        "best_special_identity_rms": 0.0021945375483483076,
+        "clique": [
+          0,
+          2,
+          5,
+          6,
+          8,
+          10
+        ],
+        "free_parameters": 11,
+        "graph_index": 3950926,
+        "nvertices": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          8,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "problem": 69,
+        "seed": [
+          0,
+          3,
+          4,
+          9,
+          10,
+          16,
+          17
+        ],
+        "u": 6,
+        "zmask": 2048
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.00010228157043457031,
+        "best_special_identity_rms": 0.0021627615205943584,
+        "clique": [
+          1,
+          3,
+          4,
+          5,
+          7,
+          9,
+          11
+        ],
+        "free_parameters": 18,
+        "graph_index": 3649646,
+        "nvertices": [
+          0,
+          2,
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          11,
+          13,
+          15,
+          18
+        ],
+        "problem": 45,
+        "seed": [
+          1,
+          5,
+          8,
+          12,
+          14,
+          16,
+          17
+        ],
+        "u": 7,
+        "zmask": 0
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.00028696656227111816,
+        "best_special_identity_rms": 0.0017038268269971013,
+        "clique": [
+          2,
+          4,
+          5,
+          8,
+          9,
+          10
+        ],
+        "free_parameters": 11,
+        "graph_index": 3939503,
+        "nvertices": [
+          0,
+          1,
+          3,
+          5,
+          8,
+          9,
+          11,
+          13,
+          14,
+          16,
+          17
+        ],
+        "problem": 1,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          12,
+          15,
+          18
+        ],
+        "u": 6,
+        "zmask": 64
+      },
+      {
+        "best_normalized_minimum_strict_slack": 6.36664844932966e-05,
+        "best_special_identity_rms": 0.0016230843029916286,
+        "clique": [
+          1,
+          3,
+          4,
+          7,
+          8,
+          10
+        ],
+        "free_parameters": 11,
+        "graph_index": 3950926,
+        "nvertices": [
+          0,
+          1,
+          3,
+          5,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15
+        ],
+        "problem": 74,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          12,
+          16,
+          18
+        ],
+        "u": 6,
+        "zmask": 2048
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.0232410728931427,
+        "best_special_identity_rms": 0.0014526701997965574,
+        "clique": [
+          1,
+          2,
+          3,
+          5,
+          8,
+          10
+        ],
+        "free_parameters": 11,
+        "graph_index": 3649646,
+        "nvertices": [
+          0,
+          1,
+          3,
+          8,
+          9,
+          11,
+          12,
+          14,
+          15,
+          16,
+          17
+        ],
+        "problem": 51,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          10,
+          13,
+          18
+        ],
+        "u": 6,
+        "zmask": 8
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.00012595951557159424,
+        "best_special_identity_rms": 0.001436847262084484,
+        "clique": [
+          0,
+          2,
+          4,
+          7,
+          9,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 3331537,
+        "nvertices": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          18
+        ],
+        "problem": 20,
+        "seed": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          15,
+          16
+        ],
+        "u": 6,
+        "zmask": 1024
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.029245052486658096,
+        "best_special_identity_rms": 0.0014263475313782692,
+        "clique": [
+          1,
+          3,
+          6,
+          7,
+          9,
+          10
+        ],
+        "free_parameters": 11,
+        "graph_index": 3649646,
+        "nvertices": [
+          0,
+          1,
+          3,
+          8,
+          9,
+          11,
+          12,
+          14,
+          15,
+          16,
+          17
+        ],
+        "problem": 52,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          10,
+          13,
+          18
+        ],
+        "u": 6,
+        "zmask": 8
+      },
+      {
+        "best_normalized_minimum_strict_slack": -6.541609764099121e-05,
+        "best_special_identity_rms": 0.0006252230959944427,
+        "clique": [
+          1,
+          4,
+          5,
+          7,
+          8,
+          10
+        ],
+        "free_parameters": 11,
+        "graph_index": 3950926,
+        "nvertices": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          7,
+          9,
+          10,
+          11,
+          13,
+          16
+        ],
+        "problem": 73,
+        "seed": [
+          1,
+          6,
+          8,
+          12,
+          14,
+          15,
+          18
+        ],
+        "u": 6,
+        "zmask": 2048
+      },
+      {
+        "best_normalized_minimum_strict_slack": 1.2675804100581445e-05,
+        "best_special_identity_rms": 0.001128525473177433,
+        "clique": [
+          0,
+          2,
+          3,
+          6,
+          8,
+          10
+        ],
+        "free_parameters": 11,
+        "graph_index": 2681964,
+        "nvertices": [
+          0,
+          1,
+          2,
+          5,
+          7,
+          9,
+          10,
+          12,
+          14,
+          15,
+          18
+        ],
+        "problem": 64,
+        "seed": [
+          3,
+          4,
+          6,
+          11,
+          13,
+          16,
+          17
+        ],
+        "u": 6,
+        "zmask": 32
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.00018194317817687988,
+        "best_special_identity_rms": 0.0010153487091884017,
+        "clique": [
+          1,
+          3,
+          4,
+          6,
+          8,
+          10
+        ],
+        "free_parameters": 11,
+        "graph_index": 3649646,
+        "nvertices": [
+          0,
+          2,
+          3,
+          4,
+          7,
+          9,
+          10,
+          11,
+          13,
+          15,
+          18
+        ],
+        "problem": 47,
+        "seed": [
+          1,
+          5,
+          8,
+          12,
+          14,
+          16,
+          17
+        ],
+        "u": 6,
+        "zmask": 16
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.00018465518951416016,
+        "best_special_identity_rms": 0.0010045841336250305,
+        "clique": [
+          0,
+          2,
+          4,
+          7,
+          9,
+          10,
+          11
+        ],
+        "free_parameters": 18,
+        "graph_index": 3331537,
+        "nvertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          9,
+          10,
+          12,
+          14,
+          15,
+          16
+        ],
+        "problem": 41,
+        "seed": [
+          6,
+          7,
+          8,
+          11,
+          13,
+          17,
+          18
+        ],
+        "u": 7,
+        "zmask": 0
+      },
+      {
+        "best_normalized_minimum_strict_slack": -3.3080577850341797e-06,
+        "best_special_identity_rms": 0.0008851391030475497,
+        "clique": [
+          3,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 3959628,
+        "nvertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          10,
+          11,
+          13,
+          15,
+          16
+        ],
+        "problem": 81,
+        "seed": [
+          5,
+          7,
+          8,
+          9,
+          12,
+          17,
+          18
+        ],
+        "u": 6,
+        "zmask": 512
+      },
+      {
+        "best_normalized_minimum_strict_slack": 7.9286219261121e-05,
+        "best_special_identity_rms": 0.0008964590961113572,
+        "clique": [
+          3,
+          4,
+          6,
+          8,
+          9,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 3331537,
+        "nvertices": [
+          1,
+          3,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          13,
+          17,
+          18
+        ],
+        "problem": 31,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          15,
+          16
+        ],
+        "u": 6,
+        "zmask": 16
+      },
+      {
+        "best_normalized_minimum_strict_slack": 2.7120113372802734e-06,
+        "best_special_identity_rms": 0.0008860130910761654,
+        "clique": [
+          2,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 3959628,
+        "nvertices": [
+          0,
+          1,
+          3,
+          5,
+          8,
+          9,
+          10,
+          11,
+          13,
+          15,
+          16
+        ],
+        "problem": 77,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          12,
+          14,
+          18
+        ],
+        "u": 6,
+        "zmask": 2048
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.0001805424690246582,
+        "best_special_identity_rms": 0.0008844203548505902,
+        "clique": [
+          1,
+          3,
+          4,
+          7,
+          8,
+          10,
+          11
+        ],
+        "free_parameters": 18,
+        "graph_index": 3649646,
+        "nvertices": [
+          0,
+          1,
+          3,
+          5,
+          8,
+          9,
+          11,
+          12,
+          14,
+          15,
+          16,
+          17
+        ],
+        "problem": 50,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          10,
+          13,
+          18
+        ],
+        "u": 7,
+        "zmask": 0
+      },
+      {
+        "best_normalized_minimum_strict_slack": 5.614541805698536e-05,
+        "best_special_identity_rms": 0.000849118281621486,
+        "clique": [
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11
+        ],
+        "free_parameters": 19,
+        "graph_index": 3331537,
+        "nvertices": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          17,
+          18
+        ],
+        "problem": 18,
+        "seed": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          15,
+          16
+        ],
+        "u": 7,
+        "zmask": 0
+      },
+      {
+        "best_normalized_minimum_strict_slack": 5.4389238357543945e-05,
+        "best_special_identity_rms": 0.000837737403344363,
+        "clique": [
+          0,
+          2,
+          3,
+          6,
+          7,
+          10,
+          11
+        ],
+        "free_parameters": 18,
+        "graph_index": 3950926,
+        "nvertices": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          7,
+          9,
+          10,
+          11,
+          13,
+          16,
+          17
+        ],
+        "problem": 71,
+        "seed": [
+          1,
+          6,
+          8,
+          12,
+          14,
+          15,
+          18
+        ],
+        "u": 7,
+        "zmask": 0
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.00012327521108090878,
+        "best_special_identity_rms": 0.0008214509580284357,
+        "clique": [
+          3,
+          4,
+          5,
+          8,
+          9,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 3331537,
+        "nvertices": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          17
+        ],
+        "problem": 26,
+        "seed": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          15,
+          16
+        ],
+        "u": 6,
+        "zmask": 2048
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.0001575946807861328,
+        "best_special_identity_rms": 0.000814226979855448,
+        "clique": [
+          0,
+          1,
+          3,
+          8,
+          9,
+          10,
+          11
+        ],
+        "free_parameters": 18,
+        "graph_index": 3331537,
+        "nvertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          9,
+          10,
+          12,
+          14,
+          15,
+          16
+        ],
+        "problem": 40,
+        "seed": [
+          6,
+          7,
+          8,
+          11,
+          13,
+          17,
+          18
+        ],
+        "u": 7,
+        "zmask": 0
+      },
+      {
+        "best_normalized_minimum_strict_slack": 3.656744956970215e-05,
+        "best_special_identity_rms": 0.0007582239923067391,
+        "clique": [
+          3,
+          4,
+          5,
+          7,
+          9,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 3331537,
+        "nvertices": [
+          1,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          17
+        ],
+        "problem": 36,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          15,
+          16
+        ],
+        "u": 6,
+        "zmask": 2048
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.00017136335372924805,
+        "best_special_identity_rms": 0.0007529272115789354,
+        "clique": [
+          1,
+          4,
+          6,
+          7,
+          8,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 3331537,
+        "nvertices": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          18
+        ],
+        "problem": 21,
+        "seed": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          15,
+          16
+        ],
+        "u": 6,
+        "zmask": 1024
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.00016957521438598633,
+        "best_special_identity_rms": 0.0007510654395446181,
+        "clique": [
+          3,
+          4,
+          5,
+          8,
+          9,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 3331537,
+        "nvertices": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          18
+        ],
+        "problem": 22,
+        "seed": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          15,
+          16
+        ],
+        "u": 6,
+        "zmask": 1024
+      },
+      {
+        "best_normalized_minimum_strict_slack": 1.329183578491211e-05,
+        "best_special_identity_rms": 0.0007501753279939294,
+        "clique": [
+          3,
+          4,
+          5,
+          7,
+          9,
+          10,
+          11
+        ],
+        "free_parameters": 19,
+        "graph_index": 3331537,
+        "nvertices": [
+          1,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          17,
+          18
+        ],
+        "problem": 30,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          15,
+          16
+        ],
+        "u": 7,
+        "zmask": 0
+      },
+      {
+        "best_normalized_minimum_strict_slack": 9.459257125854492e-05,
+        "best_special_identity_rms": 0.0007332520908676088,
+        "clique": [
+          3,
+          4,
+          7,
+          8,
+          9,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 3331537,
+        "nvertices": [
+          2,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          13,
+          17,
+          18
+        ],
+        "problem": 19,
+        "seed": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          15,
+          16
+        ],
+        "u": 6,
+        "zmask": 16
+      },
+      {
+        "best_normalized_minimum_strict_slack": 7.051229476928711e-05,
+        "best_special_identity_rms": 0.0007048927363939583,
+        "clique": [
+          3,
+          4,
+          5,
+          7,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3331537,
+        "nvertices": [
+          1,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13
+        ],
+        "problem": 39,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          15,
+          16
+        ],
+        "u": 5,
+        "zmask": 3072
+      },
+      {
+        "best_normalized_minimum_strict_slack": 8.291006088256836e-05,
+        "best_special_identity_rms": 0.0007042841170914471,
+        "clique": [
+          1,
+          2,
+          5,
+          8,
+          9,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 3328143,
+        "nvertices": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          8,
+          12,
+          13,
+          17,
+          18
+        ],
+        "problem": 59,
+        "seed": [
+          4,
+          7,
+          9,
+          10,
+          11,
+          15,
+          16
+        ],
+        "u": 6,
+        "zmask": 512
+      },
+      {
+        "best_normalized_minimum_strict_slack": 8.249282836914062e-05,
+        "best_special_identity_rms": 0.0007037390605546534,
+        "clique": [
+          2,
+          4,
+          6,
+          7,
+          8,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 3950247,
+        "nvertices": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          10,
+          11,
+          12,
+          16
+        ],
+        "problem": 5,
+        "seed": [
+          3,
+          8,
+          9,
+          13,
+          14,
+          15,
+          18
+        ],
+        "u": 6,
+        "zmask": 2048
+      },
+      {
+        "best_normalized_minimum_strict_slack": 7.805228233337402e-05,
+        "best_special_identity_rms": 0.0007031214772723615,
+        "clique": [
+          0,
+          1,
+          3,
+          7,
+          9,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 3328143,
+        "nvertices": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          8,
+          12,
+          13,
+          14,
+          18
+        ],
+        "problem": 60,
+        "seed": [
+          4,
+          7,
+          9,
+          10,
+          11,
+          15,
+          16
+        ],
+        "u": 6,
+        "zmask": 1024
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.00014281272888183594,
+        "best_special_identity_rms": 0.0006878266576677561,
+        "clique": [
+          2,
+          4,
+          6,
+          7,
+          8
+        ],
+        "free_parameters": 6,
+        "graph_index": 3950247,
+        "nvertices": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          10,
+          11,
+          12
+        ],
+        "problem": 8,
+        "seed": [
+          3,
+          8,
+          9,
+          13,
+          14,
+          15,
+          18
+        ],
+        "u": 5,
+        "zmask": 3072
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.0001423954963684082,
+        "best_special_identity_rms": 0.0006874980754218996,
+        "clique": [
+          3,
+          4,
+          5,
+          8,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3331537,
+        "nvertices": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13
+        ],
+        "problem": 29,
+        "seed": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          15,
+          16
+        ],
+        "u": 5,
+        "zmask": 3072
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.00014209747314453125,
+        "best_special_identity_rms": 0.0006857342086732388,
+        "clique": [
+          1,
+          4,
+          6,
+          7,
+          8
+        ],
+        "free_parameters": 6,
+        "graph_index": 3328143,
+        "nvertices": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          8,
+          12,
+          13,
+          18
+        ],
+        "problem": 63,
+        "seed": [
+          4,
+          7,
+          9,
+          10,
+          11,
+          15,
+          16
+        ],
+        "u": 5,
+        "zmask": 1536
+      },
+      {
+        "best_normalized_minimum_strict_slack": 3.170967102050781e-05,
+        "best_special_identity_rms": 0.0006819593836553395,
+        "clique": [
+          0,
+          2,
+          4,
+          7,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3331537,
+        "nvertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          9,
+          10,
+          12,
+          16
+        ],
+        "problem": 43,
+        "seed": [
+          6,
+          7,
+          8,
+          11,
+          13,
+          17,
+          18
+        ],
+        "u": 5,
+        "zmask": 1536
+      },
+      {
+        "best_normalized_minimum_strict_slack": 7.644295692443848e-05,
+        "best_special_identity_rms": 0.0006769986939616501,
+        "clique": [
+          1,
+          3,
+          4,
+          6,
+          7,
+          10
+        ],
+        "free_parameters": 11,
+        "graph_index": 3939503,
+        "nvertices": [
+          0,
+          1,
+          3,
+          5,
+          8,
+          9,
+          11,
+          13,
+          14,
+          16,
+          17
+        ],
+        "problem": 0,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          12,
+          15,
+          18
+        ],
+        "u": 6,
+        "zmask": 64
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.015181824564933777,
+        "best_special_identity_rms": 0.000675731513183564,
+        "clique": [
+          0,
+          5,
+          6,
+          7,
+          8
+        ],
+        "free_parameters": 6,
+        "graph_index": 3331537,
+        "nvertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          9,
+          10,
+          12,
+          16
+        ],
+        "problem": 44,
+        "seed": [
+          6,
+          7,
+          8,
+          11,
+          13,
+          17,
+          18
+        ],
+        "u": 5,
+        "zmask": 1536
+      },
+      {
+        "best_normalized_minimum_strict_slack": 2.8614756956812926e-05,
+        "best_special_identity_rms": 0.0006670721923001111,
+        "clique": [
+          0,
+          1,
+          2,
+          5,
+          7,
+          9
+        ],
+        "free_parameters": 11,
+        "graph_index": 3939503,
+        "nvertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          9,
+          12,
+          14,
+          15,
+          17
+        ],
+        "problem": 2,
+        "seed": [
+          6,
+          7,
+          8,
+          11,
+          13,
+          16,
+          18
+        ],
+        "u": 6,
+        "zmask": 128
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.015181750059127808,
+        "best_special_identity_rms": 0.0006619241903536022,
+        "clique": [
+          0,
+          1,
+          3,
+          8,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3331537,
+        "nvertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          9,
+          10,
+          12,
+          16
+        ],
+        "problem": 42,
+        "seed": [
+          6,
+          7,
+          8,
+          11,
+          13,
+          17,
+          18
+        ],
+        "u": 5,
+        "zmask": 1536
+      },
+      {
+        "best_normalized_minimum_strict_slack": 7.11679458618164e-05,
+        "best_special_identity_rms": 0.0006618020706810057,
+        "clique": [
+          3,
+          4,
+          5,
+          7,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3328143,
+        "nvertices": [
+          1,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13
+        ],
+        "problem": 55,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          17,
+          18
+        ],
+        "u": 5,
+        "zmask": 3072
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.015173256397247314,
+        "best_special_identity_rms": 0.0006418760167434812,
+        "clique": [
+          3,
+          4,
+          6,
+          8,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3331537,
+        "nvertices": [
+          1,
+          3,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          13,
+          18
+        ],
+        "problem": 35,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          15,
+          16
+        ],
+        "u": 5,
+        "zmask": 1040
+      },
+      {
+        "best_normalized_minimum_strict_slack": 7.268786430358887e-05,
+        "best_special_identity_rms": 0.0006255179760046303,
+        "clique": [
+          0,
+          1,
+          2,
+          4,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3950247,
+        "nvertices": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          10,
+          11,
+          12
+        ],
+        "problem": 6,
+        "seed": [
+          3,
+          8,
+          9,
+          13,
+          14,
+          15,
+          18
+        ],
+        "u": 5,
+        "zmask": 3072
+      },
+      {
+        "best_normalized_minimum_strict_slack": 7.426738739013672e-05,
+        "best_special_identity_rms": 0.0006083804182708263,
+        "clique": [
+          0,
+          2,
+          4,
+          7,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3331537,
+        "nvertices": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13
+        ],
+        "problem": 27,
+        "seed": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          15,
+          16
+        ],
+        "u": 5,
+        "zmask": 3072
+      },
+      {
+        "best_normalized_minimum_strict_slack": 7.304549217224121e-05,
+        "best_special_identity_rms": 0.0005837870994582772,
+        "clique": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3959628,
+        "nvertices": [
+          0,
+          1,
+          5,
+          8,
+          9,
+          10,
+          11,
+          13,
+          15,
+          16
+        ],
+        "problem": 80,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          12,
+          14,
+          18
+        ],
+        "u": 5,
+        "zmask": 2052
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.015173584222793579,
+        "best_special_identity_rms": 0.0005830939044244587,
+        "clique": [
+          0,
+          3,
+          6,
+          7,
+          8
+        ],
+        "free_parameters": 6,
+        "graph_index": 3328143,
+        "nvertices": [
+          0,
+          1,
+          2,
+          5,
+          7,
+          8,
+          9,
+          10,
+          12,
+          13
+        ],
+        "problem": 56,
+        "seed": [
+          3,
+          4,
+          6,
+          11,
+          14,
+          17,
+          18
+        ],
+        "u": 5,
+        "zmask": 3072
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.00015300512313842773,
+        "best_special_identity_rms": 0.0005729582626372576,
+        "clique": [
+          1,
+          2,
+          3,
+          6,
+          7
+        ],
+        "free_parameters": 6,
+        "graph_index": 3959628,
+        "nvertices": [
+          0,
+          1,
+          5,
+          8,
+          9,
+          10,
+          11,
+          13,
+          15,
+          16
+        ],
+        "problem": 79,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          12,
+          14,
+          18
+        ],
+        "u": 5,
+        "zmask": 2052
+      },
+      {
+        "best_normalized_minimum_strict_slack": -4.1425228118896484e-06,
+        "best_special_identity_rms": 0.0005225962377153337,
+        "clique": [
+          0,
+          2,
+          4,
+          5,
+          8,
+          9
+        ],
+        "free_parameters": 11,
+        "graph_index": 2592168,
+        "nvertices": [
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          11,
+          12,
+          13,
+          16,
+          17
+        ],
+        "problem": 14,
+        "seed": [
+          1,
+          6,
+          8,
+          9,
+          14,
+          15,
+          18
+        ],
+        "u": 6,
+        "zmask": 1
+      },
+      {
+        "best_normalized_minimum_strict_slack": 7.462501525878906e-05,
+        "best_special_identity_rms": 0.000556807906832546,
+        "clique": [
+          0,
+          2,
+          5,
+          8,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3328143,
+        "nvertices": [
+          1,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13
+        ],
+        "problem": 53,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          17,
+          18
+        ],
+        "u": 5,
+        "zmask": 3072
+      },
+      {
+        "best_normalized_minimum_strict_slack": -2.0937684894306585e-05,
+        "best_special_identity_rms": 0.0003441433364059776,
+        "clique": [
+          0,
+          1,
+          2,
+          5,
+          8,
+          10
+        ],
+        "free_parameters": 11,
+        "graph_index": 3939503,
+        "nvertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          9,
+          10,
+          12,
+          14,
+          15
+        ],
+        "problem": 3,
+        "seed": [
+          6,
+          7,
+          8,
+          11,
+          13,
+          16,
+          18
+        ],
+        "u": 6,
+        "zmask": 2048
+      },
+      {
+        "best_normalized_minimum_strict_slack": 7.426738739013672e-05,
+        "best_special_identity_rms": 0.0005509878392331302,
+        "clique": [
+          0,
+          2,
+          4,
+          7,
+          8
+        ],
+        "free_parameters": 6,
+        "graph_index": 3331537,
+        "nvertices": [
+          1,
+          3,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          13,
+          18
+        ],
+        "problem": 33,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          15,
+          16
+        ],
+        "u": 5,
+        "zmask": 1040
+      },
+      {
+        "best_normalized_minimum_strict_slack": 1.9103288650512695e-05,
+        "best_special_identity_rms": 0.000537342217285186,
+        "clique": [
+          3,
+          4,
+          5,
+          7,
+          9,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 3331537,
+        "nvertices": [
+          1,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          18
+        ],
+        "problem": 32,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          15,
+          16
+        ],
+        "u": 6,
+        "zmask": 1024
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.00011068582534790039,
+        "best_special_identity_rms": 0.0005294496659189463,
+        "clique": [
+          0,
+          2,
+          4,
+          5,
+          7
+        ],
+        "free_parameters": 6,
+        "graph_index": 3959628,
+        "nvertices": [
+          0,
+          1,
+          5,
+          8,
+          9,
+          10,
+          11,
+          13,
+          15,
+          16
+        ],
+        "problem": 78,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          12,
+          14,
+          18
+        ],
+        "u": 5,
+        "zmask": 2052
+      },
+      {
+        "best_normalized_minimum_strict_slack": 6.645917892456055e-06,
+        "best_special_identity_rms": 0.0005205570487305522,
+        "clique": [
+          2,
+          3,
+          4,
+          5,
+          7,
+          9
+        ],
+        "free_parameters": 11,
+        "graph_index": 2592168,
+        "nvertices": [
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          15,
+          17
+        ],
+        "problem": 11,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          16,
+          18
+        ],
+        "u": 6,
+        "zmask": 1
+      },
+      {
+        "best_normalized_minimum_strict_slack": 9.870529174804688e-05,
+        "best_special_identity_rms": 0.0005180489388294518,
+        "clique": [
+          0,
+          2,
+          3,
+          5,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3959628,
+        "nvertices": [
+          0,
+          1,
+          2,
+          4,
+          6,
+          10,
+          11,
+          13,
+          15,
+          16
+        ],
+        "problem": 82,
+        "seed": [
+          5,
+          7,
+          8,
+          9,
+          12,
+          17,
+          18
+        ],
+        "u": 5,
+        "zmask": 520
+      },
+      {
+        "best_normalized_minimum_strict_slack": 8.857250213623047e-05,
+        "best_special_identity_rms": 0.0005084973527118564,
+        "clique": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3959628,
+        "nvertices": [
+          0,
+          1,
+          2,
+          4,
+          6,
+          10,
+          11,
+          13,
+          15,
+          16
+        ],
+        "problem": 84,
+        "seed": [
+          5,
+          7,
+          8,
+          9,
+          12,
+          17,
+          18
+        ],
+        "u": 5,
+        "zmask": 520
+      },
+      {
+        "best_normalized_minimum_strict_slack": 4.351139068603516e-06,
+        "best_special_identity_rms": 0.0005067632882855833,
+        "clique": [
+          0,
+          1,
+          3,
+          5,
+          8,
+          9
+        ],
+        "free_parameters": 11,
+        "graph_index": 2592168,
+        "nvertices": [
+          0,
+          2,
+          3,
+          5,
+          7,
+          10,
+          11,
+          12,
+          13,
+          16,
+          17
+        ],
+        "problem": 16,
+        "seed": [
+          1,
+          6,
+          8,
+          9,
+          14,
+          15,
+          18
+        ],
+        "u": 6,
+        "zmask": 8
+      },
+      {
+        "best_normalized_minimum_strict_slack": 6.371736526489258e-05,
+        "best_special_identity_rms": 0.0005066677113063633,
+        "clique": [
+          0,
+          2,
+          3,
+          5,
+          8,
+          9
+        ],
+        "free_parameters": 11,
+        "graph_index": 3649646,
+        "nvertices": [
+          0,
+          2,
+          3,
+          4,
+          7,
+          9,
+          10,
+          11,
+          13,
+          15,
+          18
+        ],
+        "problem": 46,
+        "seed": [
+          1,
+          5,
+          8,
+          12,
+          14,
+          16,
+          17
+        ],
+        "u": 6,
+        "zmask": 16
+      },
+      {
+        "best_normalized_minimum_strict_slack": 1.3321638107299805e-05,
+        "best_special_identity_rms": 0.00050036032916978,
+        "clique": [
+          0,
+          2,
+          4,
+          5,
+          7,
+          9
+        ],
+        "free_parameters": 11,
+        "graph_index": 2592168,
+        "nvertices": [
+          1,
+          3,
+          5,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          15,
+          17
+        ],
+        "problem": 12,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          16,
+          18
+        ],
+        "u": 6,
+        "zmask": 8
+      },
+      {
+        "best_normalized_minimum_strict_slack": 8.511543273925781e-05,
+        "best_special_identity_rms": 0.000499736110214144,
+        "clique": [
+          3,
+          4,
+          7,
+          8,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3331537,
+        "nvertices": [
+          2,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          13,
+          18
+        ],
+        "problem": 25,
+        "seed": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          15,
+          16
+        ],
+        "u": 5,
+        "zmask": 1040
+      },
+      {
+        "best_normalized_minimum_strict_slack": 6.073713302612305e-05,
+        "best_special_identity_rms": 0.0004838492604903877,
+        "clique": [
+          0,
+          2,
+          6,
+          8,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3331537,
+        "nvertices": [
+          2,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          13,
+          18
+        ],
+        "problem": 23,
+        "seed": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          15,
+          16
+        ],
+        "u": 5,
+        "zmask": 1040
+      },
+      {
+        "best_normalized_minimum_strict_slack": -4.112720489501953e-06,
+        "best_special_identity_rms": 0.00043547493987716734,
+        "clique": [
+          3,
+          5,
+          7,
+          8,
+          9,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 369959,
+        "nvertices": [
+          0,
+          1,
+          2,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          15
+        ],
+        "problem": 75,
+        "seed": [
+          5,
+          12,
+          13,
+          14,
+          16,
+          17,
+          18
+        ],
+        "u": 6,
+        "zmask": 8
+      },
+      {
+        "best_normalized_minimum_strict_slack": 6.39110803604126e-05,
+        "best_special_identity_rms": 0.0004708519554696977,
+        "clique": [
+          0,
+          2,
+          3,
+          6,
+          9,
+          10
+        ],
+        "free_parameters": 11,
+        "graph_index": 3649646,
+        "nvertices": [
+          0,
+          2,
+          3,
+          4,
+          6,
+          7,
+          9,
+          10,
+          11,
+          13,
+          15
+        ],
+        "problem": 48,
+        "seed": [
+          1,
+          5,
+          8,
+          12,
+          14,
+          16,
+          17
+        ],
+        "u": 6,
+        "zmask": 2048
+      },
+      {
+        "best_normalized_minimum_strict_slack": 4.6193599700927734e-05,
+        "best_special_identity_rms": 0.000469128048280254,
+        "clique": [
+          1,
+          5,
+          6,
+          7,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3331537,
+        "nvertices": [
+          2,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          13,
+          18
+        ],
+        "problem": 24,
+        "seed": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          15,
+          16
+        ],
+        "u": 5,
+        "zmask": 1040
+      },
+      {
+        "best_normalized_minimum_strict_slack": 4.989869921701029e-05,
+        "best_special_identity_rms": 0.00044376225559972227,
+        "clique": [
+          0,
+          2,
+          5,
+          8,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3331537,
+        "nvertices": [
+          1,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13
+        ],
+        "problem": 37,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          15,
+          16
+        ],
+        "u": 5,
+        "zmask": 3072
+      },
+      {
+        "best_normalized_minimum_strict_slack": 5.245208740234375e-06,
+        "best_special_identity_rms": 0.00044203316792845726,
+        "clique": [
+          1,
+          2,
+          4,
+          6,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3959628,
+        "nvertices": [
+          0,
+          1,
+          2,
+          4,
+          6,
+          10,
+          11,
+          13,
+          15,
+          16
+        ],
+        "problem": 83,
+        "seed": [
+          5,
+          7,
+          8,
+          9,
+          12,
+          17,
+          18
+        ],
+        "u": 5,
+        "zmask": 520
+      },
+      {
+        "best_normalized_minimum_strict_slack": 3.406405448913574e-05,
+        "best_special_identity_rms": 0.00044151893234811723,
+        "clique": [
+          0,
+          1,
+          3,
+          4,
+          8,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 369959,
+        "nvertices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          15
+        ],
+        "problem": 76,
+        "seed": [
+          5,
+          12,
+          13,
+          14,
+          16,
+          17,
+          18
+        ],
+        "u": 6,
+        "zmask": 16
+      },
+      {
+        "best_normalized_minimum_strict_slack": 4.225969314575195e-05,
+        "best_special_identity_rms": 0.00040272471960633993,
+        "clique": [
+          2,
+          3,
+          5,
+          6,
+          9,
+          10
+        ],
+        "free_parameters": 12,
+        "graph_index": 3958767,
+        "nvertices": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          12,
+          14
+        ],
+        "problem": 9,
+        "seed": [
+          3,
+          10,
+          11,
+          13,
+          15,
+          17,
+          18
+        ],
+        "u": 6,
+        "zmask": 2048
+      },
+      {
+        "best_normalized_minimum_strict_slack": 3.6752313462784514e-05,
+        "best_special_identity_rms": 0.0003896144335158169,
+        "clique": [
+          0,
+          3,
+          4,
+          6,
+          7,
+          9
+        ],
+        "free_parameters": 11,
+        "graph_index": 3939503,
+        "nvertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          9,
+          10,
+          12,
+          14,
+          15
+        ],
+        "problem": 4,
+        "seed": [
+          6,
+          7,
+          8,
+          11,
+          13,
+          16,
+          18
+        ],
+        "u": 6,
+        "zmask": 2048
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.01515573263168335,
+        "best_special_identity_rms": 0.0003860706347040832,
+        "clique": [
+          2,
+          3,
+          5,
+          6,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3950247,
+        "nvertices": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          10,
+          11,
+          12
+        ],
+        "problem": 7,
+        "seed": [
+          3,
+          8,
+          9,
+          13,
+          14,
+          15,
+          18
+        ],
+        "u": 5,
+        "zmask": 3072
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.015155404806137085,
+        "best_special_identity_rms": 0.00038534554187208414,
+        "clique": [
+          1,
+          2,
+          5,
+          8,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3328143,
+        "nvertices": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          8,
+          12,
+          13,
+          18
+        ],
+        "problem": 62,
+        "seed": [
+          4,
+          7,
+          9,
+          10,
+          11,
+          15,
+          16
+        ],
+        "u": 5,
+        "zmask": 1536
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.015152499079704285,
+        "best_special_identity_rms": 0.0003511691465973854,
+        "clique": [
+          0,
+          1,
+          3,
+          7,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3328143,
+        "nvertices": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          8,
+          12,
+          13,
+          18
+        ],
+        "problem": 61,
+        "seed": [
+          4,
+          7,
+          9,
+          10,
+          11,
+          15,
+          16
+        ],
+        "u": 5,
+        "zmask": 1536
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.015088528394699097,
+        "best_special_identity_rms": 0.00034068062086589634,
+        "clique": [
+          2,
+          3,
+          4,
+          7,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3328143,
+        "nvertices": [
+          0,
+          1,
+          2,
+          5,
+          7,
+          8,
+          9,
+          10,
+          12,
+          13
+        ],
+        "problem": 58,
+        "seed": [
+          3,
+          4,
+          6,
+          11,
+          14,
+          17,
+          18
+        ],
+        "u": 5,
+        "zmask": 3072
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.015093237161636353,
+        "best_special_identity_rms": 0.00028924335492774844,
+        "clique": [
+          1,
+          4,
+          6,
+          7,
+          8
+        ],
+        "free_parameters": 6,
+        "graph_index": 3331537,
+        "nvertices": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13
+        ],
+        "problem": 28,
+        "seed": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          15,
+          16
+        ],
+        "u": 5,
+        "zmask": 3072
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.01510348916053772,
+        "best_special_identity_rms": 0.00017849731375463307,
+        "clique": [
+          1,
+          3,
+          5,
+          8,
+          9
+        ],
+        "free_parameters": 6,
+        "graph_index": 3328143,
+        "nvertices": [
+          0,
+          1,
+          2,
+          5,
+          7,
+          8,
+          9,
+          10,
+          12,
+          13
+        ],
+        "problem": 57,
+        "seed": [
+          3,
+          4,
+          6,
+          11,
+          14,
+          17,
+          18
+        ],
+        "u": 5,
+        "zmask": 3072
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.015130266547203064,
+        "best_special_identity_rms": 0.00010587383439997211,
+        "clique": [
+          1,
+          5,
+          6,
+          7,
+          8
+        ],
+        "free_parameters": 6,
+        "graph_index": 3331537,
+        "nvertices": [
+          1,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13
+        ],
+        "problem": 38,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          15,
+          16
+        ],
+        "u": 5,
+        "zmask": 3072
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.015128955245018005,
+        "best_special_identity_rms": 9.362884156871587e-05,
+        "clique": [
+          1,
+          4,
+          5,
+          6,
+          7
+        ],
+        "free_parameters": 6,
+        "graph_index": 3331537,
+        "nvertices": [
+          1,
+          3,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          13,
+          18
+        ],
+        "problem": 34,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          15,
+          16
+        ],
+        "u": 5,
+        "zmask": 1040
+      },
+      {
+        "best_normalized_minimum_strict_slack": 0.015116512775421143,
+        "best_special_identity_rms": 4.0541803173255175e-05,
+        "clique": [
+          1,
+          5,
+          6,
+          7,
+          8
+        ],
+        "free_parameters": 6,
+        "graph_index": 3328143,
+        "nvertices": [
+          1,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13
+        ],
+        "problem": 54,
+        "seed": [
+          0,
+          2,
+          4,
+          10,
+          14,
+          17,
+          18
+        ],
+        "u": 5,
+        "zmask": 3072
+      }
+    ],
+    "wall_seconds": 56.52156774979085
+  }
+}
