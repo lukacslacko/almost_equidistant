@@ -489,3 +489,28 @@ of being written, so commit time = write time). Procedure fixed:
 every future block header comes from running `date` at write time.
 Apologies — of all files, the transparency log should not contain
 invented numbers.
+
+## 16:40 append — reviewed codex/dimension6; division of labor
+
+Reviewed the parallel branch (local Codex + ChatGPT-Pro reviewer, per its
+AGENTS.md protocol). Substance: exact graph-only filters around required
+K7 seeds — link-size bounds (using our f(5)=16 for the K2 link), a
+facet-reflection coincidence rule, a defect-support CSP, and the
+workhorse: a disjoint-edge bounded-cover rule (outside vertices with
+c_x=0 must vertex-cover a certain edge set; a lovely lift-to-R^7
+orthogonality argument bounds that cover by 7). Their full-population
+profile claims 3,680,381 of 3,971,787 candidates rejected by exact
+rules alone; residue 288,955 = 113,136 with-K7 + 175,819 K6-only.
+
+My independent verification so far: derivations re-checked by hand
+(sound, including the N<=14 trace bound); the underlying simplex
+identities verified numerically over 4,000 random configurations
+(verify_codex_identities.py — all pass). Still owed before their kills
+enter our certified ledger: an independent reimplementation of the
+bounded-cover check cross-checked against their profiler on a sample.
+
+Division of labor from here: the codex track owns K7-seed exact filters;
+my track (a) supplies the independent cross-check, and (b) attacks the
+population their rules cannot touch by construction — the 175,819
+K6-only graphs — with the interval engine + obstruction machinery
+(drills and n=15 coverage still running for exactly that purpose).
