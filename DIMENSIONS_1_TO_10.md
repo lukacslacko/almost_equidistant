@@ -212,7 +212,11 @@ almost equidistant.  The union has `16+10=26` distinct points, proving
 f(10) ≥ 26.
 ```
 
-This construction was derived during this project on 2026-08-06.  This file
+This construction was derived during this project on 2026-08-06 and has
+been machine-verified in exact rational arithmetic at the Gram level
+([`verify_lower_bound_26_d10.py`](verify_lower_bound_26_d10.py): both
+component Grams are PSD of rank 5, all 26 points distinct, every triple
+contains a unit pair).  This file
 makes no priority claim: a dedicated literature check should precede any
 claim that the bound is new.  The Petersen component is closely related to the
 standard ten equiangular lines of common angle `1/3` in `R^5`.

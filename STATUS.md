@@ -429,3 +429,15 @@ half-hour regardless of wakeup mechanics.
   to high-edge patterns (rule already stated).
 - Meta: two runs active (certify pool 24 workers, drill 10) — full
   machine, no idle cores, no zombies (verified process count 36).
+
+## 16:15 append — cadence block
+
+- f(10) >= 26: the 26-point construction added to DIMENSIONS_1_TO_10.md
+  (half-cube (5/8) orthogonally joined with the Petersen equiangular set
+  (3/8)) is now machine-verified in exact rational arithmetic
+  (verify_lower_bound_26_d10.py): component Grams PSD rank 5, 26
+  distinct points, every triple has a unit pair. Tracker annotated.
+- d=6: certified count unchanged (3,055,480/3,971,787). Pattern #952
+  under certification; #569's 3-hot-slice drill still computing
+  (silent-by-design until verdict; ~1 h in). Patterns #569/#571 remain
+  the gating items for the ~70%-coverage containment sweep.
