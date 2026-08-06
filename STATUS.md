@@ -441,3 +441,26 @@ half-hour regardless of wakeup mechanics.
   under certification; #569's 3-hot-slice drill still computing
   (silent-by-design until verdict; ~1 h in). Patterns #569/#571 remain
   the gating items for the ~70%-coverage containment sweep.
+
+## 16:50 append — cadence block: the obstruction pool has the d=4 disease
+
+- Certified: 3,055,480 / 3,971,787 (unchanged; library phase).
+- Verdicts: #569 dec-0 drill FLOOR-PARKED at a point theta* ~ 80.406 deg;
+  deep LM (3000 restarts) then revealed why: #569 and #571 possess EXACT
+  DEGENERATE solutions (residual ~1e-31 with coincident points) — the
+  identically-degenerate channel exactly as in the d=4 campaign. Such
+  patterns remain VALID obstruction candidates (only distinct-point
+  realizations matter), but the engine's coincidence rules stall at the
+  collapsed configurations, so certification needs a parametrization
+  where the degeneracy is not tangent. #569 has only 2 parametrizations;
+  dec 1 drill now running with 14 workers. #952 is near-realizable with
+  distinct points (residual 3e-2 at 3000 restarts) — discarded from the
+  pool. #406 exposed a bug (zero parametrizations — needs the 2-sphere
+  stage, same as the d=5 half-cube) — guard pending.
+- Parallel hedge: building the n=15 pool (more edges per vertex => less
+  degeneracy-prone, likely more certifiable; coverage to be re-measured)
+  — triangleramsey 15 + filter + LM screen running.
+- Honest odds: the obstruction strategy is still alive but its frequent
+  patterns are exactly the flexible ones; expect the usable library to
+  come from mid-frequency, higher-edge patterns. If the n=15 screen and
+  #569-dec-1 both fail, the strategy gets re-evaluated from scratch.
