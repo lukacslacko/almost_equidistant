@@ -1,0 +1,57 @@
+{
+  "checkpoint_directory": ".runs/d6_k7_joint_support_full",
+  "checkpoint_files_sha256": "569ff30ccdfb28afc444ff4f65869f3616d51e3ec1e037ea27762f183425af33",
+  "completed": 258,
+  "config": {
+    "decision_fields": [
+      "ordinal",
+      "index",
+      "status",
+      "seeds",
+      "covers",
+      "current_passing_covers",
+      "joint_pre_capacity_failing_covers",
+      "pre_capacity_passing_covers",
+      "capacity_passing_covers",
+      "capacity_incremental_failing_covers",
+      "capacity_unresolved_covers",
+      "labeled_z_families",
+      "pre_capacity_passing_families",
+      "capacity_feasible_families",
+      "capacity_infeasible_families",
+      "capacity_unresolved_families",
+      "capacity_nodes",
+      "error_type"
+    ],
+    "node_limit": 200000,
+    "schema": 1,
+    "selection_count": 258,
+    "selection_indices_sha256": "55ab329dbe3ae4dbfa10378ff023a168fc6ab306ffc7af14bbd9790a68108a09",
+    "source_sha256": {
+      ".runs/d6_k7_rank_survivors.json": "7a0a350142930e4e13830ea44c4fd217f25aeb07bbd6286e51e316f72712c4f9",
+      "d6_k7_positive_dual_full_certificates.jsonl.gz": "3adaa7e562dfb9241f205e3e7d2384805dbe7296f9677d76f2f23ce913a4ce7f",
+      "d6_k7_rank_reference.py": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+      "d6_k7_rankone_pattern_union.json": "1a54fabeb3ebf7f8e5485a88bc52fcfd07fb9ab8706d29ab2a664a895f79e599",
+      "d6_k7_rankone_pattern_union_verification.json": "7b9d5e35bf787e5d05aa486f914416598c31836264a479fbbc1af117f1dfcc14",
+      "d6_k7_rankone_tetrad_full_certificates.jsonl.gz": "f719dbb6492fc20fb3103cb79079567aa2cad163835f97e750412c3d27897c50",
+      "d6_k7_rankone_tetrad_full_decisions.tsv.gz": "2552ce91f52727d9beda60d99d534c1d5a0be3f93686ab321f223d8e0d11dfc1",
+      "d6_k7_rankone_tetrad_full_report.json": "ae2075ac83abcdfc0b7d42f63b9515c4e48b40cf9c976178aa366d151a78996a",
+      "d6_k7_rankone_tetrad_full_verification_report.json": "1812524c835fd6635b9815c0f0c25e9a49d99ff5d3b042e4b194ac5d7898dc97",
+      "d6_k7_small_support_value.py": "bed5987c89fbef2ef36762051ae7fa3414fd381a6246032b06857a557f13743f",
+      "d6_k7_small_support_value_full_decisions.tsv.gz": "9f70e0e267fe97bc2f6a2890cae47d8b1c882974d5f054f16b4673bfb45ee003",
+      "d6_k7_small_support_value_full_report.json": "cea64f3dde804e0766c5b77e373aa50338d5bee6e5e54f44749f4e387cf529aa",
+      "d6_k7_special_h_reference.py": "e649633d7262941c9c4608ea694ae0a5d6f29c146d47060c3dae71a036a9d190",
+      "d6_k7_support_capacity.py": "df8c010faac37f9de5481316cc8ccf58e8df46230bd9d1e8542f7a4322b64996",
+      "d6_k7_support_propagation.py": "578103f70d2906fbb3d449b7b7b5c1b6c86e5ae17afb0c341602a543bea69f0c",
+      "run_d6_k7_joint_support_full.py": "db74a8ac4635f2acbf36672d813340a9b94e78e875be5cf370063574f9dab493",
+      "run_d6_k7_support_capacity_pilot.py": "9af542217d178bec2a71cb4c30faabc3dea8c8279053d729d924d9ca35eb128a"
+    }
+  },
+  "config_sha256": "73b95fc921805be327e827d0cfc65f5632c0d79cd7ac38ef3630e8a2dc3ec52a",
+  "schema": 1,
+  "status": "COMPLETE",
+  "status_counts": {
+    "JOINT_PRE_CAPACITY_REJECTED": 69,
+    "SURVIVOR": 189
+  }
+}
