@@ -359,3 +359,17 @@ half-hour regardless of wakeup mechanics.
   pools (3969/18917 minimal graphs, more non-realizable but harder to
   embed), or accept that f(6) needs weeks/another idea entirely.
 - f(5) = 16 remains landed and pushed; nothing in d=6 affects it.
+
+## 13:58 append — cadence block
+
+- Certified: 3,055,480 / 3,971,787 (delta +6 since last block — the
+  stragglers of a killed run; no live kill campaign at the moment by
+  design: everything waits on the obstruction-coverage verdict).
+- Coverage measurement (89 patterns x 600 targets): still computing
+  after ~1 h — subgraph embedding 14-into-19 with 400k-node backtrack
+  bounds is slower than estimated, and it was sharing cores with the
+  leftover sample run, which I have now killed (its 34/62/4 statistics
+  at 100/600 are sufficient). Coverage now has the machine; verdict
+  expected within the next block or two.
+- No stuck-flag beyond the above: this is measurement latency, not a
+  silent stall; the decision rule from the 13:25 block is unchanged.
