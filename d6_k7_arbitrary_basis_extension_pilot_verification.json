@@ -1,0 +1,19 @@
+{
+  "checked": {
+    "basis_candidates": 232,
+    "covers_rejected": 0,
+    "direct_certificates": 0,
+    "full_no_near_cover_population": 53,
+    "rational_psd_atom_certificates": 33,
+    "selected_covers": 8,
+    "unresolved_bases": 199
+  },
+  "claim": "Every rejection certificate was rechecked exactly. Unresolved bases and covers carry no non-realizability or realizability conclusion.",
+  "kind": "d6_k7_arbitrary_basis_extension_pilot_verification",
+  "report": {
+    "path": "d6_k7_arbitrary_basis_extension_pilot_report.json",
+    "sha256": "2c2dd18ded8a0daf505700001e64eb31fdcbf987f6292f91e58a3c07c8dc8339"
+  },
+  "schema": 1,
+  "status": "PASS"
+}

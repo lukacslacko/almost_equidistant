@@ -1,0 +1,9083 @@
+{
+  "claim": "Only bases carrying exact direct or rational PSD-atom certificates are rejected. UNRESOLVED is not a realizability claim. A cover is rejected only if the complete fixed-maximum-clique extension universe through its exact rank upper bound has no unresolved basis.",
+  "configuration": {
+    "command": "run_d6_k7_arbitrary_basis_extension_pilot.py --covers 8 --workers 11 --maximum-atom-support 3",
+    "logical_cpus": 12,
+    "maximum_atom_support": 3,
+    "selected_cover_prefix": 8,
+    "workers": 11
+  },
+  "covers": [
+    {
+      "basis_outcome_counts": {
+        "DUAL_REJECTED": 2,
+        "UNRESOLVED": 27
+      },
+      "basis_outcome_counts_by_rank": {
+        "5": {
+          "DUAL_REJECTED": 1
+        },
+        "6": {
+          "DUAL_REJECTED": 1,
+          "UNRESOLVED": 6
+        },
+        "7": {
+          "UNRESOLVED": 21
+        }
+      },
+      "basis_records": [
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              4,
+              7
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 2,
+                "value": [
+                  1,
+                  3
+                ],
+                "vertex": 6
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 0,
+                "value": [
+                  -1,
+                  6
+                ]
+              },
+              {
+                "equation": 1,
+                "value": [
+                  -2,
+                  3
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 6,
+                "value": [
+                  -1,
+                  6
+                ]
+              },
+              {
+                "equation": 8,
+                "value": [
+                  -1,
+                  6
+                ]
+              },
+              {
+                "equation": 10,
+                "value": [
+                  -1,
+                  6
+                ]
+              },
+              {
+                "equation": 12,
+                "value": [
+                  -1,
+                  3
+                ]
+              },
+              {
+                "equation": 15,
+                "value": [
+                  -1,
+                  3
+                ]
+              },
+              {
+                "equation": 16,
+                "value": [
+                  2,
+                  3
+                ]
+              },
+              {
+                "equation": 17,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 18,
+                "value": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "equation": 20,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                3,
+                11
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                9
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                8,
+                11
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [
+              {
+                "vector": [
+                  0,
+                  0,
+                  0,
+                  1,
+                  -1
+                ],
+                "weight": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "vector": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  1
+                ],
+                "weight": [
+                  1,
+                  6
+                ]
+              },
+              {
+                "vector": [
+                  1,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "weight": [
+                  1,
+                  6
+                ]
+              }
+            ],
+            "remainder": [
+              3,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.8295981670016772,
+          "outcome": "DUAL_REJECTED",
+          "rank": 5
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.4696436670001276,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.46967570800006797,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              4,
+              6,
+              7
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 4,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 10
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 3,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 10,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 14,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                3,
+                11
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                9
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                8,
+                11
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              3,
+              5,
+              8,
+              9,
+              10,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 1.5994061250003142,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            8
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.46962216700012505,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            9
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.46974033399965265,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            10
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.46896512499915843,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            11
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.46899012500034587,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.467917458001466,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.46695366600033594,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            8
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.46611645800112456,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            9
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.010090666999531095,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            10
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.01658583400057978,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            11
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.012170040999990306,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.012210750001031556,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.012067499999830034,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            9
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.010776375000205007,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            10
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.012969082999916282,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            11
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.00823162499909813,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7,
+            8
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.01102395900124975,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7,
+            9
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.009247042000424699,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7,
+            10
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.014577542000552057,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7,
+            11
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.008121000000755885,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            8,
+            9
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.00806649999867659,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            8,
+            10
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.011753874998248648,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            8,
+            11
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.01435170799959451,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            9,
+            10
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.010002999999414897,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            9,
+            11
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.013524541000151657,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            10,
+            11
+          ],
+          "cover_ordinal": 0,
+          "elapsed_seconds": 0.014153500000247732,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        }
+      ],
+      "cover_rejected": false,
+      "extension_core_count": 29,
+      "extension_cores_sha256": "398b5e5179a70a7126ed7fd61a44e0f3ae2fcfb7fda9565df188f539c9fddf7b",
+      "fixed_maximum_clique": [
+        0,
+        1,
+        2,
+        4,
+        7
+      ],
+      "graph_index": 64364,
+      "graph_n": [
+        4062,
+        3581,
+        3827,
+        3043,
+        1959,
+        3038,
+        3887,
+        2623,
+        1147,
+        3325,
+        855,
+        751
+      ],
+      "maximum_clique_size": 5,
+      "nvertices": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13,
+        17,
+        18
+      ],
+      "ordinal": 0,
+      "rank_upper": 7,
+      "seed": [
+        1,
+        3,
+        8,
+        11,
+        14,
+        15,
+        16
+      ],
+      "zmask": 0
+    },
+    {
+      "basis_outcome_counts": {
+        "DUAL_REJECTED": 7,
+        "UNRESOLVED": 22
+      },
+      "basis_outcome_counts_by_rank": {
+        "5": {
+          "DUAL_REJECTED": 1
+        },
+        "6": {
+          "DUAL_REJECTED": 3,
+          "UNRESOLVED": 4
+        },
+        "7": {
+          "DUAL_REJECTED": 3,
+          "UNRESOLVED": 18
+        }
+      },
+      "basis_records": [
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              4,
+              9
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 2,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 6
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 1,
+                "value": [
+                  2,
+                  1
+                ]
+              },
+              {
+                "equation": 6,
+                "value": [
+                  -2,
+                  1
+                ]
+              },
+              {
+                "equation": 11,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 13,
+                "value": [
+                  2,
+                  1
+                ]
+              },
+              {
+                "equation": 14,
+                "value": [
+                  -1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                3,
+                11
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                8,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              3,
+              5,
+              6,
+              7,
+              8,
+              10,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.3221939159993781,
+          "outcome": "DUAL_REJECTED",
+          "rank": 5
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              9
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 0,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 5
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 0,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 1,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 2,
+                "value": [
+                  -1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                8,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              5,
+              6,
+              7,
+              8,
+              10,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 1.12734991599973,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.005212707999817212,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.013187582999307779,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.0052998749997641426,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            8,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.0053021669991721865,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              4,
+              9,
+              10
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 1,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 5
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 5,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 6,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 7,
+                "value": [
+                  -1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                3,
+                11
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                8,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              3,
+              5,
+              6,
+              7,
+              8,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            9,
+            10
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 1.147111042000688,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              4,
+              9,
+              11
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 4,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 8
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 7,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 10,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 12,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                8,
+                10
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              3,
+              5,
+              6,
+              7,
+              8,
+              10
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            9,
+            11
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 1.1263438330006466,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.01129900000159978,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.013647207999383681,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.014039916999536217,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            8,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.010945124999125255,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              9,
+              10
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 3,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 8
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 2,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 7,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                8,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              5,
+              6,
+              7,
+              8,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            9,
+            10
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 2.8853166249991773,
+          "outcome": "DUAL_REJECTED",
+          "rank": 7
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              9,
+              11
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 3,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 8
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 2,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 7,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                8,
+                10
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              5,
+              6,
+              7,
+              8,
+              10
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            9,
+            11
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 3.09888541699911,
+          "outcome": "DUAL_REJECTED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.016642833999867435,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.01517795799918531,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            8,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.008437958000286017,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            9,
+            10
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.015137207999941893,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            9,
+            11
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.011900207999133272,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.009553166999467066,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            8,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.012374457999612787,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            9,
+            10
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.01093958300043596,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            9,
+            11
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.019162917000357993,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            8,
+            9
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.024667625000802218,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            9,
+            10
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.032801542000015615,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            9,
+            11
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.018845665999833727,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            8,
+            9,
+            10
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.010876083000766812,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            8,
+            9,
+            11
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 0.010606583000480896,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              4,
+              9,
+              10,
+              11
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 4,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 8
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 6,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 8,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 9,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                7,
+                8
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              3,
+              5,
+              6,
+              7,
+              8
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            9,
+            10,
+            11
+          ],
+          "cover_ordinal": 1,
+          "elapsed_seconds": 3.1088219580014993,
+          "outcome": "DUAL_REJECTED",
+          "rank": 7
+        }
+      ],
+      "cover_rejected": false,
+      "extension_core_count": 29,
+      "extension_cores_sha256": "36a211872df6b47af569f5ffa36a751aa68ab9868dd4c55ec0056b9055c88980",
+      "fixed_maximum_clique": [
+        0,
+        1,
+        2,
+        4,
+        9
+      ],
+      "graph_index": 100375,
+      "graph_n": [
+        3926,
+        3989,
+        2971,
+        3060,
+        3759,
+        4056,
+        3881,
+        3902,
+        3823,
+        1535,
+        3059,
+        1535
+      ],
+      "maximum_clique_size": 5,
+      "nvertices": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        11,
+        14,
+        16,
+        18
+      ],
+      "ordinal": 1,
+      "rank_upper": 7,
+      "seed": [
+        2,
+        5,
+        8,
+        12,
+        13,
+        15,
+        17
+      ],
+      "zmask": 0
+    },
+    {
+      "basis_outcome_counts": {
+        "DUAL_REJECTED": 4,
+        "UNRESOLVED": 25
+      },
+      "basis_outcome_counts_by_rank": {
+        "5": {
+          "DUAL_REJECTED": 1
+        },
+        "6": {
+          "DUAL_REJECTED": 2,
+          "UNRESOLVED": 5
+        },
+        "7": {
+          "DUAL_REJECTED": 1,
+          "UNRESOLVED": 20
+        }
+      },
+      "basis_records": [
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              3,
+              5,
+              9
+            ],
+            "diagonal_multipliers": [],
+            "equation_multipliers": [
+              {
+                "equation": 0,
+                "value": [
+                  -2,
+                  1
+                ]
+              },
+              {
+                "equation": 1,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 2,
+                "value": [
+                  2,
+                  1
+                ]
+              },
+              {
+                "equation": 3,
+                "value": [
+                  2,
+                  1
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  -3,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                7
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                2,
+                11
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                4,
+                11
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                8,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [
+              {
+                "vector": [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "weight": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "remainder": [
+              2,
+              4,
+              6,
+              7,
+              8,
+              10,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.3691162079994683,
+          "outcome": "DUAL_REJECTED",
+          "rank": 5
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.0071811669986345805,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.004424374999871361,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.005167167000763584,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            7,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.00487904100009473,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              3,
+              5,
+              8,
+              9
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 2,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 6
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 1,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 10,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                7
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                2,
+                11
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                4,
+                11
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              2,
+              4,
+              6,
+              7,
+              10,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            8,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 1.2213945420007803,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            9,
+            10
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.005157834000783623,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              3,
+              5,
+              9,
+              11
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 2,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 6
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 1,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 11,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                7
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                8,
+                10
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              2,
+              4,
+              6,
+              7,
+              8,
+              10
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            9,
+            11
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 1.3248174590007693,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.007973792000484536,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.01107195800068439,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            7,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.015459291998922708,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            8,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.011590375001105713,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            9,
+            10
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.012171291000413476,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            9,
+            11
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.018792833001498366,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.013416541998594766,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            7,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.01057283299996925,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            8,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.009909124999467167,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            9,
+            10
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.009797291000722907,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            9,
+            11
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.012381458000163548,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            7,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.014487958000245271,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            8,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.011067375000493485,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            9,
+            10
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.011146167000333662,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            9,
+            11
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.009367917000417947,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            7,
+            8,
+            9
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.011376874999768916,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            7,
+            9,
+            10
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.031157624998741085,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            7,
+            9,
+            11
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.011222708000786952,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            8,
+            9,
+            10
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.013518291001673788,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              3,
+              5,
+              8,
+              9,
+              11
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 2,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 6
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 1,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 4,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 8,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                7
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                7,
+                10
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              2,
+              4,
+              6,
+              7,
+              10
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            8,
+            9,
+            11
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 3.043181832999835,
+          "outcome": "DUAL_REJECTED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            9,
+            10,
+            11
+          ],
+          "cover_ordinal": 2,
+          "elapsed_seconds": 0.020591459000570467,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        }
+      ],
+      "cover_rejected": false,
+      "extension_core_count": 29,
+      "extension_cores_sha256": "0c83a5ec4bce8ae14ead6242aeeaf219c6f0a48760b232715fb6afa8a604d99c",
+      "fixed_maximum_clique": [
+        0,
+        1,
+        3,
+        5,
+        9
+      ],
+      "graph_index": 293735,
+      "graph_n": [
+        1918,
+        3065,
+        3569,
+        3811,
+        2503,
+        3983,
+        3999,
+        2174,
+        3703,
+        3435,
+        2925,
+        2046
+      ],
+      "maximum_clique_size": 5,
+      "nvertices": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        12,
+        13,
+        14,
+        15,
+        17
+      ],
+      "ordinal": 2,
+      "rank_upper": 7,
+      "seed": [
+        4,
+        7,
+        9,
+        10,
+        11,
+        16,
+        18
+      ],
+      "zmask": 0
+    },
+    {
+      "basis_outcome_counts": {
+        "DUAL_REJECTED": 1,
+        "UNRESOLVED": 28
+      },
+      "basis_outcome_counts_by_rank": {
+        "5": {
+          "DUAL_REJECTED": 1
+        },
+        "6": {
+          "UNRESOLVED": 7
+        },
+        "7": {
+          "UNRESOLVED": 21
+        }
+      },
+      "basis_records": [
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              5,
+              6,
+              8
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 1,
+                "value": [
+                  10,
+                  11
+                ],
+                "vertex": 3
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 0,
+                "value": [
+                  -10,
+                  11
+                ]
+              },
+              {
+                "equation": 1,
+                "value": [
+                  86,
+                  165
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  -31,
+                  165
+                ]
+              },
+              {
+                "equation": 6,
+                "value": [
+                  59,
+                  55
+                ]
+              },
+              {
+                "equation": 8,
+                "value": [
+                  10,
+                  33
+                ]
+              },
+              {
+                "equation": 9,
+                "value": [
+                  10,
+                  33
+                ]
+              },
+              {
+                "equation": 11,
+                "value": [
+                  -41,
+                  165
+                ]
+              },
+              {
+                "equation": 12,
+                "value": [
+                  -56,
+                  165
+                ]
+              },
+              {
+                "equation": 13,
+                "value": [
+                  -56,
+                  165
+                ]
+              },
+              {
+                "equation": 17,
+                "value": [
+                  19,
+                  165
+                ]
+              },
+              {
+                "equation": 19,
+                "value": [
+                  23,
+                  165
+                ]
+              },
+              {
+                "equation": 20,
+                "value": [
+                  23,
+                  165
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                7
+              ],
+              [
+                2,
+                9
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                2,
+                11
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                3,
+                11
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                4,
+                9
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                4,
+                11
+              ],
+              [
+                7,
+                9
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [
+              {
+                "vector": [
+                  0,
+                  1,
+                  -1,
+                  -1,
+                  0
+                ],
+                "weight": [
+                  1,
+                  11
+                ]
+              }
+            ],
+            "remainder": [
+              2,
+              3,
+              4,
+              7,
+              9,
+              10,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            5,
+            6,
+            8
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.36063841699979093,
+          "outcome": "DUAL_REJECTED",
+          "rank": 5
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            5,
+            6,
+            8
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.00909920900085126,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            8
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.005312041999786743,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            8
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.0043228750000707805,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            5,
+            6,
+            7,
+            8
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.007409375000861473,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            5,
+            6,
+            8,
+            9
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.004912458000035258,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            5,
+            6,
+            8,
+            10
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.004294458000003942,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            5,
+            6,
+            8,
+            11
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.005566833999182563,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            8
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.012228417001097114,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            8
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.007993874998646788,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            5,
+            6,
+            7,
+            8
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.026856083999518887,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            5,
+            6,
+            8,
+            9
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.015812542000276153,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            5,
+            6,
+            8,
+            10
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.010928083000180777,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            5,
+            6,
+            8,
+            11
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.009409917000084533,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            8
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.008370999999897322,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            7,
+            8
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.013960915999632562,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            8,
+            9
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.010139250000065658,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            8,
+            10
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.009974958000384504,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            8,
+            11
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.02411750000101165,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.010630167000272195,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            8,
+            9
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.011523834000399802,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            8,
+            10
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.014801125000303728,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            8,
+            11
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.012144959000579547,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.015899666999757756,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            5,
+            6,
+            7,
+            8,
+            10
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.023648708000109764,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            5,
+            6,
+            7,
+            8,
+            11
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.010927208000794053,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            5,
+            6,
+            8,
+            9,
+            10
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.017914542000653455,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            5,
+            6,
+            8,
+            9,
+            11
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.017882374999317108,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            5,
+            6,
+            8,
+            10,
+            11
+          ],
+          "cover_ordinal": 3,
+          "elapsed_seconds": 0.0283173749994603,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        }
+      ],
+      "cover_rejected": false,
+      "extension_core_count": 29,
+      "extension_cores_sha256": "c40c40cca16e3395abbf513719fa762aacfe7a6f370a5957a8c4d0d026251d1a",
+      "fixed_maximum_clique": [
+        0,
+        1,
+        5,
+        6,
+        8
+      ],
+      "graph_index": 318288,
+      "graph_n": [
+        3062,
+        1913,
+        4025,
+        1750,
+        911,
+        3911,
+        4011,
+        2909,
+        3319,
+        3327,
+        2926,
+        2021
+      ],
+      "maximum_clique_size": 5,
+      "nvertices": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        8,
+        9,
+        10,
+        13,
+        14,
+        15,
+        18
+      ],
+      "ordinal": 3,
+      "rank_upper": 7,
+      "seed": [
+        1,
+        5,
+        7,
+        11,
+        12,
+        16,
+        17
+      ],
+      "zmask": 0
+    },
+    {
+      "basis_outcome_counts": {
+        "DUAL_REJECTED": 7,
+        "UNRESOLVED": 22
+      },
+      "basis_outcome_counts_by_rank": {
+        "5": {
+          "DUAL_REJECTED": 1
+        },
+        "6": {
+          "DUAL_REJECTED": 3,
+          "UNRESOLVED": 4
+        },
+        "7": {
+          "DUAL_REJECTED": 3,
+          "UNRESOLVED": 18
+        }
+      },
+      "basis_records": [
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              4,
+              5
+            ],
+            "diagonal_multipliers": [],
+            "equation_multipliers": [
+              {
+                "equation": 0,
+                "value": [
+                  11,
+                  24
+                ]
+              },
+              {
+                "equation": 3,
+                "value": [
+                  5,
+                  24
+                ]
+              },
+              {
+                "equation": 6,
+                "value": [
+                  11,
+                  24
+                ]
+              },
+              {
+                "equation": 7,
+                "value": [
+                  -1,
+                  4
+                ]
+              },
+              {
+                "equation": 9,
+                "value": [
+                  -1,
+                  12
+                ]
+              },
+              {
+                "equation": 12,
+                "value": [
+                  5,
+                  24
+                ]
+              },
+              {
+                "equation": 15,
+                "value": [
+                  -17,
+                  24
+                ]
+              },
+              {
+                "equation": 16,
+                "value": [
+                  1,
+                  6
+                ]
+              },
+              {
+                "equation": 17,
+                "value": [
+                  -1,
+                  3
+                ]
+              },
+              {
+                "equation": 18,
+                "value": [
+                  1,
+                  12
+                ]
+              },
+              {
+                "equation": 19,
+                "value": [
+                  -19,
+                  24
+                ]
+              },
+              {
+                "equation": 20,
+                "value": [
+                  1,
+                  2
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                3,
+                11
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                9
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                8,
+                11
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [
+              {
+                "vector": [
+                  0,
+                  0,
+                  1,
+                  0,
+                  1
+                ],
+                "weight": [
+                  11,
+                  24
+                ]
+              },
+              {
+                "vector": [
+                  1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "weight": [
+                  13,
+                  24
+                ]
+              }
+            ],
+            "remainder": [
+              3,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.3615465000002587,
+          "outcome": "DUAL_REJECTED",
+          "rank": 5
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.004549666999082547,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.018101790999935474,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.00900254199950723,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              8
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 3,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 9
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 2,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 6,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 9,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                3,
+                11
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                7,
+                9
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              3,
+              6,
+              7,
+              9,
+              10,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            8
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 1.3388186659994972,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            9
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.0045872499995311955,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              10
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 4,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 9
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 3,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 7,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 10,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                3,
+                11
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                9
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                8,
+                11
+              ],
+              [
+                9,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              3,
+              6,
+              7,
+              8,
+              9,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            10
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 1.3213714590001473,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              11
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 1,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 6
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 0,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 7,
+                "value": [
+                  -1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                9
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              3,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            11
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 1.1262793750011042,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.008659875000375905,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.011118959000668838,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            8
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.009279375000915024,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            9
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.008862624999892432,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            10
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.012209374999656575,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            11
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.010760416998891742,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.008329124999363557,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            8
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.022328084000037052,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            9
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.01087658299911709,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            10
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.0141354589995899,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            11
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.010253000000375323,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.008903292000468355,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            9
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.014527417000863352,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            10
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.012052334001054987,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            11
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.01499754100041173,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            8,
+            9
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.008862874999977066,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              8,
+              10
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 3,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 9
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 2,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 7,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                3,
+                11
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                7,
+                9
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                9,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              3,
+              6,
+              7,
+              9,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            8,
+            10
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 2.780896958000085,
+          "outcome": "DUAL_REJECTED",
+          "rank": 7
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              8,
+              11
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 3,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 9
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 2,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 7,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                7,
+                9
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              3,
+              6,
+              7,
+              9,
+              10
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            8,
+            11
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 2.614730375000363,
+          "outcome": "DUAL_REJECTED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            9,
+            10
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.011846417000924703,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            9,
+            11
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 0.010565624999799184,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              10,
+              11
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 4,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 9
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 3,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 6,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 8,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                7
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                9
+              ],
+              [
+                8,
+                9
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            10,
+            11
+          ],
+          "cover_ordinal": 4,
+          "elapsed_seconds": 2.759604124999896,
+          "outcome": "DUAL_REJECTED",
+          "rank": 7
+        }
+      ],
+      "cover_rejected": false,
+      "extension_core_count": 29,
+      "extension_cores_sha256": "71f44cef1891395bebac59ae353d2271dd435039da149e7751de8a67ffa25d88",
+      "fixed_maximum_clique": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "graph_index": 420863,
+      "graph_n": [
+        2814,
+        2045,
+        3571,
+        2915,
+        3751,
+        3423,
+        2991,
+        3927,
+        3822,
+        3547,
+        2998,
+        2045
+      ],
+      "maximum_clique_size": 5,
+      "nvertices": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        9,
+        12,
+        13,
+        15,
+        16,
+        18
+      ],
+      "ordinal": 4,
+      "rank_upper": 7,
+      "seed": [
+        1,
+        3,
+        8,
+        10,
+        11,
+        14,
+        17
+      ],
+      "zmask": 0
+    },
+    {
+      "basis_outcome_counts": {
+        "DUAL_REJECTED": 2,
+        "UNRESOLVED": 27
+      },
+      "basis_outcome_counts_by_rank": {
+        "5": {
+          "DUAL_REJECTED": 1
+        },
+        "6": {
+          "DUAL_REJECTED": 1,
+          "UNRESOLVED": 6
+        },
+        "7": {
+          "UNRESOLVED": 21
+        }
+      },
+      "basis_records": [
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              4,
+              7
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 3,
+                "value": [
+                  59,
+                  105
+                ],
+                "vertex": 8
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 1,
+                "value": [
+                  2,
+                  15
+                ]
+              },
+              {
+                "equation": 2,
+                "value": [
+                  -3,
+                  5
+                ]
+              },
+              {
+                "equation": 3,
+                "value": [
+                  16,
+                  105
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  -1,
+                  15
+                ]
+              },
+              {
+                "equation": 8,
+                "value": [
+                  -2,
+                  7
+                ]
+              },
+              {
+                "equation": 9,
+                "value": [
+                  1,
+                  5
+                ]
+              },
+              {
+                "equation": 11,
+                "value": [
+                  14,
+                  15
+                ]
+              },
+              {
+                "equation": 17,
+                "value": [
+                  -7,
+                  15
+                ]
+              },
+              {
+                "equation": 18,
+                "value": [
+                  29,
+                  105
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                3,
+                11
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                9
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                8,
+                11
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [
+              {
+                "vector": [
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "weight": [
+                  16,
+                  105
+                ]
+              },
+              {
+                "vector": [
+                  0,
+                  1,
+                  1,
+                  0,
+                  0
+                ],
+                "weight": [
+                  1,
+                  15
+                ]
+              },
+              {
+                "vector": [
+                  1,
+                  0,
+                  -1,
+                  1,
+                  0
+                ],
+                "weight": [
+                  4,
+                  105
+                ]
+              },
+              {
+                "vector": [
+                  1,
+                  1,
+                  0,
+                  0,
+                  1
+                ],
+                "weight": [
+                  19,
+                  105
+                ]
+              }
+            ],
+            "remainder": [
+              3,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.4385660000007192,
+          "outcome": "DUAL_REJECTED",
+          "rank": 5
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.005401209000410745,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.005129416000272613,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.007671833000131301,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            8
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.008175707998816506,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            9
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.005647250000038184,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            10
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.004635375000361819,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              4,
+              7,
+              11
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 5,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 10
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 1,
+                "value": [
+                  1,
+                  4
+                ]
+              },
+              {
+                "equation": 4,
+                "value": [
+                  -1,
+                  2
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  -1,
+                  4
+                ]
+              },
+              {
+                "equation": 8,
+                "value": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "equation": 9,
+                "value": [
+                  -1,
+                  4
+                ]
+              },
+              {
+                "equation": 10,
+                "value": [
+                  -1,
+                  4
+                ]
+              },
+              {
+                "equation": 11,
+                "value": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "equation": 13,
+                "value": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "equation": 14,
+                "value": [
+                  1,
+                  2
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                8
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                9
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              3,
+              5,
+              6,
+              8,
+              9,
+              10
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            11
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 1.0960148750000371,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.011924625001483946,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.0100905409999541,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            8
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.014991584001109004,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            9
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.02919583400034753,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            10
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.009605750001355773,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            11
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.011874916001033853,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.01312333299938473,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.010619208000207436,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            9
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.014836917000138783,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            10
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.010417542000141111,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            11
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.009746082998390193,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7,
+            8
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.010329041000659345,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7,
+            9
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.018787375000101747,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7,
+            10
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.010592000000542612,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7,
+            11
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.01196120799977507,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            8,
+            9
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.009448374999919906,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            8,
+            10
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.008894917000361602,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            8,
+            11
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.013440374999845517,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            9,
+            10
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.008678791999045643,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            9,
+            11
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.01387987499947485,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            10,
+            11
+          ],
+          "cover_ordinal": 5,
+          "elapsed_seconds": 0.024734417000217945,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        }
+      ],
+      "cover_rejected": false,
+      "extension_core_count": 29,
+      "extension_cores_sha256": "398b5e5179a70a7126ed7fd61a44e0f3ae2fcfb7fda9565df188f539c9fddf7b",
+      "fixed_maximum_clique": [
+        0,
+        1,
+        2,
+        4,
+        7
+      ],
+      "graph_index": 420914,
+      "graph_n": [
+        2782,
+        2045,
+        3571,
+        2915,
+        3751,
+        3422,
+        2991,
+        3927,
+        3822,
+        3547,
+        2998,
+        2045
+      ],
+      "maximum_clique_size": 5,
+      "nvertices": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        9,
+        12,
+        13,
+        15,
+        16,
+        18
+      ],
+      "ordinal": 5,
+      "rank_upper": 7,
+      "seed": [
+        1,
+        3,
+        8,
+        10,
+        11,
+        14,
+        17
+      ],
+      "zmask": 0
+    },
+    {
+      "basis_outcome_counts": {
+        "DUAL_REJECTED": 6,
+        "UNRESOLVED": 23
+      },
+      "basis_outcome_counts_by_rank": {
+        "5": {
+          "DUAL_REJECTED": 1
+        },
+        "6": {
+          "DUAL_REJECTED": 4,
+          "UNRESOLVED": 3
+        },
+        "7": {
+          "DUAL_REJECTED": 1,
+          "UNRESOLVED": 20
+        }
+      },
+      "basis_records": [
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              3,
+              6,
+              9
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 0,
+                "value": [
+                  12,
+                  13
+                ],
+                "vertex": 2
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 1,
+                "value": [
+                  6,
+                  13
+                ]
+              },
+              {
+                "equation": 2,
+                "value": [
+                  12,
+                  13
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  -8,
+                  13
+                ]
+              },
+              {
+                "equation": 6,
+                "value": [
+                  -3,
+                  13
+                ]
+              },
+              {
+                "equation": 7,
+                "value": [
+                  -2,
+                  13
+                ]
+              },
+              {
+                "equation": 8,
+                "value": [
+                  4,
+                  13
+                ]
+              },
+              {
+                "equation": 9,
+                "value": [
+                  -4,
+                  13
+                ]
+              },
+              {
+                "equation": 14,
+                "value": [
+                  1,
+                  13
+                ]
+              },
+              {
+                "equation": 17,
+                "value": [
+                  2,
+                  13
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                7
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                2,
+                11
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                4,
+                11
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                8,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [
+              {
+                "vector": [
+                  0,
+                  1,
+                  -1,
+                  -1,
+                  0
+                ],
+                "weight": [
+                  1,
+                  13
+                ]
+              }
+            ],
+            "remainder": [
+              2,
+              4,
+              5,
+              7,
+              8,
+              10,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            3,
+            6,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.35909320800055866,
+          "outcome": "DUAL_REJECTED",
+          "rank": 5
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              9
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 2,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 7
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 0,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 1,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 6,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 7,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 9,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 10,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                4,
+                5
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                4,
+                11
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                8,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              4,
+              5,
+              7,
+              8,
+              10,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 1.012124999999287,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.005597542000032263,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.00507379100054095,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              3,
+              6,
+              7,
+              9
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 3,
+                "value": [
+                  12,
+                  13
+                ],
+                "vertex": 8
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 0,
+                "value": [
+                  2,
+                  13
+                ]
+              },
+              {
+                "equation": 2,
+                "value": [
+                  -12,
+                  13
+                ]
+              },
+              {
+                "equation": 3,
+                "value": [
+                  1,
+                  13
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  -1,
+                  13
+                ]
+              },
+              {
+                "equation": 6,
+                "value": [
+                  8,
+                  13
+                ]
+              },
+              {
+                "equation": 7,
+                "value": [
+                  -9,
+                  26
+                ]
+              },
+              {
+                "equation": 8,
+                "value": [
+                  1,
+                  13
+                ]
+              },
+              {
+                "equation": 9,
+                "value": [
+                  6,
+                  13
+                ]
+              },
+              {
+                "equation": 10,
+                "value": [
+                  -1,
+                  26
+                ]
+              },
+              {
+                "equation": 12,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 13,
+                "value": [
+                  -6,
+                  13
+                ]
+              },
+              {
+                "equation": 14,
+                "value": [
+                  1,
+                  26
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                2,
+                11
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                4,
+                11
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                8,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [
+              {
+                "vector": [
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  -1
+                ],
+                "weight": [
+                  1,
+                  13
+                ]
+              }
+            ],
+            "remainder": [
+              2,
+              4,
+              5,
+              8,
+              10,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            3,
+            6,
+            7,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 1.198142667000866,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            6,
+            8,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.008439416998953675,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              3,
+              6,
+              9,
+              10
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 3,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 7
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 2,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 3,
+                "value": [
+                  -2,
+                  3
+                ]
+              },
+              {
+                "equation": 6,
+                "value": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "equation": 7,
+                "value": [
+                  -1,
+                  3
+                ]
+              },
+              {
+                "equation": 9,
+                "value": [
+                  -1,
+                  2
+                ]
+              },
+              {
+                "equation": 10,
+                "value": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "equation": 12,
+                "value": [
+                  2,
+                  3
+                ]
+              },
+              {
+                "equation": 13,
+                "value": [
+                  1,
+                  2
+                ]
+              },
+              {
+                "equation": 14,
+                "value": [
+                  -1,
+                  3
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                7
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                2,
+                11
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                4,
+                11
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                8,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              2,
+              4,
+              5,
+              7,
+              8,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            3,
+            6,
+            9,
+            10
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 1.0948379580004257,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              3,
+              6,
+              9,
+              11
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 1,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 4
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 5,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 6,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 7,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 8,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 9,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 10,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 11,
+                "value": [
+                  -1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                2,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                7
+              ],
+              [
+                2,
+                8
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                8,
+                10
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              2,
+              4,
+              5,
+              7,
+              8,
+              10
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            3,
+            6,
+            9,
+            11
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 1.010299292000127,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.011537458000020706,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.008510249999744701,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.021658624998963205,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            8,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.009160750001683482,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            9,
+            10
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.008886666000762489,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              9,
+              11
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 0,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 4
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 0,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 1,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 2,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 3,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 4,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 6,
+                "value": [
+                  -1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                4,
+                5
+              ],
+              [
+                4,
+                7
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                4,
+                10
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                5,
+                8
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                7,
+                10
+              ],
+              [
+                8,
+                10
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              4,
+              5,
+              7,
+              8,
+              10
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            9,
+            11
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 2.012935041999299,
+          "outcome": "DUAL_REJECTED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.009634416999688256,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.009399041000506259,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            8,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.013504290998753277,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            9,
+            10
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.009281957998609869,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            9,
+            11
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.013991292000355315,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            7,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.010214750000159256,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            8,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.01720500000010361,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            9,
+            10
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.008145499999955064,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            5,
+            6,
+            9,
+            11
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.008442959000603878,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            6,
+            7,
+            8,
+            9
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.012470165998820448,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            6,
+            7,
+            9,
+            10
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.010368375000325614,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            6,
+            7,
+            9,
+            11
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.021612833999824943,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            6,
+            8,
+            9,
+            10
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.01922516700142296,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            6,
+            8,
+            9,
+            11
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.011298125000394066,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            6,
+            9,
+            10,
+            11
+          ],
+          "cover_ordinal": 6,
+          "elapsed_seconds": 0.008728041999347624,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        }
+      ],
+      "cover_rejected": false,
+      "extension_core_count": 29,
+      "extension_cores_sha256": "2b5edf2837e7b188eca2af0f344186436710d8f666a38592965dd123fbf41ad7",
+      "fixed_maximum_clique": [
+        0,
+        1,
+        3,
+        6,
+        9
+      ],
+      "graph_index": 429042,
+      "graph_n": [
+        4058,
+        2045,
+        3570,
+        3939,
+        2983,
+        3422,
+        3759,
+        3671,
+        3135,
+        2267,
+        2543,
+        2045
+      ],
+      "maximum_clique_size": 5,
+      "nvertices": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        9,
+        12,
+        13,
+        15,
+        16,
+        18
+      ],
+      "ordinal": 6,
+      "rank_upper": 7,
+      "seed": [
+        1,
+        3,
+        8,
+        10,
+        11,
+        14,
+        17
+      ],
+      "zmask": 0
+    },
+    {
+      "basis_outcome_counts": {
+        "DUAL_REJECTED": 4,
+        "UNRESOLVED": 25
+      },
+      "basis_outcome_counts_by_rank": {
+        "5": {
+          "DUAL_REJECTED": 1
+        },
+        "6": {
+          "DUAL_REJECTED": 2,
+          "UNRESOLVED": 5
+        },
+        "7": {
+          "DUAL_REJECTED": 1,
+          "UNRESOLVED": 20
+        }
+      },
+      "basis_records": [
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              4,
+              7,
+              8
+            ],
+            "diagonal_multipliers": [],
+            "equation_multipliers": [
+              {
+                "equation": 0,
+                "value": [
+                  -6,
+                  25
+                ]
+              },
+              {
+                "equation": 1,
+                "value": [
+                  1,
+                  5
+                ]
+              },
+              {
+                "equation": 2,
+                "value": [
+                  -13,
+                  25
+                ]
+              },
+              {
+                "equation": 3,
+                "value": [
+                  -11,
+                  25
+                ]
+              },
+              {
+                "equation": 5,
+                "value": [
+                  -1,
+                  25
+                ]
+              },
+              {
+                "equation": 7,
+                "value": [
+                  9,
+                  25
+                ]
+              },
+              {
+                "equation": 8,
+                "value": [
+                  -8,
+                  25
+                ]
+              },
+              {
+                "equation": 9,
+                "value": [
+                  16,
+                  25
+                ]
+              },
+              {
+                "equation": 10,
+                "value": [
+                  -8,
+                  25
+                ]
+              },
+              {
+                "equation": 11,
+                "value": [
+                  17,
+                  25
+                ]
+              },
+              {
+                "equation": 12,
+                "value": [
+                  -8,
+                  25
+                ]
+              },
+              {
+                "equation": 13,
+                "value": [
+                  24,
+                  25
+                ]
+              },
+              {
+                "equation": 16,
+                "value": [
+                  -1,
+                  25
+                ]
+              },
+              {
+                "equation": 17,
+                "value": [
+                  -8,
+                  25
+                ]
+              },
+              {
+                "equation": 19,
+                "value": [
+                  -8,
+                  25
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                9
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                2,
+                11
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                3,
+                11
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                9
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                9,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [
+              {
+                "vector": [
+                  0,
+                  1,
+                  -1,
+                  0,
+                  -1
+                ],
+                "weight": [
+                  1,
+                  25
+                ]
+              },
+              {
+                "vector": [
+                  0,
+                  1,
+                  0,
+                  1,
+                  0
+                ],
+                "weight": [
+                  24,
+                  25
+                ]
+              }
+            ],
+            "remainder": [
+              2,
+              3,
+              5,
+              6,
+              9,
+              10,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            4,
+            7,
+            8
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.3240629159990931,
+          "outcome": "DUAL_REJECTED",
+          "rank": 5
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            8
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.004733874999146792,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            7,
+            8
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.005320791999110952,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            5,
+            7,
+            8
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.004769707999003003,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            6,
+            7,
+            8
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.009747082998728729,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              4,
+              7,
+              8,
+              9
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 3,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 6
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 0,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 1,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 2,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 3,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 6,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 9,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 12,
+                "value": [
+                  -1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                2,
+                11
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                3,
+                11
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                5,
+                11
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                6,
+                11
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              2,
+              3,
+              5,
+              6,
+              10,
+              11
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            4,
+            7,
+            8,
+            9
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.8922950830001355,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            7,
+            8,
+            10
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.010911707999184728,
+          "outcome": "UNRESOLVED",
+          "rank": 6
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              4,
+              7,
+              8,
+              11
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 2,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 5
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 5,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 9,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 11,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                9
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                9
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                9
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                6,
+                9
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              2,
+              3,
+              5,
+              6,
+              9,
+              10
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            4,
+            7,
+            8,
+            11
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.8141908329998842,
+          "outcome": "DUAL_REJECTED",
+          "rank": 6
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            7,
+            8
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.014382833000126993,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            7,
+            8
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.011933374998989166,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            6,
+            7,
+            8
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.00782045799860498,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            8,
+            9
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.013499292001142749,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            8,
+            10
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.012701209001534153,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            2,
+            4,
+            7,
+            8,
+            11
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.011430208000092534,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            7,
+            8
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.014448416999584879,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            8
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.00854925000021467,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            7,
+            8,
+            9
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.01979525000024296,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            7,
+            8,
+            10
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.00808037500064529,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            3,
+            4,
+            7,
+            8,
+            11
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.012946458000442362,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.021685292000256595,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            5,
+            7,
+            8,
+            9
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.009395540999321383,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            5,
+            7,
+            8,
+            10
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.022960458998568356,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            5,
+            7,
+            8,
+            11
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.013565166998887435,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.015765458998430404,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            6,
+            7,
+            8,
+            10
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.011931791999813868,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            6,
+            7,
+            8,
+            11
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.009065416999874287,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            7,
+            8,
+            9,
+            10
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.009230792000380461,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        },
+        {
+          "certificate": {
+            "core": [
+              0,
+              1,
+              4,
+              7,
+              8,
+              9,
+              11
+            ],
+            "diagonal_multipliers": [
+              {
+                "remainder_index": 2,
+                "value": [
+                  1,
+                  1
+                ],
+                "vertex": 5
+              }
+            ],
+            "equation_multipliers": [
+              {
+                "equation": 4,
+                "value": [
+                  -1,
+                  1
+                ]
+              },
+              {
+                "equation": 7,
+                "value": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "equation": 8,
+                "value": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "equation_pairs": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                2,
+                10
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                3,
+                10
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                6,
+                10
+              ]
+            ],
+            "kind": "arbitrary_basis_psd_atom_farkas",
+            "psd_atoms": [],
+            "remainder": [
+              2,
+              3,
+              5,
+              6,
+              10
+            ],
+            "scalar_slack": [
+              0,
+              1
+            ],
+            "schema": 1
+          },
+          "core": [
+            0,
+            1,
+            4,
+            7,
+            8,
+            9,
+            11
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 2.162988542000676,
+          "outcome": "DUAL_REJECTED",
+          "rank": 7
+        },
+        {
+          "certificate": null,
+          "core": [
+            0,
+            1,
+            4,
+            7,
+            8,
+            10,
+            11
+          ],
+          "cover_ordinal": 7,
+          "elapsed_seconds": 0.008747082998525002,
+          "outcome": "UNRESOLVED",
+          "rank": 7
+        }
+      ],
+      "cover_rejected": false,
+      "extension_core_count": 29,
+      "extension_cores_sha256": "95bbc24f93a3a403615f8ab975db0955653c3fd94c8b82085669161e1b5fa77c",
+      "fixed_maximum_clique": [
+        0,
+        1,
+        4,
+        7,
+        8
+      ],
+      "graph_index": 561011,
+      "graph_n": [
+        2550,
+        4089,
+        3513,
+        3798,
+        3471,
+        3015,
+        2731,
+        1919,
+        3767,
+        3562,
+        2974,
+        1919
+      ],
+      "maximum_clique_size": 5,
+      "nvertices": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        8,
+        9,
+        12,
+        13,
+        14,
+        16,
+        18
+      ],
+      "ordinal": 7,
+      "rank_upper": 7,
+      "seed": [
+        1,
+        5,
+        7,
+        10,
+        11,
+        15,
+        17
+      ],
+      "zmask": 0
+    }
+  ],
+  "finished_at": "2026-08-06T20:46:09.187557+00:00",
+  "git": {
+    "available": true,
+    "branch": "codex/dimension6",
+    "commit": "8fedb3b328914894b58b9191222696f98c2e1d75",
+    "dirty": true,
+    "porcelain_lines": [
+      "?? analyze_d6_n14_k7_rank_obstructions.py",
+      "?? build_d6_current_residue_manifest_v2.py",
+      "?? d6_k7_mobius_cycle_containment.py",
+      "?? d6_k7_mobius_cycle_containment_report.json",
+      "?? d6_k7_mobius_cycle_containment_verification.json",
+      "?? d6_k7_mobius_cycle_obstructions.md",
+      "?? d6_k7_rankone_active_sign.md",
+      "?? d6_k7_rankone_active_sign.py",
+      "?? d6_k7_rankone_active_sign_pilot_report.json",
+      "?? d6_k7_support_capacity.py",
+      "?? d6_k7_support_capacity_pilot_report.json",
+      "?? d6_n14_k7_rank_obstructions.json",
+      "?? d6_n14_k7_rank_obstructions.md",
+      "?? probe_d6_k6_psd_zmatrix.py",
+      "?? run_d6_k7_arbitrary_basis_extension_pilot.py",
+      "?? run_d6_k7_rankone_active_sign_pilot.py",
+      "?? run_d6_k7_support_capacity_pilot.py",
+      "?? test_d6_k7_arbitrary_basis_extension_pilot.py",
+      "?? test_d6_k7_mobius_cycle_containment.py",
+      "?? test_d6_k7_rankone_active_sign.py",
+      "?? test_d6_k7_support_capacity.py",
+      "?? verify_d6_k7_arbitrary_basis_extension_pilot.py",
+      "?? verify_d6_k7_mobius_cycle_containment.py",
+      "?? verify_d6_k7_rankone_active_sign.py"
+    ],
+    "porcelain_sha256": "b137b548d4ac9df3f0107eceb7a277bf2eb396767b1c3e6414fe3ac4bea6a8b3"
+  },
+  "kind": "d6_k7_arbitrary_basis_fixed_maximum_clique_extension_pilot",
+  "machine": {
+    "implementation": "CPython",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]"
+  },
+  "population": {
+    "no_near_covers": 53,
+    "no_near_residue_graphs": 50,
+    "selected_cover_keys_sha256": "d5547f0f8f4ba2d36ce9bdddc20055f3421104ebc7f3cc62bab47dfb5e563eac",
+    "selected_covers": 8
+  },
+  "provenance": {
+    "no_near_residue_graphs": 50,
+    "no_near_residue_indices_sha256": "5a62fd8f89930cd002b87cea7e43b22bb8d306788ce5588fd21f53c8a2be2d0b",
+    "prior_certificates": {
+      "path": "d6_k7_positive_dual_full_certificates.jsonl.gz",
+      "sha256": "3adaa7e562dfb9241f205e3e7d2384805dbe7296f9677d76f2f23ce913a4ce7f"
+    },
+    "rank_input": {
+      "path": ".runs/d6_k7_rank_survivors.json",
+      "sha256": "7a0a350142930e4e13830ea44c4fd217f25aeb07bbd6286e51e316f72712c4f9"
+    },
+    "selection": {
+      "path": "d6_k7_rankone_tetrad_full_selection.json",
+      "sha256": "86e4f19a203bca111a47924ae05461ada5b21b6341be59d38b1428bebe1f9479"
+    },
+    "union": {
+      "path": "d6_k7_rankone_pattern_union.json",
+      "sha256": "1a54fabeb3ebf7f8e5485a88bc52fcfd07fb9ab8706d29ab2a664a895f79e599"
+    }
+  },
+  "schema": 1,
+  "source_hashes": {
+    "d6_k7_arbitrary_basis_psd_dual.py": "9c18699f66230676ae297b18e16cecfb15294fa1c1b0c276292ef7d16ee537d5",
+    "d6_k7_rank_reference.py": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+    "run_d6_k7_arbitrary_basis_extension_pilot.py": "93b440f0908e1f70387598679fd7e5ffcfbfe32bc5450257b77be7b747228cd5"
+  },
+  "started_at": "2026-08-06T20:45:42.357088+00:00",
+  "status": "COMPLETE",
+  "summary": {
+    "basis_candidates": 232,
+    "basis_outcome_counts": {
+      "DUAL_REJECTED": 33,
+      "UNRESOLVED": 199
+    },
+    "covers_rejected": 0,
+    "covers_unresolved": 8,
+    "total_worker_seconds": 52.76931029300795,
+    "wall_seconds": 26.871056292000503
+  },
+  "trust_scope": {
+    "direct_identical_columns": "Schur equality would force K_yy=K_yz in {0,1}, contradicting K_yy>1.",
+    "direct_zero_column": "Schur equality would force K_yy=0, contradicting K_yy>1.",
+    "rejections": "Exact integer graph parsing and Fraction certificate checks only; the floating-point LP is an untrusted certificate locator.",
+    "unresolved": "No mathematical conclusion."
+  }
+}
