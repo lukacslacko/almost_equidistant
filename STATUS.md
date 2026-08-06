@@ -303,3 +303,39 @@ tool and the level-17 endgame winner — parametrization diversity
 (hotmap) — is the right one; a d=6 hotmap port is the queued action.
 Next wake: 30 min; expect either diagnostic numbers + a decision, or
 first kills.
+
+## 13:00 append — d=6 reality check (and a lost hour, explained honestly)
+
+Since the 11:55 block:
+
+1. Diagnostic verdict on the deferred d=6 population: three directly
+   timed graphs each burned a full 1.5M-node budget in 8-12 minutes and
+   returned ABORT. At that cost, grinding all 916,313 deferred graphs
+   needs ~45 days. Cap-grinding is the wrong tool; that approach is
+   dead.
+2. An embarrassing operational hour: my first attempt to launch a
+   randomized 600-graph measurement used a stdin-fed script, which
+   Windows multiprocessing cannot spawn workers from; its parent
+   process survived my relaunch and sat crash-loop-spawning workers for
+   ~40 minutes, flooding the shared log with 90 MB of tracebacks and
+   NUL padding and starving the real measurement. All python processes
+   have been killed and the measurement relaunched cleanly
+   (d6_sample2.log).
+3. The clean 600-graph random sample (300k-node cap, 24 workers) has
+   printed no batch line yet after ~12 minutes — consistent with
+   per-graph costs of minutes even at small caps. Kill-fraction numbers
+   land in the next block.
+4. Strategic assessment, stated plainly: d=6 level 19 is ~300x the
+   size of the f(5) endgame with ~3x slower per-node arithmetic. With
+   current tooling this is a multi-day-to-weeks campaign. The most
+   promising accelerator (queued for design next): an OBSTRUCTION
+   LIBRARY - certify small (12-14 vertex) non-realizable-in-R^6
+   subgraphs once, then eliminate level-19 candidates by subgraph
+   containment (microseconds per graph), the same leverage BPSSV's G10
+   lemma provided at d=4. Coverage is unknown until measured; if it is
+   high, the campaign collapses; if low, we are honestly looking at
+   weeks or a rethink.
+
+Cadence note: the scheduled 12:36 self-wake could not fire because the
+work turn stayed active; future blocks will be written manually at the
+half-hour regardless of wakeup mechanics.
