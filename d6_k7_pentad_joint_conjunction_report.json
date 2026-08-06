@@ -1,0 +1,6900 @@
+{
+  "claim": "The 69 independently verified joint-support rejections and 34 disjoint seed-local pentad-cover rejections eliminate exactly 103 of the frozen 258 K7 residue graphs. Exactly 155 remain.",
+  "combined_rejections": {
+    "count": 103,
+    "ordered_indices": [
+      64364,
+      100375,
+      259203,
+      267929,
+      287589,
+      318288,
+      342495,
+      420863,
+      420914,
+      429042,
+      561011,
+      670687,
+      695846,
+      764732,
+      1265061,
+      1275961,
+      1312465,
+      1312471,
+      1312473,
+      1312518,
+      1602661,
+      2234327,
+      2273286,
+      2275150,
+      2275823,
+      2275952,
+      2281147,
+      2298936,
+      2428222,
+      2540715,
+      2549595,
+      2552933,
+      2572951,
+      2580543,
+      2591766,
+      2592565,
+      2599052,
+      2615936,
+      2621993,
+      2669012,
+      2719808,
+      2720447,
+      2723957,
+      2726385,
+      2759105,
+      2801902,
+      2871197,
+      2880065,
+      3128460,
+      3128910,
+      3327705,
+      3327715,
+      3330359,
+      3331557,
+      3333850,
+      3333852,
+      3333856,
+      3337921,
+      3339685,
+      3366593,
+      3376938,
+      3405088,
+      3413644,
+      3461537,
+      3581677,
+      3649774,
+      3678882,
+      3726217,
+      3740644,
+      3740826,
+      3740876,
+      3751543,
+      3754416,
+      3764003,
+      3776294,
+      3779136,
+      3782999,
+      3786767,
+      3793559,
+      3799070,
+      3828347,
+      3883406,
+      3920636,
+      3932053,
+      3945489,
+      3945494,
+      3945495,
+      3945531,
+      3945544,
+      3945558,
+      3945565,
+      3945568,
+      3946180,
+      3950498,
+      3957913,
+      3957971,
+      3958114,
+      3958119,
+      3958417,
+      3958422,
+      3959459,
+      3959631,
+      3968822
+    ],
+    "ordered_indices_sha256": "8fd5f7ea05d02f43ded5a9d8d57824e993d8d5ea22f46de1d8ac4f454c0073c2"
+  },
+  "exact_residue": {
+    "count": 155,
+    "ordered_indices": [
+      58460,
+      59005,
+      226183,
+      269042,
+      269045,
+      293735,
+      314948,
+      316173,
+      330764,
+      342800,
+      342830,
+      379078,
+      379082,
+      386036,
+      423661,
+      424226,
+      477118,
+      576125,
+      580242,
+      580243,
+      764898,
+      771391,
+      772641,
+      1047307,
+      1150655,
+      1442609,
+      1442692,
+      1596563,
+      1661519,
+      2245184,
+      2257657,
+      2257658,
+      2280137,
+      2373496,
+      2374202,
+      2374765,
+      2374997,
+      2523664,
+      2545464,
+      2565242,
+      2580644,
+      2580645,
+      2580648,
+      2580651,
+      2581185,
+      2581209,
+      2581219,
+      2591771,
+      2592657,
+      2593034,
+      2593240,
+      2593819,
+      2621026,
+      2621081,
+      2621273,
+      2621293,
+      2627912,
+      2627930,
+      2645941,
+      2678006,
+      2678014,
+      2678032,
+      2681964,
+      2685555,
+      2685641,
+      2740994,
+      2781292,
+      2842671,
+      2861447,
+      2870777,
+      3330235,
+      3331585,
+      3335225,
+      3341979,
+      3341980,
+      3341981,
+      3342165,
+      3368321,
+      3394720,
+      3463942,
+      3479604,
+      3579551,
+      3579552,
+      3581559,
+      3589035,
+      3595554,
+      3622896,
+      3624785,
+      3643248,
+      3643515,
+      3648882,
+      3649920,
+      3666043,
+      3666055,
+      3666058,
+      3671659,
+      3687658,
+      3687673,
+      3723506,
+      3726219,
+      3726281,
+      3726282,
+      3727225,
+      3729907,
+      3731229,
+      3738562,
+      3740611,
+      3740835,
+      3781148,
+      3785980,
+      3793105,
+      3793464,
+      3793488,
+      3793736,
+      3793832,
+      3799067,
+      3862992,
+      3884784,
+      3888410,
+      3909227,
+      3910494,
+      3910558,
+      3910562,
+      3910564,
+      3919831,
+      3935560,
+      3936176,
+      3936177,
+      3936310,
+      3936435,
+      3936479,
+      3936487,
+      3936987,
+      3939486,
+      3939503,
+      3939545,
+      3940323,
+      3940343,
+      3945374,
+      3945490,
+      3945506,
+      3945518,
+      3945519,
+      3945555,
+      3945557,
+      3945564,
+      3946008,
+      3947605,
+      3947666,
+      3949382,
+      3950483,
+      3954523,
+      3955456,
+      3960292,
+      3963005
+    ],
+    "ordered_indices_sha256": "7c9b63948551dbbe0e76a789013aa78ed65ef023fd22b40062ee6425afd41b73"
+  },
+  "execution": {
+    "command": "/Users/lukacs/claude/opengauss/venv/bin/python3 build_d6_k7_pentad_joint_conjunction.py --workers 11",
+    "elapsed_seconds": 28.800933750000695,
+    "finished_at": "2026-08-06T22:11:18.774839+00:00",
+    "logical_cpus": 12,
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "started_at": "2026-08-06T22:10:49.973852+00:00",
+    "workers": 11
+  },
+  "git": {
+    "available": true,
+    "branch": "codex/dimension6",
+    "commit": "4982e564eecf552f83160644a61fb78662b13e96",
+    "dirty": true,
+    "porcelain_sha256": "af173e3621ee26b42a7afc3fec4909060dd373f94a3d92bd9270a9b4b6c1e3df"
+  },
+  "joint_cover_quantifier_replay": {
+    "graphs": 258,
+    "ordered_graph_summaries": [
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 58460,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 2,
+        "index": 59005,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 64364,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 100375,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 226183,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 259203,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 64,
+        "current_passing_covers": 1,
+        "index": 267929,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 269042,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 269045,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 287589,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 293735,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 314948,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 316173,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 318288,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 330764,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 342495,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 128,
+        "current_passing_covers": 1,
+        "index": 342800,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 64,
+        "current_passing_covers": 3,
+        "index": 342830,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 379078,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 379082,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 386036,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 968,
+        "current_passing_covers": 1,
+        "index": 420863,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 420914,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 256,
+        "current_passing_covers": 6,
+        "index": 423661,
+        "joint_pre_capacity_failing_covers": 4,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 424226,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 429042,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 477118,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 256,
+        "current_passing_covers": 2,
+        "index": 561011,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 576125,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 580242,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 968,
+        "current_passing_covers": 3,
+        "index": 580243,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 670687,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 695846,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 764732,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 764898,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 771391,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 772641,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 1047307,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 2,
+        "index": 1150655,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 383,
+        "current_passing_covers": 2,
+        "index": 1265061,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 2
+      },
+      {
+        "covers": 765,
+        "current_passing_covers": 3,
+        "index": 1275961,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 3
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 1312465,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 1312471,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 1312473,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 1312518,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 4,
+        "index": 1442609,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 1442692,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 1596563,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 1602661,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 1661519,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 2234327,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 2,
+        "index": 2245184,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 4,
+        "index": 2257657,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 4,
+        "index": 2257658,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 2273286,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 2275150,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 630,
+        "current_passing_covers": 2,
+        "index": 2275823,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 2
+      },
+      {
+        "covers": 630,
+        "current_passing_covers": 2,
+        "index": 2275952,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 2
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 4,
+        "index": 2280137,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 2281147,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 510,
+        "current_passing_covers": 2,
+        "index": 2298936,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 2
+      },
+      {
+        "covers": 510,
+        "current_passing_covers": 5,
+        "index": 2373496,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 2374202,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 2374765,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 2,
+        "index": 2374997,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 2428222,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 2523664,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 2540715,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 128,
+        "current_passing_covers": 4,
+        "index": 2545464,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 2549595,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 2552933,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 2,
+        "index": 2565242,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 2572951,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 2580543,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 1012,
+        "current_passing_covers": 5,
+        "index": 2580644,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 3,
+        "seeds": 3
+      },
+      {
+        "covers": 1004,
+        "current_passing_covers": 4,
+        "index": 2580645,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 4,
+        "seeds": 2
+      },
+      {
+        "covers": 510,
+        "current_passing_covers": 3,
+        "index": 2580648,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 3,
+        "seeds": 2
+      },
+      {
+        "covers": 1514,
+        "current_passing_covers": 10,
+        "index": 2580651,
+        "joint_pre_capacity_failing_covers": 6,
+        "pre_capacity_passing_covers": 4,
+        "seeds": 4
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 2581185,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 510,
+        "current_passing_covers": 4,
+        "index": 2581209,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 4,
+        "seeds": 2
+      },
+      {
+        "covers": 1004,
+        "current_passing_covers": 2,
+        "index": 2581219,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 1004,
+        "current_passing_covers": 2,
+        "index": 2591766,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 2
+      },
+      {
+        "covers": 1004,
+        "current_passing_covers": 6,
+        "index": 2591771,
+        "joint_pre_capacity_failing_covers": 4,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 2592565,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 383,
+        "current_passing_covers": 2,
+        "index": 2592657,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 1004,
+        "current_passing_covers": 2,
+        "index": 2593034,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 1004,
+        "current_passing_covers": 4,
+        "index": 2593240,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 1004,
+        "current_passing_covers": 8,
+        "index": 2593819,
+        "joint_pre_capacity_failing_covers": 6,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 2599052,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 2615936,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 2621026,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 2621081,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 968,
+        "current_passing_covers": 3,
+        "index": 2621273,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 2621293,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 510,
+        "current_passing_covers": 2,
+        "index": 2621993,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 2
+      },
+      {
+        "covers": 968,
+        "current_passing_covers": 3,
+        "index": 2627912,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 2627930,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 2645941,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 2669012,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 4,
+        "index": 2678006,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 4,
+        "index": 2678014,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 7,
+        "index": 2678032,
+        "joint_pre_capacity_failing_covers": 5,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 2681964,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 968,
+        "current_passing_covers": 2,
+        "index": 2685555,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 2,
+        "index": 2685641,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 2719808,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 2720447,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 2723957,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 2726385,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 2740994,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 2759105,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 2781292,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 2801902,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 2842671,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 2861447,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 2870777,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 2871197,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 2880065,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3128460,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3128910,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 2008,
+        "current_passing_covers": 4,
+        "index": 3327705,
+        "joint_pre_capacity_failing_covers": 4,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 4
+      },
+      {
+        "covers": 1004,
+        "current_passing_covers": 2,
+        "index": 3327715,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 2
+      },
+      {
+        "covers": 510,
+        "current_passing_covers": 6,
+        "index": 3330235,
+        "joint_pre_capacity_failing_covers": 4,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3330359,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 3331557,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 7,
+        "index": 3331585,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 4,
+        "seeds": 1
+      },
+      {
+        "covers": 1004,
+        "current_passing_covers": 2,
+        "index": 3333850,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 2
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3333852,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3333856,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3335225,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 256,
+        "current_passing_covers": 2,
+        "index": 3337921,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3339685,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 3341979,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 3341980,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 3341981,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 510,
+        "current_passing_covers": 6,
+        "index": 3342165,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 4,
+        "seeds": 2
+      },
+      {
+        "covers": 510,
+        "current_passing_covers": 2,
+        "index": 3366593,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 2
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3368321,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3376938,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 3394720,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 968,
+        "current_passing_covers": 1,
+        "index": 3405088,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3413644,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 968,
+        "current_passing_covers": 1,
+        "index": 3461537,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 968,
+        "current_passing_covers": 3,
+        "index": 3463942,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 3479604,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 1012,
+        "current_passing_covers": 5,
+        "index": 3579551,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 3,
+        "seeds": 3
+      },
+      {
+        "covers": 1004,
+        "current_passing_covers": 2,
+        "index": 3579552,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 1514,
+        "current_passing_covers": 8,
+        "index": 3581559,
+        "joint_pre_capacity_failing_covers": 4,
+        "pre_capacity_passing_covers": 4,
+        "seeds": 4
+      },
+      {
+        "covers": 1733,
+        "current_passing_covers": 4,
+        "index": 3581677,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 4
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 4,
+        "index": 3589035,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 256,
+        "current_passing_covers": 2,
+        "index": 3595554,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 3622896,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 3624785,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 256,
+        "current_passing_covers": 3,
+        "index": 3643248,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 968,
+        "current_passing_covers": 3,
+        "index": 3643515,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 510,
+        "current_passing_covers": 6,
+        "index": 3648882,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 4,
+        "seeds": 2
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3649774,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 4,
+        "index": 3649920,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 3666043,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 3666055,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 3666058,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 3671659,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3678882,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 3687658,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 3687673,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 128,
+        "current_passing_covers": 4,
+        "index": 3723506,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 64,
+        "current_passing_covers": 1,
+        "index": 3726217,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 3726219,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 2,
+        "index": 3726281,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 2,
+        "index": 3726282,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3727225,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 511,
+        "current_passing_covers": 3,
+        "index": 3729907,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 3,
+        "seeds": 3
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 3731229,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 968,
+        "current_passing_covers": 3,
+        "index": 3738562,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3740611,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3740644,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3740826,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3740835,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3740876,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3751543,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3754416,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3764003,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 256,
+        "current_passing_covers": 2,
+        "index": 3776294,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 2
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3779136,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3781148,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3782999,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 2,
+        "index": 3785980,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3786767,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 968,
+        "current_passing_covers": 3,
+        "index": 3793105,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3793464,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 511,
+        "current_passing_covers": 7,
+        "index": 3793488,
+        "joint_pre_capacity_failing_covers": 4,
+        "pre_capacity_passing_covers": 3,
+        "seeds": 3
+      },
+      {
+        "covers": 765,
+        "current_passing_covers": 5,
+        "index": 3793559,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 3,
+        "seeds": 3
+      },
+      {
+        "covers": 511,
+        "current_passing_covers": 3,
+        "index": 3793736,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 3,
+        "seeds": 3
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3793832,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3799067,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3799070,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3828347,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3862992,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3883406,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 2,
+        "index": 3884784,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 510,
+        "current_passing_covers": 2,
+        "index": 3888410,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 2,
+        "index": 3909227,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3910494,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 256,
+        "current_passing_covers": 2,
+        "index": 3910558,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 256,
+        "current_passing_covers": 2,
+        "index": 3910562,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 256,
+        "current_passing_covers": 3,
+        "index": 3910564,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 3,
+        "seeds": 2
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 3919831,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3920636,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3932053,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 1096,
+        "current_passing_covers": 5,
+        "index": 3935560,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 3,
+        "seeds": 3
+      },
+      {
+        "covers": 4856,
+        "current_passing_covers": 12,
+        "index": 3936176,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 12,
+        "seeds": 5
+      },
+      {
+        "covers": 4000,
+        "current_passing_covers": 12,
+        "index": 3936177,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 12,
+        "seeds": 6
+      },
+      {
+        "covers": 3760,
+        "current_passing_covers": 8,
+        "index": 3936310,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 8,
+        "seeds": 4
+      },
+      {
+        "covers": 885,
+        "current_passing_covers": 5,
+        "index": 3936435,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 5,
+        "seeds": 3
+      },
+      {
+        "covers": 320,
+        "current_passing_covers": 8,
+        "index": 3936479,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 7,
+        "seeds": 3
+      },
+      {
+        "covers": 1288,
+        "current_passing_covers": 10,
+        "index": 3936487,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 8,
+        "seeds": 4
+      },
+      {
+        "covers": 192,
+        "current_passing_covers": 9,
+        "index": 3936987,
+        "joint_pre_capacity_failing_covers": 6,
+        "pre_capacity_passing_covers": 3,
+        "seeds": 2
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 2,
+        "index": 3939486,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 256,
+        "current_passing_covers": 2,
+        "index": 3939503,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3939545,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 3,
+        "index": 3940323,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 3,
+        "index": 3940343,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 1
+      },
+      {
+        "covers": 128,
+        "current_passing_covers": 3,
+        "index": 3945374,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 1020,
+        "current_passing_covers": 12,
+        "index": 3945489,
+        "joint_pre_capacity_failing_covers": 7,
+        "pre_capacity_passing_covers": 5,
+        "seeds": 4
+      },
+      {
+        "covers": 1020,
+        "current_passing_covers": 12,
+        "index": 3945490,
+        "joint_pre_capacity_failing_covers": 8,
+        "pre_capacity_passing_covers": 4,
+        "seeds": 4
+      },
+      {
+        "covers": 4142,
+        "current_passing_covers": 12,
+        "index": 3945494,
+        "joint_pre_capacity_failing_covers": 7,
+        "pre_capacity_passing_covers": 5,
+        "seeds": 4
+      },
+      {
+        "covers": 1020,
+        "current_passing_covers": 12,
+        "index": 3945495,
+        "joint_pre_capacity_failing_covers": 6,
+        "pre_capacity_passing_covers": 6,
+        "seeds": 4
+      },
+      {
+        "covers": 1936,
+        "current_passing_covers": 2,
+        "index": 3945506,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 2,
+        "index": 3945518,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 383,
+        "current_passing_covers": 9,
+        "index": 3945519,
+        "joint_pre_capacity_failing_covers": 6,
+        "pre_capacity_passing_covers": 3,
+        "seeds": 2
+      },
+      {
+        "covers": 1260,
+        "current_passing_covers": 6,
+        "index": 3945531,
+        "joint_pre_capacity_failing_covers": 4,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 4
+      },
+      {
+        "covers": 885,
+        "current_passing_covers": 5,
+        "index": 3945544,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 3,
+        "seeds": 3
+      },
+      {
+        "covers": 766,
+        "current_passing_covers": 10,
+        "index": 3945555,
+        "joint_pre_capacity_failing_covers": 6,
+        "pre_capacity_passing_covers": 4,
+        "seeds": 4
+      },
+      {
+        "covers": 512,
+        "current_passing_covers": 8,
+        "index": 3945557,
+        "joint_pre_capacity_failing_covers": 4,
+        "pre_capacity_passing_covers": 4,
+        "seeds": 4
+      },
+      {
+        "covers": 766,
+        "current_passing_covers": 6,
+        "index": 3945558,
+        "joint_pre_capacity_failing_covers": 4,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 4
+      },
+      {
+        "covers": 2064,
+        "current_passing_covers": 8,
+        "index": 3945564,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 6,
+        "seeds": 4
+      },
+      {
+        "covers": 2192,
+        "current_passing_covers": 6,
+        "index": 3945565,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 4,
+        "seeds": 4
+      },
+      {
+        "covers": 1260,
+        "current_passing_covers": 6,
+        "index": 3945568,
+        "joint_pre_capacity_failing_covers": 4,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 4
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3946008,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 256,
+        "current_passing_covers": 2,
+        "index": 3946180,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 2
+      },
+      {
+        "covers": 256,
+        "current_passing_covers": 5,
+        "index": 3947605,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 3,
+        "seeds": 3
+      },
+      {
+        "covers": 128,
+        "current_passing_covers": 1,
+        "index": 3947666,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 1132,
+        "current_passing_covers": 7,
+        "index": 3949382,
+        "joint_pre_capacity_failing_covers": 4,
+        "pre_capacity_passing_covers": 3,
+        "seeds": 3
+      },
+      {
+        "covers": 383,
+        "current_passing_covers": 10,
+        "index": 3950483,
+        "joint_pre_capacity_failing_covers": 6,
+        "pre_capacity_passing_covers": 4,
+        "seeds": 2
+      },
+      {
+        "covers": 885,
+        "current_passing_covers": 5,
+        "index": 3950498,
+        "joint_pre_capacity_failing_covers": 3,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 3
+      },
+      {
+        "covers": 510,
+        "current_passing_covers": 3,
+        "index": 3954523,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3955456,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3957913,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3957971,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3958114,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3958119,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3958417,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 502,
+        "current_passing_covers": 1,
+        "index": 3958422,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 1
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 1,
+        "index": 3959459,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 1004,
+        "current_passing_covers": 2,
+        "index": 3959631,
+        "joint_pre_capacity_failing_covers": 2,
+        "pre_capacity_passing_covers": 0,
+        "seeds": 2
+      },
+      {
+        "covers": 255,
+        "current_passing_covers": 2,
+        "index": 3960292,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 1,
+        "seeds": 1
+      },
+      {
+        "covers": 510,
+        "current_passing_covers": 3,
+        "index": 3963005,
+        "joint_pre_capacity_failing_covers": 1,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      },
+      {
+        "covers": 1004,
+        "current_passing_covers": 2,
+        "index": 3968822,
+        "joint_pre_capacity_failing_covers": 0,
+        "pre_capacity_passing_covers": 2,
+        "seeds": 2
+      }
+    ],
+    "ordered_graph_summaries_sha256": "f9958fb433d626153c50146270e7756017804ae7976d8614e6ac42561e430092",
+    "required_cover_partition": {
+      "current_passing_covers": 738,
+      "joint_pre_capacity_failing_covers": 342,
+      "pre_capacity_passing_covers": 396
+    },
+    "totals": {
+      "covers": 145209,
+      "current_passing_covers": 738,
+      "joint_pre_capacity_failing_covers": 342,
+      "pre_capacity_passing_covers": 396,
+      "seeds": 390
+    }
+  },
+  "joint_support_rejections": {
+    "count": 69,
+    "ordered_indices": [
+      259203,
+      267929,
+      287589,
+      342495,
+      764732,
+      1265061,
+      1275961,
+      1312465,
+      1312471,
+      1312473,
+      1312518,
+      2273286,
+      2275150,
+      2275823,
+      2275952,
+      2281147,
+      2298936,
+      2540715,
+      2549595,
+      2552933,
+      2572951,
+      2580543,
+      2591766,
+      2592565,
+      2599052,
+      2615936,
+      2621993,
+      2720447,
+      2723957,
+      2726385,
+      2880065,
+      3128460,
+      3128910,
+      3327705,
+      3327715,
+      3330359,
+      3331557,
+      3333850,
+      3333852,
+      3333856,
+      3366593,
+      3376938,
+      3413644,
+      3461537,
+      3581677,
+      3649774,
+      3726217,
+      3776294,
+      3793559,
+      3828347,
+      3920636,
+      3932053,
+      3945489,
+      3945494,
+      3945495,
+      3945531,
+      3945544,
+      3945558,
+      3945565,
+      3945568,
+      3946180,
+      3950498,
+      3957913,
+      3957971,
+      3958114,
+      3958119,
+      3958417,
+      3958422,
+      3959631
+    ],
+    "ordered_indices_sha256": "4d15dc5170d1f5964547b6971da4072eb3615d1b93cb1ac178aeb77a83f82225"
+  },
+  "kind": "d6_k7_pentad_joint_seed_conjunction",
+  "new_seed_conjunction_rejections": {
+    "conservative_pentad_only_count": 34,
+    "conservative_pentad_only_indices_sha256": "1ca4925100f67a6ce4ebcff222c7c0d7f8be0bee15fd27271223606e212ef3f8",
+    "conservative_pentad_only_ordered_indices": [
+      64364,
+      100375,
+      318288,
+      420863,
+      420914,
+      429042,
+      561011,
+      670687,
+      695846,
+      1602661,
+      2234327,
+      2428222,
+      2669012,
+      2719808,
+      2759105,
+      2801902,
+      2871197,
+      3337921,
+      3339685,
+      3405088,
+      3678882,
+      3740644,
+      3740826,
+      3740876,
+      3751543,
+      3754416,
+      3764003,
+      3779136,
+      3782999,
+      3786767,
+      3799070,
+      3883406,
+      3959459,
+      3968822
+    ],
+    "count": 34,
+    "full_joint_or_pentad_count": 34,
+    "full_joint_or_pentad_indices_sha256": "1ca4925100f67a6ce4ebcff222c7c0d7f8be0bee15fd27271223606e212ef3f8",
+    "full_joint_or_pentad_ordered_indices": [
+      64364,
+      100375,
+      318288,
+      420863,
+      420914,
+      429042,
+      561011,
+      670687,
+      695846,
+      1602661,
+      2234327,
+      2428222,
+      2669012,
+      2719808,
+      2759105,
+      2801902,
+      2871197,
+      3337921,
+      3339685,
+      3405088,
+      3678882,
+      3740644,
+      3740826,
+      3740876,
+      3751543,
+      3754416,
+      3764003,
+      3779136,
+      3782999,
+      3786767,
+      3799070,
+      3883406,
+      3959459,
+      3968822
+    ],
+    "ordered_indices": [
+      64364,
+      100375,
+      318288,
+      420863,
+      420914,
+      429042,
+      561011,
+      670687,
+      695846,
+      1602661,
+      2234327,
+      2428222,
+      2669012,
+      2719808,
+      2759105,
+      2801902,
+      2871197,
+      3337921,
+      3339685,
+      3405088,
+      3678882,
+      3740644,
+      3740826,
+      3740876,
+      3751543,
+      3754416,
+      3764003,
+      3779136,
+      3782999,
+      3786767,
+      3799070,
+      3883406,
+      3959459,
+      3968822
+    ],
+    "ordered_indices_sha256": "1ca4925100f67a6ce4ebcff222c7c0d7f8be0bee15fd27271223606e212ef3f8",
+    "witnesses": [
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 248,
+              "passing": 1,
+              "tetrad": 6
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 64364,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "b1e84469a114b25760f02b46ed300d386b9577e6d75e1cd75533aa4e553c8c76",
+                  "pentad_index": 9,
+                  "report_ordinal": 0
+                },
+                "seed": [
+                  1,
+                  3,
+                  8,
+                  11,
+                  14,
+                  15,
+                  16
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              3,
+              8,
+              11,
+              14,
+              15,
+              16
+            ],
+            "seed_mask": 117002
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 248,
+              "passing": 1,
+              "tetrad": 6
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 64364,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "b1e84469a114b25760f02b46ed300d386b9577e6d75e1cd75533aa4e553c8c76",
+                  "pentad_index": 9,
+                  "report_ordinal": 0
+                },
+                "seed": [
+                  1,
+                  3,
+                  8,
+                  11,
+                  14,
+                  15,
+                  16
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              3,
+              8,
+              11,
+              14,
+              15,
+              16
+            ],
+            "seed_mask": 117002
+          }
+        ],
+        "index": 64364,
+        "ordinal": 2
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 244,
+              "passing": 1,
+              "tetrad": 10
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 100375,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "1dd60a34f27ca71ce9acf98b672b472698aaa969fe63295613a3dd21ef8cbb99",
+                  "pentad_index": 4,
+                  "report_ordinal": 1
+                },
+                "seed": [
+                  2,
+                  5,
+                  8,
+                  12,
+                  13,
+                  15,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              5,
+              8,
+              12,
+              13,
+              15,
+              17
+            ],
+            "seed_mask": 176420
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 244,
+              "passing": 1,
+              "tetrad": 10
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 100375,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "1dd60a34f27ca71ce9acf98b672b472698aaa969fe63295613a3dd21ef8cbb99",
+                  "pentad_index": 4,
+                  "report_ordinal": 1
+                },
+                "seed": [
+                  2,
+                  5,
+                  8,
+                  12,
+                  13,
+                  15,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              5,
+              8,
+              12,
+              13,
+              15,
+              17
+            ],
+            "seed_mask": 176420
+          }
+        ],
+        "index": 100375,
+        "ordinal": 3
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 248,
+              "passing": 1,
+              "tetrad": 6
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 318288,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "2d0912694ff7a357d9b614f04091ae74f7bc54f444097ad67ee97e6b52df023a",
+                  "pentad_index": 14,
+                  "report_ordinal": 3
+                },
+                "seed": [
+                  1,
+                  5,
+                  7,
+                  11,
+                  12,
+                  16,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              5,
+              7,
+              11,
+              12,
+              16,
+              17
+            ],
+            "seed_mask": 202914
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 248,
+              "passing": 1,
+              "tetrad": 6
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 318288,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "2d0912694ff7a357d9b614f04091ae74f7bc54f444097ad67ee97e6b52df023a",
+                  "pentad_index": 14,
+                  "report_ordinal": 3
+                },
+                "seed": [
+                  1,
+                  5,
+                  7,
+                  11,
+                  12,
+                  16,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              5,
+              7,
+              11,
+              12,
+              16,
+              17
+            ],
+            "seed_mask": 202914
+          }
+        ],
+        "index": 318288,
+        "ordinal": 13
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 968,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 956,
+              "passing": 1,
+              "tetrad": 11
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 420863,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "58e1bb0c8f6077f9cf963bb530986787676b3d85a663b38f138829ff5566a235",
+                  "pentad_index": 2,
+                  "report_ordinal": 4
+                },
+                "seed": [
+                  1,
+                  3,
+                  8,
+                  10,
+                  11,
+                  14,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 968,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              3,
+              8,
+              10,
+              11,
+              14,
+              17
+            ],
+            "seed_mask": 150794
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 956,
+              "passing": 1,
+              "tetrad": 11
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 420863,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "58e1bb0c8f6077f9cf963bb530986787676b3d85a663b38f138829ff5566a235",
+                  "pentad_index": 2,
+                  "report_ordinal": 4
+                },
+                "seed": [
+                  1,
+                  3,
+                  8,
+                  10,
+                  11,
+                  14,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 968,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              3,
+              8,
+              10,
+              11,
+              14,
+              17
+            ],
+            "seed_mask": 150794
+          }
+        ],
+        "index": 420863,
+        "ordinal": 21
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 245,
+              "passing": 1,
+              "tetrad": 9
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 420914,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "ecfa1574ad66a26370a0d01342813c84f23e59a5c15e5b596661192b8fd480e1",
+                  "pentad_index": 11,
+                  "report_ordinal": 5
+                },
+                "seed": [
+                  1,
+                  3,
+                  8,
+                  10,
+                  11,
+                  14,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              3,
+              8,
+              10,
+              11,
+              14,
+              17
+            ],
+            "seed_mask": 150794
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 245,
+              "passing": 1,
+              "tetrad": 9
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 420914,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "ecfa1574ad66a26370a0d01342813c84f23e59a5c15e5b596661192b8fd480e1",
+                  "pentad_index": 11,
+                  "report_ordinal": 5
+                },
+                "seed": [
+                  1,
+                  3,
+                  8,
+                  10,
+                  11,
+                  14,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              3,
+              8,
+              10,
+              11,
+              14,
+              17
+            ],
+            "seed_mask": 150794
+          }
+        ],
+        "index": 420914,
+        "ordinal": 22
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 249,
+              "passing": 1,
+              "tetrad": 5
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 429042,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "cd16b5c8b3a127812ab81149262550449bddc54a413cf7461bec3c034e7291ae",
+                  "pentad_index": 13,
+                  "report_ordinal": 6
+                },
+                "seed": [
+                  1,
+                  3,
+                  8,
+                  10,
+                  11,
+                  14,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              3,
+              8,
+              10,
+              11,
+              14,
+              17
+            ],
+            "seed_mask": 150794
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 249,
+              "passing": 1,
+              "tetrad": 5
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 429042,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "cd16b5c8b3a127812ab81149262550449bddc54a413cf7461bec3c034e7291ae",
+                  "pentad_index": 13,
+                  "report_ordinal": 6
+                },
+                "seed": [
+                  1,
+                  3,
+                  8,
+                  10,
+                  11,
+                  14,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              3,
+              8,
+              10,
+              11,
+              14,
+              17
+            ],
+            "seed_mask": 150794
+          }
+        ],
+        "index": 429042,
+        "ordinal": 25
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 256,
+          "current_passing_covers": 2,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 2,
+          "seeds": 2
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 119,
+              "passing": 1,
+              "tetrad": 8
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 561011,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "66f233beb8baf4ed7ca50a0f687961a9afa6f679e1f8eb8e2a78ef4a7113cf63",
+                  "pentad_index": 9,
+                  "report_ordinal": 7
+                },
+                "seed": [
+                  1,
+                  5,
+                  7,
+                  10,
+                  11,
+                  15,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 128,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              5,
+              7,
+              10,
+              11,
+              15,
+              17
+            ],
+            "seed_mask": 167074
+          },
+          {
+            "cover_status_counts": {
+              "baseline": 119,
+              "passing": 1,
+              "tetrad": 8
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 561011,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "08bfeafd6b1d428e9e5f59f571f4d048f046a0c191475f0629a05a551dc0e5c3",
+                  "pentad_index": 17,
+                  "report_ordinal": 8
+                },
+                "seed": [
+                  3,
+                  4,
+                  6,
+                  10,
+                  12,
+                  16,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 128,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              3,
+              4,
+              6,
+              10,
+              12,
+              16,
+              17
+            ],
+            "seed_mask": 201816
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 119,
+              "passing": 1,
+              "tetrad": 8
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 561011,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "66f233beb8baf4ed7ca50a0f687961a9afa6f679e1f8eb8e2a78ef4a7113cf63",
+                  "pentad_index": 9,
+                  "report_ordinal": 7
+                },
+                "seed": [
+                  1,
+                  5,
+                  7,
+                  10,
+                  11,
+                  15,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 128,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              5,
+              7,
+              10,
+              11,
+              15,
+              17
+            ],
+            "seed_mask": 167074
+          },
+          {
+            "cover_status_counts": {
+              "baseline": 119,
+              "passing": 1,
+              "tetrad": 8
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 561011,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "08bfeafd6b1d428e9e5f59f571f4d048f046a0c191475f0629a05a551dc0e5c3",
+                  "pentad_index": 17,
+                  "report_ordinal": 8
+                },
+                "seed": [
+                  3,
+                  4,
+                  6,
+                  10,
+                  12,
+                  16,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 128,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              3,
+              4,
+              6,
+              10,
+              12,
+              16,
+              17
+            ],
+            "seed_mask": 201816
+          }
+        ],
+        "index": 561011,
+        "ordinal": 27
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 249,
+              "passing": 1,
+              "tetrad": 5
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 670687,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "7acdc49bbefb4fc97f28c67239d0c339d544a4002589413684d63237180a4a12",
+                  "pentad_index": 4,
+                  "report_ordinal": 9
+                },
+                "seed": [
+                  4,
+                  7,
+                  9,
+                  10,
+                  11,
+                  13,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              4,
+              7,
+              9,
+              10,
+              11,
+              13,
+              17
+            ],
+            "seed_mask": 142992
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 249,
+              "passing": 1,
+              "tetrad": 5
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 670687,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "7acdc49bbefb4fc97f28c67239d0c339d544a4002589413684d63237180a4a12",
+                  "pentad_index": 4,
+                  "report_ordinal": 9
+                },
+                "seed": [
+                  4,
+                  7,
+                  9,
+                  10,
+                  11,
+                  13,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              4,
+              7,
+              9,
+              10,
+              11,
+              13,
+              17
+            ],
+            "seed_mask": 142992
+          }
+        ],
+        "index": 670687,
+        "ordinal": 31
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 245,
+              "passing": 1,
+              "tetrad": 9
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 695846,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "60dc01d66f7c8c5c97d3012f374605dcd50b17689d02ebc674495cf7a861de8a",
+                  "pentad_index": 5,
+                  "report_ordinal": 10
+                },
+                "seed": [
+                  3,
+                  4,
+                  6,
+                  10,
+                  12,
+                  13,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              3,
+              4,
+              6,
+              10,
+              12,
+              13,
+              17
+            ],
+            "seed_mask": 144472
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 245,
+              "passing": 1,
+              "tetrad": 9
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 695846,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "60dc01d66f7c8c5c97d3012f374605dcd50b17689d02ebc674495cf7a861de8a",
+                  "pentad_index": 5,
+                  "report_ordinal": 10
+                },
+                "seed": [
+                  3,
+                  4,
+                  6,
+                  10,
+                  12,
+                  13,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              3,
+              4,
+              6,
+              10,
+              12,
+              13,
+              17
+            ],
+            "seed_mask": 144472
+          }
+        ],
+        "index": 695846,
+        "ordinal": 32
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 254,
+              "passing": 1
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 1602661,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "88d0c9c0d404e77c2267eca67bc82603926a58d26b5fe445e04710dedea9daa8",
+                  "pentad_index": 19,
+                  "report_ordinal": 12
+                },
+                "seed": [
+                  2,
+                  4,
+                  10,
+                  11,
+                  15,
+                  17,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              4,
+              10,
+              11,
+              15,
+              17,
+              18
+            ],
+            "seed_mask": 429076
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 254,
+              "passing": 1
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 1602661,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "88d0c9c0d404e77c2267eca67bc82603926a58d26b5fe445e04710dedea9daa8",
+                  "pentad_index": 19,
+                  "report_ordinal": 12
+                },
+                "seed": [
+                  2,
+                  4,
+                  10,
+                  11,
+                  15,
+                  17,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              4,
+              10,
+              11,
+              15,
+              17,
+              18
+            ],
+            "seed_mask": 429076
+          }
+        ],
+        "index": 1602661,
+        "ordinal": 48
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 248,
+              "passing": 1,
+              "tetrad": 6
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 2234327,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "21c72a21bd73b9c928b3f7f31a37a1e7891764d1ee5fb6bc5945c37a7400f6b5",
+                  "pentad_index": 11,
+                  "report_ordinal": 14
+                },
+                "seed": [
+                  0,
+                  1,
+                  5,
+                  8,
+                  9,
+                  12,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              1,
+              5,
+              8,
+              9,
+              12,
+              18
+            ],
+            "seed_mask": 267043
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 248,
+              "passing": 1,
+              "tetrad": 6
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 2234327,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "21c72a21bd73b9c928b3f7f31a37a1e7891764d1ee5fb6bc5945c37a7400f6b5",
+                  "pentad_index": 11,
+                  "report_ordinal": 14
+                },
+                "seed": [
+                  0,
+                  1,
+                  5,
+                  8,
+                  9,
+                  12,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              1,
+              5,
+              8,
+              9,
+              12,
+              18
+            ],
+            "seed_mask": 267043
+          }
+        ],
+        "index": 2234327,
+        "ordinal": 50
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 248,
+              "passing": 1,
+              "tetrad": 6
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 2428222,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "042c0803de718fda6cca3c8b452712d1b4bb1f12cde7e5d923abf1a4561a8533",
+                  "pentad_index": 10,
+                  "report_ordinal": 15
+                },
+                "seed": [
+                  0,
+                  2,
+                  4,
+                  9,
+                  11,
+                  14,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              2,
+              4,
+              9,
+              11,
+              14,
+              18
+            ],
+            "seed_mask": 281109
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 248,
+              "passing": 1,
+              "tetrad": 6
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 2428222,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "042c0803de718fda6cca3c8b452712d1b4bb1f12cde7e5d923abf1a4561a8533",
+                  "pentad_index": 10,
+                  "report_ordinal": 15
+                },
+                "seed": [
+                  0,
+                  2,
+                  4,
+                  9,
+                  11,
+                  14,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              2,
+              4,
+              9,
+              11,
+              14,
+              18
+            ],
+            "seed_mask": 281109
+          }
+        ],
+        "index": 2428222,
+        "ordinal": 65
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 247,
+              "passing": 1,
+              "tetrad": 7
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 2669012,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "134bbecc1e821c5987b2313cf890e05fdb8d4f5649fbdb9f95836f3b09ece2e9",
+                  "pentad_index": 11,
+                  "report_ordinal": 17
+                },
+                "seed": [
+                  2,
+                  9,
+                  11,
+                  13,
+                  14,
+                  15,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              9,
+              11,
+              13,
+              14,
+              15,
+              18
+            ],
+            "seed_mask": 322052
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 247,
+              "passing": 1,
+              "tetrad": 7
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 2669012,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "134bbecc1e821c5987b2313cf890e05fdb8d4f5649fbdb9f95836f3b09ece2e9",
+                  "pentad_index": 11,
+                  "report_ordinal": 17
+                },
+                "seed": [
+                  2,
+                  9,
+                  11,
+                  13,
+                  14,
+                  15,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              9,
+              11,
+              13,
+              14,
+              15,
+              18
+            ],
+            "seed_mask": 322052
+          }
+        ],
+        "index": 2669012,
+        "ordinal": 98
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 502,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 501,
+              "passing": 1
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 2719808,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "5a1b9b93ebdde7fad743cf86fe6eab0b3a0c01c4ba4b75bddb4c6f6fde790a4c",
+                  "pentad_index": 10,
+                  "report_ordinal": 18
+                },
+                "seed": [
+                  2,
+                  4,
+                  7,
+                  10,
+                  12,
+                  14,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 502,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              4,
+              7,
+              10,
+              12,
+              14,
+              18
+            ],
+            "seed_mask": 283796
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 501,
+              "passing": 1
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 2719808,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "5a1b9b93ebdde7fad743cf86fe6eab0b3a0c01c4ba4b75bddb4c6f6fde790a4c",
+                  "pentad_index": 10,
+                  "report_ordinal": 18
+                },
+                "seed": [
+                  2,
+                  4,
+                  7,
+                  10,
+                  12,
+                  14,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 502,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              4,
+              7,
+              10,
+              12,
+              14,
+              18
+            ],
+            "seed_mask": 283796
+          }
+        ],
+        "index": 2719808,
+        "ordinal": 105
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 249,
+              "passing": 1,
+              "tetrad": 5
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 2759105,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "dcc44e9c9dfcc7d01cd317af71c62abe6f4a7b4e2cc2b6b2b835d36059d4f6f6",
+                  "pentad_index": 3,
+                  "report_ordinal": 20
+                },
+                "seed": [
+                  0,
+                  2,
+                  4,
+                  11,
+                  14,
+                  17,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              2,
+              4,
+              11,
+              14,
+              17,
+              18
+            ],
+            "seed_mask": 411669
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 249,
+              "passing": 1,
+              "tetrad": 5
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 2759105,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "dcc44e9c9dfcc7d01cd317af71c62abe6f4a7b4e2cc2b6b2b835d36059d4f6f6",
+                  "pentad_index": 3,
+                  "report_ordinal": 20
+                },
+                "seed": [
+                  0,
+                  2,
+                  4,
+                  11,
+                  14,
+                  17,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              2,
+              4,
+              11,
+              14,
+              17,
+              18
+            ],
+            "seed_mask": 411669
+          }
+        ],
+        "index": 2759105,
+        "ordinal": 110
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 502,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 495,
+              "passing": 1,
+              "tetrad": 6
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 2801902,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "8d6d3603922c1629944094550b6659575aa6becbe08cccec44d2d5f277bc9ff0",
+                  "pentad_index": 12,
+                  "report_ordinal": 22
+                },
+                "seed": [
+                  0,
+                  1,
+                  3,
+                  11,
+                  13,
+                  14,
+                  16
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 502,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              1,
+              3,
+              11,
+              13,
+              14,
+              16
+            ],
+            "seed_mask": 92171
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 495,
+              "passing": 1,
+              "tetrad": 6
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 2801902,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "8d6d3603922c1629944094550b6659575aa6becbe08cccec44d2d5f277bc9ff0",
+                  "pentad_index": 12,
+                  "report_ordinal": 22
+                },
+                "seed": [
+                  0,
+                  1,
+                  3,
+                  11,
+                  13,
+                  14,
+                  16
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 502,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              1,
+              3,
+              11,
+              13,
+              14,
+              16
+            ],
+            "seed_mask": 92171
+          }
+        ],
+        "index": 2801902,
+        "ordinal": 112
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 245,
+              "passing": 1,
+              "tetrad": 9
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 2871197,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "0854301738ca5b6b76a399c9b2999c74956dcbbf01dfdb410140d06dbba04837",
+                  "pentad_index": 13,
+                  "report_ordinal": 26
+                },
+                "seed": [
+                  6,
+                  7,
+                  8,
+                  9,
+                  12,
+                  13,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              6,
+              7,
+              8,
+              9,
+              12,
+              13,
+              17
+            ],
+            "seed_mask": 144320
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 245,
+              "passing": 1,
+              "tetrad": 9
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 2871197,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "0854301738ca5b6b76a399c9b2999c74956dcbbf01dfdb410140d06dbba04837",
+                  "pentad_index": 13,
+                  "report_ordinal": 26
+                },
+                "seed": [
+                  6,
+                  7,
+                  8,
+                  9,
+                  12,
+                  13,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              6,
+              7,
+              8,
+              9,
+              12,
+              13,
+              17
+            ],
+            "seed_mask": 144320
+          }
+        ],
+        "index": 2871197,
+        "ordinal": 116
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 256,
+          "current_passing_covers": 2,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 2,
+          "seeds": 2
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 123,
+              "passing": 1,
+              "tetrad": 4
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3337921,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "ffb81f5b8f54599a0c3f5961584603cdc60473bb80e2ba07171493cc30331dee",
+                  "pentad_index": 18,
+                  "report_ordinal": 27
+                },
+                "seed": [
+                  0,
+                  5,
+                  9,
+                  10,
+                  12,
+                  14,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 128,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              5,
+              9,
+              10,
+              12,
+              14,
+              17
+            ],
+            "seed_mask": 153121
+          },
+          {
+            "cover_status_counts": {
+              "baseline": 123,
+              "passing": 1,
+              "tetrad": 4
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3337921,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "5fa02f0e2fc46fe7f5d284d0e0551b0db09e69fd35ff45d9a0a296e9284739a3",
+                  "pentad_index": 16,
+                  "report_ordinal": 28
+                },
+                "seed": [
+                  6,
+                  7,
+                  8,
+                  11,
+                  13,
+                  14,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 128,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              6,
+              7,
+              8,
+              11,
+              13,
+              14,
+              17
+            ],
+            "seed_mask": 158144
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 123,
+              "passing": 1,
+              "tetrad": 4
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3337921,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "ffb81f5b8f54599a0c3f5961584603cdc60473bb80e2ba07171493cc30331dee",
+                  "pentad_index": 18,
+                  "report_ordinal": 27
+                },
+                "seed": [
+                  0,
+                  5,
+                  9,
+                  10,
+                  12,
+                  14,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 128,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              5,
+              9,
+              10,
+              12,
+              14,
+              17
+            ],
+            "seed_mask": 153121
+          },
+          {
+            "cover_status_counts": {
+              "baseline": 123,
+              "passing": 1,
+              "tetrad": 4
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3337921,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "5fa02f0e2fc46fe7f5d284d0e0551b0db09e69fd35ff45d9a0a296e9284739a3",
+                  "pentad_index": 16,
+                  "report_ordinal": 28
+                },
+                "seed": [
+                  6,
+                  7,
+                  8,
+                  11,
+                  13,
+                  14,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 128,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              6,
+              7,
+              8,
+              11,
+              13,
+              14,
+              17
+            ],
+            "seed_mask": 158144
+          }
+        ],
+        "index": 3337921,
+        "ordinal": 130
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 244,
+              "passing": 1,
+              "tetrad": 10
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3339685,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "b6c4640e1da65252a3580986fc95de246d7b53b63a765d44fde182a239f547ec",
+                  "pentad_index": 2,
+                  "report_ordinal": 29
+                },
+                "seed": [
+                  5,
+                  10,
+                  12,
+                  13,
+                  14,
+                  15,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              5,
+              10,
+              12,
+              13,
+              14,
+              15,
+              17
+            ],
+            "seed_mask": 193568
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 244,
+              "passing": 1,
+              "tetrad": 10
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3339685,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "b6c4640e1da65252a3580986fc95de246d7b53b63a765d44fde182a239f547ec",
+                  "pentad_index": 2,
+                  "report_ordinal": 29
+                },
+                "seed": [
+                  5,
+                  10,
+                  12,
+                  13,
+                  14,
+                  15,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              5,
+              10,
+              12,
+              13,
+              14,
+              15,
+              17
+            ],
+            "seed_mask": 193568
+          }
+        ],
+        "index": 3339685,
+        "ordinal": 131
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 968,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 963,
+              "passing": 1,
+              "tetrad": 4
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3405088,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "0c70a44950d8c0ae0d8da874d05b6ce558cf69cd6d413cdf26b74a385a0db472",
+                  "pentad_index": 13,
+                  "report_ordinal": 31
+                },
+                "seed": [
+                  4,
+                  7,
+                  9,
+                  10,
+                  11,
+                  16,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 968,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              4,
+              7,
+              9,
+              10,
+              11,
+              16,
+              17
+            ],
+            "seed_mask": 200336
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 963,
+              "passing": 1,
+              "tetrad": 4
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3405088,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "0c70a44950d8c0ae0d8da874d05b6ce558cf69cd6d413cdf26b74a385a0db472",
+                  "pentad_index": 13,
+                  "report_ordinal": 31
+                },
+                "seed": [
+                  4,
+                  7,
+                  9,
+                  10,
+                  11,
+                  16,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 968,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              4,
+              7,
+              9,
+              10,
+              11,
+              16,
+              17
+            ],
+            "seed_mask": 200336
+          }
+        ],
+        "index": 3405088,
+        "ordinal": 140
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 248,
+              "passing": 1,
+              "tetrad": 6
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3678882,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "43be227fcbf69b40db8aa6bc1fc5306306217a2d6ba823b8a8de4d3afc9590fd",
+                  "pentad_index": 3,
+                  "report_ordinal": 32
+                },
+                "seed": [
+                  1,
+                  3,
+                  6,
+                  8,
+                  12,
+                  15,
+                  16
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              3,
+              6,
+              8,
+              12,
+              15,
+              16
+            ],
+            "seed_mask": 102730
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 248,
+              "passing": 1,
+              "tetrad": 6
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3678882,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "43be227fcbf69b40db8aa6bc1fc5306306217a2d6ba823b8a8de4d3afc9590fd",
+                  "pentad_index": 3,
+                  "report_ordinal": 32
+                },
+                "seed": [
+                  1,
+                  3,
+                  6,
+                  8,
+                  12,
+                  15,
+                  16
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              3,
+              6,
+              8,
+              12,
+              15,
+              16
+            ],
+            "seed_mask": 102730
+          }
+        ],
+        "index": 3678882,
+        "ordinal": 162
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 245,
+              "passing": 1,
+              "tetrad": 9
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3740644,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "f02a66b5c56a9e216472fd4198ab304b068828929b37ff23600604fc67e87487",
+                  "pentad_index": 5,
+                  "report_ordinal": 33
+                },
+                "seed": [
+                  5,
+                  7,
+                  8,
+                  9,
+                  13,
+                  17,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              5,
+              7,
+              8,
+              9,
+              13,
+              17,
+              18
+            ],
+            "seed_mask": 402336
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 245,
+              "passing": 1,
+              "tetrad": 9
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3740644,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "f02a66b5c56a9e216472fd4198ab304b068828929b37ff23600604fc67e87487",
+                  "pentad_index": 5,
+                  "report_ordinal": 33
+                },
+                "seed": [
+                  5,
+                  7,
+                  8,
+                  9,
+                  13,
+                  17,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              5,
+              7,
+              8,
+              9,
+              13,
+              17,
+              18
+            ],
+            "seed_mask": 402336
+          }
+        ],
+        "index": 3740644,
+        "ordinal": 175
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 254,
+              "passing": 1
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3740826,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "850c9d03d2b6fccb5a05b5568daca11c53c05a53b5df746c0ced26fb9bb88cd6",
+                  "pentad_index": 6,
+                  "report_ordinal": 34
+                },
+                "seed": [
+                  2,
+                  4,
+                  6,
+                  7,
+                  11,
+                  17,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              4,
+              6,
+              7,
+              11,
+              17,
+              18
+            ],
+            "seed_mask": 395476
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 254,
+              "passing": 1
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3740826,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "850c9d03d2b6fccb5a05b5568daca11c53c05a53b5df746c0ced26fb9bb88cd6",
+                  "pentad_index": 6,
+                  "report_ordinal": 34
+                },
+                "seed": [
+                  2,
+                  4,
+                  6,
+                  7,
+                  11,
+                  17,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              4,
+              6,
+              7,
+              11,
+              17,
+              18
+            ],
+            "seed_mask": 395476
+          }
+        ],
+        "index": 3740826,
+        "ordinal": 176
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 247,
+              "passing": 1,
+              "tetrad": 7
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3740876,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "a4580c2472580a2b6b8a76325d15347968309310aac930295fb5892fe91ea66f",
+                  "pentad_index": 2,
+                  "report_ordinal": 36
+                },
+                "seed": [
+                  2,
+                  4,
+                  6,
+                  7,
+                  11,
+                  17,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              4,
+              6,
+              7,
+              11,
+              17,
+              18
+            ],
+            "seed_mask": 395476
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 247,
+              "passing": 1,
+              "tetrad": 7
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3740876,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "a4580c2472580a2b6b8a76325d15347968309310aac930295fb5892fe91ea66f",
+                  "pentad_index": 2,
+                  "report_ordinal": 36
+                },
+                "seed": [
+                  2,
+                  4,
+                  6,
+                  7,
+                  11,
+                  17,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              4,
+              6,
+              7,
+              11,
+              17,
+              18
+            ],
+            "seed_mask": 395476
+          }
+        ],
+        "index": 3740876,
+        "ordinal": 178
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 502,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 498,
+              "passing": 1,
+              "tetrad": 3
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3751543,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "67cceac098dbedc7af8b2bfa242753ee08faadbe3538fb2e3a5c4284bd64c903",
+                  "pentad_index": 2,
+                  "report_ordinal": 37
+                },
+                "seed": [
+                  5,
+                  7,
+                  8,
+                  9,
+                  13,
+                  14,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 502,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              5,
+              7,
+              8,
+              9,
+              13,
+              14,
+              18
+            ],
+            "seed_mask": 287648
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 498,
+              "passing": 1,
+              "tetrad": 3
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3751543,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "67cceac098dbedc7af8b2bfa242753ee08faadbe3538fb2e3a5c4284bd64c903",
+                  "pentad_index": 2,
+                  "report_ordinal": 37
+                },
+                "seed": [
+                  5,
+                  7,
+                  8,
+                  9,
+                  13,
+                  14,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 502,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              5,
+              7,
+              8,
+              9,
+              13,
+              14,
+              18
+            ],
+            "seed_mask": 287648
+          }
+        ],
+        "index": 3751543,
+        "ordinal": 179
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 251,
+              "passing": 1,
+              "tetrad": 3
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3754416,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "ea7f126dfc4e3e590055dd6306ebd5bb3ad99f7f10a823951d831c44ffdfa0d7",
+                  "pentad_index": 12,
+                  "report_ordinal": 38
+                },
+                "seed": [
+                  1,
+                  6,
+                  8,
+                  12,
+                  13,
+                  15,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              6,
+              8,
+              12,
+              13,
+              15,
+              18
+            ],
+            "seed_mask": 307522
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 251,
+              "passing": 1,
+              "tetrad": 3
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3754416,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "ea7f126dfc4e3e590055dd6306ebd5bb3ad99f7f10a823951d831c44ffdfa0d7",
+                  "pentad_index": 12,
+                  "report_ordinal": 38
+                },
+                "seed": [
+                  1,
+                  6,
+                  8,
+                  12,
+                  13,
+                  15,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              1,
+              6,
+              8,
+              12,
+              13,
+              15,
+              18
+            ],
+            "seed_mask": 307522
+          }
+        ],
+        "index": 3754416,
+        "ordinal": 180
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 250,
+              "passing": 1,
+              "tetrad": 4
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3764003,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "9caef66b267be8529a925e12343718f005ccf7e04e40007b63714db1628c1476",
+                  "pentad_index": 5,
+                  "report_ordinal": 39
+                },
+                "seed": [
+                  2,
+                  4,
+                  6,
+                  7,
+                  11,
+                  14,
+                  16
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              4,
+              6,
+              7,
+              11,
+              14,
+              16
+            ],
+            "seed_mask": 84180
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 250,
+              "passing": 1,
+              "tetrad": 4
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3764003,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "9caef66b267be8529a925e12343718f005ccf7e04e40007b63714db1628c1476",
+                  "pentad_index": 5,
+                  "report_ordinal": 39
+                },
+                "seed": [
+                  2,
+                  4,
+                  6,
+                  7,
+                  11,
+                  14,
+                  16
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              4,
+              6,
+              7,
+              11,
+              14,
+              16
+            ],
+            "seed_mask": 84180
+          }
+        ],
+        "index": 3764003,
+        "ordinal": 181
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 250,
+              "passing": 1,
+              "tetrad": 4
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3779136,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "0ad78706549562a8291022686ecfb740cb0fb7917c035125a8d4e470b9061937",
+                  "pentad_index": 7,
+                  "report_ordinal": 40
+                },
+                "seed": [
+                  0,
+                  1,
+                  2,
+                  5,
+                  11,
+                  14,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              1,
+              2,
+              5,
+              11,
+              14,
+              18
+            ],
+            "seed_mask": 280615
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 250,
+              "passing": 1,
+              "tetrad": 4
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3779136,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "0ad78706549562a8291022686ecfb740cb0fb7917c035125a8d4e470b9061937",
+                  "pentad_index": 7,
+                  "report_ordinal": 40
+                },
+                "seed": [
+                  0,
+                  1,
+                  2,
+                  5,
+                  11,
+                  14,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              1,
+              2,
+              5,
+              11,
+              14,
+              18
+            ],
+            "seed_mask": 280615
+          }
+        ],
+        "index": 3779136,
+        "ordinal": 183
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 253,
+              "passing": 1,
+              "tetrad": 1
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3782999,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "f33725de7eee94a0562f428f772baadf7dfdd216c537fbfba860199b581d14be",
+                  "pentad_index": 7,
+                  "report_ordinal": 42
+                },
+                "seed": [
+                  5,
+                  7,
+                  8,
+                  9,
+                  13,
+                  15,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              5,
+              7,
+              8,
+              9,
+              13,
+              15,
+              18
+            ],
+            "seed_mask": 304032
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 253,
+              "passing": 1,
+              "tetrad": 1
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3782999,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "f33725de7eee94a0562f428f772baadf7dfdd216c537fbfba860199b581d14be",
+                  "pentad_index": 7,
+                  "report_ordinal": 42
+                },
+                "seed": [
+                  5,
+                  7,
+                  8,
+                  9,
+                  13,
+                  15,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              5,
+              7,
+              8,
+              9,
+              13,
+              15,
+              18
+            ],
+            "seed_mask": 304032
+          }
+        ],
+        "index": 3782999,
+        "ordinal": 185
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 502,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 494,
+              "passing": 1,
+              "tetrad": 7
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3786767,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "a10123de7d69d35ec5b2cba274b1f92f59f9fa1c4fa9ef7df39a2d2cd6af7943",
+                  "pentad_index": 4,
+                  "report_ordinal": 43
+                },
+                "seed": [
+                  0,
+                  1,
+                  2,
+                  5,
+                  11,
+                  16,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 502,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              1,
+              2,
+              5,
+              11,
+              16,
+              18
+            ],
+            "seed_mask": 329767
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 494,
+              "passing": 1,
+              "tetrad": 7
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3786767,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "a10123de7d69d35ec5b2cba274b1f92f59f9fa1c4fa9ef7df39a2d2cd6af7943",
+                  "pentad_index": 4,
+                  "report_ordinal": 43
+                },
+                "seed": [
+                  0,
+                  1,
+                  2,
+                  5,
+                  11,
+                  16,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 502,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              1,
+              2,
+              5,
+              11,
+              16,
+              18
+            ],
+            "seed_mask": 329767
+          }
+        ],
+        "index": 3786767,
+        "ordinal": 187
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 249,
+              "passing": 1,
+              "tetrad": 5
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3799070,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "c954640efc4ea1b5a6a6b30c3861be2eb534203c778388417219dcc0fea2911e",
+                  "pentad_index": 4,
+                  "report_ordinal": 46
+                },
+                "seed": [
+                  0,
+                  1,
+                  2,
+                  5,
+                  11,
+                  17,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              1,
+              2,
+              5,
+              11,
+              17,
+              18
+            ],
+            "seed_mask": 395303
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 249,
+              "passing": 1,
+              "tetrad": 5
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3799070,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "c954640efc4ea1b5a6a6b30c3861be2eb534203c778388417219dcc0fea2911e",
+                  "pentad_index": 4,
+                  "report_ordinal": 46
+                },
+                "seed": [
+                  0,
+                  1,
+                  2,
+                  5,
+                  11,
+                  17,
+                  18
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              1,
+              2,
+              5,
+              11,
+              17,
+              18
+            ],
+            "seed_mask": 395303
+          }
+        ],
+        "index": 3799070,
+        "ordinal": 195
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 502,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 494,
+              "passing": 1,
+              "tetrad": 7
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3883406,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "fdce4340dd6970504909732ea8a2dbba050e15266aba224689caaa634f6ec537",
+                  "pentad_index": 16,
+                  "report_ordinal": 48
+                },
+                "seed": [
+                  2,
+                  4,
+                  6,
+                  7,
+                  10,
+                  11,
+                  16
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 502,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              4,
+              6,
+              7,
+              10,
+              11,
+              16
+            ],
+            "seed_mask": 68820
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 494,
+              "passing": 1,
+              "tetrad": 7
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3883406,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "fdce4340dd6970504909732ea8a2dbba050e15266aba224689caaa634f6ec537",
+                  "pentad_index": 16,
+                  "report_ordinal": 48
+                },
+                "seed": [
+                  2,
+                  4,
+                  6,
+                  7,
+                  10,
+                  11,
+                  16
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 502,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              2,
+              4,
+              6,
+              7,
+              10,
+              11,
+              16
+            ],
+            "seed_mask": 68820
+          }
+        ],
+        "index": 3883406,
+        "ordinal": 198
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 255,
+          "current_passing_covers": 1,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 1,
+          "seeds": 1
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 244,
+              "passing": 1,
+              "tetrad": 10
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3959459,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "3d96275f347645eea2105f1bce7e71b77276c54ed1b92c119295d5ffd49d6973",
+                  "pentad_index": 9,
+                  "report_ordinal": 50
+                },
+                "seed": [
+                  0,
+                  1,
+                  2,
+                  5,
+                  12,
+                  16,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              1,
+              2,
+              5,
+              12,
+              16,
+              17
+            ],
+            "seed_mask": 200743
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 244,
+              "passing": 1,
+              "tetrad": 10
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3959459,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "3d96275f347645eea2105f1bce7e71b77276c54ed1b92c119295d5ffd49d6973",
+                  "pentad_index": 9,
+                  "report_ordinal": 50
+                },
+                "seed": [
+                  0,
+                  1,
+                  2,
+                  5,
+                  12,
+                  16,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 255,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              1,
+              2,
+              5,
+              12,
+              16,
+              17
+            ],
+            "seed_mask": 200743
+          }
+        ],
+        "index": 3959459,
+        "ordinal": 253
+      },
+      {
+        "archived_graph_counts": {
+          "covers": 1004,
+          "current_passing_covers": 2,
+          "joint_pre_capacity_failing_covers": 0,
+          "pre_capacity_passing_covers": 2,
+          "seeds": 2
+        },
+        "conservative_pentad_only_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 494,
+              "passing": 1,
+              "tetrad": 7
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3968822,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "8357406d68a1ac81bde6f7ae7581143e77186f4ef2c0f1d8c15f6f58cb7bde85",
+                  "pentad_index": 4,
+                  "report_ordinal": 51
+                },
+                "seed": [
+                  0,
+                  1,
+                  2,
+                  5,
+                  12,
+                  15,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 502,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              1,
+              2,
+              5,
+              12,
+              15,
+              17
+            ],
+            "seed_mask": 167975
+          }
+        ],
+        "full_joint_or_pentad_seeds": [
+          {
+            "cover_status_counts": {
+              "baseline": 494,
+              "passing": 1,
+              "tetrad": 7
+            },
+            "current_passing_covers": [
+              {
+                "family_counts": {
+                  "labeled_z_families": 1,
+                  "pre_capacity_passing_families": 1,
+                  "propagation_passing_families": 1
+                },
+                "graph_index": 3968822,
+                "joint_pre_capacity_status": "PASSING",
+                "pentad_certificate": {
+                  "certificate_sha256": "8357406d68a1ac81bde6f7ae7581143e77186f4ef2c0f1d8c15f6f58cb7bde85",
+                  "pentad_index": 4,
+                  "report_ordinal": 51
+                },
+                "seed": [
+                  0,
+                  1,
+                  2,
+                  5,
+                  12,
+                  15,
+                  17
+                ],
+                "zmask": 0
+              }
+            ],
+            "eligible_covers": 502,
+            "joint_pre_capacity_failing_covers": 0,
+            "pre_capacity_passing_covers": 1,
+            "seed": [
+              0,
+              1,
+              2,
+              5,
+              12,
+              15,
+              17
+            ],
+            "seed_mask": 167975
+          }
+        ],
+        "index": 3968822,
+        "ordinal": 257
+      }
+    ],
+    "witnesses_sha256": "f912541e705509a8424bc8eb64583fe1eca282719d9f6634918c29b25b5e62db"
+  },
+  "pentad_cover_rejections": {
+    "covers": 36,
+    "graphs": 34,
+    "ordered_keys": [
+      {
+        "graph_index": 64364,
+        "seed": [
+          1,
+          3,
+          8,
+          11,
+          14,
+          15,
+          16
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 100375,
+        "seed": [
+          2,
+          5,
+          8,
+          12,
+          13,
+          15,
+          17
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 318288,
+        "seed": [
+          1,
+          5,
+          7,
+          11,
+          12,
+          16,
+          17
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 420863,
+        "seed": [
+          1,
+          3,
+          8,
+          10,
+          11,
+          14,
+          17
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 420914,
+        "seed": [
+          1,
+          3,
+          8,
+          10,
+          11,
+          14,
+          17
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 429042,
+        "seed": [
+          1,
+          3,
+          8,
+          10,
+          11,
+          14,
+          17
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 561011,
+        "seed": [
+          1,
+          5,
+          7,
+          10,
+          11,
+          15,
+          17
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 561011,
+        "seed": [
+          3,
+          4,
+          6,
+          10,
+          12,
+          16,
+          17
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 670687,
+        "seed": [
+          4,
+          7,
+          9,
+          10,
+          11,
+          13,
+          17
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 695846,
+        "seed": [
+          3,
+          4,
+          6,
+          10,
+          12,
+          13,
+          17
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 1602661,
+        "seed": [
+          2,
+          4,
+          10,
+          11,
+          15,
+          17,
+          18
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 2234327,
+        "seed": [
+          0,
+          1,
+          5,
+          8,
+          9,
+          12,
+          18
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 2428222,
+        "seed": [
+          0,
+          2,
+          4,
+          9,
+          11,
+          14,
+          18
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 2669012,
+        "seed": [
+          2,
+          9,
+          11,
+          13,
+          14,
+          15,
+          18
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 2719808,
+        "seed": [
+          2,
+          4,
+          7,
+          10,
+          12,
+          14,
+          18
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 2759105,
+        "seed": [
+          0,
+          2,
+          4,
+          11,
+          14,
+          17,
+          18
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 2801902,
+        "seed": [
+          0,
+          1,
+          3,
+          11,
+          13,
+          14,
+          16
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 2871197,
+        "seed": [
+          6,
+          7,
+          8,
+          9,
+          12,
+          13,
+          17
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3337921,
+        "seed": [
+          0,
+          5,
+          9,
+          10,
+          12,
+          14,
+          17
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3337921,
+        "seed": [
+          6,
+          7,
+          8,
+          11,
+          13,
+          14,
+          17
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3339685,
+        "seed": [
+          5,
+          10,
+          12,
+          13,
+          14,
+          15,
+          17
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3405088,
+        "seed": [
+          4,
+          7,
+          9,
+          10,
+          11,
+          16,
+          17
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3678882,
+        "seed": [
+          1,
+          3,
+          6,
+          8,
+          12,
+          15,
+          16
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3740644,
+        "seed": [
+          5,
+          7,
+          8,
+          9,
+          13,
+          17,
+          18
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3740826,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          11,
+          17,
+          18
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3740876,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          11,
+          17,
+          18
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3751543,
+        "seed": [
+          5,
+          7,
+          8,
+          9,
+          13,
+          14,
+          18
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3754416,
+        "seed": [
+          1,
+          6,
+          8,
+          12,
+          13,
+          15,
+          18
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3764003,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          11,
+          14,
+          16
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3779136,
+        "seed": [
+          0,
+          1,
+          2,
+          5,
+          11,
+          14,
+          18
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3782999,
+        "seed": [
+          5,
+          7,
+          8,
+          9,
+          13,
+          15,
+          18
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3786767,
+        "seed": [
+          0,
+          1,
+          2,
+          5,
+          11,
+          16,
+          18
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3799070,
+        "seed": [
+          0,
+          1,
+          2,
+          5,
+          11,
+          17,
+          18
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3883406,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          10,
+          11,
+          16
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3959459,
+        "seed": [
+          0,
+          1,
+          2,
+          5,
+          12,
+          16,
+          17
+        ],
+        "zmask": 0
+      },
+      {
+        "graph_index": 3968822,
+        "seed": [
+          0,
+          1,
+          2,
+          5,
+          12,
+          15,
+          17
+        ],
+        "zmask": 0
+      }
+    ],
+    "ordered_keys_sha256": "a101ab7b1fb48537c0839434acfde3f7bb76cd2c9631412b16386b5c15fed647"
+  },
+  "positive_18_control": {
+    "K7_seeds": 0,
+    "status": "PASS_NOT_APPLICABLE_NO_K7",
+    "vertices": 18
+  },
+  "schema": 1,
+  "selection": {
+    "embedded_graphs_sha256": "faf2120179a62b8cbb0005865810ceb7845d586916343ac738de252d2a634569",
+    "graphs": 258,
+    "ordered_indices_sha256": "55ab329dbe3ae4dbfa10378ff023a168fc6ab306ffc7af14bbd9790a68108a09"
+  },
+  "semantics": {
+    "aggregate_profile_used_for_claim": false,
+    "joint_support_capacity_increment_credited": false,
+    "nonedges_optional": true,
+    "seed_quantifier": "A new graph is rejected only when one required K7 seed has a nonempty exact inherited-passing cover set and every such cover either has no propagation/sparse-value support family or has an exact coefficientwise-positive rank-two pentad certificate.",
+    "unresolved_is_not_rejected": true
+  },
+  "source_sha256": {
+    "build_d6_k7_pentad_joint_conjunction.py": "383cc8d55298e5d82f974e2b17d79bb4c830d4316151b1d34bbb2d67c5c81768",
+    "d6_k7_rank_reference.py": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+    "d6_k7_small_support_value.py": "bed5987c89fbef2ef36762051ae7fa3414fd381a6246032b06857a557f13743f",
+    "d6_k7_special_h_reference.py": "e649633d7262941c9c4608ea694ae0a5d6f29c146d47060c3dae71a036a9d190",
+    "d6_k7_support_capacity.py": "df8c010faac37f9de5481316cc8ccf58e8df46230bd9d1e8542f7a4322b64996",
+    "d6_k7_support_propagation.py": "578103f70d2906fbb3d449b7b7b5c1b6c86e5ae17afb0c341602a543bea69f0c",
+    "run_d6_k7_support_capacity_pilot.py": "9af542217d178bec2a71cb4c30faabc3dea8c8279053d729d924d9ca35eb128a"
+  },
+  "status": "COMPLETE",
+  "upstream_sha256": {
+    "d6_current_residue_manifest_v2.json": "961dac1f9b44bb541e2c5bd1626027826eeea7bc628bf5ff0a85ab26afa949f4",
+    "d6_k7_joint_support_full_certificates.jsonl.gz": "774d3d2119d5ce5eb965a689853d85704c44e081b12ff0947f360b4571d00522",
+    "d6_k7_joint_support_full_checkpoint.json": "91638dbcde9e18feb598521c801578a5e95a6a3c6fe48a1568c079d1c1d8ef3a",
+    "d6_k7_joint_support_full_decisions.tsv.gz": "b6040e7796e3d7df511a4e460ad71082e63c074ac2cf2713c19d8f3b772bcc90",
+    "d6_k7_joint_support_full_report.json": "b3fd2752a371f8909b79b50b8e2b6135f93423d0adf7286aee26d4a8c0643326",
+    "d6_k7_joint_support_full_verification.json": "41132fb0cb6d7fcb9c02d4e5171de9c0b8afd9c7eab4da2a2776f2518a1facd1",
+    "d6_k7_positive_dual_full_certificates.jsonl.gz": "3adaa7e562dfb9241f205e3e7d2384805dbe7296f9677d76f2f23ce913a4ce7f",
+    "d6_k7_rankone_tetrad_full_certificates.jsonl.gz": "f719dbb6492fc20fb3103cb79079567aa2cad163835f97e750412c3d27897c50",
+    "d6_k7_rankone_tetrad_full_decisions.tsv.gz": "2552ce91f52727d9beda60d99d534c1d5a0be3f93686ab321f223d8e0d11dfc1",
+    "d6_k7_ranktwo_pentad_full_report.json": "b85067767a926861f6438d395b167538a02124a5c6e7f11471df2fb87c4839e4",
+    "d6_k7_ranktwo_pentad_full_verification.json": "8fdac4a9fa158e57ff8e9e79b19801baaf0f486525920e699f50d9c8c1340568"
+  }
+}
