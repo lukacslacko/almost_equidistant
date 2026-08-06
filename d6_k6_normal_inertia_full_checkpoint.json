@@ -1,0 +1,38 @@
+{
+  "archive": "/Users/lukacs/chatgpt/almost_equidistant/d6_k6_normal_inertia_full_decisions.jsonl.gz",
+  "archive_sha256": "614bbb64989b5834ed0dbe1c12e7718583e53cfd68483668ffbbad44608b3828",
+  "command": "d6_k6_normal_inertia_full_runner.py --workers 11 --chunksize 1 --checkpoint-every 32",
+  "committed_rows": 1097,
+  "compatibility": {
+    "checkpoint_every": 32,
+    "chunksize": 1,
+    "decision_schema": "d6-k6-normal-inertia-full-decision-v1",
+    "dependency_sha256": {
+      "d6_k6_bipartite_rank_input.json": "dfee979e6ca2759e80cf803c3054c8954d98543875d467644b91ee434c22e845",
+      "d6_k6_bipartite_rank_reference.py": "e760fef74c423a89f1e1f9d08909fa1223e0389900cf3d45b0140ee296dea922",
+      "d6_k6_bipartite_rank_report.json": "ede04a71a7f9b6901bbc1e4c198a117797bfd90d4d1366912ca9efd1ca559bdc",
+      "d6_k6_lorentz_reference.py": "ef6a0877a5987119c92ec1bd9271a6a47774fc9e4992c10e1f28b6d5373592c2",
+      "d6_k6_normal_coordinates.md": "dd755349da45bbaca2f6c85dcdd5d56e4c08042f5d137cb349204e81b9686ca7",
+      "d6_k6_normal_inertia.py": "2d00ab40eb97aa79ffec3b8134b83c4fd5f703cbd691f094a25bf3ff9f3ee023",
+      "d6_k6_normal_inertia_sample.json": "3bc04d4541e11597302631fb30466af19d4c8b18333d4dffabca2f059b06128d",
+      "d6_k6_normal_inertia_test.py": "4c107490befec2919c0a7eabe8f79f61eb8b11e56e40800cc630b5fdd3db7e12",
+      "d6_k6_support_reference.py": "d6481137ef49d88154882285660dd755eb7cb652ab87280f05c3792de9742577"
+    },
+    "runner_sha256": "a3ff3859686b503dd7c5066dcc77d07d15b57ea8eb169df28efc182ea5db5c70",
+    "schema": "d6-k6-normal-inertia-full-checkpoint-v1",
+    "selected_graphs": 1097,
+    "selection_sha256": "faf1f3ebc5e029cfcb3738f6abd688a3fc17c09c0b815e3567d460ee61df71ab",
+    "workers": 11
+  },
+  "completed_at": "2026-08-06T19:32:28.476213+00:00",
+  "decisions_sha256": "c2f954dd46a8959cafbe40206e4cc7cc16a0df9598623d976ed9b09c1894dab2",
+  "final_decisions": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_k6_normal_inertia_full_decisions.jsonl",
+  "partial_decisions": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_k6_normal_inertia_full_decisions.jsonl.partial",
+  "pid": 45800,
+  "resume_count": 0,
+  "schema": "d6-k6-normal-inertia-full-checkpoint-v1",
+  "started_at": "2026-08-06T19:32:27.807078+00:00",
+  "status": "COMPLETE",
+  "total_rows": 1097,
+  "updated_at": "2026-08-06T19:32:28.476197+00:00"
+}

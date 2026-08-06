@@ -1,0 +1,25 @@
+{
+  "schema": "d6-k7-positive-dual-full-verification-v1",
+  "status": "PASS",
+  "recorded_at_utc": "2026-08-06T19:33:16Z",
+  "method": "Independent archive checker: no import or invocation of the floating-point LP locator or production campaign runner; exact rational polynomial replay plus independent reconstruction of every claimed graph-level seed/cover quantifier.",
+  "command": "/Users/lukacs/claude/opengauss/venv/bin/python3 verify_d6_k7_positive_polynomial_dual_full.py --input .runs/d6_k7_rank_survivors.json --selection d6_k7_positive_dual_selection.json --report d6_k7_positive_dual_full_report.json --report-sha256 c2de7e06bbe4f3d163a4f747d42721f7f60da985b867ce74669664431738e345",
+  "verifier_sha256": "1cca1ebcb824aae82f254d501f4943a03101aab7dd177a7366545736afd17058",
+  "inputs": {
+    ".runs/d6_k7_rank_survivors.json": "7a0a350142930e4e13830ea44c4fd217f25aeb07bbd6286e51e316f72712c4f9",
+    "d6_k7_positive_dual_selection.json": "814c80651746ce05048f72f0cfa7e49a921554abaf167bd5c8cf4063a34d35c0",
+    "d6_k7_positive_dual_full_report.json": "c2de7e06bbe4f3d163a4f747d42721f7f60da985b867ce74669664431738e345",
+    "d6_k7_positive_dual_full_decisions.tsv.gz": "724a97928422fc8705946ed64e3ce9afd37579d3229e5b3ebb7c4f1144c002ec",
+    "d6_k7_positive_dual_full_certificates.jsonl.gz": "3adaa7e562dfb9241f205e3e7d2384805dbe7296f9677d76f2f23ce913a4ce7f",
+    "d6_k7_positive_dual_full_checkpoint.json": "971d1d38db145a49a9dc5cec61f9c2bf9ba17eccee9a26a90f59af49f6777ec4"
+  },
+  "result": {
+    "graphs": 12941,
+    "certificate_graphs": 785,
+    "certificate_witnesses": 1575,
+    "marginal_dual_rejected": 102,
+    "rejected_graph_quantifiers_rebuilt": 102,
+    "survivors_are_nonclaims": 12839
+  },
+  "stdout": "{\"certificate_graphs\": 785, \"certificate_witnesses\": 1575, \"graphs\": 12941, \"marginal_dual_rejected\": 102, \"rejected_graph_quantifiers_rebuilt\": 102, \"survivors_are_nonclaims\": 12839}"
+}
