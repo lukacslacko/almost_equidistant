@@ -1,5 +1,7 @@
 __pycache__/
+.runs/
 ckernel.dylib
+*.dylib
 ckernel.dll
 *.so
 *.obj
