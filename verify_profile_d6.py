@@ -120,7 +120,7 @@ def verify_committed_report():
     with manifest_path.open(encoding="utf-8") as stream:
         manifest = json.load(stream)
 
-    assert report["schema"] == 2
+    assert report["schema"] == 3
     assert report["n"] == 19 and report["dimension"] == 6
     assert report["candidate_count_expected"] == 3_971_787
     assert report["candidate_count_profiled"] == 3_971_787
@@ -128,11 +128,43 @@ def verify_committed_report():
 
     populations = report["populations"]
     fixed = {
-        "all": (3_971_787, 1_017_404, 3_680_379, 73, 3_680_381, 291_406),
-        "certified": (3_055_474, 1_004_938, 3_053_023, 69, 3_053_023, 2_451),
-        "deferred": (916_313, 12_466, 627_356, 4, 627_358, 288_955),
+        "all": (
+            3_971_787,
+            1_017_404,
+            3_680_379,
+            73,
+            174_713,
+            3_855_094,
+            116_693,
+        ),
+        "certified": (
+            3_055_474,
+            1_004_938,
+            3_053_023,
+            69,
+            0,
+            3_053_023,
+            2_451,
+        ),
+        "deferred": (
+            916_313,
+            12_466,
+            627_356,
+            4,
+            174_713,
+            802_071,
+            114_242,
+        ),
     }
-    for name, (total, previous, cover, tight, exact, residue) in fixed.items():
+    for name, (
+        total,
+        previous,
+        cover,
+        tight,
+        two_ray,
+        exact,
+        residue,
+    ) in fixed.items():
         item = populations[name]
         assert item["total"] == total
         assert item["cumulative_previous_exact_rejections"] == previous
@@ -140,6 +172,7 @@ def verify_committed_report():
         assert item["K6_clique_Hall_rejections"] == 0
         assert item["K7_disjoint_edge_bounded_cover_rejections"] == cover
         assert item["K7_tight_cover_matching_rejections"] == tight
+        assert item["K6_odd_component_two_light_ray_rejections"] == two_ray
         assert item["cumulative_exact_rejections"] == exact
         assert sum(item["clique_number"].values()) == total
         assert sum(item["exact_rejections_by_clique_number"].values()) == exact
@@ -160,6 +193,7 @@ def verify_committed_report():
         "K7_disjoint_edge_bounded_cover_rejections",
         "K7_tight_cover_matching_rejections",
         "K6_clique_Hall_rejections",
+        "K6_odd_component_two_light_ray_rejections",
         "cumulative_previous_exact_rejections",
         "cumulative_exact_rejections",
     )
@@ -187,6 +221,14 @@ def verify_committed_report():
     assert reference["sample_sha256"] == sha256(
         ROOT / "d6_reference_sample.json"
     )
+    k6_reference = reference["K6_Lorentz_reference"]
+    for key, filename in (
+        ("implementation_sha256", "d6_k6_lorentz_reference.py"),
+        ("input_profile_sha256", "d6_k6_lorentz_input_profile.json"),
+        ("sample_sha256", "d6_k6_lorentz_sample.json"),
+        ("report_sha256", "d6_k6_lorentz_report.json"),
+    ):
+        assert k6_reference[key] == sha256(ROOT / filename)
 
 
 def main():

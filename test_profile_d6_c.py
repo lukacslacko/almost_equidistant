@@ -23,6 +23,7 @@ from test_d6_reference_filters import (
     reflected_facet_graph,
     tight_cover_matching_failure,
 )
+from test_d6_k6_lorentz import oversized_odd_component
 
 
 ROOT = Path(__file__).resolve().parent
@@ -112,6 +113,13 @@ class CProfilerControls(unittest.TestCase):
     def test_tight_cover_matching_negative_control(self) -> None:
         result = self.profile(tight_cover_matching_failure())
         self.assertEqual(result["K7_tight_cover_matching_rejections"], 1)
+
+    def test_k6_two_light_ray_negative_control(self) -> None:
+        result = self.profile(oversized_odd_component())
+        self.assertEqual(result["clique_number"]["6"], 1)
+        self.assertEqual(
+            result["K6_odd_component_two_light_ray_rejections"], 1
+        )
 
     def test_malformed_kill_log_is_rejected(self) -> None:
         adjacency = reflected_facet_graph(1)

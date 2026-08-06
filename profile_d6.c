@@ -35,6 +35,7 @@
 #error "profile_d6 requires 7 <= N <= 19"
 #endif
 #define NWIT 5
+#define BATCH_GRAPHS 65536u
 
 typedef struct {
     uint32_t index;
@@ -53,6 +54,7 @@ typedef struct {
     uint64_t k7_bounded_cover;
     uint64_t k7_tight_cover_matching;
     uint64_t k6_clique_hall;
+    uint64_t k6_two_light_ray;
     uint64_t previous_exact;
     uint64_t previous_exact_by_omega[9];
     uint64_t cumulative_exact;
@@ -61,6 +63,7 @@ typedef struct {
     Witness k7_cover_witness[NWIT];
     Witness k7_tight_cover_witness[NWIT];
     Witness k6_hall_witness[NWIT];
+    Witness k6_two_light_ray_witness[NWIT];
 } Stats;
 
 typedef struct {
@@ -72,10 +75,12 @@ typedef struct {
     int bad_k7_cover;
     int bad_k7_tight_cover;
     int bad_k6_hall;
+    int bad_k6_two_light_ray;
     uint32_t k7_hall_seed, k7_hall_aux;
     uint32_t k7_cover_seed, k7_cover_aux;
     uint32_t k7_tight_cover_seed, k7_tight_cover_aux;
     uint32_t k6_hall_seed, k6_hall_aux;
+    uint32_t k6_two_light_ray_seed, k6_two_light_ray_aux;
 } ProfileResult;
 
 static inline int pop(uint32_t x) { return __builtin_popcount(x); }
@@ -475,15 +480,188 @@ static K7NewFlags scan_k7_new(const uint32_t adj[N]) {
     return f;
 }
 
-typedef struct { int bad; uint32_t seed, aux; } K6HallFlag;
+/* Find a matching from the selected outside vertices into the six allowed
+ * seed coordinates.  The tiny augmenting-path implementation is exact and
+ * is called repeatedly by the K6 two-light-ray CSP. */
+static int defect_matching6_augment(int v, const uint8_t defects[N],
+                                    int owner[6], uint8_t *seen) {
+    uint8_t choices = defects[v] & (uint8_t)~*seen;
+    while (choices) {
+        int q = __builtin_ctz((unsigned)choices);
+        choices &= (uint8_t)(choices - 1);
+        *seen |= (uint8_t)(1u << q);
+        if (owner[q] < 0 ||
+                defect_matching6_augment(owner[q], defects, owner, seen)) {
+            owner[q] = v;
+            return 1;
+        }
+    }
+    return 0;
+}
 
-static void scan_k6_hall_rec(const uint32_t adj[N], uint32_t cand,
-                             uint32_t seed, int depth, K6HallFlag *f) {
-    if (f->bad) return;
+static int defect_matching6(const uint8_t defects[N], uint32_t chosen) {
+    if (pop(chosen) > 6) return 0;
+    int order[N], count = 0;
+    while (chosen) {
+        int v = ctz(chosen);
+        chosen &= chosen - 1;
+        int at = count;
+        while (at > 0 &&
+                pop(defects[order[at - 1]]) > pop(defects[v])) {
+            order[at] = order[at - 1];
+            --at;
+        }
+        order[at] = v;
+        ++count;
+    }
+    int owner[6];
+    for (int q = 0; q < 6; ++q) owner[q] = -1;
+    for (int i = 0; i < count; ++i) {
+        uint8_t seen = 0;
+        if (!defect_matching6_augment(order[i], defects, owner, &seen))
+            return 0;
+    }
+    return 1;
+}
+
+/* Return the connected non-bipartite components of L after deleting a set
+ * of vertices.  All masks use the original graph labels. */
+static int k6_nonbipartite_components(const uint32_t ladj[N],
+                                      uint32_t remaining,
+                                      uint32_t components[N]) {
+    int count = 0;
+    while (remaining) {
+        uint32_t root = remaining & (uint32_t)(-(int32_t)remaining);
+        uint32_t colored = root, color_one = 0, frontier = root;
+        int nonbipartite = 0;
+        while (frontier) {
+            uint32_t bit = frontier & (uint32_t)(-(int32_t)frontier);
+            frontier ^= bit;
+            int v = ctz(bit);
+            uint32_t neighbors = ladj[v] & remaining;
+            uint32_t same = (color_one & bit) ? color_one :
+                            (colored & ~color_one);
+            if (neighbors & same) nonbipartite = 1;
+            uint32_t fresh = neighbors & ~colored;
+            if (!(color_one & bit)) color_one |= fresh;
+            colored |= fresh;
+            frontier |= fresh;
+        }
+        remaining &= ~colored;
+        if (nonbipartite) components[count++] = colored;
+    }
+    return count;
+}
+
+/* Test one proposed zero-factor set Z0.  Every non-bipartite component of
+ * L-Z0 must choose one of the two Lorentz-lightlike directions.  In either
+ * direction its vertices together with Z0 support pairwise orthogonal
+ * vectors in R^6, hence require a six-coordinate matching. */
+static int k6_two_light_ray_z0(const uint32_t ladj[N], uint32_t outside,
+                               const uint8_t defects[N], uint32_t z0) {
+    if (!defect_matching6(defects, z0)) return 0;
+    uint32_t components[N];
+    int ncomp = k6_nonbipartite_components(ladj, outside & ~z0,
+                                           components);
+    if (ncomp == 0) return 1;
+    int capacity = 6 - pop(z0);
+    int odd_vertices = 0;
+    for (int i = 0; i < ncomp; ++i) {
+        int size = pop(components[i]);
+        if (size > capacity) return 0;
+        odd_vertices += size;
+    }
+    if (odd_vertices > 2 * capacity) return 0;
+
+    /* Swapping the two light rays is a symmetry, so fix component zero in
+     * the first bin and enumerate only the remaining component colors. */
+    uint32_t colorings = 1u << (ncomp - 1);
+    for (uint32_t coloring = 0; coloring < colorings; ++coloring) {
+        uint32_t bins[2] = {z0 | components[0], z0};
+        for (int i = 1; i < ncomp; ++i)
+            bins[(coloring >> (i - 1)) & 1u] |= components[i];
+        if (pop(bins[0]) <= 6 && pop(bins[1]) <= 6 &&
+                defect_matching6(defects, bins[0]) &&
+                defect_matching6(defects, bins[1])) return 1;
+    }
+    return 0;
+}
+
+static int k6_choose_z0(const uint32_t ladj[N], uint32_t outside,
+                        const uint8_t defects[N], uint32_t available,
+                        uint32_t chosen, int need) {
+    if (need == 0)
+        return k6_two_light_ray_z0(ladj, outside, defects, chosen);
+    while (pop(available) >= need) {
+        uint32_t bit = available & (uint32_t)(-(int32_t)available);
+        available ^= bit;
+        if (k6_choose_z0(ladj, outside, defects, available,
+                         chosen | bit, need - 1)) return 1;
+    }
+    return 0;
+}
+
+static int bad_k6_two_light_ray_seed(const uint32_t adj[N], uint32_t seed,
+                                     uint32_t *aux) {
+    uint8_t defects[N];
+    uint32_t outside;
+    seed_defects(adj, seed, 6, defects, &outside);
+    uint32_t ladj[N] = {0};
+    uint32_t eligible = 0;
+    uint32_t todo = outside;
+    while (todo) {
+        int u = ctz(todo);
+        todo &= todo - 1;
+        if (pop(defects[u]) >= 3) eligible |= 1u << u;
+        uint32_t vv = todo & adj[u];
+        while (vv) {
+            int v = ctz(vv);
+            vv &= vv - 1;
+            if ((defects[u] & defects[v]) == 0) {
+                ladj[u] |= 1u << v;
+                ladj[v] |= 1u << u;
+            }
+        }
+    }
+
+    /* Zeros in an initially bipartite component are never needed: deleting
+     * them leaves that component bipartite and omitting them only relaxes the
+     * two support matchings. */
+    uint32_t initial_components[N], initial_odd_union = 0;
+    int initial_count = k6_nonbipartite_components(
+        ladj, outside, initial_components);
+    for (int i = 0; i < initial_count; ++i)
+        initial_odd_union |= initial_components[i];
+    eligible &= initial_odd_union;
+    *aux = eligible;
+
+    int maximum = pop(eligible);
+    if (maximum > 6) maximum = 6;
+    for (int size = 0; size <= maximum; ++size)
+        if (k6_choose_z0(ladj, outside, defects, eligible, 0, size))
+            return 0;
+    return 1;
+}
+
+typedef struct {
+    int hall, two_light_ray;
+    uint32_t hall_seed, hall_aux;
+    uint32_t two_light_ray_seed, two_light_ray_aux;
+} K6NewFlags;
+
+static void scan_k6_new_rec(const uint32_t adj[N], uint32_t cand,
+                            uint32_t seed, int depth, K6NewFlags *f) {
+    if (f->hall && f->two_light_ray) return;
     if (depth == 6) {
         uint32_t aux = 0;
-        if (bad_hall_seed(adj, seed, 6, 1, &aux)) {
-            f->bad = 1; f->seed = seed; f->aux = aux;
+        if (!f->hall && bad_hall_seed(adj, seed, 6, 1, &aux)) {
+            f->hall = 1; f->hall_seed = seed; f->hall_aux = aux;
+        }
+        if (!f->two_light_ray &&
+                bad_k6_two_light_ray_seed(adj, seed, &aux)) {
+            f->two_light_ray = 1;
+            f->two_light_ray_seed = seed;
+            f->two_light_ray_aux = aux;
         }
         return;
     }
@@ -491,16 +669,16 @@ static void scan_k6_hall_rec(const uint32_t adj[N], uint32_t cand,
     while (cand) {
         int v = ctz(cand);
         cand &= cand - 1;
-        scan_k6_hall_rec(adj, cand & adj[v], seed | (1u << v),
-                         depth + 1, f);
-        if (f->bad) return;
+        scan_k6_new_rec(adj, cand & adj[v], seed | (1u << v),
+                        depth + 1, f);
+        if (f->hall && f->two_light_ray) return;
         if (pop(cand) < 6 - depth) return;
     }
 }
 
-static K6HallFlag scan_k6_hall(const uint32_t adj[N]) {
-    K6HallFlag f = {0};
-    scan_k6_hall_rec(adj, (1u << N) - 1, 0, 0, &f);
+static K6NewFlags scan_k6_new(const uint32_t adj[N]) {
+    K6NewFlags f = {0};
+    scan_k6_new_rec(adj, (1u << N) - 1, 0, 0, &f);
     return f;
 }
 
@@ -544,9 +722,12 @@ static ProfileResult profile_graph(const uint32_t adj[N]) {
         r.k7_tight_cover_seed = f.tight_cover_seed;
         r.k7_tight_cover_aux = f.tight_cover_aux;
     } else if (r.omega == 6) {
-        K6HallFlag f = scan_k6_hall(adj);
-        r.bad_k6_hall = f.bad;
-        r.k6_hall_seed = f.seed; r.k6_hall_aux = f.aux;
+        K6NewFlags f = scan_k6_new(adj);
+        r.bad_k6_hall = f.hall;
+        r.bad_k6_two_light_ray = f.two_light_ray;
+        r.k6_hall_seed = f.hall_seed; r.k6_hall_aux = f.hall_aux;
+        r.k6_two_light_ray_seed = f.two_light_ray_seed;
+        r.k6_two_light_ray_aux = f.two_light_ray_aux;
     }
     return r;
 }
@@ -590,13 +771,19 @@ static void stats_add(Stats *s, const ProfileResult *r, unsigned idx) {
                     r->k6_hall_seed, r->k6_hall_aux);
         ++s->k6_clique_hall;
     }
+    if (r->bad_k6_two_light_ray) {
+        add_witness(s->k6_two_light_ray_witness, s->k6_two_light_ray, idx,
+                    r->k6_two_light_ray_seed, r->k6_two_light_ray_aux);
+        ++s->k6_two_light_ray;
+    }
     int previous = link_any || r->bad_reflection || r->bad_defect_csp;
     if (previous) {
         ++s->previous_exact;
         ++s->previous_exact_by_omega[r->omega];
     }
     int exact = previous || r->bad_k7_hall || r->bad_k7_cover ||
-                r->bad_k7_tight_cover || r->bad_k6_hall;
+                r->bad_k7_tight_cover || r->bad_k6_hall ||
+                r->bad_k6_two_light_ray;
     if (exact) {
         ++s->cumulative_exact;
         ++s->cumulative_exact_by_omega[r->omega];
@@ -679,6 +866,8 @@ static void print_stats(const char *name, const Stats *s) {
            ",\n", s->k7_tight_cover_matching);
     printf("      \"K6_clique_Hall_rejections\": %" PRIu64 ",\n",
            s->k6_clique_hall);
+    printf("      \"K6_odd_component_two_light_ray_rejections\": %" PRIu64
+           ",\n", s->k6_two_light_ray);
     printf("      \"cumulative_previous_exact_rejections\": %" PRIu64
            ",\n", s->previous_exact);
     printf("      \"cumulative_exact_rejections\": %" PRIu64 ",\n",
@@ -703,6 +892,9 @@ static void print_stats(const char *name, const Stats *s) {
                         s->k7_tight_cover_matching);
     printf(",\n        \"K6_clique_Hall\": ");
     print_witness_array(s->k6_hall_witness, s->k6_clique_hall);
+    printf(",\n        \"K6_odd_component_two_light_ray\": ");
+    print_witness_array(s->k6_two_light_ray_witness,
+                        s->k6_two_light_ray);
     printf("\n      }\n");
     printf("    }");
 }
@@ -736,6 +928,10 @@ static void stats_merge(Stats *dst, const Stats *src) {
                     src->k7_tight_cover_matching);
     merge_witnesses(dst->k6_hall_witness, dst->k6_clique_hall,
                     src->k6_hall_witness, src->k6_clique_hall);
+    merge_witnesses(dst->k6_two_light_ray_witness,
+                    dst->k6_two_light_ray,
+                    src->k6_two_light_ray_witness,
+                    src->k6_two_light_ray);
     dst->total += src->total;
     for (int i = 0; i < 9; ++i) {
         dst->omega[i] += src->omega[i];
@@ -750,6 +946,7 @@ static void stats_merge(Stats *dst, const Stats *src) {
     dst->k7_bounded_cover += src->k7_bounded_cover;
     dst->k7_tight_cover_matching += src->k7_tight_cover_matching;
     dst->k6_clique_hall += src->k6_clique_hall;
+    dst->k6_two_light_ray += src->k6_two_light_ray;
     dst->previous_exact += src->previous_exact;
     dst->cumulative_exact += src->cumulative_exact;
 }
@@ -758,20 +955,78 @@ typedef struct {
     uint32_t (*graphs)[N];
     const uint8_t *killed;
     ProfileResult *results;
-    unsigned start, end;
+    unsigned base, start, end;
     Stats all, certified, deferred;
 } Worker;
 
 static void *profile_worker(void *arg) {
     Worker *w = arg;
-    for (unsigned idx = w->start; idx < w->end; ++idx) {
-        ProfileResult r = profile_graph(w->graphs[idx]);
-        if (w->results) w->results[idx] = r;
+    for (unsigned local = w->start; local < w->end; ++local) {
+        unsigned idx = w->base + local;
+        ProfileResult r = profile_graph(w->graphs[local]);
+        if (w->results) w->results[local] = r;
         stats_add(&w->all, &r, idx);
         if (w->killed && w->killed[idx]) stats_add(&w->certified, &r, idx);
         else if (w->killed) stats_add(&w->deferred, &r, idx);
     }
     return NULL;
+}
+
+static int write_decision_header(FILE *f) {
+    return fprintf(f, "index\tomega\tlink_mask\treflection\tdefect_csp\t"
+                   "K7_Hall\tK7_cover\tK7_tight_cover\tK6_Hall\t"
+                   "K6_two_light_ray\t"
+                   "K7_Hall_seed\tK7_Hall_aux\tK7_cover_seed\tK7_cover_aux\t"
+                   "K7_tight_cover_seed\tK7_tight_cover_aux\t"
+                   "K6_Hall_seed\tK6_Hall_aux\t"
+                   "K6_two_light_ray_seed\tK6_two_light_ray_aux\n") >= 0;
+}
+
+static int write_decision(FILE *f, unsigned idx, const ProfileResult *r) {
+    return fprintf(f, "%u\t%d\t%u\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t"
+                   "%u\t%u\t%u\t%u\t%u\t%u\t%u\t%u\t%u\t%u\n",
+                   idx, r->omega, r->link_mask, r->bad_reflection,
+                   r->bad_defect_csp, r->bad_k7_hall, r->bad_k7_cover,
+                   r->bad_k7_tight_cover, r->bad_k6_hall,
+                   r->bad_k6_two_light_ray,
+                   r->k7_hall_seed, r->k7_hall_aux,
+                   r->k7_cover_seed, r->k7_cover_aux,
+                   r->k7_tight_cover_seed, r->k7_tight_cover_aux,
+                   r->k6_hall_seed, r->k6_hall_aux,
+                   r->k6_two_light_ray_seed,
+                   r->k6_two_light_ray_aux) >= 0;
+}
+
+static int publish_decisions(FILE *temporary, const char *path) {
+    if (fflush(temporary) != 0 || fseek(temporary, 0, SEEK_SET) != 0) {
+        fprintf(stderr, "cannot rewind temporary decisions stream: %s\n",
+                strerror(errno));
+        return 0;
+    }
+    FILE *output = fopen(path, "w");
+    if (!output) {
+        perror(path);
+        return 0;
+    }
+    char buffer[1 << 16];
+    int ok = 1;
+    size_t got;
+    while ((got = fread(buffer, 1, sizeof(buffer), temporary)) != 0) {
+        if (fwrite(buffer, 1, got, output) != got) {
+            fprintf(stderr, "error writing decisions file %s\n", path);
+            ok = 0;
+            break;
+        }
+    }
+    if (ferror(temporary)) {
+        fprintf(stderr, "error reading temporary decisions stream\n");
+        ok = 0;
+    }
+    if (fclose(output) != 0) {
+        fprintf(stderr, "error closing decisions file %s\n", path);
+        ok = 0;
+    }
+    return ok;
 }
 
 int main(int argc, char **argv) {
@@ -792,124 +1047,150 @@ int main(int argc, char **argv) {
     if (nworkers < 1) nworkers = 1;
     if (nworkers > 64) nworkers = 64;
     unsigned goal = limit ? limit : EXPECTED;
-    uint32_t (*graphs)[N] = malloc((size_t)goal * sizeof(*graphs));
+    unsigned batch_capacity = goal < BATCH_GRAPHS ? goal : BATCH_GRAPHS;
+    uint32_t (*graphs)[N] = malloc((size_t)batch_capacity * sizeof(*graphs));
     if (!graphs) { fprintf(stderr, "cannot allocate graph corpus\n"); return 2; }
-    unsigned idx = 0;
-    while (idx < goal) {
-        int n;
-        int got = fscanf(f, "%d", &n);
-        if (got == EOF) break;
-        if (got != 1 || n != N) {
-            fprintf(stderr, "bad candidate header at index %u\n", idx);
-            return 2;
-        }
-        for (int i = 0; i < N; ++i)
-            if (fscanf(f, "%u", &graphs[idx][i]) != 1) {
-                fprintf(stderr, "truncated candidate at index %u\n", idx);
-                return 2;
-            }
-        if (!validate(graphs[idx])) {
-            fprintf(stderr, "invalid graph at index %u\n", idx);
-            return 2;
-        }
-        ++idx;
-    }
-    if (!limit) {
-        if (idx != EXPECTED) {
-            fprintf(stderr, "candidate count %u, expected %u\n", idx,
-                    EXPECTED);
-            return 2;
-        }
-        int extra;
-        int got = fscanf(f, " %d", &extra);
-        if (got != EOF) {
-            fprintf(stderr, "trailing data after candidate %u\n", idx - 1);
-            return 2;
-        }
-        if (ferror(f)) {
-            fprintf(stderr, "error checking corpus end\n");
-            return 2;
-        }
-    }
-    fclose(f);
-    if (nworkers > (int)idx) nworkers = (int)idx;
-    fprintf(stderr, "profiling %u candidates with %d workers\n", idx, nworkers);
     Worker *workers = calloc((size_t)nworkers, sizeof(*workers));
     pthread_t *threads = malloc((size_t)nworkers * sizeof(*threads));
-    ProfileResult *results = argc >= 6 ? calloc(idx, sizeof(*results)) : NULL;
+    FILE *decision_tmp = argc >= 6 ? tmpfile() : NULL;
+    ProfileResult *results = argc >= 6 ?
+                             calloc(batch_capacity, sizeof(*results)) : NULL;
     if (!workers || !threads || (argc >= 6 && !results)) {
         fprintf(stderr, "worker allocation failed\n"); return 2;
     }
-    int created = 0;
-    for (int t = 0; t < nworkers; ++t) {
-        workers[t].graphs = graphs;
-        workers[t].killed = killed;
-        workers[t].results = results;
-        workers[t].start = (unsigned)((uint64_t)idx * (uint64_t)t /
-                                      (uint64_t)nworkers);
-        workers[t].end = (unsigned)((uint64_t)idx * (uint64_t)(t + 1) /
-                                    (uint64_t)nworkers);
-        int err = pthread_create(&threads[t], NULL, profile_worker,
-                                 &workers[t]);
-        if (err) {
-            fprintf(stderr, "pthread_create failed at worker %d: %s\n",
-                    t, strerror(err));
-            for (int j = 0; j < created; ++j)
-                (void)pthread_join(threads[j], NULL);
-            free(results); free(threads); free(workers); free(graphs);
-            free(killed);
-            return 2;
-        }
-        ++created;
+    if (argc >= 6 && (!decision_tmp || !write_decision_header(decision_tmp))) {
+        fprintf(stderr, "cannot create temporary decisions stream\n");
+        return 2;
     }
     Stats all = {0}, certified = {0}, deferred = {0};
-    int join_failed = 0;
-    for (int t = 0; t < created; ++t) {
-        int err = pthread_join(threads[t], NULL);
-        if (err) {
-            fprintf(stderr, "pthread_join failed at worker %d: %s\n",
-                    t, strerror(err));
-            join_failed = 1;
+    unsigned idx = 0;
+    int reached_eof = 0, failed = 0;
+    while (idx < goal && !reached_eof) {
+        unsigned count = 0;
+        unsigned wanted = goal - idx;
+        if (wanted > batch_capacity) wanted = batch_capacity;
+        while (count < wanted) {
+            int n;
+            int got = fscanf(f, "%d", &n);
+            if (got == EOF) {
+                reached_eof = 1;
+                break;
+            }
+            if (got != 1 || n != N) {
+                fprintf(stderr, "bad candidate header at index %u\n",
+                        idx + count);
+                failed = 1;
+                break;
+            }
+            for (int i = 0; i < N; ++i) {
+                if (fscanf(f, "%u", &graphs[count][i]) != 1) {
+                    fprintf(stderr, "truncated candidate at index %u\n",
+                            idx + count);
+                    failed = 1;
+                    break;
+                }
+            }
+            if (failed) break;
+            if (!validate(graphs[count])) {
+                fprintf(stderr, "invalid graph at index %u\n", idx + count);
+                failed = 1;
+                break;
+            }
+            ++count;
+        }
+        if (failed || count == 0) break;
+
+        int active_workers = nworkers;
+        if (active_workers > (int)count) active_workers = (int)count;
+        memset(workers, 0, (size_t)nworkers * sizeof(*workers));
+        int created = 0;
+        for (int t = 0; t < active_workers; ++t) {
+            workers[t].graphs = graphs;
+            workers[t].killed = killed;
+            workers[t].results = results;
+            workers[t].base = idx;
+            workers[t].start = (unsigned)((uint64_t)count * (uint64_t)t /
+                                          (uint64_t)active_workers);
+            workers[t].end = (unsigned)((uint64_t)count * (uint64_t)(t + 1) /
+                                        (uint64_t)active_workers);
+            int err = pthread_create(&threads[t], NULL, profile_worker,
+                                     &workers[t]);
+            if (err) {
+                fprintf(stderr, "pthread_create failed at worker %d: %s\n",
+                        t, strerror(err));
+                failed = 1;
+                break;
+            }
+            ++created;
+        }
+        int join_failed = 0;
+        for (int t = 0; t < created; ++t) {
+            int err = pthread_join(threads[t], NULL);
+            if (err) {
+                fprintf(stderr, "pthread_join failed at worker %d: %s\n",
+                        t, strerror(err));
+                join_failed = 1;
+            }
+        }
+        if (failed || join_failed) {
+            failed = 1;
+            break;
+        }
+        for (int t = 0; t < created; ++t) {
+            stats_merge(&all, &workers[t].all);
+            stats_merge(&certified, &workers[t].certified);
+            stats_merge(&deferred, &workers[t].deferred);
+        }
+        if (decision_tmp) {
+            for (unsigned i = 0; i < count; ++i) {
+                if (!write_decision(decision_tmp, idx + i, &results[i])) {
+                    fprintf(stderr, "error writing temporary decisions stream\n");
+                    failed = 1;
+                    break;
+                }
+            }
+        }
+        idx += count;
+        if (failed) break;
+    }
+    if (!failed && !limit) {
+        if (idx != EXPECTED) {
+            fprintf(stderr, "candidate count %u, expected %u\n", idx,
+                    EXPECTED);
+            failed = 1;
+        } else {
+            int extra;
+            int got = fscanf(f, " %d", &extra);
+            if (got != EOF) {
+                fprintf(stderr, "trailing data after candidate %u\n", idx - 1);
+                failed = 1;
+            } else if (ferror(f)) {
+                fprintf(stderr, "error checking corpus end\n");
+                failed = 1;
+            }
         }
     }
-    if (join_failed) {
+    fclose(f);
+    if (failed) {
+        if (decision_tmp) fclose(decision_tmp);
         free(results); free(threads); free(workers); free(graphs);
         free(killed);
         return 2;
     }
-    for (int t = 0; t < created; ++t) {
-        stats_merge(&all, &workers[t].all);
-        stats_merge(&certified, &workers[t].certified);
-        stats_merge(&deferred, &workers[t].deferred);
-    }
+    if (nworkers > (int)idx) nworkers = (int)idx;
+    fprintf(stderr, "profiling %u candidates with %d workers\n", idx, nworkers);
     if (!limit && killed && nkilled != certified.total) {
         fprintf(stderr, "kill-log/profile mismatch: log=%" PRIu64
                 " profile=%" PRIu64 "\n", nkilled, certified.total);
         return 2;
     }
-    if (argc >= 6) {
-        FILE *df = fopen(argv[5], "w");
-        if (!df) { perror(argv[5]); return 2; }
-        fprintf(df, "index\tomega\tlink_mask\treflection\tdefect_csp\t"
-                "K7_Hall\tK7_cover\tK7_tight_cover\tK6_Hall\t"
-                "K7_Hall_seed\tK7_Hall_aux\tK7_cover_seed\tK7_cover_aux\t"
-                "K7_tight_cover_seed\tK7_tight_cover_aux\t"
-                "K6_Hall_seed\tK6_Hall_aux\n");
-        for (unsigned i = 0; i < idx; ++i) {
-            const ProfileResult *r = &results[i];
-            fprintf(df, "%u\t%d\t%u\t%d\t%d\t%d\t%d\t%d\t%d\t"
-                    "%u\t%u\t%u\t%u\t%u\t%u\t%u\t%u\n",
-                    i, r->omega, r->link_mask, r->bad_reflection,
-                    r->bad_defect_csp, r->bad_k7_hall, r->bad_k7_cover,
-                    r->bad_k7_tight_cover, r->bad_k6_hall,
-                    r->k7_hall_seed, r->k7_hall_aux,
-                    r->k7_cover_seed, r->k7_cover_aux,
-                    r->k7_tight_cover_seed, r->k7_tight_cover_aux,
-                    r->k6_hall_seed, r->k6_hall_aux);
-        }
-        fclose(df);
+    if (decision_tmp && !publish_decisions(decision_tmp, argv[5])) {
+        fclose(decision_tmp);
+        free(results); free(threads); free(workers); free(graphs);
+        free(killed);
+        return 2;
     }
-    printf("{\n  \"schema\": 2,\n  \"n\": %d,\n  \"dimension\": 6,\n", N);
+    printf("{\n  \"schema\": 3,\n  \"n\": %d,\n  \"dimension\": 6,\n", N);
     printf("  \"candidate_count_expected\": %u,\n", EXPECTED);
     printf("  \"candidate_count_profiled\": %u,\n", idx);
     printf("  \"worker_count\": %d,\n", nworkers);
@@ -921,6 +1202,7 @@ int main(int argc, char **argv) {
         printf(",\n"); print_stats("deferred", &deferred);
     }
     printf("\n  }\n}\n");
+    if (decision_tmp) fclose(decision_tmp);
     free(results); free(threads); free(workers); free(graphs);
     free(killed);
     return 0;

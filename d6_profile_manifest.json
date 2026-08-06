@@ -1,8 +1,8 @@
 {
-  "schema": 2,
-  "created_local": "2026-08-06T14:28:00+02:00",
+  "schema": 3,
+  "created_local": "2026-08-06T15:58:00+02:00",
   "branch": "codex/dimension6",
-  "source_base_commit": "e32d51c2e288174198fdfe3f1c9ed38494915eda",
+  "source_base_commit": "73de9d8221bdbca1ec80c7d29be352f6cc1a3068",
   "machine": {
     "model": "MacBook Pro (Mac14,10)",
     "chip": "Apple M2 Pro",
@@ -10,7 +10,7 @@
     "memory_gb": 16,
     "gpu": "integrated Apple M2 Pro, 19 cores",
     "gpu_used": false,
-    "gpu_note": "The exact kernel is irregular integer bitset enumeration and bounded vertex-cover DFS; a Metal/GPU port would add dispatch and transfer overhead without changing the bottleneck.",
+    "gpu_note": "The exact kernels are irregular 13-bit component, matching, and subset searches. A Metal/GPU port would add dispatch and transfer overhead; all 12 CPU cores were used instead.",
     "os": "macOS 14.5 (23F79)",
     "architecture": "arm64",
     "compiler": "Apple clang 16.0.0 (clang-1600.0.26.6)",
@@ -48,14 +48,15 @@
     "result": "PASS"
   },
   "commands": [
-    "cc -O3 -Wall -Wextra -Werror -pthread -o /tmp/profile_d6_final5 profile_d6.c",
-    "python3 -m unittest -v test_d6_reference_filters.py",
-    "python3 -m unittest -v test_profile_d6_c.py",
+    "cc -O3 -Wall -Wextra -Werror -pthread -o /tmp/profile_d6_stream profile_d6.c",
+    "python3 -m unittest -v test_d6_reference_filters.py test_d6_k6_lorentz.py test_profile_d6_c.py",
     "python3 extract_d6_reference_sample.py --check",
-    "python3 crosscheck_d6_reference_c.py /tmp/profile_d6_final5 d6_reference_sample.json",
-    "cc -O1 -g -Wall -Wextra -Werror -pthread -fsanitize=address,undefined -o /tmp/profile_d6_san5 profile_d6.c",
-    "/tmp/profile_d6_san5 aeq_d6_n19.txt killed_d6_n19.log 10000 12 > /tmp/d6_san5.json",
-    "/usr/bin/time -p /tmp/profile_d6_final5 aeq_d6_n19.txt killed_d6_n19.log 0 12 > d6_profile.json 2> d6_profile_exact5.stderr",
+    "python3 extract_d6_k6_lorentz_sample.py --check",
+    "python3 crosscheck_d6_reference_c.py /tmp/profile_d6_stream d6_reference_sample.json",
+    "python3 crosscheck_d6_k6_lorentz_c.py /tmp/profile_d6_stream d6_k6_lorentz_sample.json d6_k6_lorentz_report.json --workers 12",
+    "cc -O1 -g -Wall -Wextra -Werror -pthread -fsanitize=address,undefined -fno-omit-frame-pointer -o /tmp/profile_d6_stream_san profile_d6.c",
+    "ASAN_OPTIONS=detect_leaks=0 /tmp/profile_d6_stream_san aeq_d6_n19.txt killed_d6_n19.log 10000 12 > /tmp/d6_stream_san.json",
+    "/usr/bin/time -p /tmp/profile_d6_stream aeq_d6_n19.txt killed_d6_n19.log 0 12 /tmp/d6_profile_stream_decisions.tsv > d6_profile.json 2> d6_profile_k6.stderr",
     "python3 verify_profile_d6.py"
   ],
   "generation_checks": {
@@ -66,13 +67,17 @@
     "bad_input_graphs": 0
   },
   "profiler": {
-    "source_sha256": "46a06aa31f624e1d8b1db254f1179a478273905c964eb6b9d4feb0bb4299a0c0",
-    "result_sha256": "2229bb5cdea73cb7fd37669747af743e4f673f88aaf2620e37b1d5513e949fde",
-    "stderr_sha256": "80c62960f354d96e283a8ba139060a52589907f029b1910905d226364cb2bf74",
-    "wall_seconds": 26.13,
-    "user_seconds": 158.18,
-    "system_seconds": 1.62,
+    "source_sha256": "5dc8ceec9252fcf6cefbbc8162d42ea369387a2ec595268a841629547b98a765",
+    "result_sha256": "77d507fcc55c4e34a44af2de1ce7c16d0743476ea09d08ce0215e65c80ab17d9",
+    "stderr_sha256": "0106e04f732635366e894477fc2145680ed4e04178b70e342919e59116d0f287",
+    "decisions_sha256": "c2e39f7b366a67c2ea117531e2cd5788a0f40eca32e605601bec59152aecea75",
+    "decisions_tracked": false,
+    "wall_seconds": 51.60,
+    "user_seconds": 228.98,
+    "system_seconds": 2.39,
     "workers": 12,
+    "batch_graphs": 65536,
+    "bounded_working_memory": true,
     "validation_failures": 0,
     "arithmetic": "exact integer graph operations only"
   },
@@ -84,12 +89,15 @@
     "K7_tight_cover_matching_rejections": 4,
     "K7_tight_cover_matching_incremental_rejections": 2,
     "K6_Hall_rejections": 0,
-    "final_exact_union": 627358,
-    "incremental_exact_rejections": 614892,
-    "final_residue": 288955,
+    "K6_two_light_ray_rejections": 174713,
+    "K6_two_light_ray_sample_rejections": "1014/1024",
+    "final_exact_union": 802071,
+    "incremental_exact_rejections_over_K7_cover_milestone": 174713,
+    "final_residue": 114242,
     "final_residue_K7": 113136,
-    "final_residue_K6_only": 175819,
-    "note": "Every previous exact rejection in the deferred population is also rejected by the bounded-cover rule. The tight-cover rule fires four times in the deferred population, with two outside the old cover set. Both Hall filters are redundant with the corpus K8 exclusion, as proved and independently witnessed."
+    "final_residue_K6_only": 1106,
+    "K6_only_reduction_fraction": 0.9937094398216347,
+    "note": "The K6 two-light-ray CSP applies only to the previously untouched K6-only population and rejects 174,713 of its 175,819 graphs. The K7 population and all earlier K7 counts are unchanged. Both clique-Hall filters remain redundant with the corpus K8 exclusion."
   },
   "reference_crosscheck": {
     "implementation": "d6_reference_filters.py",
@@ -104,12 +112,29 @@
       "K6_only_deferred_cover": "0/16",
       "both_Hall_rules": "0/52",
       "targeted_tight_matching": "4/4 (including 2/4 not rejected by the old cover rule)"
+    },
+    "K6_Lorentz_reference": {
+      "implementation": "d6_k6_lorentz_reference.py",
+      "implementation_sha256": "ef6a0877a5987119c92ec1bd9271a6a47774fc9e4992c10e1f28b6d5373592c2",
+      "input_profile": "d6_k6_lorentz_input_profile.json",
+      "input_profile_sha256": "2229bb5cdea73cb7fd37669747af743e4f673f88aaf2620e37b1d5513e949fde",
+      "sample": "d6_k6_lorentz_sample.json",
+      "sample_sha256": "f42f4fe79bf3eb357ca3d9d4be5ce81528a556f60e156aafd3d6df03de6488fa",
+      "report": "d6_k6_lorentz_report.json",
+      "report_sha256": "dbd734864d36fa97d5488b86a21c3b008f572e1ce1639e7d2b2f221e352a2e44",
+      "sample_graphs": 1024,
+      "sample_rejections": 1014,
+      "graphs_compared_individually": 1024,
+      "C_Python_decision_agreement": "PASS",
+      "python_wall_seconds": 8.938010916113853,
+      "workers": 12
     }
   },
   "controls": {
     "legacy_independent_controls": "PASS",
     "reference_unittests": "8/8 PASS",
-    "C_kernel_unittests": "7/7 PASS",
+    "K6_Lorentz_reference_unittests": "6/6 PASS",
+    "C_kernel_unittests": "8/8 PASS",
     "sanitizers": "AddressSanitizer and UndefinedBehaviorSanitizer PASS on the first 10000 corpus graphs with 12 workers",
     "positive": [
       "regular K7 plus one facet reflection",
@@ -123,7 +148,8 @@
       "K7 Hall failure with explicit required K8 witness",
       "disjoint-defect edge with both endpoints ineligible for Z",
       "alpha-at-most-two K1,8 cover graph: bound 7 fails and bound 8 passes",
-      "alpha-at-most-two tight-cover seed with cover number 7 but no defect-coordinate perfect matching"
+      "alpha-at-most-two tight-cover seed with cover number 7 but no defect-coordinate perfect matching",
+      "alpha-at-most-two, clique-number-six graph with an undeletable seven-vertex non-bipartite Lorentz component"
     ]
   },
   "heuristic_obstruction_pilot": {
@@ -139,5 +165,5 @@
     "K6_only_coverage": 0,
     "status": "Containment hits of the eight remaining patterns are heuristic until the patterns receive separate rigorous non-realizability certificates."
   },
-  "trust": "The new filters use exact integer graph operations and never force candidate nonedges to be non-unit. The bounded-cover cardinality and tight-frame equality proofs use the validated almost-equidistant precondition alpha(G)<=2. The f(4)=12 and f(5)=16 link inputs inherit their respective computer-assisted proof assumptions. No floating-point geometric decision is made."
+  "trust": "The filters use exact integer graph operations and never force candidate nonedges to be non-unit. The new K6 rule existentially enumerates every eligible zero-factor set and both lightlike classes of every non-bipartite component; bipartite components are deliberately ignored. Its orthogonality step, the K7 cover rules, and the tight-frame proof use the validated alpha(G)<=2 precondition. The f(4)=12 and f(5)=16 link inputs inherit their respective computer-assisted proof assumptions. No floating-point geometric decision is made."
 }
