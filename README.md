@@ -1,27 +1,31 @@
 # Almost-equidistant sets: f(4) = 12, and the ongoing f(5) campaign
 
-## NEW: progress on f(5) (2026-08-05, in progress)
+## NEW: f(5) = 16 (2026-08-06)
 
-`f5_progress.pdf` documents the current state: **f(5) <= 17** (was 20),
-by certified elimination of all minimal abstract almost-equidistant graphs
-on 20 vertices (8 graphs), 19 vertices (340) and 18 vertices (8825) in
-R^5, using the d=5 port of the certified engine below (`ckernel5.c`).
-Of the final level's 12654 graphs on 17 vertices, 12534 are certified at
-this snapshot; the last 120 are in the pipeline. The candidate lists
-were generated with `triangleramsey` + `filter_mtf.c` and independently
-cross-validated (`enumaeq5.c`, `compare_sets.py`); the 16-point lower
-bound is verified in integer arithmetic (`verify_lower_bound_16.py`).
-Levels 18 (8825 graphs) and 17 (12654 graphs) are being certified now —
-partial verdicts in `results_n18.json`; numerical corroboration in
-`lm5.c` sweeps. To reproduce a finished level:
+`f5_equals_16.pdf` states the result: **the maximum size of an
+almost-equidistant set in R^5 is sixteen** (was known 16..20). All
+21,827 minimal abstract almost-equidistant graphs on 17..20 vertices
+were certified non-realizable by the d=5 port of the certified engine
+below (`ckernel5.c`); the 16-point Larman-Rogers half-cube set is
+verified in integer arithmetic (`verify_lower_bound_16.py`). Candidate
+lists were generated with `triangleramsey` + `filter_mtf.c` and
+independently cross-validated (`enumaeq5.c`, `compare_sets.py`).
+En passant, an erratum in BPSSV Table 3 (d=6 column) was found and
+verified (`erratum_bpssv_table3_d6.md`). To reproduce:
 
 ```sh
-python reproduce5.py --controls          # d=5 engine validation controls
-python reproduce5.py --level 20          # 8 graphs, seconds => f(5) <= 19
-python reproduce5.py --level 19          # 340 graphs, minutes => f(5) <= 18
-python reproduce5.py --level 18 --bulk   # 8825 graphs, ~30 s => f(5) <= 17
-python reproduce5.py --level 17 --bulk   # 12654 graphs (running)
+python reproduce5.py --controls          # engine validation controls
+python reproduce5.py --level 20 --bulk   # 8 graphs      => f(5) <= 19
+python reproduce5.py --level 19 --bulk   # 340 graphs    => f(5) <= 18
+python reproduce5.py --level 18 --bulk   # 8825 graphs   => f(5) <= 17
+python reproduce5.py --level 17 --bulk   # 12654 graphs (bulk of them)
+python hotmap.py                         # hardest graphs, all parametrizations
+python verify_campaign.py                # completeness check => f(5) = 16
 ```
+
+An f(6) campaign (toward the conjectured f(6) = 18) is underway in the
+same repository: 3,055,474 of the 3,971,787 level-19 candidates are
+already certified (`reproduce6.py`, `ckernel6.c`, `d6_plan.md`).
 
 The f(4) = 12 package below is unchanged.
 

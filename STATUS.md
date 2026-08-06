@@ -274,3 +274,15 @@ scheduling rule (split expensive cells, not just parked ones) plus one
 missing search dimension (parametrization diversity); every "channel"
 was an artifact of those two gaps, exactly as the numerics kept
 insisting.
+
+## 11:30 append — LANDED. f(5) = 16, controls PASS on final kernel
+
+Final control suite on kernel sha 2220fc25bb71 (the build that certified
+the last 26 graphs): K7 killed (1 node), K6 survives, apex+cross killed
+(2 nodes), cross-polytope survive control isolates the true mirror
+realizations in exactly 6/24 slices (18 killed, 0 aborts), K7-minus-edge
+survives 24/24. PASS.
+
+Result note f5_equals_16.pdf finalized; README updated. f(5) = 16.
+Next: resume d=6 (port the quota + mean-value upgrades to ckernel6.c,
+then finish the 916,313 deferred level-19 graphs).

@@ -1,0 +1,243 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=2.6cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\setlist{itemsep=2pt,topsep=4pt}
+
+\newtheorem*{result}{Result}
+\newcommand{\R}{\mathbb{R}}
+
+\title{\vspace{-1.2cm}The maximum size of an almost-equidistant set\\
+in $\R^5$ is sixteen\\[4pt]
+\large A computer-assisted determination of $f(5)$}
+\author{}
+\date{August 5, 2026}
+
+\begin{document}
+\maketitle
+\vspace{-1.4cm}
+
+\section*{Background}
+
+A finite set of points in $\R^d$ is \emph{almost equidistant} if among any
+three of its points, some two are at unit distance. Let $f(d)$ denote the
+largest size of an almost-equidistant set in $\R^d$. Classically $f(2)=7$
+(the Moser spindle) and $f(3)=10$ (Gy\"orey \cite{Gyorey}); Balko, P\'or,
+Scheucher, Swanepoel and Valtr \cite{BPSSV} re-proved these with computer
+assistance and established $12\le f(4)\le 13$ as well as
+\[
+  16\;\le\; f(5)\;\le\; 20 ,
+\]
+the lower bound being the Larman--Rogers half-cube construction \cite{LR}.
+The value $f(4)=12$ (Conjecture~1 of \cite{BPSSV}) was resolved in the
+accompanying note \texttt{f4\_equals\_12.pdf} of this repository. No
+improvement on $f(5)$ appeared in the literature since \cite{BPSSV}; the
+best asymptotic bound is $f(d)=O(d^{4/3})$ \cite{KMS}.
+
+\begin{result}
+$f(5)=16$ (computer-assisted proof; see the caveats below). Moreover, no
+almost-equidistant set of $17$, $18$, $19$ or $20$ points exists in
+$\R^5$, each level being eliminated independently by certified interval
+computation.
+\end{result}
+
+\section*{Reduction}
+
+Following \cite{BPSSV}, the unit-distance graph $G$ of an
+almost-equidistant set in $\R^5$ satisfies: (i) $\alpha(G)\le2$ (the
+complement is triangle-free); (ii) no $K_7$ (at most $d{+}1$ points of
+$\R^d$ are pairwise at unit distance); (iii) no $K_{3,3,3}$ subgraph
+(Lemma~11 of \cite{BPSSV}: three $3$-point classes with all cross
+distances $1$ would span three pairwise orthogonal $\ge2$-dimensional
+affine hulls, hence dimension $\ge6$). Deleting removable edges gives a
+spanning \emph{minimal} such graph (complement a \emph{maximal}
+triangle-free graph, still satisfying (ii) and (iii)), and any realization
+--- $n$ distinct points with all edges at unit distance, non-edges
+unconstrained --- restricts to it. Hence if no minimal abstract
+almost-equidistant graph on $n$ vertices is realizable with $n$ distinct
+points in $\R^5$, then $f(5)<n$.
+
+The minimal graphs were generated from the maximal triangle-free graphs
+(program \texttt{triangleramsey} \cite{BGS,BBH}) by filtering with
+independently written checkers; the counts match \cite{BPSSV} (Table~2,
+$d=5$) at every order:
+
+\begin{center}
+\begin{tabular}{lrrrrr}
+\toprule
+$n$ & 17 & 18 & 19 & 20 & 21\\
+\midrule
+maximal triangle-free graphs & 164\,796 & 1\,337\,848 & 13\,734\,745 &
+178\,587\,364 & 2\,911\,304\,940\\
+minimal abstract a.e.\ graphs & 12\,654 & 8\,825 & 340 & 8 & 0\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+(The $n=21$ column re-verifies $f(5)\le20$ of \cite{BPSSV} independently.)
+As an independent check of the class definition and the filters, a
+from-scratch vertex-growth enumerator reproduces the $d=5$ column of
+Table~3 of \cite{BPSSV} at every order it reaches ($7$, $14$, $38$, $106$,
+$402$, $1817$, $11\,132$, $86\,053$, $803\,299$, $7\,623\,096$ for
+$n=4,\dots,13$) and the minimal counts up to $n=13$; at $n=13$ the $242$
+minimal graphs agree \emph{as sets} between the two routes, matched
+one-to-one up to isomorphism. The lower bound $f(5)\ge16$ is verified in
+integer arithmetic: the odd half-cube
+$\{v\in\{\pm1\}^5:\ v\ \text{odd \#(+1)s}\}/\sqrt8$ is a two-distance set
+(squared distances $1$ and $2$) whose non-unit graph is the triangle-free
+Clebsch graph.
+
+\section*{Method}
+
+The decision engine (\texttt{ckernel5.c}) is the $\R^5$ port of the
+certified branch-and-prune engine that proved $f(4)=12$ (Appendix~B of
+the $f(4)$ note), with only the dimension-forced changes: rigorous
+outward-rounded interval arithmetic over IEEE doubles ($\cos/\sin$ padded
+by $8$ ulp); exact $K_6$ (unit $5$-simplex) or $K_5$ seeds; binary
+sphere placements from $\ge5$ placed neighbours ($5{\times}5$ interval
+Gauss--Jordan, Krawczyk contraction on the best-conditioned $5$-subset,
+surplus neighbours as certified constraints, Gauss--Seidel re-contraction
+sweeps); circle placements from exactly $4$ placed neighbours
+(circumcentre by a $3{\times}3$ interval Gram system, orthonormal
+complement basis, adaptive $\theta$-subdivision with a runtime canary);
+merged-root tangencies resolved by one-dimensional segment subdivision;
+and two certified coincidence rules that discard branches on which two
+non-adjacent vertices are forced to coincide (root separation over
+$5$-subsets of common placed neighbours; the bisector-hyperplane rule
+with $6$ common placed neighbours of certifiably nonzero affine volume).
+A branch is discarded only if an interval certifiably excludes a required
+value or coincidence is forced; eliminating every branch of one
+elimination order certifies that the graph has no realization with all
+points distinct.
+
+Two search-management additions (soundness-neutral) were needed beyond
+the $f(4)$ engine, both prompted by the hardest $\sim$0.3\% of the
+$17$-vertex graphs: (i)~a \emph{per-cell node quota} --- a circle cell
+whose subtree exceeds a fixed node budget is abandoned and split, since
+a cell can be arbitrarily expensive to kill outright even when both its
+halves die almost immediately (the $f(4)$-era engine split cells only
+when their subtrees \emph{parked} boxes, which such cells never do);
+and (ii)~a certified \emph{mean-value enclosure} for the circle
+parametrization (intersected with the direct enclosure), quadratically
+tighter on narrow cells.
+
+\emph{Orchestration.} Elimination orders are generated circle-late (and,
+for stubborn graphs, variants with a deliberately early circle stage,
+whose parameter can be tiled into slices); the driver races candidate
+orders and certifies with whichever first has its entire tiling killed.
+Almost all searches are circle-free binary trees ($12\,528$ of $12\,654$
+at $n=17$; $8\,813$ of $8\,825$ at $n=18$; $339$ of $340$; $7$ of $8$),
+and every candidate graph admits a valid order --- no two-parameter
+stage is ever required. For the final $26$ graphs the driver enumerated
+\emph{all} (seed clique, first-circle-vertex) parametrizations
+($\sim$20--30 per graph): for every one of the $26$, at least one
+parametrization yields a $192$-slice tiling in which every slice is
+certifiably killed --- the graph-specific ``hot arcs'' of any single
+parametrization are artifacts of that parametrization, never of the
+graph.
+
+\emph{Controls.} The engine kills $K_7$ (immediately: the seed's seventh
+vertex has an empty sphere system) and the $11$-vertex graph
+$K_1+K_{2,2,2,2,2}$ (an apex adjacent to all vertices of the
+$5$-dimensional cross-polytope graph would have to be its centre, at
+distance $1/\sqrt2\neq1$; killed in two search nodes); it does \emph{not}
+kill the realizable controls $K_6$, $K_{2,2,2,2,2}$ (the unit
+cross-polytope) and the $16$-vertex half-cube graph of the extremal set
+--- for these, sliced tilings report floor-width surviving cells around
+the true realizations.
+
+\emph{Numerical corroboration.} Independent Levenberg--Marquardt
+optimization ($300$ restarts per graph, greedy clique-seeded and random
+initializations) over all $21\,827$ candidate graphs finds no graph
+remotely close to realizable: the smallest residual with distinct points
+is $0.409$ (at $n=17$), versus $10^{-30}$ reached on realizable controls.
+No conclusion rests on the numerics.
+
+\section*{Execution}
+
+All four levels were eliminated on a single desktop (Ryzen 9950X3D, LLVM
+clang build of the kernel), racing decompositions across all cores:
+\begin{itemize}
+\item $n=20$: all $8$ graphs certified in ${\sim}5$ seconds wall time;
+\item $n=19$: all $340$ graphs in ${\sim}3$ minutes;
+\item $n=18$: all $8\,825$ graphs in under a minute ($8\,813$ circle-free
+      searches bulk-certified in ${\sim}10$ seconds);
+\item $n=17$: all $12\,654$ graphs --- $12\,518$ by circle-free searches
+      in six seconds of wall time; $110$ more by the racing/slicing
+      driver within seconds each; and the final $26$ (one structural
+      family: $90$--$95$ edges, degrees $10$--$12$, few $K_6$'s,
+      near-$5$-regular maximal-triangle-free complements) certified in
+      $670$ seconds total by exhausting parametrizations under the
+      final kernel, each via a fully killed $192$-slice tiling.
+\end{itemize}
+The certificates for these last graphs record the winning
+parametrization in \texttt{hotmap\_results.json}; per-graph verdicts
+for the whole level are in \texttt{results\_n17.json}. (Development
+history, including the search-management defects found and fixed along
+the way, is preserved in \texttt{STATUS.md} and the repository log.)
+Zero surviving branches were reported anywhere; per-graph verdicts and
+winning decomposition indices are in \texttt{results\_n17..20.json}.
+Together with $f(5)\ge16$: $f(5)=16$.
+
+\emph{En passant}, the independent re-derivation of the candidate
+enumeration uncovered an erratum in Table~3 of \cite{BPSSV} (the d=6
+column omits the $K_{1,3,3,3}$ exclusion for $n\ge11$; corrected counts
+and three independent verification routes are documented in
+\texttt{erratum\_bpssv\_table3\_d6.md}; their Table~2 and all theorems
+are unaffected).
+
+\section*{Caveats and reproducibility}
+
+The proof is computer-assisted. It assumes IEEE-754 correctly rounded
+arithmetic, library $\cos/\sin$ accurate to $8$ ulp (padded), the engine
+logic inherited from the $f(4)$ note's Appendix~B with the $\R^5$
+modifications listed above, and the completeness of the
+\texttt{triangleramsey} generation \cite{BGS}, cross-validated here
+against \cite{BPSSV} at $n=17,\dots,21$ and against a fully independent
+enumeration up to $n=13$ (all counts; sets at $n=13$). Everything needed
+to reproduce the computation is in this repository:
+\texttt{reproduce5.py --controls} then \texttt{--level 20/19/18/17}
+(\texttt{--bulk}), with \texttt{hotmap.py} for the hardest graphs; the
+kernel compiles automatically. Independent replication --- ideally with
+an independently implemented engine, e.g.\ one using dyadic fixed-point
+arithmetic to re-check the recorded certificate tilings --- would be
+very welcome before the result is treated as established.
+
+With $f(2)=7$, $f(3)=10$, $f(4)=12$ and now $f(5)=16$, the first five
+values of $f$ are settled; the next open case is
+$18\le f(6)\le 26$.
+
+\begin{thebibliography}{9}\small
+\bibitem{BPSSV} M.~Balko, A.~P\'or, M.~Scheucher, K.~Swanepoel, P.~Valtr,
+\emph{Almost-equidistant sets}, Graphs and Combinatorics \textbf{36}
+(2020), 729--754. arXiv:1706.06375.
+
+\bibitem{LR} D.~G.~Larman, C.~A.~Rogers, \emph{The realization of
+distances within sets in Euclidean space}, Mathematika \textbf{19}
+(1972), 1--24.
+
+\bibitem{KMS} A.~Kupavskii, N.~Mustafa, K.~Swanepoel, \emph{Bounding the
+size of an almost-equidistant set in Euclidean space}, Combinatorics,
+Probability and Computing \textbf{28} (2019), 280--286.
+
+\bibitem{Gyorey} B.~Gy\"orey, \emph{Diszkr\'et metrikus terek
+be\'agyaz\'asai}, Master's thesis, E\"otv\"os Lor\'and University,
+Budapest, 2004.
+
+\bibitem{BGS} G.~Brinkmann, J.~Goedgebeur, J.-C.~Schlage-Puchta,
+\emph{Ramsey numbers $R(K_3,G)$ for graphs of order 10}, Electron.\ J.
+Combin.\ \textbf{19} (2012), \#P36. Software \texttt{triangleramsey},
+\url{https://caagt.ugent.be/triangleramsey/}.
+
+\bibitem{BBH} S.~Brandt, G.~Brinkmann, T.~Harmuth, \emph{The generation
+of maximal triangle-free graphs}, Graphs and Combinatorics \textbf{16}
+(2000), 149--157.
+\end{thebibliography}
+
+\end{document}

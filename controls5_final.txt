@@ -1,0 +1,7 @@
+kernel: ckernel5 (sha256 2220fc25bb71)
+C1 K7 (expect KILLED): KILLED nodes=1
+S1 K6 (expect SURVIVORS): SURVIVORS
+C2 apex+cross-polytope (expect KILLED): KILLED nodes=2
+S cross (expect survivors>0): SURVIVORS in 6/24 slices, KILLED 18, ABORT 0
+S k7me (expect survivors>0): SURVIVORS in 24/24 slices, KILLED 0, ABORT 0
+controls5: PASS
