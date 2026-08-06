@@ -396,3 +396,19 @@ half-hour regardless of wakeup mechanics.
   data at the next block.
 - Certified count unchanged (3,055,480/3,971,787) while the library is
   built — expected; the next big jump comes from the containment sweep.
+
+## 15:12 append — cadence block
+
+- Certified: 3,055,480 / 3,971,787 (no change — library phase).
+- Pattern #569 (the 33%-coverage prize): NOT certified on the first
+  pass, but nearly — 93/96 slices of its best parametrization died; 3
+  hot slices resisted 3M-node caps. It has only 2 parametrizations
+  (highly symmetric graph), so parametrization diversity cannot help;
+  a dedicated ladder-drill of the 3 hot slices (finish17-style:
+  8-fold splits, escalating caps, deep theta floors) is now running
+  (drill_569.log). Pattern #571 certification continues in parallel.
+- Blunt read: the obstruction pool's frequent patterns are symmetric
+  and underdetermined — the hardest kind to certify. The 3-hot-slice
+  near-miss says they are probably certifiable with drilling, but if
+  #569 floor-parks, it is unusable and the pool pivots to higher-edge
+  patterns per the standing rule. Numbers next block.
