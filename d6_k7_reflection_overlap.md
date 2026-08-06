@@ -19,9 +19,15 @@ rare:
 - its forced reflection was consistent, so all 1,024 sampled graphs survived.
 
 This low hit rate makes a substantial extension of this filter unattractive.
-A full pass is nevertheless warranted after the current CPU campaign because
-the pilot's exact propagation took 0.083 seconds on one core; completing the
-12,941-graph accounting should cost only seconds, not a material compute run.
+A subsequent exact full pass checked all 12,941 selected graphs in 0.861
+seconds on one core.  It found 1,511 graphs with multiple required `K7`s, but
+only 18 with a `K6` overlap; all 18 propagated consistently, so the full pass
+also rejects zero graphs.  The maximum overlap component had three cliques
+and nine vertices.  The machine-readable full report is
+`d6_k7_reflection_overlap_full_report.json`, SHA-256
+`d8294f1d1dd11206856ace4bfe210cbc79f4bb019969930645d95a7bad89cd07`.
+This closes the cheap full accounting and confirms that further work on this
+filter is unlikely to pay off on the current residue.
 
 ## Facet-reflection lemma
 
@@ -147,6 +153,14 @@ The pilot command was
 python3 d6_k7_reflection_overlap.py \
   --sample-size 1024 \
   --output d6_k7_reflection_overlap_sample.json
+```
+
+The full command was
+
+```text
+python3 d6_k7_reflection_overlap.py \
+  --full \
+  --output d6_k7_reflection_overlap_full_report.json
 ```
 
 The input and deterministic selection are pinned in the report:
