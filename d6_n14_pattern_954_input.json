@@ -1,0 +1,264 @@
+{
+  "algebraic_certificate": {
+    "bridge_shared_coordinate": 2,
+    "first_triangle_shared_coordinate": 4,
+    "second_triangle_shared_coordinate": 3,
+    "sign_cases": [
+      {
+        "sigma": -1,
+        "tau": -1
+      },
+      {
+        "sigma": -1,
+        "tau": 1
+      },
+      {
+        "sigma": 1,
+        "tau": -1
+      },
+      {
+        "sigma": 1,
+        "tau": 1
+      }
+    ],
+    "simplex_radicand": 7,
+    "terminal_equation": "3 + sigma*tau = sqrt(7)*(sigma + tau)"
+  },
+  "claim": "The 13-vertex core is a required-unit-edge obstruction in R6; source/candidate nonedges are unconstrained.",
+  "current_K7_targets": {
+    "exact_removed_by_full_dual": 102,
+    "full_dual_decisions": "d6_k7_positive_dual_full_decisions.tsv.gz",
+    "full_dual_decisions_sha256": "724a97928422fc8705946ed64e3ce9afd37579d3229e5b3ebb7c4f1144c002ec",
+    "full_dual_report": "d6_k7_positive_dual_full_report.json",
+    "full_dual_report_sha256": "c2de7e06bbe4f3d163a4f747d42721f7f60da985b867ce74669664431738e345",
+    "indices_sha256": "320a68221ef597a1252d0c16cba6b30b4bef2bb6c13b73ce529e860ed431d497",
+    "parent_selection": "d6_k7_positive_dual_selection.json",
+    "parent_selection_sha256": "814c80651746ce05048f72f0cfa7e49a921554abaf167bd5c8cf4063a34d35c0",
+    "population": 12839,
+    "rank_survivors": ".runs/d6_k7_rank_survivors.json",
+    "rank_survivors_sha256": "7a0a350142930e4e13830ea44c4fd217f25aeb07bbd6286e51e316f72712c4f9",
+    "row_format": "corpus_index followed by 19 adjacency masks",
+    "transient_tsv": ".runs/d6_n14_pattern_954_targets_12839.tsv",
+    "transient_tsv_bytes": 1794169,
+    "transient_tsv_sha256": "9355854172c324f9d93cc4085020974fb9622a010b2e8fe19f5a954d17a7277d"
+  },
+  "extractor": {
+    "file": "d6_n14_pattern_954_extract.py",
+    "sha256": "972d522d1efd3f38cb7f2d95cdb3e0c2ffd4008268071ab0b0dab18343d1d320"
+  },
+  "interval_engine_inspection": {
+    "cdriver6_sha256": "8f65948c8bc95242d0fde50a8cbcb798cb0e225b78a8ce626382d00135b95173",
+    "ckernel6_sha256": "383ef7a17c328869c338f64a16f2b90875ff968fe2fc20e9a5c3094c830e0874",
+    "conclusion": "Two orders exist and each has two circle stages. The exact algebraic certificate supersedes an interval launch.",
+    "engine_usable": true,
+    "ival_sha256": "524e41e0d0637a5352c59ec998009b968f2c9f5e7f31b7f7927e8bc36c2e6fa0",
+    "minimum_circle_stages": 2,
+    "orders": [
+      {
+        "circle_stages": [
+          {
+            "position": 0,
+            "vertex": 2
+          },
+          {
+            "position": 2,
+            "vertex": 0
+          }
+        ],
+        "placement_order": [
+          2,
+          6,
+          0,
+          5,
+          8,
+          3,
+          1
+        ],
+        "seed": [
+          4,
+          7,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "circle_stages": [
+          {
+            "position": 0,
+            "vertex": 6
+          },
+          {
+            "position": 2,
+            "vertex": 8
+          }
+        ],
+        "placement_order": [
+          6,
+          2,
+          8,
+          5,
+          3,
+          0,
+          1
+        ],
+        "seed": [
+          4,
+          7,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      }
+    ]
+  },
+  "kind": "d6_n14_pattern_954_algebraic_core",
+  "obstruction_core": {
+    "adjacency": [
+      2842,
+      6777,
+      3496,
+      8039,
+      4931,
+      7374,
+      8122,
+      5476,
+      7901,
+      7515,
+      7148,
+      5999,
+      4090
+    ],
+    "adjacency_sha256": "1666fb3935b94fe2e553b3fe6033989f43d78e1854e32ceba8fffe0db2ebb196",
+    "defect_coordinate_upper_bounds": {
+      "A": [
+        1,
+        4,
+        6
+      ],
+      "B": [
+        1,
+        3,
+        6
+      ],
+      "C": [
+        0,
+        4,
+        5
+      ],
+      "D": [
+        0,
+        3,
+        5
+      ],
+      "E": [
+        2,
+        4
+      ],
+      "F": [
+        2,
+        3
+      ]
+    },
+    "discarded_source_edges": [
+      [
+        0,
+        3
+      ],
+      [
+        5,
+        8
+      ]
+    ],
+    "discarded_source_vertex": 1,
+    "edges": 54,
+    "nonedges_used_as_distance_constraints": false,
+    "order": 13,
+    "original_vertex_labels": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "required_bridge": [
+      "E",
+      "F"
+    ],
+    "required_triangles": [
+      [
+        "A",
+        "C",
+        "E"
+      ],
+      [
+        "B",
+        "D",
+        "F"
+      ]
+    ],
+    "roles": {
+      "A": 0,
+      "B": 2,
+      "C": 4,
+      "D": 7,
+      "E": 1,
+      "F": 5
+    },
+    "seed": [
+      3,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "schema": 1,
+  "source_pattern": {
+    "adjacency": [
+      5694,
+      365,
+      13555,
+      6995,
+      16077,
+      10119,
+      14750,
+      16244,
+      10986,
+      15801,
+      15029,
+      14296,
+      11997,
+      8180
+    ],
+    "adjacency_sha256": "9f215f61d3f20a8f8986797072330c17ffb6f7b6e3606192594ce7691be81c5f",
+    "corpus": "aeq_d6_n14.txt",
+    "corpus_graphs": 1052,
+    "corpus_sha256": "0e3d74c081b272731848d655da0c68cfba09435e39a2fd2107c32c2bd3b378f0",
+    "edges": 62,
+    "unique_K7_seed": [
+      4,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "zero_based_index": 954
+  }
+}
