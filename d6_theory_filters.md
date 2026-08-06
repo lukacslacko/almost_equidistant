@@ -109,3 +109,240 @@ candidate complement is triangle-free: two adjacent complement
 vertices have disjoint complement neighbourhoods in the independent
 seed.  CSP infeasibility for any `K7` seed is a rigorous obstruction.
 Feasibility is only a screen and makes no realizability claim.
+
+## Exact simplex matrix identities
+
+For any represented points define
+
+```text
+M_xx = -1,
+M_xy = ||x-y||^2 - 1  (x != y).
+```
+
+Required graph edges give zero off-diagonal entries, while graph
+nonedges remain unrestricted and may also give zero.  The matrix has
+rank at most eight and at most one positive eigenvalue.
+
+For a centered regular unit `K7`, put
+
+```text
+u_i(x) = ||x-q_i||^2 - 1,
+s_x = sum_i u_i(x),
+c_x = s_x + 1.
+```
+
+Direct use of the regular-simplex Gram matrix gives
+
+```text
+x = -sum_i u_i(x) q_i,
+||u(x)||^2 = 1 + c_x^2/7,
+M_xy = c_x c_y/7 - u(x) dot u(y).
+```
+
+If `U` has the `u(x)` as columns and `T` is the outside set, the Schur
+complement of the seed block `M_QQ=-I_7` is therefore exactly
+
+```text
+M_TT + U^T U = c c^T/7.
+```
+
+It is positive semidefinite of rank at most one; this is stronger than
+a bare rank-eight condition.
+
+## `K7` simplex-clique Hall rule
+
+For each outside graph vertex let
+
+```text
+D_x = {i : xq_i is a graph nonedge}.
+```
+
+The actual support of `u(x)` is contained in `D_x`.  If `C` is a
+required unit clique among outside vertices, then the preceding
+identities give
+
+```text
+U_C^T U_C = I + c_C c_C^T/7.
+```
+
+This matrix is positive definite, so the columns `u(x)`, `x in C`, are
+linearly independent.  Sparse-column Hall theory now requires a
+matching from every such clique into its allowed seed coordinates.
+Equivalently, for every coordinate mask `A subseteq {1,...,7}`,
+
+```text
+omega(G[{x : D_x subseteq A}]) <= |A|.
+```
+
+The C implementation uses the equivalent direct formulation: it
+enumerates every outside clique while accumulating `union D_x`, and
+rejects exactly when
+
+```text
+|C| > |union_{x in C} D_x|.
+```
+
+This checks every Hall subset, not only one maximal clique.  Its witness
+packs the failing outside clique into the low 19 bits of `auxiliary`
+and its coordinate union into the next seven bits.
+
+On the present corpus this rule is expected to be redundant with the
+existing `K8` exclusion.  A failing clique of size at least `|A|+1`,
+together with the `7-|A|` seed vertices outside `A`, is a required
+`K8`.  Keeping the independent Hall implementation is still useful as
+an algebra/control check and for variants not prefiltered by `K8`.
+
+## `K7` disjoint-edge bounded-cover rule
+
+Form a graph `L` on the twelve outside vertices.  Put `xy` in `L` when
+`xy` is a required unit edge and `D_x` and `D_y` are disjoint.  The unit
+equation then has `u(x) dot u(y)=0`, so
+
+```text
+c_x c_y = 0.
+```
+
+Consequently `Z={x:c_x=0}` must be a vertex cover of `L`.
+
+Only vertices with at least three allowed defects are eligible for
+`Z`.  Indeed, `c_x=0` implies
+
+```text
+sum_i u_i(x)=-1,  ||u(x)||^2=1.
+```
+
+With at most two nonzero coordinates these equations force
+`u(x)=-e_i`, which reconstructs the existing seed point `q_i` and
+violates distinctness.
+
+Moreover `|Z|<=7`.  The seed and all points in `Z` lie on the sphere of
+squared radius `3/7`.  Sending
+
+```text
+p -> (sqrt(2)p, 1/sqrt(7)) in R^7
+```
+
+makes them unit vectors and turns unit distance into orthogonality.  If
+there are `N` such vectors, the graph of nonorthogonal pairs is
+triangle-free.  Bessel's inequality at each vector gives
+`tr(B^2)<=2N` for their Gram matrix `B`; since `rank(B)<=7`,
+
+```text
+N^2 = tr(B)^2 <= 7 tr(B^2) <= 14N.
+```
+
+Thus `N<=14`; the seven seed vectors leave room for at most seven
+members of `Z`.  The exact filter rejects precisely when `L` has no
+vertex cover of size at most seven contained in
+`{x:|D_x|>=3}`.  The implementation uses exhaustive edge-branching on
+at most twelve vertices.
+
+The cardinality bound uses almost-equidistance, via the validated
+condition `alpha(G)<=2`.  The bounded-cover helper is therefore not
+advertised as an obstruction for an arbitrary unit-edge graph lacking
+that condition.
+
+### Equality refinement at cover number seven
+
+There is one further exact consequence when the eligible vertex-cover
+number of `L` is exactly seven.  The actual set `Z={x:c_x=0}` is an
+eligible cover and has size at most seven, so in this case `|Z|=7`.
+The lifted seed together with `Z` consists of fourteen unit vectors in
+`R^7`.  Equality holds throughout the preceding `N<=2r` proof:
+
+```text
+196 = tr(B)^2 <= rank(B) tr(B^2) <= 7*28 = 196.
+```
+
+Consequently the frame operator is `2I`.  The seven lifted seed vectors
+already form an orthonormal basis and contribute `I`, so the seven
+lifted vectors belonging to `Z` form a second orthonormal basis.
+
+In seed-basis coordinates,
+
+```text
+<w(x),w(q_i)> = -u_i(x)  for x in Z.
+```
+
+Thus the `7 by 7` matrix with columns `u(x)`, `x in Z`, is nonsingular.
+Its actual support has a determinant permutation, and hence the allowed
+defect masks `D_x` of these seven vertices must admit a perfect matching
+to the seven seed coordinates.
+
+The implementation therefore distinguishes three cases for each seed:
+
+1. no eligible cover of size at most seven: reject by the original
+   bounded-cover rule;
+2. an eligible cover of size at most six: the equality refinement says
+   nothing;
+3. cover number exactly seven: enumerate **every** eligible size-seven
+   cover and reject only if none of their allowed masks has a perfect
+   matching.
+
+Checking every minimum cover is essential: the actual `Z` need not be a
+canonical cover chosen by the algorithm.  Candidate nonedges remain
+unconstrained throughout; the matching is only a necessary support
+condition.  A dedicated 15-vertex, `alpha<=2` seed-level control has
+relative cover graph `K_{1,7}`, a unique eligible seven-leaf cover, and
+leaf masks whose union omits one seed coordinate.  Relative to its
+distinguished seed it passes the earlier cover and Hall rules but fails
+this refinement.  (It has another `K7` seed that already fails the old
+cover rule, so it is not advertised as a graph-level isolation control.)
+
+## `K6` coordinates and virtual-simplex Hall rule
+
+Let `q_1,...,q_6` be a centered regular unit simplex spanning a
+five-dimensional space `W`, and let `e` be a unit normal.  Then
+
+```text
+q_i dot q_i=5/12,  q_i dot q_j=-1/12,
+x=-sum_i u_i(x)q_i+h_x e,
+z_x=sqrt(12)h_x,
+z_x^2=c_x^2+6-6||u(x)||^2,
+M_xy=c_x c_y/6-u(x) dot u(y)-z_x z_y/6.
+```
+
+The seed Schur complement is
+
+```text
+6(M_TT+U^T U)=c c^T-z z^T.
+```
+
+It has rank at most two, at most one positive eigenvalue, and at most
+one negative eigenvalue; it is not generally positive semidefinite.
+
+For the first graph-only consequence define the seven-coordinate vector
+
+```text
+a_x = (u(x), z_x/sqrt(6)).
+```
+
+Its first six coordinates are supported on the graph-allowed defect
+set `D_x`, while its last (normal) coordinate is universally allowed.
+For a required outside clique `C`, the equations give
+
+```text
+a_C^T a_C = I + c_C c_C^T/6,
+```
+
+which is positive definite.  Thus a matching into the six defect
+coordinates plus the universal normal coordinate is necessary.  Hence,
+for every
+`A subseteq {1,...,6}`,
+
+```text
+omega(G[{x:D_x subseteq A}]) <= |A|+1.
+```
+
+Equivalently every required outside clique `C` must satisfy
+
+```text
+|C| <= |union_{x in C}D_x|+1.
+```
+
+The universal coordinate is used only for this rank/Hall argument.  It
+must not be treated as a real vertex in the overlap-forces-unit CSP.
+
+This Hall rule too is redundant after the corpus `K8` filter: a failing
+outside clique of size at least `|A|+2` together with the `6-|A|` seed
+vertices outside `A` is a required `K8`.

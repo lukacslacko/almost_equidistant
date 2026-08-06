@@ -1,8 +1,16 @@
 {
-  "schema": 1,
-  "created_local": "2026-08-06T13:35:00+02:00",
+  "schema": 2,
+  "created_local": "2026-08-06T14:28:00+02:00",
   "branch": "codex/dimension6",
+  "source_base_commit": "e32d51c2e288174198fdfe3f1c9ed38494915eda",
   "machine": {
+    "model": "MacBook Pro (Mac14,10)",
+    "chip": "Apple M2 Pro",
+    "cpu_cores": "12 (8 performance, 4 efficiency)",
+    "memory_gb": 16,
+    "gpu": "integrated Apple M2 Pro, 19 cores",
+    "gpu_used": false,
+    "gpu_note": "The exact kernel is irregular integer bitset enumeration and bounded vertex-cover DFS; a Metal/GPU port would add dispatch and transfer overhead without changing the bottleneck.",
     "os": "macOS 14.5 (23F79)",
     "architecture": "arm64",
     "compiler": "Apple clang 16.0.0 (clang-1600.0.26.6)",
@@ -40,12 +48,14 @@
     "result": "PASS"
   },
   "commands": [
-    "cc -O3 -DMAXN=1024 -DWORDSIZE=64 -I<nauty-include> triangleramsey.c -L<nauty-lib> -lnauty -o triangleramsey",
-    "cc -O3 -o /tmp/filter_mtf6 filter_mtf6.c",
-    "triangleramsey 19 outputlevel 19 | /tmp/filter_mtf6 - 19 > aeq_d6_n19.txt",
-    "gzip -cd killed_d6_n19.log.gz > killed_d6_n19.log",
-    "cc -O3 -Wall -Wextra -Werror -o /tmp/profile_d6 profile_d6.c",
-    "/tmp/profile_d6 aeq_d6_n19.txt killed_d6_n19.log > d6_profile.json",
+    "cc -O3 -Wall -Wextra -Werror -pthread -o /tmp/profile_d6_final5 profile_d6.c",
+    "python3 -m unittest -v test_d6_reference_filters.py",
+    "python3 -m unittest -v test_profile_d6_c.py",
+    "python3 extract_d6_reference_sample.py --check",
+    "python3 crosscheck_d6_reference_c.py /tmp/profile_d6_final5 d6_reference_sample.json",
+    "cc -O1 -g -Wall -Wextra -Werror -pthread -fsanitize=address,undefined -o /tmp/profile_d6_san5 profile_d6.c",
+    "/tmp/profile_d6_san5 aeq_d6_n19.txt killed_d6_n19.log 10000 12 > /tmp/d6_san5.json",
+    "/usr/bin/time -p /tmp/profile_d6_final5 aeq_d6_n19.txt killed_d6_n19.log 0 12 > d6_profile.json 2> d6_profile_exact5.stderr",
     "python3 verify_profile_d6.py"
   ],
   "generation_checks": {
@@ -56,21 +66,78 @@
     "bad_input_graphs": 0
   },
   "profiler": {
-    "source_sha256": "c199ceaabeed5b1427ade0903329d1f592b6eeb653a632e0a75acd253d976342",
-    "result_sha256": "14a9cba30ddbd0c4880d73a1070910dd55fa0c7b889b09f14cdb3f831bf03b26",
-    "wall_seconds": 128.88,
-    "user_seconds": 125.57,
-    "validation_failures": 0
+    "source_sha256": "46a06aa31f624e1d8b1db254f1179a478273905c964eb6b9d4feb0bb4299a0c0",
+    "result_sha256": "2229bb5cdea73cb7fd37669747af743e4f673f88aaf2620e37b1d5513e949fde",
+    "stderr_sha256": "80c62960f354d96e283a8ba139060a52589907f029b1910905d226364cb2bf74",
+    "wall_seconds": 26.13,
+    "user_seconds": 158.18,
+    "system_seconds": 1.62,
+    "workers": 12,
+    "validation_failures": 0,
+    "arithmetic": "exact integer graph operations only"
+  },
+  "exact_results": {
+    "deferred_input": 916313,
+    "previous_exact_union": 12466,
+    "K7_Hall_rejections": 0,
+    "K7_bounded_cover_rejections": 627356,
+    "K7_tight_cover_matching_rejections": 4,
+    "K7_tight_cover_matching_incremental_rejections": 2,
+    "K6_Hall_rejections": 0,
+    "final_exact_union": 627358,
+    "incremental_exact_rejections": 614892,
+    "final_residue": 288955,
+    "final_residue_K7": 113136,
+    "final_residue_K6_only": 175819,
+    "note": "Every previous exact rejection in the deferred population is also rejected by the bounded-cover rule. The tight-cover rule fires four times in the deferred population, with two outside the old cover set. Both Hall filters are redundant with the corpus K8 exclusion, as proved and independently witnessed."
+  },
+  "reference_crosscheck": {
+    "implementation": "d6_reference_filters.py",
+    "sample": "d6_reference_sample.json",
+    "sample_sha256": "329a2d7d1490f09f9443911b5080f8418fff2af1d557122d195522d1c1856d63",
+    "selection": "fixed SplitMix64 pool of 2048 corpus indices, retaining 16 graphs in each of K7-certified, K7-deferred, and K6-only-deferred, plus four explicitly labeled tight-rule witnesses",
+    "graphs_compared_individually": 52,
+    "C_Python_decision_agreement": "PASS",
+    "sample_rejections": {
+      "K7_certified_cover": "16/16",
+      "K7_deferred_cover": "14/16",
+      "K6_only_deferred_cover": "0/16",
+      "both_Hall_rules": "0/52",
+      "targeted_tight_matching": "4/4 (including 2/4 not rejected by the old cover rule)"
+    }
   },
   "controls": {
-    "command": "python3 verify_profile_d6.py",
-    "result": "PASS",
-    "positive": "18-point Larman-Rogers set plus two apices",
+    "legacy_independent_controls": "PASS",
+    "reference_unittests": "8/8 PASS",
+    "C_kernel_unittests": "7/7 PASS",
+    "sanitizers": "AddressSanitizer and UndefinedBehaviorSanitizer PASS on the first 10000 corpus graphs with 12 workers",
+    "positive": [
+      "regular K7 plus one facet reflection",
+      "regular K7 plus two distinct facet reflections",
+      "18-point Larman-Rogers set plus two apices"
+    ],
     "negative": [
       "K5 with five common neighbours forming C5",
       "K7 facet reflections forced to a required edge",
-      "two K7 facet reflections forced to coincide"
+      "two K7 facet reflections forced to coincide",
+      "K7 Hall failure with explicit required K8 witness",
+      "disjoint-defect edge with both endpoints ineligible for Z",
+      "alpha-at-most-two K1,8 cover graph: bound 7 fails and bound 8 passes",
+      "alpha-at-most-two tight-cover seed with cover number 7 but no defect-coordinate perfect matching"
     ]
   },
-  "trust": "The filters in this milestone use exact integer graph operations. The f(4)=12 and f(5)=16 link inputs inherit their respective computer-assisted proof assumptions. No floating-point geometric decision is made here."
+  "heuristic_obstruction_pilot": {
+    "companion_manifest": "d6_obstruction_pilot_manifest.json",
+    "companion_manifest_sha256": "11ea9a761c7a866795e5bd18145199ddcacae58cc0767c6ea9d6caf87dd2c810",
+    "runtime_seconds": 97.896198,
+    "workers": 12,
+    "patterns": 89,
+    "patterns_already_exact": 81,
+    "patterns_still_heuristic": 8,
+    "incremental_exact_hits_in_post_cover_sample": 0,
+    "incremental_heuristic_hits_in_21_sampled_K7_survivors": 10,
+    "K6_only_coverage": 0,
+    "status": "Containment hits of the eight remaining patterns are heuristic until the patterns receive separate rigorous non-realizability certificates."
+  },
+  "trust": "The new filters use exact integer graph operations and never force candidate nonedges to be non-unit. The bounded-cover cardinality and tight-frame equality proofs use the validated almost-equidistant precondition alpha(G)<=2. The f(4)=12 and f(5)=16 link inputs inherit their respective computer-assisted proof assumptions. No floating-point geometric decision is made."
 }

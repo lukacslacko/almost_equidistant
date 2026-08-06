@@ -1,0 +1,25 @@
+{
+  "commands": {
+    "build": "cc -O3 -std=c11 -Wall -Wextra -pedantic -pthread -o obstruction_pilot_d6.bin obstruction_pilot_d6.c -lm",
+    "incremental_analysis": "python3 analyze_obstruction_pilot_d6.py d6_obstruction_pilot.json aeq_d6_n14.txt aeq_d6_n19.txt d6_profile.json d6_obstruction_pilot_incremental.json d6_obstruction_pilot_manifest.json",
+    "pilot": "./obstruction_pilot_d6.bin aeq_d6_n14.txt lm6_n14.out aeq_d6_n19.txt killed_d6_n19.log d6_obstruction_pilot.json 160 50000 12 20260806"
+  },
+  "compiler": "Apple clang version 16.0.0 (clang-1600.0.26.6)",
+  "platform": "macOS-14.5-arm64-arm-64bit",
+  "python": "3.11.15",
+  "schema": 1,
+  "sha256": {
+    "analyze_obstruction_pilot_d6.py": "0d7c0a4cfafd8c7c1471d394256c52b70eb1a4414e81b70d58fce8536e528202",
+    "cdriver6.py": "8f65948c8bc95242d0fde50a8cbcb798cb0e225b78a8ce626382d00135b95173",
+    "d6_reference_filters.py": "584504315dbe69e0c60b7b4565ad53171472aa8af378500938e2e47d8031028b",
+    "exact_profile_json": "2229bb5cdea73cb7fd37669747af743e4f673f88aaf2620e37b1d5513e949fde",
+    "incremental_analysis_json": "8f4b434f01a5ce01478d24ae9452ead48cb1f3db13b36651e8af259cc763d86c",
+    "kill_log": "11c790b12d3543f4476f1eb4c221203f806f1c434f06360b7d25346cace5e305",
+    "lm_triage": "15b6c00fe3e342667ffe51d2654596b319b1cc0928de0edcc2e2a43157eac8cb",
+    "n14_corpus": "0e3d74c081b272731848d655da0c68cfba09435e39a2fd2107c32c2bd3b378f0",
+    "n19_corpus": "12bc7e87e6e67eb9ff2851982e206410784c6737a6397874c170cc1280b225b5",
+    "obstruction_pilot_d6.bin": "583e5dd38fcc99d04f0c8b6b66da97a62920ea777aca4b50a5159e5dae7d2493",
+    "obstruction_pilot_d6.c": "a4df7f3f28d415a2f0b0e49c0e1c58921acd085c5aa1ab529f36004a5c12877a",
+    "primary_pilot_json": "72bce307675f47c68858c4d4029d1e76a4aa2c31def229852d9fc376a4149464"
+  }
+}
