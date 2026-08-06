@@ -1,0 +1,73 @@
+{
+  "artifacts": {
+    "certificates": {
+      "bytes": 2098623,
+      "path": "d6_k6_arbitrary_subset_hall_certificates.json",
+      "sha256": "b7fb04f769ddaf5d36630372f5134f2e4a32e572f620b26059667e9cf65f4a23"
+    },
+    "checkpoint": {
+      "bytes": 2871213,
+      "path": "d6_k6_arbitrary_subset_hall_checkpoint.json",
+      "sha256": "43c1b65da336bc0db006313b97630867a660b944b06c814433ee3a8cdc8297e6"
+    },
+    "report": {
+      "bytes": 614483,
+      "path": "d6_k6_arbitrary_subset_hall_report.json",
+      "sha256": "bcc4baecf28a95443a5b13e87a796cbba0a97cd42fa76573119bfd81ef3735fc"
+    },
+    "verification": {
+      "bytes": 8552,
+      "path": "d6_k6_arbitrary_subset_hall_verification.json",
+      "sha256": "e6042edfff3683043903f9be544322379e85673207e35ee87349637ff4c73058"
+    }
+  },
+  "commands": {
+    "production": "/Users/lukacs/claude/opengauss/venv/bin/python3 d6_k6_arbitrary_subset_hall.py --workers 11 --checkpoint-every 50",
+    "tests": "/Users/lukacs/claude/opengauss/venv/bin/python3 -m unittest -v test_d6_k6_arbitrary_subset_hall.py",
+    "verification": "/Users/lukacs/claude/opengauss/venv/bin/python3 verify_d6_k6_arbitrary_subset_hall.py --workers 11"
+  },
+  "exact_result": {
+    "input_graphs": 831,
+    "input_indices_sha256": "2bcdad095c6bd3038a4bb1d117f2faadfa98113d814633351ec9e79ff553a44b",
+    "rejected_graphs": 9,
+    "rejected_indices": [
+      650158,
+      752132,
+      1226632,
+      2554326,
+      2716230,
+      2862902,
+      3178386,
+      3194938,
+      3494044
+    ],
+    "rejected_indices_sha256": "960b3eb759456dd653c2e4d50517f693646fb968b957a787fdd3c2d9addfc448",
+    "surviving_graphs": 822
+  },
+  "independent_verification": {
+    "certificate_rows_replayed": 511,
+    "graphs_recomputed": 831,
+    "known_realizable_18_point_K6_seeds_passed": 32,
+    "root_rerun_equal_after_removing_runtime_metadata": true,
+    "status": "PASS"
+  },
+  "kind": "d6-k6-arbitrary-subset-hall-result-manifest",
+  "parent": {
+    "report": "d6_k6_psd_z_hereditary_report.json",
+    "sha256": "202a844d6505d3c68c9a0bea8a5d82a983a7e44b96cb9f3c711d80c47f6c00c1"
+  },
+  "schema": 1,
+  "semantics": {
+    "allowed_defect_coordinates_may_be_zero": true,
+    "candidate_nonedges_unconstrained": true,
+    "one_selected_subset_per_original_span": true,
+    "one_vertex_extension_used": false,
+    "unresolved_is_not_rejected": true
+  },
+  "source_boundary": {
+    "commit": "4e1d50492ad76867b67d748792f21ca5c0a6a94f",
+    "production_sha256": "cadc0048fcc7a77299bc2950e2eca57bfed87d54ed6ffd59886d155b2c9a88ff",
+    "verifier_sha256": "4ad4f886d67b3d1ebf149277050a639cda243f657ef02b553e6a3fa241f2853e"
+  },
+  "status": "COMPLETE"
+}
