@@ -1,14 +1,19 @@
-# Hereditary PSD--Z support Hall: exact K6 pilot
+# Hereditary PSD--Z support Hall: exact K6 production result
 
-This pilot adds a principal-submatrix consequence to the exact K6 PSD
-Z-matrix layer.  On the 861 graphs surviving `d6_k6_psd_zmatrix.py`, it
-rejects 30 graphs and leaves 831.  Every rejection is already obtained by
-the hereditary bipartite system alone; none needs the frozen non-bipartite
-system as a final conjunction.  The known realizable 18-point control passes
-all 32 of its required K6 seeds.
+This exact layer adds a principal-submatrix consequence to the K6 PSD
+Z-matrix system.  On the 861 graphs surviving `d6_k6_psd_zmatrix.py`, the
+source-bound production run rejects 30 graphs and leaves 831.  Every
+rejection is obtained by the hereditary bipartite system alone; none needs
+the frozen non-bipartite system as a final conjunction.  The independent
+checker recomputed all 861 decisions and replayed all 3,392 exhaustive `Z0`
+certificate rows.  The known realizable 18-point control passes all 32 of its
+required K6 seeds in production and in the checker.
 
-The implementation is `probe_d6_k6_psd_z_hereditary.py`.  This is an exact
-pilot, not yet a production certificate package or an independent checker.
+The frozen source boundary is commit
+`51d227e5efd19a7064002a3014afa32142afe9e6`.  The production implementation
+is `d6_k6_psd_z_hereditary.py`; its independent checker is
+`verify_d6_k6_psd_z_hereditary.py`.  The earlier exact discovery probe is
+retained as `probe_d6_k6_psd_z_hereditary.py` for provenance.
 
 ## Principal-submatrix lemma
 
@@ -40,7 +45,8 @@ submatrices.  Consequently
 rank Q_i[T,T] = |T|                 for nonempty proper T subset F_i.
 ```
 
-For `T=F_i` the pilot retains the strongest old componentwise lower bound
+For `T=F_i` the production rule retains the strongest old componentwise
+lower bound
 
 ```text
 r_i = max(ordinary zero-forcing, exact inertia, PSD--Z n-1).
@@ -48,8 +54,8 @@ r_i = max(ordinary zero-forcing, exact inertia, PSD--Z n-1).
 
 It does not pretend that a full singular block has rank `|F_i|`.  A
 positive-sign non-bipartite `F_i` is not PSD--Z-applicable; for that block the
-pilot permits only the empty choice or the full block with its existing
-lower bound.
+production rule permits only the empty choice or the full block with its
+existing lower bound.
 
 ## Strongest additive Hall formulation used
 
@@ -90,9 +96,9 @@ create a later violation that the larger one cannot create.  This dominance
 argument is the only compression; there is no numerical or heuristic prune.
 The generic systems remain alternative to the separate lightlike case.
 
-## Controls
+## Mathematical and implementation controls
 
-The probe runs exact integer controls before reading the corpus:
+The source-bound tests and kernels include these exact controls:
 
 * the singular path Laplacian has determinant zero and every proper
   principal determinant positive;
@@ -103,10 +109,13 @@ The probe runs exact integer controls before reading the corpus:
   connectedness is needed;
 * a synthetic support system has an old full-block inequality `2 <= 2` but a
   hereditary proper-pair violation `2 > 1`;
+* a separate control forbids the tempting false step of adding the ranks of
+  two overlapping subsets from the same connected span: they are alternative
+  choices, not orthogonal summands;
 * the known realizable 18-point graph passes all 32 required K6 seeds with
   zero impossible seeds.
 
-## Full 861-graph pilot
+## Discovery pilot before the frozen source boundary
 
 The parent boundary is the ordered 861-index complement of the exact PSD
 Z-matrix rejection set, with stable hash
@@ -203,6 +212,140 @@ The pilot has now been translated into a source-only production boundary:
   orthogonal spans correctly fails.
 
 The cheap source-bound tests include the known positive graph and an
-independent replay of fixed pilot rejection `95496`.  The final 861-graph
-production and independent verification are intentionally deferred until
-these sources are committed, so their source hashes form the run boundary.
+independent replay of fixed pilot rejection `95496`.  These five source files
+were audited, committed, and pushed at
+`51d227e5efd19a7064002a3014afa32142afe9e6` before either final run began.
+The committed production source has SHA-256
+
+```text
+7b869895cb9b4f7f3bbf1a1d1b11ec71507b6355c8ec0b7d7f8eaec2a51b180d.
+```
+
+Both the report and certificate archive bind that source hash.
+
+## Final production run
+
+The exact command was
+
+```text
+/Users/lukacs/claude/opengauss/venv/bin/python3 \
+  d6_k6_psd_z_hereditary.py --workers 11 --checkpoint-every 50
+```
+
+The production report records 8.484125 seconds for the invocation's compute
+loop on macOS 14.5 arm64 with Python 3.11.15.  The enclosing command completed
+in 9.043 seconds.  Work was written after each ordered 50-graph batch to an
+atomic checkpoint tied to both the ordered input hash and committed source
+hash.  The final exact totals are:
+
+| quantity | exact production value |
+|---|---:|
+| pinned input / rejected / surviving | 861 / 30 / 831 |
+| K6 seeds checked / impossible | 26,616 / 30 |
+| `Z0` choices considered / matchable | 31,075 / 31,075 |
+| hereditary-passing / failing `Z0` choices | 26,586 / 4,489 |
+| bipartite Lorentz components checked / failed | 192,966 / 4,489 |
+| generic orientations checked | 385,932 |
+| PSD--Z-applicable connected span groups | 464,610 |
+| exact dominance-DP transitions | 2,459,532 |
+
+The production rejection list is exactly the 30-index list displayed above;
+its stable hash is again
+
+```text
+bf256b846be361287784260dfd77b2f50afad63731d9bb81adbe889eab4d82ee.
+```
+
+Thus the pre-source-bound discovery run and the final production run agree
+on every graph-level rejection.  Their profiling counters differ because the
+production layer stops a seed at its first standalone hereditary witness and
+does not evaluate the unnecessary non-bipartite conjunction.
+
+## Independent verification and controls
+
+The independent command was
+
+```text
+/Users/lukacs/claude/opengauss/venv/bin/python3 \
+  verify_d6_k6_psd_z_hereditary.py
+```
+
+It completed in 23.191668 seconds and returned `PASS`.  It recomputed all 861
+graphs, obtained the same 30 rejections and 831 survivors, and independently
+replayed all 3,392 `Z0` rows across the 30 exhaustive first-seed
+certificates.  The per-certificate row-count distribution is
+
+```text
+127 rows x 10 certificates
+ 32 rows x  8 certificates
+247 rows x  6 certificates
+ 64 rows x  6 certificates
+```
+
+The checker imports neither production, the discovery probe, nor a shared
+new kernel.  It reconstructs the Lorentz and side components, sign
+applicability, independent SymPy/Sturm inertia, simultaneous zero forcing,
+and brute-force one-choice-per-span Hall inequalities.  It also validates
+that every archived witness selects each connected span at most once and has
+an exact rank excess over its allowed-coordinate union.
+
+The final control commands were
+
+```text
+/Users/lukacs/claude/opengauss/venv/bin/python3 -m unittest -v \
+  test_d6_k6_psd_z_hereditary.py
+
+/Users/lukacs/claude/opengauss/venv/bin/python3 -m py_compile \
+  d6_k6_psd_z_hereditary.py \
+  verify_d6_k6_psd_z_hereditary.py \
+  test_d6_k6_psd_z_hereditary.py
+```
+
+All seven unit tests passed in 0.491 seconds, and byte-code compilation
+passed.  Production and independent checking both retain the positive
+18-point control: all 32 required K6 seeds pass with no impossible seed.
+
+## Result artifacts
+
+| artifact | bytes | SHA-256 |
+|---|---:|---|
+| `d6_k6_psd_z_hereditary_report.json` | 469,196 | `202a844d6505d3c68c9a0bea8a5d82a983a7e44b96cb9f3c711d80c47f6c00c1` |
+| `d6_k6_psd_z_hereditary_certificates.json` | 16,624,286 | `799602d9516bf44f29594c5ded0a32836a32d64bba82129754d865fa323810ca` |
+| `d6_k6_psd_z_hereditary_checkpoint.json` | 18,189,320 | `1c838e0fff3cedfc2deac7bc6ed37c801a98fc48fe43cc651dba2350ba34ff42` |
+| `d6_k6_psd_z_hereditary_verification.json` | 7,451 | `e9f159863e7605d0ef75485dad77a045e418c87687e0c4b7138d710b071924be` |
+
+The report's embedded certificate and checkpoint hashes equal the standalone
+hashes above.  The completed checkpoint contains the ordered decisions for
+all 861 inputs and is a reproducible resume/audit artifact, not an additional
+mathematical rule.
+
+## Trust assumptions and nonclaims
+
+This layer uses Python arbitrary-precision integer decisions.  Exact inertia
+in the independent checker uses SymPy characteristic polynomials and Sturm
+root counts.  Floating point appears only in elapsed-time reporting; there is
+no tolerance, IEEE-754 rank decision, optimizer, or `libm` assumption in a
+rejection.  The result trusts:
+
+* the pinned 861-graph parent boundary and adjacency corpus, whose ordered
+  stable hash is
+  `09ebce17d2b72fa6514fc6a8a938376626d373161d2e1b4dd8d31c5e00c18db5`;
+* the previously documented K6 Lorentz-coordinate derivation and its
+  `alpha(G)<=2` hypothesis;
+* the Perron--Frobenius proper-principal-submatrix lemma, exact inertia and
+  ordinary zero-forcing rank bounds, and orthogonality of distinct connected
+  side spans and `Z0` singleton spans;
+* correctness of the production and structurally independent checker
+  implementations, Python big-integer arithmetic, SymPy's exact polynomial
+  and Sturm routines, and the recorded source/artifact hashes.
+
+Candidate nonedges are never required to be non-unit.  Allowed defect masks
+remain upper bounds and may contain coordinates that are actually zero.  The
+30 certificates prove non-realizability of those required-edge graphs under
+the documented K6 hypotheses; they do not prescribe omitted distances.
+
+The 831 survivors are filter non-rejections, not realizations.  This result
+alone does not settle dimension six, does not address the separate K7
+residue, and does not prove `f(6)=18`.  It is one exact cumulative reduction
+of the K6-only branch, suitable for union with other independently certified
+layers.
