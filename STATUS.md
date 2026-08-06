@@ -249,3 +249,28 @@ arithmetic whose rounding is *someone else's proven problem*.
 - Cadence promise: this block format repeats every 30 minutes with
   deltas against the previous block; stuck = fewer than 2 new
   certifications per interval with stale task counters.
+
+## 11:05 append — f(5) = 16. LEVEL 17 COMPLETE (12654/12654)
+
+The hot-map run settled it in 670 seconds: for EVERY one of the 26
+remaining graphs, at least one of its (seed x circle-vertex)
+parametrizations produced a 192-slice tiling in which every slice was
+certifiably KILLED under the final kernel (quota + mean-value). No
+drilling needed at all — the morning's diagnosis was right that the
+difficulty was parametrization-dependent, and wrong only in not trying
+ALL parametrizations sooner.
+
+verify_campaign.py: level 20: 8/8, level 19: 340/340, level 18:
+8825/8825, level 17: 12654/12654 — all certified non-realizable with
+all points distinct. With the integer-arithmetic-verified 16-point
+half-cube set: **f(5) = 16.**
+
+Remaining landing steps (in progress): controls re-run on the final
+kernel build; final result note f5_equals_16.pdf; README; push. Then
+d=6 resumes (kernel upgrades get ported first).
+
+Post-mortem in one line: the whole 19-hour tail was one missing
+scheduling rule (split expensive cells, not just parked ones) plus one
+missing search dimension (parametrization diversity); every "channel"
+was an artifact of those two gaps, exactly as the numerics kept
+insisting.

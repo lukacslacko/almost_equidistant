@@ -28,23 +28,24 @@ from cdriver5 import gen_orders, decide5
 from reproduce5 import load_level, ncirc_of
 
 TWO_PI = 2 * math.pi
-NS0 = 96                      # coarse scan slices
-CAP0 = 400_000                # coarse scan node cap
-# splitting, not budget, is what kills channels (the d=4 lesson): keep
-# tasks short (<= ~10 min) and keep subdividing
-LADDER = (8_000_000, 30_000_000, 80_000_000, 80_000_000)
-SPLIT = 16
+NS0 = 768                     # direct fine tiling: the hot arcs are
+CAP0 = 150_000                # width artifacts and die in ~65 nodes
+LADDER = (1_000_000, 4_000_000, 30_000_000)   # once split (see STATUS.md)
+SPLIT = 8
 MIN_W = TWO_PI / NS0 / 16 ** 6        # hard width floor
-MAX_DECS = 4
+MAX_DECS = 6
 
 _G = None
+_DECS = {}
 def _task(args):
     global _G
     gi, di, lo, hi, cap = args
     if _G is None:
         _G = load_level(17)
     adj = _G[gi]
-    decs = gen_orders(adj, 17, kmax=12)
+    if gi not in _DECS:
+        _DECS[gi] = gen_orders(adj, 17, kmax=12)
+    decs = _DECS[gi]
     seed, order = decs[di]
     # deep internal theta floor for drilled (hot) tasks: the engine's
     # adaptive splitting follows only surviving cells, so depth is cheap
@@ -118,9 +119,17 @@ def main():
 
     t0 = time.time()
     ncert = 0
+    ndone_tasks = 0
+    total_tasks0 = inflight
     while inflight > 0:
         gi, di, lo, hi, cap, st, nodes = Q.get()
         inflight -= 1
+        ndone_tasks += 1
+        if ndone_tasks % 500 == 0:
+            el = time.time() - t0
+            print(f"  [tasks {ndone_tasks} done, {inflight} in flight, "
+                  f"{ndone_tasks/el:.1f}/s, elapsed {el/60:.1f} min]",
+                  flush=True)
         gs = state[gi]
         gs.pending -= 1
         if gs.done:
