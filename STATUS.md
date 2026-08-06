@@ -1,72 +1,89 @@
 # Status — f(5) and f(6) campaigns
 
-## CURRENT LOCAL CAMPAIGN — exact d=6 residue 13,829 (2026-08-06 21:33 CEST)
+## CURRENT LOCAL CAMPAIGN — exact d=6 residue 1,235 (2026-08-06 22:45 CEST)
 
 Branch: `codex/dimension6`
 
-Auditable result boundary: `453363f627c38836fd2e840574f6c46bc1e894fa`.
+Auditable result boundaries:
+
+```text
+K7 full tetrad / pattern-954 union
+  6b88eabf089e973461e7d97fdb1237e65e0cdb4f
+K6 fused side-rank layer
+  fc51874458196c0391530d0e98968f530ab738c9
+```
+
 The user has ended the separate remote review session; local work continues
-with regular pushes.
+autonomously with regular pushes.
 
 ### Current exact accounting
 
 The independently verified exact split is now:
 
 ```text
-K7-containing residue before the full positive-dual pass       12,941
-new exact degree-one positive-polynomial dual rejections          102
-current K7-containing residue                                  12,839
+K7-containing input after the degree-one dual                12,839
+degree-four rank-one tetrad rejections                        11,902
+pattern-954 required-edge containment rejections               3,403
+intersection of those rejection sets                           2,724
+exact K7 rejection union                                      12,581
+current K7-containing residue                                    258
 
-K6-only residue before the normal-inertia pass                   1,097
-new exact K6 normal-inertia rejections                             107
-current K6-only residue                                            990
+K6-only input after normal inertia                                990
+fused side-rank / same-Z0 rejections                               13
+current K6-only residue                                           977
 
-combined exact dimension-six residue                           13,829
+combined exact dimension-six residue                            1,235
 ```
 
-This is not yet a proof of `f(6)=18`; every one of the 13,829 remaining
-graphs is unresolved.
+This is not yet a proof of `f(6)=18`; every one of the 1,235 remaining
+graphs is unresolved.  `SURVIVOR` means only that the current exact filters
+did not reject the graph.
 
-The full K7 run processed all 12,941 selected graphs with 11 workers in
-1,095.16 seconds.  It retained 1,575 exact rational witnesses on 785 graphs
-and rejected a graph only when every eligible cover for one seed failed.
-The independent verifier imported neither the floating-point LP locator nor
-the production runner: it replayed all 1,575 polynomial identities and
-rebuilt the graph/seed/cover quantifiers for all 102 rejections.  Its result
-was `PASS`, leaving 12,839 survivor rows as explicit nonclaims.
+The full K7 tetrad producer processed all 12,839 graphs with 11 workers in
+1,235.14 seconds, with zero infrastructure errors.  The independent verifier
+recomputed all 12,839 graph/seed/cover quantifiers, checked 1,131 inherited
+degree-one identities and 35,160 tetrad identities over exact rational
+arithmetic, and returned `PASS` for every row with an empty error list.  The
+independent pattern-954 scan contributes 679 rejections not already supplied
+by the tetrads.  A separate union checker reconstructed all sets and all 258
+residue profiles without importing either search runner.
 
-The full K6 normal-inertia run processed all 1,097 prior K6-only survivors
-with 11 workers in 0.670 seconds.  Its independent verifier separately
-reconstructed all K6 seeds, zero-factor choices, support matchings, and
-Lorentz components, and used exact SymPy characteristic polynomials and
-Sturm root counts instead of the production rational-congruence inertia
-routine.  It matched every decision field and all 107 rejections, and the
-known realizable 18-point control passed all 32 K6 seeds.
+The K6 fusion theorem observes that zero forcing and orientation inertia
+lower-bound the same two actual side spans.  Taking the maximum on each side
+before all block-support inequalities rejects 13 of the 990 K6-only graphs,
+nine beyond the preceding same-`Z0` layer.  An 11-worker reproduction took
+0.84 seconds and was byte-identical outside runtime metadata.  The independent
+checker uses SymPy characteristic polynomials/Sturm counts and a separate
+simultaneous-closure zero-forcing implementation; it recomputed all 990 rows,
+all 654 archived `Z0` certificate rows, and returned `PASS`.  The known
+realizable 18-point construction passes all 32 K6 seeds.
 
-Commands and principal immutable hashes:
+Principal immutable hashes:
 
 ```text
-caffeinate -dimsu python3 run_d6_k7_positive_polynomial_dual_full.py ... \
-  --workers 11 --max-inflight 22
-caffeinate -dimsu python3 d6_k6_normal_inertia_full_runner.py \
-  --workers 11 --chunksize 1 --checkpoint-every 32
-caffeinate -dimsu python3 d6_k6_normal_inertia_full_verifier.py \
-  --workers 11 --chunksize 1
-
-K7 full report                 c2de7e06bbe4f3d163a4f747d42721f7f60da985b867ce74669664431738e345
-K7 decisions                   724a97928422fc8705946ed64e3ce9afd37579d3229e5b3ebb7c4f1144c002ec
-K7 certificates                3adaa7e562dfb9241f205e3e7d2384805dbe7296f9677d76f2f23ce913a4ce7f
-K6 full report                 8fd3d9d10038040f42407b25ea007f59f0e84e6eb0da8bec2694d1831e1991c5
-K6 decisions                   614bbb64989b5834ed0dbe1c12e7718583e53cfd68483668ffbbad44608b3828
-K6 independent verification    61889185deb0e773bf899cdbb82c96467cc38a4688560a50f53c7761a7615e6b
+K7 tetrad report             ae2075ac83abcdfc0b7d42f63b9515c4e48b40cf9c976178aa366d151a78996a
+K7 tetrad decisions          2552ce91f52727d9beda60d99d534c1d5a0be3f93686ab321f223d8e0d11dfc1
+K7 tetrad certificates       f719dbb6492fc20fb3103cb79079567aa2cad163835f97e750412c3d27897c50
+K7 independent verification  1812524c835fd6635b9815c0f0c25e9a49d99ff5d3b042e4b194ac5d7898dc97
+K7 exact union manifest      1a54fabeb3ebf7f8e5485a88bc52fcfd07fb9ab8706d29ab2a664a895f79e599
+K7 residue index list        55ab329dbe3ae4dbfa10378ff023a168fc6ab306ffc7af14bbd9790a68108a09
+K6 fused report              60911844102dfeb494170f6b7aa5d5142b8f545fcc968e43078eb07c7ed102ec
+K6 fused certificates        1d497df83b329948c2e09702ca8a94ea94d2d959f7a866a532084d9d920ea664
+K6 independent verification  0572e8088d75a4e4fe575fda185f8be0bbb46290c22570f760b92e5d954cdd92
 ```
 
-Immediate exact work is theory-led: certify and measure a 13-vertex
-unit-edge obstruction extracted from pattern 954; promote the promising
-degree-four K7 rank-one tetrad certificates to a frozen full campaign; and
-build a single independently checked current-residue manifest.  Numerical
-least squares and LP remain discovery tools only.  No candidate nonedge is
-ever required to be non-unit.
+### Local checkpoint handoff
+
+Exact conclusions: the current complete certificate union leaves 258 K7 and
+977 K6-only candidates.  Numerical LP was used only to locate rational K7
+identities and is outside the trust boundary.  Candidate nonedges remain
+unconstrained and may be unit; allowed support coordinates may be zero.
+
+Current bounded work: build a new independently checked 1,235-graph combined
+manifest; test arbitrary-basis PSD certificates on the 50 K7 residue graphs
+having a no-near-clique cover; test full exact-support multiplicity/capacity
+on a stratified K7 sample; and continue exact K6 rank fusion.  No unchanged
+cap-grinding campaign is running.
 
 ### Superseded 14,038 checkpoint
 
