@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "n": 19,
+  "dimension": 6,
+  "candidate_count_expected": 3971787,
+  "kill_log_unique_indices": 3055474,
+  "populations": {
+    "all": {
+      "total": 3971787,
+      "clique_number": {"5_or_less": 0, "6": 175819, "7": 3795968},
+      "link_rejections": {"K2": 0, "K3": 0, "K4": 0, "K5": 201785, "K6": 0, "K7": 0},
+      "cumulative_link_rejections": 201785,
+      "K7_reflection_rejections": 978108,
+      "K7_defect_CSP_rejections": 978108,
+      "cumulative_exact_rejections": 1017404,
+      "exact_rejections_by_clique_number": {"5_or_less": 0, "6": 0, "7": 1017404},
+      "residue_by_clique_number": {"5_or_less": 0, "6": 175819, "7": 2778564}
+    },
+    "certified": {
+      "total": 3055474,
+      "clique_number": {"5_or_less": 0, "6": 0, "7": 3055474},
+      "link_rejections": {"K2": 0, "K3": 0, "K4": 0, "K5": 200101, "K6": 0, "K7": 0},
+      "cumulative_link_rejections": 200101,
+      "K7_reflection_rejections": 965887,
+      "K7_defect_CSP_rejections": 965887,
+      "cumulative_exact_rejections": 1004938,
+      "exact_rejections_by_clique_number": {"5_or_less": 0, "6": 0, "7": 1004938},
+      "residue_by_clique_number": {"5_or_less": 0, "6": 0, "7": 2050536}
+    },
+    "deferred": {
+      "total": 916313,
+      "clique_number": {"5_or_less": 0, "6": 175819, "7": 740494},
+      "link_rejections": {"K2": 0, "K3": 0, "K4": 0, "K5": 1684, "K6": 0, "K7": 0},
+      "cumulative_link_rejections": 1684,
+      "K7_reflection_rejections": 12221,
+      "K7_defect_CSP_rejections": 12221,
+      "cumulative_exact_rejections": 12466,
+      "exact_rejections_by_clique_number": {"5_or_less": 0, "6": 0, "7": 12466},
+      "residue_by_clique_number": {"5_or_less": 0, "6": 175819, "7": 728028}
+    }
+  }
+}

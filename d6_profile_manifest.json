@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "created_local": "2026-08-06T13:35:00+02:00",
+  "branch": "codex/dimension6",
+  "machine": {
+    "os": "macOS 14.5 (23F79)",
+    "architecture": "arm64",
+    "compiler": "Apple clang 16.0.0 (clang-1600.0.26.6)",
+    "python": "3.11.15"
+  },
+  "inputs": {
+    "aeq_d6_n19.txt": {
+      "sha256": "12bc7e87e6e67eb9ff2851982e206410784c6737a6397874c170cc1280b225b5",
+      "lines": 3971787,
+      "tracked": false
+    },
+    "killed_d6_n19.log.gz": {
+      "sha256": "0522aa926713f36a26bc0223c310059655ae67182c339fa8986c5895d97f4a67",
+      "unique_indices": 3055474,
+      "tracked": true
+    },
+    "killed_d6_n19.log": {
+      "sha256": "11c790b12d3543f4476f1eb4c221203f806f1c434f06360b7d25346cace5e305",
+      "tracked": false
+    },
+    "triangleramsey-1.1.zip": {
+      "source_url": "https://caagt.ugent.be/triangleramsey/triangleramsey-1.1.zip",
+      "sha256": "6d16c21bcdb7a9adf24160cffacb08f880faa0db184d091a9814c1467c5f548a"
+    },
+    "triangleramsey.c": {
+      "sha256": "3cf8f186766d1eaeec0dfb600c454e848823bfdbcb7f5a95a9729a7773b4bed3"
+    },
+    "filter_mtf6.c": {
+      "sha256": "22a450a455c42e3bef3ab10adb25598cf7253985e71b8fcb9be15a8569d6f12a"
+    }
+  },
+  "index_order_check": {
+    "method": "Regenerate n=14 with the same Mac triangleramsey/filter pipeline and compare byte-for-byte with the independently committed Windows-generated corpus.",
+    "sha256_both": "0e3d74c081b272731848d655da0c68cfba09435e39a2fd2107c32c2bd3b378f0",
+    "result": "PASS"
+  },
+  "commands": [
+    "cc -O3 -DMAXN=1024 -DWORDSIZE=64 -I<nauty-include> triangleramsey.c -L<nauty-lib> -lnauty -o triangleramsey",
+    "cc -O3 -o /tmp/filter_mtf6 filter_mtf6.c",
+    "triangleramsey 19 outputlevel 19 | /tmp/filter_mtf6 - 19 > aeq_d6_n19.txt",
+    "gzip -cd killed_d6_n19.log.gz > killed_d6_n19.log",
+    "cc -O3 -Wall -Wextra -Werror -o /tmp/profile_d6 profile_d6.c",
+    "/tmp/profile_d6 aeq_d6_n19.txt killed_d6_n19.log > d6_profile.json",
+    "python3 verify_profile_d6.py"
+  ],
+  "generation_checks": {
+    "maximal_triangle_free_generated": 13734745,
+    "candidates_kept": 3971787,
+    "rejected_K8": 7050686,
+    "rejected_K1333": 2712272,
+    "bad_input_graphs": 0
+  },
+  "profiler": {
+    "source_sha256": "c199ceaabeed5b1427ade0903329d1f592b6eeb653a632e0a75acd253d976342",
+    "result_sha256": "14a9cba30ddbd0c4880d73a1070910dd55fa0c7b889b09f14cdb3f831bf03b26",
+    "wall_seconds": 128.88,
+    "user_seconds": 125.57,
+    "validation_failures": 0
+  },
+  "controls": {
+    "command": "python3 verify_profile_d6.py",
+    "result": "PASS",
+    "positive": "18-point Larman-Rogers set plus two apices",
+    "negative": [
+      "K5 with five common neighbours forming C5",
+      "K7 facet reflections forced to a required edge",
+      "two K7 facet reflections forced to coincide"
+    ]
+  },
+  "trust": "The filters in this milestone use exact integer graph operations. The f(4)=12 and f(5)=16 link inputs inherit their respective computer-assisted proof assumptions. No floating-point geometric decision is made here."
+}
