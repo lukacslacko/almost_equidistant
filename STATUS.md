@@ -1,43 +1,53 @@
 # Status — f(5) and f(6) campaigns
 
-## CURRENT LOCAL CAMPAIGN — exact d=6 residue 1,235 (2026-08-06 22:45 CEST)
+## CURRENT LOCAL CAMPAIGN — exact d=6 residue 977 (2026-08-07)
 
 Branch: `codex/dimension6`
 
-Auditable result boundaries:
+Latest auditable result boundaries:
 
 ```text
-K7 full tetrad / pattern-954 union
-  6b88eabf089e973461e7d97fdb1237e65e0cdb4f
-K6 fused side-rank layer
-  fc51874458196c0391530d0e98968f530ab738c9
+K7 support / pentad conjunction
+  01c5b18413b6bab5225558fa950971efeda58e0d
+K6 arbitrary-subset Hall layer
+  a21db74bacdf4c9c5c841ac137af326b331d8137
 ```
 
-The user has ended the separate remote review session; local work continues
-autonomously with regular pushes.
+At the user's request on 2026-08-07, all local subagents were stopped and no
+dimension-six computation was left running.  The working source/checker and
+bounded-pilot artifacts were checkpointed to Git before handoff.
 
 ### Current exact accounting
 
 The independently verified exact split is now:
 
 ```text
-K7-containing input after the degree-one dual                12,839
-degree-four rank-one tetrad rejections                        11,902
-pattern-954 required-edge containment rejections               3,403
-intersection of those rejection sets                           2,724
-exact K7 rejection union                                      12,581
-current K7-containing residue                                    258
+K7-containing residue before support/pentad conjunction          258
+support/pentad conjunction rejections                            103
+current K7-containing residue                                    155
 
-K6-only input after normal inertia                                990
-fused side-rank / same-Z0 rejections                               13
-current K6-only residue                                           977
+K6-only residue before PSD/Hall chain                            977
+PSD Z-matrix rejections                                          116
+hereditary PSD Z rejections                                       30
+arbitrary-subset Hall rejections                                   9
+current K6-only residue                                           822
 
-combined exact dimension-six residue                            1,235
+combined exact dimension-six residue                              977
 ```
 
-This is not yet a proof of `f(6)=18`; every one of the 1,235 remaining
+This is not yet a proof of `f(6)=18`; every one of the 977 remaining
 graphs is unresolved.  `SURVIVOR` means only that the current exact filters
 did not reject the graph.
+
+The self-contained v3 residue builder, independent checker, and controls are
+in `build_d6_current_residue_manifest_v3.py`,
+`verify_d6_current_residue_manifest_v3.py`, and
+`test_d6_current_residue_manifest_v3.py`.  Their 10 controls pass.  The K6
+empty-support-budget production/checker source is also checkpointed, with all
+9 controls passing, but its bounded one-hit pilot is not theorem-level
+coverage and no full run was launched before this stop.
+
+### Superseded 1,235 checkpoint
 
 The full K7 tetrad producer processed all 12,839 graphs with 11 workers in
 1,235.14 seconds, with zero infrastructure errors.  The independent verifier

@@ -1,16 +1,18 @@
-# K6 arbitrary-subset rank Hall: exact pilot
+# K6 arbitrary-subset rank Hall: exact production result
 
-This exact pilot strengthens support Hall inside a positive-sign,
+This exact layer strengthens support Hall inside a positive-sign,
 non-bipartite connected K6 side span.  The frozen hereditary PSD--Z rule can
 select only the empty or full set from such a span.  The new rule assigns a
 sound rank lower bound to every selected subset and still chooses at most one
 subset from each original connected span.
 
-On the 831 graphs surviving the committed hereditary PSD--Z layer, the pilot
-rejects 9 and leaves 822.  The known realizable 18-point control passes all 32
-required K6 seeds.  This is discovery evidence only: there is not yet a
-source-bound production archive or structurally independent full checker, so
-the nine graphs receive no theorem-level production credit yet.
+On the 831 graphs surviving the committed hereditary PSD--Z layer, the frozen
+production kernel rejects exactly 9 and leaves 822.  A structurally independent
+checker recomputed all 831 decisions, replayed all 511 exhaustive certificate
+rows, and passed the known realizable 18-point control at all 32 required K6
+seeds.  Production source was frozen at commit
+`4e1d50492ad76867b67d748792f21ca5c0a6a94f`; the immutable result archive was
+committed and pushed at `a21db74bacdf4c9c5c841ac137af326b331d8137`.
 
 ## Arbitrary-subset rank theorem
 
@@ -43,14 +45,13 @@ F[S] = H_1 disjoint-union ... disjoint-union H_t
 
 into connected components.  The corresponding principal Gram blocks are
 mutually orthogonal because there are no `F[S]` edges between components.
-For a component `H` of order `h`, the pilot uses
+For a component `H` of order `h`, production uses
 
 ```text
 r(H) = max(
     h - Z(H),
     h - n_-(I + Adj(H)),
-    h - 1                         if H is bipartite,
-    h                             if the extension lemma below applies
+    h - 1                         if H is bipartite
 ).
 ```
 
@@ -68,9 +69,16 @@ rank Q[S,S] >= sum_j r(H_j).                            (2)
 For `S=V(F)`, formula (2) is asserted to equal the frozen full-span bound;
 the implementation checks this equality on every evaluated group.
 
-## One-vertex bipartite extension lemma
+The discovery probe also tested the optional extension lemma below, which can
+raise the last term from `h-1` to `h` in some cases.  It produced no additional
+graph rejection, so the lemma and every corresponding code path are omitted
+from the production theorem kernel.
 
-Suppose a connected bipartite component `H` of `F[S]` has a vertex
+## Probe-only one-vertex bipartite extension lemma
+
+This sound but zero-marginal rule is retained only to document the discovery
+experiment.  It is not an assumption of the production certificates.  Suppose
+a connected bipartite component `H` of `F[S]` has a vertex
 
 ```text
 v in V(F) - S
@@ -98,7 +106,8 @@ bound to 3.
 
 ## Hall quantifier and no double counting
 
-For every original connected side span, the pilot chooses exactly one of:
+For every original connected side span, the production kernel chooses exactly
+one of:
 
 * the empty set;
 * one selected subset `S`, carrying the bound (2), in a positive-sign
@@ -131,7 +140,7 @@ On eight actual input graphs, a raw Cartesian-product checker independently
 enumerated every uncompressed one-choice-per-span combination for 4,272
 orientation systems and agreed with the optimized decision in every case.
 
-## Pinned input and commands
+## Pinned input and discovery commands
 
 The input is the ordered 831-graph complement of the committed hereditary
 PSD--Z report, with stable index hash
@@ -241,18 +250,31 @@ corpus, the frozen K6 Lorentz-coordinate identity, exact nonzero edge pattern,
 ordinary zero forcing, sign-specific inertia, PSD--Z/Perron--Frobenius lemmas,
 and Python implementation correctness.
 
-The nine reported graphs are pilot rejections, not yet theorem-level
-certificates.  The 822 survivors are filter non-rejections, not realizations.
-This result does not settle the K6 branch, the separate K7 branch, or
-dimension six.  Production promotion requires a committed source boundary,
-compact exhaustive certificate archive, and an independent checker that
-reconstructs induced components and subset ranks without importing this
-pilot.
+The discovery report by itself is not a theorem certificate.  The production
+archive described below supplies the source-bound exact credit for the same
+nine rejections.  The 822 survivors are filter non-rejections, not
+realizations.  This layer does not settle the K6 branch, the separate K7
+branch, or dimension six.
 
-## Source-only production promotion package
+## Source-bound production certification
 
-That source package is now implemented, but the final 831-graph production
-run remains deliberately unlaunched pending a committed source boundary.
+Production, the independent verifier, and the seven-test control suite were
+frozen before the full run in commit
+
+```text
+4e1d50492ad76867b67d748792f21ca5c0a6a94f
+```
+
+with source hashes
+
+```text
+d6_k6_arbitrary_subset_hall.py
+  cadc0048fcc7a77299bc2950e2eca57bfed87d54ed6ffd59886d155b2c9a88ff
+verify_d6_k6_arbitrary_subset_hall.py
+  4ad4f886d67b3d1ebf149277050a639cda243f657ef02b553e6a3fa241f2853e
+test_d6_k6_arbitrary_subset_hall.py
+  e92896a2d426d9f98a03e210990d76ca314ddfa0f15a56a765f516bfb719cde1
+```
 
 `d6_k6_arbitrary_subset_hall.py` contains only the nine-hit theorem kernel:
 
@@ -293,13 +315,78 @@ graph workers for the final replay.
 * verifier import independence, atomic checkpoint round trip, and an AST
   check that production defines no one-vertex-extension kernel.
 
-The source-bound command
+The committed-boundary production and verification commands were
+
+```text
+/Users/lukacs/claude/opengauss/venv/bin/python3 \
+  d6_k6_arbitrary_subset_hall.py \
+  --workers 11 --checkpoint-every 50
+
+/Users/lukacs/claude/opengauss/venv/bin/python3 \
+  verify_d6_k6_arbitrary_subset_hall.py --workers 11
+```
+
+Production completed in 4.675 measured kernel wall seconds and reported these
+exact aggregate counts:
+
+| quantity | count |
+|---|---:|
+| input / rejected / surviving | 831 / 9 / 822 |
+| K6 seeds checked / impossible | 25,944 / 9 |
+| `Z0` considered / matchable | 27,626 / 27,626 |
+| passing / failing `Z0` | 25,935 / 1,691 |
+| bipartite Lorentz components checked / failed | 185,376 / 1,691 |
+| generic orientations checked | 370,752 |
+| positive-nonbipartite original span groups | 15,047 |
+| arbitrary proper-subset options | 197,842 |
+| raw / coordinate-union-compressed options | 1,457,948 / 1,160,534 |
+| dominance-DP transitions | 2,176,519 |
+| subset-rank cache entries / hits | 70,380 / 142,509 |
+
+The independent verifier completed in 10.894 wall seconds.  It recomputed all
+831 graphs, obtained the same ordered nine-index rejection set, independently
+replayed all 511 archived `Z0` rows, and recorded each of the 32 positive-control
+K6 seeds individually as passing.  Its inertia calculation uses independent
+SymPy/Sturm code and its Hall calculation enumerates subset alternatives via
+all 64 coordinate containers rather than importing the production DP.
+
+The post-run source-bound command
 
 ```text
 /Users/lukacs/claude/opengauss/venv/bin/python3 -m unittest -v \
   test_d6_k6_arbitrary_subset_hall.py
 ```
 
-passes all seven tests.  Byte-code compilation of production, verifier and
-tests also passes.  These cheap tests do not constitute or launch the final
-831-graph campaign.
+passed all seven tests in 2.126 seconds.  Byte-code compilation of production,
+verifier and tests also passed.  No production source was altered after the
+source-bound run.
+
+The immutable result artifacts were committed and pushed at
+`a21db74bacdf4c9c5c841ac137af326b331d8137`:
+
+| artifact | bytes | SHA-256 |
+|---|---:|---|
+| `d6_k6_arbitrary_subset_hall_report.json` | 614,483 | `bcc4baecf28a95443a5b13e87a796cbba0a97cd42fa76573119bfd81ef3735fc` |
+| `d6_k6_arbitrary_subset_hall_certificates.json` | 2,098,623 | `b7fb04f769ddaf5d36630372f5134f2e4a32e572f620b26059667e9cf65f4a23` |
+| `d6_k6_arbitrary_subset_hall_checkpoint.json` | 2,871,213 | `43c1b65da336bc0db006313b97630867a660b944b06c814433ee3a8cdc8297e6` |
+| `d6_k6_arbitrary_subset_hall_verification.json` | 8,552 | `e6042edfff3683043903f9be544322379e85673207e35ee87349637ff4c73058` |
+| `d6_k6_arbitrary_subset_hall_result_manifest.json` | 2,664 | `a245fb4ae68d5c93b75e707799346e360358e78f17cc97c7b8f4ecb4705674bd` |
+
+The exact nine-index list and its stable hash remain
+
+```text
+650158, 752132, 1226632, 2554326, 2716230, 2862902, 3178386,
+3194938, 3494044
+
+960b3eb759456dd653c2e4d50517f693646fb968b957a787fdd3c2d9addfc448
+```
+
+All theorem decisions are exact integer, graph, mask, zero-forcing, inertia,
+and Hall calculations; floating point is used only for elapsed-time metadata.
+The trust boundary is the pinned parent corpus and K6 Lorentz derivation, the
+ordinary zero-forcing and PSD--Z/inertia lemmas, Python/SymPy exact arithmetic,
+and correctness of the two independent implementations.  Candidate nonedges
+remain unconstrained, allowed defect coordinates may be zero, exactly one
+subset is selected per original span, and unresolved cases are never counted
+as rejected.  In particular, the optional one-vertex extension lemma is not
+used anywhere in this production result.
