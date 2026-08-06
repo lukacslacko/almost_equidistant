@@ -1,0 +1,1038 @@
+{
+  "command": [
+    "/Users/lukacs/claude/opengauss/venv/bin/python3",
+    "profile_d6_k7_propagated_link_caps.py",
+    "--output",
+    "d6_k7_propagated_link_caps_report.json"
+  ],
+  "dependencies_sha256": {
+    "d6_k7_rank_reference.py": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+    "d6_k7_small_support_value.py": "bed5987c89fbef2ef36762051ae7fa3414fd381a6246032b06857a557f13743f",
+    "d6_k7_small_support_value_report.json": "9beeb04e709fcc0e4d755bb8a481b7d320a2c9470221f4b66dad5b7f7f0ddf07",
+    "d6_k7_support_propagation.py": "578103f70d2906fbb3d449b7b7b5c1b6c86e5ae17afb0c341602a543bea69f0c"
+  },
+  "description": "Exact propagated clique-link-cap profile on the 61 sparse-value sample survivors.",
+  "elapsed_seconds": 0.5690999590005958,
+  "git": {
+    "branch": "codex/dimension6",
+    "commit": "5472a9a59b2e957fbfd2dcf9ae453f7b3a64d751",
+    "dirty": true,
+    "porcelain_lines": [
+      "?? analyze_d6_n14_k7_rank_obstructions.py",
+      "?? d6_k7_propagated_link_caps.md",
+      "?? d6_k7_propagated_link_caps.py",
+      "?? d6_k7_propagated_link_caps_report.json",
+      "?? d6_n14_k7_rank_obstructions.json",
+      "?? d6_n14_k7_rank_obstructions.md",
+      "?? profile_d6_k7_propagated_link_caps.py",
+      "?? test_d6_k7_propagated_link_caps.py"
+    ],
+    "porcelain_sha256": "6a0dd16ca5f17deab0eacb9af25e12aa1bd45c4488bf6cff11e1cfa58ba0efc5"
+  },
+  "input": "/Users/lukacs/chatgpt/almost_equidistant/d6_k7_rank_sample.json",
+  "input_sha256": "bf699f36a1c90b6d6751498e52fab73e6b58db322c5b71b04accf32623c2c0dd",
+  "link_source_sha256": "ca46ba8d6fd0288304dd125f970e88e47ce9512b5e3e54f0ac33e65d38ac6994",
+  "machine": "arm64",
+  "per_graph": [
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1605929
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2666858
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 825432
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2890993
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3058835
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "combined_passing_covers": 2,
+        "combined_passing_families": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "link_cap_passes": 2,
+        "prior_value_passes": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3959829
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3610050
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 915245
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3562725
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3576900
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1357170
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2453663
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3164461
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "combined_passing_covers": 2,
+        "combined_passing_families": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "link_cap_passes": 2,
+        "prior_value_passes": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3939503
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3726256
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 378605
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3129009
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "combined_passing_covers": 2,
+        "combined_passing_families": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "link_cap_passes": 2,
+        "prior_value_passes": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2619928
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3470976
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 667715
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 150757
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 842369
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2957278
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2373890
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3961502
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "combined_passing_covers": 2,
+        "combined_passing_families": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "link_cap_passes": 2,
+        "prior_value_passes": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3128141
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3423153
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 128297
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2744629
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2594493
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 912798
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 388922
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3452028
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "combined_passing_covers": 2,
+        "combined_passing_families": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "link_cap_passes": 2,
+        "prior_value_passes": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3649646
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2193803
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2714355
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 189400
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 572379
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2681964
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 397295
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 632013
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3088288
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1661903
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2682549
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3830718
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "combined_passing_covers": 2,
+        "combined_passing_families": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "link_cap_passes": 2,
+        "prior_value_passes": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3917524
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "combined_passing_covers": 2,
+        "combined_passing_families": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "link_cap_passes": 2,
+        "prior_value_passes": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 370952
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1462119
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 343017
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3733344
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1468149
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2545347
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 332406
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3952705
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3968216
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2641803
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1633693
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1468026
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "combined_passing_covers": 2,
+        "combined_passing_families": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "link_cap_passes": 2,
+        "prior_value_passes": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3959628
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "combined_passing_covers": 2,
+        "combined_passing_families": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "link_cap_passes": 2,
+        "prior_value_passes": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3950770
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "combined_passing_covers": 1,
+        "combined_passing_families": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "link_cap_passes": 1,
+        "prior_value_passes": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 58186
+    }
+  ],
+  "platform": "macOS-14.5-arm64-arm-64bit",
+  "profiler_sha256": "a7b99441025bf8617f51b5906f646f13f0a5f1ea7960aae82b88eedb326c2b1c",
+  "proof_sha256": "ce93cda60e8cb02468ac4052f148abdd54b677381b59983047f5b20ff0000a31",
+  "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+  "rejected_graphs": 0,
+  "rejected_indices": [],
+  "schema": 1,
+  "selected_graphs": 61,
+  "started_unix": 1786041917.0411499,
+  "surviving_graphs": 61,
+  "test_sha256": "127b95b1f683a84426d76352bc2879e1f699fedec7b68869f6acbc3bb38dd406",
+  "totals": {
+    "baseline_passing_covers": 70,
+    "combined_passing_covers": 70,
+    "combined_passing_families": 70,
+    "covers": 70,
+    "labeled_z_families": 70,
+    "link_cap_passes": 70,
+    "prior_value_passes": 70,
+    "propagation_passing_families": 70,
+    "seeds": 70
+  },
+  "value_report": "/Users/lukacs/chatgpt/almost_equidistant/d6_k7_small_support_value_report.json",
+  "value_report_sha256": "9beeb04e709fcc0e4d755bb8a481b7d320a2c9470221f4b66dad5b7f7f0ddf07"
+}
