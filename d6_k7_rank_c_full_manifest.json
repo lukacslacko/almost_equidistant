@@ -117,5 +117,22 @@
     "reference_unit_tests": "16/16 PASS",
     "strict_C_build": "PASS at -O3 and -O0 -g with -Wall -Wextra -Werror"
   },
+  "artifact_audit": {
+    "manifest_hash_entries_recomputed": "PASS: 13/13 files matched with an independent Python hashlib pass",
+    "decision_TSV_rows_excluding_header": 113136,
+    "decision_TSV_first_index": 87,
+    "decision_TSV_last_index": 3971777,
+    "decision_TSV_indices": "PASS: strictly increasing and unique",
+    "decision_TSV_input_alignment": "PASS: all 113136 indices agree row-for-row with d6_k7_rank_full_residue.txt",
+    "decision_TSV_internal_errors": 0,
+    "decision_TSV_base_joint_rejections": 80738,
+    "decision_TSV_enhanced_joint_rejections": 95372,
+    "decision_TSV_incremental_enhanced_rejections": 14634,
+    "decision_TSV_survivors": 17764,
+    "decision_TSV_report_agreement": "PASS: every cover aggregate and graph-decision aggregate equals d6_k7_rank_c_full_report.json",
+    "residue_extraction_replay": "PASS: independently re-extracted 113136 graphs and reproduced d6_k7_rank_full_residue.json byte-for-byte",
+    "strict_C11_builds": "PASS: -std=c11 at both -O3 and -O0 -g with -Wall -Wextra -Werror -pthread",
+    "sample_C_Python_crosscheck": "PASS: 512 graphs, 852 seeds, 52577 cap-3 covers, base 367, enhanced 426, survivors 86"
+  },
   "trust": "All mathematical rejection decisions are exact. Candidate nonedges remain unconstrained and may evaluate to unit distance. The support cache changes only search effort, never decisions. Dynamic scheduling makes support-node diagnostics worker-assignment dependent, while the ordered decision TSV is deterministic. No floating-point geometric decision or numerical rank test is used."
 }

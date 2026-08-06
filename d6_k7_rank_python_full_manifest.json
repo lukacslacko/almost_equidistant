@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "created_local": "2026-08-06T19:43:26+02:00",
+  "branch": "codex/dimension6",
+  "source_base_commit": "fa0539ac137ea27b4b0ef47c0126840f1563fe2f",
+  "scope": "Independent exact Python verification of all 113136 graphs in the complete current K7 residue",
+  "machine": {
+    "model": "MacBook Pro (Mac14,10)",
+    "chip": "Apple M2 Pro",
+    "cpu_cores": "12 logical (8 performance, 4 efficiency)",
+    "memory_gb": 16,
+    "os": "macOS 14.5 (23F79)",
+    "architecture": "arm64",
+    "python": "3.11.15",
+    "compiler": "Apple clang 16.0.0 (clang-1600.0.26.6)"
+  },
+  "inputs": {
+    "d6_k7_rank_full_residue.json": {
+      "path_during_run": "/tmp/d6_k7_rank_full_residue.json",
+      "sha256": "7097ddd5f333326bd4a4ab1c30379b054182542ca4cd3820f3cc3bc4308ec6da",
+      "graphs": 113136,
+      "tracked": false
+    },
+    "reconstructed_C_text": {
+      "path_during_audit": "/tmp/d6_k7_rank_full_residue_rebuilt.txt",
+      "sha256": "a1934445c9e3fa1b6e28168fbefe161fa6a5f33ea75e74a0aaf71553eceda16b",
+      "lines": 113136,
+      "bytes": 16140207,
+      "agreement": "PASS: byte-identical hash to the original C text input"
+    }
+  },
+  "implementation": {
+    "driver": {
+      "file": "run_d6_k7_rank_full_reference.py",
+      "sha256": "66858a15f8a55a1830ca1cc3d0e2c0dd7e739375faf2cdef6eb107217b6e7c3c"
+    },
+    "frozen_reference": {
+      "file": "d6_k7_rank_reference.py",
+      "sha256": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0"
+    },
+    "exactness": "Exact graph operations and Python integer/Fraction arithmetic. The wrapper changes only quantifier scheduling and short-circuits at the first exact pass or decisive seed.",
+    "parallelism": "ProcessPoolExecutor with ordered output and 24 workers; each worker requests macOS QOS_CLASS_USER_INITIATED.",
+    "gpu_used": false,
+    "gpu_note": "This exact irregular bitset/rational verifier is CPU work; no floating-point GPU result is part of a rejection."
+  },
+  "original_run": {
+    "pid": 67341,
+    "workers": 24,
+    "wall_seconds": 3674.33,
+    "graphs": 113136,
+    "rejected": 95372,
+    "survivors": 17764,
+    "seeds_checked": 124664,
+    "covers_checked": 5078810,
+    "provenance": "The PID, command, wall time, and top-level counters were retained in captured process output. The raw temporary JSON report and PID file were not retained across the reboot; all counters except wall time were reconstructed and checked from the immutable decision archive.",
+    "command": "/usr/bin/time -p /usr/sbin/taskpolicy -a python3 run_d6_k7_rank_full_reference.py --input /tmp/d6_k7_rank_full_residue.json --workers 24 --decisions /tmp/d6_k7_rank_python_full_decisions.tsv --report /tmp/d6_k7_rank_python_full_report.json --pid-file /tmp/d6_k7_rank_python_full.pid.json --progress-every 1000 --batch-size 384 --map-chunksize 4",
+    "mac_scheduling": "The parent and workers requested user-initiated QoS; taskpolicy -B was subsequently applied to the parent and worker processes to revoke inherited background scheduling.",
+    "resume_command": "/usr/sbin/taskpolicy -a python3 run_d6_k7_rank_full_reference.py --input /tmp/d6_k7_rank_full_residue.json --workers 24 --decisions /tmp/d6_k7_rank_python_full_decisions.tsv --report /tmp/d6_k7_rank_python_full_report.json --pid-file /tmp/d6_k7_rank_python_full.pid.json --resume"
+  },
+  "tracked_outputs": {
+    "decisions": {
+      "file": "d6_k7_rank_python_full_decisions.tsv.gz",
+      "sha256": "d331016042c14ba412a29e42b1f2ee06ee101a7d4376067b64e99e249677f10f",
+      "bytes": 680433,
+      "uncompressed_sha256": "2ee0d1d490b97b48668e119005a4487bd89c5f7ccc9b5582181c68c57edcd5f7",
+      "uncompressed_bytes": 4813361,
+      "lines_including_header": 113137,
+      "compression_command": "gzip -n -9",
+      "compression_reproduction": "PASS: byte-identical"
+    },
+    "report": {
+      "file": "d6_k7_rank_python_full_report.json",
+      "sha256": "aad780e9bd3adff30744eb9e529c6689392ff3bba9e0ac8fd9033ab0a88a886b",
+      "provenance": "compact report reconstructed from the immutable decision stream and captured completion output"
+    },
+    "verifier": {
+      "file": "verify_d6_k7_rank_full.py",
+      "sha256": "6fb612d7937442cdb2bc8fe8e6f44bc61d6fe2a8ed4404f9664ca72e315bb4ca"
+    }
+  },
+  "independent_C_oracle": {
+    "source": "profile_d6_k7_rank.c",
+    "source_sha256": "f41cfd25565d766fd53b8f0e08de1007de91edae1a29047e8f2744b308abfb92",
+    "ordered_decisions_sha256": "eaa4d5061b44cc86e6ab98ac6315b29a509539e5ac22ab33d1b7a03a34358391",
+    "rows_compared": 113136,
+    "fields": "index, enhanced joint reject/survive decision, first failing K7 seed",
+    "mismatches": 0,
+    "fresh_replay": {
+      "compile_command": "cc -std=c11 -O3 -Wall -Wextra -Werror -pthread -o /tmp/profile_d6_k7_rank_audit profile_d6_k7_rank.c",
+      "binary_sha256": "d7eff4d57ae6aa443914afb47461fcf19ba00320760121fcf9d147f78808a8ab",
+      "command": "/usr/sbin/taskpolicy -a /tmp/profile_d6_k7_rank_audit /tmp/d6_k7_rank_full_residue_rebuilt.txt 24 /tmp/d6_k7_rank_c_audit_decisions.tsv",
+      "workers": 24,
+      "kernel_wall_seconds": 9.239507,
+      "decision_sha256": "eaa4d5061b44cc86e6ab98ac6315b29a509539e5ac22ab33d1b7a03a34358391",
+      "decision_stability": "PASS: byte-identical to the original C decision stream"
+    }
+  },
+  "verification_commands": [
+    "python3 verify_d6_k7_rank_full.py",
+    "python3 verify_d6_k7_rank_full.py --c-decisions /tmp/d6_k7_rank_c_audit_decisions.tsv",
+    "python3 -m unittest -v test_d6_k7_rank_reference.py",
+    "python3 crosscheck_d6_k7_rank_c.py",
+    "/usr/sbin/taskpolicy -a python3 run_d6_k7_rank_full_reference.py --input d6_k7_rank_sample.json --workers 12 --decisions /tmp/d6_k7_rank_wrapper_sample.tsv --report /tmp/d6_k7_rank_wrapper_sample_report.json --pid-file /tmp/d6_k7_rank_wrapper_sample.pid.json --oracle-report d6_k7_rank_report.json --progress-every 512"
+  ],
+  "verification_results": {
+    "archive_structure_hashes_and_aggregates": "PASS",
+    "full_C_row_comparison": "PASS: 113136/113136 rows, zero mismatches",
+    "reference_unit_tests": "PASS: 16/16",
+    "C_Python_sample_crosscheck": "PASS: 512 graphs, enhanced rejected 426, survivors 86",
+    "wrapper_sample_oracle": "PASS: 426 rejected, 86 survivors",
+    "strict_source_compile": "PASS"
+  },
+  "trust": "All rejection decisions are exact; candidate nonedges remain unconstrained and may be unit. The short-circuit work counters are scheduling diagnostics, while the ordered graph decisions are deterministic and independently reproduced by the exhaustive C implementation."
+}
