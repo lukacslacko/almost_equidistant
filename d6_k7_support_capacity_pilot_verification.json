@@ -1,0 +1,214 @@
+{
+  "capacity_cover_witnesses_checked": 41,
+  "capacity_incremental_hits": 0,
+  "dependency_sha256": {
+    ".runs/d6_k7_rank_survivors.json": "7a0a350142930e4e13830ea44c4fd217f25aeb07bbd6286e51e316f72712c4f9",
+    "d6_k7_positive_dual_full_certificates.jsonl.gz": "3adaa7e562dfb9241f205e3e7d2384805dbe7296f9677d76f2f23ce913a4ce7f",
+    "d6_k7_rank_reference.py": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+    "d6_k7_rankone_pattern_union.json": "1a54fabeb3ebf7f8e5485a88bc52fcfd07fb9ab8706d29ab2a664a895f79e599",
+    "d6_k7_rankone_tetrad_full_certificates.jsonl.gz": "f719dbb6492fc20fb3103cb79079567aa2cad163835f97e750412c3d27897c50",
+    "d6_k7_rankone_tetrad_full_decisions.tsv.gz": "2552ce91f52727d9beda60d99d534c1d5a0be3f93686ab321f223d8e0d11dfc1",
+    "d6_k7_special_h_reference.py": "e649633d7262941c9c4608ea694ae0a5d6f29c146d47060c3dae71a036a9d190",
+    "verify_d6_k7_sparse_value_full.py": "6c0012e66d0b89e280f3cebed7a61f24cc1c6e128e726663a7b246e7da0edbbc",
+    "verify_d6_k7_support_full.py": "c6b9dce47618bd9a4247eb5a9f093682265447729e1868c4dc0677a24f51c628"
+  },
+  "failing_seeds_replayed": 10,
+  "graph_decisions": {
+    "JOINT_PRE_CAPACITY_REJECTED": 7,
+    "SURVIVOR": 25
+  },
+  "joint_rejected_graphs_replayed": 7,
+  "replayed_rejections": [
+    {
+      "counts": {
+        "current_passing_covers": 1,
+        "labeled_z_families": 1,
+        "propagation_failure:empty_propagated_mask": 1
+      },
+      "index": 3958422,
+      "seed": [
+        2,
+        4,
+        6,
+        7,
+        12,
+        14,
+        18
+      ],
+      "seed_mask": 282836
+    },
+    {
+      "counts": {
+        "current_passing_covers": 1,
+        "labeled_z_families": 1,
+        "propagation_failure:empty_propagated_mask": 1
+      },
+      "index": 3945531,
+      "seed": [
+        2,
+        4,
+        6,
+        7,
+        12,
+        16,
+        18
+      ],
+      "seed_mask": 331988
+    },
+    {
+      "counts": {
+        "current_passing_covers": 1,
+        "labeled_z_families": 1,
+        "propagation_failure:empty_propagated_mask": 1
+      },
+      "index": 3945531,
+      "seed": [
+        2,
+        5,
+        7,
+        12,
+        14,
+        15,
+        18
+      ],
+      "seed_mask": 315556
+    },
+    {
+      "counts": {
+        "current_passing_covers": 1,
+        "labeled_z_families": 11,
+        "propagation_failure:disjoint_required_edge": 1,
+        "propagation_failure:empty_propagated_mask": 10
+      },
+      "index": 3958119,
+      "seed": [
+        2,
+        4,
+        6,
+        7,
+        12,
+        14,
+        18
+      ],
+      "seed_mask": 282836
+    },
+    {
+      "counts": {
+        "current_passing_covers": 1,
+        "labeled_z_families": 1,
+        "propagation_failure:empty_propagated_mask": 1
+      },
+      "index": 3333850,
+      "seed": [
+        4,
+        7,
+        9,
+        10,
+        11,
+        14,
+        18
+      ],
+      "seed_mask": 282256
+    },
+    {
+      "counts": {
+        "current_passing_covers": 1,
+        "labeled_z_families": 1,
+        "propagation_failure:empty_propagated_mask": 1
+      },
+      "index": 3333850,
+      "seed": [
+        6,
+        7,
+        8,
+        11,
+        13,
+        14,
+        15
+      ],
+      "seed_mask": 59840
+    },
+    {
+      "counts": {
+        "current_passing_covers": 1,
+        "labeled_z_families": 1,
+        "propagation_failure:disjoint_required_edge": 1
+      },
+      "index": 2592565,
+      "seed": [
+        0,
+        2,
+        4,
+        11,
+        13,
+        16,
+        18
+      ],
+      "seed_mask": 337941
+    },
+    {
+      "counts": {
+        "current_passing_covers": 1,
+        "labeled_z_families": 1,
+        "propagation_failure:empty_propagated_mask": 1
+      },
+      "index": 2591766,
+      "seed": [
+        0,
+        2,
+        5,
+        10,
+        13,
+        15,
+        17
+      ],
+      "seed_mask": 173093
+    },
+    {
+      "counts": {
+        "current_passing_covers": 1,
+        "labeled_z_families": 1,
+        "propagation_failure:empty_propagated_mask": 1
+      },
+      "index": 2591766,
+      "seed": [
+        1,
+        5,
+        8,
+        9,
+        12,
+        15,
+        17
+      ],
+      "seed_mask": 168738
+    },
+    {
+      "counts": {
+        "current_passing_covers": 1,
+        "labeled_z_families": 11,
+        "propagation_failure:disjoint_required_edge": 4,
+        "propagation_failure:empty_propagated_mask": 7
+      },
+      "index": 3957913,
+      "seed": [
+        2,
+        4,
+        6,
+        7,
+        12,
+        14,
+        16
+      ],
+      "seed_mask": 86228
+    }
+  ],
+  "report": {
+    "path": "d6_k7_support_capacity_pilot_report.json",
+    "sha256": "f7e715b39bccd4b765897f1f6d9c773d3906b959cbd020e421a78104545d2d8e"
+  },
+  "schema": 1,
+  "selected_graphs": 32,
+  "status": "PASS",
+  "unresolved": 0,
+  "verifier_source_sha256": "d16e7e9037d14aea797ff90df51df2ca1bb583b412a3f65992d995964263da6b"
+}
