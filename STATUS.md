@@ -1,10 +1,77 @@
 # Status — f(5) and f(6) campaigns
 
-## CURRENT LOCAL CAMPAIGN — exact d=6 residue 14,038 (2026-08-06 20:48 CEST)
+## CURRENT LOCAL CAMPAIGN — exact d=6 residue 13,829 (2026-08-06 21:33 CEST)
 
 Branch: `codex/dimension6`
 
-Auditable result boundary: `50d998089331cef190842a04630f79098234ec64`.
+Auditable result boundary: `453363f627c38836fd2e840574f6c46bc1e894fa`.
+The user has ended the separate remote review session; local work continues
+with regular pushes.
+
+### Current exact accounting
+
+The independently verified exact split is now:
+
+```text
+K7-containing residue before the full positive-dual pass       12,941
+new exact degree-one positive-polynomial dual rejections          102
+current K7-containing residue                                  12,839
+
+K6-only residue before the normal-inertia pass                   1,097
+new exact K6 normal-inertia rejections                             107
+current K6-only residue                                            990
+
+combined exact dimension-six residue                           13,829
+```
+
+This is not yet a proof of `f(6)=18`; every one of the 13,829 remaining
+graphs is unresolved.
+
+The full K7 run processed all 12,941 selected graphs with 11 workers in
+1,095.16 seconds.  It retained 1,575 exact rational witnesses on 785 graphs
+and rejected a graph only when every eligible cover for one seed failed.
+The independent verifier imported neither the floating-point LP locator nor
+the production runner: it replayed all 1,575 polynomial identities and
+rebuilt the graph/seed/cover quantifiers for all 102 rejections.  Its result
+was `PASS`, leaving 12,839 survivor rows as explicit nonclaims.
+
+The full K6 normal-inertia run processed all 1,097 prior K6-only survivors
+with 11 workers in 0.670 seconds.  Its independent verifier separately
+reconstructed all K6 seeds, zero-factor choices, support matchings, and
+Lorentz components, and used exact SymPy characteristic polynomials and
+Sturm root counts instead of the production rational-congruence inertia
+routine.  It matched every decision field and all 107 rejections, and the
+known realizable 18-point control passed all 32 K6 seeds.
+
+Commands and principal immutable hashes:
+
+```text
+caffeinate -dimsu python3 run_d6_k7_positive_polynomial_dual_full.py ... \
+  --workers 11 --max-inflight 22
+caffeinate -dimsu python3 d6_k6_normal_inertia_full_runner.py \
+  --workers 11 --chunksize 1 --checkpoint-every 32
+caffeinate -dimsu python3 d6_k6_normal_inertia_full_verifier.py \
+  --workers 11 --chunksize 1
+
+K7 full report                 c2de7e06bbe4f3d163a4f747d42721f7f60da985b867ce74669664431738e345
+K7 decisions                   724a97928422fc8705946ed64e3ce9afd37579d3229e5b3ebb7c4f1144c002ec
+K7 certificates                3adaa7e562dfb9241f205e3e7d2384805dbe7296f9677d76f2f23ce913a4ce7f
+K6 full report                 8fd3d9d10038040f42407b25ea007f59f0e84e6eb0da8bec2694d1831e1991c5
+K6 decisions                   614bbb64989b5834ed0dbe1c12e7718583e53cfd68483668ffbbad44608b3828
+K6 independent verification    61889185deb0e773bf899cdbb82c96467cc38a4688560a50f53c7761a7615e6b
+```
+
+Immediate exact work is theory-led: certify and measure a 13-vertex
+unit-edge obstruction extracted from pattern 954; promote the promising
+degree-four K7 rank-one tetrad certificates to a frozen full campaign; and
+build a single independently checked current-residue manifest.  Numerical
+least squares and LP remain discovery tools only.  No candidate nonedge is
+ever required to be non-unit.
+
+### Superseded 14,038 checkpoint
+
+The former auditable result boundary was
+`50d998089331cef190842a04630f79098234ec64`.
 The current block supersedes the residue counts in the historical remote-review
 handoffs below.  The user has ended the separate remote review session; local
 work continues with regular pushes.
