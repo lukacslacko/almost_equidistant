@@ -464,3 +464,16 @@ half-hour regardless of wakeup mechanics.
   patterns are exactly the flexible ones; expect the usable library to
   come from mid-frequency, higher-edge patterns. If the n=15 screen and
   #569-dec-1 both fail, the strategy gets re-evaluated from scratch.
+
+## 17:25 append — cadence block
+
+- Certified: 3,055,480 / 3,971,787 (unchanged; library phase).
+- n=15 pool screened in full: of 3,969 minimal 15-vertex patterns,
+  **1,203 are non-realizable-looking** (LM residual > 1e-6 at 150
+  restarts) — 13x the n=14 pool. Their coverage of 300 random deferred
+  level-19 targets is measuring now (heavier: 1,203 patterns, verdict
+  expected within 1-2 blocks).
+- #569 dec-1 drill: ~35 min in, no verdict, no floor-parks logged yet.
+- No other changes. Next decision point: n=15 coverage + top-pattern
+  certifiability; the containment sweep fires as soon as ANY certified
+  pattern with meaningful coverage exists.

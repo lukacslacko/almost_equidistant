@@ -15,7 +15,7 @@ def load(fn, n):
             out.append([int(x) for x in p[1:1 + n]])
     return out
 
-NP = 14
+NP = int(__import__("os").environ.get("COV_NP", "14"))
 NT = 19
 BT_LIMIT = 400_000
 
