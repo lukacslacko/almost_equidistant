@@ -339,3 +339,23 @@ Since the 11:55 block:
 Cadence note: the scheduled 12:36 self-wake could not fire because the
 work turn stayed active; future blocks will be written manually at the
 half-hour regardless of wakeup mechanics.
+
+## 13:25 append — d=6 pivot to obstruction library, first pilot numbers
+
+- Random-sample measurement (clean run, 100 of 600 processed so far):
+  at 300k-node caps, 34% of deferred graphs are KILLED, 62% ABORT, 4%
+  other; ~200 core-seconds per graph either way. Extrapolation of ANY
+  direct per-graph approach: ~80 days. Direct grinding is retired.
+- Obstruction-library pilot (the G10-lemma trick at scale): generated
+  all 1052 minimal abstract-AEQ-in-R^6 graphs on 14 vertices
+  (triangleramsey+filter, counts match BPSSV); LM-profiled all of them:
+  963 are numerically REALIZABLE in R^6 (useless as obstructions), 89
+  are non-realizable-looking (residual > 1e-6) — the candidate pool.
+- Now measuring: what fraction of 600 random deferred level-19 graphs
+  contains one of the 89 as a subgraph (bounded backtracking, timeouts
+  count as no-cover). Decision rule stated in advance: coverage >50% =>
+  certify the top patterns with ckernel6 and sweep the level by
+  containment; coverage <20% => the n=14 pool is too weak, try n=15/16
+  pools (3969/18917 minimal graphs, more non-realizable but harder to
+  embed), or accept that f(6) needs weeks/another idea entirely.
+- f(5) = 16 remains landed and pushed; nothing in d=6 affects it.
