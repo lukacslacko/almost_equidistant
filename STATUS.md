@@ -412,3 +412,20 @@ half-hour regardless of wakeup mechanics.
   near-miss says they are probably certifiable with drilling, but if
   #569 floor-parks, it is unusable and the pool pivots to higher-edge
   patterns per the standing rule. Numbers next block.
+
+## 15:45 append — cadence block
+
+- Certified: 3,055,480 / 3,971,787 (unchanged; library phase).
+- Pattern #571: NOT certified on first pass — same signature as #569
+  (93/96 slices die, 3 hot slices resist, best dec 0). The two are
+  almost certainly siblings from the same structural family. #952
+  (4 parametrizations) in progress. Library still empty.
+- Drill of #569's 3 hot slices: running ~30 min, silent by design
+  until verdict (prints only floor-parks and the final result); shares
+  the machine with the certification pool. If it certifies, the same
+  drill settles #571 and likely most of the top-10, unlocking the
+  containment sweep worth ~70% of the remaining level. If it
+  floor-parks, the frequent-pattern pool is unusable and the pivot is
+  to high-edge patterns (rule already stated).
+- Meta: two runs active (certify pool 24 workers, drill 10) — full
+  machine, no idle cores, no zombies (verified process count 36).
