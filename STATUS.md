@@ -143,3 +143,85 @@ campaign.
 Pushed so far tonight: pending-38 data + structural analysis + the
 hot-core dump result (zero parked survivors in 3M nodes - the "still
 considered" set is empty; the arcs are kill-trees, not candidates).
+
+## 08:30 append — root cause found and fixed (after the forced reboot)
+
+Windows Update force-rebooted the machine overnight, killing all runs
+(all results safely on disk: still 12616/12654; d=6 snapshot intact).
+
+Morning diagnosis answered the "is it time for another approach"
+question with a yes — and produced the actual root cause of the entire
+hard-tail saga: the kernel's circle-cell splitting was PARK-triggered
+only. A cell whose subtree eventually kills everything (but through an
+exponentially fanned tree of fat-box placements) never parks anything,
+so it never split, no matter how expensive — the engine ground
+million-node kill-trees at widths where one split collapses the cost to
+~65 nodes. Every workaround (fine slicing, ladders) was imposing the
+missing splits from outside at ~1000x process overhead.
+
+Fix: per-cell node quota inside the kernel (abandon + split a cell whose
+subtree exceeds ~4000 nodes; management only, soundness untouched), plus
+the certified mean-value enclosure for the circle parametrization from
+last night. Measured on the reference hot slice of graph 11402:
+ABORT-at-2M-nodes  ->  complete verdict in ~98k nodes / 18 s (~100x).
+Remaining tuning: cells at the width floor now run quota-free; a
+benchmark of that interplay is in flight. Full regression suite passes
+on the new kernel (K7/K6/graph0/cross-polytope/K7-minus-edge).
+
+## 09:40 append — status + the floats-vs-integers question
+
+**Progress right now: 12628 / 12654 level-17 graphs certified; 26 left.**
+The rebuilt kernel (per-cell node quota + certified mean-value circle
+enclosure) certified 12 of the 38 morning leftovers in its first five
+minutes — including 12595, the graph with the lowest numerical residual
+of the entire level, i.e. the "most realizable-looking" one. What
+remains in flight is ~108 tasks concentrated on the special
+theta-points of the other 26 graphs (downstream near-tangencies whose
+kill-trees are width-independent but finite; they are being ground
+with escalating budgets, and racing alternate decompositions catches
+the cases where another parametrization avoids the tangency entirely).
+Same honest caveat as before: most of the 26 should fall in
+minutes-to-hours; a residue may grind longer. All levels 18/19/20:
+complete. Controls: pass (will be re-run once more on the final kernel
+build for a uniform provenance record). d=6: paused at 3,055,474 /
+3,971,787.
+
+**Why floating-point intervals instead of integer boxes?** (your
+question) — Short answer: the box-splitting search you describe is
+exactly what the engine does; the only choice is the arithmetic that
+evaluates "can this box still work", and IEEE floats are the cheapest
+arithmetic whose rounding is *someone else's proven problem*.
+
+1. Integers cannot express the tests. The efficient placement steps are
+   algebraic: circumcentres (division), radii (square roots), and the
+   circle parametrization (cos/sin — transcendental). Exact rationals
+   blow up in bit-length through the linear solves (every product
+   doubles it; the campaign runs ~10^10 operations), and cos/sin have
+   no exact rational values at all — you would end up implementing
+   rational *enclosures* of them, i.e. interval arithmetic with a
+   slower number type.
+2. Fixed-point (scaled integer) boxes must truncate after every
+   multiplication. Truncation is rounding — hand-written, and yours to
+   prove correct at every one of the dozens of call sites. IEEE doubles
+   give hardware-verified correct rounding for +,-,*,/,sqrt at ~1 ns
+   per op; one nextafter outward per operation yields a provable
+   enclosure. The trust base is one sentence of the IEEE-754 standard
+   (the same base used in the verified Kepler-conjecture computations),
+   not a homemade fixed-point library. Software 128-bit fixed point is
+   also 10-50x slower, and floats auto-scale precision via the exponent
+   while fixed point pre-commits one resolution for quantities whose
+   magnitudes vary by orders.
+3. Pure "split boxes and test corner distances" without algebra is
+   combinatorially hopeless: the configuration space is 85-dimensional,
+   so blind subdivision costs exponential-in-85 per resolution level.
+   Tractability comes from *constructing* each vertex on the
+   intersection of unit spheres of placed neighbours (5 dimensions
+   collapse to a binary root choice or one angle) and from
+   Krawczyk/Newton contraction (quadratic convergence vs one bit per
+   bisection). Those tools are inherently real-arithmetic.
+4. Where the instinct is right: (a) this week's actual pain was search
+   *scheduling*, never arithmetic soundness — integer boxes would have
+   had identical stalls; (b) for the final package, an independent
+   re-verification of the recorded certificates in dyadic fixed-point
+   would genuinely strengthen the trust base, and will be suggested in
+   the write-up as a reproduction path.
