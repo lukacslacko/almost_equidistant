@@ -225,3 +225,27 @@ arithmetic whose rounding is *someone else's proven problem*.
    re-verification of the recorded certificates in dyadic fixed-point
    would genuinely strengthen the trust base, and will be suggested in
    the write-up as a reproduction path.
+
+## 10:46 append — 30-minute cadence, iteration 1 (baseline for deltas)
+
+- Certified: **12628 / 12654** (26 pending: 4190, 4816, 5892, 7152,
+  7904, 9384, 9621, 11377, 11381, 11395, 11396, 11402, 11403, 11405,
+  11586, 11602, 11605, 11608, 11677, 12313, 12316, 12372, 12520, 12560,
+  12572, 12590).
+- Assessment at this wake: the previous run (finish17h) was STUCK by the
+  measured criterion — 0 certifications in its last ~40 minutes, all
+  remaining graphs pinned on special theta-points under only 2 raced
+  decompositions. Action taken: raised the decomposition pool to 6 per
+  graph (alternate parametrizations dodge tangencies — the proven d=4
+  cure) and relaunched (finish17i). The new run re-tiled all 26 circles
+  (~20,000 slice tasks) in under 2 minutes; 176 hot tasks remain in
+  flight and are entering the escalation ladder.
+- Next wake ~11:16: expected signal = new certifications > 0. If zero
+  again, next heuristics in queue: (a) enumerate ALL (seed x
+  circle-vertex) parametrizations per stuck graph instead of the
+  generator's 6; (b) segment-stage quota analogous to the circle-cell
+  quota; (c) bounded floor-cell budget with honest parking + per-point
+  full-power runs.
+- Cadence promise: this block format repeats every 30 minutes with
+  deltas against the previous block; stuck = fewer than 2 new
+  certifications per interval with stale task counters.
