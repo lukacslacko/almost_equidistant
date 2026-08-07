@@ -1183,3 +1183,37 @@ of the 34; then the owed codex-filter cross-check to make the whole chain
 independently verified. DIMENSIONS_1_TO_10.md gets a clearly-marked
 provisional note only — the main table keeps 26 until the trust base is
 fully in-house.
+
+## 2026-08-07 16:52 append — cadence: 34-graph certification campaign launched; independent checks green so far
+
+- **LM screen of the 34 frontier graphs (500 restarts each): every best
+  residual is far from zero** — min 0.2199, typical 0.4-1.5, vs ~1e-30
+  for realizable controls (lm_frontier34.err). No 20-point set is hiding
+  in the frontier; f(6) <= 19 via certification of the 34 remains the
+  expected outcome.
+- **Independent re-implementation of the whole frontier pipeline**
+  (verify_frontier_indep.py: own subgraph tests with different loop
+  structures, own iso decision via profile buckets + backtracking — no
+  canonical labeling shared with ext6.c, own completion enumeration,
+  greedy completion deliberately last-pair-first where ext6 is
+  first-pair-first): **control14 PASS and control15 PASS with exact
+  multiplicity agreement** (250,339 and 962,217 raw extensions — equal
+  to ext6.c's counts). The 19->20->21 re-run is in progress (currently
+  in its single-threaded dedup phase); its verdict on 117,290 / 34 /
+  3,602 / 0 lands in a later block.
+- **The 34 are hard for the interval engine** (measured): graph 0 dec 0
+  slice 0 ABORTs at 3M nodes / 310 s; 8-fold subdivision does NOT
+  collapse the cost (all 8 sub-slices ABORT at 150k) — width-independent
+  kill-trees, the same disease as the deferred level-19 class, most
+  likely near-realizable 18-point cores inside the graphs. Probe of all
+  46 decs of graph 0: best decs have 2/6 probe slices hot at 30k cap; no
+  globally cheap parametrization.
+- **Campaign launched** (certify34_campaign.py, 24 workers, resumable
+  state in frontier34_state.json): stage 1 probes every (graph, dec) at
+  6 slices @ 30k; stage 2 full-96-tiles the best 2 decs @ 150k; stage 3
+  runs an 8-fold subdivision ladder @ 500k then 2M on the best dec.
+  Certifications are logged as they land; a monitor reports milestones.
+- Next work item while it grinds: the owed independent cross-check of
+  the codex exact filters (starting with the workhorse disjoint-edge
+  bounded-cover rule), which is what upgrades f(6) <= 20 from
+  "modulo their ledger" toward fully in-house.
