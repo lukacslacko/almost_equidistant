@@ -1436,3 +1436,25 @@ Engine note: certifying 21-24-vertex graphs needs ckernel6's MAXN
 raised from 20 (a controlled kernel rebuild + controls rerun — queued
 with the graph-32 2-sphere work). The 127 level-21 graphs are the
 richest target: killing them lifts the in-house bound to <= 20.
+
+## 2026-08-07 18:01 append — cadence: containment PASS; session summary of banked results
+
+- verify_34_containment.py: the C-flow's 34 conditional-frontier graphs
+  are all contained (up to isomorphism) in the independent
+  implementation's 117,290 level-20 classes; its class count also
+  reproduces 117,290. CONTAINMENT: PASS — the last open formality on
+  the frontier double-implementation.
+- 34-graph campaign: stage 1 at 7,000/25,632 (~3 h to go), then tiling
+  and ladder stages run into the night; certifications will be logged
+  and pushed as they land.
+- Banked and pushed today, in order: codex/dimension6 merge (residue
+  644); conditional f(6) <= 20 with the 34-graph reduction for <= 19
+  (f6_le_20.pdf); first-generation exact filters independently
+  reimplemented with exact agreement on all nine statistics; the
+  |Z| <= 3 refinement hand-verified (d6_z3_handcheck.md); the frontier
+  pipeline double-implemented with exact stage-by-stage agreement; and
+  the UNCONDITIONAL in-house f(6) <= 24 via the level-25 frontier
+  collapse (f6_le_24.pdf; tracker main table updated 26 -> 24). Next
+  in-house rungs: ckernel6 MAXN rebuild, then the 127 level-21 tower
+  graphs (would give in-house <= 20), the 2-sphere stage for frontier
+  graph 32, and the remaining conditional-tier layers.
