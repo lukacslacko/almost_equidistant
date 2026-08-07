@@ -1052,3 +1052,56 @@ my track (a) supplies the independent cross-check, and (b) attacks the
 population their rules cannot touch by construction — the 175,819
 K6-only graphs — with the interval engine + obstruction machinery
 (drills and n=15 coverage still running for exactly that purpose).
+
+## 2026-08-07 16:02 append — codex/dimension6 MERGED to main; residue 644; new directive: exclude larger values first
+
+Session start (new day). Actions and measured facts so far:
+
+- **Merge landed** (commit 89026e8, pushed): all 98 codex commits are on
+  main. Conflicts: STATUS.md (kept main's corrected timestamps; codex's
+  tail block was a pre-correction duplicate of the 13:08 block),
+  coverage6.py (took the codex evolution). Their v6 cross-method residue:
+  **644 unresolved level-19 graphs** (19 K7-containing + 625 K6-only) out
+  of 3,971,787 — down from 911 (v5) and 288,955 (first profile).
+- **Cross-ledger check (new, this session)**: intersected the 644 v6
+  residue indices with our interval-certified ledger (killed_d6_n19.log,
+  3,055,480 entries): **overlap 0** — every residue graph sits in our
+  916k deferred population. No free reductions; 644 stands.
+- Housekeeping: committed the n=15 obstruction-pool corpus
+  (aeq_d6_n15.txt, 3,969 graphs) and its LM screen log (lm6_n15.err,
+  source of the "1,203 non-realizable-looking" count); deleted zombie
+  ckernel6.dll.tmp* copies and an empty hard_flags.txt.
+
+**New directive from the user**: before continuing the f(6) = 18
+endgame, bank upper-bound improvements on larger sizes (e.g. try for a
+quick f(6) <= 20). Published bound is f(6) <= 26 (BPSSV, via zero
+candidates at level 27).
+
+**Plan — two tracks, strongest first:**
+
+1. **Frontier/extension argument (main track)**: any 20-point set in R^6
+   would induce, on every 19-subset, after complement-completion, a
+   *realizable* level-19 candidate — which must lie in the unresolved
+   residue (everything else is certified). Derivation done today (to be
+   documented with the code): a level-20 candidate extending residue
+   graph R is determined by the new vertex's non-unit set N alone
+   (the complement edges inside N flip to unit; N must become a
+   <=7-clique and dominate H0 = comp(R); maximality forces D = H0[N]
+   exactly). Search space ~ sum_{k=3..7} C(19,k) ~ 90k subsets x 644
+   graphs — small. Then every 19-deletion of every survivor must
+   re-complete into the residue (else certified-killed). If the frontier
+   empties: **f(6) <= 19**, and it does NOT require resolving the 644
+   first. If it doesn't empty, iterate upward (20->21->22...) — first
+   empty level m gives f(6) <= m-1. Trust base: level-19 corpus
+   completeness (verified), our 3.06M interval kills, codex exact
+   filters (their verifiers PASS; our independent reimplementation
+   cross-check is still owed and stays queued).
+   Control before use: the same enumerator run at n=14->15 must
+   reproduce the known corpus exactly (1,052 -> 3,969 graphs).
+2. **Near-Ramsey top-down (codex-independent track)**: enumerate levels
+   26/25 directly (triangleramsey-1.1 + filter_mtf6; counts near
+   R(3,8)=28 should be small) and certify with ckernel6 — yields
+   f(6) <= 25, <= 24 ... independent of the codex filters. Feasibility
+   of the enumeration to be measured first.
+
+Next block: extension-enumerator control results.
