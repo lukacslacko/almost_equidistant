@@ -1,0 +1,52 @@
+{
+  "certificates": {
+    "path": "d6_k6_tight_same_z0_certificates.json",
+    "sha256": "ad408071d49d95724c6b9a45afca947b937ea1ce8b79fb2b67cd810a91756a11"
+  },
+  "checks": {
+    "all_graph_decisions": true,
+    "all_rejected_Z0_partitions_and_cross_classifications": true,
+    "identical_Z0_quantifier": true,
+    "import_independence": true,
+    "independent_Hall_subset_and_actual_support_DFS": true,
+    "independent_repeated_arm_tight_Hall_kernel": true,
+    "positive_18_control": true
+  },
+  "graphs_recomputed": 625,
+  "graphs_rejected": 2,
+  "graphs_surviving": 623,
+  "ordered_residue_indices_sha256": "b31aeac00b91d0d843ea51909c64f2c4ca3da49e5d2d33792312a45aa9f25e79",
+  "positive_18_control": {
+    "K6_seeds": 32,
+    "passed": true
+  },
+  "rejected_indices": [
+    1442098,
+    1495055
+  ],
+  "rejected_indices_sha256": "908325e53918685e3732180266c3c8408c545d5c77859e8ffd7c997ea926ec36",
+  "report": {
+    "path": "d6_k6_tight_same_z0_report.json",
+    "sha256": "2f2fb63e91518717f3a340c4e9401f720a3393ee6816535eadff1b89d681be04"
+  },
+  "runtime": {
+    "command": "verify_d6_k6_tight_same_z0.py --workers 8",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "wall_seconds": 32.79561787500279,
+    "workers": 8
+  },
+  "schema": "d6-k6-tight-same-z0-verification-v1",
+  "sources": {
+    "d6_k6_repeated_two_support_arm.py": "cf4a0a534504e312c47fcf1974d3362f19beeec270e4a49f04eba3080d06e1d4",
+    "d6_k6_repeated_two_support_arm_certificates.json.gz": "604ec86b943ec909d177acc1fd36ef623c3e3bff67b4a8a5e5ffa601fc202af5",
+    "d6_k6_repeated_two_support_arm_report.json": "ea8d9438d062b92857a1057b950e76b8ae08bbe1bf97b4327130fd4058171ebe",
+    "d6_k6_repeated_two_support_arm_verification.json": "3abf48bab092671a9dff03c2dc47c0063a75515cd219e1d5a4bfa9a5fa797b5b",
+    "d6_k6_same_z0_verification.json": "9d1f06c41827193f3a324bf2d08f450cf816567cbae727e21a6258afd68a9fbf",
+    "d6_k6_tight_same_z0.py": "b761ded129805bd957c5ecd2d6cbcdbaadb6972d750d18260035ca175c5b949e",
+    "verify_d6_k6_repeated_two_support_arm.py": "b23493bd62e79874117a2349462d66a12ef1577e720ff1aeb63224d14e2aecd7",
+    "verify_d6_k6_same_z0.py": "4db05ff06910a11395e4bbdd2fd13161d6c19f58f81cc99851b8c37558d7000f",
+    "verify_d6_k6_tight_same_z0.py": "b9a601d760aab00ec548354160e382e434a22b02d7dafd9e165be851e9686c51"
+  },
+  "status": "PASS"
+}

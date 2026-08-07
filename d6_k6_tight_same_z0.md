@@ -218,5 +218,22 @@ rejections and their complete `Z0` partitions, row-for-row agreement with the
 independent implementation, optional-zero actual-support domains, import
 independence, and both versions of the 32-seed positive control.
 
+## Official production result
+
+The source boundary was committed at `870b942`.  The official eight-worker
+producer completed in 10.8629 seconds and the independent eight-worker replay
+completed in 32.7956 seconds.  The replay reconstructed all 625 graph
+decisions, both rejected seeds, all 254 recorded `Z0` rows and both 32-seed
+positive controls, and returned `PASS`.
+
+```text
+d6_k6_tight_same_z0_report.json
+  2f2fb63e91518717f3a340c4e9401f720a3393ee6816535eadff1b89d681be04
+d6_k6_tight_same_z0_certificates.json
+  ad408071d49d95724c6b9a45afca947b937ea1ce8b79fb2b67cd810a91756a11
+d6_k6_tight_same_z0_verification.json
+  d87ecd688301e2e811e8eb3f3fe52111a050765643de6a5dbb1f1c06582b311e
+```
+
 A survivor is only a graph not rejected by these necessary conditions.  This
 incremental layer does not settle the remaining K6 class or dimension six.
