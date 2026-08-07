@@ -1,0 +1,48 @@
+... 100000 processed (cl7 96396 cl6 3604) rejected 96831
+... 200000 processed (cl7 193280 cl6 6720) rejected 194045
+... 300000 processed (cl7 291013 cl6 8987) rejected 289585
+... 400000 processed (cl7 388043 cl6 11957) rejected 385678
+... 500000 processed (cl7 483623 cl6 16377) rejected 482406
+... 600000 processed (cl7 577980 cl6 22020) rejected 579821
+... 700000 processed (cl7 675430 cl6 24570) rejected 678672
+... 800000 processed (cl7 772073 cl6 27927) rejected 775810
+... 900000 processed (cl7 869234 cl6 30766) rejected 872461
+... 1000000 processed (cl7 966223 cl6 33777) rejected 969934
+... 1100000 processed (cl7 1062821 cl6 37179) rejected 1068248
+... 1200000 processed (cl7 1156575 cl6 43425) rejected 1166520
+... 1300000 processed (cl7 1252124 cl6 47876) rejected 1263936
+... 1400000 processed (cl7 1346849 cl6 53151) rejected 1361759
+... 1500000 processed (cl7 1440774 cl6 59226) rejected 1459910
+... 1600000 processed (cl7 1534631 cl6 65369) rejected 1557776
+... 1700000 processed (cl7 1628817 cl6 71183) rejected 1654380
+... 1800000 processed (cl7 1723209 cl6 76791) rejected 1752388
+... 1900000 processed (cl7 1817990 cl6 82010) rejected 1850279
+... 2000000 processed (cl7 1914725 cl6 85275) rejected 1948139
+... 2100000 processed (cl7 2010312 cl6 89688) rejected 2046700
+... 2200000 processed (cl7 2106626 cl6 93374) rejected 2144793
+... 2300000 processed (cl7 2202198 cl6 97802) rejected 2241446
+... 2400000 processed (cl7 2296653 cl6 103347) rejected 2338862
+... 2500000 processed (cl7 2389933 cl6 110067) rejected 2437034
+... 2600000 processed (cl7 2483830 cl6 116170) rejected 2533994
+... 2700000 processed (cl7 2578072 cl6 121928) rejected 2629471
+... 2800000 processed (cl7 2673302 cl6 126698) rejected 2726255
+... 2900000 processed (cl7 2766985 cl6 133015) rejected 2823834
+... 3000000 processed (cl7 2863808 cl6 136192) rejected 2921525
+... 3100000 processed (cl7 2958421 cl6 141579) rejected 3020142
+... 3200000 processed (cl7 3055867 cl6 144133) rejected 3117635
+... 3300000 processed (cl7 3153001 cl6 146999) rejected 3216812
+... 3400000 processed (cl7 3247982 cl6 152018) rejected 3311758
+... 3500000 processed (cl7 3343383 cl6 156617) rejected 3407526
+... 3600000 processed (cl7 3438745 cl6 161255) rejected 3504494
+... 3700000 processed (cl7 3534994 cl6 165006) rejected 3600624
+... 3800000 processed (cl7 3631592 cl6 168408) rejected 3694361
+... 3900000 processed (cl7 3726110 cl6 173890) rejected 3790424
+INDEP PROFILE: total 3971787  clique7 3795968  clique6 175819
+  link 201785
+  K7 reflection 978108
+  K7 defect-CSP 978108
+  K7 bounded-cover 3680379
+  K7 tight-cover-matching 73
+  K6 two-light-ray 174713
+  union rejected 3855094 (K7-class 3680381, K6-class 174713)
+  residue 116693 (K7-class 115587, K6-class 1106)

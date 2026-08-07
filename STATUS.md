@@ -1217,3 +1217,50 @@ fully in-house.
   the codex exact filters (starting with the workhorse disjoint-edge
   bounded-cover rule), which is what upgrades f(6) <= 20 from
   "modulo their ledger" toward fully in-house.
+
+## 2026-08-07 17:02 append — INDEPENDENT CROSS-CHECK OF THE CODEX FIRST-GENERATION FILTERS: EXACT AGREEMENT
+
+The owed independent verification has its first major installment.
+indep_profile6.c reimplements the first-generation exact rules FROM THE
+THEORY DOCUMENT ALONE (d6_theory_filters.md; deliberately not from
+profile_d6.c — different data structures, direct C(|eligible|,7) cover
+enumeration, own augmenting-path matching, own CSP ordering), and was run
+over the full 3,971,787-graph corpus in 98 seconds. Result: **every
+aggregate statistic matches the codex profile (d6_profile.json, schema 3)
+exactly**:
+
+| statistic | codex | independent |
+|---|---:|---:|
+| clique number 7 / 6 | 3,795,968 / 175,819 | same |
+| K5-link rejections | 201,785 | same |
+| K7 facet-reflection | 978,108 | same |
+| K7 defect-support CSP | 978,108 | same |
+| K7 disjoint-edge bounded cover | 3,680,379 | same |
+| K7 tight-cover matching | 73 | same |
+| K6 two-light-ray CSP | 174,713 | same |
+| union of exact rejections | 3,855,094 | same |
+| residue (K7 / K6-only) | 115,587 / 1,106 | same |
+
+Per-graph verdict bitmap saved (indep_verdicts.bin, 1 byte/graph); none
+of the final 644 residue graphs is rejected by any first-generation rule
+(consistency with their layer accounting).
+
+**Updated trust decomposition for the f(6) <= 20 frontier result** (and
+for the eventual f(6) = 18): of the 3,971,143 level-19 graphs outside the
+644 residue:
+- 3,855,094 are killed by exact rules that are now INDEPENDENTLY
+  REVERIFIED at per-rule aggregate level;
+- 2,451 more are covered by our interval-certificate ledger;
+- **114,242 remain dependent on the codex later layers only** (the
+  chain 116,693 -> 644: support/pentad conjunctions, PSD Z-chains,
+  |Z|<=3 refinement, tetrads, one-free-edge, ...). Options: reimplement
+  those layers too (weeks), or interval-certify the 114,242 directly
+  (~9 days at deferred-class costs), or a mix. To be decided.
+
+Campaign notes: the 34-graph certification is in stage 1 (probing all
+25,632 (dec, slice) pairs; ~2 h to go). **Graph 32 has ZERO
+parametrizations** — the known missing-2-sphere-stage case (same as
+obstruction pattern #406): it cannot be certified by the current circle
+pipeline at all and needs the 2-sphere stage or a per-graph argument.
+f(6) <= 19 is blocked on it even if the other 33 die. Being
+investigated next.
