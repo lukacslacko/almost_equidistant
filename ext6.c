@@ -34,7 +34,7 @@
 #include <stdint.h>
 #include <string.h>
 
-#define MAXV 26
+#define MAXV 30
 #define BSU64 ((MAXV*(MAXV-1)/2 + 63)/64)
 typedef uint32_t u32;
 typedef uint64_t u64;

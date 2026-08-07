@@ -64,3 +64,9 @@ canon15s.txt
 ext16.txt
 prov15.txt
 prov20.txt
+ext2?_ih_raw.txt
+frontier20_ih.txt
+ihchunk_*
+f20_ih_surv.txt
+tower_lm.err
+lm6big.c

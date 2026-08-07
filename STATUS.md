@@ -1397,3 +1397,42 @@ Schur mask rules, K7 tetrads, and the K6-side chains.
   was repeated once (a containment-check probe died instantly) and
   corrected the documented way: proper script file
   (verify_34_containment.py), now running.
+
+## 2026-08-07 17:59 append — IN-HOUSE FRONTIER DIES AT LEVEL 25: f(6) <= 24 WITHOUT the conditional tier
+
+The in-house frontier computation (residue = the 114,242 level-19
+graphs unresolved by independently-verified exact rules + our interval
+ledger; NO codex later layers) ran to completion in about 25 minutes of
+wall time:
+
+```text
+level 20:  6,419,680 distinct candidates -> greedy 2,377 -> escalation 2,356
+level 21:    142,963 -> greedy 127 -> escalation 127
+level 22:      3,028 -> greedy 23  -> escalation 23
+level 23:         82 -> greedy 2   -> escalation 2
+level 24:          2 -> greedy 2   -> escalation 2
+level 25:          0 valid extensions of the two level-24 graphs
+```
+
+**The level-25 frontier is EMPTY: no 25-point almost-equidistant set
+exists in R^6 — f(6) <= 24 — on a fully in-house trust base**: corpus
+completeness, the first-generation exact rules (independently
+double-implemented, exact agreement; derivations hand-checked), our
+3,055,480 interval certificates, and the double-implemented frontier
+pipeline. No dependence on the codex later layers.
+
+The tower is a certification LADDER for further unconditional
+improvements: certifying the 2 level-23 graphs non-realizable gives
+f(6) <= 22; the 23 level-22 graphs give <= 21; the 127 level-21 graphs
+give <= 20 (matching the conditional bound in-house). The tower graphs
+are extreme objects — the level-23 pair has 176 edges against 117
+degrees of freedom (excess 59), the level-24 pair 192 against 123
+(excess 69); their complements sit close to the R(3,8) Ramsey-critical
+regime. LM screen (800 restarts, lm6big at MAXN 26): best residuals
+2.12, 2.30, 3.26, 3.36 — nowhere near realizable; no hidden 23- or
+24-point sets.
+
+Engine note: certifying 21-24-vertex graphs needs ckernel6's MAXN
+raised from 20 (a controlled kernel rebuild + controls rerun — queued
+with the graph-32 2-sphere work). The 127 level-21 graphs are the
+richest target: killing them lifts the in-house bound to <= 20.
