@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "affine_spanning": true,
+    "clique_bounds": true,
+    "coordinates_and_unit_graph": true,
+    "exact_rigidity": true,
+    "nonextension_scope": true,
+    "producer_import_independence": true
+  },
+  "exact_results": {
+    "base_clique_number": 5,
+    "base_rigidity_rank": 65,
+    "eleven_subsets_checked": 4368,
+    "full_rigidity_rank": 87,
+    "standard_coordinates_nonextendable": true
+  },
+  "producer_sha256": "6e4a1af59a6a6063cade592cd3897ce3e0a0adbd2a46b28d4652a93c05303536",
+  "report": {
+    "path": "d6_standard18_geometry_report.json",
+    "sha256": "97904946b382eb1e6cc325083e1c1ab20e5e8c426fcbaaed1b79357646c846ef"
+  },
+  "schema": "d6-standard18-exact-geometry-verification-v1",
+  "status": "PASS"
+}

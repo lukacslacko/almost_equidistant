@@ -1,21 +1,19 @@
 # Status — f(5) and f(6) campaigns
 
-## CURRENT LOCAL CAMPAIGN — exact d=6 residue 977 (2026-08-07)
+## CURRENT LOCAL CAMPAIGN — exact d=6 residue 960 (2026-08-07)
 
 Branch: `codex/dimension6`
 
-Latest auditable result boundaries:
+Latest auditable source boundaries:
 
 ```text
 K7 support / pentad conjunction
   01c5b18413b6bab5225558fa950971efeda58e0d
 K6 arbitrary-subset Hall layer
   a21db74bacdf4c9c5c841ac137af326b331d8137
+K6 empty-support production source
+  b54b69571b5ff87c7586aff13e5c69a24ece7801
 ```
-
-At the user's request on 2026-08-07, all local subagents were stopped and no
-dimension-six computation was left running.  The working source/checker and
-bounded-pilot artifacts were checkpointed to Git before handoff.
 
 ### Current exact accounting
 
@@ -30,22 +28,88 @@ K6-only residue before PSD/Hall chain                            977
 PSD Z-matrix rejections                                          116
 hereditary PSD Z rejections                                       30
 arbitrary-subset Hall rejections                                   9
-current K6-only residue                                           822
+empty-support-budget rejections                                    17
+current K6-only residue                                           805
 
-combined exact dimension-six residue                              977
+combined exact dimension-six residue                              960
 ```
 
-This is not yet a proof of `f(6)=18`; every one of the 977 remaining
+This is not yet a proof of `f(6)=18`; every one of the 960 remaining
 graphs is unresolved.  `SURVIVOR` means only that the current exact filters
 did not reject the graph.
 
-The self-contained v3 residue builder, independent checker, and controls are
-in `build_d6_current_residue_manifest_v3.py`,
-`verify_d6_current_residue_manifest_v3.py`, and
-`test_d6_current_residue_manifest_v3.py`.  Their 10 controls pass.  The K6
-empty-support-budget production/checker source is also checkpointed, with all
-9 controls passing, but its bounded one-hit pilot is not theorem-level
-coverage and no full run was launched before this stop.
+The complete 822-graph K6 empty-support run rejects 17 graphs and leaves 805.
+Its independent checker reconstructed all 822 inputs in a fresh 11-worker
+pool, replayed 1,481 archived `Z0` rows and 1,641 component witnesses, and
+passed all 32 K6 seeds of the known realizable 18-point construction.  The
+first sandbox launch aborted before processing a graph because macOS process
+semaphores were unavailable; that `INFRA_ABORT` is retained separately and
+has no mathematical meaning.  The production run resumed outside that
+restriction from its atomic checkpoint.
+
+The self-contained v4 residue is in
+`d6_current_residue_manifest_v4.json`; its independent structural checker
+returns `PASS`.  Principal hashes are:
+
+```text
+K6 production report          1860dbe69ae74b55203ea283cf83afff929a4b1f5cbfcd30e09f0138688eba9f
+K6 certificate archive        c6fcb7ef66bccc3319fe0a979c5fd63d9f6fd9535261c5c9bfb87e8d210361d4
+K6 independent verification   873c8b6babe183757d4e97b0f0c1c1a942b31f180c88eeef1c9ddf80a199276f
+v4 residue manifest           6ab4bfffc524f5b43409d59888fb596de8130315bda3381e484bb4ce891e03e4
+v4 independent verification   765eceb6782d131dae8c77c9b94de78735e23a070da051c8fffbd984790e1a41
+```
+
+### New 18-deletion / grow-back boundary
+
+All 19 induced deletions of every v4 parent have been reconstructed and
+deduplicated, while preserving every deleted vertex's rooted attachment:
+
+```text
+19-point parents                                             960
+labeled deletion occurrences                             18,240
+unique unrooted 18-point supports                        12,712
+  containing K7                                           1,616
+  containing K6 but no K7                                11,096
+  containing no K6                                            0
+```
+
+Fourteen unrooted deletion classes, representing 39 occurrences below 16
+parents, embed exactly as required-edge subgraphs of the standard
+half-cube-plus-two-poles unit graph.  This is positive support containment,
+not a uniqueness or parent-realizability result.  The exact criterion uses
+the Clebsch graph in the **non-unit** base graph and stores an explicit
+embedding permutation for every match.  The independent checker reconstructs
+all 18,240 occurrences, attachment masks, canonical classes, standard
+embeddings, and the seven edge-minimal standard support types.
+
+```text
+18-deletion manifest          9d08f9ec579434c9601ad3908bd2ae51f10e09e9d06a7f38fbc25794a634b732
+18-deletion verification      50ab5d88441b2869e60a05f3e1485db0b25008c3a816960a20a3bb21c1c4defd
+```
+
+The exact standard-coordinate audit proves that the displayed 112-edge
+18-point framework has rigidity rank 87 and that no distinct nineteenth
+point extends those coordinates.  It explicitly does not classify all
+16-point extremizers in `R5`, all 18-point sets in `R6`, or all embeddings of
+the 14 matching supports.  See `d6_standard18_geometry.md` and
+`d6_residue_18_deletions.md`.
+
+Current work is split between two complementary directions:
+
+1. exact K6 empty-essential / virtual-K7 branch promotion on the 805 K6-only
+   survivors;
+2. an 11-worker numerical-only realization and rigidity screen of the 12,712
+   deletion classes, followed by exact rooted grow-back tests on any apparent
+   realizations and reusable obstruction mining on the rest.
+
+Optimization failure never rejects a graph.  Candidate nonedges remain
+unconstrained and may be unit.
+
+### Superseded residue-977 checkpoint
+
+The preceding auditable boundary was commit `01ee132`; it had 155 K7 and 822
+K6-only survivors.  The v4 empty-support result and deletion corpus above
+supersede those counts.
 
 ### Superseded 1,235 checkpoint
 
