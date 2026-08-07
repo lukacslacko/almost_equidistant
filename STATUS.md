@@ -1354,3 +1354,27 @@ tier.
 
 In-flight: 34-graph certification campaign (stage 1); in-house frontier
 phase 1 (extensions of the 114,242 unresolved-by-in-house graphs).
+
+## 2026-08-07 17:50 append — |Z| <= 3 derivation hand-verified; measurement upgraded to verified tier
+
+While the frontier/campaign computations grind, the central novel claim
+of the codex second-generation layer — the |Z| <= 3 bounded-cover
+refinement for K7 seeds at n=19 — has been hand-verified line by line
+(d6_z3_handcheck.md): the rank bounds from the orthonormal zero-factor
+family, the PD required-clique Grams, the |Z| = 7/6/5 exclusions
+(positive diagonal, forced edge, R(3,3)), and the full |Z| = 4 analysis
+(Delta(F) <= 2, F triangle-free, the component/inertia bound via
+Perron-Frobenius + zero forcing, the exhaustive F in {4K2, C4+2K2}
+split, and both terminal contradictions). All steps check out.
+
+Consequence: the --zcap3 measurement from the 17:25 block is upgraded
+from reproduction tier to independently-verified tier: the in-house
+verified exact residue is now **111,551** (down from 116,693); the
+still-conditional class shrinks by 5,144 to 108,454 (plus the 644
+residue and 2,451 interval-only). The running in-house frontier uses the
+114,242-graph superset residue — sound (a larger residue only weakens
+the frontier), and a tighter rerun is cheap if needed.
+
+Still pending verification (listed in the handcheck note): the
+actual-support CSP on small covers, the normalized-matrix rank tests,
+Schur mask rules, K7 tetrads, and the K6-side chains.
