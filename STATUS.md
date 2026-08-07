@@ -1458,3 +1458,18 @@ richest target: killing them lifts the in-house bound to <= 20.
   in-house rungs: ckernel6 MAXN rebuild, then the 127 level-21 tower
   graphs (would give in-house <= 20), the 2-sphere stage for frontier
   graph 32, and the remaining conditional-tier layers.
+
+## 2026-08-07 20:31 append — campaign cadence: stage 1 complete, stage 2 tiling
+
+- 34-graph campaign stage 1 (probe of all 25,632 (dec, slice) pairs at
+  30k caps) finished in 3.7 h. Per-graph best-decomposition picture over
+  the 6 probe slices: 26 graphs have exactly 1 hot probe slice, 4 have
+  2, 3 have all 6 hot; none has a fully clean probe dec, so stage 2
+  decides how many die at the 150k full-96-tile level. Graph 32 remains
+  outside the campaign (zero circle parametrizations; needs the
+  2-sphere stage).
+- Stage 2 running: 6,336 tile tasks (33 graphs x best 2 decs x 96
+  slices at 150k); the machine is now the campaign's alone (all
+  verification jobs finished green earlier this evening).
+- No certifications yet; they are expected from stage 2 onward and will
+  be logged and pushed as they land.
