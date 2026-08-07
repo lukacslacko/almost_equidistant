@@ -42,6 +42,7 @@ n18_*.log
 d6_*.log
 d6_profile.stderr
 d6_18_numerical_checkpoints/
+d6_k6_tight_hall_support_certificates.json
 finish17*.log
 enum6_run.log
 ckernel5dbg.dll
