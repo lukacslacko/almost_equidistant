@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "filter": "K7_cap3_support_rank_equality",
+  "graphs": 113136,
+  "workers": 24,
+  "wall_seconds": 59.243485000,
+  "applicable_K7_graphs": 113136,
+  "seeds_checked": 186162,
+  "eligible_cap3_covers_checked": 11157735,
+  "cover_size_histogram": {"0": 75602, "1": 704698, "2": 2963135, "3": 7414300},
+  "cover_failures": {"support": 3107870, "clique_K": 8941552, "degree_F": 3441826, "equality_masks": 10946178, "basis_kernel": 10219871, "subspace_K": 58851, "component_B": 10050892, "base_joint": 10173744, "enhanced_joint": 11041195},
+  "graph_rejections": {"cap3": 3580, "support_individual_post_cap3": 6268, "clique_K_individual_post_cap3": 37402, "degree_F_individual_post_cap3": 10548, "equality_masks_individual_post_cap3": 71120, "basis_kernel_individual_post_cap3": 51008, "subspace_K_individual_post_cap3": 43, "component_B_individual_post_cap3": 76874, "base_joint_existential": 80738, "enhanced_joint_existential": 95372},
+  "survivors": 17764,
+  "support_CSP_nodes": 10004565,
+  "zero_forcing_initial_sets_checked": 6561523842
+}

@@ -1,0 +1,2960 @@
+{
+  "certificate": {
+    "basis_neighbour_masks": [
+      [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    ],
+    "clique": [
+      0,
+      1,
+      2,
+      4,
+      7
+    ],
+    "kind": "rank_two_schur_pentad_coefficientwise_positive",
+    "pair_labels": [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        10,
+        11
+      ]
+    ],
+    "pentad_index": 9,
+    "pentad_vertices": [
+      3,
+      5,
+      9,
+      10,
+      11
+    ],
+    "polynomial_degree": 8,
+    "positive_polynomial": [
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          1,
+          1,
+          3
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          1,
+          3,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          1,
+          4,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          2,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          3,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          3,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          0,
+          0,
+          4,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          5,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          9,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          2,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          1,
+          1,
+          3
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          18,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          9,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          1,
+          3,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          2,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          1,
+          4,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          18,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          18,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          2,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          9,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          3,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          3,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          2,
+          1
+        ],
+        "monomial": [
+          0,
+          1,
+          4,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          10,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          18,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          9,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          1,
+          1,
+          3
+        ]
+      },
+      {
+        "coefficient": [
+          18,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          18,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          9,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          1,
+          3,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          1,
+          4,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          18,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          18,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          18,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          2,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          9,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          3,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          3,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          0,
+          2,
+          4,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          10,
+          1
+        ],
+        "monomial": [
+          0,
+          3,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          0,
+          3,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          3,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          0,
+          3,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          0,
+          3,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          3,
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          0,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          0,
+          3,
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          0,
+          3,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          3,
+          3,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          5,
+          1
+        ],
+        "monomial": [
+          0,
+          4,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          4,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          4,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          0,
+          4,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          0,
+          5,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          4,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          9,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          1,
+          1,
+          3
+        ]
+      },
+      {
+        "coefficient": [
+          9,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          1,
+          3,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          1,
+          4,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          9,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          2,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          3,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          3,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          1,
+          0,
+          4,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          17,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          30,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          15,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          2,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          1,
+          1,
+          3
+        ]
+      },
+      {
+        "coefficient": [
+          30,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          30,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          15,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          1,
+          3,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          2,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          1,
+          4,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          30,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          30,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          30,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          2,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          15,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          3,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          3,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          2,
+          1
+        ],
+        "monomial": [
+          1,
+          1,
+          4,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          28,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          36,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          1,
+          1,
+          3
+        ]
+      },
+      {
+        "coefficient": [
+          36,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          24,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          1,
+          3,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          1,
+          4,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          36,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          24,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          24,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          2,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          3,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          3,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          1,
+          2,
+          4,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          22,
+          1
+        ],
+        "monomial": [
+          1,
+          3,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          18,
+          1
+        ],
+        "monomial": [
+          1,
+          3,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          3,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          18,
+          1
+        ],
+        "monomial": [
+          1,
+          3,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          1,
+          3,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          3,
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          18,
+          1
+        ],
+        "monomial": [
+          1,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          1,
+          3,
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          1,
+          3,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          3,
+          3,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          8,
+          1
+        ],
+        "monomial": [
+          1,
+          4,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          4,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          4,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          1,
+          4,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          1,
+          5,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          2,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          9,
+          1
+        ],
+        "monomial": [
+          2,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          2,
+          0,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          9,
+          1
+        ],
+        "monomial": [
+          2,
+          0,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          2,
+          0,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          2,
+          0,
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          9,
+          1
+        ],
+        "monomial": [
+          2,
+          0,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          2,
+          0,
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          2,
+          0,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          2,
+          0,
+          3,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          21,
+          1
+        ],
+        "monomial": [
+          2,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          24,
+          1
+        ],
+        "monomial": [
+          2,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          2,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          24,
+          1
+        ],
+        "monomial": [
+          2,
+          1,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          2,
+          1,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          2,
+          1,
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          24,
+          1
+        ],
+        "monomial": [
+          2,
+          1,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          2,
+          1,
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          12,
+          1
+        ],
+        "monomial": [
+          2,
+          1,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          2,
+          1,
+          3,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          27,
+          1
+        ],
+        "monomial": [
+          2,
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          21,
+          1
+        ],
+        "monomial": [
+          2,
+          2,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          2,
+          2,
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "coefficient": [
+          21,
+          1
+        ],
+        "monomial": [
+          2,
+          2,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          2,
+          2,
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          2,
+          2,
+          1,
+          3,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          21,
+          1
+        ],
+        "monomial": [
+          2,
+          2,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          2,
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          2,
+          2,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          2,
+          2,
+          3,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          15,
+          1
+        ],
+        "monomial": [
+          2,
+          3,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          2,
+          3,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          2,
+          3,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          2,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          2,
+          4,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          4,
+          1
+        ],
+        "monomial": [
+          3,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          3,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          3,
+          0,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          3,
+          0,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          11,
+          1
+        ],
+        "monomial": [
+          3,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          3,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          3,
+          1,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          6,
+          1
+        ],
+        "monomial": [
+          3,
+          1,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          10,
+          1
+        ],
+        "monomial": [
+          3,
+          2,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          3,
+          2,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          3,
+          2,
+          1,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          3,
+          2,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          3,
+          1
+        ],
+        "monomial": [
+          3,
+          3,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          4,
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          2,
+          1
+        ],
+        "monomial": [
+          4,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "coefficient": [
+          1,
+          1
+        ],
+        "monomial": [
+          4,
+          2,
+          1,
+          1,
+          0
+        ]
+      }
+    ],
+    "remainder": [
+      3,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11
+    ],
+    "schema": 1,
+    "sign": 1
+  },
+  "certificate_summary": {
+    "coefficient_max": [
+      36,
+      1
+    ],
+    "coefficient_min": [
+      1,
+      1
+    ],
+    "monomial_degree_counts": {
+      "2": 1,
+      "3": 5,
+      "4": 15,
+      "5": 35,
+      "6": 55,
+      "7": 55,
+      "8": 35
+    },
+    "pentad_index": 9,
+    "pentad_vertices": [
+      3,
+      5,
+      9,
+      10,
+      11
+    ],
+    "polynomial_degree": 8,
+    "positive_terms": 201,
+    "sign": 1
+  },
+  "claim": "For this one exact no-near cover, a required K5 leaves a PSD Schur complement of rank at most two. The stored signed pentad is identically zero for rank-two Gram data but expands to a nonzero polynomial with every coefficient positive in the strictly positive Sherman variables, an exact contradiction.",
+  "command": "run_d6_k7_ranktwo_pentad_pilot.py",
+  "created_at": "2026-08-06T20:58:28.933012+00:00",
+  "elapsed_seconds": 4.246251167000082,
+  "git": {
+    "available": true,
+    "branch": "codex/dimension6",
+    "commit": "26723cf6e0264bfede7a4534dc393e4d60c4586c",
+    "dirty": true,
+    "porcelain_lines": [
+      "?? analyze_d6_n14_k7_rank_obstructions.py",
+      "?? d6_k6_psd_zmatrix.py",
+      "?? d6_k7_mobius_cycle_containment.py",
+      "?? d6_k7_mobius_cycle_containment_report.json",
+      "?? d6_k7_mobius_cycle_containment_verification.json",
+      "?? d6_k7_mobius_cycle_obstructions.md",
+      "?? d6_k7_rankone_active_sign.md",
+      "?? d6_k7_rankone_active_sign.py",
+      "?? d6_k7_rankone_active_sign_pilot_report.json",
+      "?? d6_k7_ranktwo_pentad.py",
+      "?? d6_k7_support_capacity.py",
+      "?? d6_k7_support_capacity_pilot.md",
+      "?? d6_k7_support_capacity_pilot_report.json",
+      "?? d6_k7_support_capacity_pilot_verification.json",
+      "?? d6_n14_k7_rank_obstructions.json",
+      "?? d6_n14_k7_rank_obstructions.md",
+      "?? probe_d6_k6_psd_zmatrix.py",
+      "?? run_d6_k7_joint_support_full.py",
+      "?? run_d6_k7_rankone_active_sign_pilot.py",
+      "?? run_d6_k7_ranktwo_pentad_pilot.py",
+      "?? run_d6_k7_support_capacity_pilot.py",
+      "?? test_d6_k7_mobius_cycle_containment.py",
+      "?? test_d6_k7_rankone_active_sign.py",
+      "?? test_d6_k7_support_capacity.py",
+      "?? test_run_d6_k7_joint_support_full.py",
+      "?? test_verify_d6_k7_support_capacity_pilot.py",
+      "?? verify_d6_k7_joint_support_full.py",
+      "?? verify_d6_k7_mobius_cycle_containment.py",
+      "?? verify_d6_k7_rankone_active_sign.py",
+      "?? verify_d6_k7_ranktwo_pentad.py",
+      "?? verify_d6_k7_support_capacity_pilot.py"
+    ],
+    "porcelain_sha256": "9eb2eea80f81b9002549035abef968330153bbe9c547405cb31738ce30d5f78a"
+  },
+  "kind": "d6_k7_ranktwo_pentad_first_core_pilot",
+  "machine": {
+    "implementation": "CPython",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]"
+  },
+  "schema": 1,
+  "scope": {
+    "clique": [
+      0,
+      1,
+      2,
+      4,
+      7
+    ],
+    "cores_tested": 1,
+    "covers_tested": 1,
+    "graph_index": 64364,
+    "graph_n": [
+      4062,
+      3581,
+      3827,
+      3043,
+      1959,
+      3038,
+      3887,
+      2623,
+      1147,
+      3325,
+      855,
+      751
+    ],
+    "nvertices": [
+      0,
+      2,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      12,
+      13,
+      17,
+      18
+    ],
+    "rank_upper": 7,
+    "seed": [
+      1,
+      3,
+      8,
+      11,
+      14,
+      15,
+      16
+    ],
+    "zmask": 0
+  },
+  "source_hashes": {
+    "d6_k7_positive_polynomial_dual.py": "190b6df17b90d6d19e4ce16829cd3dfebbfa87b9e7eb3d9d5e341b5a6469008b",
+    "d6_k7_rankone_tetrad_pilot.py": "fe5a964b64817a7347776f4b1d5807b1f72d43bddfdd9934a0a324e13bfd260e",
+    "d6_k7_ranktwo_pentad.py": "427bd20dbf8736a43077092d0cf23e15261499821bbc3142ae04e15cfce7b0b0",
+    "run_d6_k7_ranktwo_pentad_pilot.py": "a5be15350e0585c1ddb593dba26f9bf2584ad04e65b35088b21e0fd2ef87d01b"
+  },
+  "status": "REJECTED",
+  "system": {
+    "five_vertex_subsets": 21,
+    "nonzero_pentads": 20,
+    "off_diagonal_pairs": 21,
+    "pentad_degree_counts": {
+      "10": 11,
+      "8": 2,
+      "9": 7
+    },
+    "pentad_term_count_max": 959,
+    "pentad_term_count_min": 0,
+    "remainder": [
+      3,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11
+    ],
+    "zero_pentads": 1
+  },
+  "trust_scope": {
+    "exact": "Integer graph data and exact rational polynomial expansion.",
+    "not_claimed": "This report tests one cover only; it does not by itself claim rejection of the other 52 covers or the full residue."
+  },
+  "upstream": {
+    "basis_pilot": {
+      "path": "d6_k7_arbitrary_basis_extension_pilot_report.json",
+      "sha256": "2c2dd18ded8a0daf505700001e64eb31fdcbf987f6292f91e58a3c07c8dc8339"
+    },
+    "basis_verification": {
+      "path": "d6_k7_arbitrary_basis_extension_pilot_verification.json",
+      "sha256": "789f53f235599b9b4ce0c4b8b288f7fb1ed767d9038d340dff861d18cfee2d44",
+      "status": "PASS"
+    }
+  }
+}

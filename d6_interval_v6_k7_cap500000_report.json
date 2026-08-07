@@ -1,0 +1,1305 @@
+{
+  "KILLED_semantics": "There exists a tried placement order for which every theta slice returned KILLED from the outward-rounded interval kernel.",
+  "certified_killed": 1,
+  "checkpoint_directory": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_interval_v6_k7_cap500000",
+  "checkpoint_result_index_sha256": "e1c90f663a61067425684f96d0d06390cd1387350e5c5551ff9875fc0971804a",
+  "claim": "Only KILLED is a certified non-realizability result. ABORT, UNRESOLVED, and INFRA_ERROR make no mathematical claim.",
+  "completed_graphs": 19,
+  "config_sha256": "39181b4f13071e4b25bdba93c41e8393293735777ff3c4fa48a7da27c1757702",
+  "configuration": {
+    "environment": {
+      "compiler": "Apple clang version 16.0.0 (clang-1600.0.26.6)",
+      "cpu_count": 12,
+      "kernel_compile_command": "cc -O2 -shared -o ckernel6.dylib ckernel6.c -lm",
+      "platform": "macOS-14.5-arm64-arm-64bit",
+      "python": "3.11.15"
+    },
+    "git": {
+      "available": true,
+      "branch": "codex/dimension6",
+      "commit": "feb8c7378a42cb55cd7c8625e51c5f504d177292",
+      "dirty": true,
+      "porcelain_lines": [
+        "?? d6_18_gpu_mps_seed_sphere_control_calibration_128.json",
+        "?? d6_18_gpu_mps_seed_sphere_control_calibration_32.json",
+        "?? d6_18_gpu_mps_unseeded_control_calibration.json",
+        "?? d6_k6_tight_same_z0.py",
+        "?? probe_d6_k6_nested_support_reconstruction.py",
+        "?? probe_d6_k6_rectangular_minor.py",
+        "?? probe_d6_k6_repeated_two_support_arm.py",
+        "?? probe_d6_k6_same_two_support_clique.py",
+        "?? probe_d6_k6_singleton_equal_support_clique_rank.py",
+        "?? probe_d6_k6_singleton_two_support_repeated_three_support.py",
+        "?? probe_d6_k6_tight_same_z0_conjunction.py",
+        "?? probe_d6_k6_tight_support.py",
+        "?? probe_d6_k6_tight_support_disjoint_arms.py",
+        "?? probe_d6_k6_tight_support_rank2.py",
+        "?? probe_d6_k6_tight_support_singleton_fan.py",
+        "?? probe_d6_k6_two_singleton_repeated_three_support_arm.py",
+        "?? probe_d6_k6_two_support_triangle_singleton.py",
+        "?? profile_d6_k6_625_saving_alternatives.py"
+      ],
+      "porcelain_sha256": "d1e973ead66d54be4d576338d7597890fc48d39a3a9f8ac9ec300c05f7c82635"
+    },
+    "kernel_controls": {
+      "negative": {
+        "description": "K8 subgraph, impossible in R6",
+        "placement_order": [
+          8,
+          7,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "records": [
+          {
+            "hi": 0.2617993877991494,
+            "lo": 0.0,
+            "nodes": 33,
+            "part": 0,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 0.5235987755982988,
+            "lo": 0.2617993877991494,
+            "nodes": 33,
+            "part": 1,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 0.7853981633974483,
+            "lo": 0.5235987755982988,
+            "nodes": 33,
+            "part": 2,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.0471975511965976,
+            "lo": 0.7853981633974483,
+            "nodes": 33,
+            "part": 3,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.3089969389957472,
+            "lo": 1.0471975511965976,
+            "nodes": 33,
+            "part": 4,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.5707963267948966,
+            "lo": 1.3089969389957472,
+            "nodes": 33,
+            "part": 5,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.832595714594046,
+            "lo": 1.5707963267948966,
+            "nodes": 33,
+            "part": 6,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.0943951023931953,
+            "lo": 1.832595714594046,
+            "nodes": 33,
+            "part": 7,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.356194490192345,
+            "lo": 2.0943951023931953,
+            "nodes": 33,
+            "part": 8,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.6179938779914944,
+            "lo": 2.356194490192345,
+            "nodes": 33,
+            "part": 9,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.8797932657906435,
+            "lo": 2.6179938779914944,
+            "nodes": 33,
+            "part": 10,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.141592653589793,
+            "lo": 2.8797932657906435,
+            "nodes": 33,
+            "part": 11,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.4033920413889427,
+            "lo": 3.141592653589793,
+            "nodes": 33,
+            "part": 12,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.665191429188092,
+            "lo": 3.4033920413889427,
+            "nodes": 33,
+            "part": 13,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.926990816987241,
+            "lo": 3.665191429188092,
+            "nodes": 33,
+            "part": 14,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.1887902047863905,
+            "lo": 3.926990816987241,
+            "nodes": 33,
+            "part": 15,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.4505895925855405,
+            "lo": 4.1887902047863905,
+            "nodes": 33,
+            "part": 16,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.71238898038469,
+            "lo": 4.4505895925855405,
+            "nodes": 33,
+            "part": 17,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.974188368183839,
+            "lo": 4.71238898038469,
+            "nodes": 33,
+            "part": 18,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 5.235987755982989,
+            "lo": 4.974188368183839,
+            "nodes": 33,
+            "part": 19,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 5.497787143782138,
+            "lo": 5.235987755982989,
+            "nodes": 33,
+            "part": 20,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 5.759586531581287,
+            "lo": 5.497787143782138,
+            "nodes": 33,
+            "part": 21,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 6.021385919380436,
+            "lo": 5.759586531581287,
+            "nodes": 33,
+            "part": 22,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 6.283185307179586,
+            "lo": 6.021385919380436,
+            "nodes": 33,
+            "part": 23,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          }
+        ],
+        "required": "every production slice is KILLED",
+        "seed": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "slices": 24,
+        "status_counts": {
+          "KILLED": 24
+        }
+      },
+      "positive": {
+        "description": "K7 plus twelve distinct generic points on the common-unit circle of five seed vertices",
+        "placement_order": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "records": [
+          {
+            "hi": 0.2617993877991494,
+            "lo": 0.0,
+            "nodes": 1001,
+            "part": 0,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 0.5235987755982988,
+            "lo": 0.2617993877991494,
+            "nodes": 1001,
+            "part": 1,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 0.7853981633974483,
+            "lo": 0.5235987755982988,
+            "nodes": 1001,
+            "part": 2,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.0471975511965976,
+            "lo": 0.7853981633974483,
+            "nodes": 1001,
+            "part": 3,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.3089969389957472,
+            "lo": 1.0471975511965976,
+            "nodes": 1001,
+            "part": 4,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.5707963267948966,
+            "lo": 1.3089969389957472,
+            "nodes": 1001,
+            "part": 5,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.832595714594046,
+            "lo": 1.5707963267948966,
+            "nodes": 1001,
+            "part": 6,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.0943951023931953,
+            "lo": 1.832595714594046,
+            "nodes": 1001,
+            "part": 7,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.356194490192345,
+            "lo": 2.0943951023931953,
+            "nodes": 1001,
+            "part": 8,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.6179938779914944,
+            "lo": 2.356194490192345,
+            "nodes": 1001,
+            "part": 9,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.8797932657906435,
+            "lo": 2.6179938779914944,
+            "nodes": 1001,
+            "part": 10,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.141592653589793,
+            "lo": 2.8797932657906435,
+            "nodes": 1001,
+            "part": 11,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.4033920413889427,
+            "lo": 3.141592653589793,
+            "nodes": 1001,
+            "part": 12,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.665191429188092,
+            "lo": 3.4033920413889427,
+            "nodes": 1001,
+            "part": 13,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.926990816987241,
+            "lo": 3.665191429188092,
+            "nodes": 1001,
+            "part": 14,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.1887902047863905,
+            "lo": 3.926990816987241,
+            "nodes": 1001,
+            "part": 15,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.4505895925855405,
+            "lo": 4.1887902047863905,
+            "nodes": 1001,
+            "part": 16,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.71238898038469,
+            "lo": 4.4505895925855405,
+            "nodes": 1001,
+            "part": 17,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.974188368183839,
+            "lo": 4.71238898038469,
+            "nodes": 1001,
+            "part": 18,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 5.235987755982989,
+            "lo": 4.974188368183839,
+            "nodes": 1001,
+            "part": 19,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 5.497787143782138,
+            "lo": 5.235987755982989,
+            "nodes": 1001,
+            "part": 20,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 5.759586531581287,
+            "lo": 5.497787143782138,
+            "nodes": 1001,
+            "part": 21,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 6.021385919380436,
+            "lo": 5.759586531581287,
+            "nodes": 1001,
+            "part": 22,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 6.283185307179586,
+            "lo": 6.021385919380436,
+            "nodes": 1001,
+            "part": 23,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          }
+        ],
+        "required": "every production slice is not KILLED",
+        "seed": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "slices": 24,
+        "status_counts": {
+          "ABORT": 24
+        }
+      },
+      "production_slices_exercised": 24,
+      "status": "PASS"
+    },
+    "launch": {
+      "outer_launch_command": "caffeinate -dimsu python3 run_d6_interval_v6.py --workers 9 --orders 4 --slices 24 --cap 500000 --checkpoint-dir .runs/d6_interval_v6_k7_cap500000 --output .runs/d6_interval_v6_k7_cap500000.json --decisions .runs/d6_interval_v6_k7_cap500000.tsv --checkpoint-every 1 --progress-every 1",
+      "outer_launch_command_user_supplied": true,
+      "python_argv": [
+        "/Users/lukacs/claude/opengauss/venv/bin/python3",
+        "run_d6_interval_v6.py",
+        "--workers",
+        "9",
+        "--orders",
+        "4",
+        "--slices",
+        "24",
+        "--cap",
+        "500000",
+        "--checkpoint-dir",
+        ".runs/d6_interval_v6_k7_cap500000",
+        "--output",
+        ".runs/d6_interval_v6_k7_cap500000.json",
+        "--decisions",
+        ".runs/d6_interval_v6_k7_cap500000.tsv",
+        "--checkpoint-every",
+        "1",
+        "--progress-every",
+        "1",
+        "--outer-launch-command",
+        "caffeinate -dimsu python3 run_d6_interval_v6.py --workers 9 --orders 4 --slices 24 --cap 500000 --checkpoint-dir .runs/d6_interval_v6_k7_cap500000 --output .runs/d6_interval_v6_k7_cap500000.json --decisions .runs/d6_interval_v6_k7_cap500000.tsv --checkpoint-every 1 --progress-every 1"
+      ],
+      "python_command": "/Users/lukacs/claude/opengauss/venv/bin/python3 run_d6_interval_v6.py --workers 9 --orders 4 --slices 24 --cap 500000 --checkpoint-dir .runs/d6_interval_v6_k7_cap500000 --output .runs/d6_interval_v6_k7_cap500000.json --decisions .runs/d6_interval_v6_k7_cap500000.tsv --checkpoint-every 1 --progress-every 1 --outer-launch-command 'caffeinate -dimsu python3 run_d6_interval_v6.py --workers 9 --orders 4 --slices 24 --cap 500000 --checkpoint-dir .runs/d6_interval_v6_k7_cap500000 --output .runs/d6_interval_v6_k7_cap500000.json --decisions .runs/d6_interval_v6_k7_cap500000.tsv --checkpoint-every 1 --progress-every 1'"
+    },
+    "sampling": {
+      "population": "K7",
+      "sample": null,
+      "sample_seed": 600019006,
+      "shard": 0,
+      "shards": 1
+    },
+    "schema": 4,
+    "search": {
+      "cap": 500000,
+      "include_bulk_order": false,
+      "orders": 4,
+      "slices": 24,
+      "zero_circle_only": false
+    },
+    "selection": {
+      "graphs": 19,
+      "indices_sha256": "af25b842ca9eaa6e9721f51d0400be2436d930b72cc33c72bc366f0ac5e41290",
+      "population_counts": {
+        "K7": 19
+      },
+      "selection_layer": {
+        "certificate_accounting": {
+          "exact_rejections_from_v5": 264,
+          "interval_incremental_rejections": 3,
+          "interval_non_KILLED_used": false,
+          "interval_trust_assumptions": {
+            "basic_arithmetic": "IEEE-754 binary64 basic operations and sqrt are correctly rounded; each interval endpoint is expanded with nextafter.",
+            "candidate_nonedges": "unconstrained and allowed to be unit distance",
+            "transcendentals": "macOS libm cos endpoint values are assumed within 8 ulps; the kernel pads both directions by 8 nextafter steps and includes all interior extrema."
+          }
+        },
+        "combined": 644,
+        "counts": {
+          "K6_only": 625,
+          "K7": 19
+        },
+        "kind": "mixed_certificate_d6_current_residue_v6",
+        "manifest": {
+          "path": "/Users/lukacs/chatgpt/almost_equidistant/d6_current_residue_manifest_v6.json",
+          "sha256": "c513bcc40c037af23340dce3cc91d593a101dd1d073f93feab82abd556efadc9"
+        },
+        "ordered_indices_sha256": "907b6fe460846ab613e7d35a94dbfc6eb1eb94322a36f10b4500a8ce4fcc6ccf",
+        "verification": {
+          "path": "/Users/lukacs/chatgpt/almost_equidistant/d6_current_residue_manifest_v6_verification.json",
+          "sha256": "3d11cbd20cb59b42a8c8fd5252fb3ef3dea649576982ea8017622fad3279a7bc",
+          "status": "PASS"
+        }
+      }
+    },
+    "sources": {
+      "cdriver6.py": "8f65948c8bc95242d0fde50a8cbcb798cb0e225b78a8ce626382d00135b95173",
+      "ckernel6.c": "383ef7a17c328869c338f64a16f2b90875ff968fe2fc20e9a5c3094c830e0874",
+      "ckernel6.dylib": "ec93d78302d6fcf0f3a21ebcdb65333004eb7a406ab4ada8445231536fed07bd",
+      "interval_runner": "58fbbbc548ec3cc6b9d5b231a6790249b02a75d7bfd82f1afcd7fc77fce59404",
+      "ival.py": "524e41e0d0637a5352c59ec998009b968f2c9f5e7f31b7f7927e8bc36c2e6fa0",
+      "wrapper": "509ec8055542bb60863756d1ce64a24cccfe57ccc9f56f13925edf3290ac38be"
+    },
+    "trust_assumptions": {
+      "basic_arithmetic": "IEEE-754 binary64 basic operations and sqrt are correctly rounded; each interval endpoint is expanded with nextafter.",
+      "candidate_nonedges": "unconstrained and allowed to be unit distance",
+      "transcendentals": "macOS libm cos endpoint values are assumed within 8 ulps; the kernel pads both directions by 8 nextafter steps and includes all interior extrema."
+    }
+  },
+  "decisions": {
+    "path": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_interval_v6_k7_cap500000.tsv",
+    "rows_excluding_header": 19,
+    "sha256": "61eb84688c2a24ae8ba8f727c5e2f2250693f15ab74452c21e47beb6c126a869"
+  },
+  "kernel_status_totals": {
+    "ABORT": 25,
+    "KILLED": 77,
+    "SURVIVORS": 0
+  },
+  "killed_by_population": {
+    "K6": 0,
+    "K7": 1
+  },
+  "results": [
+    {
+      "elapsed_seconds": 426.78219787499984,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 316173,
+      "kernel_aborts": 2,
+      "kernel_calls": 7,
+      "kernel_killed": 5,
+      "kernel_survivors": 0,
+      "orders_available": 3,
+      "orders_tried": 2,
+      "ordinal": 0,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 1000417,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 827.4277695829951,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 2581209,
+      "kernel_aborts": 3,
+      "kernel_calls": 3,
+      "kernel_killed": 0,
+      "kernel_survivors": 0,
+      "orders_available": 4,
+      "orders_tried": 3,
+      "ordinal": 1,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 1500003,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 130.84230970899807,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 2592657,
+      "kernel_aborts": 3,
+      "kernel_calls": 8,
+      "kernel_killed": 5,
+      "kernel_survivors": 0,
+      "orders_available": 4,
+      "orders_tried": 3,
+      "ordinal": 2,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 1500488,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 551.8403430830003,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 2593240,
+      "kernel_aborts": 1,
+      "kernel_calls": 6,
+      "kernel_killed": 5,
+      "kernel_survivors": 0,
+      "orders_available": 2,
+      "orders_tried": 1,
+      "ordinal": 3,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 500660,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 46.99185162499634,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3595554,
+      "kernel_aborts": 0,
+      "kernel_calls": 24,
+      "kernel_killed": 24,
+      "kernel_survivors": 0,
+      "orders_available": 4,
+      "orders_tried": 1,
+      "ordinal": 4,
+      "population": "K7",
+      "status": "KILLED",
+      "total_nodes": 550041,
+      "unresolved_cells": 0,
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        16,
+        11,
+        7,
+        6,
+        2,
+        14,
+        10,
+        9,
+        4,
+        3,
+        0,
+        17
+      ],
+      "winning_seed": [
+        1,
+        5,
+        8,
+        12,
+        13,
+        15,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 97,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 97,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 97,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 97,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 97,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 339424,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 97,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 97,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 97,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 97,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 97,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 97,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 100,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 97,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 97,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 179920,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 347,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 97,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 28407,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 97,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 97,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 97,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 97,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 97,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "elapsed_seconds": 48.97064704100194,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3648882,
+      "kernel_aborts": 1,
+      "kernel_calls": 6,
+      "kernel_killed": 5,
+      "kernel_survivors": 0,
+      "orders_available": 2,
+      "orders_tried": 1,
+      "ordinal": 5,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 500326,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 377.22611141700327,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3729907,
+      "kernel_aborts": 1,
+      "kernel_calls": 6,
+      "kernel_killed": 5,
+      "kernel_survivors": 0,
+      "orders_available": 2,
+      "orders_tried": 1,
+      "ordinal": 6,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 500540,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 749.5706496669955,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3785980,
+      "kernel_aborts": 1,
+      "kernel_calls": 1,
+      "kernel_killed": 0,
+      "kernel_survivors": 0,
+      "orders_available": 2,
+      "orders_tried": 1,
+      "ordinal": 7,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 500001,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 739.1994128749939,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3888410,
+      "kernel_aborts": 3,
+      "kernel_calls": 3,
+      "kernel_killed": 0,
+      "kernel_survivors": 0,
+      "orders_available": 4,
+      "orders_tried": 3,
+      "ordinal": 8,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 1500003,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 597.2653026249973,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3935560,
+      "kernel_aborts": 1,
+      "kernel_calls": 1,
+      "kernel_killed": 0,
+      "kernel_survivors": 0,
+      "orders_available": 2,
+      "orders_tried": 1,
+      "ordinal": 9,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 500001,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 30.144363749997865,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3936177,
+      "kernel_aborts": 1,
+      "kernel_calls": 1,
+      "kernel_killed": 0,
+      "kernel_survivors": 0,
+      "orders_available": 2,
+      "orders_tried": 1,
+      "ordinal": 10,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 500001,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 609.2956597080047,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3936310,
+      "kernel_aborts": 1,
+      "kernel_calls": 6,
+      "kernel_killed": 5,
+      "kernel_survivors": 0,
+      "orders_available": 2,
+      "orders_tried": 1,
+      "ordinal": 11,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 500489,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 589.1482012919951,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3936435,
+      "kernel_aborts": 1,
+      "kernel_calls": 6,
+      "kernel_killed": 5,
+      "kernel_survivors": 0,
+      "orders_available": 2,
+      "orders_tried": 1,
+      "ordinal": 12,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 500486,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 382.51631220799754,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3945490,
+      "kernel_aborts": 1,
+      "kernel_calls": 6,
+      "kernel_killed": 5,
+      "kernel_survivors": 0,
+      "orders_available": 2,
+      "orders_tried": 1,
+      "ordinal": 13,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 500612,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 122.8417709580026,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3945555,
+      "kernel_aborts": 1,
+      "kernel_calls": 6,
+      "kernel_killed": 5,
+      "kernel_survivors": 0,
+      "orders_available": 2,
+      "orders_tried": 1,
+      "ordinal": 14,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 500612,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 903.5205774999995,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3945557,
+      "kernel_aborts": 1,
+      "kernel_calls": 6,
+      "kernel_killed": 5,
+      "kernel_survivors": 0,
+      "orders_available": 2,
+      "orders_tried": 1,
+      "ordinal": 15,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 500564,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 337.10585212500155,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3945564,
+      "kernel_aborts": 1,
+      "kernel_calls": 1,
+      "kernel_killed": 0,
+      "kernel_survivors": 0,
+      "orders_available": 2,
+      "orders_tried": 1,
+      "ordinal": 16,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 500001,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 289.7549772920029,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3947605,
+      "kernel_aborts": 1,
+      "kernel_calls": 1,
+      "kernel_killed": 0,
+      "kernel_survivors": 0,
+      "orders_available": 2,
+      "orders_tried": 1,
+      "ordinal": 17,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 500001,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    },
+    {
+      "elapsed_seconds": 36.14713354199921,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3949382,
+      "kernel_aborts": 1,
+      "kernel_calls": 4,
+      "kernel_killed": 3,
+      "kernel_survivors": 0,
+      "orders_available": 2,
+      "orders_tried": 1,
+      "ordinal": 18,
+      "population": "K7",
+      "status": "ABORT",
+      "total_nodes": 502447,
+      "unresolved_cells": 0,
+      "winning_circles": -1,
+      "winning_order": -1,
+      "winning_placement_order": null,
+      "winning_seed": null,
+      "winning_slice_records": null
+    }
+  ],
+  "runtime": {
+    "maximum_graph_seconds": 903.5205774999995,
+    "newly_completed_graphs": 19,
+    "resume_wall_seconds": 1453.1518579170006,
+    "sum_graph_seconds": 7796.591443874982
+  },
+  "schema": 2,
+  "session": {
+    "argv": [
+      "/Users/lukacs/claude/opengauss/venv/bin/python3",
+      "run_d6_interval_v6.py",
+      "--workers",
+      "9",
+      "--orders",
+      "4",
+      "--slices",
+      "24",
+      "--cap",
+      "500000",
+      "--checkpoint-dir",
+      ".runs/d6_interval_v6_k7_cap500000",
+      "--output",
+      ".runs/d6_interval_v6_k7_cap500000.json",
+      "--decisions",
+      ".runs/d6_interval_v6_k7_cap500000.tsv",
+      "--checkpoint-every",
+      "1",
+      "--progress-every",
+      "1",
+      "--outer-launch-command",
+      "caffeinate -dimsu python3 run_d6_interval_v6.py --workers 9 --orders 4 --slices 24 --cap 500000 --checkpoint-dir .runs/d6_interval_v6_k7_cap500000 --output .runs/d6_interval_v6_k7_cap500000.json --decisions .runs/d6_interval_v6_k7_cap500000.tsv --checkpoint-every 1 --progress-every 1"
+    ],
+    "command": "/Users/lukacs/claude/opengauss/venv/bin/python3 run_d6_interval_v6.py --workers 9 --orders 4 --slices 24 --cap 500000 --checkpoint-dir .runs/d6_interval_v6_k7_cap500000 --output .runs/d6_interval_v6_k7_cap500000.json --decisions .runs/d6_interval_v6_k7_cap500000.tsv --checkpoint-every 1 --progress-every 1 --outer-launch-command 'caffeinate -dimsu python3 run_d6_interval_v6.py --workers 9 --orders 4 --slices 24 --cap 500000 --checkpoint-dir .runs/d6_interval_v6_k7_cap500000 --output .runs/d6_interval_v6_k7_cap500000.json --decisions .runs/d6_interval_v6_k7_cap500000.tsv --checkpoint-every 1 --progress-every 1'",
+    "config_sha256": "39181b4f13071e4b25bdba93c41e8393293735777ff3c4fa48a7da27c1757702",
+    "pid": 18953,
+    "schema": 1,
+    "started_utc": "2026-08-07T11:49:09.263126+00:00",
+    "workers": 9
+  },
+  "status_counts": {
+    "ABORT": 18,
+    "INFRA_ERROR": 0,
+    "KILLED": 1,
+    "UNRESOLVED": 0
+  },
+  "total_graphs": 19,
+  "unresolved_total": 18
+}

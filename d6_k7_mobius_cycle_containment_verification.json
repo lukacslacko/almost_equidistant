@@ -1,0 +1,56 @@
+{
+  "K7_seeds_reenumerated": 14453,
+  "combined_hits": 0,
+  "kind": "d6_k7_mobius_cycle_containment_independent_verification",
+  "mobius_algebra": {
+    "M6": [
+      [
+        [
+          -27,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          -27,
+          1
+        ]
+      ]
+    ],
+    "fixed_point_discriminants_T1_through_T5": [
+      -3,
+      -27,
+      -108,
+      -243,
+      -243
+    ],
+    "forbidden_cycle_lengths_checked": [
+      3,
+      4
+    ],
+    "retained_negative_control_cycle_length": 6
+  },
+  "quadrilateral_coordinate_cycles_reenumerated": 1517565,
+  "quadrilateral_hits": 0,
+  "report": {
+    "path": "d6_k7_mobius_cycle_containment_report.json",
+    "sha256": "e97017385c3fe13938cf2c9f372dd4a2d2fe06322368a05c70ca2a428455efbd"
+  },
+  "required_edge_only": true,
+  "residue": 12839,
+  "residue_indices_sha256": "320a68221ef597a1252d0c16cba6b30b4bef2bb6c13b73ce529e860ed431d497",
+  "schema": 1,
+  "status": "PASS",
+  "targets": 12839,
+  "triangle_coordinate_cycles_reenumerated": 505855,
+  "triangle_hits": 0,
+  "verifier_source_sha256": "7074457c215eebb0330d34c473f90cf57c95d19e9e3616b13ba3729b9b6a649a"
+}

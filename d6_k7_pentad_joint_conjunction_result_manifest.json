@@ -1,0 +1,54 @@
+{
+  "artifacts": {
+    "report": {
+      "bytes": 183358,
+      "path": "d6_k7_pentad_joint_conjunction_report.json",
+      "sha256": "4528b03a4c8c7b644051e6349dbd10dc3a634f81b35c56d46b09c471eb0436fa"
+    },
+    "verification": {
+      "bytes": 3583,
+      "path": "d6_k7_pentad_joint_conjunction_verification.json",
+      "sha256": "5c47730967dc7a9a41fb7810642ed354d50ddd30ded59bca56025cc58b92acb7"
+    }
+  },
+  "commands": {
+    "production": "/Users/lukacs/claude/opengauss/venv/bin/python3 build_d6_k7_pentad_joint_conjunction.py --workers 11",
+    "tests": "/Users/lukacs/claude/opengauss/venv/bin/python3 -m unittest -v test_d6_k7_pentad_joint_conjunction.py",
+    "verification": "/Users/lukacs/claude/opengauss/venv/bin/python3 verify_d6_k7_pentad_joint_conjunction.py --report d6_k7_pentad_joint_conjunction_report.json --report-sha256 4528b03a4c8c7b644051e6349dbd10dc3a634f81b35c56d46b09c471eb0436fa --workers 11 --pentad-workers 4"
+  },
+  "exact_result": {
+    "combined_rejected_graphs": 103,
+    "combined_rejected_indices_sha256": "8fd5f7ea05d02f43ded5a9d8d57824e993d8d5ea22f46de1d8ac4f454c0073c2",
+    "input_graphs": 258,
+    "input_indices_sha256": "55ab329dbe3ae4dbfa10378ff023a168fc6ab306ffc7af14bbd9790a68108a09",
+    "new_pentad_conjunction_rejections": 34,
+    "prior_joint_support_rejections": 69,
+    "residue_graphs": 155,
+    "residue_indices_sha256": "7c9b63948551dbbe0e76a789013aa78ed65ef023fd22b40062ee6425afd41b73"
+  },
+  "independent_verification": {
+    "eligible_covers_replayed": 145209,
+    "graphs_recomputed": 258,
+    "inherited_passing_covers": 738,
+    "joint_pre_capacity_failing_covers": 342,
+    "pentad_certificates_reexpanded": 36,
+    "pre_capacity_passing_covers": 396,
+    "root_rerun_equal_after_removing_runtime_metadata": true,
+    "seeds_replayed": 390,
+    "status": "PASS"
+  },
+  "kind": "d6-k7-support-pentad-conjunction-result-manifest",
+  "schema": 1,
+  "semantics": {
+    "aggregate_profile_used_for_claim": false,
+    "candidate_nonedges_unconstrained": true,
+    "full_seed_local_support_or_pentad_disjunction": true,
+    "unresolved_is_not_rejected": true
+  },
+  "source_boundary": {
+    "builder_sha256": "383cc8d55298e5d82f974e2b17d79bb4c830d4316151b1d34bbb2d67c5c81768",
+    "commit": "4982e564eecf552f83160644a61fb78662b13e96",
+    "verifier_sha256": "b5ee8c3c3b75d59cabbb43da79770d4dbc10196d8aa55f0ed5f210c5b077f217"
+  },
+  "status": "COMPLETE"
+}

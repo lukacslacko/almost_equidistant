@@ -1,0 +1,56 @@
+{
+  "config_sha256": "9a3f66f95f5c0515aa7050272178b6aae6522ad65b38fb83cfe111b31715285c",
+  "dependencies_sha256": {
+    "d6_k7_rank_reference.py": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+    "d6_k7_rankone_tetrad_verify.py": "ca12cfc05d745ebb0529100273a8ed8afddd1177bda435101d66786e88af71eb",
+    "d6_k7_special_h_reference.py": "e649633d7262941c9c4608ea694ae0a5d6f29c146d47060c3dae71a036a9d190",
+    "verify_d6_k7_positive_polynomial_dual.py": "0f9c277cd7324cf887faa3d161a9328730833ceabca63c819f7197d423c6953a"
+  },
+  "description": "Independent complete quantifier and rational-identity replay for the full K7 rank-one tetrad campaign.",
+  "environment": {
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "workers": 11
+  },
+  "errors": [],
+  "git": {
+    "available": true,
+    "commit": "71f4f045b9de523c2244130d5c9517e97b8e2d75",
+    "dirty": true,
+    "porcelain_sha256": "cf7ae3ec4efa7ced32ce0f1027ed45866f68ba97335f4799600608f51f6e601d"
+  },
+  "provenance": {
+    "input": ".runs/d6_k7_rank_survivors.json",
+    "input_sha256": "7a0a350142930e4e13830ea44c4fd217f25aeb07bbd6286e51e316f72712c4f9",
+    "prior_certificates": "d6_k7_positive_dual_full_certificates.jsonl.gz",
+    "prior_certificates_sha256": "3adaa7e562dfb9241f205e3e7d2384805dbe7296f9677d76f2f23ce913a4ce7f",
+    "prior_decisions": "d6_k7_positive_dual_full_decisions.tsv.gz",
+    "prior_decisions_sha256": "724a97928422fc8705946ed64e3ce9afd37579d3229e5b3ebb7c4f1144c002ec",
+    "selection": "d6_k7_rankone_tetrad_full_selection.json",
+    "selection_sha256": "86e4f19a203bca111a47924ae05461ada5b21b6341be59d38b1428bebe1f9479",
+    "tetrad_certificates": "/private/tmp/d6_k7_rankone_tetrad_benchmark64.jsonl.gz",
+    "tetrad_certificates_sha256": "c0542a4a8752c36635157307a1c2e5a9743b64c260a17aa1aaa4b02b2c26f658",
+    "tetrad_decisions": "/private/tmp/d6_k7_rankone_tetrad_benchmark64.tsv.gz",
+    "tetrad_decisions_sha256": "5790cf6120dbe7e10ffa5b8584dc69248f10d8b8c9ed0b1a4de58f15bc22cfe7",
+    "tetrad_report": "d6_k7_rankone_tetrad_full_benchmark.json",
+    "tetrad_report_sha256": "edc7564c88b4304356efc807ddbf1003168bff7b68c7bce900a76d36f7e93c07"
+  },
+  "runtime": {
+    "computed_records": 64,
+    "finished": "2026-08-06T19:54:13.740670+00:00",
+    "resumed_records": 0,
+    "wall_seconds": 6.746559832999992
+  },
+  "schema": 1,
+  "summary": {
+    "graphs": 64,
+    "prior_certificates_checked": 0,
+    "status_counts": {
+      "PASS": 64
+    },
+    "tetrad_certificates_checked": 148,
+    "verified_rejections": 64
+  },
+  "verifier_source_sha256": "3016852bdeaeadd0f54eedda6279afe3ae46f326d548be1ab1bd977e353d623f"
+}

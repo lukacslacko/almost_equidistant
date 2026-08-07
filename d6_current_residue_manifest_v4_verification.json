@@ -1,0 +1,44 @@
+{
+  "builder_sha256": "e3c085fcf3e1e8a77e8ac43d42e368d13e103458006bff1ed28a2a9678270178",
+  "checks": {
+    "all_hash_pins": true,
+    "counts_and_hashes": true,
+    "exact_set_filter": true,
+    "graph_structure": true,
+    "import_independence": true,
+    "semantics_and_positive_control": true,
+    "upstream_statuses": true
+  },
+  "counts": {
+    "K6_only": 805,
+    "K7": 155,
+    "combined": 960,
+    "rejected": 17
+  },
+  "manifest": {
+    "path": "d6_current_residue_manifest_v4.json",
+    "sha256": "6ab4bfffc524f5b43409d59888fb596de8130315bda3381e484bb4ce891e03e4"
+  },
+  "ordered_residue_indices_sha256": "06a761f75a434f34956c6b7fe90a8f2fdbcf1a62acb0430f5b820ecdbc27269f",
+  "rejected_indices": [
+    202556,
+    2175302,
+    2275063,
+    2593296,
+    2672875,
+    2673439,
+    3015139,
+    3015146,
+    3334740,
+    3340669,
+    3555775,
+    3655287,
+    3724295,
+    3968267,
+    3968279,
+    3968280,
+    3968436
+  ],
+  "schema": "d6-current-exact-residue-v4-verification-v1",
+  "status": "PASS"
+}

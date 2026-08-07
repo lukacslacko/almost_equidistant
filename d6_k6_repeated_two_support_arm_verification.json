@@ -1,0 +1,35 @@
+{
+  "certificates": {
+    "path": "d6_k6_repeated_two_support_arm_certificates.json",
+    "sha256": "fbaebe286acce8b0c3603f89f05a5316010b51dceabfeface7e73ff55ce90ed2"
+  },
+  "checks": {
+    "all_graph_decisions": true,
+    "certificate_index_and_Z0_coverage": true,
+    "import_independence": true,
+    "independent_ordered_triple_transcription": true,
+    "independent_parent_Hall_and_inertia_kernel": true,
+    "positive_18_control": true
+  },
+  "graphs_recomputed": 634,
+  "graphs_rejected": 9,
+  "graphs_surviving": 625,
+  "ordered_residue_indices_sha256": "04d9475217e294efed0c6eac34a7fad88616c90ad7d37a2525776a713e6dd0e1",
+  "positive_18_control": {
+    "K6_seeds": 32,
+    "passed": true
+  },
+  "rejected_indices_sha256": "9daf9767df740b642483c3046019043d9114fa9cabf010a126c51fe293234639",
+  "report": {
+    "path": "d6_k6_repeated_two_support_arm_report.json",
+    "sha256": "ea8d9438d062b92857a1057b950e76b8ae08bbe1bf97b4327130fd4058171ebe"
+  },
+  "runtime": {
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "wall_seconds": 34.168533500000194,
+    "workers": 8
+  },
+  "schema": "d6-k6-repeated-two-support-arm-verification-v1",
+  "status": "PASS"
+}

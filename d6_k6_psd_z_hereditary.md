@@ -1,0 +1,351 @@
+# Hereditary PSD--Z support Hall: exact K6 production result
+
+This exact layer adds a principal-submatrix consequence to the K6 PSD
+Z-matrix system.  On the 861 graphs surviving `d6_k6_psd_zmatrix.py`, the
+source-bound production run rejects 30 graphs and leaves 831.  Every
+rejection is obtained by the hereditary bipartite system alone; none needs
+the frozen non-bipartite system as a final conjunction.  The independent
+checker recomputed all 861 decisions and replayed all 3,392 exhaustive `Z0`
+certificate rows.  The known realizable 18-point control passes all 32 of its
+required K6 seeds in production and in the checker.
+
+The frozen source boundary is commit
+`51d227e5efd19a7064002a3014afa32142afe9e6`.  The production implementation
+is `d6_k6_psd_z_hereditary.py`; its independent checker is
+`verify_d6_k6_psd_z_hereditary.py`.  The earlier exact discovery probe is
+retained as `probe_d6_k6_psd_z_hereditary.py` for provenance.
+
+## Principal-submatrix lemma
+
+Let `A` be a real symmetric positive-semidefinite Z-matrix whose graph of
+strictly negative off-diagonal entries is connected.  Then every proper
+principal submatrix of `A` is positive definite.
+
+If `A` is positive definite this follows immediately.  Otherwise choose
+`rho > max_i A_ii` and put
+
+```text
+B = rho I - A.
+```
+
+The matrix `B` is nonnegative and irreducible.  Since `A` is singular and
+positive semidefinite, `rho` is the Perron root of `B`.  Perron--Frobenius
+therefore makes `ker A` one-dimensional and spanned by a vector with every
+coordinate strictly positive.  If a proper principal submatrix `A[T,T]`
+were singular, a nonzero vector `x` supported on `T` would satisfy
+`x^T A x=0` after extension by zero.  Positive semidefiniteness implies
+`Ax=0`, contradicting the full support of every nonzero kernel vector.
+
+For a PSD--Z-applicable connected K6 side-graph component `F_i`, diagonal
+congruence and, in the positive bipartite case, signature switching identify
+its Gram block `Q_i` with such an `A`.  Congruence respects principal
+submatrices.  Consequently
+
+```text
+rank Q_i[T,T] = |T|                 for nonempty proper T subset F_i.
+```
+
+For `T=F_i` the production rule retains the strongest old componentwise
+lower bound
+
+```text
+r_i = max(ordinary zero-forcing, exact inertia, PSD--Z n-1).
+```
+
+It does not pretend that a full singular block has rank `|F_i|`.  A
+positive-sign non-bipartite `F_i` is not PSD--Z-applicable; for that block the
+production rule permits only the empty choice or the full block with its
+existing lower bound.
+
+## Strongest additive Hall formulation used
+
+Fix one eligible `Z0`, one bipartite Lorentz component, and one of its two
+generic sign orientations.  Decompose each of the two side graphs into
+connected components.  Choose independently:
+
+* at most one subset `T_i` from each connected side component `F_i`;
+* any subset of the singleton `Z0` blocks.
+
+For a PSD--Z-applicable `F_i`, every `T_i` is allowed and contributes
+`|T_i|` when proper or `r_i` when full.  For a nonapplicable `F_i`, only the
+full choice contributes `r_i`.  The chosen spans from different `F_i`, from
+opposite Lorentz sides, and from `Z0` are mutually Gram-orthogonal.  Thus
+every such selection must obey
+
+```text
+sum_i rank_lower(T_i) + number_of_chosen_Z0
+    <= |union of the selected vertices' allowed seed-coordinate masks|.   (H)
+```
+
+Only one subset is selected from a given connected span.  In particular,
+the ranks of two overlapping (or disjoint) proper subsets of the same `F_i`
+are never added; their union is simply another single choice.  Selecting
+every full component recovers the previous whole-side block Hall test, so
+this system genuinely refines the frozen parent test.
+
+The actual support of a defect vector may be any subset of its candidate
+allowed mask.  Replacing actual supports by allowed masks enlarges the right
+side of (H), hence makes the test weaker.  Failure of (H) therefore never
+requires a candidate nonedge to be genuinely non-unit or an allowed
+coordinate to be nonzero.
+
+The implementation compresses the Cartesian product exactly.  After each
+connected span it keeps, for each of the 64 possible coordinate unions, the
+largest attainable rank.  A smaller rank with the same union can never
+create a later violation that the larger one cannot create.  This dominance
+argument is the only compression; there is no numerical or heuristic prune.
+The generic systems remain alternative to the separate lightlike case.
+
+## Mathematical and implementation controls
+
+The source-bound tests and kernels include these exact controls:
+
+* the singular path Laplacian has determinant zero and every proper
+  principal determinant positive;
+* a positive-definite connected Z-matrix has all tested principal
+  determinants positive;
+* signature switching the bipartite path preserves those determinants;
+* a reducible PSD Z-matrix supplies the expected counterexample, showing why
+  connectedness is needed;
+* a synthetic support system has an old full-block inequality `2 <= 2` but a
+  hereditary proper-pair violation `2 > 1`;
+* a separate control forbids the tempting false step of adding the ranks of
+  two overlapping subsets from the same connected span: they are alternative
+  choices, not orthogonal summands;
+* the known realizable 18-point graph passes all 32 required K6 seeds with
+  zero impossible seeds.
+
+## Discovery pilot before the frozen source boundary
+
+The parent boundary is the ordered 861-index complement of the exact PSD
+Z-matrix rejection set, with stable hash
+
+```text
+09ebce17d2b72fa6514fc6a8a938376626d373161d2e1b4dd8d31c5e00c18db5.
+```
+
+Commands:
+
+```text
+/Users/lukacs/claude/opengauss/venv/bin/python3 \
+  probe_d6_k6_psd_z_hereditary.py --workers 11 \
+  --output /private/tmp/d6_k6_psd_z_hereditary_full.json
+
+/Users/lukacs/claude/opengauss/venv/bin/python3 \
+  probe_d6_k6_psd_z_hereditary.py --workers 1 \
+  --output /private/tmp/d6_k6_psd_z_hereditary_full_serial.json
+```
+
+The 11-worker run took 2.56 seconds; the serial run took 13.15 seconds.  The
+reports are byte-different only in their runtime records and are exactly
+equal after removing the `runtime` object.  The stable hash of that common
+content is
+
+```text
+1397cb3d354ebebc7f0b0c96eab1a64dbf63e661f6f9557fd353fb75f07a2508.
+```
+
+The parallel raw report has SHA-256
+`7ddaed302ac94c718626c61801b5906f61e326830432ec59493be0c5066d3def`.
+It is 44,685,877 bytes because it retains an exhaustive `Z0` diagnostic for
+the first impossible seed of every rejected graph, so it remains in
+`/private/tmp` rather than being proposed as a Git artifact.
+
+| quantity | exact pilot value |
+|---|---:|
+| pinned input / rejected / surviving | 861 / 30 / 831 |
+| standalone hereditary rejections | 30 |
+| same-`Z0` conjunction-only rejections | 0 |
+| K6 seeds checked / impossible | 26,616 / 30 |
+| `Z0` choices considered / matchable | 31,303 / 31,303 |
+| bipartite Lorentz components checked | 205,528 |
+| parent-failing components | 4,262 |
+| parent-passing components newly failed | 227 |
+| generic orientations checked | 411,056 |
+| parent-passing orientations newly failed | 556 |
+| exact dominance-DP transitions | 3,061,385 |
+
+The 30 rejected indices are
+
+```text
+95496, 565234, 940626, 967444, 967512, 1069852, 1167032, 1314598,
+1719587, 1719589, 1784375, 1948930, 2096710, 2237945, 2292297,
+2382072, 2569222, 2569269, 2637179, 2820201, 2862937, 2862950,
+2862961, 2870953, 2902883, 3005616, 3328693, 3555822, 3682937,
+3734545.
+```
+
+Their stable list hash is
+
+```text
+bf256b846be361287784260dfd77b2f50afad63731d9bb81adbe889eab4d82ee.
+```
+
+For example, graph `95496` has an impossible K6 seed
+`[0,1,3,6,14,18]`.  Its parent system had four common passing `Z0` choices;
+the hereditary system has none.  At `Z0=[]`, one orientation selects a
+rank-three full nonapplicable component on vertices `[2,12,16]` and an
+independent proper pair `[4,10]`.  Their allowed masks use only four seed
+coordinates, while their mutually orthogonal spans require rank five.  The
+opposite orientation has the symmetric rank-two proper-pair/rank-three full
+obstruction.  The lightlike alternative also fails.
+
+## Source-bound production package
+
+The pilot has now been translated into a source-only production boundary:
+
+* `d6_k6_psd_z_hereditary.py` writes a deterministic report, a compact
+  exhaustive first-seed certificate archive, and an atomic ordered-prefix
+  checkpoint.  Resume requires both the exact input hash and production
+  source hash to match.
+* `verify_d6_k6_psd_z_hereditary.py` imports neither the production evaluator,
+  this probe, nor a shared new kernel.  It reconstructs Lorentz components,
+  side components, bipartiteness, sign applicability and subset Hall; uses
+  the frozen independent SymPy/Sturm inertia and simultaneous zero-forcing
+  implementations; brute-forces one alternative per connected span; and
+  validates every archived Hall witness, including that no span label is
+  selected twice.
+* `test_d6_k6_psd_z_hereditary.py` contains seven source-bound controls.  In
+  particular, two overlapping independent subsets of one three-vector span
+  would naively give the false inequality `4 > 3`; the correct one-choice
+  formulation passes.  Treating the same data as two genuinely distinct
+  orthogonal spans correctly fails.
+
+The cheap source-bound tests include the known positive graph and an
+independent replay of fixed pilot rejection `95496`.  These five source files
+were audited, committed, and pushed at
+`51d227e5efd19a7064002a3014afa32142afe9e6` before either final run began.
+The committed production source has SHA-256
+
+```text
+7b869895cb9b4f7f3bbf1a1d1b11ec71507b6355c8ec0b7d7f8eaec2a51b180d.
+```
+
+Both the report and certificate archive bind that source hash.
+
+## Final production run
+
+The exact command was
+
+```text
+/Users/lukacs/claude/opengauss/venv/bin/python3 \
+  d6_k6_psd_z_hereditary.py --workers 11 --checkpoint-every 50
+```
+
+The production report records 8.484125 seconds for the invocation's compute
+loop on macOS 14.5 arm64 with Python 3.11.15.  The enclosing command completed
+in 9.043 seconds.  Work was written after each ordered 50-graph batch to an
+atomic checkpoint tied to both the ordered input hash and committed source
+hash.  The final exact totals are:
+
+| quantity | exact production value |
+|---|---:|
+| pinned input / rejected / surviving | 861 / 30 / 831 |
+| K6 seeds checked / impossible | 26,616 / 30 |
+| `Z0` choices considered / matchable | 31,075 / 31,075 |
+| hereditary-passing / failing `Z0` choices | 26,586 / 4,489 |
+| bipartite Lorentz components checked / failed | 192,966 / 4,489 |
+| generic orientations checked | 385,932 |
+| PSD--Z-applicable connected span groups | 464,610 |
+| exact dominance-DP transitions | 2,459,532 |
+
+The production rejection list is exactly the 30-index list displayed above;
+its stable hash is again
+
+```text
+bf256b846be361287784260dfd77b2f50afad63731d9bb81adbe889eab4d82ee.
+```
+
+Thus the pre-source-bound discovery run and the final production run agree
+on every graph-level rejection.  Their profiling counters differ because the
+production layer stops a seed at its first standalone hereditary witness and
+does not evaluate the unnecessary non-bipartite conjunction.
+
+## Independent verification and controls
+
+The independent command was
+
+```text
+/Users/lukacs/claude/opengauss/venv/bin/python3 \
+  verify_d6_k6_psd_z_hereditary.py
+```
+
+It completed in 23.191668 seconds and returned `PASS`.  It recomputed all 861
+graphs, obtained the same 30 rejections and 831 survivors, and independently
+replayed all 3,392 `Z0` rows across the 30 exhaustive first-seed
+certificates.  The per-certificate row-count distribution is
+
+```text
+127 rows x 10 certificates
+ 32 rows x  8 certificates
+247 rows x  6 certificates
+ 64 rows x  6 certificates
+```
+
+The checker imports neither production, the discovery probe, nor a shared
+new kernel.  It reconstructs the Lorentz and side components, sign
+applicability, independent SymPy/Sturm inertia, simultaneous zero forcing,
+and brute-force one-choice-per-span Hall inequalities.  It also validates
+that every archived witness selects each connected span at most once and has
+an exact rank excess over its allowed-coordinate union.
+
+The final control commands were
+
+```text
+/Users/lukacs/claude/opengauss/venv/bin/python3 -m unittest -v \
+  test_d6_k6_psd_z_hereditary.py
+
+/Users/lukacs/claude/opengauss/venv/bin/python3 -m py_compile \
+  d6_k6_psd_z_hereditary.py \
+  verify_d6_k6_psd_z_hereditary.py \
+  test_d6_k6_psd_z_hereditary.py
+```
+
+All seven unit tests passed in 0.491 seconds, and byte-code compilation
+passed.  Production and independent checking both retain the positive
+18-point control: all 32 required K6 seeds pass with no impossible seed.
+
+## Result artifacts
+
+| artifact | bytes | SHA-256 |
+|---|---:|---|
+| `d6_k6_psd_z_hereditary_report.json` | 469,196 | `202a844d6505d3c68c9a0bea8a5d82a983a7e44b96cb9f3c711d80c47f6c00c1` |
+| `d6_k6_psd_z_hereditary_certificates.json` | 16,624,286 | `799602d9516bf44f29594c5ded0a32836a32d64bba82129754d865fa323810ca` |
+| `d6_k6_psd_z_hereditary_checkpoint.json` | 18,189,320 | `1c838e0fff3cedfc2deac7bc6ed37c801a98fc48fe43cc651dba2350ba34ff42` |
+| `d6_k6_psd_z_hereditary_verification.json` | 7,451 | `e9f159863e7605d0ef75485dad77a045e418c87687e0c4b7138d710b071924be` |
+
+The report's embedded certificate and checkpoint hashes equal the standalone
+hashes above.  The completed checkpoint contains the ordered decisions for
+all 861 inputs and is a reproducible resume/audit artifact, not an additional
+mathematical rule.
+
+## Trust assumptions and nonclaims
+
+This layer uses Python arbitrary-precision integer decisions.  Exact inertia
+in the independent checker uses SymPy characteristic polynomials and Sturm
+root counts.  Floating point appears only in elapsed-time reporting; there is
+no tolerance, IEEE-754 rank decision, optimizer, or `libm` assumption in a
+rejection.  The result trusts:
+
+* the pinned 861-graph parent boundary and adjacency corpus, whose ordered
+  stable hash is
+  `09ebce17d2b72fa6514fc6a8a938376626d373161d2e1b4dd8d31c5e00c18db5`;
+* the previously documented K6 Lorentz-coordinate derivation and its
+  `alpha(G)<=2` hypothesis;
+* the Perron--Frobenius proper-principal-submatrix lemma, exact inertia and
+  ordinary zero-forcing rank bounds, and orthogonality of distinct connected
+  side spans and `Z0` singleton spans;
+* correctness of the production and structurally independent checker
+  implementations, Python big-integer arithmetic, SymPy's exact polynomial
+  and Sturm routines, and the recorded source/artifact hashes.
+
+Candidate nonedges are never required to be non-unit.  Allowed defect masks
+remain upper bounds and may contain coordinates that are actually zero.  The
+30 certificates prove non-realizability of those required-edge graphs under
+the documented K6 hypotheses; they do not prescribe omitted distances.
+
+The 831 survivors are filter non-rejections, not realizations.  This result
+alone does not settle dimension six, does not address the separate K7
+residue, and does not prove `f(6)=18`.  It is one exact cumulative reduction
+of the K6-only branch, suitable for union with other independently certified
+layers.

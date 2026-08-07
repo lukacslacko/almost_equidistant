@@ -1,0 +1,1416 @@
+{
+  "command": [
+    "/Users/lukacs/claude/opengauss/venv/bin/python3",
+    "profile_d6_k7_small_support_value.py",
+    "--output",
+    "d6_k7_small_support_value_report.json"
+  ],
+  "dependency_sha256": {
+    "d6_k7_rank_reference.py": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+    "d6_k7_support_propagation.py": "578103f70d2906fbb3d449b7b7b5c1b6c86e5ae17afb0c341602a543bea69f0c"
+  },
+  "description": "Exact sparse one/two-defect value profile on selected labeled-support-propagation survivors; single-process research sample.",
+  "elapsed_seconds": 6.117410500000005,
+  "expected_dependency_sha256": {
+    "d6_k7_rank_reference.py": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+    "d6_k7_support_propagation.py": "578103f70d2906fbb3d449b7b7b5c1b6c86e5ae17afb0c341602a543bea69f0c"
+  },
+  "git": {
+    "branch": "codex/dimension6",
+    "commit": "2f7518e76c33659f514f106dd76bb9b99c5077a5",
+    "dirty": true,
+    "status_porcelain": [
+      "M  .gitignore",
+      "A  run_d6_interval_residue.py",
+      "A  test_d6_interval_residue.py",
+      "?? analyze_d6_n14_k7_rank_obstructions.py",
+      "?? d6_interval_residue_benchmark.json",
+      "?? d6_k7_arbitrary_basis_psd_dual.py",
+      "?? d6_k7_exact_support_multiplicity.md",
+      "?? d6_k7_positive_polynomial_dual.md",
+      "?? d6_k7_positive_polynomial_dual.py",
+      "?? d6_k7_positive_polynomial_dual_report.json",
+      "?? d6_k7_small_support_value.md",
+      "?? d6_k7_small_support_value.py",
+      "?? d6_k7_small_support_value_report.json",
+      "?? d6_k7_support_rank_survivors_checkpoint.json",
+      "?? d6_k7_support_rank_survivors_decisions.tsv.gz",
+      "?? d6_k7_support_rank_survivors_report.json",
+      "?? d6_n14_k7_rank_obstructions.json",
+      "?? d6_n14_k7_rank_obstructions.md",
+      "?? profile_d6_k7_small_support_value.py",
+      "?? test_d6_k7_arbitrary_basis_psd_dual.py",
+      "?? test_d6_k7_positive_polynomial_dual.py",
+      "?? test_d6_k7_small_support_value.py",
+      "?? verify_d6_k7_positive_polynomial_dual.py"
+    ],
+    "status_porcelain_sha256": "3298889584ab95ef8962c8c2282787eb7c90f04cd01c8027c56b5b64e42f057b"
+  },
+  "incremental_beyond_strict_h": [
+    369959,
+    2256574,
+    2548658,
+    2592168,
+    2592595,
+    2646137,
+    2873261,
+    2934777,
+    3328143,
+    3330537,
+    3330881,
+    3331537,
+    3333486,
+    3336048,
+    3732572,
+    3946949,
+    3950247,
+    3950926,
+    3958767
+  ],
+  "input": "/Users/lukacs/chatgpt/almost_equidistant/d6_k7_rank_sample.json",
+  "input_sha256": "bf699f36a1c90b6d6751498e52fab73e6b58db322c5b71b04accf32623c2c0dd",
+  "machine": "arm64",
+  "per_graph": [
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1605929
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2666858
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 825432
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 5,
+        "covers": 42,
+        "labeled_z_families": 111,
+        "propagation_failure:disjoint_required_edge": 103,
+        "propagation_failure:empty_propagated_mask": 5,
+        "propagation_passing_families": 3,
+        "seeds": 1,
+        "small_support_intersection_passes": 3,
+        "sparse_value_branch:disjoint_required_small_support": 36,
+        "sparse_value_branch:duplicate_one_defect": 9,
+        "sparse_value_branch:forbidden_two_defect_cycle": 3,
+        "sparse_value_branch:one_defect_component_branches": 3,
+        "sparse_value_branch:two_defects_repeat_at_one_defect": 12,
+        "sparse_value_failures": 3
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 348324,
+      "index": 3946949
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2890993
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3058835
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2,
+        "sparse_value_passes": 2,
+        "value_passing_covers": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3959829
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3610050
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 915245
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3562725
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3576900
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 42,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_branch:disjoint_required_small_support": 47,
+        "sparse_value_branch:duplicate_one_defect": 4,
+        "sparse_value_branch:forbidden_two_defect_cycle": 1,
+        "sparse_value_branch:three_one_defects": 8,
+        "sparse_value_branch:two_defects_repeat_at_one_defect": 9,
+        "sparse_value_failures": 1
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 336917,
+      "index": 2592595
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1357170
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2453663
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3164461
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2,
+        "sparse_value_passes": 2,
+        "value_passing_covers": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3939503
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "covers": 64,
+        "labeled_z_families": 100,
+        "propagation_failure:disjoint_required_edge": 96,
+        "propagation_passing_families": 4,
+        "seeds": 1,
+        "small_support_intersection_passes": 4,
+        "sparse_value_branch:disjoint_required_small_support": 72,
+        "sparse_value_branch:duplicate_one_defect": 4,
+        "sparse_value_branch:forbidden_two_defect_cycle": 4,
+        "sparse_value_branch:one_defects_joined_by_two_defects": 4,
+        "sparse_value_failures": 4
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 208907,
+      "index": 3732572
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3726256
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "covers": 93,
+        "labeled_z_families": 100,
+        "propagation_failure:disjoint_required_edge": 94,
+        "propagation_passing_families": 6,
+        "seeds": 1,
+        "small_support_intersection_passes": 6,
+        "sparse_value_branch:disjoint_required_small_support": 78,
+        "sparse_value_branch:duplicate_one_defect": 6,
+        "sparse_value_branch:forbidden_two_defect_cycle": 6,
+        "sparse_value_failures": 6
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 52880,
+      "index": 3333486
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 3,
+        "covers": 93,
+        "labeled_z_families": 101,
+        "propagation_failure:disjoint_required_edge": 95,
+        "propagation_passing_families": 6,
+        "seeds": 1,
+        "small_support_intersection_passes": 6,
+        "sparse_value_branch:disjoint_required_small_support": 60,
+        "sparse_value_branch:duplicate_one_defect": 18,
+        "sparse_value_branch:forbidden_two_defect_cycle": 6,
+        "sparse_value_branch:two_defects_repeat_at_one_defect": 18,
+        "sparse_value_failures": 6
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 201506,
+      "index": 2256574
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 64,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_branch:disjoint_required_small_support": 13,
+        "sparse_value_branch:duplicate_one_defect": 1,
+        "sparse_value_branch:forbidden_two_defect_cycle": 1,
+        "sparse_value_failures": 1
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 156836,
+      "index": 2548658
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 3,
+        "covers": 93,
+        "labeled_z_families": 11,
+        "propagation_failure:disjoint_required_edge": 10,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_branch:disjoint_required_small_support": 18,
+        "sparse_value_branch:duplicate_one_defect": 1,
+        "sparse_value_branch:forbidden_two_defect_cycle": 1,
+        "sparse_value_branch:one_defects_joined_by_two_defects": 1,
+        "sparse_value_failures": 1
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 338368,
+      "index": 3330881
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 5,
+        "covers": 64,
+        "labeled_z_families": 171,
+        "propagation_failure:disjoint_required_edge": 128,
+        "propagation_failure:empty_propagated_mask": 38,
+        "propagation_passing_families": 5,
+        "seeds": 1,
+        "small_support_intersection_passes": 5,
+        "sparse_value_branch:disjoint_required_small_support": 90,
+        "sparse_value_branch:duplicate_one_defect": 5,
+        "sparse_value_branch:forbidden_two_defect_cycle": 5,
+        "sparse_value_branch:one_defects_joined_by_two_defects": 5,
+        "sparse_value_failures": 5
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 320264,
+      "index": 3950247
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 378605
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3129009
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 6,
+        "covers": 64,
+        "labeled_z_families": 122,
+        "propagation_failure:disjoint_required_edge": 112,
+        "propagation_failure:empty_propagated_mask": 6,
+        "propagation_passing_families": 4,
+        "seeds": 1,
+        "small_support_intersection_passes": 4,
+        "sparse_value_branch:disjoint_required_small_support": 72,
+        "sparse_value_branch:duplicate_one_defect": 4,
+        "sparse_value_branch:forbidden_two_defect_cycle": 4,
+        "sparse_value_branch:one_defects_joined_by_two_defects": 4,
+        "sparse_value_failures": 4
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 437256,
+      "index": 3958767
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "covers": 93,
+        "labeled_z_families": 100,
+        "propagation_failure:disjoint_required_edge": 94,
+        "propagation_passing_families": 6,
+        "seeds": 1,
+        "small_support_intersection_passes": 6,
+        "sparse_value_branch:disjoint_required_small_support": 78,
+        "sparse_value_branch:duplicate_one_defect": 6,
+        "sparse_value_branch:forbidden_two_defect_cycle": 6,
+        "sparse_value_failures": 6
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 151184,
+      "index": 3336048
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2,
+        "sparse_value_passes": 2,
+        "value_passing_covers": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2619928
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "covers": 42,
+        "labeled_z_families": 100,
+        "propagation_failure:disjoint_required_edge": 95,
+        "propagation_passing_families": 5,
+        "seeds": 1,
+        "small_support_intersection_passes": 5,
+        "sparse_value_branch:disjoint_required_small_support": 90,
+        "sparse_value_branch:duplicate_one_defect": 5,
+        "sparse_value_branch:forbidden_two_defect_cycle": 5,
+        "sparse_value_branch:one_defects_joined_by_two_defects": 5,
+        "sparse_value_failures": 5
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 338008,
+      "index": 2934777
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3470976
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 667715
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 150757
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 842369
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2957278
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 4,
+        "covers": 42,
+        "labeled_z_families": 110,
+        "propagation_failure:disjoint_required_edge": 108,
+        "propagation_passing_families": 2,
+        "seeds": 1,
+        "small_support_intersection_passes": 2,
+        "sparse_value_branch:disjoint_required_small_support": 22,
+        "sparse_value_branch:duplicate_one_defect": 6,
+        "sparse_value_branch:incompatible_two_defect_branch_distance": 2,
+        "sparse_value_branch:one_defect_component_branches": 2,
+        "sparse_value_branch:two_defects_repeat_at_one_defect": 10,
+        "sparse_value_failures": 2
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 345109,
+      "index": 2592168
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 7,
+        "covers": 93,
+        "labeled_z_families": 10534,
+        "propagation_failure:disjoint_required_edge": 1928,
+        "propagation_failure:empty_propagated_mask": 8548,
+        "propagation_passing_families": 58,
+        "seeds": 1,
+        "small_support_intersection_passes": 58,
+        "sparse_value_branch:disjoint_required_small_support": 580,
+        "sparse_value_branch:duplicate_one_defect": 174,
+        "sparse_value_branch:forbidden_two_defect_cycle": 58,
+        "sparse_value_branch:two_defects_repeat_at_one_defect": 174,
+        "sparse_value_failures": 58
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 118795,
+      "index": 3331537
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2373890
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3961502
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2,
+        "sparse_value_passes": 2,
+        "value_passing_covers": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3128141
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3423153
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 128297
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2744629
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2594493
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 912798
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 388922
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3452028
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2,
+        "sparse_value_passes": 2,
+        "value_passing_covers": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3649646
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2193803
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2714355
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 189400
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 572379
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "covers": 29,
+        "labeled_z_families": 14,
+        "propagation_failure:disjoint_required_edge": 12,
+        "propagation_passing_families": 2,
+        "seeds": 1,
+        "small_support_intersection_passes": 2,
+        "sparse_value_branch:disjoint_required_small_support": 20,
+        "sparse_value_branch:duplicate_one_defect": 6,
+        "sparse_value_branch:forbidden_two_defect_cycle": 2,
+        "sparse_value_branch:two_defects_repeat_at_one_defect": 6,
+        "sparse_value_failures": 2
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 410645,
+      "index": 3328143
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2681964
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 6,
+        "covers": 93,
+        "labeled_z_families": 804,
+        "propagation_failure:disjoint_required_edge": 346,
+        "propagation_failure:empty_propagated_mask": 452,
+        "propagation_passing_families": 6,
+        "seeds": 1,
+        "small_support_intersection_passes": 6,
+        "sparse_value_branch:disjoint_required_small_support": 108,
+        "sparse_value_branch:duplicate_one_defect": 6,
+        "sparse_value_branch:forbidden_two_defect_cycle": 6,
+        "sparse_value_branch:one_defects_joined_by_two_defects": 6,
+        "sparse_value_failures": 6
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 198169,
+      "index": 3950926
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 397295
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 7,
+        "covers": 64,
+        "labeled_z_families": 455,
+        "propagation_failure:disjoint_required_edge": 188,
+        "propagation_failure:empty_propagated_mask": 262,
+        "propagation_passing_families": 5,
+        "seeds": 1,
+        "small_support_intersection_passes": 5,
+        "sparse_value_branch:disjoint_required_small_support": 55,
+        "sparse_value_branch:duplicate_one_defect": 15,
+        "sparse_value_branch:forbidden_two_defect_cycle": 5,
+        "sparse_value_branch:one_defect_component_branches": 5,
+        "sparse_value_branch:two_defects_repeat_at_one_defect": 15,
+        "sparse_value_failures": 5
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 487456,
+      "index": 369959
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 4,
+        "covers": 42,
+        "labeled_z_families": 27,
+        "propagation_failure:disjoint_required_edge": 26,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_branch:disjoint_required_small_support": 12,
+        "sparse_value_branch:duplicate_one_defect": 3,
+        "sparse_value_branch:forbidden_two_defect_cycle": 1,
+        "sparse_value_branch:one_defect_component_branches": 1,
+        "sparse_value_branch:two_defects_repeat_at_one_defect": 4,
+        "sparse_value_failures": 1
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 31298,
+      "index": 2873261
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 632013
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3088288
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1661903
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2682549
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3830718
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2,
+        "sparse_value_passes": 2,
+        "value_passing_covers": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3917524
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2,
+        "sparse_value_passes": 2,
+        "value_passing_covers": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 370952
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1462119
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 343017
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3733344
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1468149
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2545347
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 332406
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3952705
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3968216
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2641803
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 10,
+        "covers": 64,
+        "labeled_z_families": 1305,
+        "propagation_failure:disjoint_required_edge": 315,
+        "propagation_failure:empty_propagated_mask": 986,
+        "propagation_passing_families": 4,
+        "seeds": 1,
+        "small_support_intersection_passes": 4,
+        "sparse_value_branch:disjoint_required_small_support": 44,
+        "sparse_value_branch:duplicate_one_defect": 12,
+        "sparse_value_branch:forbidden_two_defect_cycle": 4,
+        "sparse_value_branch:two_defects_repeat_at_one_defect": 16,
+        "sparse_value_failures": 4
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 400136,
+      "index": 3330537
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1633693
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1468026
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 4,
+        "covers": 93,
+        "labeled_z_families": 8180,
+        "propagation_failure:disjoint_required_edge": 1387,
+        "propagation_failure:empty_propagated_mask": 6744,
+        "propagation_passing_families": 49,
+        "seeds": 1,
+        "small_support_intersection_passes": 49,
+        "sparse_value_branch:disjoint_required_small_support": 637,
+        "sparse_value_branch:duplicate_one_defect": 49,
+        "sparse_value_branch:forbidden_two_defect_cycle": 49,
+        "sparse_value_failures": 49
+      },
+      "decision": "REJECTED",
+      "first_failing_seed": 231445,
+      "index": 2646137
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2,
+        "sparse_value_passes": 2,
+        "value_passing_covers": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3959628
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "labeled_z_families": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2,
+        "sparse_value_passes": 2,
+        "value_passing_covers": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3950770
+    },
+    {
+      "counts": {
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "labeled_z_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1,
+        "sparse_value_passes": 1,
+        "value_passing_covers": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 58186
+    }
+  ],
+  "platform": "macOS-14.5-arm64-arm-64bit",
+  "profiler_source_sha256": "c8231ff47263b348e3daba2b32cd3eb693ff70f3db5b10aa808b1b5296589573",
+  "proof_sha256": "e8ec6a012f9ea824e9cddb76510840537dba0e603e207cd3220c1b06866cb42a",
+  "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+  "rejected_graphs": 19,
+  "rejected_indices": [
+    3946949,
+    2592595,
+    3732572,
+    3333486,
+    2256574,
+    2548658,
+    3330881,
+    3950247,
+    3958767,
+    3336048,
+    2934777,
+    2592168,
+    3331537,
+    3328143,
+    3950926,
+    369959,
+    2873261,
+    3330537,
+    2646137
+  ],
+  "schema": 1,
+  "selected_graphs": 80,
+  "started_unix": 1786040874.7171588,
+  "strict_h_rejected_overlap": [],
+  "strict_h_report": "/Users/lukacs/chatgpt/almost_equidistant/d6_k7_strict_h_report.json",
+  "strict_h_report_sha256": "d2ff29f493d9997887a392d0e56f228b2395e48a324f3118dcbeeff9949f266f",
+  "support_decisions": "/Users/lukacs/chatgpt/almost_equidistant/d6_k7_support_propagation_sample_decisions.tsv",
+  "support_decisions_sha256": "9c8936d6e6b03374b288a56c9536c63acd1d0fbd1bad69a15bc3d41c2eb48265",
+  "surviving_graphs": 61,
+  "test_source_sha256": "6a2ee7a97844b5922a5467e1c3a8cf4c8a49240014b4154f45307335dfea5c44",
+  "totals": {
+    "baseline_passing_covers": 146,
+    "covers": 1344,
+    "labeled_z_families": 22417,
+    "propagation_failure:disjoint_required_edge": 5137,
+    "propagation_failure:empty_propagated_mask": 17041,
+    "propagation_passing_families": 239,
+    "seeds": 89,
+    "small_support_intersection_passes": 239,
+    "sparse_value_branch:disjoint_required_small_support": 2132,
+    "sparse_value_branch:duplicate_one_defect": 334,
+    "sparse_value_branch:forbidden_two_defect_cycle": 167,
+    "sparse_value_branch:incompatible_two_defect_branch_distance": 2,
+    "sparse_value_branch:one_defect_component_branches": 11,
+    "sparse_value_branch:one_defects_joined_by_two_defects": 25,
+    "sparse_value_branch:three_one_defects": 8,
+    "sparse_value_branch:two_defects_repeat_at_one_defect": 264,
+    "sparse_value_failures": 169,
+    "sparse_value_passes": 70,
+    "value_passing_covers": 70
+  },
+  "value_source_sha256": "bed5987c89fbef2ef36762051ae7fa3414fd381a6246032b06857a557f13743f"
+}

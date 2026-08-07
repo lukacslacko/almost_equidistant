@@ -1,0 +1,5018 @@
+{
+  "certified_killed": 22,
+  "checkpoint": {
+    "campaign_sha256": "1789f0406bc7c76e026ae6d3d742891ab67458c7f961ccc27260650fe4822337",
+    "decision_TSV_sha256": "9b0f19181ca4f7f50f48d09bd3c9d6e0326c3abe397ae5a3ed67123c89e0be66",
+    "directory": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_interval_v5_full_cap20000",
+    "progress_sha256": "8914b4eff40ddf07a00414a75f46aa5fdaae4525f70717a7ac3b7ecb771149ac",
+    "result_files": 911,
+    "result_index_sha256": "c5b18fa5491e20cdcf512dc1d4b6721c5b76b347354a7505d21189aa39ebe4fc",
+    "run_state_sha256": "68132683efe6acad4425ec0d214854627c21e121f39b213abb4d472ca2e2b62f",
+    "session_sha256": "9582aeaa4e40a910dba55ccdceebbaadf4dd9eb76508f61df15b2d2c41349c3e"
+  },
+  "claim": "Only the listed KILLED graphs are certified non-realizable by the outward-rounded interval kernel. All other statuses remain unresolved.",
+  "common_helper_sha256": "84ec7ae7e682de660329fd1fb02bd88d774bde542032ece95a7eb7d3c54ece4a",
+  "kernel_controls": {
+    "records_checked": 48,
+    "records_replayed": 48,
+    "records_sha256": "b9c984f019cead7382831bd821bdb2c7f92bbef660c2667fa01a55151822404b",
+    "status": "PASS"
+  },
+  "killed_by_population": {
+    "K6": 0,
+    "K7": 22
+  },
+  "killed_indices": [
+    379078,
+    2280137,
+    3330235,
+    3331585,
+    3342165,
+    3368321,
+    3394720,
+    3643248,
+    3723506,
+    3726282,
+    3727225,
+    3793488,
+    3910558,
+    3910562,
+    3910564,
+    3936176,
+    3936987,
+    3939486,
+    3939503,
+    3945374,
+    3950483,
+    3960292
+  ],
+  "provenance": {
+    "branch": "codex/dimension6",
+    "commit": "2b97bcec90a032070369e37b78a2ca94e7639b26",
+    "porcelain_sha256": "87bd0fcd9b1228198cbc64858d2f3bd9618c6052d4335d7fa09a53dd816b1e45",
+    "tracked_sources_clean_at_launch": true
+  },
+  "report": {
+    "path": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_interval_v5_full_cap20000.json",
+    "sha256": "b8f38e765a7212a6bb8a30f138800c170a03992d76f08eb920e67effa0c00c73"
+  },
+  "schema": "d6-interval-v5-verification-v1",
+  "selection": {
+    "graphs": 911,
+    "indices_sha256": "8e23c3f6d688e3f5fcde3773d7af9fbbfa692b8bce2d576616f5a55ca5de3d42",
+    "population_counts": {
+      "K6": 756,
+      "K7": 155
+    }
+  },
+  "status": "PASS",
+  "status_counts": {
+    "ABORT": 888,
+    "INFRA_ERROR": 0,
+    "KILLED": 22,
+    "UNRESOLVED": 1
+  },
+  "trust_assumptions": {
+    "basic_arithmetic": "IEEE-754 binary64 basic operations and sqrt are correctly rounded; each interval endpoint is expanded with nextafter.",
+    "candidate_nonedges": "unconstrained and allowed to be unit distance",
+    "transcendentals": "macOS libm cos endpoint values are assumed within 8 ulps; the kernel pads both directions by 8 nextafter steps and includes all interior extrema."
+  },
+  "verifier_source_sha256": "93378af95e3f2a42ff325644e0c4bedd9df077ac469f7e981acbc70fb383d968",
+  "winning_witnesses": [
+    {
+      "index": 379078,
+      "ordinal": 63,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        17,
+        14,
+        13,
+        5,
+        12,
+        8,
+        2,
+        9,
+        15,
+        11,
+        7,
+        4
+      ],
+      "winning_seed": [
+        0,
+        1,
+        3,
+        6,
+        10,
+        16,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 7541,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 97,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 97,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 97,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 97,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 117,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 97,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 97,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 97,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 97,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 730,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 162,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 192,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 222,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 119,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 97,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 174,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 128,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 111,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 97,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 97,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 97,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 97,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 7604,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 2280137,
+      "ordinal": 286,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        15,
+        5,
+        1,
+        17,
+        13,
+        10,
+        3,
+        14,
+        11,
+        4,
+        2,
+        0
+      ],
+      "winning_seed": [
+        6,
+        7,
+        8,
+        9,
+        12,
+        16,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 14753,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 65,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 65,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 65,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 65,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 65,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 65,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 65,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 67,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 65,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 65,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 244,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 232,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 65,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 65,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 68,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 65,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 65,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 65,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 65,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 65,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 65,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 65,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 15201,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3330235,
+      "ordinal": 553,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        7,
+        6,
+        2,
+        16,
+        11,
+        3,
+        14,
+        10,
+        9,
+        0,
+        15,
+        4
+      ],
+      "winning_seed": [
+        1,
+        5,
+        8,
+        12,
+        13,
+        17,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 363,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 65,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 65,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 72,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 65,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 65,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 65,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 65,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 65,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 65,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 65,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 4741,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 4693,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 65,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 65,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 65,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 65,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 65,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 65,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 100,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 263,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 185,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 65,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 340,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3331585,
+      "ordinal": 558,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        6,
+        4,
+        2,
+        13,
+        11,
+        10,
+        17,
+        9,
+        8,
+        5,
+        18,
+        7
+      ],
+      "winning_seed": [
+        0,
+        1,
+        3,
+        12,
+        14,
+        15,
+        16
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 222,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 65,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 65,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 69,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 65,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 65,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 65,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 65,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 65,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 65,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 65,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 7980,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 9106,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 65,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 65,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 65,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 65,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 65,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 65,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 101,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 274,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 185,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 65,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 224,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3342165,
+      "ordinal": 618,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 3,
+      "winning_placement_order": [
+        12,
+        11,
+        8,
+        3,
+        6,
+        4,
+        2,
+        13,
+        1,
+        0,
+        17,
+        15
+      ],
+      "winning_seed": [
+        5,
+        7,
+        9,
+        10,
+        14,
+        16,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 929,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 65,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 65,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 65,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 65,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 65,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 65,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 65,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 66,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 65,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 65,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 76,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 68,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 65,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 65,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 79,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 65,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 65,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 65,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 65,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 65,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 65,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 65,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 926,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3368321,
+      "ordinal": 631,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        17,
+        10,
+        8,
+        7,
+        18,
+        13,
+        2,
+        1,
+        11,
+        6,
+        4,
+        3
+      ],
+      "winning_seed": [
+        0,
+        5,
+        9,
+        12,
+        14,
+        15,
+        16
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 143,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 97,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 97,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 97,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 97,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 798,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 97,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 97,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 97,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 97,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 97,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 97,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 97,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 121,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 520,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 97,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 97,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 162,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 97,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 97,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 434,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 97,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 97,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 143,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3394720,
+      "ordinal": 635,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        17,
+        16,
+        15,
+        2,
+        7,
+        5,
+        14,
+        13,
+        4,
+        0,
+        10,
+        9
+      ],
+      "winning_seed": [
+        1,
+        3,
+        6,
+        8,
+        11,
+        12,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 242,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 97,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 97,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 97,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 97,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 2189,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 97,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 97,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 97,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 97,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 115,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 97,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 115,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 137,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 229,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 97,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 97,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 195,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 97,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 97,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 98,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 97,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 97,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 242,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3643248,
+      "ordinal": 678,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 2,
+      "winning_placement_order": [
+        1,
+        17,
+        16,
+        8,
+        5,
+        3,
+        12,
+        9,
+        4,
+        0,
+        15,
+        10
+      ],
+      "winning_seed": [
+        2,
+        6,
+        7,
+        11,
+        13,
+        14,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 1124,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 65,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 65,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 65,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 65,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 65,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 65,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 65,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 68,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 65,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 65,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 87,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 82,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 65,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 65,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 68,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 65,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 65,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 65,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 65,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 65,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 65,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 65,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 1124,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3723506,
+      "ordinal": 707,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        13,
+        11,
+        6,
+        1,
+        2,
+        10,
+        14,
+        12,
+        4,
+        3,
+        0,
+        16
+      ],
+      "winning_seed": [
+        5,
+        7,
+        8,
+        9,
+        15,
+        17,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 65,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 65,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 65,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 65,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 65,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 7976,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 65,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 65,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 65,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 65,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 65,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 65,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 65,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 65,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 68,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 65,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 65,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 382,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 65,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 65,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 68,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 65,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 65,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 65,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3726282,
+      "ordinal": 710,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        14,
+        6,
+        13,
+        12,
+        17,
+        7,
+        2,
+        4,
+        15,
+        10,
+        9,
+        0
+      ],
+      "winning_seed": [
+        1,
+        3,
+        5,
+        8,
+        11,
+        16,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 9188,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 97,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 97,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 97,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 97,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 291,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 97,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 97,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 1367,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 409,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 342,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 8693,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 7178,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 208,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 189,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 1489,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 97,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 97,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 97,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 97,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 97,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 97,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 97,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 9220,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3727225,
+      "ordinal": 711,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        16,
+        9,
+        0,
+        12,
+        15,
+        10,
+        13,
+        14,
+        7,
+        6,
+        4,
+        2
+      ],
+      "winning_seed": [
+        1,
+        3,
+        5,
+        8,
+        11,
+        17,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 2099,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 65,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 65,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 65,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 65,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 65,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 65,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 65,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 67,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 65,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 65,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 614,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 605,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 65,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 65,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 67,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 65,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 65,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 65,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 65,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 65,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 65,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 65,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 2092,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3793488,
+      "ordinal": 749,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        13,
+        8,
+        7,
+        5,
+        16,
+        12,
+        10,
+        4,
+        0,
+        14,
+        9,
+        3
+      ],
+      "winning_seed": [
+        1,
+        2,
+        6,
+        11,
+        15,
+        17,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 2623,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 65,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 65,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 65,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 65,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 65,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 65,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 65,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 68,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 65,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 65,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 183,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 183,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 65,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 65,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 68,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 65,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 65,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 65,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 65,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 65,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 65,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 65,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 2623,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3910558,
+      "ordinal": 790,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        16,
+        13,
+        11,
+        3,
+        7,
+        9,
+        5,
+        18,
+        4,
+        2,
+        10,
+        0
+      ],
+      "winning_seed": [
+        1,
+        6,
+        8,
+        12,
+        14,
+        15,
+        17
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 443,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 65,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 65,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 68,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 65,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 65,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 65,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 65,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 65,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 65,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 65,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 599,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 599,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 65,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 65,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 65,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 65,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 65,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 65,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 65,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 107,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 189,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 65,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 290,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3910562,
+      "ordinal": 791,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        16,
+        13,
+        11,
+        3,
+        7,
+        9,
+        5,
+        18,
+        4,
+        2,
+        10,
+        0
+      ],
+      "winning_seed": [
+        1,
+        6,
+        8,
+        12,
+        14,
+        15,
+        17
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 443,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 65,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 65,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 68,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 65,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 65,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 65,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 65,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 65,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 65,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 65,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 599,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 599,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 65,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 65,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 65,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 65,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 65,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 65,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 65,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 107,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 189,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 65,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 290,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3910564,
+      "ordinal": 792,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        16,
+        13,
+        11,
+        3,
+        7,
+        9,
+        5,
+        18,
+        4,
+        2,
+        10,
+        0
+      ],
+      "winning_seed": [
+        1,
+        6,
+        8,
+        12,
+        14,
+        15,
+        17
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 443,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 65,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 65,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 68,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 65,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 65,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 65,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 65,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 65,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 65,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 65,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 599,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 599,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 65,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 65,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 65,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 65,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 65,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 65,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 65,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 107,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 189,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 65,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 290,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3936176,
+      "ordinal": 816,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        11,
+        14,
+        10,
+        9,
+        8,
+        6,
+        4,
+        1,
+        0,
+        18,
+        15,
+        3
+      ],
+      "winning_seed": [
+        2,
+        5,
+        7,
+        12,
+        13,
+        16,
+        17
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 131,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 129,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 129,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 129,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 131,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 657,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 129,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 129,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 129,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 129,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 131,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 129,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 129,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 129,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 141,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 140,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 145,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 161,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 228,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 129,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 129,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 129,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 129,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 131,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3936987,
+      "ordinal": 826,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        18,
+        14,
+        17,
+        12,
+        7,
+        5,
+        2,
+        15,
+        10,
+        9,
+        4,
+        0
+      ],
+      "winning_seed": [
+        1,
+        3,
+        6,
+        8,
+        11,
+        13,
+        16
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 431,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 97,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 97,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 97,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 97,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 185,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 97,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 97,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 97,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 97,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 364,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 106,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 97,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 172,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 173,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 105,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 97,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 101,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 97,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 97,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 97,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 97,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 97,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 429,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3939486,
+      "ordinal": 827,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        16,
+        10,
+        3,
+        15,
+        8,
+        7,
+        6,
+        13,
+        5,
+        2,
+        1,
+        11
+      ],
+      "winning_seed": [
+        0,
+        4,
+        9,
+        12,
+        14,
+        17,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 380,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 65,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 65,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 67,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 65,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 65,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 65,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 65,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 65,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 65,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 65,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 4669,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 4676,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 65,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 65,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 65,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 65,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 65,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 65,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 65,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 157,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 188,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 65,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 183,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3939503,
+      "ordinal": 828,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 2,
+      "winning_placement_order": [
+        1,
+        15,
+        12,
+        5,
+        2,
+        4,
+        14,
+        10,
+        9,
+        3,
+        17,
+        0
+      ],
+      "winning_seed": [
+        6,
+        7,
+        8,
+        11,
+        13,
+        16,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 2524,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 65,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 65,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 65,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 65,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 65,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 65,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 65,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 68,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 65,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 65,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 77,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 76,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 65,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 65,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 68,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 65,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 65,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 65,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 65,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 65,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 65,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 65,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 2525,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3945374,
+      "ordinal": 837,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        14,
+        13,
+        12,
+        7,
+        6,
+        2,
+        15,
+        10,
+        9,
+        3,
+        0,
+        4
+      ],
+      "winning_seed": [
+        1,
+        5,
+        8,
+        11,
+        16,
+        17,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 5229,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 97,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 97,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 97,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 97,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 195,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 97,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 97,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 101,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 97,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 97,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 125,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 115,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 97,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 97,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 101,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 97,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 97,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 97,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 97,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 97,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 97,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 97,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 5225,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3950483,
+      "ordinal": 871,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        12,
+        7,
+        6,
+        2,
+        16,
+        14,
+        10,
+        9,
+        0,
+        18,
+        4,
+        3
+      ],
+      "winning_seed": [
+        1,
+        5,
+        8,
+        11,
+        13,
+        15,
+        17
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 1407,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 65,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 65,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 65,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 65,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 65,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 65,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 65,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 67,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 65,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 65,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 82,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 82,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 65,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 65,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 67,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 65,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 65,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 65,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 65,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 65,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 65,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 65,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 1412,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    },
+    {
+      "index": 3960292,
+      "ordinal": 893,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        15,
+        13,
+        9,
+        11,
+        7,
+        5,
+        8,
+        12,
+        6,
+        2,
+        1,
+        16
+      ],
+      "winning_seed": [
+        0,
+        3,
+        4,
+        10,
+        14,
+        17,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 252,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 65,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 68,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 89,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 65,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 65,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 65,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 65,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 65,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 65,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 65,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 4578,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 4427,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 65,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 65,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 65,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 65,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 65,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 65,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 65,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 114,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 180,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 65,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 244,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    }
+  ],
+  "winning_witnesses_sha256": "bda175a677e44b107cb8a5f037e35095d9e8b5d5ad937c0de99d282d9a24cbe5",
+  "witness_replay": {
+    "exact_status_node_cell_match": true,
+    "nodes": 223854,
+    "slices": 528,
+    "status": "PASS"
+  }
+}

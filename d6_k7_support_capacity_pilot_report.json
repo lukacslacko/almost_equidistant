@@ -1,0 +1,6226 @@
+{
+  "capacity_proof_sha256": "f37a663cecab76462c024508827991de97614ae66f7fa5d57664e9f118f2e278",
+  "capacity_source_sha256": "df8c010faac37f9de5481316cc8ccf58e8df46230bd9d1e8542f7a4322b64996",
+  "claim_scope": "Exact serial bounded pilot. INFEASIBLE uses only nonempty actual support containment, required-edge intersection, and exact-type capacity |S| after frozen exact filters. SURVIVOR is a nonclaim.",
+  "command": [
+    "/Users/lukacs/claude/opengauss/venv/bin/python3",
+    "run_d6_k7_support_capacity_pilot.py",
+    "--limit",
+    "32",
+    "--node-limit",
+    "200000",
+    "--output",
+    "d6_k7_support_capacity_pilot_report.json"
+  ],
+  "dependency_sha256": {
+    ".runs/d6_k7_rank_survivors.json": "7a0a350142930e4e13830ea44c4fd217f25aeb07bbd6286e51e316f72712c4f9",
+    "d6_k7_positive_dual_full_certificates.jsonl.gz": "3adaa7e562dfb9241f205e3e7d2384805dbe7296f9677d76f2f23ce913a4ce7f",
+    "d6_k7_rank_reference.py": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+    "d6_k7_rankone_pattern_union.json": "1a54fabeb3ebf7f8e5485a88bc52fcfd07fb9ab8706d29ab2a664a895f79e599",
+    "d6_k7_rankone_pattern_union_verification.json": "7b9d5e35bf787e5d05aa486f914416598c31836264a479fbbc1af117f1dfcc14",
+    "d6_k7_rankone_tetrad_full_certificates.jsonl.gz": "f719dbb6492fc20fb3103cb79079567aa2cad163835f97e750412c3d27897c50",
+    "d6_k7_rankone_tetrad_full_decisions.tsv.gz": "2552ce91f52727d9beda60d99d534c1d5a0be3f93686ab321f223d8e0d11dfc1",
+    "d6_k7_rankone_tetrad_full_report.json": "ae2075ac83abcdfc0b7d42f63b9515c4e48b40cf9c976178aa366d151a78996a",
+    "d6_k7_rankone_tetrad_full_verification_report.json": "1812524c835fd6635b9815c0f0c25e9a49d99ff5d3b042e4b194ac5d7898dc97",
+    "d6_k7_small_support_value.py": "bed5987c89fbef2ef36762051ae7fa3414fd381a6246032b06857a557f13743f",
+    "d6_k7_small_support_value_full_decisions.tsv.gz": "9f70e0e267fe97bc2f6a2890cae47d8b1c882974d5f054f16b4673bfb45ee003",
+    "d6_k7_small_support_value_full_report.json": "cea64f3dde804e0766c5b77e373aa50338d5bee6e5e54f44749f4e387cf529aa",
+    "d6_k7_special_h_reference.py": "e649633d7262941c9c4608ea694ae0a5d6f29c146d47060c3dae71a036a9d190",
+    "d6_k7_support_propagation.py": "578103f70d2906fbb3d449b7b7b5c1b6c86e5ae17afb0c341602a543bea69f0c"
+  },
+  "elapsed_seconds": 22.942873415999202,
+  "environment": {
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "workers": 1
+  },
+  "git": {
+    "available": true,
+    "branch": "codex/dimension6",
+    "commit": "26723cf6e0264bfede7a4534dc393e4d60c4586c",
+    "dirty": true,
+    "porcelain_lines": [
+      "AM d6_k7_support_capacity.py",
+      "AM d6_k7_support_capacity_pilot.md",
+      "A  d6_k7_support_capacity_pilot_report.json",
+      "A  d6_k7_support_capacity_pilot_verification.json",
+      "A  run_d6_k7_support_capacity_pilot.py",
+      "A  test_d6_k7_support_capacity.py",
+      "A  test_verify_d6_k7_support_capacity_pilot.py",
+      "A  verify_d6_k7_support_capacity_pilot.py",
+      "?? analyze_d6_n14_k7_rank_obstructions.py",
+      "?? d6_k6_psd_zmatrix.py",
+      "?? d6_k7_mobius_cycle_containment.py",
+      "?? d6_k7_mobius_cycle_containment_report.json",
+      "?? d6_k7_mobius_cycle_containment_verification.json",
+      "?? d6_k7_mobius_cycle_obstructions.md",
+      "?? d6_k7_rankone_active_sign.md",
+      "?? d6_k7_rankone_active_sign.py",
+      "?? d6_k7_rankone_active_sign_pilot_report.json",
+      "?? d6_k7_ranktwo_pentad.py",
+      "?? d6_k7_ranktwo_pentad_pilot_report.json",
+      "?? d6_k7_ranktwo_pentad_pilot_verification.json",
+      "?? d6_n14_k7_rank_obstructions.json",
+      "?? d6_n14_k7_rank_obstructions.md",
+      "?? probe_d6_k6_psd_zmatrix.py",
+      "?? run_d6_k7_joint_support_full.py",
+      "?? run_d6_k7_rankone_active_sign_pilot.py",
+      "?? run_d6_k7_ranktwo_pentad_pilot.py",
+      "?? test_d6_k7_mobius_cycle_containment.py",
+      "?? test_d6_k7_rankone_active_sign.py",
+      "?? test_d6_k7_ranktwo_pentad.py",
+      "?? test_run_d6_k7_joint_support_full.py",
+      "?? verify_d6_k7_joint_support_full.py",
+      "?? verify_d6_k7_mobius_cycle_containment.py",
+      "?? verify_d6_k7_rankone_active_sign.py",
+      "?? verify_d6_k7_ranktwo_pentad.py"
+    ],
+    "porcelain_sha256": "f54e40472a0e2c09f7460560edacb50c80aca0ab299fa2f22036f70e905f438e"
+  },
+  "kind": "d6_k7_support_capacity_pilot",
+  "node_limit_per_family": 200000,
+  "per_graph": [
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 984,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 499,
+        "cover_passing": 1,
+        "cover_prior_dual": 1,
+        "cover_tetrad": 1,
+        "covers": 502,
+        "labeled_z_families": 1,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.7489148749991728,
+      "index": 3793464,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 499,
+            "cover_passing": 1,
+            "cover_prior_dual": 1,
+            "cover_tetrad": 1,
+            "covers": 502,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 984,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  14,
+                  84,
+                  40,
+                  82,
+                  13,
+                  81,
+                  11,
+                  60,
+                  67,
+                  48,
+                  127,
+                  33
+                ],
+                "propagated_masks": [
+                  14,
+                  84,
+                  40,
+                  82,
+                  13,
+                  81,
+                  11,
+                  60,
+                  67,
+                  48,
+                  127,
+                  33
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                0,
+                4,
+                9,
+                10,
+                12,
+                16,
+                18
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            0,
+            4,
+            9,
+            10,
+            12,
+            16,
+            18
+          ],
+          "seed_mask": 333329,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 397,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 244,
+        "cover_passing": 1,
+        "cover_tetrad": 10,
+        "covers": 255,
+        "labeled_z_families": 1,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.2744347919997381,
+      "index": 3959459,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 244,
+            "cover_passing": 1,
+            "cover_tetrad": 10,
+            "covers": 255,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 397,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  92,
+                  10,
+                  73,
+                  35,
+                  5,
+                  6,
+                  50,
+                  113,
+                  20,
+                  104,
+                  83,
+                  44
+                ],
+                "propagated_masks": [
+                  92,
+                  10,
+                  73,
+                  35,
+                  5,
+                  6,
+                  50,
+                  113,
+                  20,
+                  104,
+                  83,
+                  44
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                0,
+                1,
+                2,
+                5,
+                12,
+                16,
+                17
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            0,
+            1,
+            2,
+            5,
+            12,
+            16,
+            17
+          ],
+          "seed_mask": 200743,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "cover_baseline": 496,
+        "cover_passing": 1,
+        "cover_prior_dual": 1,
+        "cover_strict_h": 2,
+        "cover_tetrad": 2,
+        "covers": 502,
+        "joint_pre_capacity_failing_covers": 1,
+        "labeled_z_families": 1,
+        "propagation_failure:empty_propagated_mask": 1,
+        "seeds": 1
+      },
+      "decision": "JOINT_PRE_CAPACITY_REJECTED",
+      "elapsed_seconds": 0.6790844999995898,
+      "index": 3958422,
+      "pre_capacity_rejected_seeds": [
+        282836
+      ],
+      "seed_records": [
+        {
+          "capacity_pass": false,
+          "counts": {
+            "cover_baseline": 496,
+            "cover_passing": 1,
+            "cover_prior_dual": 1,
+            "cover_strict_h": 2,
+            "cover_tetrad": 2,
+            "covers": 502,
+            "joint_pre_capacity_failing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "labeled_z_families": 1,
+                "propagation_failure:empty_propagated_mask": 1
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  12,
+                  2,
+                  38,
+                  2,
+                  36,
+                  0,
+                  82,
+                  127,
+                  17,
+                  80
+                ],
+                "reason": "empty_propagated_mask",
+                "stage": "propagation",
+                "z_supports": [
+                  81,
+                  44
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                2,
+                4,
+                6,
+                7,
+                12,
+                14,
+                18
+              ],
+              "zmask": 1028
+            }
+          ],
+          "pre_capacity_pass": false,
+          "seed": [
+            2,
+            4,
+            6,
+            7,
+            12,
+            14,
+            18
+          ],
+          "seed_mask": 282836,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 3442,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 3,
+        "capacity_flow_checks": 36,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 36,
+        "capacity_passing_covers": 3,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 1000,
+        "cover_passing": 5,
+        "cover_strict_h": 6,
+        "cover_tetrad": 1,
+        "covers": 1012,
+        "joint_pre_capacity_failing_covers": 2,
+        "labeled_z_families": 13,
+        "pre_capacity_passing_covers": 3,
+        "pre_capacity_passing_families": 3,
+        "propagation_failure:disjoint_required_edge": 10,
+        "propagation_passing_families": 3,
+        "seeds": 3
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 1.4234317499995086,
+      "index": 2580644,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 253,
+            "cover_passing": 1,
+            "cover_strict_h": 1,
+            "covers": 255,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1319,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  14,
+                  18,
+                  36,
+                  75,
+                  97,
+                  103,
+                  109,
+                  24,
+                  127,
+                  48,
+                  69,
+                  58
+                ],
+                "propagated_masks": [
+                  14,
+                  18,
+                  36,
+                  75,
+                  97,
+                  103,
+                  109,
+                  24,
+                  127,
+                  48,
+                  69,
+                  58
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                0,
+                2,
+                4,
+                10,
+                13,
+                14,
+                18
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            0,
+            2,
+            4,
+            10,
+            13,
+            14,
+            18
+          ],
+          "seed_mask": 287765,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 251,
+            "cover_passing": 1,
+            "cover_strict_h": 2,
+            "cover_tetrad": 1,
+            "covers": 255,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1112,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  20,
+                  34,
+                  14,
+                  81,
+                  75,
+                  77,
+                  71,
+                  40,
+                  69,
+                  58,
+                  48,
+                  127
+                ],
+                "propagated_masks": [
+                  20,
+                  34,
+                  14,
+                  81,
+                  75,
+                  77,
+                  71,
+                  40,
+                  69,
+                  58,
+                  48,
+                  127
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                0,
+                3,
+                4,
+                11,
+                15,
+                17,
+                18
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            0,
+            3,
+            4,
+            11,
+            15,
+            17,
+            18
+          ],
+          "seed_mask": 428057,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 496,
+            "cover_passing": 3,
+            "cover_strict_h": 3,
+            "covers": 502,
+            "joint_pre_capacity_failing_covers": 2,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1011,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  30,
+                  34,
+                  84,
+                  11,
+                  29,
+                  33,
+                  88,
+                  7,
+                  112,
+                  127,
+                  96,
+                  30
+                ],
+                "propagated_masks": [
+                  30,
+                  34,
+                  84,
+                  11,
+                  29,
+                  33,
+                  88,
+                  7,
+                  112,
+                  127,
+                  96,
+                  30
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                5,
+                7,
+                8,
+                9,
+                12,
+                15,
+                17
+              ],
+              "zmask": 0
+            },
+            {
+              "counts": {
+                "labeled_z_families": 5,
+                "propagation_failure:disjoint_required_edge": 5
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  32,
+                  80,
+                  11,
+                  29,
+                  33,
+                  80,
+                  7,
+                  112,
+                  127,
+                  96,
+                  30
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  14
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                5,
+                7,
+                8,
+                9,
+                12,
+                15,
+                17
+              ],
+              "zmask": 1
+            },
+            {
+              "counts": {
+                "labeled_z_families": 5,
+                "propagation_failure:disjoint_required_edge": 5
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  30,
+                  32,
+                  80,
+                  11,
+                  29,
+                  33,
+                  80,
+                  7,
+                  112,
+                  127,
+                  96
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  14
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                5,
+                7,
+                8,
+                9,
+                12,
+                15,
+                17
+              ],
+              "zmask": 2048
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            5,
+            7,
+            8,
+            9,
+            12,
+            15,
+            17
+          ],
+          "seed_mask": 168864,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 393,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 250,
+        "cover_passing": 2,
+        "cover_prior_dual": 1,
+        "cover_tetrad": 2,
+        "covers": 255,
+        "joint_pre_capacity_failing_covers": 1,
+        "labeled_z_families": 2,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_failure:disjoint_required_edge": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.29609658300068986,
+      "index": 3884784,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 250,
+            "cover_passing": 2,
+            "cover_prior_dual": 1,
+            "cover_tetrad": 2,
+            "covers": 255,
+            "joint_pre_capacity_failing_covers": 1,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 393,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  76,
+                  10,
+                  105,
+                  3,
+                  5,
+                  22,
+                  50,
+                  60,
+                  49,
+                  116,
+                  66,
+                  104
+                ],
+                "propagated_masks": [
+                  76,
+                  10,
+                  105,
+                  3,
+                  5,
+                  22,
+                  50,
+                  60,
+                  49,
+                  116,
+                  66,
+                  104
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                0,
+                1,
+                2,
+                5,
+                11,
+                14,
+                17
+              ],
+              "zmask": 0
+            },
+            {
+              "counts": {
+                "labeled_z_families": 1,
+                "propagation_failure:disjoint_required_edge": 1
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  76,
+                  10,
+                  105,
+                  2,
+                  4,
+                  6,
+                  50,
+                  60,
+                  116,
+                  66,
+                  72
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  49
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                0,
+                1,
+                2,
+                5,
+                11,
+                14,
+                17
+              ],
+              "zmask": 256
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            0,
+            1,
+            2,
+            5,
+            11,
+            14,
+            17
+          ],
+          "seed_mask": 149543,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 464,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 245,
+        "cover_passing": 1,
+        "cover_tetrad": 9,
+        "covers": 255,
+        "labeled_z_families": 1,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.30127299999912793,
+      "index": 2842671,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 245,
+            "cover_passing": 1,
+            "cover_tetrad": 9,
+            "covers": 255,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 464,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  20,
+                  104,
+                  6,
+                  42,
+                  19,
+                  81,
+                  94,
+                  73,
+                  36,
+                  114,
+                  33,
+                  13
+                ],
+                "propagated_masks": [
+                  20,
+                  104,
+                  6,
+                  42,
+                  19,
+                  81,
+                  94,
+                  73,
+                  36,
+                  114,
+                  33,
+                  13
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                0,
+                5,
+                7,
+                8,
+                10,
+                13,
+                17
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            0,
+            5,
+            7,
+            8,
+            10,
+            13,
+            17
+          ],
+          "seed_mask": 140705,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 2262,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 2,
+        "capacity_flow_checks": 24,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 24,
+        "capacity_passing_covers": 2,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 1248,
+        "cover_passing": 6,
+        "cover_prior_dual": 6,
+        "covers": 1260,
+        "joint_pre_capacity_failing_covers": 4,
+        "labeled_z_families": 36,
+        "pre_capacity_passing_covers": 2,
+        "pre_capacity_passing_families": 2,
+        "propagation_failure:disjoint_required_edge": 32,
+        "propagation_failure:empty_propagated_mask": 2,
+        "propagation_passing_families": 2,
+        "seeds": 4
+      },
+      "decision": "JOINT_PRE_CAPACITY_REJECTED",
+      "elapsed_seconds": 2.1086453330008226,
+      "index": 3945531,
+      "pre_capacity_rejected_seeds": [
+        331988,
+        315556
+      ],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 500,
+            "cover_passing": 2,
+            "covers": 502,
+            "joint_pre_capacity_failing_covers": 1,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1122,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  92,
+                  74,
+                  89,
+                  38,
+                  3,
+                  21,
+                  13,
+                  82,
+                  36,
+                  34,
+                  127,
+                  91
+                ],
+                "propagated_masks": [
+                  92,
+                  74,
+                  89,
+                  38,
+                  3,
+                  21,
+                  13,
+                  82,
+                  36,
+                  34,
+                  127,
+                  91
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                1,
+                3,
+                6,
+                8,
+                11,
+                16,
+                17
+              ],
+              "zmask": 0
+            },
+            {
+              "counts": {
+                "labeled_z_families": 16,
+                "propagation_failure:disjoint_required_edge": 16
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  84,
+                  74,
+                  89,
+                  36,
+                  3,
+                  20,
+                  13,
+                  80,
+                  36,
+                  32,
+                  127
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  11
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                1,
+                3,
+                6,
+                8,
+                11,
+                16,
+                17
+              ],
+              "zmask": 2048
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            1,
+            3,
+            6,
+            8,
+            11,
+            16,
+            17
+          ],
+          "seed_mask": 198986,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 500,
+            "cover_passing": 2,
+            "covers": 502,
+            "joint_pre_capacity_failing_covers": 1,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1140,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  108,
+                  84,
+                  34,
+                  127,
+                  18,
+                  17,
+                  41,
+                  37,
+                  88,
+                  77,
+                  50,
+                  93
+                ],
+                "propagated_masks": [
+                  108,
+                  84,
+                  34,
+                  127,
+                  18,
+                  17,
+                  41,
+                  37,
+                  88,
+                  77,
+                  50,
+                  93
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                1,
+                5,
+                8,
+                11,
+                13,
+                14,
+                17
+              ],
+              "zmask": 0
+            },
+            {
+              "counts": {
+                "labeled_z_families": 16,
+                "propagation_failure:disjoint_required_edge": 16
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  108,
+                  80,
+                  34,
+                  127,
+                  18,
+                  16,
+                  41,
+                  37,
+                  80,
+                  77,
+                  50
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  13
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                1,
+                5,
+                8,
+                11,
+                13,
+                14,
+                17
+              ],
+              "zmask": 2048
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            1,
+            5,
+            8,
+            11,
+            13,
+            14,
+            17
+          ],
+          "seed_mask": 157986,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": false,
+          "counts": {
+            "cover_baseline": 124,
+            "cover_passing": 1,
+            "cover_prior_dual": 3,
+            "covers": 128,
+            "joint_pre_capacity_failing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "labeled_z_families": 1,
+                "propagation_failure:empty_propagated_mask": 1
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  8,
+                  8,
+                  89,
+                  65,
+                  0,
+                  0,
+                  80,
+                  127,
+                  34,
+                  36
+                ],
+                "reason": "empty_propagated_mask",
+                "stage": "propagation",
+                "z_supports": [
+                  38,
+                  81
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                2,
+                4,
+                6,
+                7,
+                12,
+                16,
+                18
+              ],
+              "zmask": 2056
+            }
+          ],
+          "pre_capacity_pass": false,
+          "seed": [
+            2,
+            4,
+            6,
+            7,
+            12,
+            16,
+            18
+          ],
+          "seed_mask": 331988,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": false,
+          "counts": {
+            "cover_baseline": 124,
+            "cover_passing": 1,
+            "cover_prior_dual": 3,
+            "covers": 128,
+            "joint_pre_capacity_failing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "labeled_z_families": 1,
+                "propagation_failure:empty_propagated_mask": 1
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  4,
+                  4,
+                  127,
+                  18,
+                  34,
+                  65,
+                  0,
+                  0,
+                  72,
+                  77
+                ],
+                "reason": "empty_propagated_mask",
+                "stage": "propagation",
+                "z_supports": [
+                  50,
+                  73
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                2,
+                5,
+                7,
+                12,
+                14,
+                15,
+                18
+              ],
+              "zmask": 3072
+            }
+          ],
+          "pre_capacity_pass": false,
+          "seed": [
+            2,
+            5,
+            7,
+            12,
+            14,
+            15,
+            18
+          ],
+          "seed_mask": 315556,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 994,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 495,
+        "cover_passing": 4,
+        "cover_prior_dual": 1,
+        "cover_strict_h": 1,
+        "cover_tetrad": 1,
+        "covers": 502,
+        "joint_pre_capacity_failing_covers": 3,
+        "labeled_z_families": 358,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_failure:disjoint_required_edge": 107,
+        "propagation_failure:empty_propagated_mask": 250,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.7613678750003601,
+      "index": 2678006,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 495,
+            "cover_passing": 4,
+            "cover_prior_dual": 1,
+            "cover_strict_h": 1,
+            "cover_tetrad": 1,
+            "covers": 502,
+            "joint_pre_capacity_failing_covers": 3,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 994,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  44,
+                  58,
+                  41,
+                  20,
+                  19,
+                  82,
+                  37,
+                  72,
+                  67,
+                  127,
+                  69,
+                  68
+                ],
+                "propagated_masks": [
+                  44,
+                  58,
+                  41,
+                  20,
+                  19,
+                  82,
+                  37,
+                  72,
+                  67,
+                  127,
+                  69,
+                  68
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                1,
+                3,
+                6,
+                8,
+                13,
+                14,
+                15
+              ],
+              "zmask": 0
+            },
+            {
+              "counts": {
+                "labeled_z_families": 5,
+                "propagation_failure:disjoint_required_edge": 5
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  36,
+                  33,
+                  4,
+                  19,
+                  82,
+                  37,
+                  64,
+                  65,
+                  127,
+                  69,
+                  68
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  26
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                1,
+                3,
+                6,
+                8,
+                13,
+                14,
+                15
+              ],
+              "zmask": 2
+            },
+            {
+              "counts": {
+                "labeled_z_families": 347,
+                "propagation_failure:disjoint_required_edge": 102,
+                "propagation_failure:empty_propagated_mask": 245
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  36,
+                  32,
+                  4,
+                  19,
+                  64,
+                  36,
+                  64,
+                  64,
+                  68,
+                  68
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  26,
+                  11
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                1,
+                3,
+                6,
+                8,
+                13,
+                14,
+                15
+              ],
+              "zmask": 514
+            },
+            {
+              "counts": {
+                "labeled_z_families": 5,
+                "propagation_failure:empty_propagated_mask": 5
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  32,
+                  32,
+                  0,
+                  18,
+                  18,
+                  37,
+                  0,
+                  65,
+                  127,
+                  68
+                ],
+                "reason": "empty_propagated_mask",
+                "stage": "propagation",
+                "z_supports": [
+                  26,
+                  69
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                1,
+                3,
+                6,
+                8,
+                13,
+                14,
+                15
+              ],
+              "zmask": 1026
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            1,
+            3,
+            6,
+            8,
+            13,
+            14,
+            15
+          ],
+          "seed_mask": 57674,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 2082,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 2,
+        "capacity_flow_checks": 24,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 24,
+        "capacity_passing_covers": 2,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 233,
+        "cover_passing": 2,
+        "cover_strict_h": 5,
+        "cover_tetrad": 16,
+        "covers": 256,
+        "labeled_z_families": 2,
+        "pre_capacity_passing_covers": 2,
+        "pre_capacity_passing_families": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.3916594169986638,
+      "index": 3910558,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 114,
+            "cover_passing": 1,
+            "cover_strict_h": 4,
+            "cover_tetrad": 9,
+            "covers": 128,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1033,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  70,
+                  20,
+                  72,
+                  69,
+                  50,
+                  49,
+                  99,
+                  127,
+                  24,
+                  40,
+                  9,
+                  7
+                ],
+                "propagated_masks": [
+                  70,
+                  20,
+                  72,
+                  69,
+                  50,
+                  49,
+                  99,
+                  127,
+                  24,
+                  40,
+                  9,
+                  7
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                1,
+                6,
+                8,
+                12,
+                14,
+                15,
+                17
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            1,
+            6,
+            8,
+            12,
+            14,
+            15,
+            17
+          ],
+          "seed_mask": 184642,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 119,
+            "cover_passing": 1,
+            "cover_strict_h": 1,
+            "cover_tetrad": 7,
+            "covers": 128,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1049,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  127,
+                  34,
+                  52,
+                  66,
+                  92,
+                  33,
+                  73,
+                  69,
+                  56,
+                  10,
+                  18,
+                  29
+                ],
+                "propagated_masks": [
+                  127,
+                  34,
+                  52,
+                  66,
+                  92,
+                  33,
+                  73,
+                  69,
+                  56,
+                  10,
+                  18,
+                  29
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                6,
+                7,
+                8,
+                11,
+                13,
+                16,
+                17
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            6,
+            7,
+            8,
+            11,
+            13,
+            16,
+            17
+          ],
+          "seed_mask": 207296,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 273,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 249,
+        "cover_passing": 1,
+        "cover_tetrad": 5,
+        "covers": 255,
+        "labeled_z_families": 1,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.24962437499925727,
+      "index": 2621081,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 249,
+            "cover_passing": 1,
+            "cover_tetrad": 5,
+            "covers": 255,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 273,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  36,
+                  104,
+                  5,
+                  22,
+                  90,
+                  49,
+                  9,
+                  14,
+                  19,
+                  42,
+                  81,
+                  68
+                ],
+                "propagated_masks": [
+                  36,
+                  104,
+                  5,
+                  22,
+                  90,
+                  49,
+                  9,
+                  14,
+                  19,
+                  42,
+                  81,
+                  68
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                3,
+                5,
+                8,
+                10,
+                13,
+                16,
+                18
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            3,
+            5,
+            8,
+            10,
+            13,
+            16,
+            18
+          ],
+          "seed_mask": 337192,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "cover_baseline": 495,
+        "cover_passing": 1,
+        "cover_prior_dual": 2,
+        "cover_strict_h": 2,
+        "cover_tetrad": 2,
+        "covers": 502,
+        "joint_pre_capacity_failing_covers": 1,
+        "labeled_z_families": 11,
+        "propagation_failure:disjoint_required_edge": 1,
+        "propagation_failure:empty_propagated_mask": 10,
+        "seeds": 1
+      },
+      "decision": "JOINT_PRE_CAPACITY_REJECTED",
+      "elapsed_seconds": 0.7824170410003717,
+      "index": 3958119,
+      "pre_capacity_rejected_seeds": [
+        282836
+      ],
+      "seed_records": [
+        {
+          "capacity_pass": false,
+          "counts": {
+            "cover_baseline": 495,
+            "cover_passing": 1,
+            "cover_prior_dual": 2,
+            "cover_strict_h": 2,
+            "cover_tetrad": 2,
+            "covers": 502,
+            "joint_pre_capacity_failing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "labeled_z_families": 11,
+                "propagation_failure:disjoint_required_edge": 1,
+                "propagation_failure:empty_propagated_mask": 10
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  0,
+                  66,
+                  34,
+                  34,
+                  32,
+                  0,
+                  66,
+                  127,
+                  0,
+                  64
+                ],
+                "reason": "empty_propagated_mask",
+                "stage": "propagation",
+                "z_supports": [
+                  25,
+                  13
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                2,
+                4,
+                6,
+                7,
+                12,
+                14,
+                18
+              ],
+              "zmask": 1028
+            }
+          ],
+          "pre_capacity_pass": false,
+          "seed": [
+            2,
+            4,
+            6,
+            7,
+            12,
+            14,
+            18
+          ],
+          "seed_mask": 282836,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 4226,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 3,
+        "capacity_flow_checks": 36,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 36,
+        "capacity_passing_covers": 3,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 499,
+        "cover_passing": 3,
+        "cover_strict_h": 8,
+        "cover_tetrad": 1,
+        "covers": 511,
+        "labeled_z_families": 3,
+        "pre_capacity_passing_covers": 3,
+        "pre_capacity_passing_families": 3,
+        "propagation_passing_families": 3,
+        "seeds": 3
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.941336665999188,
+      "index": 3729907,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 125,
+            "cover_passing": 1,
+            "cover_strict_h": 2,
+            "covers": 128,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1484,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  110,
+                  20,
+                  72,
+                  18,
+                  45,
+                  17,
+                  107,
+                  127,
+                  66,
+                  53,
+                  104,
+                  55
+                ],
+                "propagated_masks": [
+                  110,
+                  20,
+                  72,
+                  18,
+                  45,
+                  17,
+                  107,
+                  127,
+                  66,
+                  53,
+                  104,
+                  55
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                0,
+                4,
+                9,
+                10,
+                12,
+                15,
+                18
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            0,
+            4,
+            9,
+            10,
+            12,
+            15,
+            18
+          ],
+          "seed_mask": 300561,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 125,
+            "cover_passing": 1,
+            "cover_strict_h": 2,
+            "covers": 128,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1484,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  94,
+                  36,
+                  80,
+                  77,
+                  34,
+                  33,
+                  91,
+                  47,
+                  88,
+                  18,
+                  127,
+                  45
+                ],
+                "propagated_masks": [
+                  94,
+                  36,
+                  80,
+                  77,
+                  34,
+                  33,
+                  91,
+                  47,
+                  88,
+                  18,
+                  127,
+                  45
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                1,
+                6,
+                8,
+                11,
+                14,
+                16,
+                17
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            1,
+            6,
+            8,
+            11,
+            14,
+            16,
+            17
+          ],
+          "seed_mask": 215362,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 249,
+            "cover_passing": 1,
+            "cover_strict_h": 4,
+            "cover_tetrad": 1,
+            "covers": 255,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1258,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  52,
+                  76,
+                  127,
+                  34,
+                  10,
+                  73,
+                  49,
+                  72,
+                  55,
+                  85,
+                  48,
+                  79
+                ],
+                "propagated_masks": [
+                  52,
+                  76,
+                  127,
+                  34,
+                  10,
+                  73,
+                  49,
+                  72,
+                  55,
+                  85,
+                  48,
+                  79
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                2,
+                5,
+                7,
+                10,
+                14,
+                17,
+                18
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            2,
+            5,
+            7,
+            10,
+            14,
+            17,
+            18
+          ],
+          "seed_mask": 410788,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 1438,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 3,
+        "capacity_flow_checks": 34,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 34,
+        "capacity_passing_covers": 2,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 247,
+        "cover_passing": 2,
+        "cover_tetrad": 6,
+        "covers": 255,
+        "labeled_z_families": 100,
+        "pre_capacity_passing_covers": 2,
+        "pre_capacity_passing_families": 3,
+        "propagation_failure:disjoint_required_edge": 97,
+        "propagation_passing_families": 3,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.317512584000724,
+      "index": 59005,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 2,
+            "cover_baseline": 247,
+            "cover_passing": 2,
+            "cover_tetrad": 6,
+            "covers": 255,
+            "pre_capacity_passing_covers": 2
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1018,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  52,
+                  37,
+                  127,
+                  26,
+                  34,
+                  68,
+                  80,
+                  40,
+                  73,
+                  11,
+                  67,
+                  22
+                ],
+                "propagated_masks": [
+                  52,
+                  37,
+                  127,
+                  26,
+                  34,
+                  68,
+                  80,
+                  40,
+                  73,
+                  11,
+                  67,
+                  22
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                2,
+                5,
+                7,
+                12,
+                15,
+                17,
+                18
+              ],
+              "zmask": 0
+            },
+            {
+              "counts": {
+                "capacity_edge_prunes": 420,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 2,
+                "capacity_flow_checks": 22,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 11,
+                "capacity_nodes": 22,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 99,
+                "pre_capacity_passing_families": 2,
+                "propagation_failure:disjoint_required_edge": 97,
+                "propagation_passing_families": 2
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  52,
+                  37,
+                  26,
+                  34,
+                  68,
+                  80,
+                  40,
+                  73,
+                  11,
+                  67,
+                  22
+                ],
+                "propagated_masks": [
+                  52,
+                  37,
+                  26,
+                  34,
+                  68,
+                  80,
+                  40,
+                  73,
+                  11,
+                  67,
+                  22
+                ],
+                "z_supports": [
+                  126
+                ]
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  48,
+                  37,
+                  24,
+                  32,
+                  64,
+                  80,
+                  40,
+                  72,
+                  11,
+                  67,
+                  22
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  7
+                ]
+              },
+              "pre_capacity_pass": true,
+              "seed": [
+                2,
+                5,
+                7,
+                12,
+                15,
+                17,
+                18
+              ],
+              "zmask": 4
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            2,
+            5,
+            7,
+            12,
+            15,
+            17,
+            18
+          ],
+          "seed_mask": 430244,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 424,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 248,
+        "cover_passing": 1,
+        "cover_tetrad": 6,
+        "covers": 255,
+        "labeled_z_families": 1,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.2825072080013342,
+      "index": 2428222,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 248,
+            "cover_passing": 1,
+            "cover_tetrad": 6,
+            "covers": 255,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 424,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  38,
+                  106,
+                  20,
+                  33,
+                  17,
+                  71,
+                  56,
+                  89,
+                  76,
+                  3,
+                  44,
+                  82
+                ],
+                "propagated_masks": [
+                  38,
+                  106,
+                  20,
+                  33,
+                  17,
+                  71,
+                  56,
+                  89,
+                  76,
+                  3,
+                  44,
+                  82
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                0,
+                2,
+                4,
+                9,
+                11,
+                14,
+                18
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            0,
+            2,
+            4,
+            9,
+            11,
+            14,
+            18
+          ],
+          "seed_mask": 281109,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "cover_baseline": 994,
+        "cover_passing": 2,
+        "cover_strict_h": 4,
+        "cover_tetrad": 4,
+        "covers": 1004,
+        "joint_pre_capacity_failing_covers": 2,
+        "labeled_z_families": 2,
+        "propagation_failure:empty_propagated_mask": 2,
+        "seeds": 2
+      },
+      "decision": "JOINT_PRE_CAPACITY_REJECTED",
+      "elapsed_seconds": 1.319632916000046,
+      "index": 3333850,
+      "pre_capacity_rejected_seeds": [
+        282256,
+        59840
+      ],
+      "seed_records": [
+        {
+          "capacity_pass": false,
+          "counts": {
+            "cover_baseline": 497,
+            "cover_passing": 1,
+            "cover_strict_h": 2,
+            "cover_tetrad": 2,
+            "covers": 502,
+            "joint_pre_capacity_failing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "labeled_z_families": 1,
+                "propagation_failure:empty_propagated_mask": 1
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  50,
+                  127,
+                  16,
+                  16,
+                  68,
+                  65,
+                  0,
+                  69,
+                  34,
+                  10
+                ],
+                "reason": "empty_propagated_mask",
+                "stage": "propagation",
+                "z_supports": [
+                  42,
+                  69
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                4,
+                7,
+                9,
+                10,
+                11,
+                14,
+                18
+              ],
+              "zmask": 520
+            }
+          ],
+          "pre_capacity_pass": false,
+          "seed": [
+            4,
+            7,
+            9,
+            10,
+            11,
+            14,
+            18
+          ],
+          "seed_mask": 282256,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": false,
+          "counts": {
+            "cover_baseline": 497,
+            "cover_passing": 1,
+            "cover_strict_h": 2,
+            "cover_tetrad": 2,
+            "covers": 502,
+            "joint_pre_capacity_failing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "labeled_z_families": 1,
+                "propagation_failure:empty_propagated_mask": 1
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  127,
+                  42,
+                  8,
+                  68,
+                  8,
+                  65,
+                  69,
+                  0,
+                  34,
+                  18
+                ],
+                "reason": "empty_propagated_mask",
+                "stage": "propagation",
+                "z_supports": [
+                  50,
+                  69
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                6,
+                7,
+                8,
+                11,
+                13,
+                14,
+                15
+              ],
+              "zmask": 2056
+            }
+          ],
+          "pre_capacity_pass": false,
+          "seed": [
+            6,
+            7,
+            8,
+            11,
+            13,
+            14,
+            15
+          ],
+          "seed_mask": 59840,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 1056,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 496,
+        "cover_passing": 2,
+        "cover_strict_h": 1,
+        "cover_tetrad": 3,
+        "covers": 502,
+        "joint_pre_capacity_failing_covers": 1,
+        "labeled_z_families": 2,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_failure:disjoint_required_edge": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.6093900830001076,
+      "index": 2685641,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 496,
+            "cover_passing": 2,
+            "cover_strict_h": 1,
+            "cover_tetrad": 3,
+            "covers": 502,
+            "joint_pre_capacity_failing_covers": 1,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1056,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  127,
+                  50,
+                  37,
+                  26,
+                  12,
+                  49,
+                  9,
+                  70,
+                  69,
+                  82,
+                  96,
+                  31
+                ],
+                "propagated_masks": [
+                  127,
+                  50,
+                  37,
+                  26,
+                  12,
+                  49,
+                  9,
+                  70,
+                  69,
+                  82,
+                  96,
+                  31
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                6,
+                7,
+                8,
+                9,
+                12,
+                13,
+                16
+              ],
+              "zmask": 0
+            },
+            {
+              "counts": {
+                "labeled_z_families": 1,
+                "propagation_failure:disjoint_required_edge": 1
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  127,
+                  50,
+                  37,
+                  4,
+                  33,
+                  1,
+                  68,
+                  69,
+                  82,
+                  96,
+                  31
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  26
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                6,
+                7,
+                8,
+                9,
+                12,
+                13,
+                16
+              ],
+              "zmask": 8
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            6,
+            7,
+            8,
+            9,
+            12,
+            13,
+            16
+          ],
+          "seed_mask": 78784,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 980,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 252,
+        "cover_passing": 1,
+        "cover_prior_dual": 1,
+        "cover_tetrad": 1,
+        "covers": 255,
+        "labeled_z_families": 1,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.36660712499906367,
+      "index": 3939545,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 252,
+            "cover_passing": 1,
+            "cover_prior_dual": 1,
+            "cover_tetrad": 1,
+            "covers": 255,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 980,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  92,
+                  10,
+                  73,
+                  3,
+                  69,
+                  6,
+                  50,
+                  81,
+                  33,
+                  44,
+                  127,
+                  52
+                ],
+                "propagated_masks": [
+                  92,
+                  10,
+                  73,
+                  3,
+                  69,
+                  6,
+                  50,
+                  81,
+                  33,
+                  44,
+                  127,
+                  52
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                0,
+                1,
+                2,
+                5,
+                12,
+                15,
+                17
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            0,
+            1,
+            2,
+            5,
+            12,
+            15,
+            17
+          ],
+          "seed_mask": 167975,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 420,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 253,
+        "cover_passing": 1,
+        "cover_tetrad": 1,
+        "covers": 255,
+        "labeled_z_families": 1,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.3174425829984102,
+      "index": 3782999,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 253,
+            "cover_passing": 1,
+            "cover_tetrad": 1,
+            "covers": 255,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 420,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  118,
+                  74,
+                  76,
+                  83,
+                  21,
+                  9,
+                  36,
+                  24,
+                  35,
+                  40,
+                  50,
+                  69
+                ],
+                "propagated_masks": [
+                  118,
+                  74,
+                  76,
+                  83,
+                  21,
+                  9,
+                  36,
+                  24,
+                  35,
+                  40,
+                  50,
+                  69
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                5,
+                7,
+                8,
+                9,
+                13,
+                15,
+                18
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            5,
+            7,
+            8,
+            9,
+            13,
+            15,
+            18
+          ],
+          "seed_mask": 304032,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "cover_baseline": 245,
+        "cover_passing": 1,
+        "cover_prior_dual": 2,
+        "cover_strict_h": 1,
+        "cover_tetrad": 6,
+        "covers": 255,
+        "joint_pre_capacity_failing_covers": 1,
+        "labeled_z_families": 1,
+        "propagation_failure:disjoint_required_edge": 1,
+        "seeds": 1
+      },
+      "decision": "JOINT_PRE_CAPACITY_REJECTED",
+      "elapsed_seconds": 0.37357237500145857,
+      "index": 2592565,
+      "pre_capacity_rejected_seeds": [
+        337941
+      ],
+      "seed_records": [
+        {
+          "capacity_pass": false,
+          "counts": {
+            "cover_baseline": 245,
+            "cover_passing": 1,
+            "cover_prior_dual": 2,
+            "cover_strict_h": 1,
+            "cover_tetrad": 6,
+            "covers": 255,
+            "joint_pre_capacity_failing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "labeled_z_families": 1,
+                "propagation_failure:disjoint_required_edge": 1
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  18,
+                  66,
+                  44,
+                  18,
+                  41,
+                  127,
+                  53,
+                  64,
+                  39,
+                  80,
+                  96
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  13
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                0,
+                2,
+                4,
+                11,
+                13,
+                16,
+                18
+              ],
+              "zmask": 1024
+            }
+          ],
+          "pre_capacity_pass": false,
+          "seed": [
+            0,
+            2,
+            4,
+            11,
+            13,
+            16,
+            18
+          ],
+          "seed_mask": 337941,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 1164,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 249,
+        "cover_passing": 2,
+        "cover_strict_h": 1,
+        "cover_tetrad": 3,
+        "covers": 255,
+        "joint_pre_capacity_failing_covers": 1,
+        "labeled_z_families": 6,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_failure:disjoint_required_edge": 5,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.35498466700119025,
+      "index": 3960292,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 249,
+            "cover_passing": 2,
+            "cover_strict_h": 1,
+            "cover_tetrad": 3,
+            "covers": 255,
+            "joint_pre_capacity_failing_covers": 1,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1164,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  44,
+                  34,
+                  86,
+                  41,
+                  67,
+                  93,
+                  80,
+                  37,
+                  74,
+                  20,
+                  17,
+                  127
+                ],
+                "propagated_masks": [
+                  44,
+                  34,
+                  86,
+                  41,
+                  67,
+                  93,
+                  80,
+                  37,
+                  74,
+                  20,
+                  17,
+                  127
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                0,
+                3,
+                4,
+                10,
+                14,
+                17,
+                18
+              ],
+              "zmask": 0
+            },
+            {
+              "counts": {
+                "labeled_z_families": 5,
+                "propagation_failure:disjoint_required_edge": 5
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  40,
+                  32,
+                  41,
+                  65,
+                  93,
+                  64,
+                  33,
+                  72,
+                  20,
+                  1,
+                  127
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  22
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                0,
+                3,
+                4,
+                10,
+                14,
+                17,
+                18
+              ],
+              "zmask": 4
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            0,
+            3,
+            4,
+            10,
+            14,
+            17,
+            18
+          ],
+          "seed_mask": 410649,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 415,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 246,
+        "cover_passing": 1,
+        "cover_strict_h": 2,
+        "cover_tetrad": 6,
+        "covers": 255,
+        "labeled_z_families": 1,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.28811387499990815,
+      "index": 2523664,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 246,
+            "cover_passing": 1,
+            "cover_strict_h": 2,
+            "cover_tetrad": 6,
+            "covers": 255,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 415,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  12,
+                  18,
+                  70,
+                  25,
+                  67,
+                  109,
+                  10,
+                  40,
+                  81,
+                  52,
+                  98,
+                  100
+                ],
+                "propagated_masks": [
+                  12,
+                  18,
+                  70,
+                  25,
+                  67,
+                  109,
+                  10,
+                  40,
+                  81,
+                  52,
+                  98,
+                  100
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                0,
+                3,
+                4,
+                10,
+                14,
+                15,
+                17
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            0,
+            3,
+            4,
+            10,
+            14,
+            15,
+            17
+          ],
+          "seed_mask": 181273,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 365,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 963,
+        "cover_passing": 1,
+        "cover_tetrad": 4,
+        "covers": 968,
+        "labeled_z_families": 1,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.9550888330013549,
+      "index": 3405088,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 963,
+            "cover_passing": 1,
+            "cover_tetrad": 4,
+            "covers": 968,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 365,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  50,
+                  60,
+                  84,
+                  74,
+                  49,
+                  76,
+                  41,
+                  11,
+                  22,
+                  5,
+                  96,
+                  67
+                ],
+                "propagated_masks": [
+                  50,
+                  60,
+                  84,
+                  74,
+                  49,
+                  76,
+                  41,
+                  11,
+                  22,
+                  5,
+                  96,
+                  67
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                4,
+                7,
+                9,
+                10,
+                11,
+                16,
+                17
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            4,
+            7,
+            9,
+            10,
+            11,
+            16,
+            17
+          ],
+          "seed_mask": 200336,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "cover_baseline": 988,
+        "cover_passing": 2,
+        "cover_prior_dual": 2,
+        "cover_strict_h": 4,
+        "cover_tetrad": 8,
+        "covers": 1004,
+        "joint_pre_capacity_failing_covers": 2,
+        "labeled_z_families": 2,
+        "propagation_failure:empty_propagated_mask": 2,
+        "seeds": 2
+      },
+      "decision": "JOINT_PRE_CAPACITY_REJECTED",
+      "elapsed_seconds": 1.108550249999098,
+      "index": 2591766,
+      "pre_capacity_rejected_seeds": [
+        173093,
+        168738
+      ],
+      "seed_records": [
+        {
+          "capacity_pass": false,
+          "counts": {
+            "cover_baseline": 494,
+            "cover_passing": 1,
+            "cover_prior_dual": 1,
+            "cover_strict_h": 2,
+            "cover_tetrad": 4,
+            "covers": 502,
+            "joint_pre_capacity_failing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "labeled_z_families": 1,
+                "propagation_failure:empty_propagated_mask": 1
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  18,
+                  32,
+                  100,
+                  127,
+                  32,
+                  17,
+                  3,
+                  0,
+                  32,
+                  68
+                ],
+                "reason": "empty_propagated_mask",
+                "stage": "propagation",
+                "z_supports": [
+                  19,
+                  76
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                0,
+                2,
+                5,
+                10,
+                13,
+                15,
+                17
+              ],
+              "zmask": 160
+            }
+          ],
+          "pre_capacity_pass": false,
+          "seed": [
+            0,
+            2,
+            5,
+            10,
+            13,
+            15,
+            17
+          ],
+          "seed_mask": 173093,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": false,
+          "counts": {
+            "cover_baseline": 494,
+            "cover_passing": 1,
+            "cover_prior_dual": 1,
+            "cover_strict_h": 2,
+            "cover_tetrad": 4,
+            "covers": 502,
+            "joint_pre_capacity_failing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "labeled_z_families": 1,
+                "propagation_failure:empty_propagated_mask": 1
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  24,
+                  17,
+                  32,
+                  127,
+                  98,
+                  32,
+                  9,
+                  0,
+                  32,
+                  66
+                ],
+                "reason": "empty_propagated_mask",
+                "stage": "propagation",
+                "z_supports": [
+                  25,
+                  70
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                1,
+                5,
+                8,
+                9,
+                12,
+                15,
+                17
+              ],
+              "zmask": 192
+            }
+          ],
+          "pre_capacity_pass": false,
+          "seed": [
+            1,
+            5,
+            8,
+            9,
+            12,
+            15,
+            17
+          ],
+          "seed_mask": 168738,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 3030,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 3,
+        "capacity_flow_checks": 36,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 36,
+        "capacity_passing_covers": 3,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 493,
+        "cover_passing": 7,
+        "cover_prior_dual": 4,
+        "cover_strict_h": 1,
+        "cover_tetrad": 6,
+        "covers": 511,
+        "joint_pre_capacity_failing_covers": 4,
+        "labeled_z_families": 9,
+        "pre_capacity_passing_covers": 3,
+        "pre_capacity_passing_families": 3,
+        "propagation_failure:disjoint_required_edge": 2,
+        "propagation_failure:empty_propagated_mask": 4,
+        "propagation_passing_families": 3,
+        "seeds": 3
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.9124687090006773,
+      "index": 3793488,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 121,
+            "cover_passing": 2,
+            "cover_prior_dual": 1,
+            "cover_strict_h": 1,
+            "cover_tetrad": 3,
+            "covers": 128,
+            "joint_pre_capacity_failing_covers": 1,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1015,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  52,
+                  34,
+                  49,
+                  68,
+                  65,
+                  66,
+                  127,
+                  29,
+                  26,
+                  72,
+                  37,
+                  88
+                ],
+                "propagated_masks": [
+                  52,
+                  34,
+                  49,
+                  68,
+                  65,
+                  66,
+                  127,
+                  29,
+                  26,
+                  72,
+                  37,
+                  88
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                1,
+                2,
+                6,
+                11,
+                15,
+                17,
+                18
+              ],
+              "zmask": 0
+            },
+            {
+              "counts": {
+                "labeled_z_families": 1,
+                "propagation_failure:disjoint_required_edge": 1
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  36,
+                  32,
+                  33,
+                  68,
+                  65,
+                  64,
+                  127,
+                  29,
+                  64,
+                  37,
+                  88
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  26
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                1,
+                2,
+                6,
+                11,
+                15,
+                17,
+                18
+              ],
+              "zmask": 256
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            1,
+            2,
+            6,
+            11,
+            15,
+            17,
+            18
+          ],
+          "seed_mask": 428102,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 252,
+            "cover_passing": 1,
+            "cover_prior_dual": 1,
+            "cover_tetrad": 1,
+            "covers": 255,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1027,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  86,
+                  12,
+                  112,
+                  85,
+                  10,
+                  9,
+                  67,
+                  7,
+                  56,
+                  127,
+                  40,
+                  52
+                ],
+                "propagated_masks": [
+                  86,
+                  12,
+                  112,
+                  85,
+                  10,
+                  9,
+                  67,
+                  7,
+                  56,
+                  127,
+                  40,
+                  52
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                1,
+                6,
+                8,
+                12,
+                13,
+                16,
+                17
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            1,
+            6,
+            8,
+            12,
+            13,
+            16,
+            17
+          ],
+          "seed_mask": 209218,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 120,
+            "cover_passing": 4,
+            "cover_prior_dual": 2,
+            "cover_tetrad": 2,
+            "covers": 128,
+            "joint_pre_capacity_failing_covers": 3,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 988,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  84,
+                  12,
+                  127,
+                  82,
+                  10,
+                  9,
+                  65,
+                  56,
+                  7,
+                  112,
+                  40,
+                  54
+                ],
+                "propagated_masks": [
+                  84,
+                  12,
+                  127,
+                  82,
+                  10,
+                  9,
+                  65,
+                  56,
+                  7,
+                  112,
+                  40,
+                  54
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                2,
+                5,
+                7,
+                10,
+                13,
+                16,
+                17
+              ],
+              "zmask": 0
+            },
+            {
+              "counts": {
+                "labeled_z_families": 1,
+                "propagation_failure:disjoint_required_edge": 1
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  68,
+                  4,
+                  127,
+                  66,
+                  2,
+                  1,
+                  65,
+                  7,
+                  112,
+                  40,
+                  54
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  56
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                2,
+                5,
+                7,
+                10,
+                13,
+                16,
+                17
+              ],
+              "zmask": 128
+            },
+            {
+              "counts": {
+                "labeled_z_families": 1,
+                "propagation_failure:empty_propagated_mask": 1
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  64,
+                  0,
+                  127,
+                  64,
+                  0,
+                  0,
+                  64,
+                  112,
+                  40,
+                  54
+                ],
+                "reason": "empty_propagated_mask",
+                "stage": "propagation",
+                "z_supports": [
+                  56,
+                  7
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                2,
+                5,
+                7,
+                10,
+                13,
+                16,
+                17
+              ],
+              "zmask": 384
+            },
+            {
+              "counts": {
+                "labeled_z_families": 3,
+                "propagation_failure:empty_propagated_mask": 3
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  68,
+                  4,
+                  127,
+                  64,
+                  0,
+                  1,
+                  65,
+                  5,
+                  112,
+                  0
+                ],
+                "reason": "empty_propagated_mask",
+                "stage": "propagation",
+                "z_supports": [
+                  56,
+                  50
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                2,
+                5,
+                7,
+                10,
+                13,
+                16,
+                17
+              ],
+              "zmask": 2176
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            2,
+            5,
+            7,
+            10,
+            13,
+            16,
+            17
+          ],
+          "seed_mask": 205988,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 2961,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 5,
+        "capacity_flow_checks": 57,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 57,
+        "capacity_passing_covers": 3,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 494,
+        "cover_passing": 3,
+        "cover_strict_h": 8,
+        "cover_tetrad": 5,
+        "covers": 510,
+        "labeled_z_families": 101,
+        "pre_capacity_passing_covers": 3,
+        "pre_capacity_passing_families": 5,
+        "propagation_failure:disjoint_required_edge": 96,
+        "propagation_passing_families": 5,
+        "seeds": 2
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.7132024579987046,
+      "index": 2580648,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 251,
+            "cover_passing": 1,
+            "cover_strict_h": 2,
+            "cover_tetrad": 1,
+            "covers": 255,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1141,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  84,
+                  34,
+                  14,
+                  81,
+                  11,
+                  77,
+                  71,
+                  40,
+                  5,
+                  122,
+                  48,
+                  127
+                ],
+                "propagated_masks": [
+                  84,
+                  34,
+                  14,
+                  81,
+                  11,
+                  77,
+                  71,
+                  40,
+                  5,
+                  122,
+                  48,
+                  127
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                0,
+                3,
+                4,
+                11,
+                15,
+                17,
+                18
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            0,
+            3,
+            4,
+            11,
+            15,
+            17,
+            18
+          ],
+          "seed_mask": 428057,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 2,
+            "cover_baseline": 243,
+            "cover_passing": 2,
+            "cover_strict_h": 6,
+            "cover_tetrad": 4,
+            "covers": 255,
+            "pre_capacity_passing_covers": 2
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1049,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  30,
+                  34,
+                  84,
+                  11,
+                  29,
+                  33,
+                  88,
+                  7,
+                  112,
+                  127,
+                  96,
+                  12
+                ],
+                "propagated_masks": [
+                  30,
+                  34,
+                  84,
+                  11,
+                  29,
+                  33,
+                  88,
+                  7,
+                  112,
+                  127,
+                  96,
+                  12
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                5,
+                7,
+                8,
+                9,
+                12,
+                15,
+                17
+              ],
+              "zmask": 0
+            },
+            {
+              "counts": {
+                "capacity_edge_prunes": 771,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 3,
+                "capacity_flow_checks": 33,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 11,
+                "capacity_nodes": 33,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 99,
+                "pre_capacity_passing_families": 3,
+                "propagation_failure:disjoint_required_edge": 96,
+                "propagation_passing_families": 3
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  30,
+                  34,
+                  84,
+                  11,
+                  29,
+                  33,
+                  88,
+                  7,
+                  112,
+                  96,
+                  12
+                ],
+                "propagated_masks": [
+                  30,
+                  34,
+                  84,
+                  11,
+                  29,
+                  33,
+                  88,
+                  7,
+                  112,
+                  96,
+                  12
+                ],
+                "z_supports": [
+                  111
+                ]
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  30,
+                  32,
+                  80,
+                  11,
+                  29,
+                  32,
+                  88,
+                  7,
+                  112,
+                  96,
+                  8
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  7
+                ]
+              },
+              "pre_capacity_pass": true,
+              "seed": [
+                5,
+                7,
+                8,
+                9,
+                12,
+                15,
+                17
+              ],
+              "zmask": 512
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            5,
+            7,
+            8,
+            9,
+            12,
+            15,
+            17
+          ],
+          "seed_mask": 168864,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 395,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 244,
+        "cover_passing": 1,
+        "cover_tetrad": 10,
+        "covers": 255,
+        "labeled_z_families": 1,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.2583478330016078,
+      "index": 3339685,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 244,
+            "cover_passing": 1,
+            "cover_tetrad": 10,
+            "covers": 255,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 395,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  88,
+                  18,
+                  84,
+                  27,
+                  77,
+                  7,
+                  100,
+                  34,
+                  40,
+                  33,
+                  75,
+                  52
+                ],
+                "propagated_masks": [
+                  88,
+                  18,
+                  84,
+                  27,
+                  77,
+                  7,
+                  100,
+                  34,
+                  40,
+                  33,
+                  75,
+                  52
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                5,
+                10,
+                12,
+                13,
+                14,
+                15,
+                17
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            5,
+            10,
+            12,
+            13,
+            14,
+            15,
+            17
+          ],
+          "seed_mask": 193568,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 4704,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 4,
+        "capacity_flow_checks": 48,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 48,
+        "capacity_passing_covers": 4,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 1494,
+        "cover_passing": 8,
+        "cover_strict_h": 12,
+        "covers": 1514,
+        "joint_pre_capacity_failing_covers": 4,
+        "labeled_z_families": 24,
+        "pre_capacity_passing_covers": 4,
+        "pre_capacity_passing_families": 4,
+        "propagation_failure:disjoint_required_edge": 20,
+        "propagation_passing_families": 4,
+        "seeds": 4
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 2.375982333000138,
+      "index": 3581559,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 499,
+            "cover_passing": 1,
+            "cover_strict_h": 2,
+            "covers": 502,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1156,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  44,
+                  10,
+                  54,
+                  73,
+                  67,
+                  101,
+                  18,
+                  77,
+                  48,
+                  127,
+                  79,
+                  52
+                ],
+                "propagated_masks": [
+                  44,
+                  10,
+                  54,
+                  73,
+                  67,
+                  101,
+                  18,
+                  77,
+                  48,
+                  127,
+                  79,
+                  52
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                0,
+                3,
+                4,
+                9,
+                14,
+                15,
+                18
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            0,
+            3,
+            4,
+            9,
+            14,
+            15,
+            18
+          ],
+          "seed_mask": 311833,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 499,
+            "cover_passing": 1,
+            "cover_strict_h": 2,
+            "covers": 502,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1168,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  12,
+                  52,
+                  10,
+                  34,
+                  127,
+                  113,
+                  73,
+                  93,
+                  69,
+                  58,
+                  50,
+                  85
+                ],
+                "propagated_masks": [
+                  12,
+                  52,
+                  10,
+                  34,
+                  127,
+                  113,
+                  73,
+                  93,
+                  69,
+                  58,
+                  50,
+                  85
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                0,
+                5,
+                9,
+                10,
+                12,
+                17,
+                18
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            0,
+            5,
+            9,
+            10,
+            12,
+            17,
+            18
+          ],
+          "seed_mask": 398881,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 248,
+            "cover_passing": 3,
+            "cover_strict_h": 4,
+            "covers": 255,
+            "joint_pre_capacity_failing_covers": 2,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1190,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  60,
+                  68,
+                  50,
+                  127,
+                  66,
+                  65,
+                  57,
+                  13,
+                  40,
+                  82,
+                  87,
+                  60
+                ],
+                "propagated_masks": [
+                  60,
+                  68,
+                  50,
+                  127,
+                  66,
+                  65,
+                  57,
+                  13,
+                  40,
+                  82,
+                  87,
+                  60
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                1,
+                5,
+                8,
+                11,
+                13,
+                16,
+                17
+              ],
+              "zmask": 0
+            },
+            {
+              "counts": {
+                "labeled_z_families": 5,
+                "propagation_failure:disjoint_required_edge": 5
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  64,
+                  34,
+                  127,
+                  66,
+                  65,
+                  57,
+                  13,
+                  32,
+                  66,
+                  87,
+                  60
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  28
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                1,
+                5,
+                8,
+                11,
+                13,
+                16,
+                17
+              ],
+              "zmask": 1
+            },
+            {
+              "counts": {
+                "labeled_z_families": 5,
+                "propagation_failure:disjoint_required_edge": 5
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  60,
+                  64,
+                  34,
+                  127,
+                  66,
+                  65,
+                  57,
+                  13,
+                  32,
+                  66,
+                  87
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  28
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                1,
+                5,
+                8,
+                11,
+                13,
+                16,
+                17
+              ],
+              "zmask": 2048
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            1,
+            5,
+            8,
+            11,
+            13,
+            16,
+            17
+          ],
+          "seed_mask": 207138,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 248,
+            "cover_passing": 3,
+            "cover_strict_h": 4,
+            "covers": 255,
+            "joint_pre_capacity_failing_covers": 2,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 1190,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  78,
+                  36,
+                  69,
+                  72,
+                  50,
+                  33,
+                  75,
+                  26,
+                  127,
+                  48,
+                  55,
+                  78
+                ],
+                "propagated_masks": [
+                  78,
+                  36,
+                  69,
+                  72,
+                  50,
+                  33,
+                  75,
+                  26,
+                  127,
+                  48,
+                  55,
+                  78
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                2,
+                6,
+                7,
+                11,
+                14,
+                15,
+                16
+              ],
+              "zmask": 0
+            },
+            {
+              "counts": {
+                "labeled_z_families": 5,
+                "propagation_failure:disjoint_required_edge": 5
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  32,
+                  65,
+                  64,
+                  48,
+                  33,
+                  75,
+                  26,
+                  127,
+                  48,
+                  55,
+                  78
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  14
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                2,
+                6,
+                7,
+                11,
+                14,
+                15,
+                16
+              ],
+              "zmask": 1
+            },
+            {
+              "counts": {
+                "labeled_z_families": 5,
+                "propagation_failure:disjoint_required_edge": 5
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  78,
+                  32,
+                  65,
+                  64,
+                  48,
+                  33,
+                  75,
+                  26,
+                  127,
+                  48,
+                  55
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  14
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                2,
+                6,
+                7,
+                11,
+                14,
+                15,
+                16
+              ],
+              "zmask": 2048
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            2,
+            6,
+            7,
+            11,
+            14,
+            15,
+            16
+          ],
+          "seed_mask": 116932,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 973,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 496,
+        "cover_passing": 4,
+        "cover_strict_h": 1,
+        "cover_tetrad": 1,
+        "covers": 502,
+        "joint_pre_capacity_failing_covers": 3,
+        "labeled_z_families": 73,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_failure:disjoint_required_edge": 32,
+        "propagation_failure:empty_propagated_mask": 40,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.750678667000102,
+      "index": 2257658,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 496,
+            "cover_passing": 4,
+            "cover_strict_h": 1,
+            "cover_tetrad": 1,
+            "covers": 502,
+            "joint_pre_capacity_failing_covers": 3,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 973,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  127,
+                  34,
+                  69,
+                  26,
+                  28,
+                  33,
+                  13,
+                  82,
+                  25,
+                  102,
+                  40,
+                  67
+                ],
+                "propagated_masks": [
+                  127,
+                  34,
+                  69,
+                  26,
+                  28,
+                  33,
+                  13,
+                  82,
+                  25,
+                  102,
+                  40,
+                  67
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                6,
+                7,
+                8,
+                9,
+                12,
+                15,
+                18
+              ],
+              "zmask": 0
+            },
+            {
+              "counts": {
+                "labeled_z_families": 1,
+                "propagation_failure:disjoint_required_edge": 1
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  127,
+                  34,
+                  68,
+                  26,
+                  28,
+                  32,
+                  13,
+                  66,
+                  102,
+                  32,
+                  66
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  25
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                6,
+                7,
+                8,
+                9,
+                12,
+                15,
+                18
+              ],
+              "zmask": 256
+            },
+            {
+              "counts": {
+                "labeled_z_families": 66,
+                "propagation_failure:disjoint_required_edge": 30,
+                "propagation_failure:empty_propagated_mask": 36
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  32,
+                  68,
+                  26,
+                  4,
+                  32,
+                  13,
+                  64,
+                  100,
+                  32,
+                  64
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  11,
+                  25
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                6,
+                7,
+                8,
+                9,
+                12,
+                15,
+                18
+              ],
+              "zmask": 257
+            },
+            {
+              "counts": {
+                "labeled_z_families": 5,
+                "propagation_failure:disjoint_required_edge": 1,
+                "propagation_failure:empty_propagated_mask": 4
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  127,
+                  34,
+                  64,
+                  24,
+                  24,
+                  0,
+                  9,
+                  64,
+                  0,
+                  64
+                ],
+                "reason": "empty_propagated_mask",
+                "stage": "propagation",
+                "z_supports": [
+                  25,
+                  38
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                6,
+                7,
+                8,
+                9,
+                12,
+                15,
+                18
+              ],
+              "zmask": 768
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            6,
+            7,
+            8,
+            9,
+            12,
+            15,
+            18
+          ],
+          "seed_mask": 299968,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 1924,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 2,
+        "capacity_flow_checks": 24,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 24,
+        "capacity_passing_covers": 2,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 1930,
+        "cover_passing": 2,
+        "cover_prior_dual": 2,
+        "cover_tetrad": 2,
+        "covers": 1936,
+        "labeled_z_families": 2,
+        "pre_capacity_passing_covers": 2,
+        "pre_capacity_passing_families": 2,
+        "propagation_passing_families": 2,
+        "seeds": 2
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 1.3691732090010191,
+      "index": 3945506,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 965,
+            "cover_passing": 1,
+            "cover_prior_dual": 1,
+            "cover_tetrad": 1,
+            "covers": 968,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 962,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  44,
+                  84,
+                  34,
+                  82,
+                  127,
+                  81,
+                  41,
+                  37,
+                  88,
+                  13,
+                  114,
+                  3
+                ],
+                "propagated_masks": [
+                  44,
+                  84,
+                  34,
+                  82,
+                  127,
+                  81,
+                  41,
+                  37,
+                  88,
+                  13,
+                  114,
+                  3
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                0,
+                5,
+                9,
+                10,
+                13,
+                15,
+                18
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            0,
+            5,
+            9,
+            10,
+            13,
+            15,
+            18
+          ],
+          "seed_mask": 304673,
+          "unresolved": false
+        },
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 965,
+            "cover_passing": 1,
+            "cover_prior_dual": 1,
+            "cover_tetrad": 1,
+            "covers": 968,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 962,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  44,
+                  84,
+                  34,
+                  127,
+                  82,
+                  81,
+                  41,
+                  37,
+                  88,
+                  13,
+                  114,
+                  3
+                ],
+                "propagated_masks": [
+                  44,
+                  84,
+                  34,
+                  127,
+                  82,
+                  81,
+                  41,
+                  37,
+                  88,
+                  13,
+                  114,
+                  3
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                1,
+                5,
+                8,
+                11,
+                13,
+                14,
+                18
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            1,
+            5,
+            8,
+            11,
+            13,
+            14,
+            18
+          ],
+          "seed_mask": 289058,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 405,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 247,
+        "cover_passing": 1,
+        "cover_tetrad": 7,
+        "covers": 255,
+        "labeled_z_families": 1,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.3030139170004986,
+      "index": 3740876,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 247,
+            "cover_passing": 1,
+            "cover_tetrad": 7,
+            "covers": 255,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 405,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  12,
+                  42,
+                  105,
+                  70,
+                  67,
+                  85,
+                  20,
+                  57,
+                  18,
+                  49,
+                  36,
+                  74
+                ],
+                "propagated_masks": [
+                  12,
+                  42,
+                  105,
+                  70,
+                  67,
+                  85,
+                  20,
+                  57,
+                  18,
+                  49,
+                  36,
+                  74
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                2,
+                4,
+                6,
+                7,
+                11,
+                17,
+                18
+              ],
+              "zmask": 0
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            2,
+            4,
+            6,
+            7,
+            11,
+            17,
+            18
+          ],
+          "seed_mask": 395476,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "cover_baseline": 496,
+        "cover_passing": 1,
+        "cover_prior_dual": 1,
+        "cover_strict_h": 2,
+        "cover_tetrad": 2,
+        "covers": 502,
+        "joint_pre_capacity_failing_covers": 1,
+        "labeled_z_families": 11,
+        "propagation_failure:disjoint_required_edge": 4,
+        "propagation_failure:empty_propagated_mask": 7,
+        "seeds": 1
+      },
+      "decision": "JOINT_PRE_CAPACITY_REJECTED",
+      "elapsed_seconds": 0.6573551670007873,
+      "index": 3957913,
+      "pre_capacity_rejected_seeds": [
+        86228
+      ],
+      "seed_records": [
+        {
+          "capacity_pass": false,
+          "counts": {
+            "cover_baseline": 496,
+            "cover_passing": 1,
+            "cover_prior_dual": 1,
+            "cover_strict_h": 2,
+            "cover_tetrad": 2,
+            "covers": 502,
+            "joint_pre_capacity_failing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "labeled_z_families": 11,
+                "propagation_failure:disjoint_required_edge": 4,
+                "propagation_failure:empty_propagated_mask": 7
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  68,
+                  2,
+                  38,
+                  2,
+                  68,
+                  2,
+                  127,
+                  17,
+                  24,
+                  36
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  25,
+                  100
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                2,
+                4,
+                6,
+                7,
+                12,
+                14,
+                16
+              ],
+              "zmask": 36
+            }
+          ],
+          "pre_capacity_pass": false,
+          "seed": [
+            2,
+            4,
+            6,
+            7,
+            12,
+            14,
+            16
+          ],
+          "seed_mask": 86228,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    },
+    {
+      "capacity_rejected_seeds": [],
+      "counts": {
+        "capacity_edge_prunes": 508,
+        "capacity_empty_domain_prunes": 0,
+        "capacity_feasible_families": 1,
+        "capacity_flow_checks": 12,
+        "capacity_flow_prunes": 0,
+        "capacity_maximum_depth_observed": 12,
+        "capacity_nodes": 12,
+        "capacity_passing_covers": 1,
+        "capacity_type_prunes": 0,
+        "cover_baseline": 252,
+        "cover_passing": 3,
+        "covers": 255,
+        "joint_pre_capacity_failing_covers": 2,
+        "labeled_z_families": 18,
+        "pre_capacity_passing_covers": 1,
+        "pre_capacity_passing_families": 1,
+        "propagation_failure:disjoint_required_edge": 17,
+        "propagation_passing_families": 1,
+        "seeds": 1
+      },
+      "decision": "SURVIVOR",
+      "elapsed_seconds": 0.33987433400034206,
+      "index": 3394720,
+      "pre_capacity_rejected_seeds": [],
+      "seed_records": [
+        {
+          "capacity_pass": true,
+          "counts": {
+            "capacity_passing_covers": 1,
+            "cover_baseline": 252,
+            "cover_passing": 3,
+            "covers": 255,
+            "joint_pre_capacity_failing_covers": 2,
+            "pre_capacity_passing_covers": 1
+          },
+          "current_cover_records": [
+            {
+              "counts": {
+                "capacity_edge_prunes": 508,
+                "capacity_empty_domain_prunes": 0,
+                "capacity_feasible_families": 1,
+                "capacity_flow_checks": 12,
+                "capacity_flow_prunes": 0,
+                "capacity_maximum_depth_observed": 12,
+                "capacity_nodes": 12,
+                "capacity_type_prunes": 0,
+                "labeled_z_families": 1,
+                "pre_capacity_passing_families": 1,
+                "propagation_passing_families": 1
+              },
+              "decision": "FEASIBLE",
+              "first_capacity_witness": {
+                "n_actual_supports": [
+                  28,
+                  56,
+                  41,
+                  22,
+                  35,
+                  5,
+                  46,
+                  122,
+                  71,
+                  17,
+                  96,
+                  80
+                ],
+                "propagated_masks": [
+                  28,
+                  56,
+                  41,
+                  22,
+                  35,
+                  5,
+                  46,
+                  122,
+                  71,
+                  17,
+                  96,
+                  80
+                ],
+                "z_supports": []
+              },
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": null,
+              "pre_capacity_pass": true,
+              "seed": [
+                1,
+                3,
+                6,
+                8,
+                11,
+                12,
+                18
+              ],
+              "zmask": 0
+            },
+            {
+              "counts": {
+                "labeled_z_families": 1,
+                "propagation_failure:disjoint_required_edge": 1
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  28,
+                  41,
+                  6,
+                  3,
+                  5,
+                  46,
+                  122,
+                  71,
+                  1,
+                  64,
+                  64
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  56
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                1,
+                3,
+                6,
+                8,
+                11,
+                12,
+                18
+              ],
+              "zmask": 2
+            },
+            {
+              "counts": {
+                "labeled_z_families": 16,
+                "propagation_failure:disjoint_required_edge": 16
+              },
+              "decision": "JOINT_PRE_CAPACITY_INFEASIBLE",
+              "first_capacity_witness": null,
+              "first_infeasible_family": null,
+              "first_pre_capacity_failure": {
+                "propagated_masks": [
+                  28,
+                  56,
+                  33,
+                  22,
+                  33,
+                  5,
+                  46,
+                  69,
+                  1,
+                  96,
+                  64
+                ],
+                "reason": "disjoint_required_edge",
+                "stage": "propagation",
+                "z_supports": [
+                  26
+                ]
+              },
+              "pre_capacity_pass": false,
+              "seed": [
+                1,
+                3,
+                6,
+                8,
+                11,
+                12,
+                18
+              ],
+              "zmask": 128
+            }
+          ],
+          "pre_capacity_pass": true,
+          "seed": [
+            1,
+            3,
+            6,
+            8,
+            11,
+            12,
+            18
+          ],
+          "seed_mask": 268618,
+          "unresolved": false
+        }
+      ],
+      "unresolved_seeds": []
+    }
+  ],
+  "positive_18_control": {
+    "K7_seeds": 0,
+    "status": "NOT_APPLICABLE_NO_K7",
+    "vertices": 18
+  },
+  "schema": 1,
+  "selection": {
+    "mode": "stratified_sample",
+    "population": "exact 258-graph tetrad/pattern-954 union residue",
+    "population_count": 258,
+    "population_indices_sha256": "55ab329dbe3ae4dbfa10378ff023a168fc6ab306ffc7af14bbd9790a68108a09",
+    "selected_count": 32,
+    "selected_indices": [
+      3793464,
+      3959459,
+      3958422,
+      2580644,
+      3884784,
+      2842671,
+      3945531,
+      2678006,
+      3910558,
+      2621081,
+      3958119,
+      3729907,
+      59005,
+      2428222,
+      3333850,
+      2685641,
+      3939545,
+      3782999,
+      2592565,
+      3960292,
+      2523664,
+      3405088,
+      2591766,
+      3793488,
+      2580648,
+      3339685,
+      3581559,
+      2257658,
+      3945506,
+      3740876,
+      3957913,
+      3394720
+    ],
+    "selected_indices_sha256": "27862ab7b56539f6a16255fad97a4dcbf499d8547a6150ed9d55cad81b6536af",
+    "signature_counts": {
+      "(False, False, True)": 8,
+      "(False, True, False)": 8,
+      "(True, False, False)": 8,
+      "(True, False, True)": 8
+    }
+  },
+  "source_sha256": "9af542217d178bec2a71cb4c30faabc3dea8c8279053d729d924d9ca35eb128a",
+  "started_unix": 1786049961.258373,
+  "status": "COMPLETE",
+  "test_source_sha256": "c72a336b0d4d9a84e5d997776e27bd37a73452e95970990e0c3c162b1e9fb592",
+  "totals": {
+    "capacity_edge_prunes": 36679,
+    "capacity_empty_domain_prunes": 0,
+    "capacity_feasible_families": 44,
+    "capacity_flow_checks": 523,
+    "capacity_flow_prunes": 0,
+    "capacity_maximum_depth_observed": 12,
+    "capacity_nodes": 523,
+    "capacity_passing_covers": 41,
+    "capacity_type_prunes": 0,
+    "cover_baseline": 17280,
+    "cover_passing": 74,
+    "cover_prior_dual": 24,
+    "cover_strict_h": 61,
+    "cover_tetrad": 131,
+    "covers": 17570,
+    "graph_joint_pre_capacity_rejected": 7,
+    "graph_survivor": 25,
+    "joint_pre_capacity_failing_covers": 33,
+    "labeled_z_families": 788,
+    "pre_capacity_passing_covers": 41,
+    "pre_capacity_passing_families": 44,
+    "propagation_failure:disjoint_required_edge": 426,
+    "propagation_failure:empty_propagated_mask": 318,
+    "propagation_passing_families": 44,
+    "seeds": 49
+  }
+}

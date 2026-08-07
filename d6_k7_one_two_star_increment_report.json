@@ -1,0 +1,4256 @@
+{
+  "claim": "Every current propagated family on the frozen 19-graph K7 residue was replayed. Three graphs have a K7 seed for which every cover/family fails the exact correlated-sign affine-line and two-free-diagonal star system.",
+  "execution": {
+    "command": "/Users/lukacs/claude/opengauss/venv/bin/python3 build_d6_k7_one_two_star_increment.py --workers 9 --output d6_k7_one_two_star_increment_report.json",
+    "elapsed_seconds": 0.37032687500322936,
+    "finished_utc": "2026-08-07T12:24:59.962767+00:00",
+    "git": {
+      "available": true,
+      "branch": "codex/dimension6",
+      "commit": "5a35469bfb903a6aa0bed63460aeaa195b74a61b",
+      "dirty": true,
+      "porcelain_lines": [
+        "?? d6_18_gpu_mps_seed_sphere_control_calibration_128.json",
+        "?? d6_18_gpu_mps_seed_sphere_control_calibration_32.json",
+        "?? d6_18_gpu_mps_unseeded_control_calibration.json",
+        "?? d6_k6_opposite_ray_rank.py",
+        "?? d6_k6_opposite_ray_rank_conjunction.py",
+        "?? probe_d6_k6_nested_support_reconstruction.py",
+        "?? probe_d6_k6_opposite_ray_rank.py",
+        "?? probe_d6_k6_opposite_ray_rank_conjunction.py",
+        "?? probe_d6_k6_rectangular_minor.py",
+        "?? probe_d6_k6_repeated_two_support_arm.py",
+        "?? probe_d6_k6_same_two_support_clique.py",
+        "?? probe_d6_k6_singleton_equal_support_clique_rank.py",
+        "?? probe_d6_k6_singleton_two_support_repeated_three_support.py",
+        "?? probe_d6_k6_tight_same_z0_conjunction.py",
+        "?? probe_d6_k6_tight_support.py",
+        "?? probe_d6_k6_tight_support_disjoint_arms.py",
+        "?? probe_d6_k6_tight_support_rank2.py",
+        "?? probe_d6_k6_tight_support_singleton_fan.py",
+        "?? probe_d6_k6_two_singleton_repeated_three_support_arm.py",
+        "?? probe_d6_k6_two_support_triangle_singleton.py",
+        "?? probe_d6_k7_low_free_systems.py",
+        "?? profile_d6_k6_625_saving_alternatives.py",
+        "?? test_d6_k6_opposite_ray_rank.py",
+        "?? verify_d6_k6_opposite_ray_rank.py"
+      ],
+      "porcelain_sha256": "38a212ef4a92e98768adc66f3f94736c2c5657f93749880e2ede8799e4d8366a"
+    },
+    "logical_cpus": 12,
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "started_utc": "2026-08-07T12:24:59.592320+00:00",
+    "workers": 9
+  },
+  "input": {
+    "embedded_graphs_sha256": "a69aa9255f0f44965959f3c4dc67ab656ba4d18e7247b119854fa64462e08ea9",
+    "graphs": 19,
+    "ordered_indices": [
+      316173,
+      2581209,
+      2592657,
+      2593240,
+      3595554,
+      3648882,
+      3729907,
+      3785980,
+      3888410,
+      3935560,
+      3936177,
+      3936310,
+      3936435,
+      3945490,
+      3945555,
+      3945557,
+      3945564,
+      3947605,
+      3949382
+    ],
+    "ordered_indices_sha256": "af25b842ca9eaa6e9721f51d0400be2436d930b72cc33c72bc366f0ac5e41290"
+  },
+  "kind": "d6_k7_one_free_neighbour_two_free_center_increment",
+  "positive_controls": {
+    "known_realizable_18": {
+      "K7_seeds": 0,
+      "status": "PASS_NOT_APPLICABLE_NO_K7",
+      "vertices": 18
+    },
+    "optional_zero_line_hyperbola": {
+      "classification": "rank1_fixed_coordinate",
+      "identity": "(x-1)(y-1)=-1 with required line x=0",
+      "status": "PASS_FEASIBLE",
+      "witness": {
+        "x": 0,
+        "y": 2
+      }
+    }
+  },
+  "records": [
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 4,
+        "labeled_support_families": 101,
+        "propagation_failure:disjoint_required_edge": 97,
+        "star_passing_families": 4
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 316173,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  36,
+                  105,
+                  127,
+                  18,
+                  42,
+                  68,
+                  35,
+                  81,
+                  88,
+                  22,
+                  11,
+                  116
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 3,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  36,
+                  105,
+                  18,
+                  42,
+                  68,
+                  35,
+                  81,
+                  88,
+                  22,
+                  11,
+                  116
+                ],
+                "z_supports": [
+                  119
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 3,
+              "status": "PASSING",
+              "zmask": 4
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 512
+            }
+          ],
+          "seed": [
+            2,
+            5,
+            7,
+            9,
+            13,
+            15,
+            18
+          ],
+          "seed_mask": 303780,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 6,
+        "labeled_support_families": 200,
+        "propagation_failure:disjoint_required_edge": 194,
+        "star_passing_families": 6
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 2581209,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  20,
+                  66,
+                  110,
+                  17,
+                  107,
+                  13,
+                  7,
+                  72,
+                  37,
+                  90,
+                  112,
+                  127
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 2,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  20,
+                  66,
+                  110,
+                  17,
+                  107,
+                  13,
+                  7,
+                  72,
+                  37,
+                  90,
+                  112
+                ],
+                "z_supports": [
+                  95
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 2,
+              "status": "PASSING",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            0,
+            3,
+            4,
+            11,
+            15,
+            16,
+            18
+          ],
+          "seed_mask": 362521,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  68,
+                  13,
+                  87,
+                  66,
+                  11,
+                  33,
+                  40,
+                  94,
+                  25,
+                  112,
+                  102,
+                  127
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 2,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  68,
+                  13,
+                  87,
+                  66,
+                  11,
+                  33,
+                  40,
+                  94,
+                  25,
+                  112,
+                  102
+                ],
+                "z_supports": [
+                  111
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 2,
+              "status": "PASSING",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            2,
+            5,
+            7,
+            10,
+            13,
+            14,
+            17
+          ],
+          "seed_mask": 156836,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [
+        {
+          "certificate": {
+            "assignments_checked": 4,
+            "center": 10,
+            "center_free_mask": 18,
+            "center_mask": 50,
+            "failures": [
+              {
+                "assignment": 0,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      -1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  [
+                    [
+                      -1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ]
+                ]
+              },
+              {
+                "assignment": 1,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      -1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  [
+                    [
+                      -1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ]
+                ]
+              },
+              {
+                "assignment": 2,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ]
+                ]
+              },
+              {
+                "assignment": 3,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "one_free_neighbours": [
+              0,
+              1,
+              3,
+              9
+            ],
+            "pin_components": [
+              {
+                "entries": [
+                  {
+                    "component": [
+                      0,
+                      3,
+                      10
+                    ],
+                    "conflict_edge": [
+                      3,
+                      10
+                    ],
+                    "coordinate": 5
+                  }
+                ],
+                "vertex": 10
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      0,
+                      3,
+                      10
+                    ],
+                    "conflict_edge": [
+                      3,
+                      10
+                    ],
+                    "coordinate": 5
+                  }
+                ],
+                "vertex": 0
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      1,
+                      7,
+                      9
+                    ],
+                    "conflict_edge": [
+                      7,
+                      9
+                    ],
+                    "coordinate": 6
+                  }
+                ],
+                "vertex": 1
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      0,
+                      3,
+                      10
+                    ],
+                    "conflict_edge": [
+                      3,
+                      10
+                    ],
+                    "coordinate": 5
+                  }
+                ],
+                "vertex": 3
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      1,
+                      7,
+                      9
+                    ],
+                    "conflict_edge": [
+                      7,
+                      9
+                    ],
+                    "coordinate": 6
+                  }
+                ],
+                "vertex": 9
+              }
+            ],
+            "sign_variables": 2
+          },
+          "propagated_masks": [
+            36,
+            66,
+            94,
+            33,
+            91,
+            13,
+            39,
+            72,
+            53,
+            80,
+            50,
+            127
+          ],
+          "seed": [
+            0,
+            3,
+            4,
+            11,
+            14,
+            17,
+            18
+          ],
+          "seed_mask": 411673,
+          "z_supports": [],
+          "zmask": 0
+        }
+      ],
+      "counts": {
+        "current_passing_families": 2,
+        "labeled_support_families": 2,
+        "star_failed_families": 1,
+        "star_passing_families": 1
+      },
+      "decision": "REJECTED",
+      "first_rejecting_seed_mask": 411673,
+      "index": 2592657,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": null,
+              "star_failed_families": 1,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 0
+            }
+          ],
+          "seed": [
+            0,
+            3,
+            4,
+            11,
+            14,
+            17,
+            18
+          ],
+          "seed_mask": 411673,
+          "status": "INFEASIBLE"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  22,
+                  83,
+                  36,
+                  21,
+                  74,
+                  73,
+                  40,
+                  127,
+                  71,
+                  48,
+                  72,
+                  55
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            }
+          ],
+          "seed": [
+            1,
+            6,
+            9,
+            11,
+            12,
+            15,
+            18
+          ],
+          "seed_mask": 301634,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 2,
+        "labeled_support_families": 4,
+        "propagation_failure:disjoint_required_edge": 2,
+        "star_passing_families": 2
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 2593240,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  100,
+                  127,
+                  5,
+                  98,
+                  25,
+                  19,
+                  26,
+                  108,
+                  11,
+                  20,
+                  38,
+                  72
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 8
+            }
+          ],
+          "seed": [
+            2,
+            4,
+            7,
+            10,
+            13,
+            15,
+            18
+          ],
+          "seed_mask": 304276,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  127,
+                  98,
+                  21,
+                  10,
+                  28,
+                  97,
+                  25,
+                  102,
+                  13,
+                  18,
+                  35,
+                  68
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 32
+            }
+          ],
+          "seed": [
+            6,
+            7,
+            8,
+            9,
+            12,
+            15,
+            18
+          ],
+          "seed_mask": 299968,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 2,
+        "labeled_support_families": 2,
+        "star_passing_families": 2
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 3595554,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  84,
+                  12,
+                  114,
+                  23,
+                  10,
+                  9,
+                  81,
+                  101,
+                  40,
+                  26,
+                  96,
+                  127
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            }
+          ],
+          "seed": [
+            1,
+            5,
+            8,
+            12,
+            13,
+            15,
+            18
+          ],
+          "seed_mask": 307490,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  76,
+                  10,
+                  105,
+                  22,
+                  3,
+                  69,
+                  116,
+                  34,
+                  29,
+                  18,
+                  127,
+                  96
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            }
+          ],
+          "seed": [
+            2,
+            4,
+            6,
+            7,
+            14,
+            15,
+            18
+          ],
+          "seed_mask": 311508,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 6,
+        "labeled_support_families": 202,
+        "propagation_failure:disjoint_required_edge": 196,
+        "star_passing_families": 6
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 3648882,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  92,
+                  10,
+                  22,
+                  105,
+                  3,
+                  85,
+                  34,
+                  13,
+                  112,
+                  127,
+                  20,
+                  98
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 4
+            },
+            {
+              "current_passing_families": 2,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  92,
+                  10,
+                  22,
+                  105,
+                  3,
+                  85,
+                  34,
+                  13,
+                  112,
+                  20,
+                  98
+                ],
+                "z_supports": [
+                  63
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 2,
+              "status": "PASSING",
+              "zmask": 512
+            }
+          ],
+          "seed": [
+            0,
+            3,
+            4,
+            9,
+            13,
+            15,
+            16
+          ],
+          "seed_mask": 107033,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  12,
+                  58,
+                  89,
+                  38,
+                  51,
+                  5,
+                  82,
+                  41,
+                  34,
+                  84,
+                  68,
+                  127
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 8
+            },
+            {
+              "current_passing_families": 2,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  12,
+                  58,
+                  89,
+                  38,
+                  51,
+                  5,
+                  82,
+                  41,
+                  34,
+                  84,
+                  68
+                ],
+                "z_supports": [
+                  111
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 2,
+              "status": "PASSING",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            2,
+            4,
+            6,
+            7,
+            10,
+            13,
+            18
+          ],
+          "seed_mask": 271572,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 3,
+        "labeled_support_families": 3,
+        "star_passing_families": 3
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 3729907,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  110,
+                  20,
+                  72,
+                  18,
+                  45,
+                  17,
+                  107,
+                  127,
+                  66,
+                  53,
+                  104,
+                  55
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            }
+          ],
+          "seed": [
+            0,
+            4,
+            9,
+            10,
+            12,
+            15,
+            18
+          ],
+          "seed_mask": 300561,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  94,
+                  36,
+                  80,
+                  77,
+                  34,
+                  33,
+                  91,
+                  47,
+                  88,
+                  18,
+                  127,
+                  45
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            }
+          ],
+          "seed": [
+            1,
+            6,
+            8,
+            11,
+            14,
+            16,
+            17
+          ],
+          "seed_mask": 215362,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  52,
+                  76,
+                  127,
+                  34,
+                  10,
+                  73,
+                  49,
+                  72,
+                  55,
+                  85,
+                  48,
+                  79
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            }
+          ],
+          "seed": [
+            2,
+            5,
+            7,
+            10,
+            14,
+            17,
+            18
+          ],
+          "seed_mask": 410788,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [
+        {
+          "certificate": {
+            "assignments_checked": 4,
+            "center": 1,
+            "center_free_mask": 18,
+            "center_mask": 58,
+            "failures": [
+              {
+                "assignment": 0,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                ]
+              },
+              {
+                "assignment": 1,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                ]
+              },
+              {
+                "assignment": 2,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                ]
+              },
+              {
+                "assignment": 3,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "one_free_neighbours": [
+              0,
+              3,
+              6,
+              9
+            ],
+            "pin_components": [
+              {
+                "entries": [
+                  {
+                    "component": [
+                      0,
+                      1,
+                      3,
+                      7,
+                      10
+                    ],
+                    "conflict_edge": [
+                      1,
+                      3
+                    ],
+                    "coordinate": 3
+                  },
+                  {
+                    "component": [
+                      1,
+                      6,
+                      8,
+                      9
+                    ],
+                    "conflict_edge": [
+                      6,
+                      9
+                    ],
+                    "coordinate": 5
+                  }
+                ],
+                "vertex": 1
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      0,
+                      1,
+                      3,
+                      7,
+                      10
+                    ],
+                    "conflict_edge": [
+                      1,
+                      3
+                    ],
+                    "coordinate": 3
+                  }
+                ],
+                "vertex": 0
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      0,
+                      1,
+                      3,
+                      7,
+                      10
+                    ],
+                    "conflict_edge": [
+                      1,
+                      3
+                    ],
+                    "coordinate": 3
+                  }
+                ],
+                "vertex": 3
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      1,
+                      6,
+                      8,
+                      9
+                    ],
+                    "conflict_edge": [
+                      6,
+                      9
+                    ],
+                    "coordinate": 5
+                  }
+                ],
+                "vertex": 6
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      1,
+                      6,
+                      8,
+                      9
+                    ],
+                    "conflict_edge": [
+                      6,
+                      9
+                    ],
+                    "coordinate": 5
+                  }
+                ],
+                "vertex": 9
+              }
+            ],
+            "sign_variables": 2
+          },
+          "propagated_masks": [
+            12,
+            58,
+            118,
+            9,
+            115,
+            69,
+            34,
+            88,
+            37,
+            48,
+            74,
+            82
+          ],
+          "seed": [
+            0,
+            3,
+            4,
+            9,
+            12,
+            15,
+            17
+          ],
+          "seed_mask": 168473,
+          "z_supports": [],
+          "zmask": 0
+        }
+      ],
+      "counts": {
+        "current_passing_families": 1,
+        "labeled_support_families": 2,
+        "propagation_failure:disjoint_required_edge": 1,
+        "star_failed_families": 1
+      },
+      "decision": "REJECTED",
+      "first_rejecting_seed_mask": 168473,
+      "index": 3785980,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": null,
+              "star_failed_families": 1,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            0,
+            3,
+            4,
+            9,
+            12,
+            15,
+            17
+          ],
+          "seed_mask": 168473,
+          "status": "INFEASIBLE"
+        }
+      ]
+    },
+    {
+      "certificates": [
+        {
+          "certificate": {
+            "assignments_checked": 4,
+            "center": 1,
+            "center_free_mask": 10,
+            "center_mask": 74,
+            "failures": [
+              {
+                "assignment": 0,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      -1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  [
+                    [
+                      -1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ]
+                ]
+              },
+              {
+                "assignment": 1,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ]
+                ]
+              },
+              {
+                "assignment": 2,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      -1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  [
+                    [
+                      -1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ]
+                ]
+              },
+              {
+                "assignment": 3,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "one_free_neighbours": [
+              0,
+              2,
+              5,
+              8
+            ],
+            "pin_components": [
+              {
+                "entries": [
+                  {
+                    "component": [
+                      0,
+                      1,
+                      2
+                    ],
+                    "conflict_edge": [
+                      1,
+                      2
+                    ],
+                    "coordinate": 6
+                  }
+                ],
+                "vertex": 1
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      0,
+                      1,
+                      2
+                    ],
+                    "conflict_edge": [
+                      1,
+                      2
+                    ],
+                    "coordinate": 6
+                  }
+                ],
+                "vertex": 0
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      0,
+                      1,
+                      2
+                    ],
+                    "conflict_edge": [
+                      1,
+                      2
+                    ],
+                    "coordinate": 6
+                  }
+                ],
+                "vertex": 2
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      3,
+                      4,
+                      5,
+                      8
+                    ],
+                    "conflict_edge": [
+                      5,
+                      8
+                    ],
+                    "coordinate": 4
+                  }
+                ],
+                "vertex": 5
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      3,
+                      4,
+                      5,
+                      8
+                    ],
+                    "conflict_edge": [
+                      5,
+                      8
+                    ],
+                    "coordinate": 4
+                  }
+                ],
+                "vertex": 8
+              }
+            ],
+            "sign_variables": 2
+          },
+          "propagated_masks": [
+            68,
+            74,
+            65,
+            52,
+            49,
+            18,
+            103,
+            109,
+            24,
+            58,
+            127,
+            37
+          ],
+          "seed": [
+            1,
+            2,
+            6,
+            12,
+            15,
+            16,
+            17
+          ],
+          "seed_mask": 233542,
+          "z_supports": [],
+          "zmask": 0
+        },
+        {
+          "certificate": {
+            "assignments_checked": 4,
+            "center": 3,
+            "center_free_mask": 3,
+            "center_mask": 67,
+            "failures": [
+              {
+                "assignment": 0,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      -1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  [
+                    [
+                      -1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ]
+                ]
+              },
+              {
+                "assignment": 1,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ]
+                ]
+              },
+              {
+                "assignment": 2,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      -1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  [
+                    [
+                      -1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ]
+                ]
+              },
+              {
+                "assignment": 3,
+                "discriminant": null,
+                "rank": 2,
+                "reason": "rank2_diagonal_mismatch",
+                "solution": [
+                  [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  [
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      1,
+                      3
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "one_free_neighbours": [
+              0,
+              4,
+              6,
+              7
+            ],
+            "pin_components": [
+              {
+                "entries": [
+                  {
+                    "component": [
+                      3,
+                      6,
+                      7
+                    ],
+                    "conflict_edge": [
+                      6,
+                      7
+                    ],
+                    "coordinate": 6
+                  }
+                ],
+                "vertex": 3
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      0,
+                      2,
+                      4,
+                      8
+                    ],
+                    "conflict_edge": [
+                      2,
+                      4
+                    ],
+                    "coordinate": 4
+                  }
+                ],
+                "vertex": 0
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      0,
+                      2,
+                      4,
+                      8
+                    ],
+                    "conflict_edge": [
+                      2,
+                      4
+                    ],
+                    "coordinate": 4
+                  }
+                ],
+                "vertex": 4
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      3,
+                      6,
+                      7
+                    ],
+                    "conflict_edge": [
+                      6,
+                      7
+                    ],
+                    "coordinate": 6
+                  }
+                ],
+                "vertex": 6
+              },
+              {
+                "entries": [
+                  {
+                    "component": [
+                      3,
+                      6,
+                      7
+                    ],
+                    "conflict_edge": [
+                      6,
+                      7
+                    ],
+                    "coordinate": 6
+                  }
+                ],
+                "vertex": 7
+              }
+            ],
+            "sign_variables": 2
+          },
+          "propagated_masks": [
+            18,
+            110,
+            52,
+            67,
+            17,
+            109,
+            72,
+            68,
+            56,
+            51,
+            127,
+            44
+          ],
+          "seed": [
+            5,
+            7,
+            9,
+            10,
+            13,
+            14,
+            18
+          ],
+          "seed_mask": 288416,
+          "z_supports": [],
+          "zmask": 0
+        }
+      ],
+      "counts": {
+        "current_passing_families": 2,
+        "labeled_support_families": 2,
+        "star_failed_families": 2
+      },
+      "decision": "REJECTED",
+      "first_rejecting_seed_mask": 233542,
+      "index": 3888410,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": null,
+              "star_failed_families": 1,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 0
+            }
+          ],
+          "seed": [
+            1,
+            2,
+            6,
+            12,
+            15,
+            16,
+            17
+          ],
+          "seed_mask": 233542,
+          "status": "INFEASIBLE"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": null,
+              "star_failed_families": 1,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 0
+            }
+          ],
+          "seed": [
+            5,
+            7,
+            9,
+            10,
+            13,
+            14,
+            18
+          ],
+          "seed_mask": 288416,
+          "status": "INFEASIBLE"
+        }
+      ]
+    },
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 3,
+        "labeled_support_families": 35,
+        "propagation_failure:disjoint_required_edge": 32,
+        "star_passing_families": 3
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 3935560,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  86,
+                  36,
+                  72,
+                  34,
+                  85,
+                  33,
+                  83,
+                  40,
+                  127,
+                  23,
+                  80,
+                  47
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            0,
+            4,
+            9,
+            12,
+            14,
+            17,
+            18
+          ],
+          "seed_mask": 414225,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  22,
+                  100,
+                  24,
+                  21,
+                  98,
+                  97,
+                  19,
+                  127,
+                  72,
+                  55,
+                  104,
+                  39
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            }
+          ],
+          "seed": [
+            1,
+            6,
+            8,
+            12,
+            13,
+            15,
+            17
+          ],
+          "seed_mask": 176450,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  36,
+                  92,
+                  71,
+                  34,
+                  90,
+                  89,
+                  33,
+                  80,
+                  40,
+                  24,
+                  127,
+                  47
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            2,
+            5,
+            7,
+            10,
+            14,
+            16,
+            18
+          ],
+          "seed_mask": 345252,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 20,
+        "full_pin_failure": 8,
+        "labeled_support_families": 320,
+        "propagation_failure:disjoint_required_edge": 126,
+        "propagation_failure:empty_propagated_mask": 166,
+        "star_passing_families": 20
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 3936177,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  124,
+                  10,
+                  6,
+                  121,
+                  3,
+                  117,
+                  109,
+                  18,
+                  127,
+                  32,
+                  95,
+                  96
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  124,
+                  10,
+                  6,
+                  121,
+                  3,
+                  117,
+                  109,
+                  18,
+                  32,
+                  95,
+                  96
+                ],
+                "z_supports": [
+                  31
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 256
+            }
+          ],
+          "seed": [
+            0,
+            3,
+            4,
+            9,
+            10,
+            14,
+            17
+          ],
+          "seed_mask": 149017,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  92,
+                  42,
+                  38,
+                  89,
+                  35,
+                  85,
+                  77,
+                  50,
+                  95,
+                  32,
+                  127,
+                  64
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  92,
+                  42,
+                  38,
+                  89,
+                  35,
+                  85,
+                  77,
+                  50,
+                  32,
+                  127,
+                  64
+                ],
+                "z_supports": [
+                  31
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 256
+            }
+          ],
+          "seed": [
+            0,
+            3,
+            4,
+            9,
+            10,
+            15,
+            17
+          ],
+          "seed_mask": 165401,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  28,
+                  106,
+                  102,
+                  25,
+                  99,
+                  21,
+                  13,
+                  114,
+                  31,
+                  96,
+                  63,
+                  64
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 5,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  28,
+                  106,
+                  102,
+                  25,
+                  99,
+                  21,
+                  13,
+                  112,
+                  96,
+                  63,
+                  64
+                ],
+                "z_supports": [
+                  15
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 5,
+              "status": "PASSING",
+              "zmask": 256
+            }
+          ],
+          "seed": [
+            0,
+            3,
+            4,
+            9,
+            10,
+            15,
+            18
+          ],
+          "seed_mask": 296473,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  28,
+                  106,
+                  25,
+                  102,
+                  99,
+                  21,
+                  13,
+                  114,
+                  2,
+                  125,
+                  34,
+                  93
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 5,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  28,
+                  106,
+                  25,
+                  102,
+                  99,
+                  21,
+                  13,
+                  50,
+                  2,
+                  125,
+                  34
+                ],
+                "z_supports": [
+                  77
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 5,
+              "status": "PASSING",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            1,
+            3,
+            6,
+            8,
+            11,
+            15,
+            18
+          ],
+          "seed_mask": 297290,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  30,
+                  100,
+                  16,
+                  29,
+                  98,
+                  97,
+                  27,
+                  23,
+                  104,
+                  127,
+                  32,
+                  95
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  30,
+                  100,
+                  16,
+                  29,
+                  98,
+                  97,
+                  27,
+                  23,
+                  104,
+                  127,
+                  32
+                ],
+                "z_supports": [
+                  79
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            1,
+            6,
+            8,
+            11,
+            13,
+            15,
+            18
+          ],
+          "seed_mask": 305474,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  62,
+                  68,
+                  48,
+                  61,
+                  66,
+                  65,
+                  59,
+                  55,
+                  72,
+                  95,
+                  32,
+                  127
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  62,
+                  68,
+                  48,
+                  61,
+                  66,
+                  65,
+                  59,
+                  55,
+                  72,
+                  95,
+                  32
+                ],
+                "z_supports": [
+                  79
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            1,
+            6,
+            8,
+            11,
+            13,
+            16,
+            18
+          ],
+          "seed_mask": 338242,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 8,
+        "full_pin_failure": 10,
+        "labeled_support_families": 286,
+        "propagation_failure:disjoint_required_edge": 134,
+        "propagation_failure:empty_propagated_mask": 114,
+        "sparse_value_failure": 20,
+        "star_passing_families": 8
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 3936310,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  124,
+                  10,
+                  6,
+                  121,
+                  3,
+                  117,
+                  109,
+                  18,
+                  93,
+                  34,
+                  127,
+                  64
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  124,
+                  10,
+                  6,
+                  121,
+                  3,
+                  117,
+                  109,
+                  18,
+                  93,
+                  34,
+                  64
+                ],
+                "z_supports": [
+                  63
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 1024
+            }
+          ],
+          "seed": [
+            0,
+            3,
+            4,
+            9,
+            10,
+            14,
+            17
+          ],
+          "seed_mask": 149017,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  60,
+                  74,
+                  70,
+                  57,
+                  67,
+                  53,
+                  45,
+                  82,
+                  29,
+                  98,
+                  63,
+                  64
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  60,
+                  74,
+                  70,
+                  57,
+                  67,
+                  53,
+                  45,
+                  82,
+                  29,
+                  98,
+                  64
+                ],
+                "z_supports": [
+                  63
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 1024
+            }
+          ],
+          "seed": [
+            0,
+            3,
+            4,
+            9,
+            10,
+            14,
+            18
+          ],
+          "seed_mask": 280089,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  60,
+                  74,
+                  57,
+                  70,
+                  67,
+                  53,
+                  45,
+                  82,
+                  29,
+                  98,
+                  2,
+                  125
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  60,
+                  74,
+                  57,
+                  70,
+                  67,
+                  53,
+                  45,
+                  82,
+                  29,
+                  98,
+                  2
+                ],
+                "z_supports": [
+                  125
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            1,
+            3,
+            6,
+            8,
+            11,
+            13,
+            18
+          ],
+          "seed_mask": 272714,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  62,
+                  68,
+                  32,
+                  61,
+                  66,
+                  65,
+                  59,
+                  55,
+                  72,
+                  47,
+                  80,
+                  127
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  62,
+                  68,
+                  32,
+                  61,
+                  66,
+                  65,
+                  59,
+                  55,
+                  72,
+                  47,
+                  80
+                ],
+                "z_supports": [
+                  95
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            1,
+            6,
+            8,
+            11,
+            13,
+            16,
+            18
+          ],
+          "seed_mask": 338242,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 5,
+        "labeled_support_families": 144,
+        "propagation_failure:disjoint_required_edge": 82,
+        "propagation_failure:empty_propagated_mask": 57,
+        "star_passing_families": 5
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 3936435,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  124,
+                  74,
+                  57,
+                  70,
+                  3,
+                  53,
+                  109,
+                  18,
+                  29,
+                  98,
+                  64,
+                  63
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  124,
+                  74,
+                  57,
+                  70,
+                  3,
+                  53,
+                  109,
+                  18,
+                  29,
+                  98,
+                  64
+                ],
+                "z_supports": [
+                  63
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            1,
+            3,
+            6,
+            8,
+            11,
+            13,
+            16
+          ],
+          "seed_mask": 76106,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  60,
+                  10,
+                  121,
+                  6,
+                  67,
+                  117,
+                  45,
+                  82,
+                  93,
+                  34,
+                  64,
+                  127
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  60,
+                  10,
+                  121,
+                  6,
+                  67,
+                  117,
+                  45,
+                  82,
+                  93,
+                  34,
+                  64
+                ],
+                "z_supports": [
+                  63
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            1,
+            3,
+            6,
+            8,
+            11,
+            13,
+            17
+          ],
+          "seed_mask": 141642,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  34,
+                  87,
+                  36,
+                  74,
+                  33,
+                  84,
+                  81,
+                  40,
+                  93,
+                  69,
+                  48,
+                  127
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            }
+          ],
+          "seed": [
+            4,
+            7,
+            9,
+            12,
+            14,
+            16,
+            18
+          ],
+          "seed_mask": 348816,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 4,
+        "labeled_support_families": 44,
+        "propagation_failure:disjoint_required_edge": 40,
+        "star_passing_families": 4
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 3945490,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  28,
+                  10,
+                  38,
+                  89,
+                  67,
+                  85,
+                  77,
+                  18,
+                  36,
+                  127,
+                  34,
+                  85
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 32
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            0,
+            3,
+            4,
+            9,
+            10,
+            16,
+            17
+          ],
+          "seed_mask": 198169,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  44,
+                  20,
+                  34,
+                  18,
+                  127,
+                  81,
+                  105,
+                  101,
+                  24,
+                  77,
+                  50,
+                  105
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 64
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            0,
+            5,
+            9,
+            10,
+            13,
+            15,
+            17
+          ],
+          "seed_mask": 173601,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  92,
+                  74,
+                  89,
+                  38,
+                  3,
+                  21,
+                  77,
+                  18,
+                  36,
+                  34,
+                  127,
+                  92
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 1
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            1,
+            3,
+            6,
+            8,
+            11,
+            16,
+            18
+          ],
+          "seed_mask": 330058,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  108,
+                  84,
+                  34,
+                  127,
+                  18,
+                  17,
+                  41,
+                  101,
+                  24,
+                  77,
+                  50,
+                  108
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 1
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            1,
+            5,
+            8,
+            11,
+            13,
+            14,
+            18
+          ],
+          "seed_mask": 289058,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 4,
+        "labeled_support_families": 56,
+        "propagation_failure:disjoint_required_edge": 52,
+        "star_passing_families": 4
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 3945555,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  28,
+                  10,
+                  38,
+                  89,
+                  67,
+                  85,
+                  77,
+                  18,
+                  36,
+                  127,
+                  34,
+                  93
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            0,
+            3,
+            4,
+            9,
+            10,
+            16,
+            18
+          ],
+          "seed_mask": 329241,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  44,
+                  20,
+                  34,
+                  18,
+                  127,
+                  81,
+                  105,
+                  101,
+                  24,
+                  77,
+                  50,
+                  109
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            0,
+            5,
+            9,
+            10,
+            13,
+            15,
+            18
+          ],
+          "seed_mask": 304673,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  92,
+                  10,
+                  89,
+                  38,
+                  3,
+                  85,
+                  77,
+                  18,
+                  36,
+                  34,
+                  127,
+                  92
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 1
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            1,
+            3,
+            6,
+            8,
+            11,
+            16,
+            17
+          ],
+          "seed_mask": 198986,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  108,
+                  20,
+                  34,
+                  127,
+                  18,
+                  17,
+                  105,
+                  101,
+                  24,
+                  77,
+                  50,
+                  108
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 1
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            1,
+            5,
+            8,
+            11,
+            13,
+            14,
+            17
+          ],
+          "seed_mask": 157986,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 4,
+        "labeled_support_families": 68,
+        "propagation_failure:disjoint_required_edge": 64,
+        "star_passing_families": 4
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 3945557,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  92,
+                  10,
+                  38,
+                  89,
+                  3,
+                  85,
+                  77,
+                  18,
+                  36,
+                  127,
+                  34,
+                  93
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            0,
+            3,
+            4,
+            9,
+            10,
+            16,
+            18
+          ],
+          "seed_mask": 329241,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  108,
+                  20,
+                  34,
+                  18,
+                  127,
+                  17,
+                  105,
+                  101,
+                  24,
+                  77,
+                  50,
+                  109
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            0,
+            5,
+            9,
+            10,
+            13,
+            15,
+            18
+          ],
+          "seed_mask": 304673,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  92,
+                  10,
+                  89,
+                  38,
+                  3,
+                  85,
+                  77,
+                  18,
+                  36,
+                  34,
+                  127,
+                  93
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            1,
+            3,
+            6,
+            8,
+            11,
+            16,
+            17
+          ],
+          "seed_mask": 198986,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  108,
+                  20,
+                  34,
+                  127,
+                  18,
+                  17,
+                  105,
+                  101,
+                  24,
+                  77,
+                  50,
+                  109
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            1,
+            5,
+            8,
+            11,
+            13,
+            14,
+            17
+          ],
+          "seed_mask": 157986,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 6,
+        "labeled_support_families": 38,
+        "propagation_failure:disjoint_required_edge": 32,
+        "star_passing_families": 6
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 3945564,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  28,
+                  74,
+                  38,
+                  89,
+                  67,
+                  21,
+                  13,
+                  82,
+                  36,
+                  127,
+                  34,
+                  93
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  28,
+                  74,
+                  38,
+                  89,
+                  67,
+                  21,
+                  13,
+                  82,
+                  36,
+                  127,
+                  34
+                ],
+                "z_supports": [
+                  89
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            0,
+            3,
+            4,
+            9,
+            10,
+            16,
+            17
+          ],
+          "seed_mask": 198169,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  44,
+                  84,
+                  34,
+                  18,
+                  127,
+                  81,
+                  41,
+                  37,
+                  88,
+                  77,
+                  50,
+                  109
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  44,
+                  84,
+                  34,
+                  18,
+                  127,
+                  81,
+                  41,
+                  37,
+                  88,
+                  77,
+                  50
+                ],
+                "z_supports": [
+                  77
+                ]
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            0,
+            5,
+            9,
+            10,
+            13,
+            15,
+            17
+          ],
+          "seed_mask": 173601,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  92,
+                  10,
+                  89,
+                  38,
+                  3,
+                  85,
+                  77,
+                  18,
+                  36,
+                  34,
+                  127,
+                  68
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 8
+            }
+          ],
+          "seed": [
+            1,
+            3,
+            6,
+            8,
+            11,
+            16,
+            18
+          ],
+          "seed_mask": 330058,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  108,
+                  20,
+                  34,
+                  127,
+                  18,
+                  17,
+                  105,
+                  101,
+                  24,
+                  77,
+                  50,
+                  96
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 1024
+            }
+          ],
+          "seed": [
+            1,
+            5,
+            8,
+            11,
+            13,
+            14,
+            18
+          ],
+          "seed_mask": 289058,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 3,
+        "labeled_support_families": 24,
+        "propagation_failure:disjoint_required_edge": 21,
+        "star_passing_families": 3
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 3947605,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  108,
+                  20,
+                  66,
+                  18,
+                  127,
+                  17,
+                  105,
+                  101,
+                  24,
+                  61,
+                  98,
+                  45
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            }
+          ],
+          "seed": [
+            0,
+            5,
+            9,
+            10,
+            13,
+            15,
+            18
+          ],
+          "seed_mask": 304673,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  94,
+                  36,
+                  80,
+                  77,
+                  34,
+                  33,
+                  91,
+                  87,
+                  40,
+                  18,
+                  127,
+                  47
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            1,
+            6,
+            8,
+            11,
+            14,
+            16,
+            17
+          ],
+          "seed_mask": 215362,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  52,
+                  68,
+                  127,
+                  34,
+                  66,
+                  65,
+                  49,
+                  56,
+                  72,
+                  29,
+                  48,
+                  79
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 512
+            }
+          ],
+          "seed": [
+            2,
+            5,
+            7,
+            12,
+            14,
+            17,
+            18
+          ],
+          "seed_mask": 413860,
+          "status": "PASSING"
+        }
+      ]
+    },
+    {
+      "certificates": [],
+      "counts": {
+        "current_passing_families": 3,
+        "labeled_support_families": 56,
+        "propagation_failure:disjoint_required_edge": 49,
+        "propagation_failure:empty_propagated_mask": 4,
+        "star_passing_families": 3
+      },
+      "decision": "SURVIVOR",
+      "first_rejecting_seed_mask": 0,
+      "index": 3949382,
+      "seeds": [
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  44,
+                  86,
+                  80,
+                  34,
+                  29,
+                  83,
+                  41,
+                  37,
+                  90,
+                  127,
+                  66,
+                  47
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            }
+          ],
+          "seed": [
+            0,
+            3,
+            9,
+            10,
+            13,
+            15,
+            17
+          ],
+          "seed_mask": 173577,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  76,
+                  52,
+                  66,
+                  127,
+                  18,
+                  49,
+                  73,
+                  69,
+                  56,
+                  48,
+                  79,
+                  45
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 1024
+            }
+          ],
+          "seed": [
+            1,
+            5,
+            8,
+            11,
+            13,
+            17,
+            18
+          ],
+          "seed_mask": 403746,
+          "status": "PASSING"
+        },
+        {
+          "current_covers": [
+            {
+              "current_passing_families": 1,
+              "first_passing_witness": {
+                "propagated_masks": [
+                  84,
+                  36,
+                  127,
+                  66,
+                  34,
+                  33,
+                  81,
+                  88,
+                  40,
+                  29,
+                  82,
+                  61
+                ],
+                "z_supports": []
+              },
+              "star_failed_families": 0,
+              "star_passing_families": 1,
+              "status": "PASSING",
+              "zmask": 0
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 2048
+            },
+            {
+              "current_passing_families": 0,
+              "first_passing_witness": null,
+              "star_failed_families": 0,
+              "star_passing_families": 0,
+              "status": "INFEASIBLE",
+              "zmask": 3072
+            }
+          ],
+          "seed": [
+            2,
+            5,
+            7,
+            12,
+            14,
+            16,
+            18
+          ],
+          "seed_mask": 348324,
+          "status": "PASSING"
+        }
+      ]
+    }
+  ],
+  "schema": 1,
+  "semantics": {
+    "allowed_unpinned_coordinates_may_be_zero": true,
+    "candidate_nonedges_optional": true,
+    "cap500000_campaign_used": false,
+    "floating_point_enters_rejection": false,
+    "graph_rejected_if_any_k7_seed_is_infeasible": true,
+    "normalization_factor_t_nonzero_on_cover_complement_N": true,
+    "only_required_edges_enter_star_equations": true,
+    "positive_sqrt7_embedding_checked_exactly": true,
+    "propagated_masks_are_support_supersets": true
+  },
+  "source_sha256": {
+    "build_d6_k7_one_two_star_increment.py": "3dc6003176903d457e4c2fd697eec9d1a4e036b052afd1359cb8c800b182a41a",
+    "d6_k7_correlated_one_free_edge.py": "2798ce64df3c1a3eb0cc65ecff183fdbfdb247abab41b216b660e805e3de130c",
+    "d6_k7_full_pin_odd_cycle.py": "592fe0c25db209e9126ab82294f55a707745893c4164982d8a7884b024a6696a",
+    "d6_k7_one_free_edge.py": "873df0ac45dc515b7d7ff81b48cfe828063dacbfae5fe60b2b73d08ae0b1335a",
+    "d6_k7_one_two_star.py": "d4cd813b66a0c57dd106bb9987d1417366152f4cd9162cfd9b0486e3fd0d0b5b",
+    "d6_k7_rank_reference.py": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+    "d6_k7_small_support_value.py": "bed5987c89fbef2ef36762051ae7fa3414fd381a6246032b06857a557f13743f",
+    "d6_k7_support_propagation.py": "578103f70d2906fbb3d449b7b7b5c1b6c86e5ae17afb0c341602a543bea69f0c",
+    "d6_k7_two_defect_double_pin.py": "f8f32bc75447e9261436b0c58feb3362dd428a99e8033d45f1680a9de2d7a1d5",
+    "verify_profile_d6.py": "ab74371f26a4ab3a8dd716ea5804bf86aa947a9f37f9f53e33fa5c4b481c549a"
+  },
+  "status": "COMPLETE",
+  "summary": {
+    "graphs_rejected": 3,
+    "graphs_surviving": 16,
+    "ordered_survivor_indices": [
+      316173,
+      2581209,
+      2593240,
+      3595554,
+      3648882,
+      3729907,
+      3935560,
+      3936177,
+      3936310,
+      3936435,
+      3945490,
+      3945555,
+      3945557,
+      3945564,
+      3947605,
+      3949382
+    ],
+    "ordered_survivor_indices_sha256": "b0235ce7e95918197f0f3b4a57d26c8c83632ff51fd678a989f50197591eee8e",
+    "rejected_indices": [
+      2592657,
+      3785980,
+      3888410
+    ],
+    "rejected_indices_sha256": "12b91e5c1f996aa6f2a1ce43f188c13a5eeaef575177c20c8283a7dcd67b74aa",
+    "totals": {
+      "current_passing_families": 88,
+      "full_pin_failure": 18,
+      "labeled_support_families": 1589,
+      "propagation_failure:disjoint_required_edge": 1122,
+      "propagation_failure:empty_propagated_mask": 341,
+      "sparse_value_failure": 20,
+      "star_failed_families": 4,
+      "star_passing_families": 84
+    }
+  },
+  "upstream_artifact_sha256": {
+    "d6_current_residue_manifest_v6.json": "c513bcc40c037af23340dce3cc91d593a101dd1d073f93feab82abd556efadc9",
+    "d6_current_residue_manifest_v6_verification.json": "3d11cbd20cb59b42a8c8fd5252fb3ef3dea649576982ea8017622fad3279a7bc",
+    "d6_k7_one_free_conjunction_report.json": "181f63015d373fb69f37f4f390cdd8ad50bc32b5a2d97a36fd0bac876d0877a2",
+    "d6_k7_one_free_conjunction_verification.json": "ebaacfe663728eff427c9ba2280fc4261d26dfe10fad21e1a00982b9d31ac062"
+  }
+}

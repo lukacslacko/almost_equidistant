@@ -1,0 +1,300 @@
+{
+  "certified_killed": 1,
+  "checkpoint": {
+    "campaign_sha256": "feab16f6b6ed84441e65d3cf5e07f9a3b3157766cd931f88b9cc8c9061ef85d2",
+    "decision_TSV_sha256": "61eb84688c2a24ae8ba8f727c5e2f2250693f15ab74452c21e47beb6c126a869",
+    "directory": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_interval_v6_k7_cap500000",
+    "progress_sha256": "7a64e1b652be5b15eab0fcd191f9c39ca831df14bbd2d4eae105acc66e2970c2",
+    "result_files": 19,
+    "result_index_sha256": "e1c90f663a61067425684f96d0d06390cd1387350e5c5551ff9875fc0971804a",
+    "run_state_sha256": "9c60207882fefe54295798be4226616e4525dabc53a8ac6bee0eb7ea36cd7756",
+    "session_sha256": "c513d98d916083b7f6e23033e0aecabecb52ea7bccc392bd2829d35c642a8258"
+  },
+  "claim": "Only the listed KILLED v6 K7 graphs are certified non-realizable by the outward-rounded interval kernel. Every other status remains unresolved.",
+  "common_helper_sha256": "84ec7ae7e682de660329fd1fb02bd88d774bde542032ece95a7eb7d3c54ece4a",
+  "kernel_controls": {
+    "records_checked": 48,
+    "records_replayed": 48,
+    "records_sha256": "b9c984f019cead7382831bd821bdb2c7f92bbef660c2667fa01a55151822404b",
+    "status": "PASS"
+  },
+  "killed_by_population": {
+    "K6": 0,
+    "K7": 1
+  },
+  "killed_indices": [
+    3595554
+  ],
+  "provenance": {
+    "branch": "codex/dimension6",
+    "commit": "feb8c7378a42cb55cd7c8625e51c5f504d177292",
+    "porcelain_sha256": "d1e973ead66d54be4d576338d7597890fc48d39a3a9f8ac9ec300c05f7c82635",
+    "tracked_sources_clean_at_launch": true
+  },
+  "report": {
+    "path": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_interval_v6_k7_cap500000.json",
+    "sha256": "0b04a7bbdcbb5bba264099e3cb9f2c9e39d4bc50f7bf7c211ba5ce81e4660704"
+  },
+  "schema": "d6-interval-v6-k7-verification-v1",
+  "search": {
+    "cap": 500000,
+    "orders": 4,
+    "slices": 24,
+    "workers": 9
+  },
+  "selection": {
+    "graphs": 19,
+    "indices_sha256": "af25b842ca9eaa6e9721f51d0400be2436d930b72cc33c72bc366f0ac5e41290",
+    "population_counts": {
+      "K7": 19
+    },
+    "v6_manifest_sha256": "c513bcc40c037af23340dce3cc91d593a101dd1d073f93feab82abd556efadc9",
+    "v6_verification_sha256": "3d11cbd20cb59b42a8c8fd5252fb3ef3dea649576982ea8017622fad3279a7bc"
+  },
+  "status": "PASS",
+  "status_counts": {
+    "ABORT": 18,
+    "INFRA_ERROR": 0,
+    "KILLED": 1,
+    "UNRESOLVED": 0
+  },
+  "trust_assumptions": {
+    "basic_arithmetic": "IEEE-754 binary64 basic operations and sqrt are correctly rounded; each interval endpoint is expanded with nextafter.",
+    "candidate_nonedges": "unconstrained and allowed to be unit distance",
+    "transcendentals": "macOS libm cos endpoint values are assumed within 8 ulps; the kernel pads both directions by 8 nextafter steps and includes all interior extrema."
+  },
+  "verifier_source_sha256": "bbfe851282934980a1f0343f80296b8c8884d4ca305b6babcff09ede214501d4",
+  "winning_witnesses": [
+    {
+      "index": 3595554,
+      "ordinal": 4,
+      "population": "K7",
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        16,
+        11,
+        7,
+        6,
+        2,
+        14,
+        10,
+        9,
+        4,
+        3,
+        0,
+        17
+      ],
+      "winning_seed": [
+        1,
+        5,
+        8,
+        12,
+        13,
+        15,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 97,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 97,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 97,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 97,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 97,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 339424,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 97,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 97,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 97,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 97,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 97,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 97,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 100,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 97,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 97,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 179920,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 347,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 97,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 28407,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 97,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 97,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 97,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 97,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 97,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    }
+  ],
+  "winning_witnesses_sha256": "a7d75c46d5a5d4e9e36fc1fa31fadec7280479913f560528c593b43a23cb6ba6",
+  "witness_replay": {
+    "exact_status_node_cell_match": true,
+    "nodes": 550041,
+    "slices": 24,
+    "status": "PASS"
+  }
+}

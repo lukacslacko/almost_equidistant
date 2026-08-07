@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "description": "Bounded stratified benchmark of the restartable degree-one K7 positive-polynomial dual campaign. No full campaign was launched.",
+  "selection": {
+    "path": "d6_k7_positive_dual_selection.json",
+    "sha256": "814c80651746ce05048f72f0cfa7e49a921554abaf167bd5c8cf4063a34d35c0",
+    "graphs": 12941,
+    "selected_indices_sha256": "a07bafe688c45ff132921519320a19687d2917a79a6c9009bda51a19a6b7f290",
+    "layer_incremental_rejections": {
+      "support_propagation": 1536,
+      "strict_H": 132,
+      "sparse_value": 3148,
+      "interval_cap20000": 6,
+      "sample_positive_dual": 1
+    }
+  },
+  "sources": {
+    "builder": {
+      "path": "build_d6_k7_positive_dual_selection.py",
+      "sha256": "5717d24d448c1dc8b1da7dbb8dca53902d9b40546e9f4edc70c3183fde995dad"
+    },
+    "runner": {
+      "path": "run_d6_k7_positive_polynomial_dual_full.py",
+      "sha256": "9ba451400b3bbed253b7fdcaf124d87fc2c2d13c2560fc324f46e6bd553860a7"
+    },
+    "independent_archive_verifier": {
+      "path": "verify_d6_k7_positive_polynomial_dual_full.py",
+      "sha256": "1cca1ebcb824aae82f254d501f4943a03101aab7dd177a7366545736afd17058"
+    },
+    "focused_tests": {
+      "path": "test_run_d6_k7_positive_polynomial_dual_full.py",
+      "sha256": "3453cfccd80b32548769ab86d0d6509998a34b93bbd013e5d060bc7b3878ba3f"
+    }
+  },
+  "execution": {
+    "workers": 11,
+    "max_inflight": 22,
+    "worker_numeric_threads": 1,
+    "strata": [
+      {
+        "start": 0,
+        "graphs": 64,
+        "report": ".runs/d6_k7_positive_dual_bench_00000_report.json",
+        "report_sha256": "11112508555b39a72354de4af24c368a4e70b3e270b5fbef2463051232bea615",
+        "config_sha256": "6c86002cc044fd38121309e2fdd49e4f6077d5fc871720d742279beaf9a93f05",
+        "wall_seconds": 12.177355082999384,
+        "sum_graph_seconds": 117.80242537800495,
+        "maximum_graph_seconds": 4.408214959000361,
+        "checkpoint_result_bytes": 53300,
+        "certificate_graphs": 0,
+        "certificate_witnesses": 0,
+        "marginal_dual_rejected": 0,
+        "infra_errors": 0,
+        "independent_verification": "PASS"
+      },
+      {
+        "start": 6438,
+        "graphs": 64,
+        "report": ".runs/d6_k7_positive_dual_bench_06438_report.json",
+        "report_sha256": "d737abf64da3fdb9ce6dfaafc3c0081ab3bb6149081fc3383b6be02a6f763921",
+        "config_sha256": "09149efb210638a4218bff542b3ffbd440efaa9aa3b0fb002717b3d4d06d5a9b",
+        "wall_seconds": 18.677914416999556,
+        "sum_graph_seconds": 184.92832516099952,
+        "maximum_graph_seconds": 5.02938183400056,
+        "checkpoint_result_bytes": 53644,
+        "certificate_graphs": 0,
+        "certificate_witnesses": 0,
+        "marginal_dual_rejected": 0,
+        "infra_errors": 0,
+        "independent_verification": "PASS"
+      },
+      {
+        "start": 12877,
+        "graphs": 64,
+        "report": ".runs/d6_k7_positive_dual_bench_12877_report.json",
+        "report_sha256": "d4fcd17810d2995be342f36fa70cb6d0d63a25d100219da39a01c57c1bbda068",
+        "config_sha256": "66047cc54aa7ac04ac7e961a02676de1447f5507199c8b65053d911271040857",
+        "wall_seconds": 11.890481207999983,
+        "sum_graph_seconds": 104.0216513739997,
+        "maximum_graph_seconds": 4.007663584000511,
+        "checkpoint_result_bytes": 106683,
+        "certificate_graphs": 3,
+        "certificate_witnesses": 3,
+        "marginal_dual_rejected": 0,
+        "infra_errors": 0,
+        "independent_verification": "PASS"
+      }
+    ],
+    "combined_graphs": 192,
+    "combined_wall_seconds": 42.74575070799892,
+    "combined_sum_graph_seconds": 406.7524019130042,
+    "measured_graphs_per_wall_second": 4.491674536530515
+  },
+  "projection_for_12941_graphs": {
+    "wall_seconds_at_combined_measured_throughput": 2881.1081245427818,
+    "wall_minutes_at_combined_measured_throughput": 48.018468742379696,
+    "wall_minutes_range_from_three_stratum_throughputs": [40.05283472599995, 62.9222600539985],
+    "ideal_wall_minutes_from_sum_graph_seconds_divided_by_11": 41.53869028690173,
+    "recommended_planning_range_hours": [0.7, 1.5],
+    "checkpoint_logical_bytes_at_observed_mean": 14398682.328125,
+    "checkpoint_and_certificate_storage_planning_range_megabytes": [15, 150],
+    "storage_note": "The high end uses the much higher witness incidence in the frozen targeted sample; directory allocation overhead can add roughly one filesystem block per graph."
+  },
+  "tests": {
+    "focused_command": "python3 -m unittest -v test_run_d6_k7_positive_polynomial_dual_full.py",
+    "focused_result": "PASS: 6 tests, including a known rejection round-trip and exact graph-quantifier rebuild",
+    "archive_verifier_command_template": "python3 verify_d6_k7_positive_polynomial_dual_full.py --report <report.json>",
+    "bounded_archive_verifier_results": "PASS for all three strata; 192/192 decisions covered, three rational certificates independently checked"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "controls": {
+    "negative_K8": {
+      "eligible_covers": 1,
+      "passed": true,
+      "small_cover_failure_counts": {
+        "PD_clique": 1,
+        "perpendicular_degree": 1
+      }
+    },
+    "positive_regular_K7": {
+      "eligible_covers": 1,
+      "passed": true,
+      "passing_small_covers": [
+        0
+      ]
+    }
+  },
+  "dependency_hashes": {
+    "d6_k6_empty_essential_profile.json": "205c0877982c8de8ad6e5a685e33eff9ee05236c9907e60d488a593792d90781",
+    "d6_k6_empty_essential_profile.py": "dab7603b11946635a29c3c37daf44a895db342b2cdddb17c3699f87c182f507a",
+    "d6_k6_empty_essential_profile_verification.json": "c8f73e8a9bed6d7a102ab168eb3842312a916b23dbd577cceb6d089c8832f719",
+    "d6_k7_rank_reference.py": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0"
+  },
+  "eligible_covers_recomputed": 2386,
+  "import_independence": {
+    "checked_by_AST": true,
+    "empty_support_producer_imported": false,
+    "production_conjunction_imported": false,
+    "production_profile_imported": false
+  },
+  "input_graphs": 805,
+  "method": "production conjunction/profile not imported; independent 805 input reconstruction, apex augmentation, brute eligible-cover enumeration, and exact replay/comparison of all small-cover leaf certificates",
+  "ordered_residue_graphs": 756,
+  "ordered_residue_indices_sha256": "2cfedbc83f6ff01b6e386440fb7ea066b274d22ffbc52371c964e99d17cdcb90",
+  "production_source_sha256": "dbfd44cef783be6849255504518697279d3dfc8dabf1aab72b221697f596a6c5",
+  "promotions_recomputed": 291,
+  "rejected_graphs": 49,
+  "rejected_indices": [
+    136615,
+    136691,
+    142033,
+    211153,
+    655468,
+    664280,
+    689782,
+    940948,
+    940959,
+    955661,
+    1056498,
+    1079254,
+    1220552,
+    1227940,
+    1306343,
+    1395727,
+    1401438,
+    1405105,
+    1579548,
+    1582206,
+    1600889,
+    1688568,
+    1749804,
+    1798913,
+    1827725,
+    1949222,
+    2155185,
+    2185209,
+    2185217,
+    2248869,
+    2344069,
+    2590141,
+    2638661,
+    2686288,
+    2690504,
+    2747803,
+    2780358,
+    3140157,
+    3174756,
+    3241459,
+    3290349,
+    3302225,
+    3325686,
+    3328884,
+    3329829,
+    3342351,
+    3513660,
+    3953558,
+    3954176
+  ],
+  "report_sha256": "63207da634a56e8fa46f18f87e1ed8b86007c62b51c49c5584eb80403f2b50ba",
+  "runtime": {
+    "command": [
+      "verify_d6_k6_empty_essential_virtual_k7.py",
+      "--report",
+      "d6_k6_empty_essential_virtual_k7.json",
+      "--expected-report-sha256",
+      "63207da634a56e8fa46f18f87e1ed8b86007c62b51c49c5584eb80403f2b50ba",
+      "--output",
+      "d6_k6_empty_essential_virtual_k7_verification.json",
+      "--workers",
+      "11"
+    ],
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "wall_seconds": 0.29682770799990976,
+    "workers": 11
+  },
+  "schema": "d6-k6-empty-essential-virtual-k7-verification-v1",
+  "small_cover_certificates_recomputed": 149,
+  "status": "PASS",
+  "target_graphs": 49,
+  "target_seeds": 111,
+  "verifier_source_sha256": "83c04d7b6e035f63c9e1d38867dc4be2594397709b318cb8379a4ba42b443608"
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "description": "Compact audit report for the independent exact Python K7 cap-three short-circuit verifier on the complete current K7 residue.",
+  "report_provenance": {
+    "status": "RECONSTRUCTED_AND_FULLY_AUDITED",
+    "note": "The original temporary JSON report disappeared after the local reboot. Runtime and top-level counts are retained from captured completion output; every decision and all derivable counters were independently reconstructed from the immutable tracked gzip.",
+    "original_workers": 24,
+    "original_wall_seconds": 3674.33
+  },
+  "implementation": {
+    "driver": "run_d6_k7_rank_full_reference.py",
+    "driver_sha256": "66858a15f8a55a1830ca1cc3d0e2c0dd7e739375faf2cdef6eb107217b6e7c3c",
+    "frozen_reference": "d6_k7_rank_reference.py",
+    "frozen_reference_sha256": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+    "method": "For each graph, stop at the first K7 seed for which every eligible cover Z with |Z|<=3 fails an exact rule; for a seed that has a passing cover, stop at its first pass.",
+    "arithmetic": "Exact graph operations and Python integer/Fraction arithmetic only; no floating-point geometric decision is used."
+  },
+  "input": {
+    "graphs": 113136,
+    "full_residue_json_sha256": "7097ddd5f333326bd4a4ab1c30379b054182542ca4cd3820f3cc3bc4308ec6da",
+    "C_text_reconstruction_sha256": "a1934445c9e3fa1b6e28168fbefe161fa6a5f33ea75e74a0aaf71553eceda16b"
+  },
+  "exact_graph_results": {
+    "rejected": 95372,
+    "survivors": 17764,
+    "interpretation": "The 95372 rejections are exact. The 17764 survivors are unresolved, not claimed realizable."
+  },
+  "short_circuit_work": {
+    "K7_seeds_checked": 124664,
+    "covers_checked": 5078810,
+    "first_failure_reason_counts_on_checked_covers": {
+      "clique": 4150349,
+      "degree": 93695,
+      "mask": 741589,
+      "basis": 2055,
+      "support": 9,
+      "subspace_K": 0,
+      "component_B": 61821
+    },
+    "note": "These are scheduling/work counters for the short-circuit reference, not standalone mathematical coverage counts."
+  },
+  "decision_archive": {
+    "file": "d6_k7_rank_python_full_decisions.tsv.gz",
+    "sha256": "d331016042c14ba412a29e42b1f2ee06ee101a7d4376067b64e99e249677f10f",
+    "bytes": 680433,
+    "uncompressed_sha256": "2ee0d1d490b97b48668e119005a4487bd89c5f7ccc9b5582181c68c57edcd5f7",
+    "uncompressed_bytes": 4813361,
+    "rows_excluding_header": 113136,
+    "first_index": 87,
+    "last_index": 3971777,
+    "ordered_unique_indices": "PASS",
+    "decision_first_seed_consistency": "PASS",
+    "compression": "gzip -n -9",
+    "byte_identical_compression_replay": "PASS"
+  },
+  "full_C_crosscheck": {
+    "C_source": "profile_d6_k7_rank.c",
+    "C_source_sha256": "f41cfd25565d766fd53b8f0e08de1007de91edae1a29047e8f2744b308abfb92",
+    "C_decisions_sha256": "eaa4d5061b44cc86e6ab98ac6315b29a509539e5ac22ab33d1b7a03a34358391",
+    "rows_compared": 113136,
+    "fields_compared": [
+      "index",
+      "enhanced joint reject/survive decision",
+      "first failing K7 seed"
+    ],
+    "mismatches": 0,
+    "replay_kernel_wall_seconds": 9.239507,
+    "replay_note": "The fresh 24-thread foreground C replay reproduced the original ordered C TSV byte-for-byte. Cache-dependent support-node effort and elapsed time are intentionally excluded from deterministic comparison."
+  },
+  "tests": {
+    "reference_unit_tests": "PASS: 16/16",
+    "sample_C_Python_crosscheck": "PASS: 512 graphs, 852 seeds, 52577 covers, enhanced exact rejections 426, survivors 86",
+    "short_circuit_sample_oracle": "PASS: 426 rejected and 86 survivors",
+    "full_archive_verifier": "PASS with and without the optional exhaustive C TSV"
+  },
+  "trust": "Candidate nonedges remain optional unit pairs. The archive records exact decisions from the frozen reference. Its full-row agreement with the independently implemented exhaustive C kernel checks both the graph quantifier result and first rejecting seed for every input graph."
+}

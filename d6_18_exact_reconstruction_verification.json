@@ -1,0 +1,64 @@
+{
+  "arithmetic": "fractions.Fraction exact rational arithmetic",
+  "certificate_path": "/Users/lukacs/chatgpt/almost_equidistant/d6_18_exact_reconstruction.json",
+  "certificate_sha256": "69fa1c0be5f46e285773f13cc05270219d606673703fd16b3e36a9551cb9a990",
+  "configurations_checked": [
+    {
+      "affine_dimension": 6,
+      "bad_triples": 0,
+      "deletion_class_index": 10261,
+      "distinct_points": 18,
+      "globally_nonextendable": true,
+      "linear_consistent_norm_failures": 2,
+      "maximal_clique_size_histogram": {
+        "5": 70,
+        "6": 22
+      },
+      "maximal_cliques_recomputed": 92,
+      "norm_discrepancy_histogram": {
+        "1/3": 2
+      },
+      "required_edges": 103,
+      "switching_formula_recomputed": true,
+      "switching_replacements": 2,
+      "unit_edges": 110
+    },
+    {
+      "affine_dimension": 6,
+      "bad_triples": 0,
+      "deletion_class_index": 10887,
+      "distinct_points": 18,
+      "globally_nonextendable": true,
+      "linear_consistent_norm_failures": 17,
+      "maximal_clique_size_histogram": {
+        "5": 75,
+        "6": 27
+      },
+      "maximal_cliques_recomputed": 102,
+      "norm_discrepancy_histogram": {
+        "1/3": 16,
+        "10/27": 1
+      },
+      "required_edges": 104,
+      "switching_formula_recomputed": true,
+      "switching_replacements": 1,
+      "unit_edges": 111
+    }
+  ],
+  "exact_conclusions": {
+    "each_is_almost_equidistant_in_R6": true,
+    "each_is_globally_nonextendable_to_19": true,
+    "new_exact_18_point_configurations": 2,
+    "pairwise_nonisometric_with_each_other_and_standard18": true,
+    "switching_family_clebsch_parameters": [
+      16,
+      5,
+      0,
+      2
+    ],
+    "switching_family_formula_verified": true
+  },
+  "producer_sha256": "8b1e5c57a14b6761dae2d4203f1c469c26822203215853f06d2640ff324b141a",
+  "schema": "d6-18-exact-nonstandard-reconstruction-verification-v1",
+  "status": "PASS"
+}

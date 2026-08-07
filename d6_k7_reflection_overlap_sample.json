@@ -1,0 +1,63 @@
+{
+  "checks": {
+    "all_selected_graphs_contain_K7": true,
+    "candidate_nonedges_used_as_constraints": false,
+    "every_rejection_certificate_replayed_by_generator": true,
+    "every_rejection_certificate_replayed_by_independent_checker": true
+  },
+  "counts": {
+    "graphs": 1024,
+    "graphs_with_K6_overlap": 1,
+    "graphs_with_multiple_K7": 106,
+    "maximum_K7_cliques": 4,
+    "maximum_component_cliques": 2,
+    "maximum_component_vertices": 8,
+    "maximum_overlap_edges": 1,
+    "rejected": 0,
+    "survived": 1024,
+    "total_K7_cliques": 1149,
+    "total_overlap_edges": 1
+  },
+  "description": "Exact rational propagation through required K7 cliques sharing K6 facets. Nonedges remain unconstrained.",
+  "implementation": {
+    "controls": "d6_k7_reflection_overlap_test.py",
+    "controls_sha256": "a5c33d29b32fd8f9d00f68a141671bfbbe61591193d0b14d648afe5db3b59271",
+    "generator": "d6_k7_reflection_overlap.py",
+    "generator_sha256": "13e6b0a4d6780550d02d9a5c370c5c042684060d8696191ed98776a14a2f9582",
+    "independent_checker": "d6_k7_reflection_verify.py",
+    "independent_checker_sha256": "86ae0104bda81ab34deaf0f8db2e87136d76b9594c8026604735a6bf8c67016f"
+  },
+  "kind": "d6_k7_reflection_overlap_profile",
+  "overlap_graphs": [
+    {
+      "index": 3784405,
+      "k7_cliques": 3,
+      "maximum_component_cliques": 2,
+      "maximum_component_vertices": 8,
+      "nontrivial_components": 1,
+      "overlap_edges": 1,
+      "reason": null,
+      "rejected": false
+    }
+  ],
+  "rejection_reasons": {},
+  "rejections": [],
+  "runtime": {
+    "elapsed_seconds": 0.08293716600019252,
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "workers": 1
+  },
+  "schema": 1,
+  "scope": {
+    "input": ".runs/d6_k7_rank_survivors.json",
+    "input_sha256": "7a0a350142930e4e13830ea44c4fd217f25aeb07bbd6286e51e316f72712c4f9",
+    "sample_indices_sha256": "ecd757b4472eeba967a0c958b618609599049944a05e01d77b190208dde28564",
+    "sample_method": "deterministic evenly spaced positions floor(i*N/m), 0 <= i < m, in selection order",
+    "sample_positions_sha256": "c554541f65b11c36e2071709ba41bc25ee0beb2fd957fa2a7f0098ad3a7f3852",
+    "sample_size": 1024,
+    "selection": "d6_k7_positive_dual_selection.json",
+    "selection_population": 12941,
+    "selection_sha256": "814c80651746ce05048f72f0cfa7e49a921554abaf167bd5c8cf4063a34d35c0"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "all_first_impossible_seeds_matched": true,
+  "all_graph_core_fields_matched": [
+    "rejected",
+    "seeds_checked",
+    "impossible_seeds",
+    "z0_considered",
+    "z0_matchable",
+    "z0_block_passed",
+    "z0_block_failed",
+    "z0_nonbipartite_failed"
+  ],
+  "all_rejected_seed_Z0_cross_classifications_matched": true,
+  "all_rejected_seed_Z0_failure_partitions_matched": true,
+  "graphs_recomputed": 990,
+  "graphs_rejected": 2,
+  "graphs_surviving": 988,
+  "inputs": {
+    "d6_current_residue_manifest.json": "d06cdb23b03b1f8523fbe3c3ede5bc297ace21a844282830c5cf51a6cee3512d",
+    "d6_k6_bipartite_rank_input.json": "dfee979e6ca2759e80cf803c3054c8954d98543875d467644b91ee434c22e845",
+    "d6_k6_same_z0.py": "6d6dd948a245d5d8245f6ee10ce58c725aba29b9d3a9b325c8be11b59d519b5f",
+    "d6_k6_same_z0_report.json": "cea11ab95f24aa5fe79f06cc4d1a719b775ac5647551e0fb737b85835c443ca1",
+    "test_d6_k6_lorentz.py": "f4fc8544a4311f742267808e6c785f82139accb9da99b496d206283b52831a47",
+    "verify_d6_k6_same_z0.py": "4db05ff06910a11395e4bbdd2fd13161d6c19f58f81cc99851b8c37558d7000f"
+  },
+  "method": "independent graph/CSP reconstruction; SymPy exact characteristic-polynomial Sturm inertia; Hall-subset matching; separately implemented actual-support DFS",
+  "positive_control": {
+    "K6_seeds": 32,
+    "name": "known realizable 18-point construction",
+    "passed": true
+  },
+  "rejected_certificates": [
+    {
+      "cross_classification_histogram": {
+        "block_only": 32,
+        "nonbipartite_only": 32
+      },
+      "eligible_Z0_choices": 64,
+      "failure_reason_histogram": {
+        "bipartite_block_support": 32,
+        "nonbipartite_joint_actual_support": 32
+      },
+      "first_impossible_seed": [
+        1,
+        3,
+        10,
+        11,
+        14,
+        17
+      ],
+      "index": 652900
+    },
+    {
+      "cross_classification_histogram": {
+        "block_only": 96,
+        "nonbipartite_only": 31
+      },
+      "eligible_Z0_choices": 127,
+      "failure_reason_histogram": {
+        "bipartite_block_support": 31,
+        "nonbipartite_joint_actual_support": 96
+      },
+      "first_impossible_seed": [
+        0,
+        3,
+        4,
+        14,
+        15,
+        17
+      ],
+      "index": 2842523
+    }
+  ],
+  "rejected_indices": [
+    652900,
+    2842523
+  ],
+  "runtime": {
+    "command": "verify_d6_k6_same_z0.py --output d6_k6_same_z0_verification.json",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "wall_seconds": 10.915891124999689,
+    "workers": 1
+  },
+  "schema": "d6-k6-same-z0-verification-v1",
+  "status": "PASS"
+}

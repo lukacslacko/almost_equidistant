@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "n": 19,
+  "dimension": 6,
+  "candidate_count_expected": 3971787,
+  "candidate_count_profiled": 3971787,
+  "worker_count": 12,
+  "kill_log_unique_indices": 3055474,
+  "populations": {
+    "all": {
+      "total": 3971787,
+      "clique_number": {"5_or_less": 0, "6": 175819, "7": 3795968},
+      "link_rejections": {"K2": 0, "K3": 0, "K4": 0, "K5": 201785, "K6": 0, "K7": 0},
+      "cumulative_link_rejections": 201785,
+      "K7_reflection_rejections": 978108,
+      "K7_defect_CSP_rejections": 978108,
+      "K7_clique_Hall_rejections": 0,
+      "K7_disjoint_edge_bounded_cover_rejections": 3680379,
+      "K7_tight_cover_matching_rejections": 73,
+      "K6_clique_Hall_rejections": 0,
+      "cumulative_previous_exact_rejections": 1017404,
+      "cumulative_exact_rejections": 3680381,
+      "exact_rejections_by_clique_number": {"5_or_less": 0, "6": 0, "7": 3680381},
+      "residue_by_clique_number": {"5_or_less": 0, "6": 175819, "7": 115587},
+      "new_rule_witnesses": {
+        "K7_clique_Hall": [],
+        "K7_disjoint_edge_bounded_cover": [{"index":0,"seed":143651,"auxiliary":312528}, {"index":1,"seed":13093,"auxiliary":314584}, {"index":2,"seed":13093,"auxiliary":314584}, {"index":3,"seed":274723,"auxiliary":181456}, {"index":4,"seed":13093,"auxiliary":314584}],
+        "K7_tight_cover_matching": [{"index":206274,"seed":336548,"auxiliary":187722}, {"index":334937,"seed":350472,"auxiliary":173797}, {"index":396808,"seed":111124,"auxiliary":412746}, {"index":396810,"seed":111124,"auxiliary":412746}, {"index":396811,"seed":111124,"auxiliary":412746}],
+        "K6_clique_Hall": []
+      }
+    },
+    "certified": {
+      "total": 3055474,
+      "clique_number": {"5_or_less": 0, "6": 0, "7": 3055474},
+      "link_rejections": {"K2": 0, "K3": 0, "K4": 0, "K5": 200101, "K6": 0, "K7": 0},
+      "cumulative_link_rejections": 200101,
+      "K7_reflection_rejections": 965887,
+      "K7_defect_CSP_rejections": 965887,
+      "K7_clique_Hall_rejections": 0,
+      "K7_disjoint_edge_bounded_cover_rejections": 3053023,
+      "K7_tight_cover_matching_rejections": 69,
+      "K6_clique_Hall_rejections": 0,
+      "cumulative_previous_exact_rejections": 1004938,
+      "cumulative_exact_rejections": 3053023,
+      "exact_rejections_by_clique_number": {"5_or_less": 0, "6": 0, "7": 3053023},
+      "residue_by_clique_number": {"5_or_less": 0, "6": 0, "7": 2451},
+      "new_rule_witnesses": {
+        "K7_clique_Hall": [],
+        "K7_disjoint_edge_bounded_cover": [{"index":0,"seed":143651,"auxiliary":312528}, {"index":1,"seed":13093,"auxiliary":314584}, {"index":2,"seed":13093,"auxiliary":314584}, {"index":4,"seed":13093,"auxiliary":314584}, {"index":5,"seed":13093,"auxiliary":52440}],
+        "K7_tight_cover_matching": [{"index":206274,"seed":336548,"auxiliary":187722}, {"index":334937,"seed":350472,"auxiliary":173797}, {"index":396808,"seed":111124,"auxiliary":412746}, {"index":396810,"seed":111124,"auxiliary":412746}, {"index":396811,"seed":111124,"auxiliary":412746}],
+        "K6_clique_Hall": []
+      }
+    },
+    "deferred": {
+      "total": 916313,
+      "clique_number": {"5_or_less": 0, "6": 175819, "7": 740494},
+      "link_rejections": {"K2": 0, "K3": 0, "K4": 0, "K5": 1684, "K6": 0, "K7": 0},
+      "cumulative_link_rejections": 1684,
+      "K7_reflection_rejections": 12221,
+      "K7_defect_CSP_rejections": 12221,
+      "K7_clique_Hall_rejections": 0,
+      "K7_disjoint_edge_bounded_cover_rejections": 627356,
+      "K7_tight_cover_matching_rejections": 4,
+      "K6_clique_Hall_rejections": 0,
+      "cumulative_previous_exact_rejections": 12466,
+      "cumulative_exact_rejections": 627358,
+      "exact_rejections_by_clique_number": {"5_or_less": 0, "6": 0, "7": 627358},
+      "residue_by_clique_number": {"5_or_less": 0, "6": 175819, "7": 113136},
+      "new_rule_witnesses": {
+        "K7_clique_Hall": [],
+        "K7_disjoint_edge_bounded_cover": [{"index":3,"seed":274723,"auxiliary":181456}, {"index":6,"seed":13093,"auxiliary":314584}, {"index":7,"seed":13093,"auxiliary":52440}, {"index":8,"seed":13093,"auxiliary":52440}, {"index":13,"seed":13093,"auxiliary":183512}],
+        "K7_tight_cover_matching": [{"index":2751055,"seed":402457,"auxiliary":119524}, {"index":2887126,"seed":410649,"auxiliary":111332}, {"index":3368019,"seed":336084,"auxiliary":168747}, {"index":3936501,"seed":410649,"auxiliary":47586}],
+        "K6_clique_Hall": []
+      }
+    }
+  }
+}

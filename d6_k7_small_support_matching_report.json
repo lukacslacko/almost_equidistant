@@ -1,0 +1,1241 @@
+{
+  "command": [
+    "/Users/lukacs/claude/opengauss/venv/bin/python3",
+    "profile_d6_k7_small_support_matching.py",
+    "--output",
+    "d6_k7_small_support_matching_report.json"
+  ],
+  "description": "Exact replay of the three-disjoint-small-support refinement on the frozen 61-graph sparse-value sample residue.",
+  "elapsed_seconds": 1.0891047909999543,
+  "frozen_refined_result_disagreements": 0,
+  "frozen_report": "/Users/lukacs/chatgpt/almost_equidistant/d6_k7_small_support_value_report.json",
+  "full_campaign_recommendation": "Do not run: the proved redundancy forces zero marginal coverage.",
+  "git": {
+    "branch": "codex/dimension6",
+    "commit": "389111fe010b2dfab064ab30fffd58d26a4649aa",
+    "dirty": true,
+    "status_porcelain": [
+      "A  d6_k7_small_support_matching.md",
+      "A  d6_k7_small_support_matching.py",
+      "A  d6_k7_small_support_matching_report.json",
+      "A  profile_d6_k7_small_support_matching.py",
+      "A  test_d6_k7_small_support_matching.py",
+      "?? analyze_d6_n14_k7_rank_obstructions.py",
+      "?? build_d6_k7_positive_dual_selection.py",
+      "?? d6_k7_positive_dual_full.md",
+      "?? d6_k7_positive_dual_full_benchmark.json",
+      "?? d6_k7_positive_dual_selection.json",
+      "?? d6_n14_k7_rank_obstructions.json",
+      "?? d6_n14_k7_rank_obstructions.md",
+      "?? run_d6_k7_positive_polynomial_dual_full.py",
+      "?? test_run_d6_k7_positive_polynomial_dual_full.py",
+      "?? verify_d6_k7_positive_polynomial_dual_full.py"
+    ],
+    "status_porcelain_sha256": "a539d61b45679624dc2581de7adf9c820c06f7314001d25abfad97db2203ae09"
+  },
+  "input": "/Users/lukacs/chatgpt/almost_equidistant/d6_k7_rank_sample.json",
+  "machine": "arm64",
+  "mathematical_conclusion": "The set-packing rule is exact but branchwise redundant in this N-layer because alpha(graph_n)<=2 and required-edge support intersection is already enforced.",
+  "packing_failure_branches": 0,
+  "per_graph": [
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1605929
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2666858
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 825432
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2890993
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3058835
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 2,
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "frozen_value_passes": 2,
+        "labeled_z_families": 2,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 2,
+        "refined_passing_covers": 2,
+        "refined_value_passes": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3959829
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3610050
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 915245
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3562725
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3576900
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1357170
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2453663
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3164461
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 2,
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "frozen_value_passes": 2,
+        "labeled_z_families": 2,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 2,
+        "refined_passing_covers": 2,
+        "refined_value_passes": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3939503
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3726256
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 378605
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3129009
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 2,
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "frozen_value_passes": 2,
+        "labeled_z_families": 2,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 2,
+        "refined_passing_covers": 2,
+        "refined_value_passes": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2619928
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3470976
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 667715
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 150757
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 842369
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2957278
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2373890
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3961502
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 2,
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "frozen_value_passes": 2,
+        "labeled_z_families": 2,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 2,
+        "refined_passing_covers": 2,
+        "refined_value_passes": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3128141
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3423153
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 128297
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2744629
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2594493
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 912798
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 388922
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3452028
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 2,
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "frozen_value_passes": 2,
+        "labeled_z_families": 2,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 2,
+        "refined_passing_covers": 2,
+        "refined_value_passes": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3649646
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2193803
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2714355
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 189400
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 572379
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2681964
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 397295
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 632013
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3088288
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1661903
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2682549
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3830718
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 2,
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "frozen_value_passes": 2,
+        "labeled_z_families": 2,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 2,
+        "refined_passing_covers": 2,
+        "refined_value_passes": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3917524
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 2,
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "frozen_value_passes": 2,
+        "labeled_z_families": 2,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 2,
+        "refined_passing_covers": 2,
+        "refined_value_passes": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 370952
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1462119
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 343017
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3733344
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1468149
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2545347
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 332406
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3952705
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3968216
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 2641803
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1633693
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 1468026
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 2,
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "frozen_value_passes": 2,
+        "labeled_z_families": 2,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 2,
+        "refined_passing_covers": 2,
+        "refined_value_passes": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3959628
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 2,
+        "baseline_passing_covers": 2,
+        "covers": 2,
+        "frozen_value_passes": 2,
+        "labeled_z_families": 2,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 2,
+        "refined_passing_covers": 2,
+        "refined_value_passes": 2,
+        "seeds": 2,
+        "small_support_intersection_passes": 2
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 3950770
+    },
+    {
+      "counts": {
+        "alpha_two_graph_n_checks": 1,
+        "baseline_passing_covers": 1,
+        "covers": 1,
+        "frozen_value_passes": 1,
+        "labeled_z_families": 1,
+        "packing_failure_branches": 0,
+        "propagation_passing_families": 1,
+        "refined_passing_covers": 1,
+        "refined_value_passes": 1,
+        "seeds": 1,
+        "small_support_intersection_passes": 1
+      },
+      "decision": "SURVIVOR",
+      "first_failing_seed": 0,
+      "index": 58186
+    }
+  ],
+  "platform": "macOS-14.5-arm64-arm-64bit",
+  "profiler_sha256": "8898cc65470ec3128483f6124276b65ad3d24a7cc17f7570cd78ea25236eaecf",
+  "proof_sha256": "415c8656357e874e3638fe3a3052629b6499d2260164d4b5523cdd61865a9b3a",
+  "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+  "rejected_graphs": 0,
+  "rejected_indices": [],
+  "schema": 1,
+  "selected_graphs": 61,
+  "selection": {
+    "frozen_dependency_sha256": {
+      "d6_k7_rank_reference.py": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+      "d6_k7_small_support_value.md": "e8ec6a012f9ea824e9cddb76510840537dba0e603e207cd3220c1b06866cb42a",
+      "d6_k7_small_support_value.py": "bed5987c89fbef2ef36762051ae7fa3414fd381a6246032b06857a557f13743f",
+      "d6_k7_support_propagation.py": "578103f70d2906fbb3d449b7b7b5c1b6c86e5ae17afb0c341602a543bea69f0c",
+      "profile_d6_k7_small_support_value.py": "c8231ff47263b348e3daba2b32cd3eb693ff70f3db5b10aa808b1b5296589573",
+      "test_d6_k7_small_support_value.py": "6a2ee7a97844b5922a5467e1c3a8cf4c8a49240014b4154f45307335dfea5c44"
+    },
+    "frozen_report_sha256": "9beeb04e709fcc0e4d755bb8a481b7d320a2c9470221f4b66dad5b7f7f0ddf07",
+    "input_sha256": "bf699f36a1c90b6d6751498e52fab73e6b58db322c5b71b04accf32623c2c0dd",
+    "selected_indices": [
+      1605929,
+      2666858,
+      825432,
+      2890993,
+      3058835,
+      3959829,
+      3610050,
+      915245,
+      3562725,
+      3576900,
+      1357170,
+      2453663,
+      3164461,
+      3939503,
+      3726256,
+      378605,
+      3129009,
+      2619928,
+      3470976,
+      667715,
+      150757,
+      842369,
+      2957278,
+      2373890,
+      3961502,
+      3128141,
+      3423153,
+      128297,
+      2744629,
+      2594493,
+      912798,
+      388922,
+      3452028,
+      3649646,
+      2193803,
+      2714355,
+      189400,
+      572379,
+      2681964,
+      397295,
+      632013,
+      3088288,
+      1661903,
+      2682549,
+      3830718,
+      3917524,
+      370952,
+      1462119,
+      343017,
+      3733344,
+      1468149,
+      2545347,
+      332406,
+      3952705,
+      3968216,
+      2641803,
+      1633693,
+      1468026,
+      3959628,
+      3950770,
+      58186
+    ],
+    "selected_indices_sha256": "c7f81b62298e13360d932ded1ea17dd65a69cb972d1fb858c1f8f188d225b585"
+  },
+  "source_sha256": "cb720cea476db162bf083180a318923f8b973a7f728ad44f5ffa14a1ff0cd44a",
+  "started_unix": 1786042962.1873658,
+  "surviving_graphs": 61,
+  "test_sha256": "31ca5f0cbbbf3df15c41156c220f4e09d495ac14530930559e6b3416d3f2fa2b",
+  "totals": {
+    "alpha_two_graph_n_checks": 70,
+    "baseline_passing_covers": 70,
+    "covers": 70,
+    "frozen_value_passes": 70,
+    "labeled_z_families": 70,
+    "packing_failure_branches": 0,
+    "propagation_passing_families": 70,
+    "refined_passing_covers": 70,
+    "refined_value_passes": 70,
+    "seeds": 70,
+    "small_support_intersection_passes": 70
+  }
+}

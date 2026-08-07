@@ -1,0 +1,259 @@
+{
+  "affine_spanning": {
+    "all_11_subsets_affinely_span_R5": true,
+    "all_11_subsets_checked": 4368,
+    "maximum_hyperplane_intersection": 10,
+    "prime": 1000000007,
+    "ten_point_hyperplane_equation_scaled": "s1+s2+s3+s4+s5=1",
+    "ten_point_hyperplane_vertices": [
+      3,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "coordinates": {
+    "actual_apex_height_squared": "3/8",
+    "actual_base_norm_squared": "5/8",
+    "apices": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        "+sqrt(3)"
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        "-sqrt(3)"
+      ]
+    ],
+    "base": [
+      [
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        0
+      ],
+      [
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        0
+      ],
+      [
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        0
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        0
+      ],
+      [
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        0
+      ],
+      [
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        0
+      ],
+      [
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        0
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        0
+      ],
+      [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        0
+      ],
+      [
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        0
+      ],
+      [
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        0
+      ],
+      [
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        0
+      ],
+      [
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    ],
+    "scale": "listed coordinates equal (2*sqrt(2)) times actual coordinates"
+  },
+  "nonclaims": [
+    "This does not prove uniqueness of 16-point almost-equidistant sets in R5.",
+    "This does not prove uniqueness of 18-point almost-equidistant sets in R6.",
+    "Local rigidity does not prove global uniqueness of an abstract support embedding.",
+    "Failure to extend this component alone does not reject a 19-vertex parent support."
+  ],
+  "nonextension": {
+    "forced_height_squared": "3/8",
+    "forced_horizontal_projection": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "minimum_forced_unit_base_neighbours": 11,
+    "proof_steps": [
+      "For a new point x, its non-unit neighbours in the 16-point base form a unit clique: otherwise x and two such vertices form a bad triple.",
+      "The base unit graph has clique number 5, so x is unit from at least 11 base vertices.",
+      "Every 11 base vertices affinely span the five-flat. Since all base norms are 5/8, subtracting their unit-sphere equations forces the horizontal projection of x to be zero.",
+      "One remaining sphere equation gives x_6^2=3/8, so x equals one of the two existing apices and violates distinctness."
+    ],
+    "result": "no distinct nineteenth point extends these coordinates",
+    "terminal": "collision with an existing apex"
+  },
+  "rigidity": {
+    "base_framework_R5": {
+      "euclidean_motion_dimension": 15,
+      "exact_rank": 65,
+      "self_stress_dimension": 15,
+      "variables": 80
+    },
+    "full_framework": {
+      "euclidean_motion_dimension": 21,
+      "exact_rank": 87,
+      "rank_lower_bound_mod_13": 87,
+      "rank_upper_bound": 87,
+      "self_stress_dimension": 25,
+      "sqrt3_mod_13": 4,
+      "variables": 108
+    }
+  },
+  "schema": "d6-standard18-exact-geometry-v1",
+  "semantics": {
+    "classification_claim": false,
+    "nonedges": "unconstrained and may also be unit in abstract supports",
+    "scope": "the displayed standard coordinates and their full actual unit graph"
+  },
+  "status": "PASS",
+  "unit_graph": {
+    "K6_seeds": 32,
+    "K7_seeds": 0,
+    "adjacency": [
+      202622,
+      207805,
+      216539,
+      233191,
+      225767,
+      242395,
+      251069,
+      256126,
+      228887,
+      245035,
+      252749,
+      255886,
+      255857,
+      252850,
+      245204,
+      229096,
+      65535,
+      65535
+    ],
+    "adjacency_sha256": "7697e049810093251c017328fa1043647cc3bf12df7c61ecd5433225154497b5",
+    "base_clique_number": 5,
+    "base_edges": 80,
+    "base_scaled_squared_distance_histogram": {
+      "16": 40,
+      "8": 80
+    },
+    "edges": 112,
+    "maximal_clique_size_histogram": {
+      "5": 80,
+      "6": 32
+    }
+  }
+}

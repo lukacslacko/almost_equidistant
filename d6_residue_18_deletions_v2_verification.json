@@ -1,0 +1,49 @@
+{
+  "builder_sha256": "ecf3b388af8e7216d099e1ad2b5eaaaf4151c6d145bc7e47fceef6bd2745c374",
+  "checks": {
+    "all_rooted_parent_deletions": true,
+    "canonical_unique_records": true,
+    "import_independence": true,
+    "no_geometric_overclaim": true,
+    "source_hashes": true,
+    "standard18_reconstruction_and_embeddings": true,
+    "summary_hashes_and_counts": true
+  },
+  "counts": {
+    "cross_class_unique_overlap": 62,
+    "deletion_occurrences": 17309,
+    "parents": 911,
+    "standard_compatible_deletion_occurrences": 39,
+    "standard_compatible_parent_graphs": 16,
+    "standard_compatible_unique_deletions": 14,
+    "standard_support_deletion_occurrences": 26,
+    "standard_support_labeled": 1960,
+    "standard_support_parent_graphs": 14,
+    "standard_support_types": 7,
+    "unique_K6_only_parent_deletions": 9749,
+    "unique_K7_parent_deletions": 2288,
+    "unique_deletions": 11975
+  },
+  "independent_reference_sha256": "5ac2baab623a49de603fe0d5d30581402e15a1753d48a02b8ac2ce3c4ec251d4",
+  "input": {
+    "path": "d6_current_residue_manifest_v5.json",
+    "sha256": "164b2a12813845ef1f6d6ca5e3713ed1d2edac4be58563c1648a39ff8580c0b5"
+  },
+  "input_verification": {
+    "path": "d6_current_residue_manifest_v5_verification.json",
+    "sha256": "e871431b8b28fc04f0e58922ff3a6386054d15d37de5c9f9e67601ede47e4b46",
+    "status": "PASS"
+  },
+  "labelg": {
+    "path": "/opt/homebrew/Cellar/nauty/2.9.3/bin/labelg",
+    "sha256": "ea7509638bf10acf8d74f5cdba8651d1b5dc64ae388a32eaeebf3211d5a03aff"
+  },
+  "manifest": {
+    "path": "d6_residue_18_deletions_v2.json",
+    "sha256": "7a13d7a204f866c2d7c421db8a46c5b042bbad8bad6a2cade4a94eb4d340521d"
+  },
+  "schema": "d6-residue-18-deletion-verification-v2",
+  "status": "PASS",
+  "trust": "labelg is used only for isomorphism grouping; every parent deletion, rooted attachment, compatibility pair, and embedding is independently reconstructed",
+  "verifier_source_sha256": "be7c8b70d103a97064a0c7009761b438c787b2d09b569d6e153278bd7de2751c"
+}

@@ -1,0 +1,81 @@
+{
+  "checked": {
+    "K7_seeds": 55,
+    "certificates": 4,
+    "current_passing_families": 88,
+    "eligible_covers": 19932,
+    "graphs": 19,
+    "inherited_current_covers": 108,
+    "labeled_support_families": 1589,
+    "optional_zero_control": true,
+    "positive_18_control": true,
+    "rejected_graphs": 3,
+    "star_failed_families": 4,
+    "surviving_graphs": 16
+  },
+  "claim": "Every current passing family and every correlated sign assignment was independently reconstructed without importing the producer or production star kernel.",
+  "execution": {
+    "elapsed_seconds": 10.324385291998624,
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "started_utc": "2026-08-07T12:25:21.728709+00:00",
+    "workers": 9
+  },
+  "kind": "d6_k7_one_two_star_increment_verification",
+  "ordered_survivor_indices": [
+    316173,
+    2581209,
+    2593240,
+    3595554,
+    3648882,
+    3729907,
+    3935560,
+    3936177,
+    3936310,
+    3936435,
+    3945490,
+    3945555,
+    3945557,
+    3945564,
+    3947605,
+    3949382
+  ],
+  "ordered_survivor_indices_sha256": "b0235ce7e95918197f0f3b4a57d26c8c83632ff51fd678a989f50197591eee8e",
+  "provenance": {
+    "branch": "codex/dimension6",
+    "commit": "5a35469bfb903a6aa0bed63460aeaa195b74a61b",
+    "porcelain_sha256": "38a212ef4a92e98768adc66f3f94736c2c5657f93749880e2ede8799e4d8366a",
+    "tracked_sources_clean_at_launch": true
+  },
+  "rejected_indices": [
+    2592657,
+    3785980,
+    3888410
+  ],
+  "rejected_indices_sha256": "12b91e5c1f996aa6f2a1ce43f188c13a5eeaef575177c20c8283a7dcd67b74aa",
+  "report": {
+    "path": "/Users/lukacs/chatgpt/almost_equidistant/d6_k7_one_two_star_increment_report.json",
+    "sha256": "12b3d18b1ea81961f58d831d4c7c322fbceb2300e7533b64161e8011fbe9d1ec"
+  },
+  "schema": 1,
+  "semantics": {
+    "allowed_unpinned_coordinates_may_be_zero": true,
+    "candidate_nonedges_optional": true,
+    "cap500000_campaign_used": false,
+    "floating_point_enters_rejection": false,
+    "graph_rejected_if_any_k7_seed_is_infeasible": true,
+    "normalization_factor_t_nonzero_on_cover_complement_N": true,
+    "only_required_edges_enter_star_equations": true,
+    "positive_sqrt7_embedding_checked_exactly": true,
+    "propagated_masks_are_support_supersets": true
+  },
+  "status": "PASS",
+  "upstream_artifact_sha256": {
+    "d6_current_residue_manifest_v6.json": "c513bcc40c037af23340dce3cc91d593a101dd1d073f93feab82abd556efadc9",
+    "d6_current_residue_manifest_v6_verification.json": "3d11cbd20cb59b42a8c8fd5252fb3ef3dea649576982ea8017622fad3279a7bc",
+    "d6_k7_one_free_conjunction_report.json": "181f63015d373fb69f37f4f390cdd8ad50bc32b5a2d97a36fd0bac876d0877a2",
+    "d6_k7_one_free_conjunction_verification.json": "ebaacfe663728eff427c9ba2280fc4261d26dfe10fad21e1a00982b9d31ac062"
+  },
+  "verifier_source_sha256": "eafd4f69eb4e3938bbd3ce3c1c2c469ddc38e96d2338ed202398bad5377f1b96"
+}

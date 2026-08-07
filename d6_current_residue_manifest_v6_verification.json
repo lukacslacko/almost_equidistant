@@ -1,0 +1,41 @@
+{
+  "builder_sha256": "32345fc272efec6e04cab76a158411f65b4ea7cc6970ad4d1442dc8ca8471918",
+  "checks": {
+    "K6_exact_chain": true,
+    "K7_exact_chain": true,
+    "K7_interval_KILLED_union": true,
+    "adjacency_and_graph_classes": true,
+    "counts_and_hashes": true,
+    "import_independence": true,
+    "primary_hash_roots": true,
+    "transitive_hash_roots": true,
+    "trust_semantics_and_controls": true
+  },
+  "class_indices_sha256": {
+    "K6_only": "04d9475217e294efed0c6eac34a7fad88616c90ad7d37a2525776a713e6dd0e1",
+    "K7": "af25b842ca9eaa6e9721f51d0400be2436d930b72cc33c72bc366f0ac5e41290"
+  },
+  "counts": {
+    "K6_only": 625,
+    "K7": 19,
+    "combined": 644,
+    "exact_rejections_from_v5": 264,
+    "interval_incremental_rejections": 3
+  },
+  "manifest": {
+    "path": "d6_current_residue_manifest_v6.json",
+    "sha256": "c513bcc40c037af23340dce3cc91d593a101dd1d073f93feab82abd556efadc9"
+  },
+  "ordered_residue_indices_sha256": "907b6fe460846ab613e7d35a94dbfc6eb1eb94322a36f10b4500a8ce4fcc6ccf",
+  "schema": "d6-current-certified-residue-v6-verification-v1",
+  "status": "PASS",
+  "trust_tiers": {
+    "exact_floating_point": false,
+    "interval_incremental_rejections": 3,
+    "interval_trust_assumptions": {
+      "basic_arithmetic": "IEEE-754 binary64 basic operations and sqrt are correctly rounded; each interval endpoint is expanded with nextafter.",
+      "candidate_nonedges": "unconstrained and allowed to be unit distance",
+      "transcendentals": "macOS libm cos endpoint values are assumed within 8 ulps; the kernel pads both directions by 8 nextafter steps and includes all interior extrema."
+    }
+  }
+}

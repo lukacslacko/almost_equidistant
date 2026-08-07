@@ -1,0 +1,209 @@
+{
+  "K6_seeds_recomputed": 25354,
+  "dependency_hashes": {
+    "d6_k6_empty_support_budget.py": "284b8c3bda4d2a43581665ade3d52d9295b29d460418454e3a760897cabc5fac",
+    "d6_k6_empty_support_budget_report.json": "1860dbe69ae74b55203ea283cf83afff929a4b1f5cbfcd30e09f0138688eba9f",
+    "d6_k6_empty_support_budget_verification.json": "873c8b6babe183757d4e97b0f0c1c1a942b31f180c88eeef1c9ddf80a199276f"
+  },
+  "empty_essential_seeds": 111,
+  "graphs_recomputed": 805,
+  "graphs_with_empty_essential_seed": 49,
+  "import_independence": {
+    "checked_by_AST": true,
+    "empty_support_producer_imported": false,
+    "production_profiler_imported": false
+  },
+  "method": "fresh ordered 805-graph process pool; production profiler and empty-support producer not imported; independent Hall DP and empty-state traversal; exact comparison of all 25,354 K6 seeds",
+  "newly_impossible_seeds": 0,
+  "newly_rejected_indices": [],
+  "opposite_apex_pair_keys": 174,
+  "positive_control": {
+    "K6_seeds": 32,
+    "passed": true,
+    "seed_results": [
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 65815
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 131351
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 66091
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 131627
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 66637
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 132173
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 69745
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 135281
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 71425
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 136961
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 67726
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 133262
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 73906
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 139442
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 76546
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 142082
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 82132
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 147668
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 85252
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 150788
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 98536
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 164072
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 101896
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 167432
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 94480
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 160016
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 111136
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 176672
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 119872
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 185408
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 125056
+      },
+      {
+        "all_nonempty_witness_Z0": [],
+        "classification": "ALL_NONEMPTY_WITNESS",
+        "seed_mask": 190592
+      }
+    ]
+  },
+  "production_source_sha256": "dab7603b11946635a29c3c37daf44a895db342b2cdddb17c3699f87c182f507a",
+  "report_sha256": "205c0877982c8de8ad6e5a685e33eff9ee05236c9907e60d488a593792d90781",
+  "runtime": {
+    "command": [
+      "verify_d6_k6_empty_essential_profile.py",
+      "--report",
+      "d6_k6_empty_essential_profile.json",
+      "--expected-report-sha256",
+      "205c0877982c8de8ad6e5a685e33eff9ee05236c9907e60d488a593792d90781",
+      "--output",
+      "d6_k6_empty_essential_profile_verification.json",
+      "--workers",
+      "11"
+    ],
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "wall_seconds": 10.102044625000417,
+    "workers": 11
+  },
+  "schema": "d6-k6-empty-essential-profile-verification-v1",
+  "status": "PASS",
+  "verifier_source_sha256": "8eeea41c5ebd04125ad2a33539757229472b2709a8771f56cc6af394c8cf3c2e",
+  "virtual_K7_promotion_keys": 291
+}

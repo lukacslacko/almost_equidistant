@@ -1,0 +1,40 @@
+{
+  "archive": "/Users/lukacs/chatgpt/almost_equidistant/d6_k7_sparse_value_full_verification.jsonl.gz",
+  "artifacts": {
+    "decision_archive_sha256": "7ff59f5cbcf4471195793e99d1d33369d50e26cf9949e78fb4d8e71a2f356219",
+    "decision_jsonl_sha256": "cce8779f0353b81ddf6e9715c31693d904be952cae8407223957478d4df9e794",
+    "report_sha256": "5f9ec90305e51c78a1ca1e827e354e7e51b5617f383a011eb554e7f68ae5de7e"
+  },
+  "command": [
+    "/Users/lukacs/claude/opengauss/venv/bin/python3",
+    "verify_d6_k7_sparse_value_full.py",
+    "--workers",
+    "11",
+    "--checkpoint-every",
+    "32",
+    "--progress-every",
+    "64"
+  ],
+  "committed_results": 3195,
+  "compatibility": {
+    "input_sha256": "7a0a350142930e4e13830ea44c4fd217f25aeb07bbd6286e51e316f72712c4f9",
+    "limit": null,
+    "schema": 1,
+    "selected_indices_sha256": "37f908f7b737449818a59a0052fabb65775b26f9f8a193e3e670d08651206c46",
+    "selected_rejections": 3195,
+    "value_archive_sha256": "9f70e0e267fe97bc2f6a2890cae47d8b1c882974d5f054f16b4673bfb45ee003",
+    "value_archive_uncompressed_sha256": "0ce9d2d2aeb18403fce17a0611594843946d4c07764fbb24946069f0997aab4c",
+    "verifier_source_sha256": "6c0012e66d0b89e280f3cebed7a61f24cc1c6e128e726663a7b246e7da0edbbc"
+  },
+  "final_decisions": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_k7_sparse_value_full_verification.jsonl",
+  "machine": "arm64",
+  "partial_decisions": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_k7_sparse_value_full_verification.jsonl.partial",
+  "platform": "macOS-14.5-arm64-arm-64bit",
+  "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+  "report": "/Users/lukacs/chatgpt/almost_equidistant/d6_k7_sparse_value_full_verification_report.json",
+  "schema": 1,
+  "started_unix": 1786042869.045983,
+  "status": "COMPLETE",
+  "updated_unix": 1786042964.364682,
+  "workers": 11
+}

@@ -1,0 +1,19 @@
+{
+  "artifacts": {
+    "certificate_archive": "d6_k7_positive_dual_full_certificates.jsonl.gz",
+    "certificate_archive_sha256": "3adaa7e562dfb9241f205e3e7d2384805dbe7296f9677d76f2f23ce913a4ce7f",
+    "certificates_uncompressed_sha256": "2ff1db7bc8d48960575287791e2c71ce3f67427974bb7d103ad4a6f83dbc61cd",
+    "decision_rows": 12941,
+    "decisions_archive": "d6_k7_positive_dual_full_decisions.tsv.gz",
+    "decisions_archive_sha256": "724a97928422fc8705946ed64e3ce9afd37579d3229e5b3ebb7c4f1144c002ec",
+    "decisions_uncompressed_sha256": "d08945217b1c33f20adc4dcc0d495a4dd3a67d27bc3e03658cdb60c5f0a5eb27"
+  },
+  "checkpoint_result_index_sha256": "245e88d9d92fb036158577e824b9d78add79b20889e230aebe68d4790149c076",
+  "completed_graphs": 12941,
+  "config_sha256": "0d8cce1446e38a51644ea0d0bd040696540b1e0a15e524a098c429925b13510b",
+  "finished_utc": "2026-08-06T19:25:46.242118+00:00",
+  "report": "d6_k7_positive_dual_full_report.json",
+  "report_sha256": "c2de7e06bbe4f3d163a4f747d42721f7f60da985b867ce74669664431738e345",
+  "schema": 1,
+  "status": "COMPLETE"
+}

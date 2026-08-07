@@ -1,0 +1,57 @@
+{
+  "checked": {
+    "certificates": 36,
+    "covers": 53,
+    "graphs": 50,
+    "marginal_graph_rejections": 33,
+    "pentads": 1113,
+    "positive_18_control": true
+  },
+  "claim": "The target corpus was independently replayed from frozen sources; all 1,113 canonical pentads and every stored positive identity were independently reconstructed with exact arithmetic.",
+  "execution": {
+    "batch_size": 16,
+    "checkpoint": {
+      "path": ".runs/d6_k7_ranktwo_pentad_verification_checkpoint.json",
+      "sha256": "be943c752c5d6793a406c4c13147aeac1e9b9799dd7aa71c79d7d5db6b58868a"
+    },
+    "fresh_subprocess_per_cover": true,
+    "workers": 4
+  },
+  "kind": "d6_k7_ranktwo_pentad_full_verification",
+  "report": {
+    "path": "d6_k7_ranktwo_pentad_full_report.json",
+    "sha256": "b85067767a926861f6438d395b167538a02124a5c6e7f11471df2fb87c4839e4"
+  },
+  "schema": 1,
+  "source_hashes": {
+    "verify_d6_k7_positive_polynomial_dual.py": "0f9c277cd7324cf887faa3d161a9328730833ceabca63c819f7197d423c6953a",
+    "verify_d6_k7_ranktwo_pentad.py": "14cf8d3e12dd436bc164c7d17a7aa1e03aa2aa933d66ffe0a1335c605b45eeb3",
+    "verify_d6_k7_ranktwo_pentad_full.py": "49925ab0794b8f40feea76771b3ceed62b6e45a8cfc43e09fd98db63cf901d77"
+  },
+  "status": "PASS",
+  "symbolic_checks": {
+    "elimination_derivation": {
+      "degree": 5,
+      "formal_variables": 10,
+      "terms": 12
+    },
+    "generic_rank_two_gram_substitution": {
+      "coordinate_variables": 10,
+      "formal_products_before_cancellation": 384,
+      "residual_terms": 0
+    },
+    "permutation_orbit": {
+      "genuinely_distinct_up_to_sign": 1,
+      "labelings_checked": 120,
+      "opposite_sign": 60,
+      "same_sign": 60
+    }
+  },
+  "target_gate": {
+    "graphs": 50,
+    "profiles_sha256": "6657805603a91e037ac8b6543438de50e09cb8c5dd81ad965c9f117085b1bef0",
+    "status": "PASS",
+    "targets": 53,
+    "targets_sha256": "f2ebfd6ced4fb48de7d68cf9756a6061e84a7172faa100bca3c4201ce30f9254"
+  }
+}

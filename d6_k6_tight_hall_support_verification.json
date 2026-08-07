@@ -1,0 +1,35 @@
+{
+  "certificates": {
+    "path": "d6_k6_tight_hall_support_certificates.json",
+    "sha256": "a3b29e28db706de5b1d63ba4f82e2b527a53d6b0ac479d098c3bb2cccb66198f"
+  },
+  "checks": {
+    "all_graph_decisions": true,
+    "certificate_Z0_coverage": true,
+    "container_maxima_instead_of_production_union_DP": true,
+    "import_independence": true,
+    "positive_18_control": true,
+    "source_and_input_pins": true
+  },
+  "graphs_recomputed": 756,
+  "graphs_rejected": 107,
+  "graphs_surviving": 649,
+  "ordered_residue_indices_sha256": "6460baec9c378c1da3ba79f9ba6645e688158f2d9910bc6b88f4578c6e28e8d4",
+  "positive_18_control": {
+    "K6_seeds": 32,
+    "passed": true
+  },
+  "rejected_indices_sha256": "6d46d6db66236d294f3f5a61e1cb696492a2aad6b137bdfee044df260424e69d",
+  "report": {
+    "path": "d6_k6_tight_hall_support_report.json",
+    "sha256": "73b7fdd5b641d52a7eb3f2daaeea9d8e94057913e38f2bde06ef62691d01e864"
+  },
+  "runtime": {
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "wall_seconds": 31.794756375005818,
+    "workers": 11
+  },
+  "schema": "d6-k6-tight-hall-support-verification-v1",
+  "status": "PASS"
+}

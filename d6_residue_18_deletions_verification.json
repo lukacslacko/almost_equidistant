@@ -1,0 +1,46 @@
+{
+  "builder_sha256": "f44ef42f8da3e6ba4b4c902b2db11468d781b8d9157eab3081a9df43674a08fd",
+  "checks": {
+    "all_parent_deletions": true,
+    "canonical_unique_records": true,
+    "no_geometric_overclaim": true,
+    "source_hashes": true,
+    "standard_support_reconstruction": true,
+    "summary_hashes_and_counts": true
+  },
+  "counts": {
+    "cross_class_unique_overlap": 62,
+    "deletion_occurrences": 18240,
+    "parents": 960,
+    "standard_compatible_deletion_occurrences": 39,
+    "standard_compatible_parent_graphs": 16,
+    "standard_compatible_unique_deletions": 14,
+    "standard_support_deletion_occurrences": 26,
+    "standard_support_labeled": 1960,
+    "standard_support_parent_graphs": 14,
+    "standard_support_types": 7,
+    "unique_K6_only_parent_deletions": 10486,
+    "unique_K7_parent_deletions": 2288,
+    "unique_deletions": 12712
+  },
+  "input": {
+    "path": "d6_current_residue_manifest_v4.json",
+    "sha256": "6ab4bfffc524f5b43409d59888fb596de8130315bda3381e484bb4ce891e03e4"
+  },
+  "input_verification": {
+    "path": "d6_current_residue_manifest_v4_verification.json",
+    "sha256": "765eceb6782d131dae8c77c9b94de78735e23a070da051c8fffbd984790e1a41",
+    "status": "PASS"
+  },
+  "labelg": {
+    "path": "/opt/homebrew/Cellar/nauty/2.9.3/bin/labelg",
+    "sha256": "ea7509638bf10acf8d74f5cdba8651d1b5dc64ae388a32eaeebf3211d5a03aff"
+  },
+  "manifest": {
+    "path": "d6_residue_18_deletions.json",
+    "sha256": "9d08f9ec579434c9601ad3908bd2ae51f10e09e9d06a7f38fbc25794a634b732"
+  },
+  "schema": "d6-residue-18-deletion-verification-v1",
+  "status": "PASS",
+  "trust": "labelg is used only to reproduce isomorphism grouping; every parent/deletion adjacency and occurrence is independently rebuilt"
+}

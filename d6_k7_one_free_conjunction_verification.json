@@ -1,0 +1,65 @@
+{
+  "checked": {
+    "K7_seeds": 65,
+    "combined_rejected_graphs": 2,
+    "combined_survivors": 22,
+    "correlated_certificates": 4,
+    "current_covers": 135,
+    "eligible_covers": 25809,
+    "graphs": 24,
+    "labeled_z_families": 2272,
+    "pre_new_families": 156,
+    "pre_pinning_families": 182,
+    "singleton_certificates": 0
+  },
+  "claim": "A source-independent exact replay reconstructed every frozen 24-residue graph, seed, cover, support family, singleton certificate, correlated sign-component certificate, and all four pipeline partitions.",
+  "exact_survivors_sha256": "cce80d8065f5c97c15091343128f9626447b13e7bd6e7638b59c9dcef5296cf6",
+  "execution": {
+    "elapsed_seconds": 9.02891820899822,
+    "logical_cpus": 12,
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "workers": 9
+  },
+  "input_indices_sha256": "71d9ae101445ae90d08699ede81ca405bf5bfe956fda01ee384203fa113d1779",
+  "kind": "d6_k7_one_free_edge_seed_conjunction_verification",
+  "rejected_by_pipeline_sha256": {
+    "combined": "217a8ef77b6089fca80612cacc05768635ee4095dd1d6bc82e634d21fd5b5222",
+    "correlated": "217a8ef77b6089fca80612cacc05768635ee4095dd1d6bc82e634d21fd5b5222",
+    "old": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "singleton": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "report": {
+    "path": "d6_k7_one_free_conjunction_report.json",
+    "sha256": "181f63015d373fb69f37f4f390cdd8ad50bc32b5a2d97a36fd0bac876d0877a2"
+  },
+  "root_sha256": {
+    "d6_current_residue_manifest_v5.json": "164b2a12813845ef1f6d6ca5e3713ed1d2edac4be58563c1648a39ff8580c0b5",
+    "d6_current_residue_manifest_v5_verification.json": "e871431b8b28fc04f0e58922ff3a6386054d15d37de5c9f9e67601ede47e4b46",
+    "d6_k7_positive_dual_full_certificates.jsonl.gz": "3adaa7e562dfb9241f205e3e7d2384805dbe7296f9677d76f2f23ce913a4ce7f",
+    "d6_k7_rankone_tetrad_full_certificates.jsonl.gz": "f719dbb6492fc20fb3103cb79079567aa2cad163835f97e750412c3d27897c50",
+    "d6_k7_rankone_tetrad_full_decisions.tsv.gz": "2552ce91f52727d9beda60d99d534c1d5a0be3f93686ab321f223d8e0d11dfc1"
+  },
+  "schema": 1,
+  "source_sha256": {
+    "verify_d6_k7_double_pin_conjunction.py": "41026998b065ae0600bd0ba2209f886bec465a2b9a59153114ccb34b4107f49a",
+    "verify_d6_k7_full_pin_increment.py": "4f1599c8ac6d7fe83db604b70bc9e551102805d7dd54ceb580eb69d5bbca4464",
+    "verify_d6_k7_one_free_conjunction.py": "105454f7ef2fbafcddffb4e7a83d32c344ce31ad442ad22894b6eac90d6b0848",
+    "verify_d6_k7_sparse_value_full.py": "6c0012e66d0b89e280f3cebed7a61f24cc1c6e128e726663a7b246e7da0edbbc",
+    "verify_d6_k7_support_full.py": "c6b9dce47618bd9a4247eb5a9f093682265447729e1868c4dc0677a24f51c628"
+  },
+  "status": "PASS",
+  "survivors_by_pipeline_sha256": {
+    "combined": "cce80d8065f5c97c15091343128f9626447b13e7bd6e7638b59c9dcef5296cf6",
+    "correlated": "cce80d8065f5c97c15091343128f9626447b13e7bd6e7638b59c9dcef5296cf6",
+    "old": "71d9ae101445ae90d08699ede81ca405bf5bfe956fda01ee384203fa113d1779",
+    "singleton": "71d9ae101445ae90d08699ede81ca405bf5bfe956fda01ee384203fa113d1779"
+  },
+  "upstream_artifact_sha256": {
+    "d6_k7_double_pin_conjunction_report.json": "7c90c9a518243de4095f4ec4394bb7b1d22c5889844e90cd7fe4d895f22ac873",
+    "d6_k7_double_pin_conjunction_verification.json": "890568a80b8363de84997db86ab5271fee13f707544f91145d15f4976512a33b",
+    "d6_k7_full_pin_increment_report.json": "1d2c3a315aaaa8e7536c532d86935f528a1c80ca05159977377ca795a61409ab",
+    "d6_k7_full_pin_increment_verification.json": "cacab17a687a7666824bf8548fa052dd76be477e6a37b3da976999972b9a68cc"
+  }
+}

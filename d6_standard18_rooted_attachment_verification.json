@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "colored_attachment_transport": true,
+    "complete_42_case_coverage": true,
+    "conditional_nonrejection_semantics": true,
+    "exact_Qsqrt3_attachment_contradictions": true,
+    "exact_rigidity_rank_split": true,
+    "pinned_inputs": true
+  },
+  "counts": {
+    "compatible_classes": 14,
+    "compatible_occurrences": 39,
+    "compatible_parents": 16,
+    "rank_86_classes": 5,
+    "rank_87_classes": 9,
+    "rooted_witness_representatives": 42
+  },
+  "exact_result": "Every recorded rooted attachment fails at every represented standard-coordinate embedding orbit; no parent rejection follows without a global embedding classification.",
+  "producer_sha256": "ec06eaf6a09a754597d9a66b35925da35c28314dafe200d186f65bc04287cd71",
+  "report": {
+    "path": "d6_standard18_rooted_attachment_report.json",
+    "sha256": "28391ec07b07d299d4c3fc75fa7c8f94663f08e25a29168ae681d105cd1140ce"
+  },
+  "schema": "d6-standard18-rooted-attachment-verification-v1",
+  "status": "PASS"
+}

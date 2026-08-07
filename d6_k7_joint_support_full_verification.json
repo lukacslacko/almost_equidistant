@@ -1,0 +1,43 @@
+{
+  "capacity_only_hits": 0,
+  "cover_failures_reconstructed": 112,
+  "environment": {
+    "elapsed_seconds": 3.8775921249998646,
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "workers": 11
+  },
+  "failing_seeds_replayed": 90,
+  "independent_kernel_source_sha256": "d16e7e9037d14aea797ff90df51df2ca1bb583b412a3f65992d995964263da6b",
+  "joint_rejections_verified": 69,
+  "positive_18_control": {
+    "K7_seeds": 0,
+    "status": "NOT_APPLICABLE_NO_K7",
+    "vertices": 18
+  },
+  "replay_totals": {
+    "current_passing_covers": 112,
+    "labeled_z_families": 2355,
+    "propagation_failure:disjoint_required_edge": 938,
+    "propagation_failure:empty_propagated_mask": 1413,
+    "propagation_passing_families": 4,
+    "sparse_value_failing_families": 4
+  },
+  "report": {
+    "path": "d6_k7_joint_support_full_report.json",
+    "sha256": "b3fd2752a371f8909b79b50b8e2b6135f93423d0adf7286aee26d4a8c0643326"
+  },
+  "schema": 1,
+  "selection": {
+    "graphs": 258,
+    "indices_sha256": "55ab329dbe3ae4dbfa10378ff023a168fc6ab306ffc7af14bbd9790a68108a09"
+  },
+  "status": "PASS",
+  "status_counts": {
+    "JOINT_PRE_CAPACITY_REJECTED": 69,
+    "SURVIVOR": 189
+  },
+  "unresolved": 0,
+  "verifier_source_sha256": "28f05687ea8a5f1f4be51723e727716f4e8b4e7bb910c4772a1dbcb2ab76d74a"
+}

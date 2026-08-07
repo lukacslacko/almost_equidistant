@@ -1,4 +1,542 @@
-# Status — f(5) and f(6) campaigns (2026-08-05, ~21:00 push)
+# Status — f(5) and f(6) campaigns
+
+## CURRENT LOCAL CAMPAIGN — exact d=6 residue 911 (2026-08-07)
+
+Branch: `codex/dimension6`
+
+Latest auditable source boundaries:
+
+```text
+K7 support / pentad conjunction
+  01c5b18413b6bab5225558fa950971efeda58e0d
+K6 arbitrary-subset Hall layer
+  a21db74bacdf4c9c5c841ac137af326b331d8137
+K6 empty-support production source
+  b54b69571b5ff87c7586aff13e5c69a24ece7801
+K6 empty-essential / virtual-K7 closure
+  5061051
+Exact nonstandard 18-point constructions
+  618b212
+```
+
+### Current exact accounting
+
+The independently verified exact split is now:
+
+```text
+K7-containing residue before support/pentad conjunction          258
+support/pentad conjunction rejections                            103
+current K7-containing residue                                    155
+
+K6-only residue before PSD/Hall chain                            977
+PSD Z-matrix rejections                                          116
+hereditary PSD Z rejections                                       30
+arbitrary-subset Hall rejections                                   9
+empty-support-budget rejections                                    17
+empty-essential virtual-K7 rejections                              49
+current K6-only residue                                           756
+
+combined exact dimension-six residue                              911
+```
+
+This is not yet a proof of `f(6)=18`; every one of the 911 remaining
+graphs is unresolved.  `SURVIVOR` means only that the current exact filters
+did not reject the graph.
+
+The complete 822-graph K6 empty-support run rejects 17 graphs and leaves 805.
+Its independent checker reconstructed all 822 inputs in a fresh 11-worker
+pool, replayed 1,481 archived `Z0` rows and 1,641 component witnesses, and
+passed all 32 K6 seeds of the known realizable 18-point construction.  The
+first sandbox launch aborted before processing a graph because macOS process
+semaphores were unavailable; that `INFRA_ABORT` is retained separately and
+has no mathematical meaning.  The production run resumed outside that
+restriction from its atomic checkpoint.
+
+The next exact layer profiled all 25,354 K6 seeds of the 805-graph v4
+residue.  Of these, 25,243 have an explicit all-nonempty Hall witness.  The
+remaining 111 seeds, in 49 graphs, require at least one actual empty defect.
+Promoting each of the 291 possible existing empty vertices makes it the apex
+of a genuine unit K7; every promotion is eliminated by the exact generic K7
+cover/rank quantifier.  An independent checker reconstructed all 2,386
+eligible covers and all 149 small-cover certificates.  Thus all 49 graphs
+are rejected.  No floating-point arithmetic is used by this layer.
+
+The self-contained v5 residue is in
+`d6_current_residue_manifest_v5.json`; its independent structural checker
+returns `PASS`.  Principal hashes are:
+
+```text
+K6 production report          1860dbe69ae74b55203ea283cf83afff929a4b1f5cbfcd30e09f0138688eba9f
+K6 certificate archive        c6fcb7ef66bccc3319fe0a979c5fd63d9f6fd9535261c5c9bfb87e8d210361d4
+K6 independent verification   873c8b6babe183757d4e97b0f0c1c1a942b31f180c88eeef1c9ddf80a199276f
+v4 residue manifest           6ab4bfffc524f5b43409d59888fb596de8130315bda3381e484bb4ce891e03e4
+v4 independent verification   765eceb6782d131dae8c77c9b94de78735e23a070da051c8fffbd984790e1a41
+empty-essential profile       205c0877982c8de8ad6e5a685e33eff9ee05236c9907e60d488a593792d90781
+virtual-K7 report             63207da634a56e8fa46f18f87e1ed8b86007c62b51c49c5584eb80403f2b50ba
+virtual-K7 verification       d64c36856e1288c8f64ea7918bc76640bde260b9b731e881f9c277c1a1e43485
+v5 residue manifest           164b2a12813845ef1f6d6ca5e3713ed1d2edac4be58563c1648a39ff8580c0b5
+v5 independent verification   e871431b8b28fc04f0e58922ff3a6386054d15d37de5c9f9e67601ede47e4b46
+```
+
+### New 18-deletion / grow-back boundary
+
+All 19 induced deletions of every v5 parent have been reconstructed and
+deduplicated, while preserving every deleted vertex's rooted attachment:
+
+```text
+19-point parents                                             911
+labeled deletion occurrences                             17,309
+unique unrooted 18-point supports                        11,975
+  containing K7                                           1,616
+  containing K6 but no K7                                10,359
+  containing no K6                                            0
+```
+
+Fourteen unrooted deletion classes, representing 39 occurrences below 16
+parents, embed exactly as required-edge subgraphs of the standard
+half-cube-plus-two-poles unit graph.  This is positive support containment,
+not a uniqueness or parent-realizability result.  The exact criterion uses
+the Clebsch graph in the **non-unit** base graph and stores an explicit
+embedding permutation for every match.  The independent checker reconstructs
+all 17,309 occurrences, attachment masks, canonical classes, standard
+embeddings, and the seven edge-minimal standard support types.
+
+```text
+18-deletion v2 manifest       7a13d7a204f866c2d7c421db8a46c5b042bbad8bad6a2cade4a94eb4d340521d
+18-deletion v2 verification   99927f8b41b48fb2c0151f3f6d04eca37701861cfef9fce4d3bba3f5dab91090
+```
+
+The exact standard-coordinate audit proves that the displayed 112-edge
+18-point framework has rigidity rank 87 and that no distinct nineteenth
+point extends those coordinates.  It explicitly does not classify all
+16-point extremizers in `R5`, all 18-point sets in `R6`, or all embeddings of
+the 14 matching supports.  See `d6_standard18_geometry.md` and
+`d6_residue_18_deletions.md`.
+
+The full v4 deletion corpus was also screened numerically with 11 workers
+and six deterministic starts per class.  Optimization alone rejected
+nothing.  It located two nonstandard roots which were then reconstructed in
+exact rational distance arithmetic.  Together with the standard set this
+gives at least three pairwise nonisometric 18-point configurations, having
+112, 111, and 110 unit pairs.  The two new types arise from
+
+```text
+q -> (a_sign - q)/2
+```
+
+on one half-cube vertex, or on a Clebsch-adjacent pair with opposite signs.
+The switching family has exactly these zero-, one-, and two-switch types.
+Exact maximal-clique/equal-sphere certificates prove that neither new type
+extends to 19.  See `d6_18_numerical_and_exact.md`.
+
+Current work is split between two complementary directions:
+
+1. an exact sharpening of the overwhelmingly dominant all-nonempty,
+   `Z0=empty` K6 branch on the 756 K6-only survivors;
+2. a GPU/MPS realization search for further 18-point components, with every
+   hit to be exactly reconstructed and tested for grow-back.
+
+Optimization failure never rejects a graph.  Candidate nonedges remain
+unconstrained and may be unit.
+
+### Superseded residue-960/977 checkpoints
+
+Commit `3ff16fd` had 155 K7 and 805 K6-only survivors (960 total).  The
+earlier commit `01ee132` had 155 K7 and 822 K6-only survivors (977 total).
+The v5 virtual-K7 result and deletion corpus above supersede both counts.
+
+### Superseded 1,235 checkpoint
+
+The full K7 tetrad producer processed all 12,839 graphs with 11 workers in
+1,235.14 seconds, with zero infrastructure errors.  The independent verifier
+recomputed all 12,839 graph/seed/cover quantifiers, checked 1,131 inherited
+degree-one identities and 35,160 tetrad identities over exact rational
+arithmetic, and returned `PASS` for every row with an empty error list.  The
+independent pattern-954 scan contributes 679 rejections not already supplied
+by the tetrads.  A separate union checker reconstructed all sets and all 258
+residue profiles without importing either search runner.
+
+The K6 fusion theorem observes that zero forcing and orientation inertia
+lower-bound the same two actual side spans.  Taking the maximum on each side
+before all block-support inequalities rejects 13 of the 990 K6-only graphs,
+nine beyond the preceding same-`Z0` layer.  An 11-worker reproduction took
+0.84 seconds and was byte-identical outside runtime metadata.  The independent
+checker uses SymPy characteristic polynomials/Sturm counts and a separate
+simultaneous-closure zero-forcing implementation; it recomputed all 990 rows,
+all 654 archived `Z0` certificate rows, and returned `PASS`.  The known
+realizable 18-point construction passes all 32 K6 seeds.
+
+Principal immutable hashes:
+
+```text
+K7 tetrad report             ae2075ac83abcdfc0b7d42f63b9515c4e48b40cf9c976178aa366d151a78996a
+K7 tetrad decisions          2552ce91f52727d9beda60d99d534c1d5a0be3f93686ab321f223d8e0d11dfc1
+K7 tetrad certificates       f719dbb6492fc20fb3103cb79079567aa2cad163835f97e750412c3d27897c50
+K7 independent verification  1812524c835fd6635b9815c0f0c25e9a49d99ff5d3b042e4b194ac5d7898dc97
+K7 exact union manifest      1a54fabeb3ebf7f8e5485a88bc52fcfd07fb9ab8706d29ab2a664a895f79e599
+K7 residue index list        55ab329dbe3ae4dbfa10378ff023a168fc6ab306ffc7af14bbd9790a68108a09
+K6 fused report              60911844102dfeb494170f6b7aa5d5142b8f545fcc968e43078eb07c7ed102ec
+K6 fused certificates        1d497df83b329948c2e09702ca8a94ea94d2d959f7a866a532084d9d920ea664
+K6 independent verification  0572e8088d75a4e4fe575fda185f8be0bbb46290c22570f760b92e5d954cdd92
+```
+
+### Local checkpoint handoff
+
+Exact conclusions: the current complete certificate union leaves 258 K7 and
+977 K6-only candidates.  Numerical LP was used only to locate rational K7
+identities and is outside the trust boundary.  Candidate nonedges remain
+unconstrained and may be unit; allowed support coordinates may be zero.
+
+Current bounded work: build a new independently checked 1,235-graph combined
+manifest; test arbitrary-basis PSD certificates on the 50 K7 residue graphs
+having a no-near-clique cover; test full exact-support multiplicity/capacity
+on a stratified K7 sample; and continue exact K6 rank fusion.  No unchanged
+cap-grinding campaign is running.
+
+### Superseded 14,038 checkpoint
+
+The former auditable result boundary was
+`50d998089331cef190842a04630f79098234ec64`.
+The current block supersedes the residue counts in the historical remote-review
+handoffs below.  The user has ended the separate remote review session; local
+work continues with regular pushes.
+
+### Exact result accounting
+
+The post-rank `K7` population contains 17,764 graphs.  The following exact
+layers have now been unioned by graph index:
+
+- labeled-support singleton propagation rejects 1,536;
+- strict affine `H` rejects 132 among the support survivors;
+- the one/two-defect sparse-value layer rejects 3,195 support survivors, with
+  47 overlapping strict `H`, so those two layers reject 3,280 in union;
+- the independently verified interval benchmark at cap 20,000 rejects six
+  further current survivors: 532351, 1169330, 2235541, 3331589, 3394713,
+  and 3961600;
+- the exact positive-polynomial sample certificate rejects one further current
+  survivor, 3649646.  Its other sample rejection, 3950926, is already rejected
+  by the sparse-value layer.
+
+Therefore the current exact `K7` residue is
+
+```text
+17,764 - 1,536 - 3,280 - 6 - 1 = 12,941.
+```
+
+The independently checked `K6`-only residue is 1,097.  The combined exact
+dimension-six residue is consequently **14,038 graphs**.  This is not yet a
+proof of `f(6)=18`; every one of those 14,038 cases remains unresolved.
+
+### New exact mathematics
+
+For a fixed regular unit `K7`, normalize a two-defect point by
+`w_i=sqrt(7) u_i/(s+1)`.  Its two nonzero coordinates satisfy
+
+```text
+(w_i-sqrt(7))(w_j-sqrt(7)) = 3.
+```
+
+Moving between overlapping two-defect types applies the projective map
+
+```text
+T(x) = (x-sqrt(7))/(sqrt(7)x-4),       T^6 = identity projectively.
+```
+
+No power `T^k`, `1 <= k < 6`, has a real fixed point.  Hence every simple
+cycle in the exact two-defect type graph has length divisible by six.  Exact
+one-defect endpoints, path/branch/sign rules, and the fact that an exact
+support type of size `k` has multiplicity at most `k` give the remaining
+sparse-value rules.  Candidate nonedges are never forced non-unit.
+
+The positive-polynomial layer uses the exact Sherman--Morrison Schur equations
+with positive variables.  A rational linear combination whose nonzero output
+polynomial has only nonnegative coefficients is strictly positive on the
+positive orthant but vanishes on every solution.  Numerical LP is only an
+untrusted locator; a separate checker rebuilds every polynomial and verifies
+the rational identity.
+
+### Full runs, controls, and immutable hashes
+
+The full sparse-value command was
+
+```text
+caffeinate -dimsu python3 run_d6_k7_small_support_value_full.py \
+  --workers 11 --batch-size 64 --map-chunksize 1 \
+  --checkpoint-every 32 --progress-every 64
+```
+
+It processed all 16,228 support survivors in 148.8 seconds, rejected 3,195,
+and left 13,033 before union with strict `H`.  Its immutable artifacts are:
+
+- report SHA-256 `cea64f3dde804e0766c5b77e373aa50338d5bee6e5e54f44749f4e387cf529aa`;
+- compressed decisions SHA-256
+  `9f70e0e267fe97bc2f6a2890cae47d8b1c882974d5f054f16b4673bfb45ee003`;
+- uncompressed decisions SHA-256
+  `0ce9d2d2aeb18403fce17a0611594843946d4c07764fbb24946069f0997aab4c`;
+- checkpoint-copy SHA-256
+  `ae91cc60463f728697d0cc8fb807ca430c0842ba2e56b205b37d9ba877ddad9e`.
+
+The preceding 1,536 support-propagation rejections were independently replayed
+without importing the production propagation kernel.  The checker exhausted
+2,354 baseline-passing covers and 35,035 labeled support families: 22,807
+ended in an empty propagated mask and 12,228 in a disjoint required edge, with
+no surviving family.  The full verification took 21.56 seconds on 11 workers.
+Its report SHA-256 is
+`69e07f23f615dd0ce12f04b6c36929d8512e24e979ff69bf9593b172156c3787`.
+
+The hardened interval benchmark independently reconstructs its 18,862-graph
+base population and deterministic 64-graph sample, replays every winning
+slice, exercises all 48 control slices, and verifies zero-recomputation resume.
+It certifies nested kill counts 3/7/10 at caps 1,000/5,000/20,000 with no
+infrastructure errors.  Aggregate SHA-256:
+`e246c3896e7ff2b9b40a598efdaffcc465ff005700a0d51fb17b66b2d6f68481`.
+
+Focused controls currently pass:
+
+```text
+python3 -m unittest -v test_d6_k7_support_propagation.py
+python3 -m unittest -v test_verify_d6_k7_support_full.py
+python3 -m unittest -v test_d6_k7_small_support_value.py \
+  test_run_d6_k7_small_support_value_full.py
+python3 -m unittest -v test_d6_k7_positive_polynomial_dual.py \
+  test_d6_k7_arbitrary_basis_psd_dual.py
+python3 verify_d6_interval_benchmarks.py
+```
+
+### Trust boundary and next work
+
+All new theorem-level decisions above use exact integer bit masks, arbitrary-
+precision rational arithmetic, or archived interval certificates.  The
+interval layer retains its documented IEEE-754 and padded transcendental
+assumptions.  Numerical LP and least squares never decide a rejection.
+
+Immediate work in progress:
+
+1. independently replay the 3,195 full sparse-value rejections;
+2. run the positive-polynomial dual on the full current `K7` residue with
+   atomic checkpoints and compact rational certificates;
+3. build a single hash-bound current-residue manifest over all exact layers;
+4. use the resulting structure to strengthen the support-capacity CSP and the
+   `K6` Lorentz layer before committing to a large interval campaign.
+
+An auxiliary 113,136-case consistency replay may run whenever stronger jobs
+are not using the CPU.  It is checkpointed and is not part of the residue
+claim above.
+
+## REMOTE REVIEW HANDOFF — K7 Schur/cover milestone (2026-08-06)
+
+Branch: `codex/dimension6`
+
+Implementation commit: `0380903e1b848fbd3607e8bb91b612d30de75fa3`
+(the handoff text is the immediately following documentation-only commit).
+This supersedes the historical profiling handoff below.
+
+Goal of this milestone: implement the exact `K7`/`K6` Schur-complement
+rules in `REMOTE_STEERING.md`, measure them on all 3,971,787 level-19
+candidates, independently cross-check the decisions, and finish the
+bounded obstruction-library pilot before considering more interval grind.
+
+Commands run: production and sanitizer builds of `profile_d6.c`; exact
+full-corpus profiling with 12 pthread workers; Python and C control
+suites; deterministic sample regeneration; individual C/Python
+cross-checks; the 12-thread obstruction pilot and its exact-rule
+postfilter.  Exact commands are in `d6_profile_manifest.json` and
+`d6_obstruction_pilot_manifest.json`.
+
+Machine/compiler: Apple M2 Pro MacBook Pro, 12 CPU cores, 16 GB RAM,
+macOS 14.5 arm64; Apple clang 16.0.0; Python 3.11.15.  The final exact
+profile took 26.13 s wall / 158.18 s user with all 12 logical CPU cores.
+The integrated 19-core GPU was not used: these kernels are irregular
+integer bitset enumeration and tiny branch-and-bound DFS, not dense
+batched arithmetic for which a Metal port would help.
+
+Corpus and result hashes:
+
+- candidate corpus: `12bc7e87e6e67eb9ff2851982e206410784c6737a6397874c170cc1280b225b5`;
+- raw kill log: `11c790b12d3543f4476f1eb4c221203f806f1c434f06360b7d25346cace5e305`;
+- final profiler source: `46a06aa31f624e1d8b1db254f1179a478273905c964eb6b9d4feb0bb4299a0c0`;
+- final profile JSON: `2229bb5cdea73cb7fd37669747af743e4f673f88aaf2620e37b1d5513e949fde`;
+- 52-graph reference sample: `329a2d7d1490f09f9443911b5080f8418fff2af1d557122d195522d1c1856d63`;
+- obstruction companion manifest: `11ea9a761c7a866795e5bd18145199ddcacae58cc0767c6ea9d6caf87dd2c810`.
+
+Tests and controls:
+
+- `python3 verify_profile_d6.py`: PASS, including fixed totals,
+  population partitions, and manifest hashes;
+- independent Python controls: 8/8 PASS;
+- the same algorithmic controls through compiled C kernels: 7/7 PASS;
+- AddressSanitizer and UndefinedBehaviorSanitizer: PASS on 10,000 corpus
+  graphs with 12 workers;
+- deterministic extraction is byte-identical; C and independent Python
+  decisions agree individually on all 52 graphs, including all four
+  tight-cover witnesses and the two that add new coverage;
+- positive controls include the realizable 18-point lower-bound set and
+  one/two `K7` facet reflections.  Negative controls include Hall/K8,
+  ineligible cover edges, the sharp cover cap, and tight-cover matching.
+
+Exact mathematical conclusions:
+
+- For a fixed `K7`, the exact Schur complement is `R=cc^T/7`.
+  Required outside cliques give the documented support-Hall rule.  It
+  rejects zero corpus graphs because every failure is already a required
+  `K8`; the independent checker constructs that `K8` explicitly.
+- For disjoint allowed defect masks on a required outside edge,
+  `c_x c_y=0`.  Thus `Z={x:c_x=0}` is an eligible vertex cover of `L`,
+  with `|D_x|>=3` for `x in Z` and `|Z|<=7`.  Failure of this bounded
+  cover test rejects 627,356 of the 916,313 deferred graphs.
+- If the eligible cover number is exactly seven, equality in the
+  fourteen-vector `N<=2r` proof forces the seven lifted `Z` vectors to
+  be a second orthonormal basis.  Every possible size-seven cover must
+  therefore have allowed masks admitting a coordinate perfect matching.
+  This tight-cover rule fires on 73 graphs overall and four deferred
+  graphs; two of those four are outside the first cover filter.
+- The `K6` Schur identity is
+  `6R=cc^T-zz^T`, with one positive and one negative direction at most.
+  Its virtual-coordinate Hall rule also rejects zero graphs because its
+  failures are `K8`s.
+- The previous exact union rejected 12,466 deferred graphs, all already
+  contained in the new cover set.  The final exact union rejects 627,358
+  deferred graphs, adding 614,892 over the prior milestone and reducing
+  its 903,847 residue by 68.03%.
+- Final unresolved split: 113,136 `K7` graphs plus 175,819 `K6`-only
+  graphs, total **288,955**.  No interval-engine campaign was restarted.
+
+Heuristic/numerical observations only:
+
+- The audited non-induced containment pilot used 800 deterministic
+  targets, 89 LM-selected `n=14` patterns, 71,200 searches, and 12
+  threads.  Its six timeouts count conservatively as misses.
+- Exact graph rules already certify 81/89 patterns, and their containment
+  coverage is provably redundant with the direct filters.  All 89 contain
+  `K7`, so their coverage of the 175,819 `K6`-only graphs is exactly zero.
+- The eight still-heuristic patterns are 317, 367, 368, 803, 905, 936,
+  952, and 954.  They hit 10/21 sampled current `K7` survivors; the four
+  existing-engine-usable patterns hit 9/21, led by 954 (8) and 952 (+1).
+  This is not a rejection claim.  The population-weighted point estimate
+  over the full residue is 0.186445, with a very wide approximate interval
+  0.110977--0.264797.
+
+Unresolved graphs or cases: all 288,955 final residue graphs.  No one of
+the eight remaining patterns is a certified obstruction.  The exact
+quadratic/bilinear `K7` equations after cover selection and the genuinely
+rank-two Lorentzian `K6` Schur system remain unsolved.
+
+Known trust assumptions: the new decisions are exact integer graph logic;
+candidate nonedges are always optional unit distances/zeros.  The cover
+and tight-frame proofs use the validated `alpha(G)<=2` precondition.  The
+link inputs `f(4)=12` and `f(5)=16` inherit their computer-assisted proof
+assumptions.  No floating-point value decides an exact rejection here.
+
+Files the reviewer should read first: `d6_theory_filters.md`,
+`d6_profile.json`, `d6_profile_manifest.json`, `profile_d6.c`,
+`d6_reference_filters.py`, and `d6_obstruction_pilot_incremental.json`.
+
+Specific questions for the reviewer:
+
+1. What is the strongest next cheap exact consequence of the selected
+   `K7` cover `Z` and `R=cc^T/7` on the 113,136 survivors—support CSP,
+   orthogonal zero-pattern constraints, or direct rational quadrics?
+2. For the larger 175,819 `K6`-only class, can disjoint-support edges in
+   the `1+1` Lorentz factors `(c,z)` yield a finite projective/light-cone
+   propagation rule stronger than the redundant Hall test?
+3. Is it worth rigorously certifying patterns 954 and 952 first, given
+   their 9/21 sampled incremental `K7` coverage, or should effort move
+   immediately to the larger untouched `K6` class?
+4. Can the `N<=2r` proof give useful stable/near-equality restrictions
+   when `|Z|=6`, rather than only the tight `|Z|=7` frame conclusion?
+
+Recommended next local action: do not restart the 288,955-case interval
+grind.  Develop the `K6` Lorentz-factor CSP while, if useful, attempting
+small rigorous certificates only for patterns 954 and 952.
+
+## HISTORICAL REMOTE REVIEW HANDOFF — exact d=6 profiling milestone (2026-08-06)
+
+Branch: `codex/dimension6`
+
+Implementation commit: `20d057d7f664b6358c026e4dec106e33d2aafa65`
+(the handoff text is the immediately following documentation-only commit).
+
+Goal of this milestone: replace blind cap increases on the 916,313
+deferred level-19 graphs by exact graph filters, and measure the true
+`K7`/`K6` split.
+
+Commands run: official `triangleramsey-1.1` streamed through
+`filter_mtf6.c`; `profile_d6.c` over the regenerated 3,971,787-candidate
+corpus and the uncompressed kill log; `python3 verify_profile_d6.py`.
+Exact commands are in `d6_profile_manifest.json`.
+
+Machine/compiler: Mac arm64, macOS 14.5; Apple clang 16.0.0; Python
+3.11.15.  The exact profiler took 128.88 s wall / 125.57 s user.
+
+Corpus and result hashes: candidate corpus SHA-256
+`12bc7e87e6e67eb9ff2851982e206410784c6737a6397874c170cc1280b225b5`;
+compressed kill log SHA-256
+`0522aa926713f36a26bc0223c310059655ae67182c339fa8986c5895d97f4a67`;
+result SHA-256
+`14a9cba30ddbd0c4880d73a1070910dd55fa0c7b889b09f14cdb3f831bf03b26`.
+The Mac regeneration of the n=14 corpus is byte-identical to the
+independently committed Windows corpus (SHA-256 `0e3d74...78f0`), and
+the level-19 count again matches 3,971,787.
+
+Tests and controls: `verify_profile_d6.py` PASS.  The realizable
+18-point Larman--Rogers-plus-apices graph passes all link/reflection
+rules; synthetic `K5`-link, wrong-reflection-edge, and forced-collision
+controls are rejected.  The profiler independently validates graph
+symmetry, looplessness and `alpha(G)<=2`; zero corpus validation errors.
+
+Exact mathematical conclusions:
+
+- Full corpus clique split: 3,795,968 contain `K7`; 175,819 have clique
+  number exactly 6.  Every one of the old 3,055,474 easy certificates
+  is a `K7` graph; every `K6`-only graph was deferred.
+- Safe clique-link bounds reject 201,785 graphs in all, but only 1,684
+  deferred graphs; every violation is the `K5` circle bound.
+- Exact `K7` facet-reflection propagation rejects 978,108 graphs in
+  all, including 12,221 deferred graphs.
+- The discrete `K7` defect-support CSP is exhaustive for its stated
+  support/multiplicity rules but rejects exactly the same graphs as the
+  simpler reflection rule: it adds zero coverage.
+- Union of the exact new rules rejects 12,466 deferred graphs.  The
+  remaining split is 728,028 `K7` graphs and 175,819 `K6`-only graphs,
+  total 903,847.  No direct engine run was restarted.
+
+Heuristic/numerical observations only: the n=14 obstruction pilot has
+89 patterns whose distinct-point LM residual stayed above `1e-6`.
+None is an obstruction until certified.  The original Python
+containment pilot was stopped after proving too slow; its reservoir
+sampling and LM-column bugs are fixed, but no coverage percentage is
+claimed here.
+
+Unresolved graphs or cases: all 903,847 remaining deferred graphs.
+The `K7` algebraic layer beyond discrete supports is unimplemented; the
+`K6` codimension-one simplex coordinate reduction is not yet derived in
+the repository; the obstruction library has no newly certified core.
+
+Known trust assumptions: the new decisions are integer graph logic.
+The link bounds using `f(4)=12` and `f(5)=16` inherit those
+computer-assisted results.  The facet-reflection and defect-support
+proofs are documented in `d6_theory_filters.md`.  Candidate nonedges
+are always treated as optional zeros/unit distances.
+
+Files the reviewer should read first: `d6_profile.json`,
+`d6_theory_filters.md`, `profile_d6.c`, and
+`d6_profile_manifest.json`.
+
+Specific questions for the reviewer:
+
+1. For a fixed `K7`, can the rank-one positive-semidefinite Schur
+   complement of `M_ij=||p_i-p_j||^2-1` yield a cheap exact obstruction
+   strictly stronger than the defect-support CSP?
+2. What is the cleanest explicit `K6` coordinate/Schur formulation for
+   the 175,819 `K6`-only graphs, including the correct inertia
+   restriction on its rank-at-most-two Schur complement?
+3. Is it preferable to certify a handful of the 89 n=14 numerical
+   candidates before optimizing containment, or first obtain a fast C
+   coverage estimate to decide whether certification effort is useful?
+
+Recommended next local action: implement a fast C obstruction-coverage
+pilot while the reviewer checks the `K7` rank-one and `K6` rank-two
+algebra; do not resume the 903,847-case interval grind.
 
 ## Where things stand
 

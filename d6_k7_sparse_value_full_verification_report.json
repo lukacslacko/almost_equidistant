@@ -1,0 +1,168 @@
+{
+  "algebra_controls": {
+    "M6": [
+      [
+        [
+          -27,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          -27,
+          0
+        ]
+      ]
+    ],
+    "fixed_point_discriminants": [
+      [
+        -3,
+        0
+      ],
+      [
+        -27,
+        0
+      ],
+      [
+        -108,
+        0
+      ],
+      [
+        -243,
+        0
+      ],
+      [
+        -243,
+        0
+      ]
+    ],
+    "one_defect_orbit_sqrt7_coefficients": [
+      "1/4",
+      "1/3",
+      "2/5",
+      "1/2",
+      "1",
+      "0"
+    ]
+  },
+  "baseline_passing_covers": 14292,
+  "bindings": {
+    "hashes": {
+      "input": "7a0a350142930e4e13830ea44c4fd217f25aeb07bbd6286e51e316f72712c4f9",
+      "rank_reference": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+      "support_archive": "3c35b228c4768b06f881dc9046329196b683d390f4763f83816c6a3464ecf938",
+      "support_checkpoint": "daeee836f1f2c632656bbae812ef884cb5f2eca882fb2a5d5131f1c18edbdb5b",
+      "support_report": "5138d207543967b393baae9b14b47b49a276273cbc4468ee843856891917691e",
+      "support_verifier": "c6b9dce47618bd9a4247eb5a9f093682265447729e1868c4dc0677a24f51c628",
+      "value_archive": "9f70e0e267fe97bc2f6a2890cae47d8b1c882974d5f054f16b4673bfb45ee003",
+      "value_checkpoint": "ae91cc60463f728697d0cc8fb807ca430c0842ba2e56b205b37d9ba877ddad9e",
+      "value_profiler": "c8231ff47263b348e3daba2b32cd3eb693ff70f3db5b10aa808b1b5296589573",
+      "value_proof": "e8ec6a012f9ea824e9cddb76510840537dba0e603e207cd3220c1b06866cb42a",
+      "value_report": "cea64f3dde804e0766c5b77e373aa50338d5bee6e5e54f44749f4e387cf529aa",
+      "value_runner": "af7dd2f0173c8593044bf6a32d53fc0ab7a3cc4ee45c9b9af21809b3a729be07",
+      "value_source": "bed5987c89fbef2ef36762051ae7fa3414fd381a6246032b06857a557f13743f"
+    },
+    "production_totals_recomputed": {
+      "baseline_passing_covers": 29879,
+      "covers": 225184,
+      "labeled_z_families": 1522195,
+      "propagation_failure_basis": 0,
+      "propagation_failure_clique": 0,
+      "propagation_failure_component_B": 0,
+      "propagation_failure_degree": 0,
+      "propagation_failure_disjoint_required_edge": 472390,
+      "propagation_failure_empty_propagated_mask": 1018325,
+      "propagation_failure_mask": 0,
+      "propagation_failure_subspace_K": 0,
+      "propagation_passing_families": 31480,
+      "seeds": 18782,
+      "small_support_intersection_failures": 0,
+      "small_support_intersection_passes": 31480,
+      "sparse_value_branch_disjoint_required_small_support": 246670,
+      "sparse_value_branch_duplicate_one_defect": 25967,
+      "sparse_value_branch_forbidden_two_defect_cycle": 15228,
+      "sparse_value_branch_incompatible_two_defect_branch_distance": 663,
+      "sparse_value_branch_inconsistent_two_defect_branch_signs": 0,
+      "sparse_value_branch_one_defect_component_branches": 3749,
+      "sparse_value_branch_one_defects_joined_by_two_defects": 7986,
+      "sparse_value_branch_parallel_two_defect_type_touches_another": 2,
+      "sparse_value_branch_three_one_defects": 274,
+      "sparse_value_branch_three_same_two_defects": 0,
+      "sparse_value_branch_two_defects_repeat_at_one_defect": 21644,
+      "sparse_value_failures": 15893,
+      "sparse_value_passes": 15587,
+      "value_passing_covers": 15587
+    },
+    "production_value_modules_imported": false,
+    "rank_residue_graphs": 17764,
+    "support_archive_uncompressed_bytes": 1263412,
+    "support_archive_uncompressed_sha256": "117e057a79135fd48cac316ee4f1e08e11a2be84e00d9d10393bc17d4a518a31",
+    "support_rejected": 1536,
+    "support_survivor_indices_sha256": "88382ac3c80236c64a54ffc2ac2f731d6029a06cc5bdd5bc9d2286cc656a8cae",
+    "support_survivors": 16228,
+    "value_archive_uncompressed_bytes": 1285762,
+    "value_archive_uncompressed_sha256": "0ce9d2d2aeb18403fce17a0611594843946d4c07764fbb24946069f0997aab4c",
+    "value_rejected": 3195,
+    "value_rejected_indices_sha256": "37f908f7b737449818a59a0052fabb65775b26f9f8a193e3e670d08651206c46"
+  },
+  "command": [
+    "/Users/lukacs/claude/opengauss/venv/bin/python3",
+    "verify_d6_k7_sparse_value_full.py",
+    "--workers",
+    "11",
+    "--checkpoint-every",
+    "32",
+    "--progress-every",
+    "64"
+  ],
+  "complete_rejection_population_verified": true,
+  "complete_small_support_assignments": 0,
+  "coordinate_deletions": 11530162,
+  "decision_archive": "/Users/lukacs/chatgpt/almost_equidistant/d6_k7_sparse_value_full_verification.jsonl.gz",
+  "decision_archive_sha256": "7ff59f5cbcf4471195793e99d1d33369d50e26cf9949e78fb4d8e71a2f356219",
+  "decision_jsonl": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_k7_sparse_value_full_verification.jsonl",
+  "decision_jsonl_sha256": "cce8779f0353b81ddf6e9715c31693d904be952cae8407223957478d4df9e794",
+  "eligible_covers": 209519,
+  "labeled_z_families": 1506596,
+  "machine": "arm64",
+  "method": "independent_K7_sparse_one_two_support_rejection_replay",
+  "platform": "macOS-14.5-arm64-arm-64bit",
+  "production_value_modules_imported": false,
+  "propagation_failure_counts": {
+    "disjoint_required_edge": 472378,
+    "empty_propagated_mask": 1018325
+  },
+  "propagation_passing_families": 15893,
+  "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+  "recorded_rejections": 3195,
+  "schema": 1,
+  "selected_rejections": 3195,
+  "sparse_value_failed_families": 15893,
+  "started_unix": 1786042869.045983,
+  "status": "PASS",
+  "trust_scope": "Exact integer, rational, and bit-mask replay. The frozen rank reference is trusted only for baseline-cover classification; the production sparse-value locator and evaluator are not imported.",
+  "value_branch_prunes": {
+    "disjoint_required_small_support": 246670,
+    "duplicate_one_defect": 25967,
+    "forbidden_two_defect_cycle": 15228,
+    "incompatible_two_defect_branch_distance": 663,
+    "one_defect_component_branches": 3749,
+    "one_defects_joined_by_two_defects": 7986,
+    "parallel_two_defect_type_touches_another": 2,
+    "three_one_defects": 274,
+    "two_defects_repeat_at_one_defect": 21644
+  },
+  "value_search_nodes": 153159,
+  "verified_rejections": 3195,
+  "verifier_source_sha256": "6c0012e66d0b89e280f3cebed7a61f24cc1c6e128e726663a7b246e7da0edbbc",
+  "wall_seconds": 95.31605733300057,
+  "workers": 11
+}

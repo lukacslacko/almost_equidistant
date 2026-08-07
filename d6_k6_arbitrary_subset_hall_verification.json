@@ -1,0 +1,529 @@
+{
+  "certificate_summaries": [
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        5,
+        6,
+        14,
+        16
+      ],
+      "index": 650158
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        2,
+        4,
+        7,
+        9,
+        14,
+        15
+      ],
+      "index": 752132
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        2,
+        4,
+        10,
+        15,
+        18
+      ],
+      "index": 1226632
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        11,
+        14,
+        18
+      ],
+      "index": 2554326
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        1,
+        2,
+        11,
+        14,
+        17
+      ],
+      "index": 2716230
+    },
+    {
+      "Z0_choices": 127,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        11,
+        15,
+        16
+      ],
+      "index": 2862902
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        5,
+        10,
+        16,
+        17
+      ],
+      "index": 3178386
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        1,
+        6,
+        9,
+        11,
+        13,
+        16
+      ],
+      "index": 3194938
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        1,
+        2,
+        5,
+        15,
+        18
+      ],
+      "index": 3494044
+    }
+  ],
+  "graphs_recomputed": 831,
+  "graphs_rejected": 9,
+  "graphs_surviving": 822,
+  "inputs": {
+    "d6_k6_bipartite_rank_input.json": "dfee979e6ca2759e80cf803c3054c8954d98543875d467644b91ee434c22e845",
+    "d6_k6_psd_z_hereditary_report.json": "202a844d6505d3c68c9a0bea8a5d82a983a7e44b96cb9f3c711d80c47f6c00c1",
+    "test_d6_k6_lorentz.py": "f4fc8544a4311f742267808e6c785f82139accb9da99b496d206283b52831a47",
+    "verify_d6_k6_all_same_z0.py": "9ad84985cffbc6f53562730f1aa536a6d7046709c21af0dfd1bfbab907a32162",
+    "verify_d6_k6_arbitrary_subset_hall.py": "4ad4f886d67b3d1ebf149277050a639cda243f657ef02b553e6a3fa241f2853e",
+    "verify_d6_k6_psd_z_hereditary.py": "297e749923ae60b84cda12170d19509da237b665965d01af6214465f4e4df17f",
+    "verify_d6_k6_same_z0.py": "4db05ff06910a11395e4bbdd2fd13161d6c19f58f81cc99851b8c37558d7000f"
+  },
+  "kernel_controls": {
+    "C5_selected_P3_rank": 2,
+    "arbitrary_C5_Hall_failed": true,
+    "failure": {
+      "allowed_coordinates": [
+        0
+      ],
+      "coordinate_capacity": 1,
+      "rank_lower": 2,
+      "selected_groups": [
+        {
+          "allowed_coordinates": [
+            0
+          ],
+          "group": "C5",
+          "kind": "arbitrary_positive_nonbip",
+          "rank_lower": 2,
+          "selected_vertices": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    "one_vertex_extension_omitted": true
+  },
+  "method": "fresh arbitrary induced components and componentwise rank; independent SymPy/Sturm inertia and simultaneous zero forcing; 64 coordinate containers with brute-force subset alternatives and one choice per original span; exhaustive Z0 replay",
+  "positive_control": {
+    "K6_seeds": 32,
+    "passed": true,
+    "seed_results": [
+      {
+        "passed": true,
+        "seed": [
+          0,
+          1,
+          2,
+          4,
+          8,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          0,
+          1,
+          2,
+          4,
+          8,
+          17
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          0,
+          1,
+          3,
+          5,
+          9,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          0,
+          1,
+          3,
+          5,
+          9,
+          17
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          0,
+          2,
+          3,
+          6,
+          10,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          0,
+          2,
+          3,
+          6,
+          10,
+          17
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          0,
+          4,
+          5,
+          6,
+          12,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          0,
+          4,
+          5,
+          6,
+          12,
+          17
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          0,
+          8,
+          9,
+          10,
+          12,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          0,
+          8,
+          9,
+          10,
+          12,
+          17
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          1,
+          2,
+          3,
+          7,
+          11,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          1,
+          2,
+          3,
+          7,
+          11,
+          17
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          1,
+          4,
+          5,
+          7,
+          13,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          1,
+          4,
+          5,
+          7,
+          13,
+          17
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          1,
+          8,
+          9,
+          11,
+          13,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          1,
+          8,
+          9,
+          11,
+          13,
+          17
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          14,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          2,
+          4,
+          6,
+          7,
+          14,
+          17
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          2,
+          8,
+          10,
+          11,
+          14,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          2,
+          8,
+          10,
+          11,
+          14,
+          17
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          3,
+          5,
+          6,
+          7,
+          15,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          3,
+          5,
+          6,
+          7,
+          15,
+          17
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          3,
+          9,
+          10,
+          11,
+          15,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          3,
+          9,
+          10,
+          11,
+          15,
+          17
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          4,
+          8,
+          12,
+          13,
+          14,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          4,
+          8,
+          12,
+          13,
+          14,
+          17
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          5,
+          9,
+          12,
+          13,
+          15,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          5,
+          9,
+          12,
+          13,
+          15,
+          17
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          6,
+          10,
+          12,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          6,
+          10,
+          12,
+          14,
+          15,
+          17
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          7,
+          11,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "passed": true,
+        "seed": [
+          7,
+          11,
+          13,
+          14,
+          15,
+          17
+        ]
+      }
+    ]
+  },
+  "rejected_indices": [
+    650158,
+    752132,
+    1226632,
+    2554326,
+    2716230,
+    2862902,
+    3178386,
+    3194938,
+    3494044
+  ],
+  "runtime": {
+    "command": "verify_d6_k6_arbitrary_subset_hall.py --workers 11",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "wall_seconds": 10.894380084000659,
+    "workers": 11
+  },
+  "schema": "d6-k6-arbitrary-subset-hall-verification-v1",
+  "status": "PASS"
+}

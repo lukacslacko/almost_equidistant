@@ -1,0 +1,64 @@
+{
+  "boundary_commit": "fc51874458196c0391530d0e98968f530ab738c9",
+  "checks": {
+    "K6_independent_verification_gate": true,
+    "K6_ordered_complement": true,
+    "K6_positive_control": true,
+    "K7_independent_verification_gate": true,
+    "K7_union_partition": true,
+    "all_adjacencies_symmetric_loopless_19_vertex": true,
+    "class_disjointness": true,
+    "embedded_adjacencies_match_sources": true,
+    "source_hashes": true
+  },
+  "classes": {
+    "K6_only": {
+      "adjacency_records_checked": 977,
+      "adjacency_records_sha256": "fa49c927f489076c8b9c87078d108f9a3cabda6777a70902260b4a9caf656507",
+      "exact_rejections": 13,
+      "input": 990,
+      "residue": 977,
+      "residue_indices_sha256": "27e435506ecaecb936acaef63e5873c3538771be17d1a52f12df82df8dedd947"
+    },
+    "K7": {
+      "adjacency_records_checked": 258,
+      "adjacency_records_sha256": "faf2120179a62b8cbb0005865810ceb7845d586916343ac738de252d2a634569",
+      "exact_rejections": 12581,
+      "input": 12839,
+      "residue": 258,
+      "residue_indices_sha256": "55ab329dbe3ae4dbfa10378ff023a168fc6ab306ffc7af14bbd9790a68108a09"
+    }
+  },
+  "combined": {
+    "class_counts": {
+      "K6_only": 977,
+      "K7": 258
+    },
+    "count": 1235,
+    "cross_class_overlap": 0,
+    "cross_class_overlap_indices_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "ordered_class_graph_records_sha256": "00ba3bbbb74d11314ae0c50e8c1cadbf75905682552659145b3f279f3d5f6e94",
+    "ordered_class_index_records_sha256": "dff478080c33a71142c77b44dc43033bd755f407c3a9fa08801c73ea52a4a49c",
+    "ordered_indices_sha256": "62d73f5604e6ce06de72335ea77f8e612e6b79027ee328518f91dc1203328c4d",
+    "sorted_indices_sha256": "8fef67691ec0b671bd362d62aba861d26b4c3d87d072e288b49f1031a0421afc"
+  },
+  "inputs": {
+    ".runs/d6_k7_rank_survivors.json": "7a0a350142930e4e13830ea44c4fd217f25aeb07bbd6286e51e316f72712c4f9",
+    "build_d6_current_residue_manifest_v2.py": "f3db5ce7bbca61f432a73ca56184528504184ddce2d2c2cacf9e70db4d7ad5f1",
+    "d6_current_residue_manifest.json": "d06cdb23b03b1f8523fbe3c3ede5bc297ace21a844282830c5cf51a6cee3512d",
+    "d6_current_residue_manifest_verification.json": "15f4797bf7a3095dbf0a90ec234b07bdaa5a9ec35599a0913084dd5d17d11ae7",
+    "d6_k6_bipartite_rank_input.json": "dfee979e6ca2759e80cf803c3054c8954d98543875d467644b91ee434c22e845",
+    "d6_k6_fused_side_rank_report.json": "60911844102dfeb494170f6b7aa5d5142b8f545fcc968e43078eb07c7ed102ec",
+    "d6_k6_fused_side_rank_verification.json": "0572e8088d75a4e4fe575fda185f8be0bbb46290c22570f760b92e5d954cdd92",
+    "d6_k7_rankone_pattern_union.json": "1a54fabeb3ebf7f8e5485a88bc52fcfd07fb9ab8706d29ab2a664a895f79e599",
+    "d6_k7_rankone_pattern_union_verification.json": "7b9d5e35bf787e5d05aa486f914416598c31836264a479fbbc1af117f1dfcc14",
+    "d6_k7_rankone_tetrad_full_selection.json": "86e4f19a203bca111a47924ae05461ada5b21b6341be59d38b1428bebe1f9479"
+  },
+  "manifest": {
+    "path": "d6_current_residue_manifest_v2.json",
+    "sha256": "961dac1f9b44bb541e2c5bd1626027826eeea7bc628bf5ff0a85ab26afa949f4"
+  },
+  "schema": "d6-current-exact-residue-v2-verification-v1",
+  "status": "PASS",
+  "verifier_source_sha256": "f015d4ee199ec928655a21a2fa7bd09aa85c70ad02fd14d755d2678c53ecd64c"
+}

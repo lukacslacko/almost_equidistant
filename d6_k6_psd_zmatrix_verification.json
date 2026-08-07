@@ -1,0 +1,1988 @@
+{
+  "all_exhaustive_Z0_certificates_matched": true,
+  "all_first_impossible_seeds_matched": true,
+  "all_graph_core_fields_matched": [
+    "rejected",
+    "seeds_checked",
+    "impossible_seeds",
+    "z0_considered",
+    "z0_matchable",
+    "z0_psd_zmatrix_passed",
+    "z0_psd_zmatrix_failed",
+    "z0_nonbipartite_failed"
+  ],
+  "certificate_summaries": [
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        8,
+        12,
+        16
+      ],
+      "histogram": {
+        "neither": 16,
+        "nonbipartite_only": 48
+      },
+      "index": 3278
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        2,
+        4,
+        7,
+        9,
+        13,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 7861
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        8,
+        12,
+        13
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 28130
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        3,
+        4,
+        10,
+        12,
+        13,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 42634
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        5,
+        8,
+        9,
+        11,
+        15,
+        18
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 88876
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        1,
+        3,
+        6,
+        10,
+        12,
+        16
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 172033
+    },
+    {
+      "Z0_choices": 16,
+      "first_impossible_seed": [
+        0,
+        3,
+        10,
+        14,
+        17,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 16
+      },
+      "index": 329406
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        1,
+        3,
+        10,
+        11,
+        14,
+        17
+      ],
+      "histogram": {
+        "neither": 12,
+        "nonbipartite_only": 20
+      },
+      "index": 444439
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        1,
+        5,
+        8,
+        13,
+        15,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 472362
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        8,
+        16,
+        18
+      ],
+      "histogram": {
+        "neither": 34,
+        "nonbipartite_only": 30
+      },
+      "index": 609822
+    },
+    {
+      "Z0_choices": 127,
+      "first_impossible_seed": [
+        0,
+        2,
+        5,
+        9,
+        16,
+        17
+      ],
+      "histogram": {
+        "neither": 39,
+        "nonbipartite_only": 88
+      },
+      "index": 636032
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        4,
+        10,
+        12,
+        13,
+        15,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 64
+      },
+      "index": 655465
+    },
+    {
+      "Z0_choices": 16,
+      "first_impossible_seed": [
+        0,
+        1,
+        5,
+        8,
+        16,
+        17
+      ],
+      "histogram": {
+        "nonbipartite_only": 16
+      },
+      "index": 735087
+    },
+    {
+      "Z0_choices": 16,
+      "first_impossible_seed": [
+        0,
+        1,
+        5,
+        8,
+        15,
+        17
+      ],
+      "histogram": {
+        "nonbipartite_only": 16
+      },
+      "index": 740294
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        2,
+        5,
+        11,
+        12,
+        16
+      ],
+      "histogram": {
+        "neither": 40,
+        "nonbipartite_only": 24
+      },
+      "index": 876581
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        3,
+        11,
+        15,
+        18
+      ],
+      "histogram": {
+        "neither": 16,
+        "nonbipartite_only": 16
+      },
+      "index": 932731
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        2,
+        4,
+        6,
+        16,
+        18
+      ],
+      "histogram": {
+        "neither": 28,
+        "nonbipartite_only": 36
+      },
+      "index": 1079272
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        6,
+        11,
+        17
+      ],
+      "histogram": {
+        "neither": 16,
+        "nonbipartite_only": 48
+      },
+      "index": 1180235
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        2,
+        5,
+        7,
+        10,
+        13,
+        18
+      ],
+      "histogram": {
+        "neither": 16,
+        "nonbipartite_only": 48
+      },
+      "index": 1181033
+    },
+    {
+      "Z0_choices": 127,
+      "first_impossible_seed": [
+        1,
+        6,
+        9,
+        12,
+        15,
+        17
+      ],
+      "histogram": {
+        "neither": 59,
+        "nonbipartite_only": 68
+      },
+      "index": 1184160
+    },
+    {
+      "Z0_choices": 127,
+      "first_impossible_seed": [
+        1,
+        3,
+        6,
+        11,
+        14,
+        18
+      ],
+      "histogram": {
+        "neither": 59,
+        "nonbipartite_only": 68
+      },
+      "index": 1184491
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        2,
+        4,
+        12,
+        15,
+        18
+      ],
+      "histogram": {
+        "neither": 28,
+        "nonbipartite_only": 36
+      },
+      "index": 1228671
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        3,
+        8,
+        13,
+        15,
+        18
+      ],
+      "histogram": {
+        "neither": 12,
+        "nonbipartite_only": 20
+      },
+      "index": 1239391
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        5,
+        12,
+        16,
+        18
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 1311716
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        12,
+        13,
+        16
+      ],
+      "histogram": {
+        "neither": 16,
+        "nonbipartite_only": 48
+      },
+      "index": 1368398
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        12,
+        13,
+        18
+      ],
+      "histogram": {
+        "neither": 28,
+        "nonbipartite_only": 36
+      },
+      "index": 1382062
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        2,
+        4,
+        10,
+        14,
+        15,
+        16
+      ],
+      "histogram": {
+        "neither": 28,
+        "nonbipartite_only": 36
+      },
+      "index": 1382457
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        4,
+        7,
+        9,
+        10,
+        14,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 64
+      },
+      "index": 1395724
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        2,
+        4,
+        7,
+        10,
+        14,
+        17
+      ],
+      "histogram": {
+        "neither": 32,
+        "nonbipartite_only": 32
+      },
+      "index": 1395884
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        3,
+        4,
+        8,
+        14,
+        16,
+        18
+      ],
+      "histogram": {
+        "neither": 28,
+        "nonbipartite_only": 36
+      },
+      "index": 1405110
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        5,
+        8,
+        12,
+        17
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 1461865
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        6,
+        14,
+        18
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 1462309
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        3,
+        4,
+        10,
+        12,
+        17
+      ],
+      "histogram": {
+        "neither": 16,
+        "nonbipartite_only": 48
+      },
+      "index": 1488725
+    },
+    {
+      "Z0_choices": 127,
+      "first_impossible_seed": [
+        0,
+        1,
+        2,
+        5,
+        9,
+        18
+      ],
+      "histogram": {
+        "neither": 71,
+        "nonbipartite_only": 56
+      },
+      "index": 1488726
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        1,
+        3,
+        6,
+        8,
+        15,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 1556734
+    },
+    {
+      "Z0_choices": 127,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        8,
+        14,
+        18
+      ],
+      "histogram": {
+        "neither": 67,
+        "nonbipartite_only": 60
+      },
+      "index": 1592038
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        5,
+        7,
+        15,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 1667137
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        5,
+        8,
+        13,
+        17
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 1667183
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        1,
+        3,
+        8,
+        12,
+        14,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 1696873
+    },
+    {
+      "Z0_choices": 16,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        8,
+        15,
+        18
+      ],
+      "histogram": {
+        "neither": 4,
+        "nonbipartite_only": 12
+      },
+      "index": 1700562
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        5,
+        10,
+        15,
+        18
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 1723335
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        4,
+        10,
+        15,
+        17
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 1726898
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        3,
+        4,
+        6,
+        11,
+        12,
+        17
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 1828731
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        2,
+        7,
+        11,
+        14,
+        16,
+        17
+      ],
+      "histogram": {
+        "neither": 28,
+        "nonbipartite_only": 36
+      },
+      "index": 1832468
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        2,
+        7,
+        11,
+        14,
+        16,
+        17
+      ],
+      "histogram": {
+        "neither": 28,
+        "nonbipartite_only": 36
+      },
+      "index": 1832471
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        6,
+        9,
+        11,
+        12,
+        16,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 1832747
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        5,
+        7,
+        14,
+        17
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 1832756
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        5,
+        10,
+        14,
+        17
+      ],
+      "histogram": {
+        "neither": 6,
+        "nonbipartite_only": 26
+      },
+      "index": 1832761
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        1,
+        6,
+        8,
+        12,
+        17,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 1943819
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        10,
+        16,
+        17,
+        18
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 1967653
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        10,
+        16,
+        18
+      ],
+      "histogram": {
+        "neither": 24,
+        "nonbipartite_only": 40
+      },
+      "index": 1984306
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        3,
+        4,
+        13,
+        15,
+        17
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 1984404
+    },
+    {
+      "Z0_choices": 16,
+      "first_impossible_seed": [
+        2,
+        4,
+        11,
+        13,
+        17,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 16
+      },
+      "index": 2037918
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        7,
+        14,
+        17,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 2059664
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        5,
+        8,
+        16,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 2090013
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        5,
+        7,
+        14,
+        17
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 2103479
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        5,
+        8,
+        15,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 2104648
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        5,
+        7,
+        14,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 2105880
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        2,
+        4,
+        7,
+        11,
+        16,
+        18
+      ],
+      "histogram": {
+        "neither": 16,
+        "nonbipartite_only": 48
+      },
+      "index": 2121560
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        2,
+        4,
+        7,
+        11,
+        16,
+        18
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 2121562
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        6,
+        7,
+        8,
+        12,
+        14,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 2284684
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        6,
+        7,
+        8,
+        12,
+        14,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 2284985
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        11,
+        14,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 2287400
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        9,
+        11,
+        15,
+        17
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 2297052
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        4,
+        10,
+        15,
+        17
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 2297054
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        11,
+        15,
+        18
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 2302223
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        10,
+        15,
+        17,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 2312486
+    },
+    {
+      "Z0_choices": 16,
+      "first_impossible_seed": [
+        0,
+        1,
+        9,
+        11,
+        16,
+        17
+      ],
+      "histogram": {
+        "nonbipartite_only": 16
+      },
+      "index": 2374932
+    },
+    {
+      "Z0_choices": 16,
+      "first_impossible_seed": [
+        1,
+        3,
+        6,
+        8,
+        14,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 16
+      },
+      "index": 2410161
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        11,
+        13,
+        17
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 2545635
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        2,
+        5,
+        7,
+        10,
+        13,
+        17
+      ],
+      "histogram": {
+        "neither": 12,
+        "nonbipartite_only": 52
+      },
+      "index": 2552186
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        11,
+        15,
+        17
+      ],
+      "histogram": {
+        "neither": 16,
+        "nonbipartite_only": 16
+      },
+      "index": 2584667
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        5,
+        10,
+        13,
+        16,
+        18
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 2593264
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        4,
+        7,
+        10,
+        13,
+        15,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 2593301
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        3,
+        4,
+        11,
+        14,
+        17
+      ],
+      "histogram": {
+        "neither": 34,
+        "nonbipartite_only": 30
+      },
+      "index": 2611363
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        3,
+        4,
+        11,
+        14,
+        18
+      ],
+      "histogram": {
+        "neither": 14,
+        "nonbipartite_only": 18
+      },
+      "index": 2611725
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        3,
+        5,
+        10,
+        13,
+        17
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 2653307
+    },
+    {
+      "Z0_choices": 16,
+      "first_impossible_seed": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 16
+      },
+      "index": 2669487
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        5,
+        14,
+        15
+      ],
+      "histogram": {
+        "neither": 6,
+        "nonbipartite_only": 26
+      },
+      "index": 2719803
+    },
+    {
+      "Z0_choices": 16,
+      "first_impossible_seed": [
+        1,
+        5,
+        9,
+        12,
+        16,
+        17
+      ],
+      "histogram": {
+        "nonbipartite_only": 16
+      },
+      "index": 2762223
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        13,
+        15,
+        17
+      ],
+      "histogram": {
+        "neither": 20,
+        "nonbipartite_only": 44
+      },
+      "index": 2780357
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        4,
+        10,
+        17
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 2785453
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        2,
+        5,
+        7,
+        9,
+        14,
+        16
+      ],
+      "histogram": {
+        "neither": 32,
+        "nonbipartite_only": 32
+      },
+      "index": 2795827
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        1,
+        5,
+        9,
+        13,
+        16,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 2867785
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        5,
+        10,
+        16,
+        18
+      ],
+      "histogram": {
+        "neither": 6,
+        "nonbipartite_only": 26
+      },
+      "index": 2903665
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        4,
+        6,
+        7,
+        12,
+        14,
+        18
+      ],
+      "histogram": {
+        "neither": 10,
+        "nonbipartite_only": 22
+      },
+      "index": 2924312
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        2,
+        5,
+        10,
+        15,
+        17
+      ],
+      "histogram": {
+        "neither": 32,
+        "nonbipartite_only": 32
+      },
+      "index": 2982275
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        8,
+        14,
+        17
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 3024448
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        6,
+        7,
+        9,
+        12,
+        17,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 3043264
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        3,
+        6,
+        8,
+        13,
+        14,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 3081469
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        1,
+        2,
+        5,
+        9,
+        14,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 3116171
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        2,
+        4,
+        10,
+        15,
+        18
+      ],
+      "histogram": {
+        "neither": 16,
+        "nonbipartite_only": 48
+      },
+      "index": 3120366
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        3,
+        8,
+        15,
+        17,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 3136145
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        1,
+        3,
+        8,
+        14,
+        15,
+        17
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 3195222
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        2,
+        5,
+        9,
+        12,
+        13,
+        17
+      ],
+      "histogram": {
+        "neither": 28,
+        "nonbipartite_only": 36
+      },
+      "index": 3205490
+    },
+    {
+      "Z0_choices": 16,
+      "first_impossible_seed": [
+        0,
+        3,
+        4,
+        10,
+        14,
+        17
+      ],
+      "histogram": {
+        "neither": 4,
+        "nonbipartite_only": 12
+      },
+      "index": 3262693
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        3,
+        4,
+        10,
+        16,
+        18
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 3270962
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        1,
+        3,
+        8,
+        15,
+        16,
+        17
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 3287633
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        2,
+        4,
+        11,
+        12,
+        14,
+        17
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 3309854
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        8,
+        15,
+        17
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 3323687
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        9,
+        10,
+        12,
+        14,
+        17
+      ],
+      "histogram": {
+        "neither": 12,
+        "nonbipartite_only": 20
+      },
+      "index": 3328552
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        2,
+        14,
+        16,
+        17,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 3328553
+    },
+    {
+      "Z0_choices": 16,
+      "first_impossible_seed": [
+        0,
+        9,
+        10,
+        12,
+        16,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 16
+      },
+      "index": 3357771
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        5,
+        7,
+        10,
+        13,
+        14,
+        18
+      ],
+      "histogram": {
+        "neither": 16,
+        "nonbipartite_only": 16
+      },
+      "index": 3384679
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        4,
+        9,
+        10,
+        12,
+        18
+      ],
+      "histogram": {
+        "neither": 24,
+        "nonbipartite_only": 40
+      },
+      "index": 3484232
+    },
+    {
+      "Z0_choices": 16,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        12,
+        15,
+        18
+      ],
+      "histogram": {
+        "neither": 4,
+        "nonbipartite_only": 12
+      },
+      "index": 3520507
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        5,
+        10,
+        12,
+        16,
+        18
+      ],
+      "histogram": {
+        "neither": 26,
+        "nonbipartite_only": 38
+      },
+      "index": 3563396
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        3,
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "histogram": {
+        "neither": 28,
+        "nonbipartite_only": 36
+      },
+      "index": 3594459
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        2,
+        6,
+        7,
+        11,
+        13,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 64
+      },
+      "index": 3624708
+    },
+    {
+      "Z0_choices": 16,
+      "first_impossible_seed": [
+        3,
+        4,
+        6,
+        13,
+        17,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 16
+      },
+      "index": 3641056
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        5,
+        8,
+        11,
+        14,
+        16,
+        17
+      ],
+      "histogram": {
+        "neither": 16,
+        "nonbipartite_only": 48
+      },
+      "index": 3673748
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        5,
+        9,
+        10,
+        14,
+        18
+      ],
+      "histogram": {
+        "neither": 8,
+        "nonbipartite_only": 24
+      },
+      "index": 3689375
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        3,
+        12,
+        15,
+        17,
+        18
+      ],
+      "histogram": {
+        "nonbipartite_only": 32
+      },
+      "index": 3745381
+    },
+    {
+      "Z0_choices": 64,
+      "first_impossible_seed": [
+        0,
+        3,
+        4,
+        12,
+        16,
+        17
+      ],
+      "histogram": {
+        "neither": 12,
+        "nonbipartite_only": 52
+      },
+      "index": 3753628
+    },
+    {
+      "Z0_choices": 32,
+      "first_impossible_seed": [
+        0,
+        1,
+        3,
+        12,
+        16,
+        18
+      ],
+      "histogram": {
+        "neither": 10,
+        "nonbipartite_only": 22
+      },
+      "index": 3788934
+    },
+    {
+      "Z0_choices": 16,
+      "first_impossible_seed": [
+        0,
+        2,
+        4,
+        10,
+        16,
+        18
+      ],
+      "histogram": {
+        "neither": 2,
+        "nonbipartite_only": 14
+      },
+      "index": 3793580
+    }
+  ],
+  "graphs_recomputed": 977,
+  "graphs_rejected": 116,
+  "graphs_surviving": 861,
+  "inputs": {
+    "d6_k6_bipartite_rank_input.json": "dfee979e6ca2759e80cf803c3054c8954d98543875d467644b91ee434c22e845",
+    "d6_k6_fused_side_rank.py": "5fc6416feca1898f38b1bb3c2f06a1289fcdd6f179654a4ab746e6f3cff869c2",
+    "d6_k6_fused_side_rank_report.json": "60911844102dfeb494170f6b7aa5d5142b8f545fcc968e43078eb07c7ed102ec",
+    "d6_k6_psd_zmatrix.py": "24c2b3abfce5074560183d17f77778f96298bef6e38ece5bc937ccb2a4cba736",
+    "d6_k6_psd_zmatrix_certificates.json": "62fc7170d97056941bcaf553c45cfa1cabdf20117ffc69fbd8429b3764ec999c",
+    "d6_k6_psd_zmatrix_report.json": "abb920fbd9eb848502cca37e32c2aa86bf220ab1773e6006ea1fbee4bc2f4e30",
+    "test_d6_k6_lorentz.py": "f4fc8544a4311f742267808e6c785f82139accb9da99b496d206283b52831a47",
+    "verify_d6_k6_fused_side_rank.py": "6621f9a18e6ad2ca19c93776040c837ff37e6021be6e05d2f42f7dcf616f09ff",
+    "verify_d6_k6_psd_zmatrix.py": "ca4ca62f75d02846f12e59e16eb9eab4473fe5438fc496e72a25a39db77f9042"
+  },
+  "method": "fresh graph components and PF nullity reconstruction, independent SymPy/Sturm inertia and simultaneous ordinary zero forcing, fresh componentwise fusion/block subsets, and frozen independent same-Z0 nonbipartite support reconstruction",
+  "positive_control": {
+    "K6_seeds": 32,
+    "name": "known realizable 18-point construction",
+    "passed": true
+  },
+  "rejected_indices": [
+    3278,
+    7861,
+    28130,
+    42634,
+    88876,
+    172033,
+    329406,
+    444439,
+    472362,
+    609822,
+    636032,
+    655465,
+    735087,
+    740294,
+    876581,
+    932731,
+    1079272,
+    1180235,
+    1181033,
+    1184160,
+    1184491,
+    1228671,
+    1239391,
+    1311716,
+    1368398,
+    1382062,
+    1382457,
+    1395724,
+    1395884,
+    1405110,
+    1461865,
+    1462309,
+    1488725,
+    1488726,
+    1556734,
+    1592038,
+    1667137,
+    1667183,
+    1696873,
+    1700562,
+    1723335,
+    1726898,
+    1828731,
+    1832468,
+    1832471,
+    1832747,
+    1832756,
+    1832761,
+    1943819,
+    1967653,
+    1984306,
+    1984404,
+    2037918,
+    2059664,
+    2090013,
+    2103479,
+    2104648,
+    2105880,
+    2121560,
+    2121562,
+    2284684,
+    2284985,
+    2287400,
+    2297052,
+    2297054,
+    2302223,
+    2312486,
+    2374932,
+    2410161,
+    2545635,
+    2552186,
+    2584667,
+    2593264,
+    2593301,
+    2611363,
+    2611725,
+    2653307,
+    2669487,
+    2719803,
+    2762223,
+    2780357,
+    2785453,
+    2795827,
+    2867785,
+    2903665,
+    2924312,
+    2982275,
+    3024448,
+    3043264,
+    3081469,
+    3116171,
+    3120366,
+    3136145,
+    3195222,
+    3205490,
+    3262693,
+    3270962,
+    3287633,
+    3309854,
+    3323687,
+    3328552,
+    3328553,
+    3357771,
+    3384679,
+    3484232,
+    3520507,
+    3563396,
+    3594459,
+    3624708,
+    3641056,
+    3673748,
+    3689375,
+    3745381,
+    3753628,
+    3788934,
+    3793580
+  ],
+  "runtime": {
+    "command": "verify_d6_k6_psd_zmatrix.py --output d6_k6_psd_zmatrix_verification.json",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "wall_seconds": 12.395726750000904,
+    "workers": 1
+  },
+  "schema": "d6-k6-psd-zmatrix-verification-v1",
+  "small_graph_controls": {
+    "C5": {
+      "negative": 4,
+      "positive": 3
+    },
+    "K1": {
+      "negative": 0,
+      "positive": 1
+    },
+    "K2": {
+      "negative": 1,
+      "positive": 2
+    },
+    "P3": {
+      "negative": 2,
+      "positive": 2
+    }
+  },
+  "status": "PASS"
+}

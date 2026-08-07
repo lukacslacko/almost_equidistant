@@ -1,0 +1,33 @@
+{
+  "base_sha256": {
+    "d6_k7_double_pin_conjunction_report.json": "7c90c9a518243de4095f4ec4394bb7b1d22c5889844e90cd7fe4d895f22ac873",
+    "d6_k7_double_pin_conjunction_verification.json": "890568a80b8363de84997db86ab5271fee13f707544f91145d15f4976512a33b"
+  },
+  "checked": {
+    "current_covers": 3,
+    "eligible_covers": 502,
+    "exact_survivors": 24,
+    "full_pin_certificates": 5,
+    "labeled_z_families": 105,
+    "pre_full_pin_families": 5,
+    "seeds": 1,
+    "target": 3919831
+  },
+  "exact_survivors_sha256": "71d9ae101445ae90d08699ede81ca405bf5bfe956fda01ee384203fa113d1779",
+  "execution": {
+    "elapsed_seconds": 0.9002911670031608,
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]"
+  },
+  "kind": "d6_k7_full_pin_odd_cycle_increment_verification",
+  "report": {
+    "path": "d6_k7_full_pin_increment_report.json",
+    "sha256": "1d2c3a315aaaa8e7536c532d86935f528a1c80ca05159977377ca795a61409ab"
+  },
+  "schema": 1,
+  "source_sha256": {
+    "verify_d6_k7_full_pin_increment.py": "4f1599c8ac6d7fe83db604b70bc9e551102805d7dd54ceb580eb69d5bbca4464"
+  },
+  "status": "PASS"
+}

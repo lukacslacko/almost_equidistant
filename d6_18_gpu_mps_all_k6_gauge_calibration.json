@@ -1,0 +1,362 @@
+{
+  "calibration_source_sha256": "9e398b75462e4fb5c917b63e0338673e8a62a4793d2ed2b393adef8f71ef5327",
+  "config": {
+    "chunk_size": 64,
+    "collision_distance": 0.12,
+    "collision_handling": "soft exp(-distance_squared/collision_distance^2) repulsion plus separate distinct score",
+    "collision_weight": 0.05,
+    "control_seeding": "disabled for unseeded recovery calibration",
+    "corpus_sha256": "9d08f9ec579434c9601ad3908bd2ae51f10e09e9d06a7f38fbc25794a634b732",
+    "corpus_verification_sha256": "50ab5d88441b2869e60a05f3e1485db0b25008c3a816960a20a3bb21c1c4defd",
+    "cpu_refine_max_nfev": 1000,
+    "cpu_refinement": "top-k distinct MPS endpoints per graph; SciPy float64 LM with exact analytic Jacobian and a zero-outside-radius distance collision hinge",
+    "cpu_workers": 2,
+    "device": "mps",
+    "dimension": 6,
+    "distinctness_threshold": 0.01,
+    "dtype": "torch.float32 on accelerator; candidate refinement uses NumPy/SciPy float64",
+    "gauge": "lexicographically first K7 when present, otherwise first K6; K6 frame is the first six vertices of the fixed regular K7 simplex",
+    "gpu_candidate_rms": 0.0003,
+    "graph_count": 12712,
+    "graph_seed_formula": "(seedbase*1000003 + corpus_index*7919 + wave*104729) mod 2^64",
+    "initialization": "each outside vertex sampled exactly on the common unit sphere of its fixed-simplex neighbours",
+    "initialization_method": "seed_sphere",
+    "initialization_scale": 0.7,
+    "learning_rate": 0.03,
+    "lm_candidate_rms": 1e-08,
+    "lm_collision_distance": 0.05,
+    "lm_collision_weight": 100.0,
+    "lm_top_k": 8,
+    "optimizer": "PyTorch Adam with cosine learning-rate decay",
+    "optimizer_steps": 1000,
+    "orchestrator_source_sha256": "cd57a6193fba1a9b05b88be566598413bd7ff79a13cdc7b5530df90a14293627",
+    "restarts_per_wave": 16,
+    "schema": "d6-18-gpu-mps-screen-config-v1",
+    "seed_standard_controls": false,
+    "seedbase": 600180777,
+    "semantics": "HEURISTIC_ONLY; no numerical rejection or realizability conclusion",
+    "total_restarts": 16
+  },
+  "config_sha256": "623e893516a639d12a779f4791a6c60b3ecf54fab8e1af219f2422a3d0f2038e",
+  "controls": [
+    {
+      "best_gauge_ordinal": 0,
+      "best_gauge_seed": [
+        0,
+        4,
+        5,
+        8,
+        11,
+        14
+      ],
+      "best_lm_edge_rms": 1.1875913914813035e-16,
+      "best_lm_minimum_distance": 0.4999999999999999,
+      "cpu_lm_attempts": 72,
+      "gauge_count": 9,
+      "index": 352,
+      "optimizer_starts": 144,
+      "recovered": true,
+      "recovered_gauge_ordinals": [
+        0,
+        1
+      ]
+    },
+    {
+      "best_gauge_ordinal": 8,
+      "best_gauge_seed": [
+        8,
+        9,
+        10,
+        11,
+        13,
+        17
+      ],
+      "best_lm_edge_rms": 1.0666677794707567e-16,
+      "best_lm_minimum_distance": 0.4999999999999999,
+      "cpu_lm_attempts": 72,
+      "gauge_count": 9,
+      "index": 459,
+      "optimizer_starts": 144,
+      "recovered": true,
+      "recovered_gauge_ordinals": [
+        8
+      ]
+    },
+    {
+      "best_gauge_ordinal": 4,
+      "best_gauge_seed": [
+        0,
+        8,
+        9,
+        13,
+        15,
+        17
+      ],
+      "best_lm_edge_rms": 1.077721626823348e-16,
+      "best_lm_minimum_distance": 0.5,
+      "cpu_lm_attempts": 72,
+      "gauge_count": 9,
+      "index": 571,
+      "optimizer_starts": 144,
+      "recovered": true,
+      "recovered_gauge_ordinals": [
+        1,
+        4,
+        5
+      ]
+    },
+    {
+      "best_gauge_ordinal": 1,
+      "best_gauge_seed": [
+        0,
+        1,
+        5,
+        9,
+        12,
+        16
+      ],
+      "best_lm_edge_rms": 0.003648690511149327,
+      "best_lm_minimum_distance": 0.04972007007267353,
+      "cpu_lm_attempts": 64,
+      "gauge_count": 8,
+      "index": 3334,
+      "optimizer_starts": 128,
+      "recovered": false,
+      "recovered_gauge_ordinals": []
+    },
+    {
+      "best_gauge_ordinal": 1,
+      "best_gauge_seed": [
+        0,
+        3,
+        8,
+        10,
+        13,
+        15
+      ],
+      "best_lm_edge_rms": 0.00422769692803859,
+      "best_lm_minimum_distance": 0.04962586286186131,
+      "cpu_lm_attempts": 80,
+      "gauge_count": 10,
+      "index": 5391,
+      "optimizer_starts": 160,
+      "recovered": false,
+      "recovered_gauge_ordinals": []
+    },
+    {
+      "best_gauge_ordinal": 1,
+      "best_gauge_seed": [
+        0,
+        2,
+        4,
+        8,
+        12,
+        14
+      ],
+      "best_lm_edge_rms": 0.0018404286974332668,
+      "best_lm_minimum_distance": 0.04992489472973719,
+      "cpu_lm_attempts": 64,
+      "gauge_count": 8,
+      "index": 5429,
+      "optimizer_starts": 128,
+      "recovered": false,
+      "recovered_gauge_ordinals": []
+    },
+    {
+      "best_gauge_ordinal": 0,
+      "best_gauge_seed": [
+        0,
+        1,
+        2,
+        10,
+        13,
+        17
+      ],
+      "best_lm_edge_rms": 0.004107019441758431,
+      "best_lm_minimum_distance": 0.049640831904125125,
+      "cpu_lm_attempts": 96,
+      "gauge_count": 12,
+      "index": 8702,
+      "optimizer_starts": 192,
+      "recovered": false,
+      "recovered_gauge_ordinals": []
+    },
+    {
+      "best_gauge_ordinal": 3,
+      "best_gauge_seed": [
+        1,
+        7,
+        10,
+        12,
+        14,
+        17
+      ],
+      "best_lm_edge_rms": 0.004065712432122804,
+      "best_lm_minimum_distance": 0.049648345735407245,
+      "cpu_lm_attempts": 80,
+      "gauge_count": 10,
+      "index": 8879,
+      "optimizer_starts": 160,
+      "recovered": false,
+      "recovered_gauge_ordinals": []
+    },
+    {
+      "best_gauge_ordinal": 0,
+      "best_gauge_seed": [
+        0,
+        4,
+        5,
+        6,
+        8,
+        16
+      ],
+      "best_lm_edge_rms": 1.0026082190348777e-16,
+      "best_lm_minimum_distance": 0.5000000000000001,
+      "cpu_lm_attempts": 80,
+      "gauge_count": 10,
+      "index": 10261,
+      "optimizer_starts": 160,
+      "recovered": true,
+      "recovered_gauge_ordinals": [
+        0,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "best_gauge_ordinal": 4,
+      "best_gauge_seed": [
+        4,
+        9,
+        12,
+        14,
+        15,
+        17
+      ],
+      "best_lm_edge_rms": 0.001996293570287894,
+      "best_lm_minimum_distance": 0.04992029859762779,
+      "cpu_lm_attempts": 64,
+      "gauge_count": 8,
+      "index": 10273,
+      "optimizer_starts": 128,
+      "recovered": false,
+      "recovered_gauge_ordinals": []
+    },
+    {
+      "best_gauge_ordinal": 4,
+      "best_gauge_seed": [
+        2,
+        8,
+        9,
+        11,
+        13,
+        15
+      ],
+      "best_lm_edge_rms": 1.0262022287304538e-16,
+      "best_lm_minimum_distance": 0.4999999999999998,
+      "cpu_lm_attempts": 80,
+      "gauge_count": 10,
+      "index": 10277,
+      "optimizer_starts": 160,
+      "recovered": true,
+      "recovered_gauge_ordinals": [
+        1,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "best_gauge_ordinal": 4,
+      "best_gauge_seed": [
+        5,
+        6,
+        7,
+        10,
+        13,
+        16
+      ],
+      "best_lm_edge_rms": 0.0035102740369350803,
+      "best_lm_minimum_distance": 0.049739625289629774,
+      "cpu_lm_attempts": 88,
+      "gauge_count": 11,
+      "index": 10585,
+      "optimizer_starts": 176,
+      "recovered": false,
+      "recovered_gauge_ordinals": []
+    },
+    {
+      "best_gauge_ordinal": 5,
+      "best_gauge_seed": [
+        5,
+        6,
+        7,
+        8,
+        15,
+        16
+      ],
+      "best_lm_edge_rms": 1.1572649021012567e-16,
+      "best_lm_minimum_distance": 0.49999999999999994,
+      "cpu_lm_attempts": 88,
+      "gauge_count": 11,
+      "index": 10887,
+      "optimizer_starts": 176,
+      "recovered": true,
+      "recovered_gauge_ordinals": [
+        2,
+        5
+      ]
+    },
+    {
+      "best_gauge_ordinal": 3,
+      "best_gauge_seed": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        17
+      ],
+      "best_lm_edge_rms": 1.3750552891847385e-16,
+      "best_lm_minimum_distance": 0.5,
+      "cpu_lm_attempts": 72,
+      "gauge_count": 9,
+      "index": 11079,
+      "optimizer_starts": 144,
+      "recovered": true,
+      "recovered_gauge_ordinals": [
+        3
+      ]
+    }
+  ],
+  "lm_profile": {
+    "attempts": 1072,
+    "method": "SciPy float64 least_squares(method=lm), analytic Jacobian, and short-distance collision hinge",
+    "top_k": 8,
+    "wall_seconds": 41.68348441700073,
+    "workers": 2
+  },
+  "mathematical_realizability_conclusions": 0,
+  "mathematical_rejections": 0,
+  "producer_source_sha256": "cd57a6193fba1a9b05b88be566598413bd7ff79a13cdc7b5530df90a14293627",
+  "proof_status": "HEURISTIC_ONLY_NO_REJECTIONS",
+  "recovered_controls": 7,
+  "schema": "d6-18-gpu-mps-all-k6-gauge-calibration-v1",
+  "total_controls": 14,
+  "variant_count": 134,
+  "wall_seconds": 46.98552091699821,
+  "wave_profile": [
+    {
+      "device": "mps",
+      "dtype": "torch.float32",
+      "graph_start_steps": 2144000,
+      "graph_start_steps_per_second": 612285.5931881103,
+      "restarts": 16,
+      "steps": 1000,
+      "wall_seconds": 3.501633917003346,
+      "wave": 0
+    }
+  ]
+}

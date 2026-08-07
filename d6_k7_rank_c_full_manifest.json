@@ -1,0 +1,138 @@
+{
+  "schema": 1,
+  "created_local": "2026-08-06T17:57:29+02:00",
+  "branch": "codex/dimension6",
+  "source_base_commit": "653090fb247766c0298b339e8d944a939cbda38b",
+  "scope": "Complete current exact K7 residue inside the 916313-graph deferred population",
+  "machine": {
+    "model": "MacBook Pro (Mac14,10)",
+    "chip": "Apple M2 Pro",
+    "cpu_cores": "12 logical (8 performance, 4 efficiency)",
+    "memory_gb": 16,
+    "gpu": "integrated Apple M2 Pro, 19 cores",
+    "gpu_used": false,
+    "gpu_note": "The proof kernel is exact irregular bitset CSP, matching, clique, rational elimination, zero-forcing, and small-component search. A GPU port would not improve this milestone without replacing exact auditable arithmetic.",
+    "os": "macOS 14.5 (23F79)",
+    "architecture": "arm64",
+    "compiler": "Apple clang 16.0.0 (clang-1600.0.26.6)",
+    "python": "3.11.15"
+  },
+  "inputs": {
+    "aeq_d6_n19.txt": {
+      "sha256": "12bc7e87e6e67eb9ff2851982e206410784c6737a6397874c170cc1280b225b5",
+      "lines": 3971787,
+      "tracked": false
+    },
+    "killed_d6_n19.log": {
+      "sha256": "11c790b12d3543f4476f1eb4c221203f806f1c434f06360b7d25346cace5e305",
+      "tracked": false
+    },
+    "d6_profile_stream_decisions.tsv": {
+      "sha256": "c2e39f7b366a67c2ea117531e2cd5788a0f40eca32e605601bec59152aecea75",
+      "tracked": false
+    },
+    "d6_k7_rank_full_residue.json": {
+      "path": "/tmp/d6_k7_rank_full_residue.json",
+      "sha256": "7097ddd5f333326bd4a4ab1c30379b054182542ca4cd3820f3cc3bc4308ec6da",
+      "graphs": 113136,
+      "tracked": false
+    },
+    "d6_k7_rank_full_residue.txt": {
+      "path": "/tmp/d6_k7_rank_full_residue.txt",
+      "sha256": "a1934445c9e3fa1b6e28168fbefe161fa6a5f33ea75e74a0aaf71553eceda16b",
+      "lines": 113136,
+      "bytes": 16140207,
+      "tracked": false
+    }
+  },
+  "implementation": {
+    "source": "profile_d6_k7_rank.c",
+    "source_sha256": "f41cfd25565d766fd53b8f0e08de1007de91edae1a29047e8f2744b308abfb92",
+    "binary_path": "/tmp/profile_d6_k7_rank_final",
+    "binary_sha256": "a1469c35da92781b5368e707f74db4c830f13b56728d4d0b6e42f968e537574c",
+    "compiler_flags": "-O3 -Wall -Wextra -Werror -pthread",
+    "arithmetic": "Exact graph bit operations and normalized signed 64-bit rational arithmetic with checked signed 128-bit intermediates; overflow aborts the run.",
+    "parallelism": "C11 atomic next-index scheduling in deterministic one-graph chunks; output remains in input order.",
+    "mac_scheduling": "The process revokes inherited PRIO_DARWIN_BG, every worker requests QOS_CLASS_USER_INITIATED, and the final command is wrapped in taskpolicy -a. Any failure to set production scheduling is fatal; a loud test-only override exists for sandboxed sample checks."
+  },
+  "outputs": {
+    "report": {
+      "file": "d6_k7_rank_c_full_report.json",
+      "sha256": "ac3e73e728ca95624d0bf1da7b62777239289e052d08c62b1b863f4e0f3aa971",
+      "tracked": true
+    },
+    "decisions": {
+      "path": "/tmp/d6_k7_rank_final_decisions.tsv",
+      "sha256": "eaa4d5061b44cc86e6ab98ac6315b29a509539e5ac22ab33d1b7a03a34358391",
+      "lines_including_header": 113137,
+      "bytes": 11857375,
+      "tracked": false,
+      "stability_check": "Byte-identical to the earlier independent 12-worker enhanced full pass."
+    }
+  },
+  "commands": [
+    "python3 extract_d6_k7_rank_full_residue.py --output /tmp/d6_k7_rank_full_residue.json",
+    "python3 -c 'import json; from pathlib import Path; data=json.loads(Path(\"/tmp/d6_k7_rank_full_residue.json\").read_text()); Path(\"/tmp/d6_k7_rank_full_residue.txt\").write_text(\"\".join(\"{} 19 {}\\n\".format(graph[\"index\"], \" \".join(map(str, graph[\"adjacency\"]))) for graph in data[\"graphs\"]), encoding=\"ascii\")'",
+    "cc -O3 -Wall -Wextra -Werror -pthread -o /tmp/profile_d6_k7_rank_final profile_d6_k7_rank.c",
+    "python3 test_d6_k7_rank_reference.py",
+    "python3 crosscheck_d6_k7_rank_c.py",
+    "/usr/bin/time -p /usr/sbin/taskpolicy -a /tmp/profile_d6_k7_rank_final /tmp/d6_k7_rank_full_residue.txt 24 /tmp/d6_k7_rank_final_decisions.tsv > /tmp/d6_k7_rank_final_report.json 2> /tmp/d6_k7_rank_final_time.txt",
+    "cmp -s d6_k7_rank_c_full_report.json /tmp/d6_k7_rank_final_report.json",
+    "cmp -s /tmp/d6_k7_rank_final_decisions.tsv /tmp/d6_k7_rank_enhanced_full_decisions.tsv"
+  ],
+  "runtime": {
+    "workers": 24,
+    "kernel_wall_seconds": 59.243485,
+    "real_seconds": 60.14,
+    "user_seconds": 203.66,
+    "system_seconds": 3.12,
+    "benchmark_status": "Concurrent non-benchmark run: the independent full Python reference was intentionally running at the same time to fill otherwise background-clamped CPU capacity."
+  },
+  "exact_results": {
+    "input_graphs": 113136,
+    "K7_seeds": 186162,
+    "eligible_cap3_covers": 11157735,
+    "base_joint_existential_rejections": 80738,
+    "enhanced_joint_existential_rejections": 95372,
+    "incremental_enhanced_over_base": 14634,
+    "survivors": 17764,
+    "mask_only_milestone_rejections": 95306,
+    "basis_kernel_increment_beyond_mask_milestone": 66,
+    "interpretation": "Every rejection is existential over K7 seeds and universal over all eligible zero-factor covers of size at most three. The 17764 survivors remain unresolved, not realizable."
+  },
+  "crosscheck": {
+    "python_reference": "d6_k7_rank_reference.py",
+    "python_reference_sha256": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+    "sample": "d6_k7_rank_sample.json",
+    "sample_sha256": "bf699f36a1c90b6d6751498e52fab73e6b58db322c5b71b04accf32623c2c0dd",
+    "sample_report": "d6_k7_rank_report.json",
+    "sample_report_sha256": "60af52ea66b37eb5beb47f68fa53ca2172612498feefa26e74e9854ec12d5a6f",
+    "C_crosscheck": "crosscheck_d6_k7_rank_c.py",
+    "C_crosscheck_sha256": "506cc81cb8ebc42c4ed22d8a488c83cbc62a1e09e99dfeebd6e442ae6a3a9cd2",
+    "sample_graphs": 512,
+    "sample_K7_seeds": 852,
+    "sample_cap3_covers": 52577,
+    "base_graph_set_agreement": "PASS: 367/512 rejected",
+    "enhanced_graph_set_agreement": "PASS: 426/512 rejected and 86/512 survive",
+    "reference_unit_tests": "16/16 PASS",
+    "strict_C_build": "PASS at -O3 and -O0 -g with -Wall -Wextra -Werror"
+  },
+  "artifact_audit": {
+    "manifest_hash_entries_recomputed": "PASS: 13/13 files matched with an independent Python hashlib pass",
+    "decision_TSV_rows_excluding_header": 113136,
+    "decision_TSV_first_index": 87,
+    "decision_TSV_last_index": 3971777,
+    "decision_TSV_indices": "PASS: strictly increasing and unique",
+    "decision_TSV_input_alignment": "PASS: all 113136 indices agree row-for-row with d6_k7_rank_full_residue.txt",
+    "decision_TSV_internal_errors": 0,
+    "decision_TSV_base_joint_rejections": 80738,
+    "decision_TSV_enhanced_joint_rejections": 95372,
+    "decision_TSV_incremental_enhanced_rejections": 14634,
+    "decision_TSV_survivors": 17764,
+    "decision_TSV_report_agreement": "PASS: every cover aggregate and graph-decision aggregate equals d6_k7_rank_c_full_report.json",
+    "residue_extraction_replay": "PASS: independently re-extracted 113136 graphs and reproduced d6_k7_rank_full_residue.json byte-for-byte",
+    "strict_C11_builds": "PASS: -std=c11 at both -O3 and -O0 -g with -Wall -Wextra -Werror -pthread",
+    "sample_C_Python_crosscheck": "PASS: 512 graphs, 852 seeds, 52577 cap-3 covers, base 367, enhanced 426, survivors 86"
+  },
+  "trust": "All mathematical rejection decisions are exact. Candidate nonedges remain unconstrained and may evaluate to unit distance. The support cache changes only search effort, never decisions. Dynamic scheduling makes support-node diagnostics worker-assignment dependent, while the ordered decision TSV is deterministic. No floating-point geometric decision or numerical rank test is used."
+}

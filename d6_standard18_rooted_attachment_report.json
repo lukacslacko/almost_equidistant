@@ -1,0 +1,8285 @@
+{
+  "coordinate_model": {
+    "base": "the 16 odd sign vectors in the first five coordinates",
+    "field": "Q(sqrt(3)); no floating-point arithmetic",
+    "poles": [
+      "(0,0,0,0,0,+sqrt(3))",
+      "(0,0,0,0,0,-sqrt(3))"
+    ],
+    "scale": "coordinates are 2*sqrt(2) times actual coordinates",
+    "unit_scaled_squared_distance": 8
+  },
+  "exact_conclusion": "For every archived occurrence and standard pole-pair embedding orbit, the deleted vertex's required unit neighbours cannot be restored at the standard coordinates.",
+  "inputs": {
+    "deletion_manifest": {
+      "path": "d6_residue_18_deletions.json",
+      "sha256": "9d08f9ec579434c9601ad3908bd2ae51f10e09e9d06a7f38fbc25794a634b732"
+    },
+    "deletion_verification": {
+      "path": "d6_residue_18_deletions_verification.json",
+      "sha256": "50ab5d88441b2869e60a05f3e1485db0b25008c3a816960a20a3bb21c1c4defd",
+      "status": "PASS"
+    },
+    "v4_manifest": {
+      "path": "d6_current_residue_manifest_v4.json",
+      "sha256": "6ab4bfffc524f5b43409d59888fb596de8130315bda3381e484bb4ce891e03e4"
+    },
+    "v4_verification": {
+      "path": "d6_current_residue_manifest_v4_verification.json",
+      "sha256": "765eceb6782d131dae8c77c9b94de78735e23a070da051c8fffbd984790e1a41",
+      "status": "PASS"
+    }
+  },
+  "nonclaims": [
+    "A standard-compatible support may have a noncongruent realization.",
+    "Infinitesimal rigidity is local and does not prove global uniqueness.",
+    "The five rank-86 standard frameworks have one extra infinitesimal flex; this alone neither proves nor disproves a finite flex.",
+    "No 19-vertex graph is rejected by this conditional audit alone."
+  ],
+  "rigidity": {
+    "rank_86_argument": "rank 86 modulo 13 is an exact lower bound; the archived nonzero flex vanishes on an affinely spanning K6, so it is independent of all rigid motions and gives the matching upper bound",
+    "rank_87_argument": "rank 87 modulo 13 (sqrt(3)=4) is an exact lower bound; the 21-dimensional rigid-motion kernel gives the matching upper bound",
+    "records": [
+      {
+        "class_id": "u18-51c5e7b62ef21c88d2176254679463d90aafe498bfa7b4e3d598958933dca8ab",
+        "edges": 104,
+        "exact_rank": 87,
+        "infinitesimally_rigid": true,
+        "manifest_ordinal": 352,
+        "rank_lower_bound_mod_13": 87,
+        "rank_upper_bound_from_rigid_motions": 87,
+        "sqrt3_mod_13": 4,
+        "witness_count": 1
+      },
+      {
+        "class_id": "u18-81842b7afe827273043aa730eaec7a1fda421f033ad25e8b4a126f4fddd456f6",
+        "edges": 104,
+        "exact_rank": 87,
+        "infinitesimally_rigid": true,
+        "manifest_ordinal": 459,
+        "rank_lower_bound_mod_13": 87,
+        "rank_upper_bound_from_rigid_motions": 87,
+        "sqrt3_mod_13": 4,
+        "witness_count": 1
+      },
+      {
+        "class_id": "u18-e57de1bce6178b0c6b69cdbb1f2ee8628cb854ecbcc72bb17274aaa41e440333",
+        "edges": 104,
+        "exact_rank": 87,
+        "infinitesimally_rigid": true,
+        "manifest_ordinal": 571,
+        "rank_lower_bound_mod_13": 87,
+        "rank_upper_bound_from_rigid_motions": 87,
+        "sqrt3_mod_13": 4,
+        "witness_count": 1
+      },
+      {
+        "class_id": "u18-786df0704a636efd9e0d1a28d28a77e864b32e7b19e268229fc262e6b3f9b0b3",
+        "edges": 104,
+        "exact_rank": 87,
+        "infinitesimally_rigid": true,
+        "manifest_ordinal": 3334,
+        "rank_lower_bound_mod_13": 87,
+        "rank_upper_bound_from_rigid_motions": 87,
+        "sqrt3_mod_13": 4,
+        "witness_count": 1
+      },
+      {
+        "class_id": "u18-63a3d54d47896025db3ec7b19e70cbdfed5dbcfaafd8687fcd53e9a3b1cd9b2b",
+        "edges": 104,
+        "exact_rank": 87,
+        "infinitesimally_rigid": true,
+        "manifest_ordinal": 5391,
+        "rank_lower_bound_mod_13": 87,
+        "rank_upper_bound_from_rigid_motions": 87,
+        "sqrt3_mod_13": 4,
+        "witness_count": 1
+      },
+      {
+        "class_id": "u18-19c7cfbd368fafcff3fb5598e1cfa875bf71ca7f0f297be10e846c92c4bd133a",
+        "edges": 104,
+        "exact_rank": 86,
+        "infinitesimally_rigid": false,
+        "manifest_ordinal": 5429,
+        "rank_86_upper_bound_certificate": {
+          "kind": "nontrivial infinitesimal flex vanishing on an affinely spanning unit K6",
+          "seed_K6": [
+            0,
+            2,
+            3,
+            8,
+            10,
+            11
+          ],
+          "velocity_Qsqrt3": [
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ]
+          ]
+        },
+        "rank_lower_bound_mod_13": 86,
+        "rank_upper_bound_from_rigid_motions": 87,
+        "sqrt3_mod_13": 4,
+        "witness_count": 1
+      },
+      {
+        "class_id": "u18-bd2f65b3fe37dd32f0be336d6fa49c6fa8396e6f2f2596327aa64d262958a0ad",
+        "edges": 106,
+        "exact_rank": 87,
+        "infinitesimally_rigid": true,
+        "manifest_ordinal": 8702,
+        "rank_lower_bound_mod_13": 87,
+        "rank_upper_bound_from_rigid_motions": 87,
+        "sqrt3_mod_13": 4,
+        "witness_count": 1
+      },
+      {
+        "class_id": "u18-8cc04720d34211f7c12f651e8a98a1630491142896fb8b7051762fe57f816c55",
+        "edges": 105,
+        "exact_rank": 87,
+        "infinitesimally_rigid": true,
+        "manifest_ordinal": 8879,
+        "rank_lower_bound_mod_13": 87,
+        "rank_upper_bound_from_rigid_motions": 87,
+        "sqrt3_mod_13": 4,
+        "witness_count": 1
+      },
+      {
+        "class_id": "u18-761add09c775ad5ba966a0eef97848e076faacc647744c4079b7bee48a65d92f",
+        "edges": 103,
+        "exact_rank": 86,
+        "infinitesimally_rigid": false,
+        "manifest_ordinal": 10261,
+        "rank_86_upper_bound_certificate": {
+          "kind": "nontrivial infinitesimal flex vanishing on an affinely spanning unit K6",
+          "seed_K6": [
+            0,
+            4,
+            5,
+            6,
+            8,
+            16
+          ],
+          "velocity_Qsqrt3": [
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                2,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                2,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                2,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                2,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ]
+          ]
+        },
+        "rank_lower_bound_mod_13": 86,
+        "rank_upper_bound_from_rigid_motions": 87,
+        "sqrt3_mod_13": 4,
+        "witness_count": 2
+      },
+      {
+        "class_id": "u18-3f9adb1f1bbf8e73d3d434a0f562c4a4e623cccbfa0b7cae1c16f548d4cc1711",
+        "edges": 104,
+        "exact_rank": 86,
+        "infinitesimally_rigid": false,
+        "manifest_ordinal": 10273,
+        "rank_86_upper_bound_certificate": {
+          "kind": "nontrivial infinitesimal flex vanishing on an affinely spanning unit K6",
+          "seed_K6": [
+            0,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "velocity_Qsqrt3": [
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                2,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                2,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                2,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                2,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                -1,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          ]
+        },
+        "rank_lower_bound_mod_13": 86,
+        "rank_upper_bound_from_rigid_motions": 87,
+        "sqrt3_mod_13": 4,
+        "witness_count": 1
+      },
+      {
+        "class_id": "u18-d58d9ae1ccd1aa28d3a5c25ede20a9135c73854300eb13d64ce74eb6f04854ee",
+        "edges": 103,
+        "exact_rank": 86,
+        "infinitesimally_rigid": false,
+        "manifest_ordinal": 10277,
+        "rank_86_upper_bound_certificate": {
+          "kind": "nontrivial infinitesimal flex vanishing on an affinely spanning unit K6",
+          "seed_K6": [
+            0,
+            4,
+            5,
+            6,
+            7,
+            17
+          ],
+          "velocity_Qsqrt3": [
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                1,
+                4
+              ],
+              [
+                0,
+                1,
+                -1,
+                4
+              ],
+              [
+                0,
+                1,
+                -1,
+                4
+              ],
+              [
+                0,
+                1,
+                -1,
+                4
+              ],
+              [
+                0,
+                1,
+                1,
+                4
+              ],
+              [
+                -1,
+                4,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ]
+          ]
+        },
+        "rank_lower_bound_mod_13": 86,
+        "rank_upper_bound_from_rigid_motions": 87,
+        "sqrt3_mod_13": 4,
+        "witness_count": 2
+      },
+      {
+        "class_id": "u18-9b81faf24ce14620e77d3ff29935e10c5b7541615ee880828205851b5bf99811",
+        "edges": 104,
+        "exact_rank": 87,
+        "infinitesimally_rigid": true,
+        "manifest_ordinal": 10585,
+        "rank_lower_bound_mod_13": 87,
+        "rank_upper_bound_from_rigid_motions": 87,
+        "sqrt3_mod_13": 4,
+        "witness_count": 1
+      },
+      {
+        "class_id": "u18-84a0a88e385b1aa4673cc149e0c2458f37b7cc6aef3def3cf2589f2075be4841",
+        "edges": 104,
+        "exact_rank": 87,
+        "infinitesimally_rigid": true,
+        "manifest_ordinal": 10887,
+        "rank_lower_bound_mod_13": 87,
+        "rank_upper_bound_from_rigid_motions": 87,
+        "sqrt3_mod_13": 4,
+        "witness_count": 1
+      },
+      {
+        "class_id": "u18-b6a9b81054d4363d0db724af62235050065141d531e1093b6cecda4cc9d93267",
+        "edges": 103,
+        "exact_rank": 86,
+        "infinitesimally_rigid": false,
+        "manifest_ordinal": 11079,
+        "rank_86_upper_bound_certificate": {
+          "kind": "nontrivial infinitesimal flex vanishing on an affinely spanning unit K6",
+          "seed_K6": [
+            0,
+            1,
+            8,
+            9,
+            10,
+            13
+          ],
+          "velocity_Qsqrt3": [
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                4,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                4,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                4,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                4,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                4,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1,
+                -1,
+                1
+              ],
+              [
+                0,
+                1,
+                -1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                -1,
+                1
+              ],
+              [
+                1,
+                1,
+                0,
+                1
+              ]
+            ]
+          ]
+        },
+        "rank_lower_bound_mod_13": 86,
+        "rank_upper_bound_from_rigid_motions": 87,
+        "sqrt3_mod_13": 4,
+        "witness_count": 2
+      }
+    ]
+  },
+  "rooted_cases": [
+    {
+      "attachment_degree": 13,
+      "case_id": "8d851ea29137a78ffb3b8766ae42f6f3abd9a45a0a0a6760d5f54b68aff33c34",
+      "class_id": "u18-51c5e7b62ef21c88d2176254679463d90aafe498bfa7b4e3d598958933dca8ab",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 14,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 352,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 3335964,
+      "pole_pair": [
+        8,
+        9
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 12,
+      "case_id": "75fa362c95e92049aa59a5043ad3b185fe9bd19c695fe8e7e18f9683f242aa8a",
+      "class_id": "u18-81842b7afe827273043aa730eaec7a1fda421f033ad25e8b4a126f4fddd456f6",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 7,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 459,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        13,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        13
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 364827,
+      "pole_pair": [
+        12,
+        13
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "4ecb72d511e7f35e7c1d9f75b6074a6837d7fce3739a0c7780df3ad2be550758",
+      "class_id": "u18-81842b7afe827273043aa730eaec7a1fda421f033ad25e8b4a126f4fddd456f6",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 8,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 459,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        14,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        14
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 2392957,
+      "pole_pair": [
+        12,
+        13
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "36401e8d65620a09b412eb8ffa8cc9b04d953609c501a20e8142fedbcc782181",
+      "class_id": "u18-81842b7afe827273043aa730eaec7a1fda421f033ad25e8b4a126f4fddd456f6",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 12,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 459,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 2392957,
+      "pole_pair": [
+        12,
+        13
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 12,
+      "case_id": "5136d5f33d6bf3346aa58671d819f37233c2196e7a780a4198d48305294c7ced",
+      "class_id": "u18-81842b7afe827273043aa730eaec7a1fda421f033ad25e8b4a126f4fddd456f6",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 2,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 459,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        13,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        13
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 3335955,
+      "pole_pair": [
+        12,
+        13
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 12,
+      "case_id": "fa280602216b44cbb6b66daec11ceed179671e2312a392d5919c4b1648c811e1",
+      "class_id": "u18-81842b7afe827273043aa730eaec7a1fda421f033ad25e8b4a126f4fddd456f6",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 18,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 459,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        13,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        13
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 3335955,
+      "pole_pair": [
+        12,
+        13
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "13b55fde47992acd8740e66833e66d79519dc6696ee49d86c6f84aadf1c423f6",
+      "class_id": "u18-81842b7afe827273043aa730eaec7a1fda421f033ad25e8b4a126f4fddd456f6",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 18,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 459,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3335964,
+      "pole_pair": [
+        12,
+        13
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "cfb642aa4813bc1b8ec1fb91067f820d0f928465c9cde8e5be362496b2cb7632",
+      "class_id": "u18-81842b7afe827273043aa730eaec7a1fda421f033ad25e8b4a126f4fddd456f6",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 6,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 459,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3649551,
+      "pole_pair": [
+        12,
+        13
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "c74516cb4047f7be8b1bfaf4c345e7bfb639de6689fbd661d20717833c317ed4",
+      "class_id": "u18-81842b7afe827273043aa730eaec7a1fda421f033ad25e8b4a126f4fddd456f6",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 8,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 459,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 3741683,
+      "pole_pair": [
+        12,
+        13
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "44322ac2bffa5d2ac06ef0aafed1f216f7d6fa53465932b2082c2acb17b2492d",
+      "class_id": "u18-81842b7afe827273043aa730eaec7a1fda421f033ad25e8b4a126f4fddd456f6",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 3,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 459,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 3950045,
+      "pole_pair": [
+        12,
+        13
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "8ce8535663d6adfe48e66317bdc4f00fd69a8e1675ef0b19df638f07ffc37227",
+      "class_id": "u18-e57de1bce6178b0c6b69cdbb1f2ee8628cb854ecbcc72bb17274aaa41e440333",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 4,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 571,
+      "mapped_attachment": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 3649551,
+      "pole_pair": [
+        9,
+        10
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "332ed10e4fc87bb1179a5a9a5497da3a643238615ab76a8ff6dc9b50077d8d8b",
+      "class_id": "u18-e57de1bce6178b0c6b69cdbb1f2ee8628cb854ecbcc72bb17274aaa41e440333",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 14,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 571,
+      "mapped_attachment": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13,
+        15,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13,
+        15
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 3960639,
+      "pole_pair": [
+        9,
+        10
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "219206070ab947a4d820b4f3e4c46cad9e2b64a96e63d87c45d28ca49ff1495e",
+      "class_id": "u18-786df0704a636efd9e0d1a28d28a77e864b32e7b19e268229fc262e6b3f9b0b3",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 2,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 3334,
+      "mapped_attachment": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3950045,
+      "pole_pair": [
+        12,
+        13
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "de7aa56ef780f40d0e103a35c7f428d0ed4d37c21a6f1d4c1d839a56ffc240b9",
+      "class_id": "u18-786df0704a636efd9e0d1a28d28a77e864b32e7b19e268229fc262e6b3f9b0b3",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 3,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 3334,
+      "mapped_attachment": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14,
+        15,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14,
+        15
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 3950335,
+      "pole_pair": [
+        12,
+        13
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "89ed614d0c9a1ab3e6fafd8e0759be1d56132dd0b02e6df75eb48543febe96e7",
+      "class_id": "u18-786df0704a636efd9e0d1a28d28a77e864b32e7b19e268229fc262e6b3f9b0b3",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 18,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 3334,
+      "mapped_attachment": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14,
+        15,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14,
+        15
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 3950335,
+      "pole_pair": [
+        12,
+        13
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "a3ee45d2437a56e9276992154d89b1e53eb2c20d4e1bb2551effae0103074b71",
+      "class_id": "u18-786df0704a636efd9e0d1a28d28a77e864b32e7b19e268229fc262e6b3f9b0b3",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 16,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 3334,
+      "mapped_attachment": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        15,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        15
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 3950336,
+      "pole_pair": [
+        12,
+        13
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "b4bbd149e2eebea2810edfd673f6e89d172db6d6439d630622314b13c35693fc",
+      "class_id": "u18-786df0704a636efd9e0d1a28d28a77e864b32e7b19e268229fc262e6b3f9b0b3",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 18,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 3334,
+      "mapped_attachment": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        15,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        15
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3950336,
+      "pole_pair": [
+        12,
+        13
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "e1dff99d0afedf7e040aa6c1ad5f91ade82f2041b142216f12159a3a8d1708a2",
+      "class_id": "u18-786df0704a636efd9e0d1a28d28a77e864b32e7b19e268229fc262e6b3f9b0b3",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 15,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 3334,
+      "mapped_attachment": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14,
+        15
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3951911,
+      "pole_pair": [
+        12,
+        13
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 12,
+      "case_id": "f78adbf44d9ddd38798d04b69d334b0032813310eafcd6c9d74fbd25a43b90fb",
+      "class_id": "u18-63a3d54d47896025db3ec7b19e70cbdfed5dbcfaafd8687fcd53e9a3b1cd9b2b",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 1,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 5391,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        14,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        14
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 364827,
+      "pole_pair": [
+        10,
+        11
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        14
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 12,
+      "case_id": "4c712ff4c1fd1c784df8e46dd475116d8e777c757a786e1f8eb12b012f26ff34",
+      "class_id": "u18-63a3d54d47896025db3ec7b19e70cbdfed5dbcfaafd8687fcd53e9a3b1cd9b2b",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 3,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 5391,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        14,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        14
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3335995,
+      "pole_pair": [
+        10,
+        11
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        14
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 12,
+      "case_id": "b43d62a422320e85fd77e33d8fe0b5e5bdb6719efbcfa27abd2ac762d3d8aa47",
+      "class_id": "u18-63a3d54d47896025db3ec7b19e70cbdfed5dbcfaafd8687fcd53e9a3b1cd9b2b",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 18,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 5391,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        14,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        14
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3335995,
+      "pole_pair": [
+        10,
+        11
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        14
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "eef65b4467a34b19d208fb8f6e85a8d7f808d79961816067ab735039c3bb1fbb",
+      "class_id": "u18-63a3d54d47896025db3ec7b19e70cbdfed5dbcfaafd8687fcd53e9a3b1cd9b2b",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 3,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 5391,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3960639,
+      "pole_pair": [
+        10,
+        11
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "66abe885eabbc343fefeb69c9d287ea05c6b040d44d1575dbe23d5c11db1f338",
+      "class_id": "u18-19c7cfbd368fafcff3fb5598e1cfa875bf71ca7f0f297be10e846c92c4bd133a",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 3,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 5429,
+      "mapped_attachment": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3950119,
+      "pole_pair": [
+        8,
+        9
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        14
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "e0c32c7f510b0858b0224b4660c002d3aa4d8ddabb8697e6151ae6115ecf4e35",
+      "class_id": "u18-bd2f65b3fe37dd32f0be336d6fa49c6fa8396e6f2f2596327aa64d262958a0ad",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 8,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 8702,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3950385,
+      "pole_pair": [
+        16,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "f5d3a38089014fd4246f5621e8aab670ea59dfc44af16139358e1436f763e83d",
+      "class_id": "u18-bd2f65b3fe37dd32f0be336d6fa49c6fa8396e6f2f2596327aa64d262958a0ad",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 9,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 8702,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3950385,
+      "pole_pair": [
+        16,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 12,
+      "case_id": "eefe88dec71f99d7cd1fd238c553380bdbd1f3492a228a269cd1a3996bcc1d4a",
+      "class_id": "u18-8cc04720d34211f7c12f651e8a98a1630491142896fb8b7051762fe57f816c55",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 5,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 8879,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 2641927,
+      "pole_pair": [
+        16,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 12,
+      "case_id": "f783cda10ed58a5f2ee64d82723c09307056cd00817d76d10f92d1c8499cffe2",
+      "class_id": "u18-8cc04720d34211f7c12f651e8a98a1630491142896fb8b7051762fe57f816c55",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 13,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 8879,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 2641927,
+      "pole_pair": [
+        16,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "8f4715eea21eb29a76802beb744f07d74382e30017a4234b349844ac72e947af",
+      "class_id": "u18-761add09c775ad5ba966a0eef97848e076faacc647744c4079b7bee48a65d92f",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 5,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 10261,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13,
+        14,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13,
+        14
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 364827,
+      "pole_pair": [
+        9,
+        16
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "fe74b8b72c24e21e496f811c9fe210042098ea8539bac0226e57b311fb3a9125",
+      "class_id": "u18-761add09c775ad5ba966a0eef97848e076faacc647744c4079b7bee48a65d92f",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 5,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 10261,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13,
+        14,
+        15,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13,
+        14,
+        15
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 364827,
+      "pole_pair": [
+        8,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        13,
+        14
+      ],
+      "witness_ordinal": 1
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "3e2bbceb2237e2726264da81bf015725d144b550f08148be044f8c386e756b98",
+      "class_id": "u18-3f9adb1f1bbf8e73d3d434a0f562c4a4e623cccbfa0b7cae1c16f548d4cc1711",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 9,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 10273,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        14,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        14
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 3741683,
+      "pole_pair": [
+        8,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "0b48c44cd1be6444fb0cafa836dc5eba0f2b9bcf93850726a1fe2a65ccd501e3",
+      "class_id": "u18-3f9adb1f1bbf8e73d3d434a0f562c4a4e623cccbfa0b7cae1c16f548d4cc1711",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 18,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 10273,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3950119,
+      "pole_pair": [
+        8,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "9457ddabb15947143955564b0e22f2fd4a2b332dcf0f538184567b739ee4ddc1",
+      "class_id": "u18-3f9adb1f1bbf8e73d3d434a0f562c4a4e623cccbfa0b7cae1c16f548d4cc1711",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 8,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 10273,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        12,
+        13,
+        14,
+        15
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3950509,
+      "pole_pair": [
+        8,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        12,
+        13,
+        14
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "3412d64a49d5b24f0e9cfddd2e96da64cecadc26472e1a5f2ae8e336683556bb",
+      "class_id": "u18-3f9adb1f1bbf8e73d3d434a0f562c4a4e623cccbfa0b7cae1c16f548d4cc1711",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 9,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 10273,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 3950509,
+      "pole_pair": [
+        8,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "b7f789a15b9d33685bf63418203c61ba0f020458c11027b7c8c7b3e3522e6963",
+      "class_id": "u18-3f9adb1f1bbf8e73d3d434a0f562c4a4e623cccbfa0b7cae1c16f548d4cc1711",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 3,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 10273,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13,
+        14,
+        17
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13,
+        14
+      ],
+      "mapped_pole_neighbour": 17,
+      "parent_class": "K6_only",
+      "parent_index": 3951911,
+      "pole_pair": [
+        8,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "30630570b07bdf458c74fa3cec5abee26d2b616715459b76249d62f73ee91c35",
+      "class_id": "u18-d58d9ae1ccd1aa28d3a5c25ede20a9135c73854300eb13d64ce74eb6f04854ee",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 2,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 10277,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3335995,
+      "pole_pair": [
+        8,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "5812b8dd3ad399e568878e4609a8f676c0153e7b4a4f385f1eb122cbbdc1d9a2",
+      "class_id": "u18-d58d9ae1ccd1aa28d3a5c25ede20a9135c73854300eb13d64ce74eb6f04854ee",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 2,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 10277,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3335995,
+      "pole_pair": [
+        9,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "witness_ordinal": 1
+    },
+    {
+      "attachment_degree": 12,
+      "case_id": "17a89cc4293dea3523a610270ff4cb69fc7e621275e34fd5353d7a8b4a889ea8",
+      "class_id": "u18-9b81faf24ce14620e77d3ff29935e10c5b7541615ee880828205851b5bf99811",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 3,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 10585,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        13,
+        14,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        13,
+        14
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 364827,
+      "pole_pair": [
+        5,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        13,
+        14
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "16673829c4321c9c9bc497945ec5a6cd142e977a6c81e9b6194a3488b5bb710b",
+      "class_id": "u18-9b81faf24ce14620e77d3ff29935e10c5b7541615ee880828205851b5bf99811",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 7,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 10585,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        14
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 2641927,
+      "pole_pair": [
+        5,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "12774e9af0a77ab71e0f8c7e838d093ac3c313a83277df0c539c1e3d38d803f2",
+      "class_id": "u18-9b81faf24ce14620e77d3ff29935e10c5b7541615ee880828205851b5bf99811",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 11,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 10585,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13,
+        14,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13,
+        14
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 2641927,
+      "pole_pair": [
+        5,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 12,
+      "case_id": "9b311417f66d361801cc0d5fa292821f26c44f75dfa644391697e4374cdfb298",
+      "class_id": "u18-84a0a88e385b1aa4673cc149e0c2458f37b7cc6aef3def3cf2589f2075be4841",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 4,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 10887,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        13,
+        14,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        13,
+        14
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 364827,
+      "pole_pair": [
+        8,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        13,
+        14
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "d5617f25e093548af3c4e9523df003ca37926a630e34ef815281fb79183f02e8",
+      "class_id": "u18-b6a9b81054d4363d0db724af62235050065141d531e1093b6cecda4cc9d93267",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 3,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 11079,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3335955,
+      "pole_pair": [
+        8,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13
+      ],
+      "witness_ordinal": 0
+    },
+    {
+      "attachment_degree": 13,
+      "case_id": "22f65ac6130acca583ede675b69783b104bf45a0c641e146b825f59777a60116",
+      "class_id": "u18-b6a9b81054d4363d0db724af62235050065141d531e1093b6cecda4cc9d93267",
+      "contradiction": "16/3 != 8",
+      "deleted_vertex": 3,
+      "forced_common_scaled_squared_distance_Qsqrt3": [
+        16,
+        3,
+        0,
+        1
+      ],
+      "forced_equidistant_centre_Qsqrt3": [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          3
+        ]
+      ],
+      "manifest_ordinal": 11079,
+      "mapped_attachment": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14,
+        16
+      ],
+      "mapped_base_neighbours": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14
+      ],
+      "mapped_pole_neighbour": 16,
+      "parent_class": "K6_only",
+      "parent_index": 3335955,
+      "pole_pair": [
+        9,
+        17
+      ],
+      "required_unit_scaled_squared_distance_Qsqrt3": [
+        8,
+        1,
+        0,
+        1
+      ],
+      "spanning_base_affine_rank": 5,
+      "spanning_base_subset": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13
+      ],
+      "witness_ordinal": 1
+    }
+  ],
+  "schema": "d6-standard18-rooted-attachment-audit-v1",
+  "semantics": {
+    "base_automorphism_invariance": "The proof uses only one pole neighbour, at least 11 base neighbours, and the fact that every 11 base vertices span; it therefore covers all base automorphisms and the pole swap represented by each witness orbit.",
+    "classification_claim_16_point_R5": false,
+    "classification_claim_18_point_R6": false,
+    "conditional_on_standard_embedding": true,
+    "global_support_embedding_uniqueness_claim": false,
+    "nonedges": "unconstrained and may also be unit",
+    "parent_rejections": 0
+  },
+  "status": "PASS",
+  "summary": {
+    "compatible_classes": 14,
+    "compatible_occurrences": 39,
+    "compatible_parents": 16,
+    "parents_only_rank_86_deletions": [
+      3950119,
+      3950509
+    ],
+    "parents_with_rank_87_deletion": [
+      364827,
+      2392957,
+      2641927,
+      3335955,
+      3335964,
+      3335995,
+      3649551,
+      3741683,
+      3950045,
+      3950335,
+      3950336,
+      3950385,
+      3951911,
+      3960639
+    ],
+    "rank_86_classes": 5,
+    "rank_87_classes": 9,
+    "rigidity_records_sha256": "903227028bbffb01a3d3bc60ebcc3321470ed7ddb50d8ab9c6b3eb8203a89d35",
+    "rooted_cases_sha256": "c37d2814a63a1234bd92b149bacc1877a3917ee82d8c1d7c6875b7a17ac3061c",
+    "rooted_witness_representatives": 42
+  }
+}
