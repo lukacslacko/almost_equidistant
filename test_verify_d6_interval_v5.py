@@ -41,6 +41,15 @@ class V5IntervalVerifierControls(unittest.TestCase):
             with self.assertRaisesRegex(AssertionError, "report hash"):
                 verifier.verify_report(path, "0" * 64, replay=False)
 
+    def test_cap_is_an_explicit_verifier_boundary(self) -> None:
+        sample_report = verifier.ROOT / ".runs/d6_interval_v5_bench64_cap20000.json"
+        if not sample_report.exists():
+            self.skipTest("local benchmark is not present")
+        with self.assertRaisesRegex(AssertionError, "search parameters"):
+            verifier.verify_report(
+                sample_report, None, replay=False, expected_cap=100_000
+            )
+
     def test_does_not_import_production_wrapper(self) -> None:
         source = (verifier.ROOT / "verify_d6_interval_v5.py").read_text(
             encoding="utf-8"

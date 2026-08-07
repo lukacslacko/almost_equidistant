@@ -198,7 +198,12 @@ def validate_source_boundary(configuration: dict) -> dict:
     }
 
 
-def verify_report(report_path: Path, expected_hash: str | None, replay: bool) -> dict:
+def verify_report(
+    report_path: Path,
+    expected_hash: str | None,
+    replay: bool,
+    expected_cap: int = 20_000,
+) -> dict:
     report_path = report_path.resolve()
     report_hash = file_sha256(report_path)
     if expected_hash is not None:
@@ -213,7 +218,7 @@ def verify_report(report_path: Path, expected_hash: str | None, replay: bool) ->
         search
         == {
             "orders": 4,
-            "cap": 20_000,
+            "cap": expected_cap,
             "slices": 24,
             "zero_circle_only": False,
             "include_bulk_order": False,
@@ -339,11 +344,15 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--report", type=Path, required=True)
     parser.add_argument("--expected-report-sha256")
+    parser.add_argument("--expected-cap", type=int, default=20_000)
     parser.add_argument("--no-replay", action="store_true")
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     result = verify_report(
-        args.report, args.expected_report_sha256, replay=not args.no_replay
+        args.report,
+        args.expected_report_sha256,
+        replay=not args.no_replay,
+        expected_cap=args.expected_cap,
     )
     atomic_json(args.output.resolve(), result)
     print(
