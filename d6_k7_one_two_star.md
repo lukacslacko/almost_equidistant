@@ -1,6 +1,6 @@
 # Exact one-free-neighbour/two-free-center K7 star
 
-## Pre-production theorem statement
+## Theorem statement
 
 Fix a regular unit `K7`, an eligible zero-factor cover `Z`, a labeled family
 of actual supports on `Z`, and the propagated masks on its nonzero-factor
@@ -12,17 +12,17 @@ edge gives an affine line in the two free coordinates of `x`. If all those
 lines have no common real intersection with the exact diagonal hyperbola of
 `x` for every sign assignment, the propagated branch is impossible.
 
-The dry-run corpus replay finds this obstruction in four of the 88 currently
-passing families. Under the complete cover/seed quantifier it provisionally
+The source-bound corpus replay finds this obstruction in four of the 88
+previously passing families. Under the complete cover/seed quantifier it
 rejects exactly
 
 ```text
 2592657  3785980  3888410
 ```
 
-from the frozen v6 19-graph K7 class. These receive theorem-level credit only
-after the committed producer runs and the independent committed checker
-returns `PASS`.
+from the frozen v6 19-graph K7 class. The committed producer and the
+independent committed checker have both completed, and the checker returned
+`PASS`.
 
 ## Normalization and support semantics
 
@@ -115,7 +115,7 @@ The explicit positive control
 
 is retained with witness `(x,y)=(0,2)`.
 
-## Complete dry-run profile
+## Complete certified profile
 
 The producer replayed the frozen 19-graph input and the independent checker
 separately regenerated the older exact quantifier:
@@ -132,7 +132,7 @@ newly rejected graphs                                 3
 surviving K7 graphs                                  16
 ```
 
-The ordered provisional 16-list is
+The ordered exact-layer 16-list is
 
 ```text
 316173 2581209 2593240 3595554 3648882 3729907 3935560
@@ -176,7 +176,7 @@ af25b842ca9eaa6e9721f51d0400be2436d930b72cc33c72bc366f0ac5e41290
   ordered v6 K7 input indices
 ```
 
-## Production commands after source commit
+## Production commands
 
 Run the producer only from committed `codex/dimension6` sources with no
 modified tracked files:
@@ -212,7 +212,7 @@ python3 -m unittest -v \
   test_d6_k7_one_two_star_increment.py
 ```
 
-## Pre-production source hashes
+## Frozen source and result hashes
 
 ```text
 d4cd813b66a0c57dd106bb9987d1417366152f4cd9162cfd9b0486e3fd0d0b5b
@@ -221,4 +221,23 @@ d4cd813b66a0c57dd106bb9987d1417366152f4cd9162cfd9b0486e3fd0d0b5b
   build_d6_k7_one_two_star_increment.py
 eafd4f69eb4e3938bbd3ce3c1c2c469ddc38e96d2338ed202398bad5377f1b96
   verify_d6_k7_one_two_star_increment.py
+12b3d18b1ea81961f58d831d4c7c322fbceb2300e7533b64161e8011fbe9d1ec
+  d6_k7_one_two_star_increment_report.json
+c6f40578685036cb1156cb0ea8bf06d6004a70d5f376aff5ac1e16a1c0ca09eb
+  d6_k7_one_two_star_increment_verification.json
 ```
+
+## Official execution result
+
+The source boundary is commit
+`5a35469bfb903a6aa0bed63460aeaa195b74a61b`. The nine-worker producer
+completed in 0.37 seconds. The independent nine-worker verifier completed in
+10.32 seconds and returned `PASS`; it checked 19 graphs, 55 K7 seeds, 19,932
+eligible covers, 108 inherited current covers, 1,589 labeled support
+families, all 88 prior survivors, and all four star certificates.
+
+This exact layer leaves 16 of the v6 K7 graphs. The separately verified
+cap-500,000 interval campaign rejects `3595554`, disjoint from the three star
+rejections, so their union leaves 15 K7 graphs. That 15-graph boundary must
+still be frozen by a separate combined-residue manifest before a later
+campaign consumes it.
