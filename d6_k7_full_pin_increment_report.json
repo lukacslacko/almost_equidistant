@@ -1,0 +1,497 @@
+{
+  "base_sha256": {
+    "d6_k7_double_pin_conjunction_report.json": "7c90c9a518243de4095f4ec4394bb7b1d22c5889844e90cd7fe4d895f22ac873",
+    "d6_k7_double_pin_conjunction_verification.json": "890568a80b8363de84997db86ab5271fee13f707544f91145d15f4976512a33b"
+  },
+  "base_survivors": [
+    226183,
+    316173,
+    423661,
+    424226,
+    2581209,
+    2592657,
+    2593240,
+    3595554,
+    3624785,
+    3648882,
+    3729907,
+    3785980,
+    3888410,
+    3919831,
+    3935560,
+    3936176,
+    3936177,
+    3936310,
+    3936435,
+    3945490,
+    3945555,
+    3945557,
+    3945564,
+    3947605,
+    3949382
+  ],
+  "base_survivors_sha256": "16872c94cce864ca17689714c05cb3a49e2cf6cb658d808c270d047c2794ac04",
+  "claim": "The generalized odd-cycle/full-support pin obstruction rejects double-pin survivor 3919831, reducing the exact K7 residue from 25 to 24 graphs.",
+  "exact_survivors": [
+    226183,
+    316173,
+    423661,
+    424226,
+    2581209,
+    2592657,
+    2593240,
+    3595554,
+    3624785,
+    3648882,
+    3729907,
+    3785980,
+    3888410,
+    3935560,
+    3936176,
+    3936177,
+    3936310,
+    3936435,
+    3945490,
+    3945555,
+    3945557,
+    3945564,
+    3947605,
+    3949382
+  ],
+  "exact_survivors_sha256": "71d9ae101445ae90d08699ede81ca405bf5bfe956fda01ee384203fa113d1779",
+  "execution": {
+    "command": "/Users/lukacs/claude/opengauss/venv/bin/python3 build_d6_k7_full_pin_increment.py --base-report-sha256 7c90c9a518243de4095f4ec4394bb7b1d22c5889844e90cd7fe4d895f22ac873 --base-verification-sha256 890568a80b8363de84997db86ab5271fee13f707544f91145d15f4976512a33b --output d6_k7_full_pin_increment_report.json",
+    "elapsed_seconds": 0.9071483340012492,
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]"
+  },
+  "incremental_rejected_indices": [
+    3919831
+  ],
+  "incremental_rejected_indices_sha256": "f4587c478f6c7d7d53dbd7aefc5ef8fa1bc1ecc815aa7d1ee302ae454f0ed508",
+  "kind": "d6_k7_full_pin_odd_cycle_increment",
+  "record": {
+    "counts": {
+      "current_covers": 3,
+      "eligible_covers": 502,
+      "full_pin_infeasible_covers": 3,
+      "full_pin_infeasible_families": 5,
+      "inherited_cover_baseline": 498,
+      "inherited_cover_passing": 3,
+      "inherited_cover_strict_h": 1,
+      "labeled_z_families": 105,
+      "pre_full_pin_families": 5,
+      "propagation_failure:disjoint_required_edge": 100,
+      "seeds": 1
+    },
+    "decision": "REJECTED",
+    "first_rejecting_seed_mask": 339104,
+    "index": 3919831,
+    "seeds": [
+      {
+        "current_covers": [
+          {
+            "family_counts": {
+              "full_pin_infeasible_families": 1,
+              "labeled_z_families": 1,
+              "pre_full_pin_families": 1
+            },
+            "first_passing_witness": null,
+            "full_pin_certificates": [
+              {
+                "certificate": {
+                  "central": 3,
+                  "central_mask": 67,
+                  "coordinate_components": [
+                    {
+                      "component": [
+                        3,
+                        4,
+                        5,
+                        9
+                      ],
+                      "conflict_edge": [
+                        4,
+                        5
+                      ],
+                      "coordinate": 0
+                    },
+                    {
+                      "component": [
+                        0,
+                        1,
+                        3,
+                        9
+                      ],
+                      "conflict_edge": [
+                        1,
+                        3
+                      ],
+                      "coordinate": 1
+                    },
+                    {
+                      "component": [
+                        3,
+                        6,
+                        7,
+                        10
+                      ],
+                      "conflict_edge": [
+                        6,
+                        7
+                      ],
+                      "coordinate": 6
+                    }
+                  ]
+                },
+                "propagated_masks": [
+                  26,
+                  38,
+                  48,
+                  67,
+                  25,
+                  37,
+                  68,
+                  72,
+                  60,
+                  19,
+                  108,
+                  127
+                ],
+                "z_supports": []
+              }
+            ],
+            "seed": [
+              5,
+              7,
+              10,
+              11,
+              13,
+              16,
+              18
+            ],
+            "status": "INFEASIBLE",
+            "zmask": 0
+          },
+          {
+            "family_counts": {
+              "labeled_z_families": 5,
+              "propagation_failure:disjoint_required_edge": 5
+            },
+            "first_passing_witness": null,
+            "full_pin_certificates": [],
+            "seed": [
+              5,
+              7,
+              10,
+              11,
+              13,
+              16,
+              18
+            ],
+            "status": "INFEASIBLE",
+            "zmask": 256
+          },
+          {
+            "family_counts": {
+              "full_pin_infeasible_families": 4,
+              "labeled_z_families": 99,
+              "pre_full_pin_families": 4,
+              "propagation_failure:disjoint_required_edge": 95
+            },
+            "first_passing_witness": null,
+            "full_pin_certificates": [
+              {
+                "certificate": {
+                  "central": 3,
+                  "central_mask": 67,
+                  "coordinate_components": [
+                    {
+                      "component": [
+                        3,
+                        4,
+                        5,
+                        9
+                      ],
+                      "conflict_edge": [
+                        4,
+                        5
+                      ],
+                      "coordinate": 0
+                    },
+                    {
+                      "component": [
+                        0,
+                        1,
+                        3,
+                        9
+                      ],
+                      "conflict_edge": [
+                        1,
+                        3
+                      ],
+                      "coordinate": 1
+                    },
+                    {
+                      "component": [
+                        3,
+                        6,
+                        7,
+                        10
+                      ],
+                      "conflict_edge": [
+                        6,
+                        7
+                      ],
+                      "coordinate": 6
+                    }
+                  ]
+                },
+                "propagated_masks": [
+                  26,
+                  38,
+                  48,
+                  67,
+                  25,
+                  37,
+                  68,
+                  72,
+                  60,
+                  19,
+                  108
+                ],
+                "z_supports": [
+                  79
+                ]
+              },
+              {
+                "certificate": {
+                  "central": 3,
+                  "central_mask": 67,
+                  "coordinate_components": [
+                    {
+                      "component": [
+                        3,
+                        4,
+                        5,
+                        9
+                      ],
+                      "conflict_edge": [
+                        4,
+                        5
+                      ],
+                      "coordinate": 0
+                    },
+                    {
+                      "component": [
+                        0,
+                        1,
+                        3,
+                        9
+                      ],
+                      "conflict_edge": [
+                        1,
+                        3
+                      ],
+                      "coordinate": 1
+                    },
+                    {
+                      "component": [
+                        3,
+                        6,
+                        7,
+                        10
+                      ],
+                      "conflict_edge": [
+                        6,
+                        7
+                      ],
+                      "coordinate": 6
+                    }
+                  ]
+                },
+                "propagated_masks": [
+                  26,
+                  38,
+                  48,
+                  67,
+                  25,
+                  37,
+                  68,
+                  72,
+                  60,
+                  19,
+                  108
+                ],
+                "z_supports": [
+                  125
+                ]
+              },
+              {
+                "certificate": {
+                  "central": 3,
+                  "central_mask": 67,
+                  "coordinate_components": [
+                    {
+                      "component": [
+                        3,
+                        4,
+                        5,
+                        9
+                      ],
+                      "conflict_edge": [
+                        4,
+                        5
+                      ],
+                      "coordinate": 0
+                    },
+                    {
+                      "component": [
+                        0,
+                        1,
+                        3,
+                        9
+                      ],
+                      "conflict_edge": [
+                        1,
+                        3
+                      ],
+                      "coordinate": 1
+                    },
+                    {
+                      "component": [
+                        3,
+                        6,
+                        7,
+                        10
+                      ],
+                      "conflict_edge": [
+                        6,
+                        7
+                      ],
+                      "coordinate": 6
+                    }
+                  ]
+                },
+                "propagated_masks": [
+                  26,
+                  38,
+                  48,
+                  67,
+                  25,
+                  37,
+                  68,
+                  72,
+                  60,
+                  19,
+                  108
+                ],
+                "z_supports": [
+                  126
+                ]
+              },
+              {
+                "certificate": {
+                  "central": 3,
+                  "central_mask": 67,
+                  "coordinate_components": [
+                    {
+                      "component": [
+                        3,
+                        4,
+                        5,
+                        9
+                      ],
+                      "conflict_edge": [
+                        4,
+                        5
+                      ],
+                      "coordinate": 0
+                    },
+                    {
+                      "component": [
+                        0,
+                        1,
+                        3,
+                        9
+                      ],
+                      "conflict_edge": [
+                        1,
+                        3
+                      ],
+                      "coordinate": 1
+                    },
+                    {
+                      "component": [
+                        3,
+                        6,
+                        7,
+                        10
+                      ],
+                      "conflict_edge": [
+                        6,
+                        7
+                      ],
+                      "coordinate": 6
+                    }
+                  ]
+                },
+                "propagated_masks": [
+                  26,
+                  38,
+                  48,
+                  67,
+                  25,
+                  37,
+                  68,
+                  72,
+                  60,
+                  19,
+                  108
+                ],
+                "z_supports": [
+                  127
+                ]
+              }
+            ],
+            "seed": [
+              5,
+              7,
+              10,
+              11,
+              13,
+              16,
+              18
+            ],
+            "status": "INFEASIBLE",
+            "zmask": 2048
+          }
+        ],
+        "seed": [
+          5,
+          7,
+          10,
+          11,
+          13,
+          16,
+          18
+        ],
+        "seed_mask": 339104,
+        "status": "INFEASIBLE"
+      }
+    ]
+  },
+  "schema": 1,
+  "semantics": {
+    "candidate_nonedges_optional": true,
+    "floating_point_enters_rejection": false,
+    "only_required_edges_enter_coordinate_graphs": true
+  },
+  "source_sha256": {
+    "build_d6_k7_double_pin_conjunction.py": "fa3437bd0b0d9128b00d6f229177d13a8ecc36edfa01adf16db57acc5ae74663",
+    "build_d6_k7_full_pin_increment.py": "ff128fa9bc32c5443998148a697c1d53e26f3c46ac555f9cf8fe7c0743a14744",
+    "d6_k7_full_pin_odd_cycle.py": "592fe0c25db209e9126ab82294f55a707745893c4164982d8a7884b024a6696a"
+  },
+  "status": "COMPLETE"
+}

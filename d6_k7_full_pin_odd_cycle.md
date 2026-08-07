@@ -99,7 +99,7 @@ graphs, bipartite color conflicts, and the final seed quantifier.  It compares
 the complete target record and the 25-to-24 ordered residue update against the
 production report.
 
-## Pre-production commands
+## Production commands and artifacts
 
 Freeze and commit the source first.  Then build and independently verify the
 130-graph double-pin base as documented in
@@ -123,4 +123,16 @@ python3 -m unittest -v \
   test_d6_k7_full_pin_increment.py
 ```
 
-No official increment artifact should be generated before the source commit.
+The official source boundary is commit
+`daac9c54a31e76f1687a457413a349ea25eb4823`.  Bound to the official
+double-pin report and verification above, the incremental build took 0.9071
+seconds and its independent replay took 0.9003 seconds.  The checker rebuilt
+the target seed, 502 eligible covers, three current covers, 105 labeled
+families, and all five full-pin certificates.
+
+```text
+d6_k7_full_pin_increment_report.json
+  1d2c3a315aaaa8e7536c532d86935f528a1c80ca05159977377ca795a61409ab
+d6_k7_full_pin_increment_verification.json
+  cacab17a687a7666824bf8548fa052dd76be477e6a37b3da976999972b9a68cc
+```

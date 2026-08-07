@@ -115,10 +115,10 @@ Its stable JSON SHA-256 is
 ## Relation to the interval campaign
 
 The first two interval-certified K7 graphs, 379078 and 2280137, exposed the
-pattern.  The exact filter rejects 21 of the 22 independently interval-killed
-K7 indices available at this milestone and adds 109 further rejections.  The
-sole interval-only index is 3936176.  Thus the interval result remains useful
-independent corroboration and contributes one additional graph beyond this
+pattern.  The exact filter rejects 21 of the 24 independently interval-killed
+K7 indices at cap 100,000 and adds 109 further rejections.  The interval-only
+indices are 423661, 424226, and 3936176.  Thus the interval result remains
+useful independent corroboration and contributes three graphs beyond this
 algebraic layer when the two verified rejection sets are unioned.
 
 ## Independent verification and trust boundary
@@ -171,13 +171,15 @@ python3 verify_d6_k7_double_pin_conjunction.py \
   --output d6_k7_double_pin_conjunction_verification.json
 ```
 
-The exploratory pre-commit run used while deriving the filter produced the
-hashes below.  The theorem-boundary production run must be repeated after the
-source commit and will have different execution/provenance fields and hashes.
+The official source-bound run used commit
+`daac9c54a31e76f1687a457413a349ea25eb4823`.  Eight-worker production took
+22.8246 seconds; the independent eight-worker replay took 21.3231 seconds and
+checked 155 graphs, 237 K7 seeds, 87,270 eligible covers, 19,716 labeled
+support families, and all 336 local certificates.
 
 ```text
-d6_k7_double_pin_conjunction_report.json (pre-commit exploratory)
-  ea8440ef3446917f1b2516d34746cbb1e4cc977139514aa75734979b60483898
-d6_k7_double_pin_conjunction_verification.json (pre-commit exploratory)
-  9420d77c28a8065bb896a07814bd0095123049428c404dd38240b1ce931d0f76
+d6_k7_double_pin_conjunction_report.json
+  7c90c9a518243de4095f4ec4394bb7b1d22c5889844e90cd7fe4d895f22ac873
+d6_k7_double_pin_conjunction_verification.json
+  890568a80b8363de84997db86ab5271fee13f707544f91145d15f4976512a33b
 ```

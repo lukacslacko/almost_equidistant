@@ -1,0 +1,45 @@
+{
+  "checked": {
+    "K7_seeds": 237,
+    "current_covers": 535,
+    "double_pin_certificates": 336,
+    "eligible_covers": 87270,
+    "graphs": 155,
+    "labeled_z_families": 19716,
+    "pre_double_pin_families": 555,
+    "rejected_graphs": 130,
+    "survivors": 25
+  },
+  "claim": "A separate support enumerator, propagation/value checker, and double-pin locator reproduced all 155 records and the exact 130/25 graph partition.",
+  "execution": {
+    "elapsed_seconds": 21.323094667000987,
+    "logical_cpus": 12,
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "workers": 8
+  },
+  "kind": "d6_k7_two_defect_double_pin_seed_conjunction_verification",
+  "ordered_rejected_indices_sha256": "69b470521c9a290a4f2b943be0281806cc3a7c299256877412bdf034da36d906",
+  "ordered_survivor_indices_sha256": "16872c94cce864ca17689714c05cb3a49e2cf6cb658d808c270d047c2794ac04",
+  "report": {
+    "path": "d6_k7_double_pin_conjunction_report.json",
+    "sha256": "7c90c9a518243de4095f4ec4394bb7b1d22c5889844e90cd7fe4d895f22ac873"
+  },
+  "root_sha256": {
+    "d6_current_residue_manifest_v5.json": "164b2a12813845ef1f6d6ca5e3713ed1d2edac4be58563c1648a39ff8580c0b5",
+    "d6_current_residue_manifest_v5_verification.json": "e871431b8b28fc04f0e58922ff3a6386054d15d37de5c9f9e67601ede47e4b46",
+    "d6_k7_positive_dual_full_certificates.jsonl.gz": "3adaa7e562dfb9241f205e3e7d2384805dbe7296f9677d76f2f23ce913a4ce7f",
+    "d6_k7_rankone_tetrad_full_certificates.jsonl.gz": "f719dbb6492fc20fb3103cb79079567aa2cad163835f97e750412c3d27897c50",
+    "d6_k7_rankone_tetrad_full_decisions.tsv.gz": "2552ce91f52727d9beda60d99d534c1d5a0be3f93686ab321f223d8e0d11dfc1"
+  },
+  "schema": 1,
+  "source_sha256": {
+    "d6_k7_rank_reference.py": "e94e2fd92ad03a921b26440827b8365cb4740d9a58399379860f7106fec37db0",
+    "d6_k7_special_h_reference.py": "e649633d7262941c9c4608ea694ae0a5d6f29c146d47060c3dae71a036a9d190",
+    "verify_d6_k7_double_pin_conjunction.py": "41026998b065ae0600bd0ba2209f886bec465a2b9a59153114ccb34b4107f49a",
+    "verify_d6_k7_sparse_value_full.py": "6c0012e66d0b89e280f3cebed7a61f24cc1c6e128e726663a7b246e7da0edbbc",
+    "verify_d6_k7_support_full.py": "c6b9dce47618bd9a4247eb5a9f093682265447729e1868c4dc0677a24f51c628"
+  },
+  "status": "PASS"
+}
