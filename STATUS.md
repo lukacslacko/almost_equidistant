@@ -1320,3 +1320,37 @@ investigated next.
   frontier empties at level m, we get an UNCONDITIONAL f(6) <= m-1 on
   fully in-house-verified components. Phase 1 (extensions) is running:
   518k distinct level-20 candidates so far.
+
+## 2026-08-07 17:22 append — INDEPENDENT RE-VERIFICATION OF THE FRONTIER COMPUTATION: EXACT AGREEMENT END TO END
+
+The Python re-implementation (verify_frontier_indep.py — own subgraph
+tests, isomorphism WITHOUT canonical labeling (profile buckets +
+backtracking), own all-completions branching, and a deliberately
+different greedy completion rule: last-pair-first vs first-pair-first)
+has completed its full 19->20->21 run over residue644.txt:
+
+```text
+level 20:  223,847 with multiplicity   117,290 distinct     (C: same)
+           greedy kills 117,256        34 survive           (C: same)
+           full escalation             34 true frontier     (C: same)
+level 21:   22,617 with multiplicity     3,602 distinct     (C: same)
+           greedy kills all 3,602      0 survive            (C: same)
+```
+
+Every stage count matches the C pipeline exactly. The frontier argument
+behind f(6) <= 20 (conditional) and the 34-graph reduction is now
+double-implemented end to end. A set-level containment check of the 34
+across the two implementations is running as a final formality.
+
+Also measured (reproduction tier, |Z|<=3 pure-cover only, math not yet
+independently hand-verified): sharpening the bounded-cover cap from 7 to
+3 on the twelve-outside K7 case adds 5,144 exact kills (3,685,523 union
+on the K7 class; residue 115,587 -> 110,445). The bulk of the
+second-generation conditional layer therefore lives in the rank/CSP
+tests on feasible small covers, not in the cover cardinality — that
+machinery (documented in d6_theory_filters.md) is the next
+reimplementation target for shrinking the 113,598-graph conditional
+tier.
+
+In-flight: 34-graph certification campaign (stage 1); in-house frontier
+phase 1 (extensions of the 114,242 unresolved-by-in-house graphs).

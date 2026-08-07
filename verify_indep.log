@@ -1,0 +1,6 @@
+control14: 250339 ext, 3969 distinct (expect 3969)
+control14: corpus15 members missing from extension set: 0 (expect 0); counts equal: True
+control14: PASS
+control15: 962217 ext, 18917 distinct (expect 18917)
+control15: PASS
+run: residue 644 distinct classes

@@ -1,0 +1,20 @@
+run: residue 644 distinct classes
+    dedup 20000/223847 -> 11053 classes (max bucket 5)
+    dedup 40000/223847 -> 26156 classes (max bucket 8)
+    dedup 60000/223847 -> 38895 classes (max bucket 12)
+    dedup 80000/223847 -> 49431 classes (max bucket 12)
+    dedup 100000/223847 -> 58871 classes (max bucket 12)
+    dedup 120000/223847 -> 69709 classes (max bucket 13)
+    dedup 140000/223847 -> 80904 classes (max bucket 13)
+    dedup 160000/223847 -> 90190 classes (max bucket 13)
+    dedup 180000/223847 -> 99213 classes (max bucket 13)
+    dedup 200000/223847 -> 109630 classes (max bucket 13)
+    dedup 220000/223847 -> 115931 classes (max bucket 13)
+  level 20: 223847 with multiplicity, 117290 distinct
+  greedy(last-first): 117256 killed, 34 survive
+  full escalation: 34 true frontier
+    dedup 20000/22617 -> 3598 classes (max bucket 4)
+  level 21: 22617 with multiplicity, 3602 distinct
+  greedy(last-first): 3602 killed, 0 survive
+  full escalation: 0 true frontier
+RESULT: level20 distinct 117290 truefrontier 34; level21 distinct 3602 truefrontier 0

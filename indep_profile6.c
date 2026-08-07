@@ -37,7 +37,7 @@
 #include <string.h>
 
 typedef uint32_t u32;
-#define MAXV 19
+#define MAXV 24
 
 static inline int POP(u32 x){ return __builtin_popcount(x); }
 static inline int CTZ(u32 x){ return __builtin_ctz(x); }
@@ -211,6 +211,8 @@ static int cover_rec(u32 covered, int used, int best){
     }
     return res;
 }
+static int zcap = 7;      /* --zcap3: sharpened |Z|<=3 bound (theory doc,
+                             n=19 twelve-outside case only) */
 static int mincover(void){
     return cover_rec(0, 0, 8);
 }
@@ -278,6 +280,7 @@ static int rule_cover_seed(int *tight_reject){
     *tight_reject = 0;
     if (mc > 7) return 1;
     if (mc == 7 && !any_cover7_matches()) *tight_reject = 1;
+    if (zcap == 3 && nout == 12 && mc > 3) return 1;
     return 0;
 }
 /* ---------------- rule 6: K6 two-light-ray CSP ---------------- */
@@ -414,8 +417,13 @@ int main(int argc, char **argv){
     if (!f){ perror(argv[1]); return 1; }
     FILE *vf = fopen(argv[2], "wb");
     if (!vf){ perror(argv[2]); return 1; }
-    long start = argc > 3 ? atol(argv[3]) : 0;
-    long end = argc > 4 ? atol(argv[4]) : -1;
+    long start = 0, end = -1;
+    {
+        int ai = 3;
+        if (ai < argc && !strcmp(argv[ai], "--zcap3")){ zcap = 3; ai++; }
+        if (ai < argc) start = atol(argv[ai++]);
+        if (ai < argc) end = atol(argv[ai++]);
+    }
 
     long tally[8] = {0};   /* link, refl, csp, cover, tight, lightray */
     long total = 0, cl7 = 0, cl6 = 0, any7 = 0, any6 = 0, anyall = 0;
@@ -426,7 +434,7 @@ int main(int argc, char **argv){
         if (end >= 0 && line >= end) break;
         char *p = buf;
         N = (int)strtol(p, &p, 10);
-        if (N != 19){ fprintf(stderr, "bad n at line %ld\n", line); return 1; }
+        if (N < 8 || N > MAXV){ fprintf(stderr, "bad n at line %ld\n", line); return 1; }
         for (int i = 0; i < N; i++) A[i] = (u32)strtoul(p, &p, 10);
         FULL = (1u << N) - 1;
         /* validate: symmetric, loopless, alpha<=2 */
