@@ -1,0 +1,23 @@
+{
+  "historical_weak_calibration_config_sha256": "6f2d86c247bb39e5badda1aa7e3df71e8bab4c415958f247d21ccc22a1521173",
+  "corrected_full_run_status": "NOT_LAUNCHED_PENDING_COMMITTED_SOURCE_BOUNDARY",
+  "corrected_benchmark_config_sha256": "3249d4d3a4afd60ddeb921de9a4bf1402e04cc7ee2a673d10dc28f22b44bd311",
+  "corrected_producer_source_sha256": "cd57a6193fba1a9b05b88be566598413bd7ff79a13cdc7b5530df90a14293627",
+  "chip": "Apple M2 Pro",
+  "logical_cpu_count": 12,
+  "machine": "arm64",
+  "memory_gb": 16,
+  "model_identifier": "Mac14,10",
+  "numpy_version": "2.4.3",
+  "os": "macOS 14.5 (23F79)",
+  "performance_efficiency_cores": "8 performance + 4 efficiency",
+  "proof_status": "HEURISTIC_ONLY_NO_REJECTIONS",
+  "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1]",
+  "python_executable": "/Users/lukacs/claude/opengauss/venv/bin/python3",
+  "schema": "d6-18-gpu-mps-environment-v1",
+  "scipy_version": "1.17.1",
+  "torch_git_version": "7269437d655783a26cba32aa88195b741ff496aa",
+  "torch_mps_available_outside_sandbox": true,
+  "torch_mps_built": true,
+  "torch_version": "2.12.1"
+}

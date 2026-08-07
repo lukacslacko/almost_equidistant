@@ -1,0 +1,291 @@
+{
+  "config": {
+    "chunk_size": 64,
+    "collision_distance": 0.12,
+    "collision_handling": "soft exp(-distance_squared/collision_distance^2) repulsion plus separate distinct score",
+    "collision_weight": 0.05,
+    "control_seeding": "disabled for unseeded recovery calibration",
+    "corpus_sha256": "9d08f9ec579434c9601ad3908bd2ae51f10e09e9d06a7f38fbc25794a634b732",
+    "corpus_verification_sha256": "50ab5d88441b2869e60a05f3e1485db0b25008c3a816960a20a3bb21c1c4defd",
+    "cpu_refine_max_nfev": 1000,
+    "cpu_refinement": "top-k distinct MPS endpoints per graph; SciPy float64 LM with exact analytic Jacobian and a zero-outside-radius distance collision hinge",
+    "cpu_workers": 2,
+    "device": "mps",
+    "dimension": 6,
+    "distinctness_threshold": 0.01,
+    "dtype": "torch.float32 on accelerator; candidate refinement uses NumPy/SciPy float64",
+    "gauge": "lexicographically first K7 when present, otherwise first K6; K6 frame is the first six vertices of the fixed regular K7 simplex",
+    "gpu_candidate_rms": 0.0003,
+    "graph_count": 12712,
+    "graph_seed_formula": "(seedbase*1000003 + corpus_index*7919 + wave*104729) mod 2^64",
+    "initialization": "each outside vertex sampled exactly on the common unit sphere of its fixed-simplex neighbours",
+    "initialization_method": "seed_sphere",
+    "initialization_scale": 0.7,
+    "learning_rate": 0.03,
+    "lm_candidate_rms": 1e-08,
+    "lm_collision_distance": 0.05,
+    "lm_collision_weight": 100.0,
+    "lm_top_k": 16,
+    "optimizer": "PyTorch Adam with cosine learning-rate decay",
+    "optimizer_steps": 1000,
+    "orchestrator_source_sha256": "cd57a6193fba1a9b05b88be566598413bd7ff79a13cdc7b5530df90a14293627",
+    "restarts_per_wave": 32,
+    "schema": "d6-18-gpu-mps-screen-config-v1",
+    "seed_standard_controls": false,
+    "seedbase": 600180777,
+    "semantics": "HEURISTIC_ONLY; no numerical rejection or realizability conclusion",
+    "total_restarts": 128
+  },
+  "config_sha256": "69e811e6daf986e1bdfe693c023ae92309baa2a52e20cb8eaee77f084ef462fc",
+  "created_utc": "2026-08-07T10:57:24.544131Z",
+  "gauge_distribution": {
+    "K6": 14,
+    "K7": 0
+  },
+  "gpu_candidate_indices": [],
+  "graph_start_steps_per_second": 115104.50149490386,
+  "graph_starts": 1792,
+  "graph_starts_per_second": 115.10450149490387,
+  "graphs": 14,
+  "indices": [
+    352,
+    459,
+    571,
+    3334,
+    5391,
+    5429,
+    8702,
+    8879,
+    10261,
+    10273,
+    10277,
+    10585,
+    10887,
+    11079
+  ],
+  "lm_candidate_count_by_gauge": {
+    "K6": 9,
+    "K7": 0
+  },
+  "lm_candidate_indices": [
+    352,
+    459,
+    571,
+    5391,
+    8879,
+    10261,
+    10277,
+    10585,
+    11079
+  ],
+  "lm_profile": {
+    "attempts": 224,
+    "method": "SciPy float64 least_squares(method=lm), analytic Jacobian, and short-distance collision hinge",
+    "top_k": 16,
+    "wall_seconds": 5.438601750000089,
+    "workers": 2
+  },
+  "machine": {
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]"
+  },
+  "mathematical_realizability_conclusions": 0,
+  "mathematical_rejections": 0,
+  "projected_full_wall_seconds": 14136.163041999185,
+  "proof_status": "HEURISTIC_ONLY_NO_REJECTIONS",
+  "schema": "d6-18-gpu-mps-benchmark-v1",
+  "standard_control_initial_pass": null,
+  "standard_control_lm_prefix_recovery": {
+    "1": 4,
+    "16": 9,
+    "2": 5,
+    "4": 7,
+    "8": 8
+  },
+  "standard_control_lm_recovered": 9,
+  "standard_control_lm_recovery": [
+    {
+      "best_distinct_edge_rms": 0.03359747305512428,
+      "best_distinct_lm_edge_rms": 1.2927159772738475e-16,
+      "best_distinct_lm_input_rank": 6,
+      "best_distinct_lm_minimum_distance": 0.4999999999999998,
+      "cpu_lm_attempts": 16,
+      "first_lm_candidate_input_rank": 6,
+      "index": 352,
+      "lm_candidate": 1
+    },
+    {
+      "best_distinct_edge_rms": 0.010728267021477222,
+      "best_distinct_lm_edge_rms": 1.0554981755547405e-16,
+      "best_distinct_lm_input_rank": 2,
+      "best_distinct_lm_minimum_distance": 0.5,
+      "cpu_lm_attempts": 16,
+      "first_lm_candidate_input_rank": 2,
+      "index": 459,
+      "lm_candidate": 1
+    },
+    {
+      "best_distinct_edge_rms": 0.006200300995260477,
+      "best_distinct_lm_edge_rms": 1.2412670766236366e-16,
+      "best_distinct_lm_input_rank": 1,
+      "best_distinct_lm_minimum_distance": 0.49999999999999994,
+      "cpu_lm_attempts": 16,
+      "first_lm_candidate_input_rank": 1,
+      "index": 571,
+      "lm_candidate": 1
+    },
+    {
+      "best_distinct_edge_rms": 0.012195583432912827,
+      "best_distinct_lm_edge_rms": 0.0034715731005791534,
+      "best_distinct_lm_input_rank": 1,
+      "best_distinct_lm_minimum_distance": 0.04974784727441131,
+      "cpu_lm_attempts": 16,
+      "first_lm_candidate_input_rank": -1,
+      "index": 3334,
+      "lm_candidate": 0
+    },
+    {
+      "best_distinct_edge_rms": 0.010969715192914009,
+      "best_distinct_lm_edge_rms": 1.3018518929051675e-16,
+      "best_distinct_lm_input_rank": 3,
+      "best_distinct_lm_minimum_distance": 0.5,
+      "cpu_lm_attempts": 16,
+      "first_lm_candidate_input_rank": 3,
+      "index": 5391,
+      "lm_candidate": 1
+    },
+    {
+      "best_distinct_edge_rms": 0.007703395560383797,
+      "best_distinct_lm_edge_rms": 0.0015657383302112241,
+      "best_distinct_lm_input_rank": 2,
+      "best_distinct_lm_minimum_distance": 0.04995244208951048,
+      "cpu_lm_attempts": 16,
+      "first_lm_candidate_input_rank": -1,
+      "index": 5429,
+      "lm_candidate": 0
+    },
+    {
+      "best_distinct_edge_rms": 0.01081050094217062,
+      "best_distinct_lm_edge_rms": 0.004107019441758437,
+      "best_distinct_lm_input_rank": 2,
+      "best_distinct_lm_minimum_distance": 0.04964083190412511,
+      "cpu_lm_attempts": 16,
+      "first_lm_candidate_input_rank": -1,
+      "index": 8702,
+      "lm_candidate": 0
+    },
+    {
+      "best_distinct_edge_rms": 0.0007164432317949831,
+      "best_distinct_lm_edge_rms": 1.1049236004548198e-16,
+      "best_distinct_lm_input_rank": 1,
+      "best_distinct_lm_minimum_distance": 0.5000000000000001,
+      "cpu_lm_attempts": 16,
+      "first_lm_candidate_input_rank": 1,
+      "index": 8879,
+      "lm_candidate": 1
+    },
+    {
+      "best_distinct_edge_rms": 0.020239301025867462,
+      "best_distinct_lm_edge_rms": 1.2568359166482418e-16,
+      "best_distinct_lm_input_rank": 3,
+      "best_distinct_lm_minimum_distance": 0.4999999999999998,
+      "cpu_lm_attempts": 16,
+      "first_lm_candidate_input_rank": 3,
+      "index": 10261,
+      "lm_candidate": 1
+    },
+    {
+      "best_distinct_edge_rms": 0.026807162910699844,
+      "best_distinct_lm_edge_rms": 0.001552470207036936,
+      "best_distinct_lm_input_rank": 1,
+      "best_distinct_lm_minimum_distance": 0.049951314474212215,
+      "cpu_lm_attempts": 16,
+      "first_lm_candidate_input_rank": -1,
+      "index": 10273,
+      "lm_candidate": 0
+    },
+    {
+      "best_distinct_edge_rms": 0.009077608585357666,
+      "best_distinct_lm_edge_rms": 1.266321605305918e-16,
+      "best_distinct_lm_input_rank": 13,
+      "best_distinct_lm_minimum_distance": 0.4927959958312379,
+      "cpu_lm_attempts": 16,
+      "first_lm_candidate_input_rank": 13,
+      "index": 10277,
+      "lm_candidate": 1
+    },
+    {
+      "best_distinct_edge_rms": 0.010849395766854286,
+      "best_distinct_lm_edge_rms": 1.2881237212776707e-16,
+      "best_distinct_lm_input_rank": 1,
+      "best_distinct_lm_minimum_distance": 0.4999999999999999,
+      "cpu_lm_attempts": 16,
+      "first_lm_candidate_input_rank": 1,
+      "index": 10585,
+      "lm_candidate": 1
+    },
+    {
+      "best_distinct_edge_rms": 0.010274378582835197,
+      "best_distinct_lm_edge_rms": 0.0029741565818730527,
+      "best_distinct_lm_input_rank": 1,
+      "best_distinct_lm_minimum_distance": 0.04981739175666368,
+      "cpu_lm_attempts": 16,
+      "first_lm_candidate_input_rank": -1,
+      "index": 10887,
+      "lm_candidate": 0
+    },
+    {
+      "best_distinct_edge_rms": 0.0061440798453986645,
+      "best_distinct_lm_edge_rms": 1.0939352514552838e-16,
+      "best_distinct_lm_input_rank": 3,
+      "best_distinct_lm_minimum_distance": 0.5048603749749484,
+      "cpu_lm_attempts": 16,
+      "first_lm_candidate_input_rank": 1,
+      "index": 11079,
+      "lm_candidate": 1
+    }
+  ],
+  "wall_seconds": 15.568461499999103,
+  "wave_profiles": [
+    {
+      "device": "mps",
+      "dtype": "torch.float32",
+      "graph_start_steps": 448000,
+      "graph_start_steps_per_second": 186947.51963889078,
+      "restarts": 32,
+      "steps": 1000,
+      "wall_seconds": 2.39639445800276,
+      "wave": 0
+    },
+    {
+      "device": "mps",
+      "dtype": "torch.float32",
+      "graph_start_steps": 448000,
+      "graph_start_steps_per_second": 217824.59560442364,
+      "restarts": 32,
+      "steps": 1000,
+      "wall_seconds": 2.0567007080026087,
+      "wave": 1
+    },
+    {
+      "device": "mps",
+      "dtype": "torch.float32",
+      "graph_start_steps": 448000,
+      "graph_start_steps_per_second": 234893.55566492132,
+      "restarts": 32,
+      "steps": 1000,
+      "wall_seconds": 1.9072468750018743,
+      "wave": 2
+    },
+    {
+      "device": "mps",
+      "dtype": "torch.float32",
+      "graph_start_steps": 448000,
+      "graph_start_steps_per_second": 238491.10189052625,
+      "restarts": 32,
+      "steps": 1000,
+      "wall_seconds": 1.8784767920005834,
+      "wave": 3
+    }
+  ]
+}
