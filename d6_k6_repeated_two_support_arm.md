@@ -205,5 +205,29 @@ missing-anchor-edge no-fire case, fixed marginal witness `552851`, the frozen
 634-graph input boundary, all 32 positive-control K6 seeds, and independent
 import/transcription boundaries.
 
+The official source-bound run used commit
+`8ba9e4621eb246e8af7399dd18ba2039762f4ac4`.  Production with eight workers
+completed in 10.4474 seconds; the independent eight-worker replay completed
+in 34.1685 seconds.  It recomputed all 634 graph decisions and all 32 K6
+seeds of the realizable 18-point control and returned `PASS`.
+
+```text
+d6_k6_repeated_two_support_arm_report.json
+  ea8d9438d062b92857a1057b950e76b8ae08bbe1bf97b4327130fd4058171ebe
+
+d6_k6_repeated_two_support_arm_certificates.json
+  fbaebe286acce8b0c3603f89f05a5316010b51dceabfeface7e73ff55ce90ed2
+
+d6_k6_repeated_two_support_arm_certificates.json.gz
+  604ec86b943ec909d177acc1fd36ef623c3e3bff67b4a8a5e5ffa601fc202af5
+
+d6_k6_repeated_two_support_arm_verification.json
+  3abf48bab092671a9dff03c2dc47c0063a75515cd219e1d5a4bfa9a5fa797b5b
+```
+
+Git stores the deterministic `gzip -n` archive rather than the 3.7 MiB raw
+JSON.  Decompress it to the raw filename before rerunning the independent
+verifier; the report and verifier bind the raw hash above.
+
 Survival is filter non-rejection, not realization.  This layer does not by
 itself settle the K6 class or dimension six.

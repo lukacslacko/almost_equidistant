@@ -45,6 +45,7 @@ d6_18_numerical_checkpoints/
 d6_18_gpu_mps_checkpoints/
 d6_k6_tight_hall_support_certificates.json
 d6_k6_singleton_fan_certificates.json
+d6_k6_repeated_two_support_arm_certificates.json
 finish17*.log
 enum6_run.log
 ckernel5dbg.dll
