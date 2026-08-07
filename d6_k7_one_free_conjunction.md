@@ -103,5 +103,35 @@ python3 -m unittest -v \
   test_d6_k7_one_free_conjunction.py
 ```
 
-No conjunction artifact should be generated before the builder, independent
-verifier, tests, and this document are committed.
+The official source boundary is commit
+`6003d5999d940409c217ccd12cc2f439f9a89635`.  Nine-worker production took
+8.4741 seconds and the independent nine-worker replay took 9.0289 seconds.
+The singleton pipeline has zero graph rejections.  The correlated and
+combined pipelines both reject exactly
+
+```text
+226183 3624785
+```
+
+and leave 22 exact-pinning survivors with stable hash
+
+```text
+cce80d8065f5c97c15091343128f9626447b13e7bd6e7638b59c9dcef5296cf6
+```
+
+The independent verifier reconstructed 24 graphs, 65 K7 seeds, 25,809
+eligible covers, 135 current covers, 2,272 labeled support families, 182
+pre-pinning families, 156 pre-new families, and all four correlated
+certificates.  All 13 kernel and artifact tests pass on the official files.
+
+```text
+d6_k7_one_free_conjunction_report.json
+  181f63015d373fb69f37f4f390cdd8ad50bc32b5a2d97a36fd0bac876d0877a2
+d6_k7_one_free_conjunction_verification.json
+  ebaacfe663728eff427c9ba2280fc4261d26dfe10fad21e1a00982b9d31ac062
+```
+
+The cap-100,000 interval certificates independently reject 423661, 424226,
+and 3936176 from this 22-list.  Their set union therefore leaves 19 K7
+graphs.  A combined-residue manifest must bind that cross-method union before
+it is used as a theorem-level campaign input.
