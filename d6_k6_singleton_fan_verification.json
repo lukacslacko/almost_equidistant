@@ -1,0 +1,34 @@
+{
+  "certificates": {
+    "path": "d6_k6_singleton_fan_certificates.json",
+    "sha256": "b2fbf39d443679fee52d4984f3a54e4302acf416760087ed75e0953eb384d7bf"
+  },
+  "checks": {
+    "all_graph_decisions": true,
+    "certificate_Z0_coverage": true,
+    "import_independence": true,
+    "independent_fan_index_transcription": true,
+    "positive_18_control": true
+  },
+  "graphs_recomputed": 649,
+  "graphs_rejected": 15,
+  "graphs_surviving": 634,
+  "ordered_residue_indices_sha256": "bafeef8b2f16419bbbfd1dbd8756081be78d14d0dc4187a1d954738a7edb9d88",
+  "positive_18_control": {
+    "K6_seeds": 32,
+    "passed": true
+  },
+  "rejected_indices_sha256": "84745f596dd53b90ebc83d245530491ad6ba1c9f94bcda7141e4d55d4d885e5e",
+  "report": {
+    "path": "d6_k6_singleton_fan_report.json",
+    "sha256": "bb11b82e8783108e45ec97a8e92957037bf219dd475b71fc18faee50318a4e2d"
+  },
+  "runtime": {
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "wall_seconds": 46.526233124997816,
+    "workers": 11
+  },
+  "schema": "d6-k6-singleton-fan-verification-v1",
+  "status": "PASS"
+}
