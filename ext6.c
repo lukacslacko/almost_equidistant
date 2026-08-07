@@ -593,9 +593,99 @@ static int mode_frontier(const char *extfn, const char *resfn){
     return 0;
 }
 
+/* escalate mode: like frontier, but enumerates ALL maximal TF completions
+ * of every deletion (branching: first addable pair either included, or
+ * excluded by adding a blocking cherry through each possible centre).
+ * A graph survives only if every completion of every deletion is in the
+ * residue set. */
+static Set esc_S;
+static int esc_all_in(u32 *H, int n, long *budget){
+    /* recursively complete H; return 0 as soon as some completion's
+       complement is outside the residue set */
+    if (--(*budget) < 0){ fprintf(stderr, "escalate budget exceeded\n"); exit(2); }
+    int fu = -1, fv = -1;
+    for (int u = 0; u < n && fu < 0; u++)
+        for (int v = u + 1; v < n; v++)
+            if (!((H[u] >> v) & 1) && !(H[u] & H[v])){ fu = u; fv = v; break; }
+    if (fu < 0){
+        u32 fulln = (1u << n) - 1;
+        G c3, cc;
+        c3.n = n;
+        for (int i = 0; i < n; i++) c3.a[i] = fulln & ~H[i] & ~(1u << i);
+        canon_graph(&c3, &cc);
+        return set_has(&esc_S, &cc);
+    }
+    u32 H2[MAXV];
+    memcpy(H2, H, n * sizeof(u32));
+    H2[fu] |= 1u << fv; H2[fv] |= 1u << fu;
+    if (!esc_all_in(H2, n, budget)) return 0;
+    for (int z = 0; z < n; z++){
+        if (z == fu || z == fv) continue;
+        memcpy(H2, H, n * sizeof(u32));
+        int good = 1;
+        int pairs[2][2] = {{fu, z}, {fv, z}};
+        for (int pi = 0; pi < 2 && good; pi++){
+            int x = pairs[pi][0], y = pairs[pi][1];
+            if ((H2[x] >> y) & 1) continue;
+            if (H2[x] & H2[y]){ good = 0; break; }
+            H2[x] |= 1u << y; H2[y] |= 1u << x;
+        }
+        if (good && !esc_all_in(H2, n, budget)) return 0;
+    }
+    return 1;
+}
+static int mode_escalate(const char *extfn, const char *resfn){
+    FILE *rf = fopen(resfn, "r");
+    if (!rf){ perror(resfn); return 1; }
+    set_init(&esc_S, 1 << 18);
+    G g, c;
+    long rn = 0;
+    int resn = -1;
+    while (read_graph(rf, &g)){
+        sanity_graph(&g, rn++, "residue");
+        if (resn < 0) resn = g.n;
+        canon_graph(&g, &c);
+        set_insert(&esc_S, &c);
+    }
+    fclose(rf);
+    fprintf(stderr, "escalate: residue %ld graphs (%zu canon)\n", rn, esc_S.count);
+    FILE *ef = fopen(extfn, "r");
+    if (!ef){ perror(extfn); return 1; }
+    long line = 0, killed = 0, survive = 0;
+    while (read_graph(ef, &g)){
+        sanity_graph(&g, line, "esc");
+        int dead = 0;
+        for (int u = 0; u < g.n && !dead; u++){
+            G d; d.n = g.n - 1;
+            int map[MAXV], k = 0;
+            for (int i = 0; i < g.n; i++) if (i != u) map[i] = k++;
+            for (int i = 0; i < d.n; i++) d.a[i] = 0;
+            for (int i = 0; i < g.n; i++){
+                if (i == u) continue;
+                for (int j = 0; j < g.n; j++){
+                    if (j == u || !((g.a[i] >> j) & 1)) continue;
+                    d.a[map[i]] |= 1u << map[j];
+                }
+            }
+            u32 fulld = (1u << d.n) - 1;
+            u32 H[MAXV];
+            for (int i = 0; i < d.n; i++) H[i] = fulld & ~d.a[i] & ~(1u << i);
+            long budget = 5000000;
+            if (!esc_all_in(H, d.n, &budget)) dead = 1;
+        }
+        if (dead){ killed++; printf("KILLED %ld\n", line); }
+        else { survive++; printf("SURVIVES %ld ", line); print_graph(stdout, &g); }
+        line++;
+    }
+    fclose(ef);
+    fprintf(stderr, "escalate: %ld graphs, %ld killed, %ld survive\n",
+            line, killed, survive);
+    return 0;
+}
+
 int main(int argc, char **argv){
     if (argc < 3){
-        fprintf(stderr, "usage: ext6 canontest|canon|extend|frontier ...\n");
+        fprintf(stderr, "usage: ext6 canontest|canon|extend|frontier|escalate ...\n");
         return 1;
     }
     if (!strcmp(argv[1], "canontest"))
@@ -607,6 +697,10 @@ int main(int argc, char **argv){
     if (!strcmp(argv[1], "frontier")){
         if (argc < 4){ fprintf(stderr, "frontier <extfile> <resfile>\n"); return 1; }
         return mode_frontier(argv[2], argv[3]);
+    }
+    if (!strcmp(argv[1], "escalate")){
+        if (argc < 4){ fprintf(stderr, "escalate <extfile> <resfile>\n"); return 1; }
+        return mode_escalate(argv[2], argv[3]);
     }
     fprintf(stderr, "unknown mode %s\n", argv[1]);
     return 1;
