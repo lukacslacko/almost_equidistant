@@ -54,3 +54,13 @@ contract_*.json
 scan*.log
 probe_arc*.log
 dump_narrow.log
+ext20_raw.txt
+ext21_raw.txt
+frontier20.txt
+ext15.txt
+ext15s.txt
+canon15.txt
+canon15s.txt
+ext16.txt
+prov15.txt
+prov20.txt

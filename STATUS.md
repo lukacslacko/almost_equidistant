@@ -1105,3 +1105,81 @@ candidates at level 27).
    of the enumeration to be measured first.
 
 Next block: extension-enumerator control results.
+
+## 2026-08-07 16:18 append — FRONTIER RESULT: f(6) <= 20 modulo the stated ledger; f(6) <= 19 reduces to 34 graphs
+
+The extension/frontier computation announced at 16:02 is built, verified
+against two independent controls, and run to completion. Wall time of the
+entire computation: under a minute.
+
+**The extension theorem** (proved by hand today, implemented in ext6.c):
+if C is a level-(n+1) candidate (complement maximal triangle-free, no K_8,
+no K_{1,3,3,3}) whose deletion at a vertex w edge-contains a level-n
+candidate R, then C is determined by N = the non-neighbourhood of w: the
+complement edges of R inside N flip to unit edges (D = H0[N] exactly — H
+triangle-free forces D >= H0[N], maximality of comp(C) forces D <= N x N
+pairs, and H0 triangle-free kills every within-V witness), w is adjacent
+to exactly V \ N, |N| <= 7 (N becomes a clique; K_8-free), and N must
+dominate V \ N in H0 (part of maximality). Enumerating subsets N with
+direct validity re-checks (complement TF+maximal verified from scratch,
+K_8, K_{1,3,3,3}) is therefore a COMPLETE enumeration of all level-(n+1)
+candidates edge-containing a given level-n set at some deletion.
+
+**Controls (both PASS):**
+- extensions(n=14 corpus, 1052 graphs) = 3,969 distinct-up-to-iso graphs,
+  and canonical SET EQUALITY with the independently generated
+  triangleramsey+filter n=15 corpus (ext15.log).
+- extensions(n=15 corpus) = 18,917 distinct — exactly the documented
+  n=16 pool count (ext16.log).
+- canonical-form self-test: invariance under random relabelings over both
+  corpora (canontest; mini-nauty with exact signature refinement, trace
+  pruning, and verified-automorphism orbit pruning; worst case 1,561
+  search nodes).
+
+**The run** (all artifacts committed):
+- residue644.txt: the codex v6 combined residue (19 K7 + 625 K6-only),
+  extracted from d6_current_residue_manifest_v6.json with every adjacency
+  verified byte-identical to aeq_d6_n19.txt at its claimed index
+  (extract_residue_v6.py).
+- 19 -> 20: extensions of the 644 = 223,847 with multiplicity, **117,290
+  distinct** level-20 candidates. Greedy re-completion of every one of
+  their 20 single-vertex deletions against the residue kills **117,256**
+  (a deletion re-completes to a certified level-19 graph). 34 survive.
+- Escalation (escalate_frontier.py): for each of the 34, enumerate ALL
+  maximal TF completions of every deletion (branching: first addable pair
+  in / blocked-by-cherry; deduped) — every completion of every deletion
+  of all 34 lands inside the 644 residue. **The level-20 true frontier is
+  exactly these 34 graphs** (frontier20_true.txt). Their deletions have
+  essentially unique completions (20-24 per graph).
+- 20 -> 21: extensions of the 34 = **3,602 distinct** level-21
+  candidates; greedy re-completion against the 34-set kills **all
+  3,602**. Kill soundness at this level: a re-completed 20-vertex
+  candidate outside the true frontier violates a NECESSARY condition for
+  realizability (all its own deletion-completions inside the certified
+  ledger's complement — and extensions(residue) provably contains every
+  candidate satisfying that condition, by the same extension theorem).
+  **The level-21 frontier is empty.**
+
+**Consequences, with the trust base stated exactly:**
+1. **f(6) <= 20**: no 21-point almost-equidistant set exists in R^6 —
+   REST ON: (a) completeness of the 3,971,787-graph level-19 corpus
+   (verified against BPSSV and enumaeq6 cross-checks), (b) the certified
+   status of every level-19 candidate outside the 644 residue = our
+   3,055,480 interval certificates PLUS the codex exact-filter kills for
+   the deferred rest (their independent verifiers PASS; OUR independent
+   reimplementation cross-check is still owed and remains queued), (c)
+   the extension theorem + ext6.c implementation (two corpus controls),
+   (d) hereditarity (any m>21-point set contains a 21-point set).
+2. **f(6) <= 19 reduces to certifying 34 explicit 20-vertex graphs**
+   non-realizable (frontier20_true.txt) — the interval engine's next
+   targets. If all 34 die: f(6) <= 19 on the same trust base.
+3. The published bound was 26. This session's provisional improvement is
+   6 (or 7 pending the 34).
+
+Next actions (in order): LM numerical screen of the 34 (any residual ~ 0
+would instead signal f(6) >= 20); independent Python reimplementation of
+the extension+frontier pipeline as a cross-check; ckernel6 certification
+of the 34; then the owed codex-filter cross-check to make the whole chain
+independently verified. DIMENSIONS_1_TO_10.md gets a clearly-marked
+provisional note only — the main table keeps 26 until the trust base is
+fully in-house.
