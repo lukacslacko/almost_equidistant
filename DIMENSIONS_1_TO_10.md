@@ -227,6 +227,24 @@ The known 18-point construction gives `f(6) ≥ 18`.  Since the property is
 hereditary, proving that no 19-point set exists would immediately establish
 `f(6)=18`.
 
+### Provisional upper-bound improvement (2026-08-07): `f(6) ≤ 20`, conditional
+
+[`f6_le_20.pdf`](f6_le_20.pdf) proves `f(6) ≤ 20` **conditional on the
+level-19 certificate ledger** stated there: every one of the 3,971,787
+level-19 candidates outside an explicit 644-graph residue is certified
+non-realizable (3,855,094 by exact graph filters that have been
+independently reimplemented with exact agreement; 2,451 by this
+repository's interval certificates alone; 114,242 by the codex track's
+later exact layers, whose independent reimplementation is still in
+progress — this last class is why the result is labelled conditional and
+the table above still shows 26).  The argument is a frontier/extension
+computation: any 21-point set would force a chain of candidate
+restrictions into the residue, and the complete level-21 frontier over
+the residue is empty.  The same computation reduces `f(6) ≤ 19` to the
+non-realizability of 34 explicit 20-vertex graphs
+([`frontier20_true.txt`](frontier20_true.txt)), currently under interval
+certification.  Computer-assisted, unpublished, not peer-reviewed.
+
 The repository contains a verified corpus of 3,971,787 minimal abstract
 19-vertex candidates and an active certified-realizability campaign.  Partial
 coverage is research progress, but **does not improve the formal upper bound**

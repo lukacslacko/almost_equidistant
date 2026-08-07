@@ -1264,3 +1264,26 @@ obstruction pattern #406): it cannot be certified by the current circle
 pipeline at all and needs the 2-sphere stage or a per-graph argument.
 f(6) <= 19 is blocked on it even if the other 33 die. Being
 investigated next.
+
+## 2026-08-07 17:07 append — result note f6_le_20.pdf; tracker annotated
+
+- Result note **f6_le_20.pdf** written and committed (house conventions:
+  one PDF per result; finished PDFs untouched). Contents: the framework,
+  the ledger with its three-tier provenance (independently-reverified
+  exact filters / our interval certificates / codex later layers with
+  their verifiers, explicitly the conditional tier), the extension
+  parametrization theorem WITH PROOF, the hereditary frontier lemma, the
+  computation with all counts and controls, the result statement, the
+  34-graph reduction for f(6) <= 19, and reproduction commands.
+- DIMENSIONS_1_TO_10.md: provisional, clearly-conditional subsection
+  added under the dimension-6 campaign; the main table deliberately
+  still shows 26 per the tracker's own update rules (no unconditional
+  claim until the 114,242 later-layer-only graphs have an independent
+  kill path).
+- Exact rules applied to the 34 frontier graphs directly (the rules are
+  n-independent): all 34 are K6-only and NONE is rejected by any
+  first-generation rule — they are uniformly the hard class, as
+  expected for survivors-of-survivors. Interval certification continues
+  (campaign in stage 1). Graph 32 (13-regular, K7-free, twenty K6s,
+  zero circle parametrizations) confirmed as needing the 2-sphere
+  placement stage — queued as the next engine work item.

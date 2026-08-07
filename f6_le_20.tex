@@ -1,0 +1,235 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=2.6cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\setlist{itemsep=2pt,topsep=4pt}
+
+\newtheorem*{result}{Result}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newcommand{\R}{\mathbb{R}}
+
+\title{\vspace{-1.2cm}An upper bound $f(6)\le 20$ for almost-equidistant
+sets in $\R^6$,\\ and a reduction of $f(6)\le 19$ to thirty-four graphs\\[4pt]
+\large A computer-assisted frontier argument over a certified level-19 ledger}
+\author{}
+\date{August 7, 2026}
+
+\begin{document}
+\maketitle
+\vspace{-1.4cm}
+
+\section*{Background}
+
+A finite set of points in $\R^d$ is \emph{almost equidistant} if among any
+three of its points, some two are at unit distance. Let $f(d)$ denote the
+largest size of an almost-equidistant set in $\R^d$. Balko, P\'or,
+Scheucher, Swanepoel and Valtr \cite{BPSSV} established
+\[
+  18\;\le\; f(6)\;\le\; 26 ,
+\]
+the lower bound from the Larman--Rogers half-cube with two poles, the upper
+bound from the absence of admissible abstract candidates on $27$ vertices.
+The values $f(4)=12$ and $f(5)=16$ were determined in the accompanying
+notes of this repository. This note proves, subject to the certificate
+ledger stated explicitly below,
+\[
+  f(6)\;\le\;20 ,
+\]
+and reduces $f(6)\le 19$ to the non-realizability of thirty-four explicit
+$20$-vertex graphs, which are under interval certification at the time of
+writing.
+
+\section*{Framework}
+
+For an almost-equidistant set $X\subset\R^6$ with unit-distance graph $G$:
+the complement $H=\overline G$ is triangle-free; $G$ contains no $K_8$
+(at most seven points are pairwise at unit distance in $\R^6$); and $G$
+contains no $K_{1,3,3,3}$ (Lemma~11 of \cite{BPSSV}, even dimensions).
+Deleting unit edges only weakens these constraints, so every $n$-point
+almost-equidistant set yields, after completing $H$ to a maximal
+triangle-free graph, a \emph{level-$n$ candidate}: a graph on $n$ vertices
+whose complement is maximal triangle-free, with no $K_8$ and no
+$K_{1,3,3,3}$, all of whose edges are realized at unit distance by the
+$n$ points. The repository's verified level-19 corpus contains exactly
+$3{,}971{,}787$ such candidates \cite{BPSSV,thisrepo}.
+
+\section*{The level-19 ledger}
+
+Write $\mathcal R$ for the set of $644$ level-19 candidates ($19$
+containing $K_7$, $625$ with clique number six) listed in
+\texttt{residue644.txt}. The ledger assumption is:
+
+\begin{quote}
+\textbf{Ledger.} Every level-19 candidate outside $\mathcal R$ is
+non-realizable by $19$ distinct points in $\R^6$.
+\end{quote}
+
+Provenance of the ledger, in decreasing order of independent scrutiny:
+\begin{enumerate}
+\item $3{,}855{,}094$ candidates are rejected by exact integer graph
+  filters (link bounds via $f(5)=16$, $f(4)=12$, $f(3)=10$ and a circle
+  argument; $K_7$ facet-reflection coincidences; a $K_7$ defect-support
+  CSP; the $K_7$ disjoint-edge bounded-cover rule with its tight-cover
+  matching refinement; a $K_6$ two-light-ray CSP). These rules were
+  developed on the \texttt{codex/dimension6} track, their mathematical
+  derivations were verified by hand, and the entire rule set was
+  \emph{independently reimplemented from the theory document alone}
+  (\texttt{indep\_profile6.c}); the two implementations agree exactly on
+  all nine per-rule corpus statistics, including the residue split
+  $115{,}587$ / $1{,}106$.
+\item $2{,}451$ of the remaining candidates carry interval-arithmetic
+  non-realizability certificates from this repository's certified engine
+  (\texttt{ckernel6.c}, quota + mean-value enclosures, IEEE-754 outward
+  rounding). A further $3{,}053{,}029$ candidates in class~1 carry such
+  certificates as well, redundantly.
+\item $114{,}242$ candidates are rejected only by the later exact layers
+  of the \texttt{codex/dimension6} track (positive-semidefinite
+  $Z$-matrix chains, Hall layers, support/pentad conjunctions, tetrad
+  identities, empty-support budgets, virtual-$K_7$ closure). Each layer
+  ships an independent checker that reconstructs its inputs and replays
+  its certificates (all \textsc{pass}); an independent reimplementation
+  of these layers, rule by rule, is in progress but not complete. This
+  class is the conditional part of the ledger.
+\end{enumerate}
+
+\section*{The extension theorem}
+
+\begin{theorem}[extension parametrization]
+Let $R$ be a level-$n$ candidate with complement $H_0$, and let $C$ be a
+level-$(n{+}1)$ candidate on $V(R)\cup\{w\}$ such that $C-w\supseteq R$
+(edge containment on the same vertex set). Let $N$ be the set of
+non-neighbours of $w$ in $C$. Then
+\[
+C[V(R)] \;=\; R + H_0[N], \qquad N(w) = V(R)\setminus N,
+\]
+where $H_0[N]$ is the set of $H_0$-edges inside $N$; moreover $|N|\le 7$,
+and $N$ dominates $V(R)\setminus N$ in $H_0$.
+\end{theorem}
+
+\begin{proof}
+Write $D$ for the set of edges of $C[V(R)]$ not in $R$; each is an
+$H_0$-edge. Let $H=\overline C$. (i) $D\subseteq N\times N$: for
+$\{u,v\}\in D$, the pair $uv$ is a non-edge of $H$; since $H$ is maximal
+triangle-free, adding it must create a triangle through some common
+$H$-neighbour $z$. No $z\in V(R)$ works: $H-w\subseteq H_0$ and a common
+$H_0$-neighbour of the $H_0$-edge $uv$ would be a triangle in the
+triangle-free $H_0$. Hence $z=w$, i.e.\ $u,v\in N$. (ii)
+$H_0[N]\subseteq D$: an $H_0$-edge inside $N$ surviving in $H$ would form
+a triangle with $w$. Thus $D=H_0[N]$ exactly. $|N|\le 7$ because $N$
+becomes a clique of $C$ (all pairs inside $N$ are $C$-edges after the
+$D$-flips, since $H[N]$ is empty), and $C$ has no $K_8$. Domination is
+the maximality of $H$ at the pairs $wu$, $u\notin N$: a triangle witness
+$z$ must satisfy $z\in N$ and $zu\in H\subseteq H_0$.
+\end{proof}
+
+Conversely, given $R$ and any $N\subseteq V(R)$, the displayed formulas
+define a graph whose candidacy is checked directly (complement
+triangle-free and maximal, no $K_8$, no $K_{1,3,3,3}$). The enumeration
+over all $|N|\le 7$ with these direct checks is therefore a
+\emph{complete} enumeration of the level-$(n{+}1)$ candidates
+edge-containing a given set of level-$n$ candidates at some deletion.
+
+\begin{lemma}[hereditary frontier]
+Assume the Ledger. If an $n$-point almost-equidistant set exists in
+$\R^6$ ($n\ge 20$), then every level-$n$ candidate derived from it has
+the property that for every vertex $u$ and \emph{every} maximal
+triangle-free completion of $\overline{C-u}$, the complementary level-$(n-1)$
+candidate is again derived from an $(n-1)$-point set; for $n-1=19$ this
+forces membership in $\mathcal R$.
+\end{lemma}
+
+\begin{proof}
+If $P$ realizes $C$ (all $C$-edges unit), then $P\setminus u$ realizes
+every candidate obtained from $C-u$ by completion, since completion only
+removes required edges. A certified non-realizable completion is a
+contradiction; by the Ledger every completion at level 19 lies in
+$\mathcal R$.
+\end{proof}
+
+\section*{The computation}
+
+All tools, logs and outputs are in the repository; the enumerator is
+\texttt{ext6.c} (exact canonical forms: signature refinement, invariant
+trace pruning, verified-automorphism orbit pruning; every automorphism
+used for pruning is re-verified to preserve adjacency).
+
+\emph{Controls.} (a) Extensions of the full verified level-14 corpus
+($1{,}052$ graphs) reproduce the independently generated level-15 corpus
+\emph{exactly} as a set of isomorphism classes ($3{,}969$; canonical set
+equality). (b) Extensions of level 15 give $18{,}917$ distinct classes,
+matching the documented level-16 count. (c) Canonical-form invariance
+under random relabelings over both corpora. (d) The complete pipeline was
+re-implemented independently in Python (own subgraph tests, own
+isomorphism decision via profile buckets and backtracking, own completion
+enumeration); it reproduces both control counts exactly, including the
+raw multiplicities $250{,}339$ and $962{,}217$.
+
+\emph{Level 20.} The $644$ residue graphs admit $223{,}847$ valid
+extensions forming $117{,}290$ distinct level-20 candidates. For each,
+every one of its twenty single-vertex deletions was re-completed
+greedily; $117{,}256$ candidates have a deletion whose completion is a
+certified level-19 graph, killing them by the Lemma. For each of the
+remaining $34$, \emph{all} maximal triangle-free completions of all
+deletions were enumerated: every completion lies in $\mathcal R$. The
+level-20 frontier is exactly these $34$ graphs
+(\texttt{frontier20\_true.txt}; all have clique number six and $130$--$140$
+edges against $99$ degrees of freedom).
+
+\emph{Level 21.} The $34$ frontier graphs admit $3{,}602$ distinct
+level-21 extensions. Every single one has a deletion whose greedy
+re-completion falls outside the frontier; since membership in the
+level-20 frontier is (by the Theorem's completeness) a necessary
+condition for a level-20 candidate to be derived from a 20-point set,
+each such completion is underivable, and the level-21 frontier is
+\emph{empty}.
+
+\begin{result}
+Assume the Ledger. Then no $21$-point almost-equidistant set exists in
+$\R^6$; combined with heredity, $f(6)\le 20$. Moreover $f(6)\le 19$ if
+and only if none of the $34$ frontier graphs is realizable by $20$
+distinct points with all listed edges at unit distance.
+\end{result}
+
+A Levenberg--Marquardt screen (500 restarts per graph) puts every one of
+the $34$ far from realizability (best squared-residual $0.22$, typical
+$0.4$--$1.5$, against $10^{-30}$ for realizable controls); their interval
+certification is running. One graph (index 32: a 13-regular, $K_7$-free,
+vertex-degree-uniform candidate with twenty $K_6$'s) requires a
+placement stage not yet implemented in the engine (two-sphere vertices)
+and is flagged explicitly.
+
+\section*{Reproduction}
+
+\begin{verbatim}
+clang -O2 -o ext6 ext6.c
+./ext6 canontest aeq_d6_n14.txt 8       # canonical-form self-test
+./ext6 extend aeq_d6_n14.txt -          # control: 3,969 classes = n15 corpus
+./ext6 extend aeq_d6_n15.txt -          # control: 18,917 classes
+python extract_residue_v6.py            # residue644.txt, verified vs corpus
+./ext6 extend residue644.txt - prov20.txt > ext20_raw.txt
+./ext6 frontier ext20_raw.txt residue644.txt    # 117,256 killed, 34 survive
+python escalate_frontier.py frontier20.txt residue644.txt   # all-completions
+./ext6 extend frontier20_true.txt - > ext21_raw.txt
+./ext6 frontier ext21_raw.txt frontier20_true.txt           # 0 survive
+python verify_frontier_indep.py         # independent re-run of everything
+clang -O2 -o indep_profile6 indep_profile6.c
+./indep_profile6 aeq_d6_n19.txt v.bin   # exact-filter cross-check
+\end{verbatim}
+
+\begin{thebibliography}{9}
+\bibitem{BPSSV} M.~Balko, A.~P\'or, M.~Scheucher, K.~Swanepoel,
+P.~Valtr, Almost-equidistant sets, \emph{Graphs and Combinatorics} 36
+(2020), 729--754.
+\bibitem{thisrepo} This repository: candidate corpora, certified interval
+engine, exact-filter implementations, verifiers, and logs
+(\texttt{STATUS.md} for the campaign record).
+\end{thebibliography}
+
+\end{document}
