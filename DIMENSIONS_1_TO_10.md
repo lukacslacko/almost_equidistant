@@ -19,14 +19,14 @@ repository.
 | 3 | 10 | 10 | Györey; independently treated in BPSSV |
 | 4 | **12** | **12** | computer-assisted result in this repository; published literature before this work had `12 ≤ f(4) ≤ 13` |
 | 5 | **16** | **16** | computer-assisted result in this repository; published literature before this work had `16 ≤ f(5) ≤ 20` |
-| 6 | 18 | 26 | BPSSV; this repository has an active attempt to eliminate every 19-point candidate |
+| 6 | 18 | **24** | lower bound BPSSV; upper bound: in-house frontier result in this repository (2026-08-07, [`f6_le_24.pdf`](f6_le_24.pdf)); published literature has 26 (BPSSV); conditionally ≤ 20 ([`f6_le_20.pdf`](f6_le_20.pdf)); active campaign toward 18 |
 | 7 | 20 | 34 | BPSSV |
 | 8 | 24 | 40 | lower bound BPSSV; upper bound from `R(3,10) ≤ 41` |
 | 9 | 24 | 49 | lower bound BPSSV; upper bound from `R(3,11) ≤ 50` |
 | 10 | **26** | 58 | 26-point construction proved below; upper bound from `R(3,12) ≤ 59` |
 
-The bold entries in dimensions 4, 5, and 10 are newer project results rather
-than claims imported from the older literature.
+The bold entries in dimensions 4, 5, 6, and 10 are newer project results
+rather than claims imported from the older literature.
 
 ## Repository results in dimensions 4 and 5
 
@@ -226,6 +226,19 @@ standard ten equiangular lines of common angle `1/3` in `R^5`.
 The known 18-point construction gives `f(6) ≥ 18`.  Since the property is
 hereditary, proving that no 19-point set exists would immediately establish
 `f(6)=18`.
+
+### Upper-bound improvement (2026-08-07): `f(6) ≤ 24` in-house
+
+[`f6_le_24.pdf`](f6_le_24.pdf) proves `f(6) ≤ 24` on a fully in-house
+trust base (computer-assisted): the frontier/extension argument run over
+the 114,242 level-19 candidates not excluded by independently
+double-implemented exact graph filters together with this repository's
+interval certificates.  The frontier tower collapses
+6,419,680 → 2,356 → 127 → 23 → 2 → 2 → 0 across levels 20–25; the empty
+level-25 frontier excludes every 25-point set, and heredity does the
+rest.  The surviving tower is an explicit certification ladder: killing
+the 2 level-23 graphs would give `≤ 22`, the 23 level-22 graphs `≤ 21`,
+the 127 level-21 graphs `≤ 20`, all still in-house.
 
 ### Provisional upper-bound improvement (2026-08-07): `f(6) ≤ 20`, conditional
 

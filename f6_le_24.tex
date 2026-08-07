@@ -1,0 +1,121 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=2.6cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\setlist{itemsep=2pt,topsep=4pt}
+
+\newtheorem*{result}{Result}
+\newcommand{\R}{\mathbb{R}}
+
+\title{\vspace{-1.2cm}$f(6)\le 24$: an unconditional in-house upper bound\\
+for almost-equidistant sets in $\R^6$\\[4pt]
+\large The frontier argument over the independently verified ledger}
+\author{}
+\date{August 7, 2026}
+
+\begin{document}
+\maketitle
+\vspace{-1.4cm}
+
+\section*{Statement}
+
+A finite point set in $\R^d$ is \emph{almost equidistant} if among any
+three of its points two are at unit distance; $f(d)$ is the maximum
+size. The published bounds for $d=6$ are $18\le f(6)\le 26$
+\cite{BPSSV}. The companion note \texttt{f6\_le\_20.pdf} (same date)
+proves $f(6)\le 20$ \emph{conditional} on a certificate ledger that
+includes exact-filter layers of the \texttt{codex/dimension6} track not
+yet independently reimplemented. This note records the stronger-trust,
+weaker-value counterpart obtained the same day:
+
+\begin{result}
+$f(6)\le 24$, on an entirely in-house trust base: (i) the verified
+$3{,}971{,}787$-graph level-19 candidate corpus; (ii) the
+first-generation exact graph filters, independently reimplemented from
+their theory document with exact agreement on all per-rule corpus
+statistics, and with hand-checked derivations; (iii) this repository's
+$3{,}055{,}480$ interval-arithmetic non-realizability certificates
+(certified engine \texttt{ckernel6.c}); (iv) the extension/frontier
+pipeline, double-implemented (C and Python) with exact agreement on
+every stage of every run, and validated against two independent corpus
+controls. Computer-assisted; not peer-reviewed.
+\end{result}
+
+\section*{The computation}
+
+Let $\mathcal R_{\mathrm{ih}}$ be the $114{,}242$ level-19 candidates
+not rejected by (ii) or (iii) — the in-house unresolved residue
+(\texttt{residue\_inhouse.txt}; it contains the 644-graph residue of the
+conditional note as a subset). By the extension theorem and hereditary
+frontier lemma of \texttt{f6\_le\_20.pdf}, every $n$-point
+almost-equidistant set ($n\ge 20$) induces a member of the level-$n$
+\emph{frontier} over $\mathcal R_{\mathrm{ih}}$: the iteratively defined
+set of level-$n$ candidates all of whose single-vertex deletions
+re-complete (in every maximal triangle-free completion) into the
+previous level's frontier. The computation (tools \texttt{ext6.c}
+modes \texttt{extend} / \texttt{frontier} / \texttt{escalate};
+$\sim$25 minutes wall time) gives:
+
+\begin{center}
+\begin{tabular}{rrrr}
+\toprule
+level & distinct extensions & greedy survivors & true frontier\\
+\midrule
+20 & $6{,}419{,}680$ & $2{,}377$ & $2{,}356$\\
+21 & $142{,}963$ & $127$ & $127$\\
+22 & $3{,}028$ & $23$ & $23$\\
+23 & $82$ & $2$ & $2$\\
+24 & $2$ & $2$ & $2$\\
+25 & $0$ & --- & $\emptyset$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The two level-24 frontier graphs admit no valid one-vertex extension at
+all, so the level-25 frontier is empty: no 25-point almost-equidistant
+set exists in $\R^6$, and by heredity $f(6)\le 24$.
+
+\section*{The tower, and the ladder ahead}
+
+The surviving tower is remarkable: the level-23 pair has $176$ edges
+against $6\cdot 23-21=117$ degrees of freedom, the level-24 pair $192$
+against $123$; their complements are triangle-free graphs with
+independence number at most seven, close to the $R(3,8)=28$ critical
+regime. A Levenberg--Marquardt screen ($800$ restarts) puts all four far
+from realizability (best squared residuals $2.12$--$3.36$; realizable
+controls reach $10^{-30}$).
+
+Each tower level is an explicit in-house certification target: proving
+the $2$ level-23 graphs non-realizable gives $f(6)\le 22$; the $23$
+level-22 graphs give $f(6)\le 21$; the $127$ level-21 graphs give
+$f(6)\le 20$, matching the conditional bound without its conditional
+tier. (The interval kernel currently compiles with $\mathrm{MAXN}=20$
+and must be rebuilt for larger $n$ before those runs.)
+
+\section*{Reproduction}
+
+\begin{verbatim}
+clang -O2 -o ext6 ext6.c
+./indep_profile6 aeq_d6_n19.txt v.bin        # exact-filter verdicts
+python - <<'PY'                              # residue_inhouse.txt
+# (see extract in repository history; verdict bit7 clear and not in
+#  killed_d6_n19.log)
+PY
+./ext6 extend residue_inhouse.txt - > ext20_ih_raw.txt
+bash run_ih_frontier.sh 6                    # levels 20-21
+# then iterate extend/frontier/escalate to levels 22-25 as in STATUS.md
+\end{verbatim}
+
+\begin{thebibliography}{9}
+\bibitem{BPSSV} M.~Balko, A.~P\'or, M.~Scheucher, K.~Swanepoel,
+P.~Valtr, Almost-equidistant sets, \emph{Graphs and Combinatorics} 36
+(2020), 729--754.
+\end{thebibliography}
+
+\end{document}
