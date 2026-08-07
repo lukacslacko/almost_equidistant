@@ -1321,7 +1321,7 @@ investigated next.
   fully in-house-verified components. Phase 1 (extensions) is running:
   518k distinct level-20 candidates so far.
 
-## 2026-08-07 17:22 append — INDEPENDENT RE-VERIFICATION OF THE FRONTIER COMPUTATION: EXACT AGREEMENT END TO END
+## 2026-08-07 17:25 append — INDEPENDENT RE-VERIFICATION OF THE FRONTIER COMPUTATION: EXACT AGREEMENT END TO END
 
 The Python re-implementation (verify_frontier_indep.py — own subgraph
 tests, isomorphism WITHOUT canonical labeling (profile buckets +
