@@ -1378,3 +1378,22 @@ the frontier), and a tighter rerun is cheap if needed.
 Still pending verification (listed in the handcheck note): the
 actual-support CSP on small covers, the normalized-matrix rank tests,
 Schur mask rules, K7 tetrads, and the K6-side chains.
+
+## 2026-08-07 17:52 append — in-house frontier phase 1 complete: 6,419,680 level-20 candidates
+
+- Extensions of the 114,242-graph in-house residue: 18,408,432 valid
+  with multiplicity, **6,419,680 distinct level-20 candidates**, zero
+  TF-anomalies (55x the conditional frontier's 117,290, for a 177x
+  bigger residue — heavy cross-parent duplication as expected).
+- Phase 2 launched (run_ih_frontier.sh, 6 parallel chunks): every
+  candidate's twenty deletions greedily re-completed against the
+  in-house residue; survivors get the C escalation (all maximal
+  completions); then the level-21 iteration. If the in-house frontier
+  empties at level m, f(6) <= m-1 becomes UNCONDITIONAL on in-house
+  verified components (independently reimplemented exact rules + our
+  interval certificates). Expected wall time 1-2 h sharing the machine
+  with the 34-graph campaign (stage 1 ~ 8,000/25,632).
+- The stdin-multiprocessing mistake from yesterday's 12:56 postmortem
+  was repeated once (a containment-check probe died instantly) and
+  corrected the documented way: proper script file
+  (verify_34_containment.py), now running.
