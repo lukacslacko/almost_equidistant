@@ -1,12 +1,12 @@
-# Pre-production cap-500,000 interval campaign on the v6 K7 residue
+# Certified cap-500,000 interval campaign on the v6 K7 residue
 
 ## Scope
 
-This package freezes a theorem-level interval campaign on exactly the 19 K7
-graphs in the independently verified v6 current-residue manifest.  It is a
-launch plan, not a result: no graph receives interval credit until the frozen
-runner has completed and the independent checker has replayed every winning
-slice.
+This package records the completed theorem-level interval campaign on exactly
+the 19 K7 graphs in the independently verified v6 current-residue manifest.
+The runner was frozen at commit
+`feb8c7378a42cb55cd7c8625e51c5f504d177292`, and the independent checker
+replayed every winning slice before the one rejection below received credit.
 
 The pinned inputs are:
 
@@ -48,19 +48,19 @@ command with `--retry-infra-errors`; that flag changes checkpoint scheduling,
 not the hashed mathematical configuration.  Never edit a checkpoint or log
 in place.
 
-The exploratory observation that index `3595554` may be killed at this cap is
-not a certificate and is deliberately excluded from the v6 manifest and this
-pre-production claim.  It must be rediscovered by the committed campaign and
-replayed by the checker.
+The earlier exploratory observation about index `3595554` was not used.  The
+committed campaign independently rediscovered it and the checker replayed the
+result from the frozen source boundary.
 
 ## Independent verification
 
-After completion, first freeze the report hash, then run:
+The completed report was checked with:
 
 ```text
 python3 verify_d6_interval_v6.py \
   --report .runs/d6_interval_v6_k7_cap500000.json \
-  --expected-report-sha256 <SHA256_OF_COMPLETED_REPORT> \
+  --expected-report-sha256 \
+    0b04a7bbdcbb5bba264099e3cb9f2c9e39d4bc50f7bf7c211ba5ce81e4660704 \
   --expected-cap 500000 --expected-workers 9 \
   --output /tmp/d6_interval_v6_k7_cap500000_verification.json
 ```
@@ -72,6 +72,43 @@ report, decision TSV, campaign state, sessions, and all 19 atomic result
 files, reruns the positive and negative controls, and exactly replays every
 slice in every claimed `KILLED` witness.  A report is publishable only after
 this command returns `PASS` with replay enabled.
+
+## Official result
+
+The nine-thread run completed all 19 graphs in 1,453.15 wall seconds.  Its
+status partition is
+
+```text
+KILLED          1
+ABORT          18
+UNRESOLVED      0
+INFRA_ERROR     0
+```
+
+The sole certified rejection is graph `3595554`.  The winning required K7
+seed is
+
+```text
+[1,5,8,12,13,15,18]
+```
+
+and the winning outside placement order is
+
+```text
+[16,11,7,6,2,14,10,9,4,3,0,17].
+```
+
+All 24 angular slices were `KILLED`, using 550,041 nodes in total.  The
+independent verifier reconstructed all 19 inputs and checkpoint files,
+replayed the 24 winning slices with exact status/node/cell agreement, and
+replayed all 48 positive and negative control slices.  It returned `PASS`.
+
+To reproduce from Git, extract
+`d6_interval_v6_k7_cap500000_checkpoints.tar.gz` at the repository root and
+run the verification command above against the restored `.runs` report.
+
+The 18 `ABORT` graphs remain unresolved by this interval layer.  In
+particular, cap exhaustion never counts as a rejection.
 
 ## Trust boundary
 
@@ -88,8 +125,7 @@ No non-`KILLED` interval status is used as a rejection at either layer.
 
 ## Frozen source hashes
 
-The final pre-production source hashes are recorded below after the wrapper
-hash is embedded in the independent checker:
+The frozen source hashes are:
 
 ```text
 509ec8055542bb60863756d1ce64a24cccfe57ccc9f56f13925edf3290ac38be
@@ -107,3 +143,21 @@ bbfe851282934980a1f0343f80296b8c8884d4ca305b6babcff09ede214501d4
 84ec7ae7e682de660329fd1fb02bd88d774bde542032ece95a7eb7d3c54ece4a
   verify_d6_interval_benchmarks.py
 ```
+
+The immutable result artifacts are:
+
+```text
+0b04a7bbdcbb5bba264099e3cb9f2c9e39d4bc50f7bf7c211ba5ce81e4660704
+  d6_interval_v6_k7_cap500000_report.json
+61eb84688c2a24ae8ba8f727c5e2f2250693f15ab74452c21e47beb6c126a869
+  d6_interval_v6_k7_cap500000_decisions.tsv
+105550c0ba2b181b1cfec64afd6fefa1324d4cfcde41aee385c99a769d8f1fb7
+  d6_interval_v6_k7_cap500000_verification.json
+e4dab680fbc1315be24271dff95769f9d6b7c6f172544fe232b1345ba07589c0
+  d6_interval_v6_k7_cap500000_checkpoints.tar.gz
+```
+
+This pass certifies one new K7 rejection relative to v6 but does not by
+itself update the current combined residue.  A separate exact union manifest
+must subtract this index together with the independently checked algebraic
+increments.
