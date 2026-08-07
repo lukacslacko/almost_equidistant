@@ -1,0 +1,2093 @@
+{
+  "checkpoint": {
+    "chunk_size": 64,
+    "chunks": 199,
+    "directory": "/Users/lukacs/chatgpt/almost_equidistant/d6_18_numerical_checkpoints/3eaad0fa1ff43461",
+    "resume_command": "/Users/lukacs/claude/opengauss/venv/bin/python3 /Users/lukacs/chatgpt/almost_equidistant/run_d6_18_numerical_screen.py --workers 11 --chunk-size 64 --restarts 6 --seedbase 600180001",
+    "run_state_path": "/Users/lukacs/chatgpt/almost_equidistant/d6_18_numerical_checkpoints/3eaad0fa1ff43461/run_state.json",
+    "run_state_sha256": "d13f56adfb8d8ee899affac4d64ff0e97e2c8ed51d7fda864792129716fd1796"
+  },
+  "config": {
+    "chunk_size": 64,
+    "compiler_flags": [
+      "-O3",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Werror"
+    ],
+    "compiler_path": "/usr/bin/clang",
+    "compiler_version": "Apple clang version 16.0.0 (clang-1600.0.26.6)\nTarget: arm64-apple-darwin23.5.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "corpus_sha256": "9d08f9ec579434c9601ad3908bd2ae51f10e09e9d06a7f38fbc25794a634b732",
+    "corpus_verification_sha256": "50ab5d88441b2869e60a05f3e1485db0b25008c3a816960a20a3bb21c1c4defd",
+    "dimension": 6,
+    "distinctness_screen_threshold": 0.001,
+    "engine_source_sha256": "50a50e4993b7c42e11b7729d23a3307736e01b80b0d3c9e1ed526936e8f417b5",
+    "graph_count": 12712,
+    "graph_input_sha256": "c1cc9f509f5128e0b898454369f4349c8ed6f77433a0f17c3e6f9ab54f45089a",
+    "inherited_lm_source_sha256": "4cca4b0393ec87988d50bfc56c734d1dff5573bfc920144170b53770352f796e",
+    "lm_iterations_per_restart": 400,
+    "near_residual_threshold": 1e-20,
+    "numerical_rank_relative_pivot_threshold": 1e-10,
+    "orchestrator_source_sha256": "849d821c48e40b225d4219be1cc65ba9a610b736de087b0134bf2c76c29d4957",
+    "random_restarts_per_graph": 6,
+    "schema": "d6-18-numerical-screen-config-v1",
+    "seed_formula": "seedbase*1000003 + corpus_index*7919 + restart_index + 1, computed modulo uint64",
+    "seedbase": 600180001,
+    "semantics": "heuristic numerical triage only; zero mathematical rejections",
+    "standard18_seeded_control_indices": [
+      352,
+      459,
+      571,
+      3334,
+      5391,
+      5429,
+      8702,
+      8879,
+      10261,
+      10273,
+      10277,
+      10585,
+      10887,
+      11079
+    ],
+    "workers": 11
+  },
+  "config_sha256": "3eaad0fa1ff434614a6e7ddb007799acd1e70301e23bb250ca95e03877de7c32",
+  "corpus": {
+    "path": "/Users/lukacs/chatgpt/almost_equidistant/d6_residue_18_deletions.json",
+    "sha256": "9d08f9ec579434c9601ad3908bd2ae51f10e09e9d06a7f38fbc25794a634b732",
+    "verification_path": "/Users/lukacs/chatgpt/almost_equidistant/d6_residue_18_deletions_verification.json",
+    "verification_sha256": "50ab5d88441b2869e60a05f3e1485db0b25008c3a816960a20a3bb21c1c4defd",
+    "verification_status": "PASS"
+  },
+  "created_utc": "2026-08-07T09:54:33.468976Z",
+  "engine": {
+    "binary_sha256": "62eb1b0c9fee7951ed7c87ef4371be9c6fd4a9292ea69545ab5403e902aeac84",
+    "compile_command": [
+      "/usr/bin/clang",
+      "-O3",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "/Users/lukacs/chatgpt/almost_equidistant/d6_18_lm_screen.c",
+      "-lm",
+      "-o",
+      "/Users/lukacs/chatgpt/almost_equidistant/d6_18_numerical_checkpoints/3eaad0fa1ff43461/d6_18_lm_screen.tmp.81941"
+    ],
+    "compiler_version": "Apple clang version 16.0.0 (clang-1600.0.26.6)\nTarget: arm64-apple-darwin23.5.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "floating_point_assumptions": "ordinary IEEE-754 binary64 arithmetic and platform libm; results are not certificates and have no ulp trust claim",
+    "inherited_source_path": "/Users/lukacs/chatgpt/almost_equidistant/lm5.c",
+    "inherited_source_sha256": "4cca4b0393ec87988d50bfc56c734d1dff5573bfc920144170b53770352f796e",
+    "orchestrator_path": "/Users/lukacs/chatgpt/almost_equidistant/run_d6_18_numerical_screen.py",
+    "orchestrator_sha256": "849d821c48e40b225d4219be1cc65ba9a610b736de087b0134bf2c76c29d4957",
+    "source_path": "/Users/lukacs/chatgpt/almost_equidistant/d6_18_lm_screen.c",
+    "source_sha256": "50a50e4993b7c42e11b7729d23a3307736e01b80b0d3c9e1ed526936e8f417b5"
+  },
+  "machine": {
+    "gpu_note": "Each task is a small branch-heavy 108-variable LM solve; 11 independent CPU processes give the practical parallelism.",
+    "gpu_used": false,
+    "logical_cpu_count_seen": 12,
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "workers": 11
+  },
+  "proof_status": "HEURISTIC_ONLY_NO_REJECTIONS",
+  "results": {
+    "columns": [
+      "index",
+      "n",
+      "edges",
+      "has_seed",
+      "seed_residual",
+      "seed_minimum_distance",
+      "seed_numerical_rigidity_rank",
+      "random_best_residual_including_collisions",
+      "random_best_distinct_residual",
+      "random_best_distinct_minimum_distance",
+      "random_endpoint_numerical_rigidity_rank",
+      "random_near_solution_count",
+      "random_distinct_near_solution_count"
+    ],
+    "format": "deterministic gzip TSV",
+    "path": "/Users/lukacs/chatgpt/almost_equidistant/d6_18_numerical_screen_results.tsv.gz",
+    "sha256": "41807f0cec494344453c939dfaa3530fef47404e6c298b391d6e2e670b0bc95c"
+  },
+  "schema": "d6-18-numerical-screen-report-v1",
+  "status": "COMPLETE",
+  "summary": {
+    "control_results": [
+      {
+        "class_id": "u18-51c5e7b62ef21c88d2176254679463d90aafe498bfa7b4e3d598958933dca8ab",
+        "embedding_permutation": [
+          0,
+          7,
+          11,
+          13,
+          6,
+          10,
+          12,
+          14,
+          16,
+          17,
+          1,
+          3,
+          5,
+          9,
+          2,
+          4,
+          8,
+          15
+        ],
+        "index": 352,
+        "mod13_rigidity_rank_lower_bound": 87,
+        "pole_pair": [
+          8,
+          9
+        ],
+        "random_best_distinct_minimum_distance": 0.5639104359039011,
+        "random_best_distinct_residual": 0.18257328795160058,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "random_found_near_solution": false,
+        "seed_minimum_distance": 0.9999999999999999,
+        "seed_numerical_rigidity_rank": 87,
+        "seed_residual": 5.127595883936577e-30,
+        "seeded_positive_control_pass": true
+      },
+      {
+        "class_id": "u18-81842b7afe827273043aa730eaec7a1fda421f033ad25e8b4a126f4fddd456f6",
+        "embedding_permutation": [
+          0,
+          7,
+          11,
+          13,
+          2,
+          4,
+          8,
+          1,
+          15,
+          6,
+          10,
+          12,
+          16,
+          17,
+          3,
+          5,
+          9,
+          14
+        ],
+        "index": 459,
+        "mod13_rigidity_rank_lower_bound": 87,
+        "pole_pair": [
+          12,
+          13
+        ],
+        "random_best_distinct_minimum_distance": 0.5543885937929751,
+        "random_best_distinct_residual": 0.2521441377507577,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "random_found_near_solution": false,
+        "seed_minimum_distance": 0.9999999999999999,
+        "seed_numerical_rigidity_rank": 87,
+        "seed_residual": 5.127595883936577e-30,
+        "seeded_positive_control_pass": true
+      },
+      {
+        "class_id": "u18-e57de1bce6178b0c6b69cdbb1f2ee8628cb854ecbcc72bb17274aaa41e440333",
+        "embedding_permutation": [
+          0,
+          7,
+          11,
+          12,
+          13,
+          15,
+          5,
+          9,
+          2,
+          16,
+          17,
+          14,
+          4,
+          6,
+          8,
+          10,
+          1,
+          3
+        ],
+        "index": 571,
+        "mod13_rigidity_rank_lower_bound": 87,
+        "pole_pair": [
+          9,
+          10
+        ],
+        "random_best_distinct_minimum_distance": 0.1266145370323552,
+        "random_best_distinct_residual": 0.26916092040566586,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "random_found_near_solution": false,
+        "seed_minimum_distance": 0.9999999999999999,
+        "seed_numerical_rigidity_rank": 87,
+        "seed_residual": 5.127595883936577e-30,
+        "seeded_positive_control_pass": true
+      },
+      {
+        "class_id": "u18-786df0704a636efd9e0d1a28d28a77e864b32e7b19e268229fc262e6b3f9b0b3",
+        "embedding_permutation": [
+          0,
+          8,
+          7,
+          15,
+          1,
+          9,
+          5,
+          13,
+          2,
+          10,
+          6,
+          14,
+          16,
+          17,
+          3,
+          4,
+          12,
+          11
+        ],
+        "index": 3334,
+        "mod13_rigidity_rank_lower_bound": 87,
+        "pole_pair": [
+          12,
+          13
+        ],
+        "random_best_distinct_minimum_distance": 0.1890098793973421,
+        "random_best_distinct_residual": 0.2678484721601929,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "random_found_near_solution": false,
+        "seed_minimum_distance": 0.9999999999999999,
+        "seed_numerical_rigidity_rank": 87,
+        "seed_residual": 5.127595883936577e-30,
+        "seeded_positive_control_pass": true
+      },
+      {
+        "class_id": "u18-63a3d54d47896025db3ec7b19e70cbdfed5dbcfaafd8687fcd53e9a3b1cd9b2b",
+        "embedding_permutation": [
+          0,
+          3,
+          4,
+          8,
+          7,
+          11,
+          1,
+          2,
+          12,
+          15,
+          16,
+          17,
+          6,
+          10,
+          5,
+          9,
+          14,
+          13
+        ],
+        "index": 5391,
+        "mod13_rigidity_rank_lower_bound": 87,
+        "pole_pair": [
+          10,
+          11
+        ],
+        "random_best_distinct_minimum_distance": 0.32831502420189695,
+        "random_best_distinct_residual": 0.5628032488744377,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "random_found_near_solution": false,
+        "seed_minimum_distance": 0.9999999999999999,
+        "seed_numerical_rigidity_rank": 87,
+        "seed_residual": 5.127595883936577e-30,
+        "seeded_positive_control_pass": true
+      },
+      {
+        "class_id": "u18-19c7cfbd368fafcff3fb5598e1cfa875bf71ca7f0f297be10e846c92c4bd133a",
+        "embedding_permutation": [
+          0,
+          3,
+          4,
+          8,
+          12,
+          7,
+          11,
+          15,
+          16,
+          17,
+          1,
+          2,
+          5,
+          9,
+          6,
+          10,
+          13,
+          14
+        ],
+        "index": 5429,
+        "mod13_rigidity_rank_lower_bound": 86,
+        "pole_pair": [
+          8,
+          9
+        ],
+        "random_best_distinct_minimum_distance": 0.5765971854521426,
+        "random_best_distinct_residual": 0.23261409332631075,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "random_found_near_solution": false,
+        "seed_minimum_distance": 0.9999999999999999,
+        "seed_numerical_rigidity_rank": 86,
+        "seed_residual": 5.127595883936577e-30,
+        "seeded_positive_control_pass": true
+      },
+      {
+        "class_id": "u18-bd2f65b3fe37dd32f0be336d6fa49c6fa8396e6f2f2596327aa64d262958a0ad",
+        "embedding_permutation": [
+          0,
+          1,
+          2,
+          3,
+          7,
+          11,
+          12,
+          13,
+          14,
+          15,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          16,
+          17
+        ],
+        "index": 8702,
+        "mod13_rigidity_rank_lower_bound": 87,
+        "pole_pair": [
+          16,
+          17
+        ],
+        "random_best_distinct_minimum_distance": 0.08753114916143948,
+        "random_best_distinct_residual": 0.2686524805231577,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "random_found_near_solution": false,
+        "seed_minimum_distance": 0.9999999999999999,
+        "seed_numerical_rigidity_rank": 87,
+        "seed_residual": 5.226203497089203e-30,
+        "seeded_positive_control_pass": true
+      },
+      {
+        "class_id": "u18-8cc04720d34211f7c12f651e8a98a1630491142896fb8b7051762fe57f816c55",
+        "embedding_permutation": [
+          0,
+          1,
+          8,
+          9,
+          6,
+          10,
+          12,
+          7,
+          14,
+          15,
+          2,
+          4,
+          3,
+          5,
+          11,
+          13,
+          16,
+          17
+        ],
+        "index": 8879,
+        "mod13_rigidity_rank_lower_bound": 87,
+        "pole_pair": [
+          16,
+          17
+        ],
+        "random_best_distinct_minimum_distance": 0.5942400586696698,
+        "random_best_distinct_residual": 0.25326227780312843,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "random_found_near_solution": false,
+        "seed_minimum_distance": 0.9999999999999999,
+        "seed_numerical_rigidity_rank": 87,
+        "seed_residual": 5.17689969051289e-30,
+        "seeded_positive_control_pass": true
+      },
+      {
+        "class_id": "u18-761add09c775ad5ba966a0eef97848e076faacc647744c4079b7bee48a65d92f",
+        "embedding_permutation": [
+          0,
+          3,
+          5,
+          6,
+          1,
+          2,
+          4,
+          7,
+          8,
+          16,
+          9,
+          10,
+          12,
+          11,
+          13,
+          14,
+          17,
+          15
+        ],
+        "index": 10261,
+        "mod13_rigidity_rank_lower_bound": 86,
+        "pole_pair": [
+          9,
+          16
+        ],
+        "random_best_distinct_minimum_distance": 0.5,
+        "random_best_distinct_residual": 2.354256764018957e-30,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "random_found_near_solution": true,
+        "seed_minimum_distance": 0.9999999999999999,
+        "seed_numerical_rigidity_rank": 86,
+        "seed_residual": 5.0782920773602635e-30,
+        "seeded_positive_control_pass": true
+      },
+      {
+        "class_id": "u18-3f9adb1f1bbf8e73d3d434a0f562c4a4e623cccbfa0b7cae1c16f548d4cc1711",
+        "embedding_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          16,
+          8,
+          9,
+          10,
+          12,
+          11,
+          13,
+          14,
+          15,
+          17
+        ],
+        "index": 10273,
+        "mod13_rigidity_rank_lower_bound": 86,
+        "pole_pair": [
+          8,
+          17
+        ],
+        "random_best_distinct_minimum_distance": 0.3361866634783047,
+        "random_best_distinct_residual": 0.17785369128153403,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "random_found_near_solution": false,
+        "seed_minimum_distance": 0.9999999999999999,
+        "seed_numerical_rigidity_rank": 86,
+        "seed_residual": 5.127595883936577e-30,
+        "seeded_positive_control_pass": true
+      },
+      {
+        "class_id": "u18-d58d9ae1ccd1aa28d3a5c25ede20a9135c73854300eb13d64ce74eb6f04854ee",
+        "embedding_permutation": [
+          0,
+          1,
+          2,
+          3,
+          8,
+          9,
+          10,
+          12,
+          16,
+          7,
+          11,
+          4,
+          5,
+          6,
+          13,
+          14,
+          15,
+          17
+        ],
+        "index": 10277,
+        "mod13_rigidity_rank_lower_bound": 86,
+        "pole_pair": [
+          8,
+          17
+        ],
+        "random_best_distinct_minimum_distance": 0.26009494132523164,
+        "random_best_distinct_residual": 0.47231048104259554,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "random_found_near_solution": false,
+        "seed_minimum_distance": 0.9999999999999999,
+        "seed_numerical_rigidity_rank": 86,
+        "seed_residual": 5.0782920773602635e-30,
+        "seeded_positive_control_pass": true
+      },
+      {
+        "class_id": "u18-9b81faf24ce14620e77d3ff29935e10c5b7541615ee880828205851b5bf99811",
+        "embedding_permutation": [
+          0,
+          1,
+          8,
+          2,
+          4,
+          16,
+          6,
+          7,
+          14,
+          9,
+          3,
+          10,
+          11,
+          5,
+          12,
+          13,
+          15,
+          17
+        ],
+        "index": 10585,
+        "mod13_rigidity_rank_lower_bound": 87,
+        "pole_pair": [
+          5,
+          17
+        ],
+        "random_best_distinct_minimum_distance": 0.16323531068553432,
+        "random_best_distinct_residual": 0.2703562678874048,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "random_found_near_solution": false,
+        "seed_minimum_distance": 0.9999999999999999,
+        "seed_numerical_rigidity_rank": 87,
+        "seed_residual": 5.127595883936577e-30,
+        "seeded_positive_control_pass": true
+      },
+      {
+        "class_id": "u18-84a0a88e385b1aa4673cc149e0c2458f37b7cc6aef3def3cf2589f2075be4841",
+        "embedding_permutation": [
+          0,
+          1,
+          2,
+          8,
+          4,
+          7,
+          13,
+          14,
+          16,
+          3,
+          9,
+          10,
+          5,
+          6,
+          12,
+          11,
+          15,
+          17
+        ],
+        "index": 10887,
+        "mod13_rigidity_rank_lower_bound": 87,
+        "pole_pair": [
+          8,
+          17
+        ],
+        "random_best_distinct_minimum_distance": 0.5000000000000028,
+        "random_best_distinct_residual": 1.4335081762063074e-29,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "random_found_near_solution": true,
+        "seed_minimum_distance": 0.9999999999999999,
+        "seed_numerical_rigidity_rank": 87,
+        "seed_residual": 5.127595883936577e-30,
+        "seeded_positive_control_pass": true
+      },
+      {
+        "class_id": "u18-b6a9b81054d4363d0db724af62235050065141d531e1093b6cecda4cc9d93267",
+        "embedding_permutation": [
+          0,
+          1,
+          8,
+          2,
+          4,
+          6,
+          7,
+          14,
+          16,
+          9,
+          3,
+          10,
+          11,
+          5,
+          12,
+          13,
+          15,
+          17
+        ],
+        "index": 11079,
+        "mod13_rigidity_rank_lower_bound": 86,
+        "pole_pair": [
+          8,
+          17
+        ],
+        "random_best_distinct_minimum_distance": 0.5430774378130462,
+        "random_best_distinct_residual": 0.24589248300930522,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "random_found_near_solution": false,
+        "seed_minimum_distance": 0.9999999999999999,
+        "seed_numerical_rigidity_rank": 86,
+        "seed_residual": 5.0782920773602635e-30,
+        "seeded_positive_control_pass": true
+      }
+    ],
+    "graphs_screened": 12712,
+    "graphs_still_unresolved_by_proof_after_this_screen": 12712,
+    "interpretation": "HEURISTIC ONLY. No graph is rejected by this screen. A small residual is a reconstruction target, while a large residual is only failure of these starts and this optimizer. Numerical Jacobian rank is triage, not an exact rigidity certificate.",
+    "lowest_100_random_residuals": [
+      {
+        "class_id": "u18-761add09c775ad5ba966a0eef97848e076faacc647744c4079b7bee48a65d92f",
+        "contains_K7": false,
+        "edges": 103,
+        "index": 10261,
+        "random_best_distinct_minimum_distance": 0.5,
+        "random_best_distinct_residual": 2.354256764018957e-30,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": true
+      },
+      {
+        "class_id": "u18-84a0a88e385b1aa4673cc149e0c2458f37b7cc6aef3def3cf2589f2075be4841",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 10887,
+        "random_best_distinct_minimum_distance": 0.5000000000000028,
+        "random_best_distinct_residual": 1.4335081762063074e-29,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": true
+      },
+      {
+        "class_id": "u18-12c04520cf9109fe5e8bfec65c039337a74229c989c2973a103214b9de6cb3f9",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 8500,
+        "random_best_distinct_minimum_distance": 0.1589182844884268,
+        "random_best_distinct_residual": 0.04093816556854131,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-990d155826f029e537dafbbd293ddec9ed447f61bc809ceebf6d0cbe71aaed82",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 7709,
+        "random_best_distinct_minimum_distance": 0.39297782953804844,
+        "random_best_distinct_residual": 0.042391834806923025,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-4a7680989fa9dd3f621d8a0a734332611f48eccd5839e53b59ad75eff70d6e65",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 11647,
+        "random_best_distinct_minimum_distance": 0.40025079700016714,
+        "random_best_distinct_residual": 0.04608243964423107,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-c3efbdc3ff4870f31aad6a4435d7c722a265637229229687024f099d95dfffe7",
+        "contains_K7": true,
+        "edges": 101,
+        "index": 122,
+        "random_best_distinct_minimum_distance": 0.15799140797363198,
+        "random_best_distinct_residual": 0.048154890098318553,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-39c143cc0b169de4e158fa9fa9ce1dc56631a6dcac0f164c228fd575aff5731c",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 12663,
+        "random_best_distinct_minimum_distance": 0.1609782612364881,
+        "random_best_distinct_residual": 0.04944392223258959,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-b77fb005ed4316ce14ef1abcda3250394b097db337bef0cb65e88b7ba32d630f",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 6048,
+        "random_best_distinct_minimum_distance": 0.2111391956713062,
+        "random_best_distinct_residual": 0.06367028311083703,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-35efac63d90b315c6dfc539a38eeaa5062967a2332d180062078dfbb50bba345",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 7727,
+        "random_best_distinct_minimum_distance": 0.19646100473135814,
+        "random_best_distinct_residual": 0.06795378293754983,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-4552ea20b5ee7b2a8f669ec58de70d64e92ace6316b2df803f8674a3cabb7dc8",
+        "contains_K7": false,
+        "edges": 103,
+        "index": 7732,
+        "random_best_distinct_minimum_distance": 0.4147196826820522,
+        "random_best_distinct_residual": 0.06809800637872794,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-b2b6ecc39cc8e184ee2f121d80f9005371bbec2903aecc82889fe6ea6abd21fe",
+        "contains_K7": false,
+        "edges": 106,
+        "index": 9016,
+        "random_best_distinct_minimum_distance": 0.17037661670664436,
+        "random_best_distinct_residual": 0.07942332335898585,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-5b56d58e355e9e3c7c36bba3fd7ec11f0030cfa8139da15680cea40efae32a50",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 9397,
+        "random_best_distinct_minimum_distance": 0.04930694636028012,
+        "random_best_distinct_residual": 0.08104027872865482,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-d623c8f656d47911f86e36e12a8064fc7941bb2981980c02b4121bd3e0fc880d",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 7444,
+        "random_best_distinct_minimum_distance": 0.14463316155530176,
+        "random_best_distinct_residual": 0.08212926155573985,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-4aad22b5cfd7bf3131c834ff4c98491c90bb2f9ba17b09d97637f2df644ce877",
+        "contains_K7": false,
+        "edges": 103,
+        "index": 8786,
+        "random_best_distinct_minimum_distance": 0.459028128931653,
+        "random_best_distinct_residual": 0.09465281551273771,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-abf2682b2da7637a161fe186db6933da7e554130c789df2d75d93b379f7a979e",
+        "contains_K7": true,
+        "edges": 105,
+        "index": 4947,
+        "random_best_distinct_minimum_distance": 0.04543010112378166,
+        "random_best_distinct_residual": 0.09961419486749393,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-f6d7f4c977df6677ea2ceb5682a0686e7f6255ebad113646aaca3eb8ce46cb43",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 132,
+        "random_best_distinct_minimum_distance": 0.49455909425755024,
+        "random_best_distinct_residual": 0.10385861285720337,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-f8b31d998f2f0e79340ed2f16788e4b6c3faad3f8f81d3f266cb9984fc6a4586",
+        "contains_K7": false,
+        "edges": 103,
+        "index": 12592,
+        "random_best_distinct_minimum_distance": 0.16741557677144103,
+        "random_best_distinct_residual": 0.11246367379551174,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-a032b4c25377b4656c27ff3f62bdce899675c39cb451e95a1ecfbf1b1d8f016b",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 7718,
+        "random_best_distinct_minimum_distance": 0.03601613593895082,
+        "random_best_distinct_residual": 0.11408630594986328,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-bc67c7f889080d5032f48d3fbd604a6cb4a120cd057524b3a948a4868e6c56df",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 9472,
+        "random_best_distinct_minimum_distance": 0.44867951569363207,
+        "random_best_distinct_residual": 0.11611924314164691,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-b44b2437473a3197b677e602b3ea8f62df13704e530e26eb19bde1e3444dc102",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 117,
+        "random_best_distinct_minimum_distance": 0.24415765114805232,
+        "random_best_distinct_residual": 0.11689038025480655,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-d85db1f41d512abca5a0d0ad5fdc2db09a36938818ebf003de810a063d97f0a8",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 2763,
+        "random_best_distinct_minimum_distance": 0.24938673167431763,
+        "random_best_distinct_residual": 0.11700733318156681,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-aa9517ae3b9f01dbfcb0381e49a894784dca6e3f9dcf14d6035265dc55c8fd07",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 424,
+        "random_best_distinct_minimum_distance": 0.4500516100687458,
+        "random_best_distinct_residual": 0.12136133443322893,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-286d7259f958f44659d4794220a9cd8e62e1a0c24652bbcb9d7844bd4d86c375",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 7696,
+        "random_best_distinct_minimum_distance": 0.5747411716946605,
+        "random_best_distinct_residual": 0.12264288129573402,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-5ae88e713d2c9ec07ab50943bdf011b2e35829f8e5e6a7e361d97a09a6d17b6a",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 6769,
+        "random_best_distinct_minimum_distance": 0.2164091825415354,
+        "random_best_distinct_residual": 0.12290013095890026,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-77a4dc1507a775bd48fe5260ae3453755c3a502c3d021d426ca03e3cd0c127d9",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 3804,
+        "random_best_distinct_minimum_distance": 0.2048443692620827,
+        "random_best_distinct_residual": 0.12416930722656033,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-33de77a2140b7723cb9167bca0b5c1d58bfbb7807c114ae92f6cfb74b55736ad",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 2107,
+        "random_best_distinct_minimum_distance": 0.15304876670331757,
+        "random_best_distinct_residual": 0.12434549566550748,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-4acf7b31c9097f72cba94f919e3b11736998f886b9d3fd57e6d736bad3afadcd",
+        "contains_K7": false,
+        "edges": 102,
+        "index": 8983,
+        "random_best_distinct_minimum_distance": 0.31759560476062715,
+        "random_best_distinct_residual": 0.12482664317249567,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-f19fb77a4a018d9405bda22ef39b87026c4d6577535e2bfb32f0921f010bf56f",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 1567,
+        "random_best_distinct_minimum_distance": 0.32091355573946717,
+        "random_best_distinct_residual": 0.12495416799603368,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-7309b95220230a13f4f4dbb3e61b1c164b58bfa0a0a5a33abbcc73ae695f76ef",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 6471,
+        "random_best_distinct_minimum_distance": 0.21602993563748285,
+        "random_best_distinct_residual": 0.12549428861710826,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-bdcd7b99f73e9be253419e5b5a75369d26421c6948e35a94ce0303b6cdf24d46",
+        "contains_K7": false,
+        "edges": 102,
+        "index": 8977,
+        "random_best_distinct_minimum_distance": 0.36640419350201203,
+        "random_best_distinct_residual": 0.12765332496424986,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-e45d7ce0170e194e794a4e193d35bab71480f79211c2007a65278ca8f55c1155",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 5897,
+        "random_best_distinct_minimum_distance": 0.309442060339964,
+        "random_best_distinct_residual": 0.12798330978366507,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-826e02db4adddd6c9c79906a57fc69a27602981b0048dcec1e72f51bd1c034d9",
+        "contains_K7": true,
+        "edges": 107,
+        "index": 8337,
+        "random_best_distinct_minimum_distance": 0.23704523435080377,
+        "random_best_distinct_residual": 0.1325199087092313,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-dbfe4f9172327c80ee1309c77e58e4da828c70c89989eaebfbc6bb970add51f7",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 3952,
+        "random_best_distinct_minimum_distance": 0.11954012735858081,
+        "random_best_distinct_residual": 0.1325803149224108,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-a361512ef8a1e8d8c1a9b0f6ab907dfe110701d6caa430d9489650c43c4a59f1",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 10858,
+        "random_best_distinct_minimum_distance": 0.23152765794008942,
+        "random_best_distinct_residual": 0.13469580420501032,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-f19a353033084cabacd5e4fac0fe0528a3b4ebbdb6a16bca659c7975222e94aa",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 10886,
+        "random_best_distinct_minimum_distance": 0.19989978378505005,
+        "random_best_distinct_residual": 0.135470715922722,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-e8574516a7999311683a071a1639bc4db0f12a9cc7cd5ff8c268a5dbbed3281d",
+        "contains_K7": false,
+        "edges": 106,
+        "index": 5160,
+        "random_best_distinct_minimum_distance": 0.4137817300383741,
+        "random_best_distinct_residual": 0.14314949526279244,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-f7129e5c11f449e36addbd0e176cb4369f6f99f9144d63ac1a3c518b6afaa39d",
+        "contains_K7": false,
+        "edges": 106,
+        "index": 1439,
+        "random_best_distinct_minimum_distance": 0.10497569866243346,
+        "random_best_distinct_residual": 0.14584205155911398,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-de1196c80b6b8fbfd727eda5e8fc2dfc18caf969f4280fa7e9d3a22d5777a035",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 2957,
+        "random_best_distinct_minimum_distance": 0.11105797752858071,
+        "random_best_distinct_residual": 0.14886695728287316,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-9c76c7f6f186a36794603b788a3d19a8117b56a393b4e652a266a856c2a8bd1e",
+        "contains_K7": false,
+        "edges": 106,
+        "index": 438,
+        "random_best_distinct_minimum_distance": 0.22843372060712727,
+        "random_best_distinct_residual": 0.14962684314809185,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-72297ddec1f268577be12c50fd78a03a7f09fea072d9b4eed28f07a81b179c8b",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 11834,
+        "random_best_distinct_minimum_distance": 0.12175061208960722,
+        "random_best_distinct_residual": 0.15029104212617048,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-6e6abde52c18bf56104b0a5ccc42fdbfd5f811f3f9a4a06125d6cbf961aad201",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 8456,
+        "random_best_distinct_minimum_distance": 0.4557271945361778,
+        "random_best_distinct_residual": 0.1507672943097504,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-b5b0793387315913781d33b5a6410aa328cc264cec35bbf59d55ca41423d88ac",
+        "contains_K7": false,
+        "edges": 106,
+        "index": 2909,
+        "random_best_distinct_minimum_distance": 0.4324626011028764,
+        "random_best_distinct_residual": 0.1515245505618198,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-2b1d4bd03f458d7d8c082d6682546152bdc895b886a7c8913428028332a5bbea",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 1234,
+        "random_best_distinct_minimum_distance": 0.12691900351468657,
+        "random_best_distinct_residual": 0.1518088280993642,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-ed9d5aa965f5369eee50f4c07d1d9783cee1fac2d188de9dba0e1866f862ee86",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 1475,
+        "random_best_distinct_minimum_distance": 0.3075383701881829,
+        "random_best_distinct_residual": 0.1523747986975001,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-334bf9aa9f8978398f2c111ba1c75b8c90cff0aad45176739c5ce171aec59bc2",
+        "contains_K7": false,
+        "edges": 107,
+        "index": 7719,
+        "random_best_distinct_minimum_distance": 0.26440307149970177,
+        "random_best_distinct_residual": 0.15321445404321557,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-d2e7104c84ed4424825340be5911f63793c928112211ead535785736b422b2e3",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 3516,
+        "random_best_distinct_minimum_distance": 0.18525606685663384,
+        "random_best_distinct_residual": 0.1537472277942641,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-d8502c8c2ae97def32d8371432bd35f54a8d01f24a20f0e2132871d6ab257fc4",
+        "contains_K7": false,
+        "edges": 103,
+        "index": 9350,
+        "random_best_distinct_minimum_distance": 0.116648071976092,
+        "random_best_distinct_residual": 0.16045430168968036,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-6d85602dddc805ad79913dc9c4186fb94ae495f682ef5d686ae2f0bd83ba972a",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 7068,
+        "random_best_distinct_minimum_distance": 0.3821201155028878,
+        "random_best_distinct_residual": 0.1609977151758028,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-b0d2e7c2b670d7f1ae89693395fc00edff0415e6db35e007a1f26eae43dfcdf5",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 11912,
+        "random_best_distinct_minimum_distance": 0.08509600784191955,
+        "random_best_distinct_residual": 0.1618540423160012,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-549384ae65e7e4a81d061ca45917f932aa0f54a0c6b5a5dce1aa55b0d5117781",
+        "contains_K7": false,
+        "edges": 106,
+        "index": 5926,
+        "random_best_distinct_minimum_distance": 0.19095603901875396,
+        "random_best_distinct_residual": 0.16208350934892315,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-b6d071b191f26685f0a8e2220f8d6566a196a319e749f4c52a082fe94d9eb7d6",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 5124,
+        "random_best_distinct_minimum_distance": 0.21918913960878011,
+        "random_best_distinct_residual": 0.16298365953625238,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-15edb1bacc6c4042ed5103c03c77e587c93ac3ebbe2f217c1d216be0a33b9b7c",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 2136,
+        "random_best_distinct_minimum_distance": 0.5865970056122737,
+        "random_best_distinct_residual": 0.16443075241646107,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-904af98a11113887bf998b0c055cf95cbb92b70884f5af47b4a4f9b1f96b600a",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 10600,
+        "random_best_distinct_minimum_distance": 0.4084641943554509,
+        "random_best_distinct_residual": 0.1661033565756597,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-cb963c2976073ea3474dc2039d5a245e71062583ab08a7d56908ccc6b8ef3013",
+        "contains_K7": true,
+        "edges": 104,
+        "index": 8895,
+        "random_best_distinct_minimum_distance": 0.12953105217179714,
+        "random_best_distinct_residual": 0.16707918336291988,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-1ffaa6492f3cd6c3d9b401eede18877b1f36c47bc07c0922efd1b27f960bf386",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 7669,
+        "random_best_distinct_minimum_distance": 0.5188671863330655,
+        "random_best_distinct_residual": 0.16747887298713043,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-114792b8ea3e0a3b5cdafed736c72bbbe8491cb3f593cd660bd63ad39621d0af",
+        "contains_K7": false,
+        "edges": 106,
+        "index": 575,
+        "random_best_distinct_minimum_distance": 0.1603947775789909,
+        "random_best_distinct_residual": 0.17171192209040825,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-b81faf48c5f3daff1f81d42819a781e9451a63fd7120a4306332da9a156b206c",
+        "contains_K7": false,
+        "edges": 103,
+        "index": 10494,
+        "random_best_distinct_minimum_distance": 0.3550945642848506,
+        "random_best_distinct_residual": 0.1718047535033794,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-dbf213eb92361d6b743a68651cfa94b5913f9da772f8c31be59f8a16b69054e9",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 11139,
+        "random_best_distinct_minimum_distance": 0.4429915745264188,
+        "random_best_distinct_residual": 0.17360416436046158,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-b8c958b7df855eb40402a7e3f8381b9d14dc00435182231ff76fa02640be9a3d",
+        "contains_K7": false,
+        "edges": 106,
+        "index": 3549,
+        "random_best_distinct_minimum_distance": 0.12168608323205095,
+        "random_best_distinct_residual": 0.1738517969206698,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-2ab32dea43823a29c99c62e92e52d0a813eb2f0961cb7ad104f9eed9caafe69a",
+        "contains_K7": true,
+        "edges": 104,
+        "index": 11009,
+        "random_best_distinct_minimum_distance": 0.49918084848456606,
+        "random_best_distinct_residual": 0.17517525963717934,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-24d51c3a119e61a3d24b6f3979f47b2bbbd1f1b11931a921ce3fa95c4771de6e",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 7738,
+        "random_best_distinct_minimum_distance": 0.37577956278942026,
+        "random_best_distinct_residual": 0.17520206248291523,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-485b0c7bb51a40ba113b9bbc6dc0b38755aa748aafd5ce562145cc0e68e9c58f",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 9973,
+        "random_best_distinct_minimum_distance": 0.12221888908637013,
+        "random_best_distinct_residual": 0.1757368845921092,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-1a2e95dd7691522ecec503cc2c37a7c317c8a6e4128d29921796acce3c6caf26",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 7833,
+        "random_best_distinct_minimum_distance": 0.33470654908938235,
+        "random_best_distinct_residual": 0.17597140179929682,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-1c786565bfe5c75a010e58508521035725d03b45664ccd9d6252731f3d3b61c9",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 2837,
+        "random_best_distinct_minimum_distance": 0.07964825679300144,
+        "random_best_distinct_residual": 0.1762203623472223,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-e0e9be8a5fcd5311e179d1a8c5c9be257457fee263b9b9ca2d102b3f74f1d1cd",
+        "contains_K7": false,
+        "edges": 106,
+        "index": 7684,
+        "random_best_distinct_minimum_distance": 0.4160971158064177,
+        "random_best_distinct_residual": 0.17688504919482567,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-8a45d25366a4d4da81945a7409f365da84cb165f5c87e7d0a8bce048da1146b6",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 7194,
+        "random_best_distinct_minimum_distance": 0.040204375054466085,
+        "random_best_distinct_residual": 0.1772563130393796,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-3f9adb1f1bbf8e73d3d434a0f562c4a4e623cccbfa0b7cae1c16f548d4cc1711",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 10273,
+        "random_best_distinct_minimum_distance": 0.3361866634783047,
+        "random_best_distinct_residual": 0.17785369128153403,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": true
+      },
+      {
+        "class_id": "u18-080b7decd7743ea67364b9fb72a30f0d4f7ac04662a5d9759b1c06c420dfbd6d",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 10271,
+        "random_best_distinct_minimum_distance": 0.40055337146516384,
+        "random_best_distinct_residual": 0.17887300633847725,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-127e1a64dc35a1dcf70e2f5f82fdd6d3ad61610ac7155cf2ffabc7b6cfafc0ab",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 7823,
+        "random_best_distinct_minimum_distance": 0.07577316469399872,
+        "random_best_distinct_residual": 0.1804523842370446,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-8943ecec4374af090e71050ec42d5ebe64ca56926965c40df2513933515f4b65",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 6384,
+        "random_best_distinct_minimum_distance": 0.2878021237744266,
+        "random_best_distinct_residual": 0.18181586266501865,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-df7bde533d6e644f218deebe9bcae464bced90ed4bb149b0323a9f4ee6a70500",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 162,
+        "random_best_distinct_minimum_distance": 0.08816729051402132,
+        "random_best_distinct_residual": 0.18203754290257262,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-51c5e7b62ef21c88d2176254679463d90aafe498bfa7b4e3d598958933dca8ab",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 352,
+        "random_best_distinct_minimum_distance": 0.5639104359039011,
+        "random_best_distinct_residual": 0.18257328795160058,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": true
+      },
+      {
+        "class_id": "u18-9678d2f9c1b1323a78859cb472c4312362760595791aeb0831291ec454cfc19a",
+        "contains_K7": true,
+        "edges": 101,
+        "index": 4996,
+        "random_best_distinct_minimum_distance": 0.09679215788181009,
+        "random_best_distinct_residual": 0.18293426635221383,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-a67460a94d2b1f380d350d65c56c7282f6e24ca3954e68db8c820a8166c1695c",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 10640,
+        "random_best_distinct_minimum_distance": 0.3874550460320368,
+        "random_best_distinct_residual": 0.1831163400945314,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-5da3d96caedd30094275677e23ce3a0b7dd17f7a0e4793cabf2f3eae87cd0c50",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 2527,
+        "random_best_distinct_minimum_distance": 0.3082935152795666,
+        "random_best_distinct_residual": 0.18332771580036294,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-2eab8db857e740e23b0da8cc5ef4e9fb77585c711a118d287900280c0e2edbf4",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 8783,
+        "random_best_distinct_minimum_distance": 0.21243673192128248,
+        "random_best_distinct_residual": 0.18333025623193008,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-48871398e7e03900fc016ce49a9a65c9d8f94f09bc977dacb2fa4ee4808d7359",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 3279,
+        "random_best_distinct_minimum_distance": 0.07968985723692389,
+        "random_best_distinct_residual": 0.18357430014546286,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-886fb43ba552adf0f600ebf81d1f7ee09431a428603d8a498d998118c16e223c",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 4952,
+        "random_best_distinct_minimum_distance": 0.2459221921074257,
+        "random_best_distinct_residual": 0.183718630477076,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-8ab002abe4b02e7180ece57d11a922725adb437ae588607e903e084e912630f5",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 8474,
+        "random_best_distinct_minimum_distance": 0.17008190022252914,
+        "random_best_distinct_residual": 0.18400282513204252,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-15ec06f438344342ff6fab83f1936141be2a9953d6fed9a6d2aaa0759599acdc",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 4228,
+        "random_best_distinct_minimum_distance": 0.1627484641269724,
+        "random_best_distinct_residual": 0.1857843056689281,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-11ce877c6fd105fd34718f2894333b42970915ab73e307c0ce10036f6ed16c77",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 3127,
+        "random_best_distinct_minimum_distance": 0.35580023510643916,
+        "random_best_distinct_residual": 0.18635136508537445,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-0bded703c91f268109596263549e18b8dfd8876f9d14c0e58d32b3eccd12ee56",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 5259,
+        "random_best_distinct_minimum_distance": 0.4719375715090609,
+        "random_best_distinct_residual": 0.18731232386235067,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-a8922f559040e4796267927f16ee3df5eecd3595c367c9e1095c8b1d90862827",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 3299,
+        "random_best_distinct_minimum_distance": 0.5501706014260054,
+        "random_best_distinct_residual": 0.1878460623810315,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-2d941c05945c90e8059e2ad110af21ed79f2260c4c5843daf4f09b1d9ef39c6a",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 3288,
+        "random_best_distinct_minimum_distance": 0.40391540634004347,
+        "random_best_distinct_residual": 0.18831653101577628,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-7223d9518253606f68363f5217425161f90660a1babfd54b55535fe6fdac00ed",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 10914,
+        "random_best_distinct_minimum_distance": 0.3041260938518674,
+        "random_best_distinct_residual": 0.1891062041307092,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-02e8e4202705c327e503941c036d81af656ceafda0c16195f54bde4b9abb5f8b",
+        "contains_K7": false,
+        "edges": 103,
+        "index": 10282,
+        "random_best_distinct_minimum_distance": 0.20671918007833387,
+        "random_best_distinct_residual": 0.18912747461979593,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-9647fc162b68fb7ba99eb09ce1cbdbca96776d5307c05f104284eef69a68d2ab",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 5822,
+        "random_best_distinct_minimum_distance": 0.2206497659328986,
+        "random_best_distinct_residual": 0.19002797204928,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-462aa29f8a4f7a4d382da31fc8e4b2c263ba59ded7fc6ac6603d28f9deba3798",
+        "contains_K7": false,
+        "edges": 103,
+        "index": 10288,
+        "random_best_distinct_minimum_distance": 0.24894746471505816,
+        "random_best_distinct_residual": 0.19089497340997363,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-374a8dd6b03f84932ad650b1c543452230baa34706f51a944cea61aac52c5677",
+        "contains_K7": false,
+        "edges": 106,
+        "index": 1711,
+        "random_best_distinct_minimum_distance": 0.41275166672093444,
+        "random_best_distinct_residual": 0.1913359527816534,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-c1c29b198fb186075c25bb8a0ceef9561a4cdb8cd03de68d1bf72c6974f0ac41",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 3730,
+        "random_best_distinct_minimum_distance": 0.4211811652012476,
+        "random_best_distinct_residual": 0.19141662511732377,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-84ca102f25ddd43535327da0ad7959ef80f7b5e3606cf9c3b31ec0e99a27cfad",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 2499,
+        "random_best_distinct_minimum_distance": 0.374574605911901,
+        "random_best_distinct_residual": 0.19182200618725917,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-933efbe2403ac04a8128ecc76b15464f4511acb359d3b2d3f4b08960a9883609",
+        "contains_K7": true,
+        "edges": 105,
+        "index": 5075,
+        "random_best_distinct_minimum_distance": 0.0777096139430954,
+        "random_best_distinct_residual": 0.1925457975235823,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-49374792c1333f7ce203e616e729f23790084b5efcc94007bfb05465e0ad586c",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 5201,
+        "random_best_distinct_minimum_distance": 0.20530654817042726,
+        "random_best_distinct_residual": 0.19362348945040692,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-b2f957a4434ee3f57812e018629ac6f1c32586c07d0bda7e02f76b1c293334be",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 2204,
+        "random_best_distinct_minimum_distance": 0.5652765055030774,
+        "random_best_distinct_residual": 0.1948850903385181,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-a18cc33a9519a08abfb8e9bafe38e94d95b3a318242a8cfc52a2171bd053e4a6",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 6662,
+        "random_best_distinct_minimum_distance": 0.17797641956111007,
+        "random_best_distinct_residual": 0.19732587612682262,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-51f4d55ec165179e394c51bee5d0f4fb05f03ce27135ec11442786dd98310088",
+        "contains_K7": false,
+        "edges": 105,
+        "index": 8755,
+        "random_best_distinct_minimum_distance": 0.2550797904712543,
+        "random_best_distinct_residual": 0.19782570268016814,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-8634e8239456c144b855a44170ed7edbfa4f54d132e08b4fe1de24e4d2ce6073",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 2776,
+        "random_best_distinct_minimum_distance": 0.1513269525550562,
+        "random_best_distinct_residual": 0.19795766195569792,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-262d8d71238bd55e6cd43a79320193dfbe95262b93a12d962166f4becb6a7ff4",
+        "contains_K7": false,
+        "edges": 104,
+        "index": 2152,
+        "random_best_distinct_minimum_distance": 0.4780755414366297,
+        "random_best_distinct_residual": 0.19801059038802263,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-84b525bf33e222615182c71c68ed2db3d3fe114f41462d5220961c87fae0b5b1",
+        "contains_K7": true,
+        "edges": 105,
+        "index": 6895,
+        "random_best_distinct_minimum_distance": 0.07709054424613268,
+        "random_best_distinct_residual": 0.198563233744601,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      },
+      {
+        "class_id": "u18-8a4336771e71845ff0f56c0ff37e61f3c01aa8b0240b21909e93895eb239b353",
+        "contains_K7": false,
+        "edges": 106,
+        "index": 452,
+        "random_best_distinct_minimum_distance": 0.07739379771681597,
+        "random_best_distinct_residual": 0.19888797216881082,
+        "random_endpoint_numerical_rigidity_rank": 87,
+        "standard18_compatible": false
+      }
+    ],
+    "mathematical_realizability_conclusions": 0,
+    "mathematical_rejections": 0,
+    "random_best_distinct_residual_quantiles": {
+      "maximum": 1.2100325500970373,
+      "median": 0.5889354911198392,
+      "minimum": 2.354256764018957e-30,
+      "q01": 0.21117029909917123,
+      "q10": 0.38722816247221414,
+      "q90": 0.791580684109811,
+      "q99": 0.9763961630009365
+    },
+    "random_distinct_near_solution_count": 2,
+    "random_distinct_near_solution_indices": [
+      10261,
+      10887
+    ],
+    "random_distinct_near_solution_noncontrol_indices": [],
+    "random_distinct_near_solution_witnesses": [
+      {
+        "class_id": "u18-761add09c775ad5ba966a0eef97848e076faacc647744c4079b7bee48a65d92f",
+        "coordinates_vertex_major_binary64": [
+          [
+            0.0497891475394999,
+            0.19439204798084517,
+            0.42150041895466395,
+            0.7059852457031003,
+            0.19816556176537437,
+            -0.11513342765200756
+          ],
+          [
+            0.45446507067908315,
+            0.4287537949334182,
+            0.4073237106641879,
+            0.43987709680427456,
+            -0.6144318798328545,
+            -0.33870185282909804
+          ],
+          [
+            0.20672752176943118,
+            0.080362832531112,
+            -0.3243322089611291,
+            0.592322710516214,
+            -0.3850246622269051,
+            0.11523880719614275
+          ],
+          [
+            0.31609254676600523,
+            0.4378525587696411,
+            0.37903823494121713,
+            0.1887087025812933,
+            -0.2231026359214544,
+            0.5352238016684018
+          ],
+          [
+            -0.1534920748518826,
+            0.6248187963051676,
+            -0.1730830740837951,
+            0.565140705824629,
+            -0.20327023806384362,
+            -0.6038993664796821
+          ],
+          [
+            -0.04412704985530844,
+            0.9823085225436967,
+            0.5302873698185508,
+            0.16152669788970822,
+            -0.04134821175839257,
+            -0.18391437200742308
+          ],
+          [
+            -0.04691218742119131,
+            0.13897288884820133,
+            0.3552342085998819,
+            0.051157600538499624,
+            -0.5276330176408434,
+            -0.2812765444012928
+          ],
+          [
+            0.11281132437462267,
+            0.8682793070939636,
+            -0.21554525809724204,
+            0.04786416270282199,
+            -0.6245384357506722,
+            0.04645786284072732
+          ],
+          [
+            0.4772395013134463,
+            0.43793506728837317,
+            -0.08075556068951512,
+            0.008453685790462963,
+            0.1373708714351221,
+            -0.23949440332467792
+          ],
+          [
+            0.08804598869502939,
+            0.5621589266182594,
+            0.05246747066155051,
+            0.2524207310485223,
+            0.21068018366155916,
+            -0.2608085299898426
+          ],
+          [
+            0.08061938854993343,
+            -0.2549440941738585,
+            0.07094383535257238,
+            0.2332593660497805,
+            -0.22763937720067173,
+            -0.634245174720125
+          ],
+          [
+            0.1899844135465075,
+            0.10254563206467077,
+            0.7743142792549185,
+            -0.17035464188514024,
+            -0.06571735089522084,
+            -0.21426018024786592
+          ],
+          [
+            -0.05775313536314464,
+            -0.2458453303376354,
+            0.04265835962960159,
+            -0.017909028173200753,
+            0.16368986671072844,
+            0.23968047977737494
+          ],
+          [
+            -0.013296808844875031,
+            0.5329723803889932,
+            0.17973078621645927,
+            -0.31119918176361167,
+            -0.46715315072443875,
+            -0.7030261190755404
+          ],
+          [
+            -0.26103435775452716,
+            0.18458141798668695,
+            -0.5519251334088575,
+            -0.15875356805167204,
+            -0.23774593311848957,
+            -0.24908545905029966
+          ],
+          [
+            -0.15166933275795316,
+            0.5420711442252161,
+            0.15144531049348847,
+            -0.5623675759865927,
+            -0.0758239068130386,
+            0.17089953542195946
+          ],
+          [
+            -0.41797273198445856,
+            0.29861063343642014,
+            0.1939074945069355,
+            -0.04509103286478571,
+            0.34544429087378997,
+            -0.4794576938984499
+          ],
+          [
+            -0.4314642374603948,
+            0.2369641352747099,
+            0.29492771404125645,
+            0.20391691344409202,
+            -0.5022889504346263,
+            -0.026516198730044915
+          ]
+        ],
+        "extra_unit_pairs_at_squared_distance_tolerance_1e-8": [
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            0,
+            17
+          ],
+          [
+            4,
+            17
+          ],
+          [
+            5,
+            17
+          ]
+        ],
+        "heuristic_only": true,
+        "index": 10261,
+        "maximum_required_edge_squared_distance_error": 4.440892098500626e-16,
+        "maximum_squared_distance_discrepancy_from_recorded_standard_embedding": 1.7499999999999996,
+        "minimum_pairwise_distance_recomputed": 0.5,
+        "numerical_affine_rank": 6,
+        "numerical_rigidity_rank": 87,
+        "residual_sum_of_squares_recomputed": 2.1200636827814692e-30,
+        "squared_distance_histogram_rounded_8_decimals": {
+          "0.25": 2,
+          "0.5": 8,
+          "0.875": 1,
+          "1": 110,
+          "1.5": 1,
+          "2": 31
+        },
+        "standard18_compatible": true,
+        "unit_pairs_at_squared_distance_tolerance_1e-8": 110
+      },
+      {
+        "class_id": "u18-84a0a88e385b1aa4673cc149e0c2458f37b7cc6aef3def3cf2589f2075be4841",
+        "coordinates_vertex_major_binary64": [
+          [
+            0.021769700047097416,
+            -0.09106720018313734,
+            0.009422646514763421,
+            0.06581147059799432,
+            0.01706691173353221,
+            0.36130751291650726
+          ],
+          [
+            0.3434353471182451,
+            -0.18947545430208493,
+            0.633703709867719,
+            0.04390850545685593,
+            -0.6666043384001272,
+            0.19032779829173416
+          ],
+          [
+            0.22348772962225483,
+            -0.33077322808770854,
+            0.3934379930828002,
+            -0.06778286728952373,
+            -0.015453595154350944,
+            -0.4962926502404911
+          ],
+          [
+            -0.3377975413123553,
+            0.05511285316557141,
+            0.16593441926888836,
+            0.227708766930643,
+            -0.6067241331126593,
+            -0.2786306510832327
+          ],
+          [
+            -0.1966488695857938,
+            -0.5848414024493515,
+            0.5656293749958473,
+            0.576014258282515,
+            -0.17451245395266388,
+            0.041768934822289286
+          ],
+          [
+            0.46402116173754143,
+            -0.6180244183302164,
+            0.1597053112238342,
+            0.10213036541309296,
+            0.06649486940034274,
+            0.38086947712240055
+          ],
+          [
+            -0.09726410919706868,
+            -0.2321383370769363,
+            -0.06779826259007778,
+            0.39762199963325967,
+            -0.5247756685579654,
+            0.5985314762796589
+          ],
+          [
+            -0.21721172669305894,
+            -0.3734361108625601,
+            -0.3080639793749966,
+            0.28593062688688003,
+            0.1263750746878106,
+            -0.08808897225256654
+          ],
+          [
+            -0.12955769762241165,
+            0.13724433154391485,
+            0.40973844589807396,
+            0.02678857437062747,
+            0.11283045872564637,
+            0.2978435026694177
+          ],
+          [
+            0.20476447724689348,
+            -0.35259772703610204,
+            0.4713142196990765,
+            -0.7414871832172835,
+            -0.11052818785669466,
+            0.23185001498174643
+          ],
+          [
+            -0.35652079368771655,
+            0.03328835421717804,
+            0.2438106458851646,
+            -0.4459955489971168,
+            -0.7017987258150029,
+            0.4495120141390048
+          ],
+          [
+            -0.47646841118370686,
+            -0.1080094195684456,
+            0.0035449291002456994,
+            -0.5576869217434963,
+            -0.05064798256922669,
+            -0.23710843439322044
+          ],
+          [
+            -0.2153721219611553,
+            -0.606665901397744,
+            0.6435056016121242,
+            -0.09769005764524476,
+            -0.2695870466550071,
+            0.7699116000445267
+          ],
+          [
+            -0.33531973945714555,
+            -0.7479636751833678,
+            0.4032398848272053,
+            -0.20938143039162432,
+            0.3815636965907689,
+            0.08329115151230165
+          ],
+          [
+            -0.8966050103917556,
+            -0.3620775939300878,
+            0.17573631101329343,
+            0.08611020382854234,
+            -0.20970684136753912,
+            0.30095315066955997
+          ],
+          [
+            0.32287249001097984,
+            0.021929837284703314,
+            -0.23998964450312593,
+            -0.2461751259387795,
+            -0.36571680975965465,
+            0.06046989121687762
+          ],
+          [
+            -0.23593497906842048,
+            -0.39526060981095834,
+            -0.23018775275872197,
+            -0.38777368904088083,
+            0.03130048198546361,
+            0.6400536929696696
+          ],
+          [
+            -0.15325075873742827,
+            -0.776037774609332,
+            0.07660668470447167,
+            -0.1895574978931344,
+            -0.5430626051939207,
+            0.019677493175821126
+          ]
+        ],
+        "extra_unit_pairs_at_squared_distance_tolerance_1e-8": [
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            5,
+            17
+          ],
+          [
+            6,
+            17
+          ],
+          [
+            7,
+            17
+          ]
+        ],
+        "heuristic_only": true,
+        "index": 10887,
+        "maximum_required_edge_squared_distance_error": 1.5543122344752192e-15,
+        "maximum_squared_distance_discrepancy_from_recorded_standard_embedding": 1.5000000000000033,
+        "minimum_pairwise_distance_recomputed": 0.5000000000000028,
+        "numerical_affine_rank": 6,
+        "numerical_rigidity_rank": 87,
+        "residual_sum_of_squares_recomputed": 1.4409037471927544e-29,
+        "squared_distance_histogram_rounded_8_decimals": {
+          "0.25": 1,
+          "0.5": 5,
+          "1": 111,
+          "1.5": 1,
+          "2": 35
+        },
+        "standard18_compatible": true,
+        "unit_pairs_at_squared_distance_tolerance_1e-8": 111
+      }
+    ],
+    "random_endpoint_rank_histogram_all_endpoints": {
+      "87": 12712
+    },
+    "random_residual_threshold_counts": {
+      "1e-01": 15,
+      "1e-02": 2,
+      "1e-04": 2,
+      "1e-08": 2,
+      "1e-12": 2,
+      "1e-16": 2,
+      "1e-20": 2
+    },
+    "seeded_positive_controls": 14,
+    "seeded_positive_controls_passed": 14,
+    "strata": {
+      "K6_without_K7": {
+        "below_1e-20": 2,
+        "below_1e-8": 2,
+        "count": 11096,
+        "median_random_best_distinct_residual": 0.5833068204680769,
+        "minimum_random_best_distinct_residual": 2.354256764018957e-30
+      },
+      "contains_K7": {
+        "below_1e-20": 0,
+        "below_1e-8": 0,
+        "count": 1616,
+        "median_random_best_distinct_residual": 0.6424918853216359,
+        "minimum_random_best_distinct_residual": 0.048154890098318553
+      }
+    }
+  },
+  "timing": {
+    "elapsed_this_invocation_seconds": 152.3221727500022,
+    "graphs_per_second_this_invocation": 83.4546919236997
+  }
+}

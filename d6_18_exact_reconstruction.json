@@ -1,0 +1,7308 @@
+{
+  "configurations": [
+    {
+      "class_id": "u18-761add09c775ad5ba966a0eef97848e076faacc647744c4079b7bee48a65d92f",
+      "deletion_class_index": 10261,
+      "discovery_numerical_maximum_squared_distance_rounding_error": 6.661338147750939e-16,
+      "exact_centered_gram_matrix": [
+        [
+          "169/288",
+          "25/288",
+          "37/288",
+          "37/288",
+          "25/288",
+          "25/288",
+          "-13/144",
+          "-107/288",
+          "-5/288",
+          "23/144",
+          "25/288",
+          "25/288",
+          "37/288",
+          "-119/288",
+          "-107/288",
+          "-107/288",
+          "25/288",
+          "-5/288"
+        ],
+        [
+          "25/288",
+          "169/288",
+          "37/288",
+          "37/288",
+          "25/288",
+          "25/288",
+          "23/144",
+          "37/288",
+          "-5/288",
+          "-13/144",
+          "25/288",
+          "25/288",
+          "-107/288",
+          "25/288",
+          "-107/288",
+          "-107/288",
+          "-119/288",
+          "-5/288"
+        ],
+        [
+          "37/288",
+          "37/288",
+          "193/288",
+          "49/288",
+          "37/288",
+          "-107/288",
+          "-7/144",
+          "49/288",
+          "7/288",
+          "-7/144",
+          "37/288",
+          "-107/288",
+          "49/288",
+          "-107/288",
+          "49/288",
+          "-95/288",
+          "-107/288",
+          "7/288"
+        ],
+        [
+          "37/288",
+          "37/288",
+          "49/288",
+          "193/288",
+          "-107/288",
+          "37/288",
+          "-7/144",
+          "49/288",
+          "7/288",
+          "-7/144",
+          "-107/288",
+          "37/288",
+          "49/288",
+          "-107/288",
+          "-95/288",
+          "49/288",
+          "-107/288",
+          "7/288"
+        ],
+        [
+          "25/288",
+          "25/288",
+          "37/288",
+          "-107/288",
+          "169/288",
+          "25/288",
+          "-13/144",
+          "37/288",
+          "-5/288",
+          "23/144",
+          "25/288",
+          "-119/288",
+          "-107/288",
+          "25/288",
+          "37/288",
+          "-107/288",
+          "25/288",
+          "-5/288"
+        ],
+        [
+          "25/288",
+          "25/288",
+          "-107/288",
+          "37/288",
+          "25/288",
+          "169/288",
+          "-13/144",
+          "37/288",
+          "-5/288",
+          "23/144",
+          "-119/288",
+          "25/288",
+          "-107/288",
+          "25/288",
+          "-107/288",
+          "37/288",
+          "25/288",
+          "-5/288"
+        ],
+        [
+          "-13/144",
+          "23/144",
+          "-7/144",
+          "-7/144",
+          "-13/144",
+          "-13/144",
+          "67/288",
+          "-7/144",
+          "-7/36",
+          "-59/288",
+          "23/144",
+          "23/144",
+          "-7/144",
+          "23/144",
+          "-7/144",
+          "-7/144",
+          "-13/144",
+          "13/72"
+        ],
+        [
+          "-107/288",
+          "37/288",
+          "49/288",
+          "49/288",
+          "37/288",
+          "37/288",
+          "-7/144",
+          "193/288",
+          "7/288",
+          "-7/144",
+          "-107/288",
+          "-107/288",
+          "-95/288",
+          "37/288",
+          "49/288",
+          "49/288",
+          "-107/288",
+          "7/288"
+        ],
+        [
+          "-5/288",
+          "-5/288",
+          "7/288",
+          "7/288",
+          "-5/288",
+          "-5/288",
+          "-7/36",
+          "7/288",
+          "109/288",
+          "13/72",
+          "-5/288",
+          "-5/288",
+          "7/288",
+          "-5/288",
+          "7/288",
+          "7/288",
+          "-5/288",
+          "-107/288"
+        ],
+        [
+          "23/144",
+          "-13/144",
+          "-7/144",
+          "-7/144",
+          "23/144",
+          "23/144",
+          "-59/288",
+          "-7/144",
+          "13/72",
+          "67/288",
+          "-13/144",
+          "-13/144",
+          "-7/144",
+          "-13/144",
+          "-7/144",
+          "-7/144",
+          "23/144",
+          "-7/36"
+        ],
+        [
+          "25/288",
+          "25/288",
+          "37/288",
+          "-107/288",
+          "25/288",
+          "-119/288",
+          "23/144",
+          "-107/288",
+          "-5/288",
+          "-13/144",
+          "169/288",
+          "25/288",
+          "37/288",
+          "25/288",
+          "37/288",
+          "-107/288",
+          "25/288",
+          "-5/288"
+        ],
+        [
+          "25/288",
+          "25/288",
+          "-107/288",
+          "37/288",
+          "-119/288",
+          "25/288",
+          "23/144",
+          "-107/288",
+          "-5/288",
+          "-13/144",
+          "25/288",
+          "169/288",
+          "37/288",
+          "25/288",
+          "-107/288",
+          "37/288",
+          "25/288",
+          "-5/288"
+        ],
+        [
+          "37/288",
+          "-107/288",
+          "49/288",
+          "49/288",
+          "-107/288",
+          "-107/288",
+          "-7/144",
+          "-95/288",
+          "7/288",
+          "-7/144",
+          "37/288",
+          "37/288",
+          "193/288",
+          "-107/288",
+          "49/288",
+          "49/288",
+          "37/288",
+          "7/288"
+        ],
+        [
+          "-119/288",
+          "25/288",
+          "-107/288",
+          "-107/288",
+          "25/288",
+          "25/288",
+          "23/144",
+          "37/288",
+          "-5/288",
+          "-13/144",
+          "25/288",
+          "25/288",
+          "-107/288",
+          "169/288",
+          "37/288",
+          "37/288",
+          "25/288",
+          "-5/288"
+        ],
+        [
+          "-107/288",
+          "-107/288",
+          "49/288",
+          "-95/288",
+          "37/288",
+          "-107/288",
+          "-7/144",
+          "49/288",
+          "7/288",
+          "-7/144",
+          "37/288",
+          "-107/288",
+          "49/288",
+          "37/288",
+          "193/288",
+          "49/288",
+          "37/288",
+          "7/288"
+        ],
+        [
+          "-107/288",
+          "-107/288",
+          "-95/288",
+          "49/288",
+          "-107/288",
+          "37/288",
+          "-7/144",
+          "49/288",
+          "7/288",
+          "-7/144",
+          "-107/288",
+          "37/288",
+          "49/288",
+          "37/288",
+          "49/288",
+          "193/288",
+          "37/288",
+          "7/288"
+        ],
+        [
+          "25/288",
+          "-119/288",
+          "-107/288",
+          "-107/288",
+          "25/288",
+          "25/288",
+          "-13/144",
+          "-107/288",
+          "-5/288",
+          "23/144",
+          "25/288",
+          "25/288",
+          "37/288",
+          "25/288",
+          "37/288",
+          "37/288",
+          "169/288",
+          "-5/288"
+        ],
+        [
+          "-5/288",
+          "-5/288",
+          "7/288",
+          "7/288",
+          "-5/288",
+          "-5/288",
+          "13/72",
+          "7/288",
+          "-107/288",
+          "-7/36",
+          "-5/288",
+          "-5/288",
+          "7/288",
+          "-5/288",
+          "7/288",
+          "7/288",
+          "-5/288",
+          "109/288"
+        ]
+      ],
+      "exact_geometry": {
+        "affine_dimension": 6,
+        "all_points_distinct": true,
+        "almost_equidistant": true,
+        "extra_unit_edges_beyond_required_support": 7,
+        "points": 18,
+        "required_edges": 103,
+        "squared_distance_histogram": {
+          "1": 110,
+          "1/2": 8,
+          "1/4": 2,
+          "2": 31,
+          "3/2": 1,
+          "7/8": 1
+        },
+        "unit_edges": 110,
+        "unit_graph_adjacency": [
+          204158,
+          143293,
+          153563,
+          170983,
+          222695,
+          240091,
+          119229,
+          189310,
+          130303,
+          195726,
+          228119,
+          243499,
+          249677,
+          249778,
+          243668,
+          228328,
+          195953,
+          130751
+        ]
+      },
+      "exact_squared_distance_matrix": [
+        [
+          "0",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1/2",
+          "1",
+          "1",
+          "1",
+          "2",
+          "2",
+          "2",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1/2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "2",
+          "2",
+          "2",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "0",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "2",
+          "1",
+          "2",
+          "2",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "2",
+          "2",
+          "1",
+          "2",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1",
+          "2",
+          "0",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1/2",
+          "1",
+          "2",
+          "2",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "0",
+          "1",
+          "1",
+          "1",
+          "1/2",
+          "2",
+          "1",
+          "2",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "1/2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "1",
+          "1",
+          "7/8",
+          "1/2",
+          "1/2",
+          "1",
+          "1/2",
+          "1",
+          "1",
+          "1",
+          "1/4"
+        ],
+        [
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "1",
+          "1",
+          "2",
+          "2",
+          "2",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "1/4",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "3/2"
+        ],
+        [
+          "1/2",
+          "1",
+          "1",
+          "1",
+          "1/2",
+          "1/2",
+          "7/8",
+          "1",
+          "1/4",
+          "0",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1/2",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "2",
+          "1/2",
+          "2",
+          "1",
+          "1",
+          "0",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "2",
+          "1",
+          "2",
+          "1",
+          "1/2",
+          "2",
+          "1",
+          "1",
+          "1",
+          "0",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "2",
+          "1",
+          "1",
+          "2",
+          "2",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "1",
+          "2",
+          "2",
+          "1",
+          "1",
+          "1/2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2",
+          "0",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "2",
+          "1",
+          "2",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "0",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "2",
+          "2",
+          "2",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "2",
+          "2",
+          "2",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1/2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1/4",
+          "1",
+          "3/2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "0"
+        ]
+      ],
+      "global_nonextension_certificate": {
+        "argument": "For any added point x, its non-unit neighbours in the exact 18-set must form a unit clique. Extend that clique to a maximal unit clique C. Then x is unit from every vertex outside C. All maximal C are enumerated below; their exact linear sphere equations are inconsistent, or their unique linear solution violates s=y^T B[J,J] y.",
+        "checks": [
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              1,
+              2,
+              3,
+              8
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              1,
+              2,
+              3,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              3,
+              5,
+              6,
+              7,
+              9,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              1,
+              2,
+              4,
+              8,
+              10
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              3,
+              5,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              1,
+              2,
+              4,
+              10,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              2,
+              4,
+              6,
+              7,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              1,
+              3,
+              5,
+              8,
+              11
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              2,
+              4,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              1,
+              3,
+              5,
+              11,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              2,
+              3,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              1,
+              4,
+              5,
+              8
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              1,
+              4,
+              5,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              1,
+              8,
+              10,
+              11
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              1,
+              10,
+              11,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              4,
+              5,
+              7,
+              9,
+              10,
+              11,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              2,
+              3,
+              6,
+              8,
+              12
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              2,
+              3,
+              12,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              2,
+              4,
+              6,
+              8
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              11,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              2,
+              8,
+              10,
+              12
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              11,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              2,
+              10,
+              12,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              4,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              3,
+              5,
+              6,
+              8
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              3,
+              8,
+              11,
+              12
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              3,
+              11,
+              12,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-1/3",
+              "1/3",
+              "1/3",
+              "-1/3",
+              "-2/3",
+              "-1/3"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              3,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              17
+            ],
+            "linear_norm_variable": "151/288",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              4,
+              5,
+              6,
+              8,
+              16
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "55/288"
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              4,
+              5,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              9,
+              11,
+              12,
+              13,
+              14,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              4,
+              8,
+              10,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              4,
+              10,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              5,
+              8,
+              11,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              5,
+              11,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              7,
+              9,
+              10,
+              11,
+              13,
+              14,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              6,
+              8,
+              12,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              13,
+              14,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              8,
+              10,
+              11,
+              12,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              13,
+              14,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              10,
+              11,
+              12,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              2,
+              3,
+              7,
+              8
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              4,
+              5,
+              6,
+              8,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              2,
+              3,
+              7,
+              9,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              3,
+              5,
+              6,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              2,
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              3,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              2,
+              4,
+              7,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              2,
+              9,
+              10,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              4,
+              6,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              3,
+              5,
+              7,
+              8
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              3,
+              5,
+              7,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              4,
+              5,
+              6,
+              7,
+              8,
+              10,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              3,
+              9,
+              11,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              6,
+              9,
+              10,
+              11,
+              12,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              4,
+              5,
+              7,
+              8,
+              13
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              4,
+              5,
+              7,
+              13,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              5,
+              6,
+              7,
+              9,
+              11,
+              12,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              4,
+              8,
+              10,
+              13
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              4,
+              10,
+              13,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              4,
+              6,
+              7,
+              9,
+              10,
+              12,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              5,
+              8,
+              11,
+              13
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              5,
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              10,
+              11,
+              12,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              7,
+              9,
+              13,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              12,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              8,
+              10,
+              11,
+              13
+            ]
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "0",
+              "-2/3",
+              "0",
+              "2/3",
+              "2/3",
+              "1/3"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              12,
+              14,
+              15,
+              16
+            ],
+            "linear_norm_variable": "151/288",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              9,
+              10,
+              11,
+              13,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "55/288"
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              4,
+              5,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              3,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              4,
+              5,
+              6,
+              7,
+              8,
+              10,
+              11,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              3,
+              9,
+              12,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              5,
+              9,
+              10,
+              11,
+              12,
+              13,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              4,
+              6,
+              7,
+              8,
+              14
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              4,
+              7,
+              14,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              5,
+              6,
+              7,
+              9,
+              11,
+              12,
+              13,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              4,
+              8,
+              10,
+              14
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              5,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              4,
+              10,
+              14,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              7,
+              9,
+              10,
+              11,
+              13,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              6,
+              8,
+              12,
+              14
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              8,
+              10,
+              11,
+              12,
+              13,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              7,
+              9,
+              14,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              11,
+              13,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              8,
+              10,
+              12,
+              14
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              11,
+              13,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              9,
+              10,
+              12,
+              14,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              5,
+              6,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              5,
+              7,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              6,
+              7,
+              9,
+              10,
+              12,
+              13,
+              14,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              5,
+              8,
+              11,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              5,
+              11,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              7,
+              9,
+              10,
+              11,
+              13,
+              14,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              6,
+              8,
+              12,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              8,
+              10,
+              11,
+              12,
+              13,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              7,
+              9,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              13,
+              14,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              8,
+              11,
+              12,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              7,
+              8,
+              10,
+              13,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              9,
+              11,
+              12,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              14,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              5,
+              8,
+              13,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              14,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              5,
+              13,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              6,
+              8,
+              14,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              6,
+              9,
+              10,
+              11,
+              12,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              7,
+              8,
+              13,
+              14
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              7,
+              13,
+              14,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              9,
+              11,
+              12,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              8,
+              10,
+              13,
+              14,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              10,
+              13,
+              14,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              5,
+              6,
+              8,
+              15,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              9,
+              10,
+              11,
+              12,
+              14,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              5,
+              7,
+              8,
+              13,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              5,
+              7,
+              13,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              9,
+              10,
+              12,
+              14,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              5,
+              8,
+              11,
+              13,
+              15,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              14
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              5,
+              11,
+              13,
+              15,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              9,
+              10,
+              11,
+              12,
+              13,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              6,
+              7,
+              8,
+              14,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              7,
+              9,
+              10,
+              11,
+              13,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              6,
+              8,
+              12,
+              14,
+              15,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11,
+              12,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              7,
+              8,
+              13,
+              14,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              10,
+              11,
+              12,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              7,
+              9,
+              13,
+              14,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              12,
+              14,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              8,
+              10,
+              11,
+              13,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              8,
+              10,
+              12,
+              14,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              13,
+              14,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              8,
+              11,
+              12,
+              15,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              8,
+              13,
+              14,
+              15,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              9,
+              10,
+              11,
+              12,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              11,
+              12,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              9,
+              10,
+              13,
+              14,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              10,
+              12,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              9,
+              11,
+              13,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              10,
+              11,
+              13,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              9,
+              12,
+              14,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              12,
+              14,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              10,
+              11,
+              13,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              11,
+              13,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              10,
+              12,
+              14,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              13,
+              14
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              11,
+              12,
+              15,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              13
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              12,
+              14,
+              15,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              13,
+              14,
+              15,
+              16,
+              17
+            ]
+          }
+        ],
+        "extension_exists": false,
+        "linear_consistent_but_norm_failed": 2,
+        "linear_inconsistent": 90,
+        "maximal_clique_size_histogram": {
+          "5": 70,
+          "6": 22
+        },
+        "maximal_cliques_checked": 92
+      },
+      "gram_certificate": {
+        "centroid": "origin",
+        "factorization": "B = B[:,J] inverse(B[J,J]) B[J,:]",
+        "leading_principal_minors": [
+          "169/288",
+          "97/288",
+          "241/1152",
+          "1/8",
+          "1/32",
+          "3/1024"
+        ],
+        "positive_semidefinite": true,
+        "principal_basis_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6
+        ],
+        "principal_determinant": "3/1024",
+        "principal_matrix": [
+          [
+            "169/288",
+            "25/288",
+            "37/288",
+            "37/288",
+            "25/288",
+            "-13/144"
+          ],
+          [
+            "25/288",
+            "169/288",
+            "37/288",
+            "37/288",
+            "25/288",
+            "23/144"
+          ],
+          [
+            "37/288",
+            "37/288",
+            "193/288",
+            "49/288",
+            "37/288",
+            "-7/144"
+          ],
+          [
+            "37/288",
+            "37/288",
+            "49/288",
+            "193/288",
+            "-107/288",
+            "-7/144"
+          ],
+          [
+            "25/288",
+            "25/288",
+            "37/288",
+            "-107/288",
+            "169/288",
+            "-13/144"
+          ],
+          [
+            "-13/144",
+            "23/144",
+            "-7/144",
+            "-7/144",
+            "-13/144",
+            "67/288"
+          ]
+        ],
+        "rank": 6
+      },
+      "name": "nonstandard_exact_18_from_deletion_class_10261",
+      "switching_construction": {
+        "canonical_vertex_to_switching_label": [
+          8,
+          11,
+          1,
+          2,
+          9,
+          10,
+          0,
+          3,
+          17,
+          7,
+          13,
+          14,
+          4,
+          15,
+          5,
+          6,
+          12,
+          16
+        ],
+        "exact_distance_matrix_match": true,
+        "replacement_rule": "replace q by x_q=(a_sign-q)/2",
+        "replacements_in_switching_labels": [
+          {
+            "apex_sign": "+",
+            "base_label": 0
+          },
+          {
+            "apex_sign": "-",
+            "base_label": 7
+          }
+        ],
+        "standard_apices": "a_+=(0,...,0,sqrt(3/8)), a_-=-a_+; ||a_+||^2=3/8",
+        "standard_base": "q_w=(sign vector w)/(2 sqrt(2)) in R5 x {0}, for the 16 odd-parity sign vectors; ||q_w||^2=5/8"
+      }
+    },
+    {
+      "class_id": "u18-84a0a88e385b1aa4673cc149e0c2458f37b7cc6aef3def3cf2589f2075be4841",
+      "deletion_class_index": 10887,
+      "discovery_numerical_maximum_squared_distance_rounding_error": 1.0436096431476471e-14,
+      "exact_centered_gram_matrix": [
+        [
+          "83/432",
+          "-17/216",
+          "-17/216",
+          "-17/216",
+          "-17/216",
+          "7/54",
+          "7/54",
+          "7/54",
+          "65/432",
+          "-17/216",
+          "-17/216",
+          "-17/216",
+          "-17/216",
+          "-17/216",
+          "-17/216",
+          "7/54",
+          "7/54",
+          "-11/54"
+        ],
+        [
+          "-17/216",
+          "281/432",
+          "65/432",
+          "65/432",
+          "65/432",
+          "47/432",
+          "47/432",
+          "-169/432",
+          "1/216",
+          "65/432",
+          "65/432",
+          "-151/432",
+          "65/432",
+          "-151/432",
+          "-151/432",
+          "47/432",
+          "-169/432",
+          "11/432"
+        ],
+        [
+          "-17/216",
+          "65/432",
+          "281/432",
+          "65/432",
+          "65/432",
+          "47/432",
+          "-169/432",
+          "47/432",
+          "1/216",
+          "65/432",
+          "-151/432",
+          "65/432",
+          "-151/432",
+          "65/432",
+          "-151/432",
+          "47/432",
+          "-169/432",
+          "11/432"
+        ],
+        [
+          "-17/216",
+          "65/432",
+          "65/432",
+          "281/432",
+          "65/432",
+          "-169/432",
+          "47/432",
+          "47/432",
+          "1/216",
+          "-151/432",
+          "65/432",
+          "65/432",
+          "-151/432",
+          "-151/432",
+          "65/432",
+          "47/432",
+          "-169/432",
+          "11/432"
+        ],
+        [
+          "-17/216",
+          "65/432",
+          "65/432",
+          "65/432",
+          "281/432",
+          "47/432",
+          "47/432",
+          "47/432",
+          "1/216",
+          "-151/432",
+          "-151/432",
+          "-151/432",
+          "65/432",
+          "65/432",
+          "65/432",
+          "-169/432",
+          "-169/432",
+          "11/432"
+        ],
+        [
+          "7/54",
+          "47/432",
+          "47/432",
+          "-169/432",
+          "47/432",
+          "245/432",
+          "29/432",
+          "29/432",
+          "-1/27",
+          "47/432",
+          "-169/432",
+          "-169/432",
+          "47/432",
+          "47/432",
+          "-169/432",
+          "29/432",
+          "29/432",
+          "-7/432"
+        ],
+        [
+          "7/54",
+          "47/432",
+          "-169/432",
+          "47/432",
+          "47/432",
+          "29/432",
+          "245/432",
+          "29/432",
+          "-1/27",
+          "-169/432",
+          "47/432",
+          "-169/432",
+          "47/432",
+          "-169/432",
+          "47/432",
+          "29/432",
+          "29/432",
+          "-7/432"
+        ],
+        [
+          "7/54",
+          "-169/432",
+          "47/432",
+          "47/432",
+          "47/432",
+          "29/432",
+          "29/432",
+          "245/432",
+          "-1/27",
+          "-169/432",
+          "-169/432",
+          "47/432",
+          "-169/432",
+          "47/432",
+          "47/432",
+          "29/432",
+          "29/432",
+          "-7/432"
+        ],
+        [
+          "65/432",
+          "1/216",
+          "1/216",
+          "1/216",
+          "1/216",
+          "-1/27",
+          "-1/27",
+          "-1/27",
+          "155/432",
+          "1/216",
+          "1/216",
+          "1/216",
+          "1/216",
+          "1/216",
+          "1/216",
+          "-1/27",
+          "-1/27",
+          "-10/27"
+        ],
+        [
+          "-17/216",
+          "65/432",
+          "65/432",
+          "-151/432",
+          "-151/432",
+          "47/432",
+          "-169/432",
+          "-169/432",
+          "1/216",
+          "281/432",
+          "65/432",
+          "65/432",
+          "65/432",
+          "65/432",
+          "-151/432",
+          "47/432",
+          "47/432",
+          "11/432"
+        ],
+        [
+          "-17/216",
+          "65/432",
+          "-151/432",
+          "65/432",
+          "-151/432",
+          "-169/432",
+          "47/432",
+          "-169/432",
+          "1/216",
+          "65/432",
+          "281/432",
+          "65/432",
+          "65/432",
+          "-151/432",
+          "65/432",
+          "47/432",
+          "47/432",
+          "11/432"
+        ],
+        [
+          "-17/216",
+          "-151/432",
+          "65/432",
+          "65/432",
+          "-151/432",
+          "-169/432",
+          "-169/432",
+          "47/432",
+          "1/216",
+          "65/432",
+          "65/432",
+          "281/432",
+          "-151/432",
+          "65/432",
+          "65/432",
+          "47/432",
+          "47/432",
+          "11/432"
+        ],
+        [
+          "-17/216",
+          "65/432",
+          "-151/432",
+          "-151/432",
+          "65/432",
+          "47/432",
+          "47/432",
+          "-169/432",
+          "1/216",
+          "65/432",
+          "65/432",
+          "-151/432",
+          "281/432",
+          "65/432",
+          "65/432",
+          "-169/432",
+          "47/432",
+          "11/432"
+        ],
+        [
+          "-17/216",
+          "-151/432",
+          "65/432",
+          "-151/432",
+          "65/432",
+          "47/432",
+          "-169/432",
+          "47/432",
+          "1/216",
+          "65/432",
+          "-151/432",
+          "65/432",
+          "65/432",
+          "281/432",
+          "65/432",
+          "-169/432",
+          "47/432",
+          "11/432"
+        ],
+        [
+          "-17/216",
+          "-151/432",
+          "-151/432",
+          "65/432",
+          "65/432",
+          "-169/432",
+          "47/432",
+          "47/432",
+          "1/216",
+          "-151/432",
+          "65/432",
+          "65/432",
+          "65/432",
+          "65/432",
+          "281/432",
+          "-169/432",
+          "47/432",
+          "11/432"
+        ],
+        [
+          "7/54",
+          "47/432",
+          "47/432",
+          "47/432",
+          "-169/432",
+          "29/432",
+          "29/432",
+          "29/432",
+          "-1/27",
+          "47/432",
+          "47/432",
+          "47/432",
+          "-169/432",
+          "-169/432",
+          "-169/432",
+          "245/432",
+          "29/432",
+          "-7/432"
+        ],
+        [
+          "7/54",
+          "-169/432",
+          "-169/432",
+          "-169/432",
+          "-169/432",
+          "29/432",
+          "29/432",
+          "29/432",
+          "-1/27",
+          "47/432",
+          "47/432",
+          "47/432",
+          "47/432",
+          "47/432",
+          "47/432",
+          "29/432",
+          "245/432",
+          "-7/432"
+        ],
+        [
+          "-11/54",
+          "11/432",
+          "11/432",
+          "11/432",
+          "11/432",
+          "-7/432",
+          "-7/432",
+          "-7/432",
+          "-10/27",
+          "11/432",
+          "11/432",
+          "11/432",
+          "11/432",
+          "11/432",
+          "11/432",
+          "-7/432",
+          "-7/432",
+          "173/432"
+        ]
+      ],
+      "exact_geometry": {
+        "affine_dimension": 6,
+        "all_points_distinct": true,
+        "almost_equidistant": true,
+        "extra_unit_edges_beyond_required_support": 7,
+        "points": 18,
+        "required_edges": 104,
+        "squared_distance_histogram": {
+          "1": 111,
+          "1/2": 5,
+          "1/4": 1,
+          "2": 35,
+          "3/2": 1
+        },
+        "unit_edges": 111,
+        "unit_graph_adjacency": [
+          163358,
+          169853,
+          175035,
+          183767,
+          160239,
+          242646,
+          251322,
+          256380,
+          130814,
+          245031,
+          252747,
+          255885,
+          223091,
+          220085,
+          212441,
+          200686,
+          196576,
+          130815
+        ]
+      },
+      "exact_squared_distance_matrix": [
+        [
+          "0",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1/2",
+          "1/2",
+          "1/2",
+          "1/4",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1/2",
+          "1/2",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "2",
+          "2",
+          "1",
+          "2",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "0",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "2",
+          "1",
+          "2",
+          "1",
+          "2",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "2",
+          "2",
+          "1",
+          "1",
+          "2",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2",
+          "2",
+          "2",
+          "1",
+          "1",
+          "1",
+          "2",
+          "2",
+          "1"
+        ],
+        [
+          "1/2",
+          "1",
+          "1",
+          "2",
+          "1",
+          "0",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2",
+          "2",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1/2",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "0",
+          "1",
+          "1",
+          "2",
+          "1",
+          "2",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1/2",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "1",
+          "2",
+          "2",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1/4",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "3/2"
+        ],
+        [
+          "1",
+          "1",
+          "1",
+          "2",
+          "2",
+          "1",
+          "2",
+          "2",
+          "1",
+          "0",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "2",
+          "1",
+          "2",
+          "2",
+          "1",
+          "2",
+          "1",
+          "1",
+          "0",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "2",
+          "1",
+          "1",
+          "2",
+          "2",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "2",
+          "2",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "2",
+          "0",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "2",
+          "1",
+          "2",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "0",
+          "1",
+          "2",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "2",
+          "2",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "2",
+          "1",
+          "1"
+        ],
+        [
+          "1/2",
+          "1",
+          "1",
+          "1",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "2",
+          "2",
+          "2",
+          "0",
+          "1",
+          "1"
+        ],
+        [
+          "1/2",
+          "2",
+          "2",
+          "2",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "3/2",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "0"
+        ]
+      ],
+      "global_nonextension_certificate": {
+        "argument": "For any added point x, its non-unit neighbours in the exact 18-set must form a unit clique. Extend that clique to a maximal unit clique C. Then x is unit from every vertex outside C. All maximal C are enumerated below; their exact linear sphere equations are inconsistent, or their unique linear solution violates s=y^T B[J,J] y.",
+        "checks": [
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-3/4",
+              "-1/8",
+              "-1/8",
+              "1/4",
+              "-1/8",
+              "3/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_norm_variable": "167/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "23/432"
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-3/4",
+              "-1/8",
+              "-1/8",
+              "1/4",
+              "-1/8",
+              "3/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_norm_variable": "167/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              1,
+              2,
+              9,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "23/432"
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-3/4",
+              "-1/8",
+              "-1/8",
+              "1/4",
+              "-1/8",
+              "3/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              2,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_norm_variable": "167/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              1,
+              3,
+              10,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "23/432"
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-3/4",
+              "-1/8",
+              "-1/8",
+              "1/4",
+              "-1/8",
+              "3/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              2,
+              3,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_norm_variable": "167/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              1,
+              4,
+              12,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "23/432"
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-3/4",
+              "-1/8",
+              "-1/8",
+              "1/4",
+              "-1/8",
+              "3/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              11,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_norm_variable": "167/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              1,
+              9,
+              10,
+              12,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "23/432"
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-3/4",
+              "-1/8",
+              "-1/8",
+              "1/4",
+              "-1/8",
+              "3/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              1,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_norm_variable": "167/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              2,
+              3,
+              11,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "23/432"
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-3/4",
+              "-1/8",
+              "-1/8",
+              "1/4",
+              "-1/8",
+              "3/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              1,
+              3,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              14,
+              15,
+              16
+            ],
+            "linear_norm_variable": "167/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              2,
+              4,
+              13,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "23/432"
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-3/4",
+              "-1/8",
+              "-1/8",
+              "1/4",
+              "-1/8",
+              "3/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              10,
+              12,
+              14,
+              15,
+              16
+            ],
+            "linear_norm_variable": "167/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              2,
+              9,
+              11,
+              13,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "23/432"
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-3/4",
+              "-1/8",
+              "-1/8",
+              "1/4",
+              "-1/8",
+              "3/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              15,
+              16
+            ],
+            "linear_norm_variable": "167/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              3,
+              4,
+              14,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "23/432"
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-3/4",
+              "-1/8",
+              "-1/8",
+              "1/4",
+              "-1/8",
+              "3/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              12,
+              13,
+              15,
+              16
+            ],
+            "linear_norm_variable": "167/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              3,
+              10,
+              11,
+              14,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "23/432"
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-3/4",
+              "-1/8",
+              "-1/8",
+              "1/4",
+              "-1/8",
+              "3/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              15,
+              16
+            ],
+            "linear_norm_variable": "167/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              4,
+              12,
+              13,
+              14,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "23/432"
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-3/4",
+              "-1/8",
+              "-1/8",
+              "1/4",
+              "-1/8",
+              "3/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_norm_variable": "167/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              9,
+              10,
+              11,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "23/432"
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-3/4",
+              "-1/8",
+              "-1/8",
+              "1/4",
+              "-1/8",
+              "3/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              10,
+              11,
+              14,
+              15,
+              16
+            ],
+            "linear_norm_variable": "167/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              9,
+              12,
+              13,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "23/432"
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-3/4",
+              "-1/8",
+              "-1/8",
+              "1/4",
+              "-1/8",
+              "3/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              11,
+              13,
+              15,
+              16
+            ],
+            "linear_norm_variable": "167/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              10,
+              12,
+              14,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "23/432"
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-3/4",
+              "-1/8",
+              "-1/8",
+              "1/4",
+              "-1/8",
+              "3/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              15,
+              16
+            ],
+            "linear_norm_variable": "167/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              0,
+              11,
+              13,
+              14,
+              17
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "23/432"
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              2,
+              3,
+              4,
+              8
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              2,
+              3,
+              8,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              2,
+              3,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              3,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              2,
+              4,
+              5,
+              8
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              3,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              2,
+              4,
+              5,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              3,
+              4,
+              6,
+              7,
+              10,
+              11,
+              12,
+              13,
+              14,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              2,
+              5,
+              8,
+              9,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              3,
+              4,
+              6,
+              7,
+              8,
+              10,
+              11,
+              12,
+              13,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              2,
+              5,
+              9,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              5,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              3,
+              4,
+              6,
+              8
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              3,
+              4,
+              6,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              4,
+              5,
+              7,
+              9,
+              11,
+              12,
+              13,
+              14,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              3,
+              6,
+              8,
+              10,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              4,
+              5,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              3,
+              6,
+              10,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              7,
+              9,
+              10,
+              11,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              4,
+              5,
+              6,
+              8,
+              12
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              4,
+              5,
+              6,
+              12,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              4,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              5,
+              6,
+              8,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              4,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              5,
+              6,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              4,
+              6,
+              7,
+              10,
+              11,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              5,
+              8,
+              9,
+              12
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8,
+              10,
+              11,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              5,
+              9,
+              12,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              7,
+              9,
+              11,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              6,
+              8,
+              10,
+              12
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9,
+              11,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              6,
+              10,
+              12,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              11,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              8,
+              9,
+              10,
+              12
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              11,
+              12,
+              13,
+              14,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              8,
+              9,
+              10,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              11,
+              12,
+              13,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              1,
+              9,
+              10,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              5,
+              6,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              3,
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              3,
+              4,
+              7,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              4,
+              5,
+              6,
+              9,
+              10,
+              12,
+              13,
+              14,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              3,
+              7,
+              8,
+              11,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              3,
+              7,
+              11,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              6,
+              9,
+              10,
+              11,
+              12,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              4,
+              5,
+              7,
+              8,
+              13
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              4,
+              5,
+              7,
+              13,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              4,
+              6,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              5,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              4,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              5,
+              7,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              4,
+              6,
+              7,
+              10,
+              11,
+              12,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              5,
+              8,
+              9,
+              13
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              4,
+              6,
+              7,
+              8,
+              10,
+              11,
+              12,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              5,
+              9,
+              13,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              12,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              7,
+              8,
+              11,
+              13
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              12,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              7,
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              10,
+              12,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              8,
+              9,
+              11,
+              13
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              10,
+              12,
+              13,
+              14,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              8,
+              9,
+              11,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              10,
+              12,
+              13,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              2,
+              9,
+              11,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              5,
+              9,
+              10,
+              11,
+              12,
+              13,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              4,
+              6,
+              7,
+              8,
+              14
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              5,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              4,
+              6,
+              7,
+              14,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              6,
+              7,
+              8,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              6,
+              7,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              7,
+              9,
+              11,
+              12,
+              13,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              6,
+              8,
+              10,
+              14
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              6,
+              10,
+              14,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              9,
+              10,
+              12,
+              13,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              7,
+              8,
+              11,
+              14
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              12,
+              13,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              7,
+              11,
+              14,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              7,
+              9,
+              12,
+              13,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              8,
+              10,
+              11,
+              14
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              7,
+              9,
+              12,
+              13,
+              14,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              8,
+              10,
+              11,
+              15
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              12,
+              13,
+              14,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              3,
+              10,
+              11,
+              15,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              5,
+              6,
+              7,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              7,
+              9,
+              10,
+              11,
+              14,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              5,
+              8,
+              12,
+              13
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              14,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              5,
+              12,
+              13,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              7,
+              9,
+              10,
+              11,
+              13,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              6,
+              8,
+              12,
+              14
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11,
+              13,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              6,
+              12,
+              14,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              6,
+              9,
+              10,
+              11,
+              12,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              7,
+              8,
+              13,
+              14
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              15,
+              16
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              7,
+              13,
+              14,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11,
+              15,
+              16,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              4,
+              8,
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "1/4",
+              "3/8",
+              "3/8",
+              "-3/4",
+              "3/8",
+              "-9/8"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              17
+            ],
+            "linear_norm_variable": "239/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              5,
+              6,
+              7,
+              8,
+              15,
+              16
+            ],
+            "norm_discrepancy": "1/3",
+            "quadratic_norm": "95/432"
+          },
+          {
+            "augmented_rank": 7,
+            "basis_coefficients": [
+              "-13/24",
+              "5/48",
+              "5/48",
+              "-5/24",
+              "5/48",
+              "-5/16"
+            ],
+            "coefficient_rank": 7,
+            "extension_exists": false,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "linear_norm_variable": "217/432",
+            "linear_status": "CONSISTENT",
+            "maximal_nonunit_clique": [
+              5,
+              6,
+              7,
+              15,
+              16,
+              17
+            ],
+            "norm_discrepancy": "10/27",
+            "quadratic_norm": "19/144"
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              7,
+              9,
+              10,
+              11,
+              13,
+              14,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              5,
+              6,
+              8,
+              12,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              7,
+              8,
+              9,
+              10,
+              11,
+              13,
+              14,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              5,
+              6,
+              12,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              9,
+              10,
+              11,
+              12,
+              14,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              5,
+              7,
+              8,
+              13,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              14,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              5,
+              7,
+              13,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              10,
+              11,
+              14,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              5,
+              8,
+              9,
+              12,
+              13,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              10,
+              11,
+              12,
+              13,
+              14,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              5,
+              8,
+              9,
+              15,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8,
+              10,
+              11,
+              14,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              5,
+              9,
+              12,
+              13,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              5,
+              9,
+              15,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              9,
+              10,
+              11,
+              12,
+              13,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              6,
+              7,
+              8,
+              14,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              6,
+              7,
+              14,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              6,
+              8,
+              10,
+              12,
+              14,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              7,
+              9,
+              11,
+              12,
+              13,
+              14,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              6,
+              8,
+              10,
+              15,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9,
+              11,
+              13,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              6,
+              10,
+              12,
+              14,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13,
+              14
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              6,
+              10,
+              15,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              12,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              7,
+              8,
+              11,
+              13,
+              14,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              12,
+              13,
+              14,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              7,
+              8,
+              11,
+              15,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              12,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              7,
+              11,
+              13,
+              14,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              7,
+              11,
+              15,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              12,
+              13,
+              14,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              8,
+              9,
+              10,
+              11,
+              15,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              11,
+              13,
+              14,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              8,
+              9,
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              10,
+              12,
+              14,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              8,
+              9,
+              11,
+              13,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              12,
+              13,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              8,
+              10,
+              11,
+              14,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11,
+              15,
+              17
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              8,
+              12,
+              13,
+              14,
+              16
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              12,
+              13,
+              14
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              9,
+              10,
+              11,
+              15,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              11,
+              13,
+              14,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              9,
+              10,
+              12,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              10,
+              12,
+              14,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              9,
+              11,
+              13,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              12,
+              13,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              10,
+              11,
+              14,
+              16,
+              17
+            ]
+          },
+          {
+            "augmented_rank": 8,
+            "coefficient_rank": 7,
+            "forced_unit_neighbours": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              15
+            ],
+            "linear_status": "INCONSISTENT",
+            "maximal_nonunit_clique": [
+              12,
+              13,
+              14,
+              16,
+              17
+            ]
+          }
+        ],
+        "extension_exists": false,
+        "linear_consistent_but_norm_failed": 17,
+        "linear_inconsistent": 85,
+        "maximal_clique_size_histogram": {
+          "5": 75,
+          "6": 27
+        },
+        "maximal_cliques_checked": 102
+      },
+      "gram_certificate": {
+        "centroid": "origin",
+        "factorization": "B = B[:,J] inverse(B[J,J]) B[J,:]",
+        "leading_principal_minors": [
+          "83/432",
+          "821/6912",
+          "163/2304",
+          "1135/27648",
+          "323/13824",
+          "1/432"
+        ],
+        "positive_semidefinite": true,
+        "principal_basis_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "principal_determinant": "1/432",
+        "principal_matrix": [
+          [
+            "83/432",
+            "-17/216",
+            "-17/216",
+            "-17/216",
+            "-17/216",
+            "7/54"
+          ],
+          [
+            "-17/216",
+            "281/432",
+            "65/432",
+            "65/432",
+            "65/432",
+            "47/432"
+          ],
+          [
+            "-17/216",
+            "65/432",
+            "281/432",
+            "65/432",
+            "65/432",
+            "47/432"
+          ],
+          [
+            "-17/216",
+            "65/432",
+            "65/432",
+            "281/432",
+            "65/432",
+            "-169/432"
+          ],
+          [
+            "-17/216",
+            "65/432",
+            "65/432",
+            "65/432",
+            "281/432",
+            "47/432"
+          ],
+          [
+            "7/54",
+            "47/432",
+            "47/432",
+            "-169/432",
+            "47/432",
+            "245/432"
+          ]
+        ],
+        "rank": 6
+      },
+      "name": "nonstandard_exact_18_from_deletion_class_10887",
+      "switching_construction": {
+        "canonical_vertex_to_switching_label": [
+          0,
+          1,
+          2,
+          8,
+          4,
+          7,
+          13,
+          14,
+          16,
+          3,
+          9,
+          10,
+          5,
+          6,
+          12,
+          11,
+          15,
+          17
+        ],
+        "exact_distance_matrix_match": true,
+        "replacement_rule": "replace q by x_q=(a_sign-q)/2",
+        "replacements_in_switching_labels": [
+          {
+            "apex_sign": "+",
+            "base_label": 0
+          }
+        ],
+        "standard_apices": "a_+=(0,...,0,sqrt(3/8)), a_-=-a_+; ||a_+||^2=3/8",
+        "standard_base": "q_w=(sign vector w)/(2 sqrt(2)) in R5 x {0}, for the 16 odd-parity sign vectors; ||q_w||^2=5/8"
+      }
+    }
+  ],
+  "exact_conclusions": [
+    "The two displayed rational squared-distance matrices are Euclidean, positive semidefinite of affine dimension 6, and have 18 distinct points.",
+    "Each displayed configuration is almost equidistant.",
+    "Neither displayed configuration admits any nineteenth distinct point preserving almost-equidistance.",
+    "Their unit-edge counts are 110 and 111, versus 112 for the standard odd-halfcube-plus-apices configuration, so all three are pairwise nonisometric."
+  ],
+  "nonclaims": [
+    "This does not classify every 18-point almost-equidistant configuration in R6.",
+    "This does not reject any other 18-deletion support or any 19-point candidate graph.",
+    "The numerical coordinates are discovery provenance only; the exact claims depend solely on the rational matrices and exact verifier."
+  ],
+  "pairwise_nonisometry_witness": {
+    "invariant": "number of unit-distance pairs",
+    "nonstandard_counts": [
+      110,
+      111
+    ],
+    "standard18_count": 112
+  },
+  "schema": "d6-18-exact-nonstandard-reconstruction-v1",
+  "source": {
+    "deletion_corpus": "/Users/lukacs/chatgpt/almost_equidistant/d6_residue_18_deletions.json",
+    "deletion_corpus_sha256": "9d08f9ec579434c9601ad3908bd2ae51f10e09e9d06a7f38fbc25794a634b732",
+    "numerical_report": "/Users/lukacs/chatgpt/almost_equidistant/d6_18_numerical_screen_report.json",
+    "numerical_report_sha256": "0a3e1f0288b5eec4ecec4357d1ba1b75e91b1e4cd2a2d258273357c742a581d8",
+    "producer": "/Users/lukacs/chatgpt/almost_equidistant/reconstruct_d6_18_exact.py",
+    "producer_sha256": "8b1e5c57a14b6761dae2d4203f1c469c26822203215853f06d2640ff324b141a"
+  },
+  "status": "PASS",
+  "switching_family_theorem": {
+    "classification_within_this_switching_operation": {
+      "maximum_replacements": 2,
+      "number_of_types": 3,
+      "one_replacement": "always valid; the Clebsch neighbourhood of q is independent because lambda=0; gives the 111-edge type",
+      "orbit_note": "Even sign flips act transitively on odd sign vectors; after composing coordinate permutations with the even sign flips that return a chosen vertex, its stabilizer acts as S5 and is transitive on distance-2 neighbours; swapping the apices swaps signs. Thus there is one type for each of 0,1,2 valid replacements within this operation.",
+      "reason_maximum_two": "Every pair of replacements is non-unit, so three replacements themselves form a bad triple.",
+      "two_replacements": "valid exactly for opposite apex signs and a Clebsch edge qr (standard squared distance 2); same signs fail with their common assigned apex, while a Clebsch nonedge has two common Clebsch neighbours and creates a bad triple; gives the 110-edge type",
+      "zero_replacements": "the standard 112-unit-edge type"
+    },
+    "clebsch_distance2_graph": {
+      "common_neighbours_for_adjacent_pair": [
+        0
+      ],
+      "common_neighbours_for_nonadjacent_pair": [
+        2
+      ],
+      "degree_values": [
+        5
+      ],
+      "strongly_regular_parameters": [
+        16,
+        5,
+        0,
+        2
+      ],
+      "vertices": 16
+    },
+    "exact_distance_identities": [
+      "For an unchanged base point p, the new squared distance is 1 if ||p-q||^2=1 and 1/2 if ||p-q||^2=2.",
+      "The replacement has squared distance 1/4 from its assigned apex and 1 from the opposite apex.",
+      "Two replacements with the same sign have squared distance ||q-r||^2/4; with opposite signs they have squared distance 3/8+||q-r||^2/4. None of these values is 1."
+    ],
+    "operation": "Starting from the standard odd-halfcube-plus-apices set, replace selected base vertices q by (a_sign-q)/2.",
+    "scope": "This classifies only the displayed switching family, not all 18-point almost-equidistant configurations in R6."
+  }
+}

@@ -41,6 +41,7 @@ n17_*.log
 n18_*.log
 d6_*.log
 d6_profile.stderr
+d6_18_numerical_checkpoints/
 finish17*.log
 enum6_run.log
 ckernel5dbg.dll
