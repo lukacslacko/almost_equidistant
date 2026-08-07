@@ -113,7 +113,19 @@ def vprofile(n, a):
     return prof
 
 def gprofile(n, a):
-    return (n, tuple(sorted(vprofile(n, a))))
+    """Graph-level invariant: sorted vertex profiles plus a sorted edge
+    invariant (degree pair + codegree), to keep buckets small."""
+    deg = [bin(a[v]).count("1") for v in range(n)]
+    eprof = []
+    for u in range(n):
+        m = a[u] >> (u + 1)
+        while m:
+            v = (u + 1) + ((m & -m).bit_length() - 1)
+            m &= m - 1
+            du, dv = deg[u], deg[v]
+            cod = bin(a[u] & a[v]).count("1")
+            eprof.append((min(du, dv), max(du, dv), cod))
+    return (n, tuple(sorted(vprofile(n, a))), tuple(sorted(eprof)))
 
 def isomorphic(n, a, b):
     pa, pb = vprofile(n, a), vprofile(n, b)
@@ -283,8 +295,12 @@ def all_completions(n, h, cap=100000):
 
 def dedup(graphs, n):
     s = IsoSet()
-    for a in graphs:
+    for i, a in enumerate(graphs):
         s.add(n, a)
+        if (i + 1) % 20000 == 0:
+            mb = max((len(l) for l in s.buckets.values()), default=0)
+            print(f"    dedup {i+1}/{len(graphs)} -> {s.count} classes "
+                  f"(max bucket {mb})", flush=True)
     return s
 
 def frontier_step(parents, np, workers):

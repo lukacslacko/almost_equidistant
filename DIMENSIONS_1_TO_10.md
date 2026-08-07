@@ -234,7 +234,7 @@ level-19 certificate ledger** stated there: every one of the 3,971,787
 level-19 candidates outside an explicit 644-graph residue is certified
 non-realizable (3,855,094 by exact graph filters that have been
 independently reimplemented with exact agreement; 2,451 by this
-repository's interval certificates alone; 114,242 by the codex track's
+repository's interval certificates alone; 113,598 by the codex track's
 later exact layers, whose independent reimplementation is still in
 progress — this last class is why the result is labelled conditional and
 the table above still shows 26).  The argument is a frontier/extension

@@ -1287,3 +1287,36 @@ investigated next.
   (campaign in stage 1). Graph 32 (13-regular, K7-free, twenty K6s,
   zero circle parametrizations) confirmed as needing the 2-sphere
   placement stage — queued as the next engine work item.
+
+## 2026-08-07 17:12 append — cadence: three computations in flight; conditional-tier audit results
+
+- **Accounting correction** (found while writing the result note): of the
+  116,693 first-generation-surviving graphs, 2,451 are interval-killed,
+  644 are the residue, and the later-layer-only class is therefore
+  **113,598**, not 114,242 (which is the unresolved-by-in-house count,
+  i.e. later-layer-only + residue). f6_le_20.tex, the PDF and the tracker
+  section are corrected; STATUS 17:02 carried the conflation.
+- **Conditional-tier structural audit** (committed artifacts): the
+  manifest chain v2 (1,235) -> v3 (977) -> v4 (960) -> v5 (911) -> v6
+  (644) satisfies every inclusion; v2 is a subset of my independent
+  first-generation residue; v2 is disjoint from our interval ledger.
+  Internal consistency PASS. The bulk conditional step is
+  116,693 -> 1,235: the second-generation layers (the |Z|<=3 bounded-
+  cover refinement with its rank/CSP machinery on the K7 side, the
+  actual-support/bipartite-rank/PSD chains on the K6 side). Their
+  per-graph archives are hashed in the manifests but mostly live outside
+  the repo; the |Z|<=3 theory is fully documented in
+  d6_theory_filters.md — it is the highest-leverage next
+  reimplementation target (would shrink the conditional tier from
+  113,598 to ~600).
+- **In-flight**: (1) 34-graph certification campaign, stage 1 at
+  1,500/25,632 probe tasks (~3.5 h left at current rate; sharing the
+  machine with everything else); (2) independent Python re-verification
+  of the frontier pipeline, dedup phase healthy after an edge-profile
+  invariant fix (120k/224k, max bucket 13); (3) NEW: the
+  **in-house frontier** — the same extension/frontier computation run
+  over the 114,242-graph unresolved-by-in-house-methods residue
+  (first-gen exact + our intervals only, no codex later layers). If its
+  frontier empties at level m, we get an UNCONDITIONAL f(6) <= m-1 on
+  fully in-house-verified components. Phase 1 (extensions) is running:
+  518k distinct level-20 candidates so far.
