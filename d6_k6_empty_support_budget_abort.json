@@ -1,0 +1,31 @@
+{
+  "checkpoint": {
+    "path": "d6_k6_empty_support_budget_checkpoint.json",
+    "sha256": "45f257107b9cf4acbacb58b0e01a98b97d9bde4a13189ca80949314804f20618"
+  },
+  "completed_indices_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "completed_ordered_prefix": 0,
+  "dependency_hashes": {
+    "d6_k6_arbitrary_subset_hall.py": "cadc0048fcc7a77299bc2950e2eca57bfed87d54ed6ffd59886d155b2c9a88ff",
+    "d6_k6_arbitrary_subset_hall_certificates.json": "b7fb04f769ddaf5d36630372f5134f2e4a32e572f620b26059667e9cf65f4a23",
+    "d6_k6_arbitrary_subset_hall_report.json": "bcc4baecf28a95443a5b13e87a796cbba0a97cd42fa76573119bfd81ef3735fc",
+    "d6_k6_arbitrary_subset_hall_verification.json": "e6042edfff3683043903f9be544322379e85673207e35ee87349637ff4c73058",
+    "d6_k6_bipartite_rank_reference.py": "e760fef74c423a89f1e1f9d08909fa1223e0389900cf3d45b0140ee296dea922",
+    "d6_k6_lorentz_reference.py": "ef6a0877a5987119c92ec1bd9271a6a47774fc9e4992c10e1f28b6d5373592c2",
+    "d6_k6_normal_inertia.py": "2d00ab40eb97aa79ffec3b8134b83c4fd5f703cbd691f094a25bf3ff9f3ee023",
+    "d6_k6_psd_z_hereditary.py": "7b869895cb9b4f7f3bbf1a1d1b11ec71507b6355c8ec0b7d7f8eaec2a51b180d",
+    "d6_k6_psd_zmatrix.py": "24c2b3abfce5074560183d17f77778f96298bef6e38ece5bc937ccb2a4cba736",
+    "test_d6_k6_lorentz.py": "f4fc8544a4311f742267808e6c785f82139accb9da99b496d206283b52831a47"
+  },
+  "exception": {
+    "message": "[Errno 1] Operation not permitted",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/lukacs/chatgpt/almost_equidistant/d6_k6_empty_support_budget.py\", line 877, in run_production\n    with ProcessPoolExecutor(\n         ^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/lukacs/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/concurrent/futures/process.py\", line 654, in __init__\n    _check_system_limits()\n  File \"/Users/lukacs/.local/share/uv/python/cpython-3.11.15-macos-aarch64-none/lib/python3.11/concurrent/futures/process.py\", line 597, in _check_system_limits\n    nsems_max = os.sysconf(\"SC_SEM_NSEMS_MAX\")\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nPermissionError: [Errno 1] Operation not permitted\n",
+    "type": "PermissionError"
+  },
+  "input_indices_sha256": "cf94aac41eba28904ee6254f9c50996e73d38dcc15316fb6a411b29ff5cd05d8",
+  "meaning": "no mathematical rejection is inferred from this abort",
+  "production_source_sha256": "284b8c3bda4d2a43581665ade3d52d9295b29d460418454e3a760897cabc5fac",
+  "schema": "d6-k6-empty-support-budget-infrastructure-abort-v1",
+  "semantic_config_sha256": "ba821617a934db4ff7fa3472c40ee4f6c192254a8ae3508ecd8114de83713b4c",
+  "status": "INFRA_ABORT"
+}
