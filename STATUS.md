@@ -1,6 +1,6 @@
 # Status — f(5) and f(6) campaigns
 
-## CURRENT LOCAL CAMPAIGN — exact d=6 residue 960 (2026-08-07)
+## CURRENT LOCAL CAMPAIGN — exact d=6 residue 911 (2026-08-07)
 
 Branch: `codex/dimension6`
 
@@ -13,6 +13,10 @@ K6 arbitrary-subset Hall layer
   a21db74bacdf4c9c5c841ac137af326b331d8137
 K6 empty-support production source
   b54b69571b5ff87c7586aff13e5c69a24ece7801
+K6 empty-essential / virtual-K7 closure
+  5061051
+Exact nonstandard 18-point constructions
+  618b212
 ```
 
 ### Current exact accounting
@@ -29,12 +33,13 @@ PSD Z-matrix rejections                                          116
 hereditary PSD Z rejections                                       30
 arbitrary-subset Hall rejections                                   9
 empty-support-budget rejections                                    17
-current K6-only residue                                           805
+empty-essential virtual-K7 rejections                              49
+current K6-only residue                                           756
 
-combined exact dimension-six residue                              960
+combined exact dimension-six residue                              911
 ```
 
-This is not yet a proof of `f(6)=18`; every one of the 960 remaining
+This is not yet a proof of `f(6)=18`; every one of the 911 remaining
 graphs is unresolved.  `SURVIVOR` means only that the current exact filters
 did not reject the graph.
 
@@ -47,8 +52,17 @@ semaphores were unavailable; that `INFRA_ABORT` is retained separately and
 has no mathematical meaning.  The production run resumed outside that
 restriction from its atomic checkpoint.
 
-The self-contained v4 residue is in
-`d6_current_residue_manifest_v4.json`; its independent structural checker
+The next exact layer profiled all 25,354 K6 seeds of the 805-graph v4
+residue.  Of these, 25,243 have an explicit all-nonempty Hall witness.  The
+remaining 111 seeds, in 49 graphs, require at least one actual empty defect.
+Promoting each of the 291 possible existing empty vertices makes it the apex
+of a genuine unit K7; every promotion is eliminated by the exact generic K7
+cover/rank quantifier.  An independent checker reconstructed all 2,386
+eligible covers and all 149 small-cover certificates.  Thus all 49 graphs
+are rejected.  No floating-point arithmetic is used by this layer.
+
+The self-contained v5 residue is in
+`d6_current_residue_manifest_v5.json`; its independent structural checker
 returns `PASS`.  Principal hashes are:
 
 ```text
@@ -57,19 +71,24 @@ K6 certificate archive        c6fcb7ef66bccc3319fe0a979c5fd63d9f6fd9535261c5c9bf
 K6 independent verification   873c8b6babe183757d4e97b0f0c1c1a942b31f180c88eeef1c9ddf80a199276f
 v4 residue manifest           6ab4bfffc524f5b43409d59888fb596de8130315bda3381e484bb4ce891e03e4
 v4 independent verification   765eceb6782d131dae8c77c9b94de78735e23a070da051c8fffbd984790e1a41
+empty-essential profile       205c0877982c8de8ad6e5a685e33eff9ee05236c9907e60d488a593792d90781
+virtual-K7 report             63207da634a56e8fa46f18f87e1ed8b86007c62b51c49c5584eb80403f2b50ba
+virtual-K7 verification       d64c36856e1288c8f64ea7918bc76640bde260b9b731e881f9c277c1a1e43485
+v5 residue manifest           164b2a12813845ef1f6d6ca5e3713ed1d2edac4be58563c1648a39ff8580c0b5
+v5 independent verification   e871431b8b28fc04f0e58922ff3a6386054d15d37de5c9f9e67601ede47e4b46
 ```
 
 ### New 18-deletion / grow-back boundary
 
-All 19 induced deletions of every v4 parent have been reconstructed and
+All 19 induced deletions of every v5 parent have been reconstructed and
 deduplicated, while preserving every deleted vertex's rooted attachment:
 
 ```text
-19-point parents                                             960
-labeled deletion occurrences                             18,240
-unique unrooted 18-point supports                        12,712
+19-point parents                                             911
+labeled deletion occurrences                             17,309
+unique unrooted 18-point supports                        11,975
   containing K7                                           1,616
-  containing K6 but no K7                                11,096
+  containing K6 but no K7                                10,359
   containing no K6                                            0
 ```
 
@@ -79,12 +98,12 @@ half-cube-plus-two-poles unit graph.  This is positive support containment,
 not a uniqueness or parent-realizability result.  The exact criterion uses
 the Clebsch graph in the **non-unit** base graph and stores an explicit
 embedding permutation for every match.  The independent checker reconstructs
-all 18,240 occurrences, attachment masks, canonical classes, standard
+all 17,309 occurrences, attachment masks, canonical classes, standard
 embeddings, and the seven edge-minimal standard support types.
 
 ```text
-18-deletion manifest          9d08f9ec579434c9601ad3908bd2ae51f10e09e9d06a7f38fbc25794a634b732
-18-deletion verification      50ab5d88441b2869e60a05f3e1485db0b25008c3a816960a20a3bb21c1c4defd
+18-deletion v2 manifest       7a13d7a204f866c2d7c421db8a46c5b042bbad8bad6a2cade4a94eb4d340521d
+18-deletion v2 verification   99927f8b41b48fb2c0151f3f6d04eca37701861cfef9fce4d3bba3f5dab91090
 ```
 
 The exact standard-coordinate audit proves that the displayed 112-edge
@@ -94,22 +113,37 @@ point extends those coordinates.  It explicitly does not classify all
 the 14 matching supports.  See `d6_standard18_geometry.md` and
 `d6_residue_18_deletions.md`.
 
+The full v4 deletion corpus was also screened numerically with 11 workers
+and six deterministic starts per class.  Optimization alone rejected
+nothing.  It located two nonstandard roots which were then reconstructed in
+exact rational distance arithmetic.  Together with the standard set this
+gives at least three pairwise nonisometric 18-point configurations, having
+112, 111, and 110 unit pairs.  The two new types arise from
+
+```text
+q -> (a_sign - q)/2
+```
+
+on one half-cube vertex, or on a Clebsch-adjacent pair with opposite signs.
+The switching family has exactly these zero-, one-, and two-switch types.
+Exact maximal-clique/equal-sphere certificates prove that neither new type
+extends to 19.  See `d6_18_numerical_and_exact.md`.
+
 Current work is split between two complementary directions:
 
-1. exact K6 empty-essential / virtual-K7 branch promotion on the 805 K6-only
-   survivors;
-2. an 11-worker numerical-only realization and rigidity screen of the 12,712
-   deletion classes, followed by exact rooted grow-back tests on any apparent
-   realizations and reusable obstruction mining on the rest.
+1. an exact sharpening of the overwhelmingly dominant all-nonempty,
+   `Z0=empty` K6 branch on the 756 K6-only survivors;
+2. a GPU/MPS realization search for further 18-point components, with every
+   hit to be exactly reconstructed and tested for grow-back.
 
 Optimization failure never rejects a graph.  Candidate nonedges remain
 unconstrained and may be unit.
 
-### Superseded residue-977 checkpoint
+### Superseded residue-960/977 checkpoints
 
-The preceding auditable boundary was commit `01ee132`; it had 155 K7 and 822
-K6-only survivors.  The v4 empty-support result and deletion corpus above
-supersede those counts.
+Commit `3ff16fd` had 155 K7 and 805 K6-only survivors (960 total).  The
+earlier commit `01ee132` had 155 K7 and 822 K6-only survivors (977 total).
+The v5 virtual-K7 result and deletion corpus above supersede both counts.
 
 ### Superseded 1,235 checkpoint
 
