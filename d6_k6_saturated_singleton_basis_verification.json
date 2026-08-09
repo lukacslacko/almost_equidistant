@@ -1,0 +1,79 @@
+{
+  "certificates": {
+    "path": "d6_k6_saturated_singleton_basis_certificates.json.gz",
+    "sha256": "0d3706ccd58cced274cdcd1cdf427ba72c529980caf641c6c37bfaa52ee139c1",
+    "uncompressed_sha256": "36d3bf52be35f5b3eaf08106c4895b7fef69176b082285d445405f4382dbc49c"
+  },
+  "checks": {
+    "actual_support_alternatives_exhausted": true,
+    "all_graph_decisions": true,
+    "all_rejected_Z0_and_coloring_partitions": true,
+    "distinct_point_collision_constraints": true,
+    "frozen_251_graph_parent_residue": true,
+    "import_independence": true,
+    "independent_basis_neighbourhood_reconstruction": true,
+    "independent_parent_actual_support_DFS_replay": true,
+    "independent_parity_union_find_sign_CSP": true,
+    "optional_allowed_support_zeros_preserved": true,
+    "positive_18_control": true,
+    "required_empty_apex_edge_equation": true,
+    "required_nonempty_edge_equation": true,
+    "saturated_rule_only_at_complete_support_leaves": true,
+    "synthetic_algebra_controls": true
+  },
+  "graphs_recomputed": 251,
+  "graphs_rejected": 2,
+  "graphs_surviving": 249,
+  "ordered_residue_indices_sha256": "f274aab3f2d408fce34c7cd7eb4518621fa9d634a8943e3ee1a38d76df9f3d31",
+  "positive_18_control": {
+    "K6_seeds": 32,
+    "passed": true
+  },
+  "provenance": {
+    "branch": "codex/dimension6",
+    "commit": "87c58d612eb17959e43bf920057fcff95212776c",
+    "dirty": true,
+    "porcelain_sha256": "36b355cb05e64634f461c85174a9b2bda871023be69b0be179cc727cf145d59a",
+    "tracked_sources_clean_at_launch": true,
+    "untracked_entries": 32
+  },
+  "rejected_indices": [
+    3138618,
+    3673988
+  ],
+  "rejected_indices_sha256": "45ce66ccf4db5fe1a565a576cd16fc719e51b20c6ea9fee858dc3682463e9e84",
+  "report": {
+    "path": "d6_k6_saturated_singleton_basis_report.json",
+    "sha256": "5f25193311ad769a402ec5245a6a690619cc41225e63a56546fe50a30d7a93e5"
+  },
+  "runtime": {
+    "command": "/Users/lukacs/claude/opengauss/venv/bin/python3 verify_d6_k6_saturated_singleton_basis.py --workers 3",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "wall_seconds": 39.89741549998871,
+    "workers": 3
+  },
+  "schema": "d6-k6-saturated-singleton-basis-verification-v1",
+  "sources": {
+    "d6_k6_opposite_ray_rank_conjunction.py": "1306cdcfc3784a4e1cd0e8370edf30c94e7f64ec1564d45b16b777b851d50eaf",
+    "d6_k6_opposite_ray_rank_conjunction_certificates.json.gz": "99a86290da7221f0d2a07ee15ed93432b19dcd58a9ba2bcebaa2956167ac1e37",
+    "d6_k6_opposite_ray_rank_conjunction_report.json": "3415f48f498758a5d0daac9403012e35186eb7b620fe9c0324e4674f7a11fcc8",
+    "d6_k6_opposite_ray_rank_conjunction_verification.json": "e9e64d93faad85af321011b7f48842d13c416f3e61ec802455972d13d48b334e",
+    "d6_k6_saturated_singleton_basis.py": "f8343b77d4cba67f6bb0216ad4e1f0cd59a9c506361a369a37fb9df489e784e5",
+    "verify_d6_k6_opposite_ray_rank_conjunction.py": "870c59dd1801b054814bf250bc07effc22e2b5a1f4c3c299af7d9b7b376b94d1",
+    "verify_d6_k6_saturated_singleton_basis.py": "b0fad1a4e3f44a7b00a04d644825196302ce67d3b4fd91225fe54743b84de7bc"
+  },
+  "status": "PASS",
+  "synthetic_controls": {
+    "duplicate_empty_apices_require_opposite_signs": true,
+    "empty_degree_four_same_sign_passes": true,
+    "empty_degree_three_edge_fails": true,
+    "odd_opposite_sign_cycle_fails": true,
+    "opposite_sign_path_passes": [
+      1,
+      0,
+      1
+    ],
+    "required_empty_apex_edge_fails": true
+  }
+}
