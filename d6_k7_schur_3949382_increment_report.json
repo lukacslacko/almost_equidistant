@@ -1,0 +1,446 @@
+{
+  "certificate": {
+    "algebra": {
+      "boundary_control": {
+        "all_ten_equations_zero": true,
+        "point": [
+          1,
+          3,
+          1,
+          1,
+          2,
+          0,
+          0
+        ],
+        "strict_domain": false
+      },
+      "equal_sum_deductions": [
+        "E_AC-E_CD=-(a-c)(b+f+g)=0 and b+f+g>0, hence a=c",
+        "E_CD-E_CE=-(c-d)(b+f+g)=0 and b+f+g>0, hence c=d"
+      ],
+      "final_factor": "-f*t - f + t**2 - t",
+      "pair_equations": [
+        "a + b - c*e - c*g - d*e - d*g - e*f - f*g",
+        "-a*f - a + b*c + b*d + c*g - c + d*g - d - e*f - e - f - 1",
+        "-a*g - a + b*e - c*g - c - d*g - d + e*f - e - g - 1",
+        "-a*c - a + b*d + b*f - c + d*e + d*g - d + e*f + f*g - f - 1",
+        "-a*e - a*g + b + c - d*e - d*g - e*f - f*g",
+        "a*b + a*g - a + b*d - c*f - c + d*g - d - e*f - e - f - 1",
+        "-a*d - a + b*c + b*f + c*e + c*g - c - d + e*f + f*g - f - 1",
+        "-a*e - a*g + b - c*e - c*g + d - e*f - f*g",
+        "a*b + a*g - a + b*c + c*g - c - d*f - d - e*f - e - f - 1",
+        "a*b + a*e + a*g - a + b*f - c*d - c - d + e*f + f*g - f - 1"
+      ],
+      "pair_order": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "positive_factors": [
+        "t",
+        "f",
+        "2*t+f",
+        "t+f",
+        "2*t+f+1"
+      ],
+      "reduced_equations": [
+        "b - e*f - 2*e*t - f*g - 2*g*t + t",
+        "b*f + b*t + e*f + e*t + f*g - f + g*t - t**2 - 3*t - 1",
+        "2*b*t - e*f - e - f*t - f + 2*g*t - 3*t - 1",
+        "b*e + e*f - e - 3*g*t - g - 3*t - 1"
+      ],
+      "reduced_variables": [
+        "t",
+        "b",
+        "e",
+        "f",
+        "g"
+      ],
+      "solved_forms": {
+        "b": "(f + t**2 + 2*t)/(f + t)",
+        "e": "(-f + t)*(t + 1)/(f + t)",
+        "g": "-(t + 1)*(-f + t - 1)/(f + t)"
+      },
+      "strict_contradiction": "E3=0 gives t*(t-f-1)=f>0, hence t-f-1>0; but g=-(t+1)*(t-f-1)/(t+f)<0, contradicting g>0.",
+      "variables": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g"
+      ]
+    },
+    "exact_pattern": {
+      "basis_masks": [
+        83,
+        47,
+        98,
+        86,
+        90
+      ],
+      "global_rank7_clique": [
+        0,
+        3,
+        9,
+        10,
+        13,
+        15,
+        17
+      ],
+      "global_remainder": [
+        1,
+        4,
+        6,
+        8,
+        11
+      ],
+      "local_rank7_clique": [
+        0,
+        2,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "local_remainder": [
+        1,
+        3,
+        4,
+        5,
+        8
+      ],
+      "pair_order": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "pair_target_string": "0111011011",
+      "pair_targets": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "propagated_support_supersets": [
+        84,
+        36,
+        127,
+        66,
+        34,
+        33,
+        81,
+        88,
+        40,
+        29,
+        82,
+        61
+      ],
+      "zero_entry_justification": "Every zero in the displayed basis/pair pattern has disjoint propagated support supersets; it is not inferred from a candidate nonedge alone.",
+      "zero_remainder_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    "quantifier": {
+      "current_covers": [
+        0,
+        2048,
+        3072
+      ],
+      "current_infeasible_covers": [
+        2048,
+        3072
+      ],
+      "graph_rejection_quantifier": "Every realization must realize this required K7 seed. Its actual Z/support branch is exhaustive above; all branches fail.",
+      "prior_layer_eliminated_raw_covers": 125,
+      "raw_eligible_covers": 128,
+      "raw_eligible_covers_sha256": "5a47d6b62e4b141b1f024d577c3aaec0533cff7480b1ca45de921a55af43d879",
+      "sole_new_branch": 0,
+      "sole_new_branch_passing_families": 1
+    },
+    "rank_argument": {
+      "clique_inverse_method": "Sherman--Morrison over exact rationals",
+      "clique_principal_block_positive_definite": true,
+      "normalized_gram_rank_upper_bound": 7,
+      "required_clique_order": 7,
+      "schur_complement_for_five_remainder_vertices": "identically zero",
+      "strict_domain": "a,b,c,d,e,f,g > 0"
+    },
+    "target": {
+      "adjacency_sha256": "ede388747bbaa2de587db5986806c5805e7961ab278a8f5162a7d656863e36b8",
+      "index": 3949382,
+      "outside": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        8,
+        9,
+        10,
+        11,
+        13,
+        15,
+        17
+      ],
+      "seed": [
+        2,
+        5,
+        7,
+        12,
+        14,
+        16,
+        18
+      ],
+      "seed_mask": 348324
+    }
+  },
+  "certificate_sha256": "0f79db5bef39002c79234cd1845f81bf1d61ca9cd67864633cece7f552046f90",
+  "claim": "Graph 3949382 is not the unit-edge graph of distinct points in R^6. A required K7 seed has an exhaustive prior support boundary, and its sole surviving family contradicts exact rank-seven Schur equations in the strict positive orthant.",
+  "controls": {
+    "nonnegative_boundary_solution": {
+      "all_ten_equations_zero": true,
+      "point": [
+        1,
+        3,
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "rejected_by_strict_domain": true
+    },
+    "upstream_independent_replay": {
+      "current_passing_families": 88,
+      "eligible_covers": 19932,
+      "status": "PASS"
+    }
+  },
+  "execution": {
+    "command": "/Users/lukacs/claude/opengauss/venv/bin/python3 build_d6_k7_schur_3949382_increment.py",
+    "finished_utc": "2026-08-09T18:00:12.339956+00:00",
+    "git": {
+      "branch": "codex/dimension6",
+      "commit": "6835189e16ec0bdc968cc0738653e256e1563820",
+      "porcelain_lines": [
+        "?? d6_18_gpu_mps_seed_sphere_control_calibration_128.json",
+        "?? d6_18_gpu_mps_seed_sphere_control_calibration_32.json",
+        "?? d6_18_gpu_mps_unseeded_control_calibration.json",
+        "?? probe_d6_k6_cross_gram_all_ones.py",
+        "?? probe_d6_k6_cross_gram_allowed_rank.py",
+        "?? probe_d6_k6_cross_gram_rectangular_rank.py",
+        "?? probe_d6_k6_edgewise_cross_support.py",
+        "?? probe_d6_k6_nested_support_reconstruction.py",
+        "?? probe_d6_k6_opposite_ray_rank.py",
+        "?? probe_d6_k6_opposite_ray_rank_conjunction.py",
+        "?? probe_d6_k6_rectangular_minor.py",
+        "?? probe_d6_k6_repeated_two_support_arm.py",
+        "?? probe_d6_k6_same_two_support_clique.py",
+        "?? probe_d6_k6_singleton_equal_support_clique_rank.py",
+        "?? probe_d6_k6_singleton_two_support_repeated_three_support.py",
+        "?? probe_d6_k6_tight_same_z0_conjunction.py",
+        "?? probe_d6_k6_tight_support.py",
+        "?? probe_d6_k6_tight_support_disjoint_arms.py",
+        "?? probe_d6_k6_tight_support_rank2.py",
+        "?? probe_d6_k6_tight_support_singleton_fan.py",
+        "?? probe_d6_k6_two_singleton_repeated_three_support_arm.py",
+        "?? probe_d6_k6_two_support_triangle_singleton.py",
+        "?? probe_d6_k7_low_free_systems.py",
+        "?? profile_d6_k6_625_saving_alternatives.py",
+        "?? test_probe_d6_k6_cross_gram_rectangular_rank.py"
+      ],
+      "porcelain_sha256": "b484ada46d605d4aca11dcf8646b38b3b9328f4a69311c6bccda27cee8c8a40a",
+      "proof_and_checker_sources_equal_committed_blobs": true,
+      "source_sha256": {
+        "build_d6_k7_schur_3949382_increment.py": "55876a02686170fce63732fb44ae3f646632652247debe73b345f4edffbb4635",
+        "d6_k7_schur_3949382.md": "660de8bb17947dc7848886b51e11327f0cc4645e55dc993ae5df423a8de0aaf4",
+        "d6_k7_schur_3949382_increment.md": "960da77e20b1421faf490ec19c2d4409af296b9cd8f2ef72ff67c94376ccf099",
+        "probe_d6_k7_schur_3949382.py": "96750e6591aae18dd25e59d382ed64c316575431942780b002be12da4594cb86",
+        "test_d6_k7_schur_3949382_increment.py": "1adc10554e149adf997c66edcd98ffb2b0b4154512a4924e2d84472ec83bb3dc",
+        "test_probe_d6_k7_schur_3949382.py": "ab3842c4f55e1fa6216ad10e18a197b99dc4c470e9c0e00cba7c26e6eab911ab",
+        "verify_d6_k7_schur_3949382_increment.py": "7306b6f690399a625db704badfa43600b03bc8f11b5d6e92411b542731e90a13"
+      }
+    },
+    "logical_cpus": 12,
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "started_utc": "2026-08-09T18:00:12.339829+00:00"
+  },
+  "frozen_exploratory_sha256": {
+    "d6_k7_schur_3949382.md": "660de8bb17947dc7848886b51e11327f0cc4645e55dc993ae5df423a8de0aaf4",
+    "probe_d6_k7_schur_3949382.py": "96750e6591aae18dd25e59d382ed64c316575431942780b002be12da4594cb86",
+    "test_probe_d6_k7_schur_3949382.py": "ab3842c4f55e1fa6216ad10e18a197b99dc4c470e9c0e00cba7c26e6eab911ab"
+  },
+  "input": {
+    "artifact": "d6_k7_one_two_star_increment_report.json",
+    "graphs": 16,
+    "ordered_indices": [
+      316173,
+      2581209,
+      2593240,
+      3595554,
+      3648882,
+      3729907,
+      3935560,
+      3936177,
+      3936310,
+      3936435,
+      3945490,
+      3945555,
+      3945557,
+      3945564,
+      3947605,
+      3949382
+    ],
+    "ordered_indices_sha256": "b0235ce7e95918197f0f3b4a57d26c8c83632ff51fd678a989f50197591eee8e"
+  },
+  "kind": "d6_k7_schur_3949382_exact_increment",
+  "schema": 1,
+  "semantics": {
+    "all_actual_support_branches_for_seed_are_quantified": true,
+    "candidate_nonedges_optional": true,
+    "floating_point_enters_rejection": false,
+    "one_infeasible_required_K7_seed_rejects_graph": true,
+    "propagated_masks_are_support_supersets": true,
+    "required_edges_give_unit_K_entries": true,
+    "strict_positive_diagonal_parameters_encode_distinct_points": true,
+    "zero_K_entries_require_disjoint_propagated_support_supersets": true
+  },
+  "source_sha256": {
+    "build_d6_k7_schur_3949382_increment.py": "55876a02686170fce63732fb44ae3f646632652247debe73b345f4edffbb4635",
+    "d6_k7_schur_3949382.md": "660de8bb17947dc7848886b51e11327f0cc4645e55dc993ae5df423a8de0aaf4",
+    "d6_k7_schur_3949382_increment.md": "960da77e20b1421faf490ec19c2d4409af296b9cd8f2ef72ff67c94376ccf099",
+    "probe_d6_k7_schur_3949382.py": "96750e6591aae18dd25e59d382ed64c316575431942780b002be12da4594cb86",
+    "test_d6_k7_schur_3949382_increment.py": "1adc10554e149adf997c66edcd98ffb2b0b4154512a4924e2d84472ec83bb3dc",
+    "test_probe_d6_k7_schur_3949382.py": "ab3842c4f55e1fa6216ad10e18a197b99dc4c470e9c0e00cba7c26e6eab911ab",
+    "verify_d6_k7_schur_3949382_increment.py": "7306b6f690399a625db704badfa43600b03bc8f11b5d6e92411b542731e90a13"
+  },
+  "status": "COMPLETE_EXACT_REJECTION",
+  "summary": {
+    "graphs_rejected": 1,
+    "graphs_surviving": 15,
+    "ordered_survivor_indices": [
+      316173,
+      2581209,
+      2593240,
+      3595554,
+      3648882,
+      3729907,
+      3935560,
+      3936177,
+      3936310,
+      3936435,
+      3945490,
+      3945555,
+      3945557,
+      3945564,
+      3947605
+    ],
+    "ordered_survivor_indices_sha256": "715c52011421fb6d8721d52339ed3437ef1cec344ddf3f03a3b0b618f35b00d7",
+    "rejected_indices": [
+      3949382
+    ],
+    "rejected_indices_sha256": "1ba6a419552e6d26bed1d5783171d268f5d94ce808efabb3aaf6662849ec5df0"
+  },
+  "upstream_sha256": {
+    "d6_current_residue_manifest_v6.json": "c513bcc40c037af23340dce3cc91d593a101dd1d073f93feab82abd556efadc9",
+    "d6_current_residue_manifest_v6_verification.json": "3d11cbd20cb59b42a8c8fd5252fb3ef3dea649576982ea8017622fad3279a7bc",
+    "d6_k7_one_two_star_increment_report.json": "12b3d18b1ea81961f58d831d4c7c322fbceb2300e7533b64161e8011fbe9d1ec",
+    "d6_k7_one_two_star_increment_verification.json": "c6f40578685036cb1156cb0ea8bf06d6004a70d5f376aff5ac1e16a1c0ca09eb"
+  }
+}
