@@ -108,6 +108,32 @@ class V6SelectionControls(unittest.TestCase):
         self.assertEqual(first, second)
         self.assertEqual(len(first), 7)
 
+    def test_explicit_index_selection_is_exact_and_validated(self) -> None:
+        graphs, _provenance = self.load()
+        requested = frozenset({3945557, 316173, 2593240})
+        selected = wrapper.select_k7(
+            graphs,
+            shards=1,
+            shard=0,
+            sample=None,
+            sample_seed=600_019_006,
+            indices=requested,
+        )
+        self.assertEqual(
+            [graph["index"] for graph in selected],
+            [316173, 2593240, 3945557],
+        )
+        self.assertEqual([graph["ordinal"] for graph in selected], [0, 1, 2])
+        with self.assertRaisesRegex(ValueError, "absent from v6 K7 class"):
+            wrapper.select_k7(
+                graphs,
+                shards=1,
+                shard=0,
+                sample=None,
+                sample_seed=600_019_006,
+                indices=frozenset({123456789}),
+            )
+
     def test_unpinned_manifest_is_rejected_before_parsing(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             bad = Path(directory) / "manifest.json"
