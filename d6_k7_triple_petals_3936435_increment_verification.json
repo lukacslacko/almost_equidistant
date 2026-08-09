@@ -1,0 +1,415 @@
+{
+  "checked": {
+    "input_graphs": 12,
+    "new_covers": 2,
+    "new_families": 2,
+    "output_graphs": 11,
+    "parent_independently_checked_current_passing_families": 88,
+    "parent_independently_checked_eligible_covers": 19932,
+    "prior_eliminated_raw_covers": 253,
+    "raw_eligible_covers": 255,
+    "target_index": 3936435
+  },
+  "checks": {
+    "all_255_raw_covers_accounted": true,
+    "both_surviving_covers_checked": true,
+    "both_unique_support_families_checked": true,
+    "current_K7_parent_boundary": true,
+    "import_independence": true,
+    "independent_raw_cover_replay": true,
+    "independent_symbolic_Q_sqrt7_arithmetic": true,
+    "known_realizable_18_control": true,
+    "only_required_edges_used": true,
+    "propagated_masks_used_only_as_supersets": true
+  },
+  "conclusion": {
+    "floating_point_used": false,
+    "ordered_survivor_indices_sha256": "380936282d98f2e561c71680a04d04401fabc032e8a00cebf12ae4d18967a874",
+    "rejected_indices": [
+      3936435
+    ]
+  },
+  "controls": {
+    "known_realizable_18": {
+      "K7_seeds": 0,
+      "passed": true
+    },
+    "optional_hub_nonedge_is_not_an_equation": true
+  },
+  "execution": {
+    "command": "/Users/lukacs/claude/opengauss/venv/bin/python3 verify_d6_k7_triple_petals_3936435_increment.py --report-sha256 b13240a303f3e304dd2d095cc6dd28f3caa1f6571e0ba210637cb7e0ab0f168a",
+    "finished_utc": "2026-08-09T19:18:14.472016+00:00",
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "verifier_sha256": "35c85936ec2914acd42e502801d7d68863f817f19ab9fc84e6cb42d3fd7869fa"
+  },
+  "independent_algebra": {
+    "central_equalities_checked_by_ideal_combinations": 3,
+    "hub_equations_checked": 7,
+    "hub_ideal_consequence": "six_hub_petal_edges_and_hub_edge_imply_lambda_squared_equals_three",
+    "hub_ideal_identity": "0",
+    "hub_intersection_leaves": [
+      3,
+      2,
+      5
+    ],
+    "method": "symbolic_polynomial_reduction_modulo_r_squared_minus_7",
+    "petal_diagonal_cases": [
+      {
+        "cleared_hub_edge": "1 - r/2",
+        "conjugate_product_mod_r_squared_minus_7": "3",
+        "epsilon": -1,
+        "forced_hub_dot": "8/3 - 2*r/3",
+        "lambda": "r/2 + 1/2",
+        "lambda_conjugate_product": "-3/2",
+        "lambda_inverse": "r/3 - 1/3",
+        "lambda_square_minus_three": "r/2 - 1",
+        "producer_case_expected": {
+          "epsilon": -1,
+          "hub_hub_dot_forced_by_six_petal_edges": [
+            [
+              8,
+              3
+            ],
+            [
+              -2,
+              3
+            ]
+          ],
+          "leaf_inverse": [
+            [
+              -1,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "leaf_square": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "leaf_square_minus_three": [
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "leaf_square_times_hub_dot_minus_one": [
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              2
+            ]
+          ],
+          "leaf_value": [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "six_hub_petal_products": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          ],
+          "three_minus_leaf_square": [
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              2
+            ]
+          ],
+          "two_support_diagonal_factor": [
+            [
+              3,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "six_hub_petal_substitutions": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "cleared_hub_edge": "r/2 + 1",
+        "conjugate_product_mod_r_squared_minus_7": "3",
+        "epsilon": 1,
+        "forced_hub_dot": "2*r/3 + 8/3",
+        "lambda": "r/2 - 1/2",
+        "lambda_conjugate_product": "-3/2",
+        "lambda_inverse": "r/3 + 1/3",
+        "lambda_square_minus_three": "-r/2 - 1",
+        "producer_case_expected": {
+          "epsilon": 1,
+          "hub_hub_dot_forced_by_six_petal_edges": [
+            [
+              8,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "leaf_inverse": [
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "leaf_square": [
+            [
+              2,
+              1
+            ],
+            [
+              -1,
+              2
+            ]
+          ],
+          "leaf_square_minus_three": [
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              2
+            ]
+          ],
+          "leaf_square_times_hub_dot_minus_one": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "leaf_value": [
+            [
+              -1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "six_hub_petal_products": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          ],
+          "three_minus_leaf_square": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "two_support_diagonal_factor": [
+            [
+              3,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "six_hub_petal_substitutions": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "status": "EXACT_CONTRADICTION_FOR_BOTH_SIGNS"
+  },
+  "kind": "d6_k7_triple_petals_3936435_increment_verification",
+  "report": {
+    "path": "d6_k7_triple_petals_3936435_increment_report.json",
+    "sha256": "b13240a303f3e304dd2d095cc6dd28f3caa1f6571e0ba210637cb7e0ab0f168a"
+  },
+  "schema": 1,
+  "semantics": {
+    "actual_supports_are_subsets_of_propagated_masks": true,
+    "all_actual_cover_support_branches_for_seed_are_quantified": true,
+    "candidate_nonedges_optional": true,
+    "floating_point_enters_rejection": false,
+    "one_infeasible_required_K7_seed_rejects_graph": true,
+    "only_required_edges_enter_inner_product_equations": true,
+    "zero_factor_vertices_excluded_from_normalization": true
+  },
+  "source_boundary": {
+    "branch": "codex/dimension6",
+    "commit": "57a1cd08846d18d6936be46c408560f975357f48",
+    "sources": 4
+  },
+  "status": "PASS",
+  "upstream_sha256": {
+    "d6_current_residue_manifest_v8.json": "9ea10a7794f033e66152c477a130f11c6c2862e87b4bdd705c14021521c18285",
+    "d6_current_residue_manifest_v8_verification.json": "117ac6833a24eb69cec7a514445bb4c2913c3f3ac7c413aa81fad19fe305602e",
+    "d6_k7_one_two_star_increment_report.json": "12b3d18b1ea81961f58d831d4c7c322fbceb2300e7533b64161e8011fbe9d1ec",
+    "d6_k7_one_two_star_increment_verification.json": "c6f40578685036cb1156cb0ea8bf06d6004a70d5f376aff5ac1e16a1c0ca09eb"
+  }
+}

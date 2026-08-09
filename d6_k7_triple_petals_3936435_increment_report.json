@@ -1,0 +1,647 @@
+{
+  "certificate": {
+    "algebra": {
+      "cases": [
+        {
+          "epsilon": -1,
+          "hub_hub_dot_forced_by_six_petal_edges": [
+            [
+              8,
+              3
+            ],
+            [
+              -2,
+              3
+            ]
+          ],
+          "leaf_inverse": [
+            [
+              -1,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "leaf_square": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "leaf_square_minus_three": [
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "leaf_square_times_hub_dot_minus_one": [
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              2
+            ]
+          ],
+          "leaf_value": [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "six_hub_petal_products": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          ],
+          "three_minus_leaf_square": [
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              2
+            ]
+          ],
+          "two_support_diagonal_factor": [
+            [
+              3,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "epsilon": 1,
+          "hub_hub_dot_forced_by_six_petal_edges": [
+            [
+              8,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "leaf_inverse": [
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "leaf_square": [
+            [
+              2,
+              1
+            ],
+            [
+              -1,
+              2
+            ]
+          ],
+          "leaf_square_minus_three": [
+            [
+              -1,
+              1
+            ],
+            [
+              -1,
+              2
+            ]
+          ],
+          "leaf_square_times_hub_dot_minus_one": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "leaf_value": [
+            [
+              -1,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "six_hub_petal_products": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          ],
+          "three_minus_leaf_square": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "two_support_diagonal_factor": [
+            [
+              3,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "central_product_deduction": "The three required petal edges give xy=xz=yz=1, hence x=y=z=epsilon with epsilon in {-1,+1}.",
+      "conclusion": "lambda^2=2-epsilon*sqrt(7)/2 is never 3; equality would give epsilon*sqrt(7)=-2 and hence 7=4.",
+      "field": "Q(sqrt(7)) with positive sqrt(7)",
+      "hub_edge_deduction": "Each hub-petal edge forces the corresponding hub leaf to 1/lambda (lambda is nonzero). All six products are checked. The two hubs share exactly three leaves, so their required edge forces 3/lambda^2=1; clearing the nonzero lambda^2 gives lambda^2=3.",
+      "status": "EXACT_CONTRADICTION_FOR_BOTH_SIGNS",
+      "two_support_diagonal_identity": "For normalized w, ||w||^2=1+(sum(w)-sqrt(7))^2. A petal (epsilon,lambda) therefore has lambda=(sqrt(7)-epsilon)/2."
+    },
+    "covers": [
+      {
+        "Z_actual_supports": [],
+        "Z_global_vertices": [],
+        "Z_local_vertices": [],
+        "all_ten_pairs_required_unit_edges": true,
+        "contradiction": "triple_petal_Q_sqrt7",
+        "five_global_vertices": [
+          0,
+          2,
+          5,
+          10,
+          15
+        ],
+        "five_local_vertices": [
+          0,
+          1,
+          3,
+          6,
+          9
+        ],
+        "five_propagated_masks": [
+          60,
+          10,
+          6,
+          45,
+          34
+        ],
+        "nonzero_local_vertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "propagated_support_supersets_in_nonzero_order": [
+          60,
+          10,
+          121,
+          6,
+          67,
+          117,
+          45,
+          82,
+          93,
+          34,
+          64,
+          127
+        ],
+        "zmask": 0
+      },
+      {
+        "Z_actual_supports": [
+          63
+        ],
+        "Z_global_vertices": [
+          18
+        ],
+        "Z_local_vertices": [
+          11
+        ],
+        "all_ten_pairs_required_unit_edges": true,
+        "contradiction": "triple_petal_Q_sqrt7",
+        "five_global_vertices": [
+          0,
+          2,
+          5,
+          10,
+          15
+        ],
+        "five_local_vertices": [
+          0,
+          1,
+          3,
+          6,
+          9
+        ],
+        "five_propagated_masks": [
+          60,
+          10,
+          6,
+          45,
+          34
+        ],
+        "nonzero_local_vertices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "propagated_support_supersets_in_nonzero_order": [
+          60,
+          10,
+          121,
+          6,
+          67,
+          117,
+          45,
+          82,
+          93,
+          34,
+          64
+        ],
+        "zmask": 2048
+      }
+    ],
+    "graph_rejection_quantifier": "Every realization must realize this required K7 seed. The hash-pinned parent exhausts all 255 eligible covers, eliminates 253, and leaves exactly the two one-family covers checked here; both exact support/value systems are contradictory.",
+    "pattern": {
+      "center_coordinate": 1,
+      "five_pair_target": "required_K5_all_inner_products_one",
+      "hub_local_vertices": [
+        0,
+        6
+      ],
+      "hub_masks": [
+        60,
+        45
+      ],
+      "leaf_coordinates": [
+        3,
+        2,
+        5
+      ],
+      "petal_local_vertices": [
+        1,
+        3,
+        9
+      ],
+      "petal_masks": [
+        10,
+        6,
+        34
+      ]
+    },
+    "quantifier": {
+      "current_passing_families_per_cover": 1,
+      "new_families_checked": 2,
+      "new_families_rejected": 2,
+      "prior_layer_eliminated_raw_covers": 253,
+      "raw_eligible_covers": 255,
+      "raw_eligible_covers_sha256": "cf605db4a5fed03da735e569687d1e84d2bdde24c45d95a9fc4b61490e1a491d",
+      "upstream_current_covers": [
+        0,
+        2048
+      ]
+    },
+    "target": {
+      "adjacency_sha256": "15af539b50d518368164e3908f8609159d7c4ac04f1ab45be695eec27d7b9c62",
+      "defect_masks": [
+        60,
+        10,
+        121,
+        6,
+        67,
+        117,
+        45,
+        82,
+        93,
+        34,
+        64,
+        127
+      ],
+      "index": 3936435,
+      "outside": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16,
+        18
+      ],
+      "seed": [
+        1,
+        3,
+        6,
+        8,
+        11,
+        13,
+        17
+      ],
+      "seed_mask": 141642
+    }
+  },
+  "certificate_sha256": "8c074bb1850af8374b3a75efbd354328c3c1c97a6b4c8fff275b599b038d5b25",
+  "claim": "Graph 3936435 has no realization by distinct points in R^6 with all candidate edges at unit distance.",
+  "controls": {
+    "known_realizable_18": {
+      "K7_seeds": 0,
+      "passed": true
+    },
+    "synthetic_exact_pattern_detected": true,
+    "synthetic_missing_hub_edge_not_rejected": true
+  },
+  "execution": {
+    "command": "/Users/lukacs/claude/opengauss/venv/bin/python3 build_d6_k7_triple_petals_3936435_increment.py",
+    "finished_utc": "2026-08-09T19:18:05.037024+00:00",
+    "git": {
+      "branch": "codex/dimension6",
+      "commit": "57a1cd08846d18d6936be46c408560f975357f48",
+      "porcelain_lines": [
+        "?? d6_18_gpu_mps_seed_sphere_control_calibration_128.json",
+        "?? d6_18_gpu_mps_seed_sphere_control_calibration_32.json",
+        "?? d6_18_gpu_mps_unseeded_control_calibration.json",
+        "?? d6_k7_triple_petals_3936435_increment_report.json",
+        "?? probe_d6_k6_augmented_gram_shapes.py",
+        "?? probe_d6_k6_cross_gram_all_ones.py",
+        "?? probe_d6_k6_cross_gram_allowed_rank.py",
+        "?? probe_d6_k6_cross_gram_rectangular_rank.py",
+        "?? probe_d6_k6_edgewise_cross_support.py",
+        "?? probe_d6_k6_five_singleton_basis.py",
+        "?? probe_d6_k6_five_singleton_free_coordinate.py",
+        "?? probe_d6_k6_nested_support_reconstruction.py",
+        "?? probe_d6_k6_opposite_ray_rank.py",
+        "?? probe_d6_k6_opposite_ray_rank_conjunction.py",
+        "?? probe_d6_k6_rectangular_minor.py",
+        "?? probe_d6_k6_repeated_two_support_arm.py",
+        "?? probe_d6_k6_same_two_support_clique.py",
+        "?? probe_d6_k6_saturated_singleton_basis.py",
+        "?? probe_d6_k6_singleton_equal_support_clique_rank.py",
+        "?? probe_d6_k6_singleton_two_support_repeated_three_support.py",
+        "?? probe_d6_k6_strong_quadrangularity.py",
+        "?? probe_d6_k6_tight_column_orthogonality.py",
+        "?? probe_d6_k6_tight_same_z0_conjunction.py",
+        "?? probe_d6_k6_tight_support.py",
+        "?? probe_d6_k6_tight_support_disjoint_arms.py",
+        "?? probe_d6_k6_tight_support_rank2.py",
+        "?? probe_d6_k6_tight_support_singleton_fan.py",
+        "?? probe_d6_k6_two_singleton_repeated_three_support_arm.py",
+        "?? probe_d6_k6_two_support_triangle_singleton.py",
+        "?? probe_d6_k7_low_free_systems.py",
+        "?? profile_d6_k6_625_saving_alternatives.py",
+        "?? test_probe_d6_k6_cross_gram_rectangular_rank.py",
+        "?? test_probe_d6_k6_five_singleton_free_coordinate.py",
+        "?? verify_probe_d6_k6_five_singleton_free_coordinate.py"
+      ],
+      "porcelain_sha256": "bda4bbfa5de93caf7081fcece287ef9c802a24493b9abaf7f1d9d120661c099f",
+      "proof_and_checker_sources_equal_committed_blobs": true,
+      "source_sha256": {
+        "build_d6_k7_triple_petals_3936435_increment.py": "c8c487c7ce1e2626e3196c02cb08c9758693eac20fa3ad69937bc9dbd726a08a",
+        "d6_k7_triple_petals_3936435_increment.md": "ec0fbe13ce0d966c7011c677cb6c2efad6b78c997368c9f98f147f8298611168",
+        "test_d6_k7_triple_petals_3936435_increment.py": "be194f2cfa99ae867e79693771073c260e70c79c883055236ab212ec07380528",
+        "verify_d6_k7_triple_petals_3936435_increment.py": "35c85936ec2914acd42e502801d7d68863f817f19ab9fc84e6cb42d3fd7869fa"
+      },
+      "tracked_clean": true
+    },
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]"
+  },
+  "input": {
+    "class": "current_K7_residue_v8",
+    "graphs": 12,
+    "ordered_indices": [
+      316173,
+      2581209,
+      3648882,
+      3729907,
+      3935560,
+      3936310,
+      3936435,
+      3945490,
+      3945555,
+      3945557,
+      3945564,
+      3947605
+    ],
+    "ordered_indices_sha256": "e545ea5a8fc9691ed98e885919e149f84dc7e8b4796d0fe9e6cb3a519df6fd8c"
+  },
+  "kind": "d6_k7_triple_petals_3936435_exact_increment",
+  "nonclaims": [
+    "surviving graphs are not asserted realizable",
+    "candidate nonedges are not asserted nonunit",
+    "this increment does not settle the remaining K7 or K6-only residue"
+  ],
+  "parent_independent_check_counts": {
+    "current_passing_families": 88,
+    "eligible_covers": 19932,
+    "positive_18_control": true
+  },
+  "schema": 1,
+  "semantics": {
+    "actual_supports_are_subsets_of_propagated_masks": true,
+    "all_actual_cover_support_branches_for_seed_are_quantified": true,
+    "candidate_nonedges_optional": true,
+    "floating_point_enters_rejection": false,
+    "one_infeasible_required_K7_seed_rejects_graph": true,
+    "only_required_edges_enter_inner_product_equations": true,
+    "zero_factor_vertices_excluded_from_normalization": true
+  },
+  "source_sha256": {
+    "build_d6_k7_triple_petals_3936435_increment.py": "c8c487c7ce1e2626e3196c02cb08c9758693eac20fa3ad69937bc9dbd726a08a",
+    "d6_k7_triple_petals_3936435_increment.md": "ec0fbe13ce0d966c7011c677cb6c2efad6b78c997368c9f98f147f8298611168",
+    "test_d6_k7_triple_petals_3936435_increment.py": "be194f2cfa99ae867e79693771073c260e70c79c883055236ab212ec07380528",
+    "verify_d6_k7_triple_petals_3936435_increment.py": "35c85936ec2914acd42e502801d7d68863f817f19ab9fc84e6cb42d3fd7869fa"
+  },
+  "status": "COMPLETE_EXACT_REJECTION",
+  "summary": {
+    "graphs_rejected": 1,
+    "graphs_surviving": 11,
+    "ordered_survivor_indices": [
+      316173,
+      2581209,
+      3648882,
+      3729907,
+      3935560,
+      3936310,
+      3945490,
+      3945555,
+      3945557,
+      3945564,
+      3947605
+    ],
+    "ordered_survivor_indices_sha256": "380936282d98f2e561c71680a04d04401fabc032e8a00cebf12ae4d18967a874",
+    "rejected_indices": [
+      3936435
+    ],
+    "rejected_indices_sha256": "70b299aea4bf3f576fa08627defc48de0ad1b01f74f9cdf5b399789325520698"
+  },
+  "upstream_sha256": {
+    "d6_current_residue_manifest_v8.json": "9ea10a7794f033e66152c477a130f11c6c2862e87b4bdd705c14021521c18285",
+    "d6_current_residue_manifest_v8_verification.json": "117ac6833a24eb69cec7a514445bb4c2913c3f3ac7c413aa81fad19fe305602e",
+    "d6_k7_one_two_star_increment_report.json": "12b3d18b1ea81961f58d831d4c7c322fbceb2300e7533b64161e8011fbe9d1ec",
+    "d6_k7_one_two_star_increment_verification.json": "c6f40578685036cb1156cb0ea8bf06d6004a70d5f376aff5ac1e16a1c0ca09eb"
+  }
+}
