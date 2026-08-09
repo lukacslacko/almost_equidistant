@@ -193,6 +193,13 @@ After assembly, `verify_d6_18_gpu_mps_screen.py` independently checks:
 - edge RMS, maximum error, and minimum pair distance from every retained
   candidate coordinate witness.
 
+The 199 immutable atomic checkpoints and launch state are published as
+`d6_18_gpu_mps_checkpoints_3249d4d3a4afd60d.tar.gz` (SHA-256
+`9836f25e908c175f96203c24921051087c56b210e0812312b3f95b47dbb82df9`).
+The checker reads this archive directly, requires its exact member set, and
+recomputes every internal checkpoint payload hash; an untracked live
+checkpoint directory is not part of the verification boundary.
+
 The verifier also emits zero mathematical rejections and zero realizability
 conclusions.  Any promising nonstandard witness must be reconstructed and
 certified by a separate exact or rigorous interval method.

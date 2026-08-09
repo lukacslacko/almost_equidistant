@@ -15,6 +15,7 @@ import hashlib
 import json
 import math
 import os
+import tarfile
 import tempfile
 from pathlib import Path
 from typing import Sequence
@@ -25,6 +26,13 @@ DEFAULT_REPORT = ROOT / "d6_18_gpu_mps_screen_report.json"
 DEFAULT_CORPUS = ROOT / "d6_residue_18_deletions.json"
 DEFAULT_OUTPUT = ROOT / "d6_18_gpu_mps_screen_verification.json"
 PRODUCER = ROOT / "run_d6_18_gpu_mps_screen.py"
+CHECKPOINT_ARCHIVE = (
+    ROOT / "d6_18_gpu_mps_checkpoints_3249d4d3a4afd60d.tar.gz"
+)
+EXPECTED_CHECKPOINT_ARCHIVE_SHA256 = (
+    "9836f25e908c175f96203c24921051087c56b210e0812312b3f95b47dbb82df9"
+)
+CHECKPOINT_ARCHIVE_PREFIX = "3249d4d3a4afd60d/"
 EXPECTED_CORPUS_SHA256 = (
     "9d08f9ec579434c9601ad3908bd2ae51f10e09e9d06a7f38fbc25794a634b732"
 )
@@ -289,50 +297,77 @@ def verify(report_path: Path, corpus_path: Path) -> dict:
         )
     )
 
-    checkpoint_directory = (
-        ROOT / "d6_18_gpu_mps_checkpoints" / report["config_sha256"][:16]
-    )
     checkpoint_rows = []
     checkpoint_endpoints = []
     checkpoint_lm_attempts = []
     checkpoint_witnesses = []
     checkpoint_hashes = []
-    checkpoint_ok = checkpoint_directory.is_dir()
+    checkpoint_ok = (
+        report["config_sha256"][:16] == CHECKPOINT_ARCHIVE_PREFIX.rstrip("/")
+        and sha256_file(CHECKPOINT_ARCHIVE)
+        == EXPECTED_CHECKPOINT_ARCHIVE_SHA256
+    )
     chunk_size = report["config"]["chunk_size"]
-    for start in range(0, 12_712, chunk_size):
-        end = min(12_712, start + chunk_size)
-        path = checkpoint_directory / f"chunk_{start:05d}_{end:05d}.json.gz"
-        if not path.exists():
-            checkpoint_ok = False
-            continue
-        with gzip.open(path, "rt", encoding="ascii") as stream:
-            payload = json.load(stream)
-        claimed = payload.pop("checkpoint_sha256", None)
-        checkpoint_ok &= (
-            claimed is not None
-            and stable_hash(payload) == claimed
-            and payload.get("schema") == "d6-18-gpu-mps-checkpoint-v1"
-            and payload.get("proof_status") == "HEURISTIC_ONLY_NO_REJECTIONS"
-            and payload.get("config_sha256") == report["config_sha256"]
-            and payload.get("range") == [start, end]
-            and payload.get("mathematical_rejections") == 0
-            and [row.get("index") for row in payload.get("rows", [])]
-            == list(range(start, end))
-            and [item.get("index") for item in payload.get("lm_attempts", [])]
-            == list(range(start, end))
+    chunk_names = [
+        f"chunk_{start:05d}_{min(12_712, start + chunk_size):05d}.json.gz"
+        for start in range(0, 12_712, chunk_size)
+    ]
+    expected_members = {
+        CHECKPOINT_ARCHIVE_PREFIX.rstrip("/"),
+        CHECKPOINT_ARCHIVE_PREFIX + "run_state.json",
+        *(CHECKPOINT_ARCHIVE_PREFIX + name for name in chunk_names),
+    }
+    with tarfile.open(CHECKPOINT_ARCHIVE, "r:gz") as archive:
+        checkpoint_ok &= set(archive.getnames()) == expected_members
+        run_state_member = archive.extractfile(
+            CHECKPOINT_ARCHIVE_PREFIX + "run_state.json"
         )
-        for row in payload.get("rows", []):
-            index = row["index"]
+        checkpoint_ok &= run_state_member is not None
+        if run_state_member is not None:
+            run_state = json.loads(run_state_member.read().decode("utf-8"))
             checkpoint_ok &= (
-                row["gauge_size"] == gauges[index][0]
-                and tuple(row["gauge_seed_old_vertices"]) == gauges[index][1]
+                run_state.get("schema") == "d6-18-gpu-mps-run-state-v1"
+                and run_state.get("proof_status")
+                == "HEURISTIC_ONLY_NO_REJECTIONS"
+                and run_state.get("config_sha256") == report["config_sha256"]
+                and stable_hash(run_state.get("config"))
+                == report["config_sha256"]
             )
-        checkpoint_hashes.append(claimed)
-        checkpoint_rows.extend(payload["rows"])
-        checkpoint_endpoints.extend(payload.get("retained_endpoints", []))
-        checkpoint_lm_attempts.extend(payload.get("lm_attempts", []))
-        checkpoint_witnesses.extend(payload.get("witnesses", []))
-    checks["all_atomic_checkpoints_rehashed"] = (
+        for start, name in zip(range(0, 12_712, chunk_size), chunk_names):
+            end = min(12_712, start + chunk_size)
+            member = archive.extractfile(CHECKPOINT_ARCHIVE_PREFIX + name)
+            if member is None:
+                checkpoint_ok = False
+                continue
+            payload = json.loads(gzip.decompress(member.read()).decode("ascii"))
+            claimed = payload.pop("checkpoint_sha256", None)
+            checkpoint_ok &= (
+                claimed is not None
+                and stable_hash(payload) == claimed
+                and payload.get("schema") == "d6-18-gpu-mps-checkpoint-v1"
+                and payload.get("proof_status")
+                == "HEURISTIC_ONLY_NO_REJECTIONS"
+                and payload.get("config_sha256") == report["config_sha256"]
+                and payload.get("range") == [start, end]
+                and payload.get("mathematical_rejections") == 0
+                and [row.get("index") for row in payload.get("rows", [])]
+                == list(range(start, end))
+                and [item.get("index") for item in payload.get("lm_attempts", [])]
+                == list(range(start, end))
+            )
+            for row in payload.get("rows", []):
+                index = row["index"]
+                checkpoint_ok &= (
+                    row["gauge_size"] == gauges[index][0]
+                    and tuple(row["gauge_seed_old_vertices"])
+                    == gauges[index][1]
+                )
+            checkpoint_hashes.append(claimed)
+            checkpoint_rows.extend(payload["rows"])
+            checkpoint_endpoints.extend(payload.get("retained_endpoints", []))
+            checkpoint_lm_attempts.extend(payload.get("lm_attempts", []))
+            checkpoint_witnesses.extend(payload.get("witnesses", []))
+    checks["immutable_checkpoint_archive_rehashed"] = (
         checkpoint_ok
         and len(checkpoint_hashes) == report["checkpoints"]["count"]
         and stable_hash(checkpoint_hashes) == report["checkpoints"]["ordered_sha256"]
@@ -516,6 +551,12 @@ def verify(report_path: Path, corpus_path: Path) -> dict:
         "proof_status": "HEURISTIC_ONLY_NO_REJECTIONS",
         "report": report_path.name,
         "report_sha256": report_hash,
+        "verifier_source_sha256": sha256_file(Path(__file__).resolve()),
+        "checkpoint_archive": {
+            "path": CHECKPOINT_ARCHIVE.name,
+            "sha256": EXPECTED_CHECKPOINT_ARCHIVE_SHA256,
+            "members": len(expected_members),
+        },
         "checks": checks,
         "failed_checks": failed,
         "mathematical_rejections": 0,
