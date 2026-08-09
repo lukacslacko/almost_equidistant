@@ -196,3 +196,12 @@ After assembly, `verify_d6_18_gpu_mps_screen.py` independently checks:
 The verifier also emits zero mathematical rejections and zero realizability
 conclusions.  Any promising nonstandard witness must be reconstructed and
 certified by a separate exact or rigorous interval method.
+
+The complete first replay exposed one checker-only precision issue: retained
+MPS endpoints store binary32 coordinates, while their archived metrics were
+reduced by Torch/MPS in binary32 and the checker recomputes them in Python
+binary64.  The largest observed minimum-distance discrepancy was below
+`8e-7`.  The corrected checker uses `rel_tol=1e-5, abs_tol=1e-6` only for
+those MPS endpoint metrics; CPU-LM witnesses and summaries retain the tighter
+binary64 tolerance.  This is an audit tolerance for a heuristic artifact and
+does not enter a geometric rejection.

@@ -172,6 +172,21 @@ def close_metric(left: float, right: float) -> bool:
     return math.isclose(left, right, rel_tol=2e-6, abs_tol=2e-8)
 
 
+def close_mps_metric(left: float, right: float) -> bool:
+    """Compare a binary64 replay with a metric originally reduced on MPS.
+
+    Retained MPS endpoints are serialized exactly as their binary32
+    coordinates, but their archived metrics were reduced by Torch in
+    binary32 and a device-dependent summation order.  Recomputing the same
+    expression from those coordinates in Python binary64 therefore need not
+    reproduce the final few binary32 ulps.  This envelope is used only for
+    the heuristic MPS endpoints; LM witnesses and summaries retain the
+    tighter binary64 comparison above.
+    """
+
+    return math.isclose(left, right, rel_tol=1e-5, abs_tol=1e-6)
+
+
 def first_clique(rows: Sequence[int], target: int) -> tuple[int, ...] | None:
     def search(chosen: tuple[int, ...], candidates: int) -> tuple[int, ...] | None:
         if len(chosen) == target:
@@ -349,10 +364,11 @@ def verify(report_path: Path, corpus_path: Path) -> dict:
             rows[index]["best_distinct_minimum_distance"],
         )
         endpoints_ok &= all(
-            close_metric(left, right) for left, right in zip(metrics, expected)
+            close_mps_metric(left, right)
+            for left, right in zip(metrics, expected)
         )
         endpoints_ok &= all(
-            close_metric(left, right)
+            close_mps_metric(left, right)
             for left, right in zip(
                 metrics,
                 (item["edge_rms"], item["max_edge_error"], item["minimum_distance"]),

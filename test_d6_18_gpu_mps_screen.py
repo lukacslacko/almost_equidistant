@@ -99,6 +99,21 @@ class GPUMPSScreenTests(unittest.TestCase):
         claimed = loaded.pop("checkpoint_sha256")
         self.assertEqual(screen.stable_hash(loaded), claimed)
 
+    def test_mps_metric_replay_allows_only_binary32_reduction_noise(self) -> None:
+        # Worst observed minimum-distance discrepancy in the complete sweep:
+        # identical serialized float32 coordinates, evaluated by MPS float32
+        # versus the independent Python float64 checker.
+        self.assertTrue(
+            verifier.close_mps_metric(0.11541603273264017, 0.11541681736707687)
+        )
+        self.assertTrue(
+            verifier.close_mps_metric(1.643707678855577e-7, 1.1920928955078125e-7)
+        )
+        self.assertFalse(verifier.close_mps_metric(0.1154160, 0.1155160))
+        self.assertFalse(
+            verifier.close_metric(1.643707678855577e-7, 1.1920928955078125e-7)
+        )
+
     def test_cpu_seeded_control_smoke(self) -> None:
         index = next(
             index for index, raw in enumerate(self.raw_records)
