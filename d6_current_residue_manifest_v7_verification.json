@@ -1,0 +1,58 @@
+{
+  "checks": {
+    "K6_exact_chain_sources_controls": true,
+    "K7_layer_union_disjointness": true,
+    "Schur_exact_source_bound": true,
+    "counts_and_hashes": true,
+    "embedded_graphs_and_classes": true,
+    "execution_provenance": true,
+    "import_independence": true,
+    "interval_layers_sources_controls": true,
+    "source_and_artifact_roots": true,
+    "star_2593240_exact_source_bound": true,
+    "star_exact_partition_sources_controls": true,
+    "trust_semantics_controls": true,
+    "v6_boundary_and_roots": true
+  },
+  "class_indices_sha256": {
+    "K6_only": "a23da7bd9ae21eb7c078a08a7bce92f22d397d5c71f1e4f51d9cf8e59bbfa907",
+    "K7": "e545ea5a8fc9691ed98e885919e149f84dc7e8b4796d0fe9e6cb3a519df6fd8c"
+  },
+  "counts": {
+    "K6_only": 251,
+    "K7": 12,
+    "combined": 263,
+    "exact_rejections_from_v5": 643,
+    "interval_incremental_rejections": 5
+  },
+  "execution": {
+    "command": "/Users/lukacs/claude/opengauss/venv/bin/python3 verify_d6_current_residue_manifest_v7.py --expected-manifest-sha256 1ab0948780d73cdd6aca2925107fc240dcae5df51d7cf5393accd8de3ae79f95",
+    "finished_utc": "2026-08-09T18:28:43.760263+00:00",
+    "logical_cpus": 12,
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "verifier_sha256": "f14040964ad10200cb1355f30480df5f84a9c65227f3e74d585e0b0b7bdb7e3c"
+  },
+  "manifest": {
+    "path": "d6_current_residue_manifest_v7.json",
+    "sha256": "1ab0948780d73cdd6aca2925107fc240dcae5df51d7cf5393accd8de3ae79f95"
+  },
+  "ordered_residue_indices_sha256": "a50baf54bfff642e7c1711fe7041b5184df12f90de2cf52557cd086f10875127",
+  "schema": "d6-current-certified-residue-v7-verification-v1",
+  "source_boundary": {
+    "branch": "codex/dimension6",
+    "commit": "fc60e702ff73c91a4bf98544a49eb38aee2a7d3c",
+    "source_files": 4
+  },
+  "status": "PASS",
+  "trust_tiers": {
+    "exact_floating_point": false,
+    "interval_incremental_rejections": 5,
+    "interval_trust_assumptions": {
+      "basic_arithmetic": "IEEE-754 binary64 basic operations and sqrt are correctly rounded; each interval endpoint is expanded with nextafter.",
+      "candidate_nonedges": "unconstrained and allowed to be unit distance",
+      "transcendentals": "macOS libm cos endpoint values are assumed within 8 ulps; the kernel pads both directions by 8 nextafter steps and includes all interior extrema."
+    }
+  }
+}
