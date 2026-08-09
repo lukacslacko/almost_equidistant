@@ -1,0 +1,33 @@
+{
+  "checkpoint_archive": {
+    "members": 201,
+    "path": "d6_18_gpu_mps_checkpoints_3249d4d3a4afd60d.tar.gz",
+    "sha256": "9836f25e908c175f96203c24921051087c56b210e0812312b3f95b47dbb82df9"
+  },
+  "checks": {
+    "candidate_witness_metrics_recomputed": true,
+    "checkpoints_equal_result_table": true,
+    "complete_ordered_rows": true,
+    "config_hash": true,
+    "fourteen_exact_standard_controls": true,
+    "heuristic_only_zero_conclusions": true,
+    "immutable_checkpoint_archive_rehashed": true,
+    "lm_attempt_summaries_recomputed": true,
+    "pinned_corpus": true,
+    "producer_hash": true,
+    "report_schema": true,
+    "results_hash": true,
+    "retained_endpoint_metrics_recomputed": true,
+    "row_graph_metadata": true,
+    "summary_recomputed": true
+  },
+  "failed_checks": [],
+  "mathematical_realizability_conclusions": 0,
+  "mathematical_rejections": 0,
+  "proof_status": "HEURISTIC_ONLY_NO_REJECTIONS",
+  "report": "d6_18_gpu_mps_screen_report.json",
+  "report_sha256": "c775f4a02fb69368e0bc52421047cb1726d3eb8ac59dd9a1e88dff35023bf9a1",
+  "schema": "d6-18-gpu-mps-screen-verification-v1",
+  "status": "PASS",
+  "verifier_source_sha256": "85b3a4b2eec4e89b0fa1d26b4177db2b48115a6bd920fcf4f2f98c8a77d86c37"
+}
