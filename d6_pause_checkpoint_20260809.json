@@ -1,0 +1,102 @@
+{
+  "schema": "d6-local-pause-checkpoint-v1",
+  "created_local_date": "2026-08-09",
+  "branch": "codex/dimension6",
+  "artifact_boundary_before_pause": {
+    "commit": "ca00897",
+    "certified_residue": {
+      "K7": 11,
+      "K6_only": 249,
+      "combined": 260
+    },
+    "note": "This is the last fully published report-plus-independent-verification boundary."
+  },
+  "source_only_exact_increments": {
+    "K6_five_singleton_fixed_remainder": {
+      "status": "PRODUCER_AND_INDEPENDENT_CHECKER_PASS_ARTIFACTS_NOT_PUBLISHED",
+      "new_rejected_indices": [
+        428414,
+        430135,
+        1688505,
+        2669917,
+        2802776,
+        3655397,
+        3931365,
+        3950363,
+        3968088
+      ],
+      "rejected_indices_sha256": "b7de35407737cc884b7c227e880654c8d738f75889678d3f0d842e5f3696a452",
+      "prospective_K6_residue": 240,
+      "prospective_residue_sha256": "7b9c2e26e2ac178ab4e179dc0623b20f746bbd8eba85afb5c9c2c2013df8956e",
+      "production_transcript_sha256": "89ac4a6e96c2706472fd8f73e768d2d938fa9044a4a8a9780418bc94c861c53b",
+      "independent_verification_sha256": "3460fc7a3832e15870d92c8a5add313620c0775c735d63903b3eb9d019234bd8"
+    },
+    "interval_deletion_class_2100": {
+      "status": "SOURCE_CHECKER_AND_FULL_REPLAY_PASS_ARTIFACTS_NOT_PUBLISHED",
+      "rejected_parent_indices": [3945564],
+      "raw_campaign_sha256": "70ba451094eb4eb5d039fc059ab8e3c351ebeed157e2eae39cc35fe4dcb3e348",
+      "raw_result_sha256": "0e246dc1e2a84d5fafb3746366e5f1b06fb3b2368c0ad1b61ac12446d835815a",
+      "trust_boundary": "IEEE-754 binary64 basic operations and sqrt, outward nextafter expansion, and the recorded macOS libm cosine eight-ulp assumption"
+    },
+    "K7_five_petal_graph_3936310": {
+      "status": "PRODUCER_CHECKPOINT_ONLY_NO_INDEPENDENT_CHECKER",
+      "prospective_rejected_index": 3936310,
+      "producer_sha256": "cc308819293041cdea8dd0d2dcf20127a6c1a085caea1c4687a11468cb9925dc",
+      "internal_certificate_sha256": "8ad4b9d5166179bf8a404f0caa0b362167942b8138b571109d7cf585747feda5",
+      "note": "The exact Q(sqrt(7)) producer path was exercised, but the checker, tests, documentation, and source-bound report remain unfinished."
+    }
+  },
+  "heuristic_GPU_screen": {
+    "status": "COMPLETE_NO_MATHEMATICAL_REJECTIONS",
+    "report": "d6_18_gpu_mps_cover_v7_report.json",
+    "report_sha256": "5d9aa499a87d8eca1f4e886418bd03915d36f22f60980666a420d3228f47d3e7",
+    "local_details": ".runs/d6_18_gpu_mps_cover_v7_details.json.gz",
+    "local_details_sha256": "8ccbd6c241f9d67a0a34a9866337ebbff61b270486ae46e3e5c8f0f0e6fde55b",
+    "classes": 181,
+    "K6_gauges": 4099,
+    "optimizer_starts": 32792,
+    "LM_refinements": 8198,
+    "candidate_classes": [441],
+    "noncontrol_candidate_gauges": 0,
+    "note": "Class 441 is the known standard-compatible positive control and was recovered in all nine of its gauges. Optimization failure proves nothing."
+  },
+  "restartable_local_runs": {
+    "d6_interval_18_cover_v7_cap100000_w3": {
+      "status": "PAUSED_BY_KEYBOARD_INTERRUPT",
+      "checkpoint_dir": ".runs/d6_interval_18_cover_v7_cap100000_w3",
+      "campaign_sha256": "70ba451094eb4eb5d039fc059ab8e3c351ebeed157e2eae39cc35fe4dcb3e348",
+      "config_sha256": "82c8d332af4ac4e3984949b98cde969f5b239eadb640e9633f704f8ec88fbcba",
+      "progress_sha256": "e068edc8cb4eab0e4e25c9ae84775e372038c460595d5e8a566535432882192e",
+      "completed": 180,
+      "total": 181,
+      "status_counts": {
+        "KILLED": 1,
+        "ABORT": 178,
+        "UNRESOLVED": 1,
+        "INFRA_ERROR": 0
+      },
+      "ordered_result_tree_sha256": "e97aa6e788a8378bc5e9be050938dbac0b46d4741fa270af17100ee1be2956f2"
+    },
+    "d6_interval_k7_current12_cap5000000": {
+      "status": "PAUSED_BY_KEYBOARD_INTERRUPT",
+      "checkpoint_dir": ".runs/d6_interval_k7_current12_cap5000000",
+      "campaign_sha256": "cab1c6fdde4c74821f243a963ac55b211dfb81f85100f7109119e185ffff2d65",
+      "config_sha256": "0b5199b345d5dffb42afe2c1a4c1c7a901a96918430c7380a3fd9ddbb2dad88c",
+      "progress_sha256": "8f76ca6941c46d03fe2eaccb0099ae330e187f35a4d92078dd3bcfe9a6857b6c",
+      "completed": 5,
+      "total": 12,
+      "status_counts": {
+        "KILLED": 0,
+        "ABORT": 5,
+        "UNRESOLVED": 0,
+        "INFRA_ERROR": 0
+      },
+      "ordered_result_tree_sha256": "c88ebae676f818f258a554b35c48afc903b9287465a0235ca32bd9572bf450ee"
+    }
+  },
+  "pause_state": {
+    "local_search_processes_running": false,
+    "subagents_running": false,
+    "new_work_launched_after_pause_request": false
+  }
+}
