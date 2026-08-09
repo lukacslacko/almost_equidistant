@@ -1,0 +1,890 @@
+{
+  "KILLED_semantics": "There exists a tried placement order for which every theta slice returned KILLED from the outward-rounded interval kernel.",
+  "certified_killed": 1,
+  "checkpoint_directory": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_interval_k7_3936177_cap2000000",
+  "checkpoint_result_index_sha256": "81a9b1a11740267f44e774f91b668d80693de9e64750956a8eacd557330ce420",
+  "claim": "Only KILLED is a certified non-realizability result. ABORT, UNRESOLVED, and INFRA_ERROR make no mathematical claim.",
+  "completed_graphs": 1,
+  "config_sha256": "6a047ad2d73adae7a159997bf3b6fbcc4ac8cd6c2ed50054d93cb95863cd830d",
+  "configuration": {
+    "environment": {
+      "compiler": "Apple clang version 16.0.0 (clang-1600.0.26.6)",
+      "cpu_count": 12,
+      "kernel_compile_command": "cc -O2 -shared -o ckernel6.dylib ckernel6.c -lm",
+      "platform": "macOS-14.5-arm64-arm-64bit",
+      "python": "3.11.15"
+    },
+    "git": {
+      "available": true,
+      "branch": "codex/dimension6",
+      "commit": "de1f57900fb8928b9babe669fed1dc14c5b15a4c",
+      "dirty": true,
+      "porcelain_lines": [
+        "?? d6_18_gpu_mps_seed_sphere_control_calibration_128.json",
+        "?? d6_18_gpu_mps_seed_sphere_control_calibration_32.json",
+        "?? d6_18_gpu_mps_unseeded_control_calibration.json",
+        "?? d6_k6_opposite_ray_rank_conjunction.py",
+        "?? probe_d6_k6_nested_support_reconstruction.py",
+        "?? probe_d6_k6_opposite_ray_rank.py",
+        "?? probe_d6_k6_opposite_ray_rank_conjunction.py",
+        "?? probe_d6_k6_rectangular_minor.py",
+        "?? probe_d6_k6_repeated_two_support_arm.py",
+        "?? probe_d6_k6_same_two_support_clique.py",
+        "?? probe_d6_k6_singleton_equal_support_clique_rank.py",
+        "?? probe_d6_k6_singleton_two_support_repeated_three_support.py",
+        "?? probe_d6_k6_tight_same_z0_conjunction.py",
+        "?? probe_d6_k6_tight_support.py",
+        "?? probe_d6_k6_tight_support_disjoint_arms.py",
+        "?? probe_d6_k6_tight_support_rank2.py",
+        "?? probe_d6_k6_tight_support_singleton_fan.py",
+        "?? probe_d6_k6_two_singleton_repeated_three_support_arm.py",
+        "?? probe_d6_k6_two_support_triangle_singleton.py",
+        "?? probe_d6_k7_low_free_systems.py",
+        "?? profile_d6_k6_625_saving_alternatives.py",
+        "?? test_d6_k6_opposite_ray_rank_conjunction.py",
+        "?? verify_d6_k6_opposite_ray_rank_conjunction.py"
+      ],
+      "porcelain_sha256": "c6bbf6ff26b14625b4821aea62fbb0d82eccb64f181717bca2e55b6d6f247ecc"
+    },
+    "inputs": {
+      "v6_manifest": {
+        "path": "/Users/lukacs/chatgpt/almost_equidistant/d6_current_residue_manifest_v6.json",
+        "sha256": "c513bcc40c037af23340dce3cc91d593a101dd1d073f93feab82abd556efadc9"
+      },
+      "v6_verification": {
+        "path": "/Users/lukacs/chatgpt/almost_equidistant/d6_current_residue_manifest_v6_verification.json",
+        "sha256": "3d11cbd20cb59b42a8c8fd5252fb3ef3dea649576982ea8017622fad3279a7bc"
+      }
+    },
+    "kernel_controls": {
+      "negative": {
+        "description": "K8 subgraph, impossible in R6",
+        "placement_order": [
+          8,
+          7,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "records": [
+          {
+            "hi": 0.2617993877991494,
+            "lo": 0.0,
+            "nodes": 33,
+            "part": 0,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 0.5235987755982988,
+            "lo": 0.2617993877991494,
+            "nodes": 33,
+            "part": 1,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 0.7853981633974483,
+            "lo": 0.5235987755982988,
+            "nodes": 33,
+            "part": 2,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.0471975511965976,
+            "lo": 0.7853981633974483,
+            "nodes": 33,
+            "part": 3,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.3089969389957472,
+            "lo": 1.0471975511965976,
+            "nodes": 33,
+            "part": 4,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.5707963267948966,
+            "lo": 1.3089969389957472,
+            "nodes": 33,
+            "part": 5,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.832595714594046,
+            "lo": 1.5707963267948966,
+            "nodes": 33,
+            "part": 6,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.0943951023931953,
+            "lo": 1.832595714594046,
+            "nodes": 33,
+            "part": 7,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.356194490192345,
+            "lo": 2.0943951023931953,
+            "nodes": 33,
+            "part": 8,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.6179938779914944,
+            "lo": 2.356194490192345,
+            "nodes": 33,
+            "part": 9,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.8797932657906435,
+            "lo": 2.6179938779914944,
+            "nodes": 33,
+            "part": 10,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.141592653589793,
+            "lo": 2.8797932657906435,
+            "nodes": 33,
+            "part": 11,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.4033920413889427,
+            "lo": 3.141592653589793,
+            "nodes": 33,
+            "part": 12,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.665191429188092,
+            "lo": 3.4033920413889427,
+            "nodes": 33,
+            "part": 13,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.926990816987241,
+            "lo": 3.665191429188092,
+            "nodes": 33,
+            "part": 14,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.1887902047863905,
+            "lo": 3.926990816987241,
+            "nodes": 33,
+            "part": 15,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.4505895925855405,
+            "lo": 4.1887902047863905,
+            "nodes": 33,
+            "part": 16,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.71238898038469,
+            "lo": 4.4505895925855405,
+            "nodes": 33,
+            "part": 17,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.974188368183839,
+            "lo": 4.71238898038469,
+            "nodes": 33,
+            "part": 18,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 5.235987755982989,
+            "lo": 4.974188368183839,
+            "nodes": 33,
+            "part": 19,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 5.497787143782138,
+            "lo": 5.235987755982989,
+            "nodes": 33,
+            "part": 20,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 5.759586531581287,
+            "lo": 5.497787143782138,
+            "nodes": 33,
+            "part": 21,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 6.021385919380436,
+            "lo": 5.759586531581287,
+            "nodes": 33,
+            "part": 22,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 6.283185307179586,
+            "lo": 6.021385919380436,
+            "nodes": 33,
+            "part": 23,
+            "status": "KILLED",
+            "unresolved_cells": 0
+          }
+        ],
+        "required": "every production slice is KILLED",
+        "seed": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "slices": 24,
+        "status_counts": {
+          "KILLED": 24
+        }
+      },
+      "positive": {
+        "description": "K7 plus twelve distinct generic points on the common-unit circle of five seed vertices",
+        "placement_order": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "records": [
+          {
+            "hi": 0.2617993877991494,
+            "lo": 0.0,
+            "nodes": 1001,
+            "part": 0,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 0.5235987755982988,
+            "lo": 0.2617993877991494,
+            "nodes": 1001,
+            "part": 1,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 0.7853981633974483,
+            "lo": 0.5235987755982988,
+            "nodes": 1001,
+            "part": 2,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.0471975511965976,
+            "lo": 0.7853981633974483,
+            "nodes": 1001,
+            "part": 3,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.3089969389957472,
+            "lo": 1.0471975511965976,
+            "nodes": 1001,
+            "part": 4,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.5707963267948966,
+            "lo": 1.3089969389957472,
+            "nodes": 1001,
+            "part": 5,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 1.832595714594046,
+            "lo": 1.5707963267948966,
+            "nodes": 1001,
+            "part": 6,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.0943951023931953,
+            "lo": 1.832595714594046,
+            "nodes": 1001,
+            "part": 7,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.356194490192345,
+            "lo": 2.0943951023931953,
+            "nodes": 1001,
+            "part": 8,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.6179938779914944,
+            "lo": 2.356194490192345,
+            "nodes": 1001,
+            "part": 9,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 2.8797932657906435,
+            "lo": 2.6179938779914944,
+            "nodes": 1001,
+            "part": 10,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.141592653589793,
+            "lo": 2.8797932657906435,
+            "nodes": 1001,
+            "part": 11,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.4033920413889427,
+            "lo": 3.141592653589793,
+            "nodes": 1001,
+            "part": 12,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.665191429188092,
+            "lo": 3.4033920413889427,
+            "nodes": 1001,
+            "part": 13,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 3.926990816987241,
+            "lo": 3.665191429188092,
+            "nodes": 1001,
+            "part": 14,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.1887902047863905,
+            "lo": 3.926990816987241,
+            "nodes": 1001,
+            "part": 15,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.4505895925855405,
+            "lo": 4.1887902047863905,
+            "nodes": 1001,
+            "part": 16,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.71238898038469,
+            "lo": 4.4505895925855405,
+            "nodes": 1001,
+            "part": 17,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 4.974188368183839,
+            "lo": 4.71238898038469,
+            "nodes": 1001,
+            "part": 18,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 5.235987755982989,
+            "lo": 4.974188368183839,
+            "nodes": 1001,
+            "part": 19,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 5.497787143782138,
+            "lo": 5.235987755982989,
+            "nodes": 1001,
+            "part": 20,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 5.759586531581287,
+            "lo": 5.497787143782138,
+            "nodes": 1001,
+            "part": 21,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 6.021385919380436,
+            "lo": 5.759586531581287,
+            "nodes": 1001,
+            "part": 22,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          },
+          {
+            "hi": 6.283185307179586,
+            "lo": 6.021385919380436,
+            "nodes": 1001,
+            "part": 23,
+            "status": "ABORT",
+            "unresolved_cells": 0
+          }
+        ],
+        "required": "every production slice is not KILLED",
+        "seed": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "slices": 24,
+        "status_counts": {
+          "ABORT": 24
+        }
+      },
+      "production_slices_exercised": 24,
+      "status": "PASS"
+    },
+    "launch": {
+      "outer_launch_command": "caffeinate -dimsu python3 run_d6_interval_k7_3936177.py --checkpoint-dir .runs/d6_interval_k7_3936177_cap2000000 --output .runs/d6_interval_k7_3936177_cap2000000.json --decisions .runs/d6_interval_k7_3936177_cap2000000.tsv",
+      "outer_launch_command_user_supplied": true,
+      "python_argv": [
+        "/Users/lukacs/claude/opengauss/venv/bin/python3",
+        "run_d6_interval_k7_3936177.py",
+        "--checkpoint-dir",
+        ".runs/d6_interval_k7_3936177_cap2000000",
+        "--output",
+        ".runs/d6_interval_k7_3936177_cap2000000.json",
+        "--decisions",
+        ".runs/d6_interval_k7_3936177_cap2000000.tsv",
+        "--outer-launch-command",
+        "caffeinate -dimsu python3 run_d6_interval_k7_3936177.py --checkpoint-dir .runs/d6_interval_k7_3936177_cap2000000 --output .runs/d6_interval_k7_3936177_cap2000000.json --decisions .runs/d6_interval_k7_3936177_cap2000000.tsv"
+      ],
+      "python_command": "/Users/lukacs/claude/opengauss/venv/bin/python3 run_d6_interval_k7_3936177.py --checkpoint-dir .runs/d6_interval_k7_3936177_cap2000000 --output .runs/d6_interval_k7_3936177_cap2000000.json --decisions .runs/d6_interval_k7_3936177_cap2000000.tsv --outer-launch-command 'caffeinate -dimsu python3 run_d6_interval_k7_3936177.py --checkpoint-dir .runs/d6_interval_k7_3936177_cap2000000 --output .runs/d6_interval_k7_3936177_cap2000000.json --decisions .runs/d6_interval_k7_3936177_cap2000000.tsv'"
+    },
+    "schema": 1,
+    "search": {
+      "cap": 2000000,
+      "include_bulk_order": false,
+      "orders": 4,
+      "slices": 24,
+      "zero_circle_only": false
+    },
+    "selection": {
+      "graphs": 1,
+      "indices_sha256": "26e5f40303a16a85deb1f94cadaf3af5826c55d87cd42a01cde5e897a23e0106",
+      "population_counts": {
+        "K7": 1
+      },
+      "selection_layer": {
+        "certificate_accounting": {
+          "exact_rejections_from_v5": 264,
+          "interval_incremental_rejections": 3,
+          "interval_non_KILLED_used": false,
+          "interval_trust_assumptions": {
+            "basic_arithmetic": "IEEE-754 binary64 basic operations and sqrt are correctly rounded; each interval endpoint is expanded with nextafter.",
+            "candidate_nonedges": "unconstrained and allowed to be unit distance",
+            "transcendentals": "macOS libm cos endpoint values are assumed within 8 ulps; the kernel pads both directions by 8 nextafter steps and includes all interior extrema."
+          }
+        },
+        "combined": 644,
+        "counts": {
+          "K6_only": 625,
+          "K7": 19
+        },
+        "kind": "mixed_certificate_d6_current_residue_v6",
+        "manifest": {
+          "path": "/Users/lukacs/chatgpt/almost_equidistant/d6_current_residue_manifest_v6.json",
+          "sha256": "c513bcc40c037af23340dce3cc91d593a101dd1d073f93feab82abd556efadc9"
+        },
+        "ordered_indices_sha256": "907b6fe460846ab613e7d35a94dbfc6eb1eb94322a36f10b4500a8ce4fcc6ccf",
+        "verification": {
+          "path": "/Users/lukacs/chatgpt/almost_equidistant/d6_current_residue_manifest_v6_verification.json",
+          "sha256": "3d11cbd20cb59b42a8c8fd5252fb3ef3dea649576982ea8017622fad3279a7bc",
+          "status": "PASS"
+        }
+      },
+      "target_index": 3936177
+    },
+    "selector": {
+      "index": 3936177,
+      "kind": "exact_v6_K7_corpus_index",
+      "population": "K7"
+    },
+    "source_boundary": {
+      "branch": "codex/dimension6",
+      "commit": "de1f57900fb8928b9babe669fed1dc14c5b15a4c",
+      "committed_source_and_input_blobs_match": true,
+      "porcelain_sha256": "c6bbf6ff26b14625b4821aea62fbb0d82eccb64f181717bca2e55b6d6f247ecc",
+      "status": "PASS",
+      "tracked_files_clean": true
+    },
+    "sources": {
+      "cdriver6.py": "8f65948c8bc95242d0fde50a8cbcb798cb0e225b78a8ce626382d00135b95173",
+      "ckernel6.c": "383ef7a17c328869c338f64a16f2b90875ff968fe2fc20e9a5c3094c830e0874",
+      "ckernel6.dylib": "ec93d78302d6fcf0f3a21ebcdb65333004eb7a406ab4ada8445231536fed07bd",
+      "focused_wrapper": "bb129161b88efe8609ec24c42666578cd74a67fa11bb12774266b178015c1309",
+      "interval_runner": "58fbbbc548ec3cc6b9d5b231a6790249b02a75d7bfd82f1afcd7fc77fce59404",
+      "ival.py": "524e41e0d0637a5352c59ec998009b968f2c9f5e7f31b7f7927e8bc36c2e6fa0",
+      "v6_wrapper": "509ec8055542bb60863756d1ce64a24cccfe57ccc9f56f13925edf3290ac38be"
+    },
+    "trust_assumptions": {
+      "basic_arithmetic": "IEEE-754 binary64 basic operations and sqrt are correctly rounded; each interval endpoint is expanded with nextafter.",
+      "candidate_nonedges": "unconstrained and allowed to be unit distance",
+      "transcendentals": "macOS libm cos endpoint values are assumed within 8 ulps; the kernel pads both directions by 8 nextafter steps and includes all interior extrema."
+    }
+  },
+  "decisions": {
+    "path": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_interval_k7_3936177_cap2000000.tsv",
+    "rows_excluding_header": 1,
+    "sha256": "960009a2343e719d7d0db1725e5bce1aae858f6c5c908efd3b14aacedd657866"
+  },
+  "kernel_status_totals": {
+    "ABORT": 0,
+    "KILLED": 24,
+    "SURVIVORS": 0
+  },
+  "killed_by_population": {
+    "K6": 0,
+    "K7": 1
+  },
+  "results": [
+    {
+      "elapsed_seconds": 215.3963363340008,
+      "error_message": null,
+      "error_traceback": null,
+      "error_type": null,
+      "index": 3936177,
+      "kernel_aborts": 0,
+      "kernel_calls": 24,
+      "kernel_killed": 24,
+      "kernel_survivors": 0,
+      "orders_available": 2,
+      "orders_tried": 1,
+      "ordinal": 0,
+      "population": "K7",
+      "status": "KILLED",
+      "total_nodes": 3651120,
+      "unresolved_cells": 0,
+      "winning_circles": 1,
+      "winning_order": 1,
+      "winning_placement_order": [
+        2,
+        15,
+        12,
+        7,
+        5,
+        10,
+        9,
+        4,
+        3,
+        0,
+        17,
+        14
+      ],
+      "winning_seed": [
+        1,
+        6,
+        8,
+        11,
+        13,
+        16,
+        18
+      ],
+      "winning_slice_records": [
+        {
+          "hi": 0.2617993877991494,
+          "lo": 0.0,
+          "nodes": 1697772,
+          "part": 0,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.5235987755982988,
+          "lo": 0.2617993877991494,
+          "nodes": 97,
+          "part": 1,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 0.7853981633974483,
+          "lo": 0.5235987755982988,
+          "nodes": 97,
+          "part": 2,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.0471975511965976,
+          "lo": 0.7853981633974483,
+          "nodes": 97,
+          "part": 3,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.3089969389957472,
+          "lo": 1.0471975511965976,
+          "nodes": 97,
+          "part": 4,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.5707963267948966,
+          "lo": 1.3089969389957472,
+          "nodes": 97,
+          "part": 5,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 1.832595714594046,
+          "lo": 1.5707963267948966,
+          "nodes": 97,
+          "part": 6,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.0943951023931953,
+          "lo": 1.832595714594046,
+          "nodes": 97,
+          "part": 7,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.356194490192345,
+          "lo": 2.0943951023931953,
+          "nodes": 100,
+          "part": 8,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.6179938779914944,
+          "lo": 2.356194490192345,
+          "nodes": 97,
+          "part": 9,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 2.8797932657906435,
+          "lo": 2.6179938779914944,
+          "nodes": 97,
+          "part": 10,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.141592653589793,
+          "lo": 2.8797932657906435,
+          "nodes": 106,
+          "part": 11,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.4033920413889427,
+          "lo": 3.141592653589793,
+          "nodes": 105,
+          "part": 12,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.665191429188092,
+          "lo": 3.4033920413889427,
+          "nodes": 97,
+          "part": 13,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 3.926990816987241,
+          "lo": 3.665191429188092,
+          "nodes": 97,
+          "part": 14,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.1887902047863905,
+          "lo": 3.926990816987241,
+          "nodes": 100,
+          "part": 15,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.4505895925855405,
+          "lo": 4.1887902047863905,
+          "nodes": 97,
+          "part": 16,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.71238898038469,
+          "lo": 4.4505895925855405,
+          "nodes": 97,
+          "part": 17,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 4.974188368183839,
+          "lo": 4.71238898038469,
+          "nodes": 97,
+          "part": 18,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.235987755982989,
+          "lo": 4.974188368183839,
+          "nodes": 97,
+          "part": 19,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.497787143782138,
+          "lo": 5.235987755982989,
+          "nodes": 97,
+          "part": 20,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 5.759586531581287,
+          "lo": 5.497787143782138,
+          "nodes": 97,
+          "part": 21,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.021385919380436,
+          "lo": 5.759586531581287,
+          "nodes": 97,
+          "part": 22,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        },
+        {
+          "hi": 6.283185307179586,
+          "lo": 6.021385919380436,
+          "nodes": 1951191,
+          "part": 23,
+          "status": "KILLED",
+          "unresolved_cells": 0
+        }
+      ]
+    }
+  ],
+  "runtime": {
+    "maximum_graph_seconds": 215.3963363340008,
+    "newly_completed_graphs": 1,
+    "resume_wall_seconds": 215.40234295900154,
+    "sum_graph_seconds": 215.3963363340008
+  },
+  "schema": 2,
+  "session": {
+    "argv": [
+      "/Users/lukacs/claude/opengauss/venv/bin/python3",
+      "run_d6_interval_k7_3936177.py",
+      "--checkpoint-dir",
+      ".runs/d6_interval_k7_3936177_cap2000000",
+      "--output",
+      ".runs/d6_interval_k7_3936177_cap2000000.json",
+      "--decisions",
+      ".runs/d6_interval_k7_3936177_cap2000000.tsv",
+      "--outer-launch-command",
+      "caffeinate -dimsu python3 run_d6_interval_k7_3936177.py --checkpoint-dir .runs/d6_interval_k7_3936177_cap2000000 --output .runs/d6_interval_k7_3936177_cap2000000.json --decisions .runs/d6_interval_k7_3936177_cap2000000.tsv"
+    ],
+    "command": "/Users/lukacs/claude/opengauss/venv/bin/python3 run_d6_interval_k7_3936177.py --checkpoint-dir .runs/d6_interval_k7_3936177_cap2000000 --output .runs/d6_interval_k7_3936177_cap2000000.json --decisions .runs/d6_interval_k7_3936177_cap2000000.tsv --outer-launch-command 'caffeinate -dimsu python3 run_d6_interval_k7_3936177.py --checkpoint-dir .runs/d6_interval_k7_3936177_cap2000000 --output .runs/d6_interval_k7_3936177_cap2000000.json --decisions .runs/d6_interval_k7_3936177_cap2000000.tsv'",
+    "config_sha256": "6a047ad2d73adae7a159997bf3b6fbcc4ac8cd6c2ed50054d93cb95863cd830d",
+    "pid": 51358,
+    "schema": 1,
+    "started_utc": "2026-08-09T17:21:49.469271+00:00",
+    "workers": 1
+  },
+  "status_counts": {
+    "ABORT": 0,
+    "INFRA_ERROR": 0,
+    "KILLED": 1,
+    "UNRESOLVED": 0
+  },
+  "total_graphs": 1,
+  "unresolved_total": 0
+}

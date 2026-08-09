@@ -1,0 +1,2 @@
+ordinal	index	population	status	winning_order	winning_circles	orders_available	orders_tried	kernel_calls	kernel_killed	kernel_survivors	kernel_aborts	total_nodes	unresolved_cells	elapsed_seconds	error_type	error_message
+0	3936177	K7	KILLED	1	1	2	1	24	24	0	0	3651120	0	215.396336334		

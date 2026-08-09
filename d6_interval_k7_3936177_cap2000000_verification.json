@@ -1,0 +1,295 @@
+{
+  "certified_killed": 1,
+  "checkpoint": {
+    "campaign_sha256": "c121d569e6b00c7861bf23f28bd221a4e094b21f37cdafdceb5417f6a63853aa",
+    "decision_TSV_sha256": "960009a2343e719d7d0db1725e5bce1aae858f6c5c908efd3b14aacedd657866",
+    "directory": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_interval_k7_3936177_cap2000000",
+    "progress_sha256": "be4d9517ebde5a3f718fff8ac8518b76f133755cef275d4b440a7a5a908e3486",
+    "result_files": 1,
+    "result_index_sha256": "81a9b1a11740267f44e774f91b668d80693de9e64750956a8eacd557330ce420",
+    "run_state_sha256": "757a68669625c80aac26a400145e47719df7dc0a638fb4fd9d379e694620d82d",
+    "session_sha256": "a399badf361f73a9f395a577fa89bdc657d874e0be8c2961c983e82effa6fc68"
+  },
+  "claim": "K7 residue graph 3936177 is certified non-realizable in R6 by the source-bound outward-rounded interval replay.",
+  "common_helper_sha256": "84ec7ae7e682de660329fd1fb02bd88d774bde542032ece95a7eb7d3c54ece4a",
+  "kernel_controls": {
+    "records_checked": 48,
+    "records_replayed": 48,
+    "records_sha256": "b9c984f019cead7382831bd821bdb2c7f92bbef660c2667fa01a55151822404b",
+    "status": "PASS"
+  },
+  "provenance": {
+    "branch": "codex/dimension6",
+    "commit": "de1f57900fb8928b9babe669fed1dc14c5b15a4c",
+    "committed_source_and_input_blobs_match": true,
+    "common_helper_commit_blob_sha256": "84ec7ae7e682de660329fd1fb02bd88d774bde542032ece95a7eb7d3c54ece4a",
+    "porcelain_sha256": "c6bbf6ff26b14625b4821aea62fbb0d82eccb64f181717bca2e55b6d6f247ecc",
+    "tracked_sources_clean_at_launch": true,
+    "verifier_commit_blob_sha256": "57a2d8759746589ec08a82be3f878ba54052c1e2d0f04b13c942eaef0a83c5cf"
+  },
+  "report": {
+    "path": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_interval_k7_3936177_cap2000000.json",
+    "sha256": "4135ffbb2a54ab61b28061f0a8d879240b20b1e363c7751337c2bde0559de70e"
+  },
+  "schema": "d6-interval-k7-3936177-verification-v1",
+  "search": {
+    "cap": 2000000,
+    "include_bulk_order": false,
+    "orders": 4,
+    "slices": 24,
+    "workers": 1,
+    "zero_circle_only": false
+  },
+  "selection": {
+    "graphs": 1,
+    "index": 3936177,
+    "indices_sha256": "26e5f40303a16a85deb1f94cadaf3af5826c55d87cd42a01cde5e897a23e0106",
+    "population_counts": {
+      "K7": 1
+    },
+    "v6_manifest_sha256": "c513bcc40c037af23340dce3cc91d593a101dd1d073f93feab82abd556efadc9",
+    "v6_verification_sha256": "3d11cbd20cb59b42a8c8fd5252fb3ef3dea649576982ea8017622fad3279a7bc"
+  },
+  "status": "PASS",
+  "status_counts": {
+    "ABORT": 0,
+    "INFRA_ERROR": 0,
+    "KILLED": 1,
+    "UNRESOLVED": 0
+  },
+  "trust_assumptions": {
+    "basic_arithmetic": "IEEE-754 binary64 basic operations and sqrt are correctly rounded; each interval endpoint is expanded with nextafter.",
+    "candidate_nonedges": "unconstrained and allowed to be unit distance",
+    "transcendentals": "macOS libm cos endpoint values are assumed within 8 ulps; the kernel pads both directions by 8 nextafter steps and includes all interior extrema."
+  },
+  "verifier_source_sha256": "57a2d8759746589ec08a82be3f878ba54052c1e2d0f04b13c942eaef0a83c5cf",
+  "winning_witness": {
+    "index": 3936177,
+    "winning_circles": 1,
+    "winning_order": 1,
+    "winning_placement_order": [
+      2,
+      15,
+      12,
+      7,
+      5,
+      10,
+      9,
+      4,
+      3,
+      0,
+      17,
+      14
+    ],
+    "winning_seed": [
+      1,
+      6,
+      8,
+      11,
+      13,
+      16,
+      18
+    ],
+    "winning_slice_records": [
+      {
+        "hi": 0.2617993877991494,
+        "lo": 0.0,
+        "nodes": 1697772,
+        "part": 0,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 0.5235987755982988,
+        "lo": 0.2617993877991494,
+        "nodes": 97,
+        "part": 1,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 0.7853981633974483,
+        "lo": 0.5235987755982988,
+        "nodes": 97,
+        "part": 2,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 1.0471975511965976,
+        "lo": 0.7853981633974483,
+        "nodes": 97,
+        "part": 3,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 1.3089969389957472,
+        "lo": 1.0471975511965976,
+        "nodes": 97,
+        "part": 4,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 1.5707963267948966,
+        "lo": 1.3089969389957472,
+        "nodes": 97,
+        "part": 5,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 1.832595714594046,
+        "lo": 1.5707963267948966,
+        "nodes": 97,
+        "part": 6,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 2.0943951023931953,
+        "lo": 1.832595714594046,
+        "nodes": 97,
+        "part": 7,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 2.356194490192345,
+        "lo": 2.0943951023931953,
+        "nodes": 100,
+        "part": 8,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 2.6179938779914944,
+        "lo": 2.356194490192345,
+        "nodes": 97,
+        "part": 9,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 2.8797932657906435,
+        "lo": 2.6179938779914944,
+        "nodes": 97,
+        "part": 10,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 3.141592653589793,
+        "lo": 2.8797932657906435,
+        "nodes": 106,
+        "part": 11,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 3.4033920413889427,
+        "lo": 3.141592653589793,
+        "nodes": 105,
+        "part": 12,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 3.665191429188092,
+        "lo": 3.4033920413889427,
+        "nodes": 97,
+        "part": 13,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 3.926990816987241,
+        "lo": 3.665191429188092,
+        "nodes": 97,
+        "part": 14,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 4.1887902047863905,
+        "lo": 3.926990816987241,
+        "nodes": 100,
+        "part": 15,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 4.4505895925855405,
+        "lo": 4.1887902047863905,
+        "nodes": 97,
+        "part": 16,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 4.71238898038469,
+        "lo": 4.4505895925855405,
+        "nodes": 97,
+        "part": 17,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 4.974188368183839,
+        "lo": 4.71238898038469,
+        "nodes": 97,
+        "part": 18,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 5.235987755982989,
+        "lo": 4.974188368183839,
+        "nodes": 97,
+        "part": 19,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 5.497787143782138,
+        "lo": 5.235987755982989,
+        "nodes": 97,
+        "part": 20,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 5.759586531581287,
+        "lo": 5.497787143782138,
+        "nodes": 97,
+        "part": 21,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 6.021385919380436,
+        "lo": 5.759586531581287,
+        "nodes": 97,
+        "part": 22,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      },
+      {
+        "hi": 6.283185307179586,
+        "lo": 6.021385919380436,
+        "nodes": 1951191,
+        "part": 23,
+        "status": "KILLED",
+        "unresolved_cells": 0
+      }
+    ]
+  },
+  "winning_witness_sha256": "be27723e1d1145d9ba55863bdfcc9b7720b6423da1a30d491739f53dcf12fd64",
+  "witness_replay": {
+    "exact_status_node_cell_match": true,
+    "nodes": 3651120,
+    "slices": 24,
+    "status": "PASS"
+  }
+}
