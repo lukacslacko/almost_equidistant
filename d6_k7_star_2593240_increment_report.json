@@ -1,0 +1,715 @@
+{
+  "certificate": {
+    "algebra": {
+      "first_factor_identity": "-f*(a + 1)*(c - e)*(a + b + c + d + e + f + 1)",
+      "pair_numerators": [
+        "a*c + a*e - b + c*f - d + e*f",
+        "a*c + a*e + a + c*d + c + d*e + d + e + 1",
+        "a*e + a - b*c - c*d - c*f + c + e + 1",
+        "a*c + a - b*e + c - d*e - e*f + e + 1",
+        "-a*c - a*e - b*c - b*e - c*d + c - d*e + e + f + 1",
+        "-a*b - a*c - a*e + a + d*f + d + f + 1",
+        "-a*b - a*d - a*e + a + c*f + c + f + 1",
+        "-a*b - a*c - a*d + a + e*f + e + f + 1",
+        "a*c + a*e + a - b*f + c - d*f + e + f + 1",
+        "-a*b - a*e - a*f + a + c*d + c + d + 1",
+        "-a*b - a*c - a*f + a + d*e + d + e + 1",
+        "a*c + a*e + a*f - b + c*d + d*e + d*f",
+        "-a*b - a*d - a*f + a + c*e + c + e + 1",
+        "a*e + a*f + a - b*c - c*d + c + e + f + 1",
+        "a*c + a*f + a - b*e + c - d*e + e + f + 1"
+      ],
+      "pair_order": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "rank_one_contradiction": "If g_ij=h_i*h_j, then g_01 and g_02 nonzero imply h_0,h_1,h_2 are all nonzero, so g_12=h_1*h_2 is nonzero; exactly g_12=0.",
+      "stage_one_deduction": "e=c; (c-f)(2c+1)=0 and c>0 give f=c; if d!=c, the other two products give c=1 and c+d=2, hence d=c, a contradiction. Thus d=e=f=c.",
+      "stage_one_groebner_basis": [
+        "-(3*b - 6*c**3 - 11*c**2 - 17*c + 17*d + 3*f - 1)/6",
+        "(2*b**2 - 4*b - 18*c**2 - 29*c + 16*d + f)/2",
+        "(2*b*d - 2*b + 6*c**2 + 15*c - 18*d - 3*f)/2",
+        "-(c - d)*(c + d - 2)",
+        "(2*b*f - 2*b + 6*c**2 + 7*c - 8*d - 5*f)/2",
+        "-(2*c**2 - c - 2*d*f + 2*d - f)/2",
+        "-(c - f)*(2*c + 2*f + 1)/2",
+        "(2*b*c - 2*b + 6*c**2 + 5*c - 8*d - 3*f)/2",
+        "-(c - 1)*(c - d)",
+        "-(c - f)*(2*c + 1)/2",
+        "(3*a - b + c - f + 3)/3"
+      ],
+      "stage_one_targets": [
+        "(c - f)*(2*c + 1)",
+        "(c - 1)*(c - d)",
+        "(c - d)*(c + d - 2)"
+      ],
+      "stage_two_groebner_basis": [
+        "-(3*b - 6*c**3 - 11*c**2 + 3*c - 1)/6",
+        "(b + 3*c)*(b - 3*c - 2)",
+        "(b + 3*c)*(c - 1)",
+        "(3*a - b + 3)/3"
+      ],
+      "stage_two_targets": [
+        "(c - 1)*(c + 1)*(2*c + 1)*(3*c + 1)",
+        "9*a - 6*c**3 - 11*c**2 + 3*c + 8",
+        "3*b - 6*c**3 - 11*c**2 + 3*c - 1"
+      ],
+      "star_nonzero_entries": {
+        "0,1": "-8/3",
+        "0,2": "8",
+        "0,3": "-8/3",
+        "0,4": "-8/3",
+        "0,5": "-28/3"
+      },
+      "tetrads_checked": 30,
+      "unique_positive_tetrad_point": [
+        "2/3",
+        "5",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "variables": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ]
+    },
+    "exact_patterns": [
+      {
+        "basis_masks": [
+          43,
+          30,
+          54,
+          58,
+          46,
+          11
+        ],
+        "global_rank6_clique": [
+          0,
+          1,
+          3,
+          11,
+          14,
+          16
+        ],
+        "global_remainder": [
+          5,
+          6,
+          8,
+          9,
+          12,
+          17
+        ],
+        "local_rank6_clique": [
+          0,
+          1,
+          2,
+          7,
+          9,
+          10
+        ],
+        "local_remainder": [
+          3,
+          4,
+          5,
+          6,
+          8,
+          11
+        ],
+        "pair_order": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "pair_target_string": "011111111110111",
+        "pair_targets": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "propagated_support_supersets": [
+          100,
+          127,
+          5,
+          98,
+          25,
+          19,
+          26,
+          108,
+          11,
+          20,
+          38,
+          72
+        ],
+        "zero_entry_justification": "Every zero in the displayed basis/pair pattern has disjoint propagated support supersets; it is not inferred from a candidate nonedge alone."
+      },
+      {
+        "basis_masks": [
+          57,
+          29,
+          43,
+          53,
+          45,
+          11
+        ],
+        "global_rank6_clique": [
+          0,
+          1,
+          3,
+          11,
+          14,
+          16
+        ],
+        "global_remainder": [
+          2,
+          4,
+          5,
+          10,
+          13,
+          17
+        ],
+        "local_rank6_clique": [
+          0,
+          1,
+          3,
+          7,
+          9,
+          10
+        ],
+        "local_remainder": [
+          2,
+          4,
+          5,
+          6,
+          8,
+          11
+        ],
+        "pair_order": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "pair_target_string": "111110111111101",
+        "pair_targets": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "propagated_support_supersets": [
+          127,
+          98,
+          21,
+          10,
+          28,
+          97,
+          25,
+          102,
+          13,
+          18,
+          35,
+          68
+        ],
+        "zero_entry_justification": "Every zero in the displayed basis/pair pattern has disjoint propagated support supersets; it is not inferred from a candidate nonedge alone."
+      }
+    ],
+    "quantifier": [
+      {
+        "current_covers": [
+          0,
+          8
+        ],
+        "current_infeasible_covers": [
+          8
+        ],
+        "outside": [
+          0,
+          1,
+          3,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          14,
+          16,
+          17
+        ],
+        "prior_layer_eliminated_raw_covers": 500,
+        "raw_eligible_covers": 502,
+        "raw_eligible_covers_sha256": "fb44017cc67555b5954484a5bd012ba2c8b4ff80e5ad878eb517a14ac791d769",
+        "seed": [
+          2,
+          4,
+          7,
+          10,
+          13,
+          15,
+          18
+        ],
+        "sole_new_branch": 0,
+        "sole_new_branch_passing_families": 1
+      },
+      {
+        "current_covers": [
+          0,
+          32
+        ],
+        "current_infeasible_covers": [
+          32
+        ],
+        "outside": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          10,
+          11,
+          13,
+          14,
+          16,
+          17
+        ],
+        "prior_layer_eliminated_raw_covers": 500,
+        "raw_eligible_covers": 502,
+        "raw_eligible_covers_sha256": "f915ae089f9885b1d800c698306a8180f57ebe9d8818481094ca07996930a6bd",
+        "seed": [
+          6,
+          7,
+          8,
+          9,
+          12,
+          15,
+          18
+        ],
+        "sole_new_branch": 0,
+        "sole_new_branch_passing_families": 1
+      }
+    ],
+    "rank_argument": {
+      "clique_principal_block_positive_definite": true,
+      "normalized_gram_rank_upper_bound": 7,
+      "required_clique_order": 6,
+      "schur_complement_positive_semidefinite": true,
+      "schur_complement_rank_upper_bound": 1,
+      "strict_domain": "a,b,c,d,e,f > 0"
+    },
+    "system_isomorphism": {
+      "checked_exactly": true,
+      "first_coordinate_to_second": [
+        1,
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "first_remainder_to_second": [
+        2,
+        1,
+        3,
+        0,
+        4,
+        5
+      ]
+    },
+    "target": {
+      "adjacency_sha256": "56f6a6a8bacf5a67e8fd0a0688b86b610d2d8c0842060b6423f8d484f340ed82",
+      "index": 2593240,
+      "required_k7_seed_masks": [
+        304276,
+        299968
+      ],
+      "required_k7_seeds": [
+        [
+          2,
+          4,
+          7,
+          10,
+          13,
+          15,
+          18
+        ],
+        [
+          6,
+          7,
+          8,
+          9,
+          12,
+          15,
+          18
+        ]
+      ]
+    }
+  },
+  "certificate_sha256": "32650f7877c78d2b50bd1d8da3f565ffccbb2421acda9dc781841d091544bc3d",
+  "claim": "Graph 2593240 is not the unit-edge graph of distinct points in R^6. Both required K7 seeds have exhaustive prior support boundaries; their isomorphic sole surviving families force a nonzero-star off-diagonal pattern, impossible for a rank-one PSD Schur complement.",
+  "controls": {
+    "positive_tetrad_star_control": {
+      "all_thirty_tetrads_zero": true,
+      "failure": "g_01 and g_02 are nonzero while g_12 is zero",
+      "point": [
+        "2/3",
+        "5",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "rank_one_completion_exists": false
+    },
+    "upstream_independent_replay": {
+      "current_passing_families": 88,
+      "eligible_covers": 19932,
+      "preceding_exact_increment_status": "PASS"
+    }
+  },
+  "execution": {
+    "command": "/Users/lukacs/claude/opengauss/venv/bin/python3 build_d6_k7_star_2593240_increment.py",
+    "finished_utc": "2026-08-09T18:18:17.004176+00:00",
+    "git": {
+      "branch": "codex/dimension6",
+      "commit": "64cde398d8d116632551b6f40edfc5de1b84405b",
+      "porcelain_lines": [
+        "?? build_d6_current_residue_manifest_v7.py",
+        "?? d6_18_gpu_mps_screen_report.json",
+        "?? d6_18_gpu_mps_screen_results.tsv.gz",
+        "?? d6_18_gpu_mps_screen_verification.json",
+        "?? d6_18_gpu_mps_seed_sphere_control_calibration_128.json",
+        "?? d6_18_gpu_mps_seed_sphere_control_calibration_32.json",
+        "?? d6_18_gpu_mps_unseeded_control_calibration.json",
+        "?? probe_d6_k6_augmented_gram_shapes.py",
+        "?? probe_d6_k6_cross_gram_all_ones.py",
+        "?? probe_d6_k6_cross_gram_allowed_rank.py",
+        "?? probe_d6_k6_cross_gram_rectangular_rank.py",
+        "?? probe_d6_k6_edgewise_cross_support.py",
+        "?? probe_d6_k6_nested_support_reconstruction.py",
+        "?? probe_d6_k6_opposite_ray_rank.py",
+        "?? probe_d6_k6_opposite_ray_rank_conjunction.py",
+        "?? probe_d6_k6_rectangular_minor.py",
+        "?? probe_d6_k6_repeated_two_support_arm.py",
+        "?? probe_d6_k6_same_two_support_clique.py",
+        "?? probe_d6_k6_saturated_singleton_basis.py",
+        "?? probe_d6_k6_singleton_equal_support_clique_rank.py",
+        "?? probe_d6_k6_singleton_two_support_repeated_three_support.py",
+        "?? probe_d6_k6_strong_quadrangularity.py",
+        "?? probe_d6_k6_tight_column_orthogonality.py",
+        "?? probe_d6_k6_tight_same_z0_conjunction.py",
+        "?? probe_d6_k6_tight_support.py",
+        "?? probe_d6_k6_tight_support_disjoint_arms.py",
+        "?? probe_d6_k6_tight_support_rank2.py",
+        "?? probe_d6_k6_tight_support_singleton_fan.py",
+        "?? probe_d6_k6_two_singleton_repeated_three_support_arm.py",
+        "?? probe_d6_k6_two_support_triangle_singleton.py",
+        "?? probe_d6_k7_low_free_systems.py",
+        "?? profile_d6_k6_625_saving_alternatives.py",
+        "?? test_d6_current_residue_manifest_v7.py",
+        "?? test_probe_d6_k6_cross_gram_rectangular_rank.py",
+        "?? verify_d6_current_residue_manifest_v7.py"
+      ],
+      "porcelain_sha256": "fc68a77e49bd95bd663c519324bdaf70b0922365c1528b03ddb6c79e3370a473",
+      "proof_and_checker_sources_equal_committed_blobs": true,
+      "source_sha256": {
+        "build_d6_k7_star_2593240_increment.py": "8723249c9cf3246e9b564a15092abff9f4bb513ab1ccf754b7d00a5e88227d2c",
+        "d6_k7_2593240_star_boundary.md": "cbaa5e0bcb1f313136fff96c17cb33b251465232f062df7efa1fa692c8b93d2e",
+        "d6_k7_star_2593240_increment.md": "870cd599ec3a0a2d662a9ed55081fb50be69daffb7d2d294ff877d91df1502a2",
+        "probe_d6_k7_2593240_star_boundary.py": "7d88aafdda609a85255476cb81d72ee0685880c8b17e0823f3ffc4c690ad912f",
+        "test_d6_k7_star_2593240_increment.py": "3aa50789fbe9cbb0e0b8da99c45fd2ed4f1c2ccd35ce2167083e2c05a7fb9847",
+        "test_probe_d6_k7_2593240_star_boundary.py": "30e5949baa4180edc6578d25054fd175c0bd81b248470158bb39e8bcc7b6c2a1",
+        "verify_d6_k7_star_2593240_increment.py": "d0d5a1a2cf1c29d26c5657d7a795e78a546894e1d020a7427172035c1a78e138"
+      }
+    },
+    "logical_cpus": 12,
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "started_utc": "2026-08-09T18:18:17.003399+00:00"
+  },
+  "frozen_exploratory_sha256": {
+    "d6_k7_2593240_star_boundary.md": "cbaa5e0bcb1f313136fff96c17cb33b251465232f062df7efa1fa692c8b93d2e",
+    "probe_d6_k7_2593240_star_boundary.py": "7d88aafdda609a85255476cb81d72ee0685880c8b17e0823f3ffc4c690ad912f",
+    "test_probe_d6_k7_2593240_star_boundary.py": "30e5949baa4180edc6578d25054fd175c0bd81b248470158bb39e8bcc7b6c2a1"
+  },
+  "input": {
+    "artifact": "d6_k7_schur_3949382_increment_report.json",
+    "graphs": 15,
+    "ordered_indices": [
+      316173,
+      2581209,
+      2593240,
+      3595554,
+      3648882,
+      3729907,
+      3935560,
+      3936177,
+      3936310,
+      3936435,
+      3945490,
+      3945555,
+      3945557,
+      3945564,
+      3947605
+    ],
+    "ordered_indices_sha256": "715c52011421fb6d8721d52339ed3437ef1cec344ddf3f03a3b0b618f35b00d7"
+  },
+  "kind": "d6_k7_rankone_star_2593240_exact_increment",
+  "schema": 1,
+  "semantics": {
+    "all_actual_support_branches_for_both_seeds_are_quantified": true,
+    "both_required_K7_seeds_checked": true,
+    "candidate_nonedges_optional": true,
+    "floating_point_enters_rejection": false,
+    "one_infeasible_required_K7_seed_rejects_graph": true,
+    "propagated_masks_are_support_supersets": true,
+    "rank_one_schur_support_closure_checked": true,
+    "required_edges_give_unit_K_entries": true,
+    "strict_positive_diagonal_parameters_encode_distinct_points": true,
+    "zero_K_entries_require_disjoint_propagated_support_supersets": true
+  },
+  "source_sha256": {
+    "build_d6_k7_star_2593240_increment.py": "8723249c9cf3246e9b564a15092abff9f4bb513ab1ccf754b7d00a5e88227d2c",
+    "d6_k7_2593240_star_boundary.md": "cbaa5e0bcb1f313136fff96c17cb33b251465232f062df7efa1fa692c8b93d2e",
+    "d6_k7_star_2593240_increment.md": "870cd599ec3a0a2d662a9ed55081fb50be69daffb7d2d294ff877d91df1502a2",
+    "probe_d6_k7_2593240_star_boundary.py": "7d88aafdda609a85255476cb81d72ee0685880c8b17e0823f3ffc4c690ad912f",
+    "test_d6_k7_star_2593240_increment.py": "3aa50789fbe9cbb0e0b8da99c45fd2ed4f1c2ccd35ce2167083e2c05a7fb9847",
+    "test_probe_d6_k7_2593240_star_boundary.py": "30e5949baa4180edc6578d25054fd175c0bd81b248470158bb39e8bcc7b6c2a1",
+    "verify_d6_k7_star_2593240_increment.py": "d0d5a1a2cf1c29d26c5657d7a795e78a546894e1d020a7427172035c1a78e138"
+  },
+  "status": "COMPLETE_EXACT_REJECTION",
+  "summary": {
+    "graphs_rejected": 1,
+    "graphs_surviving": 14,
+    "ordered_survivor_indices": [
+      316173,
+      2581209,
+      3595554,
+      3648882,
+      3729907,
+      3935560,
+      3936177,
+      3936310,
+      3936435,
+      3945490,
+      3945555,
+      3945557,
+      3945564,
+      3947605
+    ],
+    "ordered_survivor_indices_sha256": "3f038f15c97483aaf529300a86da00459d04e4a8f49823b8849fa7a4a91dd7cb",
+    "rejected_indices": [
+      2593240
+    ],
+    "rejected_indices_sha256": "af93c558f7109f6342c6388491e2e6992b7b1e8bf72ca98f125a15770aaf3ff0"
+  },
+  "upstream_sha256": {
+    "d6_current_residue_manifest_v6.json": "c513bcc40c037af23340dce3cc91d593a101dd1d073f93feab82abd556efadc9",
+    "d6_current_residue_manifest_v6_verification.json": "3d11cbd20cb59b42a8c8fd5252fb3ef3dea649576982ea8017622fad3279a7bc",
+    "d6_k7_one_two_star_increment_report.json": "12b3d18b1ea81961f58d831d4c7c322fbceb2300e7533b64161e8011fbe9d1ec",
+    "d6_k7_one_two_star_increment_verification.json": "c6f40578685036cb1156cb0ea8bf06d6004a70d5f376aff5ac1e16a1c0ca09eb",
+    "d6_k7_schur_3949382_increment_report.json": "30efa40d1db8a3aef03af9e56aa915a04594aabe8b72e5a1c72489e2a8c952b8",
+    "d6_k7_schur_3949382_increment_verification.json": "18c9980baa74596523eba9b447af1ae5830a9558d80981e1fa3ff6c984bcb5bc"
+  }
+}

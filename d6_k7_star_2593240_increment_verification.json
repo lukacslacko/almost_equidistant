@@ -1,0 +1,143 @@
+{
+  "checked": {
+    "basis_entries": 72,
+    "input_graphs": 15,
+    "new_families": 2,
+    "output_graphs": 14,
+    "preceding_increment_verification_status": "PASS",
+    "prior_eliminated_raw_covers": 1000,
+    "raw_eligible_covers": 1004,
+    "remainder_pair_entries": 30,
+    "required_k7_seeds": 2,
+    "target_index": 2593240,
+    "unresolved_optional_entries": 0,
+    "upstream_current_covers": 4,
+    "upstream_independently_checked_current_passing_families": 88,
+    "upstream_independently_checked_eligible_covers": 19932,
+    "upstream_infeasible_covers": 2
+  },
+  "conclusion": {
+    "floating_point_used": false,
+    "ordered_survivor_indices_sha256": "3f038f15c97483aaf529300a86da00459d04e4a8f49823b8849fa7a4a91dd7cb",
+    "rejected_indices": [
+      2593240
+    ]
+  },
+  "execution": {
+    "command": "/Users/lukacs/claude/opengauss/venv/bin/python3 verify_d6_k7_star_2593240_increment.py --report-sha256 dab2e54c0d09c687cbe9c8488f0580e7777a6ef1fe02eeda675a171c746cabc5",
+    "finished_utc": "2026-08-09T18:19:06.820698+00:00",
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "verifier_sha256": "d0d5a1a2cf1c29d26c5657d7a795e78a546894e1d020a7427172035c1a78e138"
+  },
+  "independent_algebra": {
+    "first_factor_identity": "-f*(a + 1)*(c - e)*(a + b + c + d + e + f + 1)",
+    "lex_groebner_basis": [
+      "(108*a + 102*c**4 + 13*c**3 - 217*c**2 - 49*c + 79)/108",
+      "(36*b + 102*c**4 + 13*c**3 - 217*c**2 - 85*c + 36*f - 29)/36",
+      "-(6*c**4 + 5*c**3 - 5*c**2 + 7*c - 12*d - 1)/12",
+      "-(c - f)*(2*c + 2*f + 1)/2",
+      "-(c - f)*(2*c + 1)/2",
+      "(c - 1)**2*(c + 1)*(2*c + 1)*(3*c + 1)/6"
+    ],
+    "lex_variable_order": [
+      "a",
+      "b",
+      "d",
+      "f",
+      "c"
+    ],
+    "method": "independent_one_stage_lex_elimination_and_support_closure",
+    "pair_numerators": [
+      "a*c + a*e - b + c*f - d + e*f",
+      "a*c + a*e + a + c*d + c + d*e + d + e + 1",
+      "a*e + a - b*c - c*d - c*f + c + e + 1",
+      "a*c + a - b*e + c - d*e - e*f + e + 1",
+      "-a*c - a*e - b*c - b*e - c*d + c - d*e + e + f + 1",
+      "-a*b - a*c - a*e + a + d*f + d + f + 1",
+      "-a*b - a*d - a*e + a + c*f + c + f + 1",
+      "-a*b - a*c - a*d + a + e*f + e + f + 1",
+      "a*c + a*e + a - b*f + c - d*f + e + f + 1",
+      "-a*b - a*e - a*f + a + c*d + c + d + 1",
+      "-a*b - a*c - a*f + a + d*e + d + e + 1",
+      "a*c + a*e + a*f - b + c*d + d*e + d*f",
+      "-a*b - a*d - a*f + a + c*e + c + e + 1",
+      "a*e + a*f + a - b*c - c*d + c + e + f + 1",
+      "a*c + a*f + a - b*e + c - d*e + e + f + 1"
+    ],
+    "star_nonzero_entries": {
+      "0,1": "-8/3",
+      "0,2": "8",
+      "0,3": "-8/3",
+      "0,4": "-8/3",
+      "0,5": "-28/3"
+    },
+    "status": "EXACT_RANK_ONE_SUPPORT_CONTRADICTION",
+    "strict_sign_chain": [
+      "-f*(a+1)*T*(c-e)=0 and strict positivity give e=c",
+      "the lex univariate factor and c>0 give c=1",
+      "(c-f)*(2*c+1)=0 gives f=1",
+      "the remaining triangular relations give d=1, b=5, a=2/3",
+      "g_01 and g_02 are nonzero while g_12=0",
+      "a rank-one factor h*h^T cannot have that off-diagonal support"
+    ],
+    "tetrads_reconstructed": 30,
+    "triangular_targets": [
+      "(c - 1)**2*(c + 1)*(2*c + 1)*(3*c + 1)",
+      "(c - f)*(2*c + 1)",
+      "6*c**4 + 5*c**3 - 5*c**2 + 7*c - 12*d - 1",
+      "36*b + 102*c**4 + 13*c**3 - 217*c**2 - 85*c + 36*f - 29",
+      "108*a + 102*c**4 + 13*c**3 - 217*c**2 - 49*c + 79"
+    ],
+    "unique_positive_tetrad_point": [
+      "2/3",
+      "5",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ]
+  },
+  "kind": "d6_k7_star_2593240_increment_verification",
+  "report": {
+    "path": "d6_k7_star_2593240_increment_report.json",
+    "sha256": "dab2e54c0d09c687cbe9c8488f0580e7777a6ef1fe02eeda675a171c746cabc5"
+  },
+  "schema": 1,
+  "semantics": {
+    "all_actual_support_branches_for_both_seeds_are_quantified": true,
+    "both_required_K7_seeds_checked": true,
+    "candidate_nonedges_optional": true,
+    "floating_point_enters_rejection": false,
+    "one_infeasible_required_K7_seed_rejects_graph": true,
+    "propagated_masks_are_support_supersets": true,
+    "rank_one_schur_support_closure_checked": true,
+    "required_edges_give_unit_K_entries": true,
+    "strict_positive_diagonal_parameters_encode_distinct_points": true,
+    "zero_K_entries_require_disjoint_propagated_support_supersets": true
+  },
+  "source_boundary": {
+    "branch": "codex/dimension6",
+    "commit": "64cde398d8d116632551b6f40edfc5de1b84405b",
+    "proof_and_checker_sources_equal_committed_blobs": true,
+    "source_files": 7
+  },
+  "status": "PASS",
+  "upstream_sha256": {
+    "d6_current_residue_manifest_v6.json": "c513bcc40c037af23340dce3cc91d593a101dd1d073f93feab82abd556efadc9",
+    "d6_current_residue_manifest_v6_verification.json": "3d11cbd20cb59b42a8c8fd5252fb3ef3dea649576982ea8017622fad3279a7bc",
+    "d6_k7_one_two_star_increment_report.json": "12b3d18b1ea81961f58d831d4c7c322fbceb2300e7533b64161e8011fbe9d1ec",
+    "d6_k7_one_two_star_increment_verification.json": "c6f40578685036cb1156cb0ea8bf06d6004a70d5f376aff5ac1e16a1c0ca09eb",
+    "d6_k7_schur_3949382_increment_report.json": "30efa40d1db8a3aef03af9e56aa915a04594aabe8b72e5a1c72489e2a8c952b8",
+    "d6_k7_schur_3949382_increment_verification.json": "18c9980baa74596523eba9b447af1ae5830a9558d80981e1fa3ff6c984bcb5bc"
+  }
+}

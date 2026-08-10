@@ -1,6 +1,238 @@
 # Status — f(5) and f(6) campaigns
 
-## CURRENT LOCAL CAMPAIGN — exact d=6 residue 911 (2026-08-07)
+## PAUSED LOCAL HANDOFF — all computation stopped (2026-08-09)
+
+Branch: `codex/dimension6`
+
+Checkpoint source commit:
+`bd2dfa342dfac570a87a23e4f360a788726b2085`
+
+Goal of this milestone: stop at a reproducible boundary without turning
+source-only discoveries or numerical failures into theorem claims.
+
+### Exact status at the pause
+
+The last fully published report-plus-independent-verification boundary is
+commit `ca00897`.  It certifies rejection of K7 graph `3936435` and leaves
+
+```text
+K7-containing level-19 candidates                  11
+K6-only level-19 candidates                       249
+published combined residue                        260
+```
+
+Two further packages are complete and independently replayed, but their
+source-bound report artifacts and a unified successor residue manifest have
+not yet been published:
+
+1. The exact five-singleton fixed-remainder K6 rule rejects nine indices:
+   `428414`, `430135`, `1688505`, `2669917`, `2802776`, `3655397`,
+   `3931365`, `3950363`, and `3968088`.  Producer and independently ordered
+   SymPy checker agree; all 32 labeled K6 seeds of the known realizable
+   18-point control pass.  This would reduce the K6-only residue from 249 to
+   240.
+2. The independently replayed interval certificate for 18-point deletion
+   class `2100` rejects parent `3945564` by required-edge subgraph
+   monotonicity.  It replays 31 target kernel calls, all 48 flexible/K8 slice
+   controls, four exact positive controls, and an independent containment
+   scan.  Its conclusion remains subject to the recorded IEEE-754/macOS
+   `libm` trust boundary.
+
+If those two source-only packages are artifactized successfully, the residue
+would be `K7 = 10`, `K6-only = 240`, combined `250`.  Until then, `260` is the
+published certificate boundary.
+
+There is also an **incomplete, non-certified** producer checkpoint for K7
+graph `3936310`.  Its exact `Q(sqrt(7))` path was exercised and produced
+internal certificate hash
+`8ad4b9d5166179bf8a404f0caa0b362167942b8138b571109d7cf585747feda5`,
+but the independent checker, focused tests, documentation, and source-bound
+report do not exist yet.  It must not be counted as a rejection.  Completing
+it would prospectively lower the combined residue from 250 to 249.
+
+This is not a proof that `f(6)=18`.  Every graph in every stated residue is
+unresolved, not realizable.  Candidate nonedges remain unconstrained and may
+also have unit distance.
+
+### Stopped and restartable computation
+
+No local dimension-six search, kernel, GPU, or `caffeinate` process is
+running.  Two subagents completed their source/checker packages; the
+unfinished K7-package subagent was interrupted.  No new work was launched
+after selecting this pause boundary.
+
+The 18-point interval campaign is paused at 180/181 atomic class results:
+
+```text
+KILLED        1
+ABORT       178
+UNRESOLVED    1
+INFRA_ERROR   0
+unfinished    1
+```
+
+Its checkpoint directory is
+`.runs/d6_interval_18_cover_v7_cap100000_w3`.  The single `KILLED` result is
+class `2100`; class `7259` is the explicit no-placement-order `UNRESOLVED`
+case.  The active final class was interrupted and has no result; the other
+180 immutable result files remain resumable.  Campaign SHA-256 is
+`70ba451094eb4eb5d039fc059ab8e3c351ebeed157e2eae39cc35fe4dcb3e348`
+and the ordered 180-file result-tree hash is
+`e97aa6e788a8378bc5e9be050938dbac0b46d4741fa270af17100ee1be2956f2`.
+
+The K7 cap-5,000,000 interval campaign is paused with five of twelve atomic
+results, all `ABORT`, in
+`.runs/d6_interval_k7_current12_cap5000000`.  Campaign SHA-256 is
+`cab1c6fdde4c74821f243a963ac55b211dfb81f85100f7109119e185ffff2d65`
+and the ordered five-file result-tree hash is
+`c88ebae676f818f258a554b35c48afc903b9287465a0235ca32bd9572bf450ee`.
+
+The all-K6-gauge Apple-MPS screen completed all 181 selected deletion classes,
+4,099 gauges, 32,792 optimizer starts, and 8,198 CPU LM refinements.  Exactly
+one class produced candidates: known standard-compatible positive control
+441, in all nine of its gauges, with best LM RMS
+`1.1155478658438084e-16`.  None of the 180 non-control classes produced a
+candidate in any gauge.  This is heuristic only and rejects nothing.  The
+committed report SHA-256 is
+`5d9aa499a87d8eca1f4e886418bd03915d36f22f60980666a420d3228f47d3e7`;
+the local compressed detail archive SHA-256 is
+`8ccbd6c241f9d67a0a34a9866337ebbff61b270486ae46e3e5c8f0f0e6fde55b`.
+
+### Tests, hashes, and resume order
+
+Checks completed before the pause:
+
+- K6 fixed-remainder focused tests: 8/8 pass; producer and independent
+  exhaustive transcripts agree on all graph decisions.
+- Class-2100 focused tests: 9 pass with one default replay skip; the separate
+  full replay passes in 31 target calls and includes all controls.
+- GPU source controls: 7/7 pass; a separate post-run integrity audit replayed
+  every checkpoint summary and all 4,099 endpoint metrics.
+- all newly committed Python sources compile; staged and working-tree
+  whitespace checks pass.
+
+The machine-readable pause record is
+`d6_pause_checkpoint_20260809.json`, SHA-256
+`133631efcdf3f4d67ac1123805beadefaa8ce5592397b99e2737909b41d3fe1a`.
+It records the source/transcript hashes, local run hashes, maturity labels,
+and restart directories.  Machine: macOS 14.5 arm64, Python 3.11.15, Apple
+clang 16.0.0.
+
+Files to read first after resuming:
+`d6_pause_checkpoint_20260809.json`,
+`d6_k6_five_singleton_fixed_remainder.md`,
+`d6_interval_18_class2100_increment.md`, and
+`build_d6_k7_five_petals_3936310_increment.py`.
+
+Recommended resume order, only after the user asks to continue:
+
+1. complete the independent K7 `3936310` checker/tests/docs;
+2. publish source-bound artifacts for the K6 and class-2100 packages and build
+   one independently checked successor residue manifest;
+3. resume the one unfinished 18-point class, then decide whether the seven
+   remaining cap-5M K7 measurements are worth their cost.
+
+Recommended next local action now: none; remain paused until further notice.
+
+## HISTORICAL LOCAL HANDOFF — verified d=6 residue 261 (2026-08-09)
+
+Branch: `codex/dimension6`
+
+Artifact boundary commit:
+`ddf023549c238b0a7b7d789c0003cfb3b2db22f4`
+
+### Certified result boundary
+
+The independently verified v8 certificate union leaves:
+
+```text
+K7-containing level-19 candidates                  12
+K6-only level-19 candidates                       249
+combined current residue                          261
+```
+
+This is not yet a proof that `f(6)=18`.  Every survivor is unresolved, not
+realizable.  Candidate nonedges remain unconstrained and may also have unit
+distance; allowed defect coordinates may vanish.
+
+The new exact saturated-singleton K6 layer rejects indices `3138618` and
+`3673988`.  Its proof fixes six same-light-ray singleton actual supports as a
+coordinate basis and reconstructs all seven other outside points over the two
+roots `(1 +/- sqrt(7))/3`.  Required edges and distinctness become a finite
+exact parity CSP.  The rule is invoked only at complete actual-support leaves,
+so every alternative support assignment remains quantified.  The independent
+checker uses parity union-find rather than the producer's sign enumeration and
+replays every parent branch and both complete rejected certificate trees.  All
+32 K6 seeds of the known realizable 18-point control pass.
+
+```text
+K6 exact source commit             87c58d612eb17959e43bf920057fcff95212776c
+K6 report SHA-256                  5f25193311ad769a402ec5245a6a690619cc41225e63a56546fe50a30d7a93e5
+K6 certificate archive SHA-256     0d3706ccd58cced274cdcd1cdf427ba72c529980caf641c6c37bfaa52ee139c1
+K6 verification SHA-256            9524b2f92baf115406e26d02f62598d6726e09d7fb8622ee750aab2ef7b36eb4
+v8 manifest SHA-256                9ea10a7794f033e66152c477a130f11c6c2862e87b4bdd705c14021521c18285
+v8 verification SHA-256            117ac6833a24eb69cec7a514445bb4c2913c3f3ac7c413aa81fad19fe305602e
+ordered K7 residue SHA-256          e545ea5a8fc9691ed98e885919e149f84dc7e8b4796d0fe9e6cb3a519df6fd8c
+ordered K6 residue SHA-256          f274aab3f2d408fce34c7cd7eb4518621fa9d634a8943e3ee1a38d76df9f3d31
+ordered combined residue SHA-256    2391a93a3629517363106603bdad00be9b6f960966d9089ef37d93be2988c213
+```
+
+Starting from the 911-graph v5 residue, exact certificates reject 645
+graphs, five independently checked interval-only certificates are disjoint,
+and the union rejects 650, leaving 261.
+
+### Live restartable compute at this checkpoint
+
+Two interval campaigns intentionally occupy 11 of the Mac's 12 logical
+CPUs.  Both use atomic per-graph checkpoints and `caffeinate`.
+
+1. The 12-case K7 residue is running with eight native threads, four orders,
+   cap 5,000,000, and 24 theta slices in
+   `.runs/d6_interval_k7_current12_cap5000000`.  Snapshot: 1/12 complete,
+   status `ABORT`; no `KILLED`, `UNRESOLVED`, or infrastructure error yet.
+2. The committed 18-point deletion pilot is running with three native
+   threads, four orders, cap 100,000, and 24 slices in
+   `.runs/d6_interval_18_cover_v7_cap100000_w3`.  Snapshot: 22/181 complete,
+   all `ABORT`; no `KILLED`, `UNRESOLVED`, or infrastructure error yet.
+
+The 18-point campaign source boundary is commit
+`22be775b1dafde30122ab579f66a7a539581ba73`.  It takes the deterministic
+179-class dense deletion cover, retains selected standard-realizable ordinal
+441 as a full-parameter positive control, and adds non-positive dense backups
+126 and 5673 so the two parents otherwise covered only by the positive class
+have actionable obstruction routes.  Production therefore has 181 classes.
+One class, ordinal 7259, has no placement order for any of its 19 deletions
+even at `kmax=1000`; it is explicitly checkpointed `UNRESOLVED` with zero
+kernel calls rather than omitted.  The source identity is stable across
+unrelated later commits and porcelain changes but fails closed on any dirty
+executable source.
+
+Machine: macOS 14.5 arm64, Python 3.11.15, Apple clang 16.0.0.  The interval
+trust boundary assumes correctly rounded IEEE-754 binary64 basic operations
+and `sqrt`, outward `nextafter` endpoint expansion, and macOS `libm` cosine
+errors within the recorded eight-ulp padding.  Only `KILLED` rejects a graph.
+
+### Current theory/discovery directions
+
+- The full Apple-MPS screen of all 12,712 canonical 18-deletion classes found
+  exactly the 14 known standard-compatible hits and no nonstandard hit.  This
+  is heuristic only and rejects nothing.  A targeted all-K6-gauge MPS screen
+  of the 181 current classes is being prepared to reduce gauge sensitivity.
+- A first five-singleton generalization inspected 563 complete support-leaf
+  candidates in the 249-case K6 residue.  None had the sixth defect coordinate
+  provably zero for every remaining point; the number of still-free vertices
+  was 2, 3, 4, 5, or 6 with counts 12, 34, 139, 270, and 108.  This gives no
+  rejection, but isolates the next algebraic problem: couple those few free
+  coefficients to the fixed quadratic-root points and the free-vertex clique.
+- Continue exact K7 Schur/star reconstruction on the forced 7+5 residue
+  patterns while the cap-5M interval run measures their actual cost.
+
+Files to read first:
+`d6_current_residue_manifest_v8.md`,
+`d6_k6_saturated_singleton_basis.md`,
+`d6_interval_18_cover_v7.md`, and the corresponding producer/verifier tests.
+
+## HISTORICAL LOCAL CAMPAIGN — exact d=6 residue 911 (2026-08-07)
 
 Branch: `codex/dimension6`
 

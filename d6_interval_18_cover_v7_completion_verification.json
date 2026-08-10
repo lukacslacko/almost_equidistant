@@ -1,0 +1,92 @@
+{
+  "claim": "The raw 181-class campaign is complete. Its sole certified KILLED class is 2100. All 179 ABORT and one UNRESOLVED results make no non-realizability claim.",
+  "execution": {
+    "command": "verify_d6_interval_18_cover_v7_completion.py --source-commit 7e965b8218c5d4bdf4d2b6faec736faeab158edb --output d6_interval_18_cover_v7_completion_verification.json",
+    "completed_utc": "2026-08-09T20:00:29.829749+00:00",
+    "python": "3.11.15"
+  },
+  "package": {
+    "commit": "7e965b8218c5d4bdf4d2b6faec736faeab158edb",
+    "files_sha256": {
+      "d6_interval_18_cover_v7_completion.md": "db305a97b0667e17dab52603c887e50388bd91605fec36a7719b4363831166bb",
+      "test_d6_interval_18_cover_v7_completion.py": "e8a661bb3a338e5bef922a18e530d2161390eac7d8ac60da28a87a97e6175d36",
+      "verify_d6_interval_18_cover_v7_completion.py": "54876a8664d237f9787c4ff5c615c325322a1f03385fab65041b8bcde8a21a30"
+    },
+    "status": "PASS"
+  },
+  "raw_artifacts": {
+    "campaign": {
+      "path": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_interval_18_cover_v7_cap100000_w3/campaign.json",
+      "sha256": "70ba451094eb4eb5d039fc059ab8e3c351ebeed157e2eae39cc35fe4dcb3e348"
+    },
+    "config_sha256": "82c8d332af4ac4e3984949b98cde969f5b239eadb640e9633f704f8ec88fbcba",
+    "decisions": {
+      "path": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_interval_18_cover_v7_cap100000_w3_decisions.tsv",
+      "sha256": "f7416adec9ad442d4749eef3f5afd3e1a4ec25972267d432302dc8cf68a5aab8"
+    },
+    "report": {
+      "path": "/Users/lukacs/chatgpt/almost_equidistant/.runs/d6_interval_18_cover_v7_cap100000_w3_report.json",
+      "sha256": "0a8dc0d875f3f3f547c2feec3992152d2b841c4a4ba4d6b1e2dad97397ab0a53"
+    }
+  },
+  "result_audit": {
+    "checkpoint_files": 181,
+    "checkpoint_result_index_sha256": "cf5807d8408a76dda996ca5bbfaccbb76260d45c2311cce9f0ac3c9989060b5c",
+    "decisions_exactly_reconstructed": true,
+    "decisions_rows": 181,
+    "infra_errors": 0,
+    "kernel_status_totals": {
+      "ABORT": 368,
+      "KILLED": 161,
+      "SURVIVORS": 0
+    },
+    "nonrejecting_results": 180,
+    "sole_certified_killed_class": 2100,
+    "sole_unresolved_no_order_class": 7259,
+    "status_counts": {
+      "ABORT": 179,
+      "INFRA_ERROR": 0,
+      "KILLED": 1,
+      "UNRESOLVED": 1
+    }
+  },
+  "schema": "d6-interval-18-cover-v7-completion-verification-v1",
+  "selection_reconstruction": {
+    "backup_classes": [
+      126,
+      5673
+    ],
+    "blocked_positive_only_parents": [
+      "K6_only:364827",
+      "K6_only:3335955"
+    ],
+    "deletion_classes": 11975,
+    "eligible_dense_classes": 2284,
+    "greedy_classes": 179,
+    "greedy_indices_sha256": "ef4ac7e73ea924d3d9c6382f590dc73cdf2e65b357e86ddc69719372f717d6fe",
+    "production_classes": 181,
+    "production_indices_sha256": "8c624c969b517bb5663dc32bdf577ab3addbe8a108458b2803443c17f294d8e6",
+    "production_population_counts": {
+      "K6": 169,
+      "K7": 12
+    },
+    "v7_parents": 263
+  },
+  "semantics": {
+    "candidate_nonedges": "unconstrained and allowed to be unit distance",
+    "certifying_status": "KILLED",
+    "kernel_replayed_by_this_checker": false,
+    "noncertifying_statuses": [
+      "ABORT",
+      "UNRESOLVED",
+      "INFRA_ERROR"
+    ]
+  },
+  "sources_and_inputs": {
+    "campaign_sources_checked": 5,
+    "inputs_checked": 8,
+    "kernel_binary_sha256": "ec93d78302d6fcf0f3a21ebcdb65333004eb7a406ab4ada8445231536fed07bd",
+    "source_commit": "22be775b1dafde30122ab579f66a7a539581ba73"
+  },
+  "status": "PASS"
+}

@@ -198,8 +198,14 @@ def select_k7(
     shard: int,
     sample: int | None,
     sample_seed: int,
+    indices: frozenset[int] | None = None,
 ) -> list[dict]:
     selected = [graph.copy() for graph in graphs if graph["population"] == "K7"]
+    if indices is not None:
+        available = {int(graph["index"]) for graph in selected}
+        missing = sorted(indices - available)
+        require(not missing, f"requested indices absent from v6 K7 class: {missing}")
+        selected = [graph for graph in selected if int(graph["index"]) in indices]
     selected = [
         graph
         for position, graph in enumerate(selected)
@@ -232,6 +238,16 @@ def main() -> None:
     parser.add_argument("--slices", type=int, default=24)
     parser.add_argument("--sample", type=int)
     parser.add_argument("--sample-seed", type=int, default=600_019_006)
+    parser.add_argument(
+        "--index",
+        dest="indices",
+        action="append",
+        type=int,
+        help=(
+            "restrict to this v6 K7 graph index; repeat for multiple indices "
+            "(selection remains sorted and provenance-bound)"
+        ),
+    )
     parser.add_argument("--shards", type=int, default=1)
     parser.add_argument("--shard", type=int, default=0)
     parser.add_argument(
@@ -278,6 +294,7 @@ def main() -> None:
         shard=args.shard,
         sample=args.sample,
         sample_seed=args.sample_seed,
+        indices=frozenset(args.indices) if args.indices else None,
     )
     selected_summary = {
         "graphs": len(graphs),
@@ -329,6 +346,7 @@ def main() -> None:
             "population": "K7",
             "shards": args.shards,
             "shard": args.shard,
+            "requested_indices": sorted(set(args.indices or [])),
         },
         "trust_assumptions": EXPECTED_TRUST,
         "environment": {

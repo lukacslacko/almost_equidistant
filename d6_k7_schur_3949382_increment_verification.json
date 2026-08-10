@@ -1,0 +1,122 @@
+{
+  "checked": {
+    "basis_entries": 35,
+    "input_graphs": 16,
+    "new_families": 1,
+    "output_graphs": 15,
+    "prior_eliminated_raw_covers": 125,
+    "raw_eligible_covers": 128,
+    "remainder_pair_entries": 10,
+    "target_index": 3949382,
+    "unresolved_optional_entries": 0,
+    "upstream_current_covers": 3,
+    "upstream_independently_checked_current_passing_families": 88,
+    "upstream_independently_checked_eligible_covers": 19932,
+    "upstream_infeasible_covers": 2
+  },
+  "conclusion": {
+    "floating_point_used": false,
+    "ordered_survivor_indices_sha256": "715c52011421fb6d8721d52339ed3437ef1cec344ddf3f03a3b0b618f35b00d7",
+    "rejected_indices": [
+      3949382
+    ]
+  },
+  "execution": {
+    "command": "/Users/lukacs/claude/opengauss/venv/bin/python3 verify_d6_k7_schur_3949382_increment.py --report-sha256 30efa40d1db8a3aef03af9e56aa915a04594aabe8b72e5a1c72489e2a8c952b8",
+    "finished_utc": "2026-08-09T18:00:17.404159+00:00",
+    "machine": "arm64",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python_version": "3.11.15 (main, Mar 25 2026, 02:58:47) [Clang 22.1.1 ]",
+    "verifier_sha256": "7306b6f690399a625db704badfa43600b03bc8f11b5d6e92411b542731e90a13"
+  },
+  "independent_algebra": {
+    "boundary_control": {
+      "all_ten_equations_zero": true,
+      "point": [
+        1,
+        3,
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "strict_domain": false
+    },
+    "identities_checked_coefficientwise": 17,
+    "method": "independent_ideal_membership_A0_B0_elimination",
+    "pair_equations": [
+      "a + b - c*e - c*g - d*e - d*g - e*f - f*g",
+      "-a*f - a + b*c + b*d + c*g - c + d*g - d - e*f - e - f - 1",
+      "-a*g - a + b*e - c*g - c - d*g - d + e*f - e - g - 1",
+      "-a*c - a + b*d + b*f - c + d*e + d*g - d + e*f + f*g - f - 1",
+      "-a*e - a*g + b + c - d*e - d*g - e*f - f*g",
+      "a*b + a*g - a + b*d - c*f - c + d*g - d - e*f - e - f - 1",
+      "-a*d - a + b*c + b*f + c*e + c*g - c - d + e*f + f*g - f - 1",
+      "-a*e - a*g + b - c*e - c*g + d - e*f - f*g",
+      "a*b + a*g - a + b*c + c*g - c - d*f - d - e*f - e - f - 1",
+      "a*b + a*e + a*g - a + b*f - c*d - c - d + e*f + f*g - f - 1"
+    ],
+    "reduced_equations": [
+      "b - e*f - 2*e*t - f*g - 2*g*t + t",
+      "b*f + b*t + e*f + e*t + f*g - f + g*t - t**2 - 3*t - 1",
+      "2*b*t - e*f - e - f*t - f + 2*g*t - 3*t - 1",
+      "b*e + e*f - e - 3*g*t - g - 3*t - 1"
+    ],
+    "solved_forms": {
+      "b": "(f + t**2 + 2*t)/(f + t)",
+      "e": "(f*t + f - t**2 + 2*t + 1)/t",
+      "f_after_final_factor": "(t**2 - t)/(t + 1)",
+      "g": "(-f**2*t - f**2 - 3*f*t - f + t**3 - t**2)/(f*t + t**2)",
+      "g_after_final_factor": "-(t - 1)*(t + 1)/(2*t**2)"
+    },
+    "status": "EXACT_STRICT_POSITIVITY_CONTRADICTION",
+    "strict_sign_chain": [
+      "a=c=d=t because b+f+g>0",
+      "A0=0 gives b=1+t*(t+1)/(f+t)>1",
+      "therefore b+t-1>0 and the B0 identity gives B0=0",
+      "solving A0=B0=E0 gives the displayed b,g,e rational forms",
+      "E2=0 gives f=t*(t-1)/(t+1)",
+      "f>0 and t>0 force t>1",
+      "g=-(t-1)*(t+1)/(2*t^2)<0, contradicting g>0"
+    ],
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+    ]
+  },
+  "kind": "d6_k7_schur_3949382_increment_verification",
+  "report": {
+    "path": "d6_k7_schur_3949382_increment_report.json",
+    "sha256": "30efa40d1db8a3aef03af9e56aa915a04594aabe8b72e5a1c72489e2a8c952b8"
+  },
+  "schema": 1,
+  "semantics": {
+    "all_actual_support_branches_for_seed_are_quantified": true,
+    "candidate_nonedges_optional": true,
+    "floating_point_enters_rejection": false,
+    "one_infeasible_required_K7_seed_rejects_graph": true,
+    "propagated_masks_are_support_supersets": true,
+    "required_edges_give_unit_K_entries": true,
+    "strict_positive_diagonal_parameters_encode_distinct_points": true,
+    "zero_K_entries_require_disjoint_propagated_support_supersets": true
+  },
+  "source_boundary": {
+    "branch": "codex/dimension6",
+    "commit": "6835189e16ec0bdc968cc0738653e256e1563820",
+    "proof_and_checker_sources_equal_committed_blobs": true,
+    "source_files": 7
+  },
+  "status": "PASS",
+  "upstream_sha256": {
+    "d6_current_residue_manifest_v6.json": "c513bcc40c037af23340dce3cc91d593a101dd1d073f93feab82abd556efadc9",
+    "d6_current_residue_manifest_v6_verification.json": "3d11cbd20cb59b42a8c8fd5252fb3ef3dea649576982ea8017622fad3279a7bc",
+    "d6_k7_one_two_star_increment_report.json": "12b3d18b1ea81961f58d831d4c7c322fbceb2300e7533b64161e8011fbe9d1ec",
+    "d6_k7_one_two_star_increment_verification.json": "c6f40578685036cb1156cb0ea8bf06d6004a70d5f376aff5ac1e16a1c0ca09eb"
+  }
+}
