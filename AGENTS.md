@@ -10,7 +10,9 @@ There are two separate model sessions:
 1. **You, the local Codex agent**, have the checkout, compiler, local files, processes, and the Mac CPU. You implement, test, run, checkpoint, and publish commits.
 2. **A separate ChatGPT GPT-5.6 Pro session** acts as mathematical reviewer and research steering partner. It does not see your live terminal, uncommitted files, running processes, or private Codex conversation.
 
-The Git branch is the shared state and message bus. The user mediates the loop:
+The `main` branch is the shared state and message bus. Work directly on
+`main`; the former `codex/dimension6` branch has been retired. The user
+mediates the loop:
 
 1. ChatGPT reviews a pushed branch and may add or revise steering in a commit.
 2. The user tells you to pull.
@@ -249,7 +251,7 @@ Before asking the user to ping ChatGPT, push a focused commit and put this block
 
 ```text
 REMOTE REVIEW HANDOFF
-Branch: codex/dimension6
+Branch: main
 Commit: <full SHA>
 Goal of this milestone: ...
 Commands run: ...
