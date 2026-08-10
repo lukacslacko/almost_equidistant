@@ -5,6 +5,8 @@
 \usepackage{lmodern}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{microtype}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,positioning}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \setlist{itemsep=2pt,topsep=4pt}
@@ -363,5 +365,257 @@ fine-slicing default and concurrent-race cancellation, took on the order of
 half a day for the hardest graphs on 12 cores); the computation is
 deterministic, and was observed to reproduce bit-identical search trees
 across the three compiler/libm/ISA stacks tested.
+
+\section{The rotating-simplex construction: why thirteen fails and why
+twelve is not unique}
+\label{app:rotation}
+
+The main result is a cardinality statement, not a congruence classification
+of extremal sets.  This appendix records two geometric facts.  A tempting
+$5+3+5$ modification already fails because its three middle points violate
+almost equidistance.  By contrast, the valid $5+2+5$ construction has a
+continuous twist parameter and is not unique up to congruence.
+
+\subsection{Facet reflections of a unit \texorpdfstring{$4$}{4}-simplex}
+
+Let $S=\{q_0,\dots,q_4\}$ be a regular unit $4$-simplex, translated so that
+its centroid is the origin.  Its Gram matrix is
+\[
+ \langle q_i,q_i\rangle=\frac25,
+ \qquad
+ \langle q_i,q_j\rangle=-\frac1{10}\quad(i\ne j).
+\]
+The centroid of the facet opposite $q_i$ is $-q_i/4$.  Reflecting $q_i$
+through the affine hyperplane of that facet therefore gives the other apex
+\[
+ r_i=2\left(-\frac{q_i}{4}\right)-q_i=-\frac32q_i.
+\]
+Consequently,
+\begin{equation}
+ \lVert r_i-q_j\rVert=1\quad(j\ne i),
+ \qquad
+ \lVert r_i-r_j\rVert=\frac32\quad(i\ne j).
+ \label{eq:reflected-apex-distances}
+\end{equation}
+The first identity is what makes reflected apices useful.  The second is the
+obstruction below.
+
+\subsection{The tempting \texorpdfstring{$5+3+5$}{5+3+5} set}
+
+One might try to use the five vertices of $S$, three reflected apices
+$r_0,r_1,r_2$, and a rotated copy $\rho(S)$, for a total of thirteen points.
+Let
+\[
+ A=\operatorname{aff}\{r_0,r_1,r_2\}.
+\]
+This is a plane in $\mathbb R^4$, so its orthogonal complement is
+two-dimensional and an ordinary rotation about $A$ is well defined.  In fact,
+the rotation required by the proposal really does exist.  Each of
+$q_0,q_1,q_2$ has squared distance $5/12$ from $A$.  A rotation through an
+angle $\theta$ moves all three of them by one exactly when
+\[
+ 2\left(\frac5{12}\right)(1-\cos\theta)=1,
+ \qquad\text{that is,}\qquad
+ \cos\theta=-\frac15.
+\]
+Thus the failure is not an inability to choose a rotation.
+
+It is instead immediate from \eqref{eq:reflected-apex-distances}: the three
+points $r_0,r_1,r_2$ form an equilateral triangle of side $3/2$.  The triple
+\[
+ \{r_0,r_1,r_2\}
+\]
+contains no pair at unit distance, so the full thirteen-point set is not
+almost equidistant.  Since the rotation fixes $A$ pointwise, it fixes all
+three offending points and cannot repair this triple.  Figure~\ref{fig:five-three-five}
+shows the obstruction schematically, and Figure~\ref{fig:three-apex-rotation}
+shows that the proposed rotation itself is geometrically available.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=0.9,transform shape,
+  font=\small,
+  simplex/.style={draw=blue!65!black,fill=blue!7,rounded corners=4pt,
+                  minimum width=3.25cm,minimum height=1.85cm,align=center},
+  rpoint/.style={circle,draw=red!75!black,fill=red!12,inner sep=2.2pt},
+  badedge/.style={draw=red!75!black,very thick},
+  note/.style={align=center,font=\footnotesize}
+]
+  \node[simplex] (S) at (-5,0)
+    {$S=\{q_0,\ldots,q_4\}$\\[2pt]five points, all\\mutual distances $1$};
+  \node at (-2.65,0) {\Large$+$};
+
+  \coordinate (Rcentre) at (0,0);
+  \node[rpoint,label=below left:$r_0$] (r0) at (-0.85,-0.55) {};
+  \node[rpoint,label=below right:$r_1$] (r1) at (0.85,-0.55) {};
+  \node[rpoint,label=above:$r_2$] (r2) at (0,0.95) {};
+  \draw[badedge] (r0)--node[below] {$3/2$}(r1);
+  \draw[badedge] (r1)--node[right] {$3/2$}(r2);
+  \draw[badedge] (r2)--node[left] {$3/2$}(r0);
+  \node[note,text=red!70!black] at (0,-1.45)
+    {forbidden triple:\\no unit-distance pair};
+
+  \node at (2.65,0) {\Large$+$};
+  \node[simplex] (T) at (5,0)
+    {$\rho(S)=\{\rho(q_0),\ldots,\rho(q_4)\}$\\[2pt]five points, all\\mutual distances $1$};
+
+  \draw[-{Latex[length=2mm]},gray!70,dashed]
+    ($(Rcentre)+(-0.95,0.25)$) to[out=165,in=15]
+    node[above,sloped,note] {unit from $4$ of $5$} (S.east);
+  \draw[-{Latex[length=2mm]},gray!70,dashed]
+    ($(Rcentre)+(0.95,0.25)$) to[out=15,in=165]
+    node[above,sloped,note] {unit from $4$ of $5$} (T.west);
+\end{tikzpicture}
+\caption{The attempted $5+3+5$ set, schematically.  The two blue boxes are
+unit simplices.  Each reflected apex has the needed unit links to both
+copies, but the three red points are mutually at distance $3/2$ and hence
+form a forbidden triple.}
+\label{fig:five-three-five}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=0.9,transform shape,font=\small]
+  \coordinate (O) at (0,0);
+  \coordinate (Q) at (2.15,0);
+  \coordinate (QP) at ({2.15*cos(101.537)}, {2.15*sin(101.537)});
+  \draw[gray!55,dashed] (O) circle (2.15);
+  \draw[blue!70!black,thick] (O)--node[below=4pt] {$\sqrt{5/12}$}(Q);
+  \draw[green!50!black,thick] (O)--(QP);
+  \draw[red!75!black,very thick] (Q)--node[above right] {$1$}(QP);
+  \draw[-{Latex[length=2mm]},purple!70!black,thick]
+    (0.72,0) arc[start angle=0,end angle=101.537,radius=0.72];
+  \node[purple!70!black] at (0.47,0.63) {$\theta$};
+  \node[left=4pt] at (O) {$A$};
+  \node[right] at (Q) {$q_i$};
+  \node[above left] at (QP) {$\rho(q_i)$};
+  \node[draw=gray!55,fill=gray!5,rounded corners=3pt,align=left,
+        text width=5.0cm] at (6.0,0.2)
+    {In the two-dimensional normal section $A^\perp$,\\
+     $\lVert q_i-\rho(q_i)\rVert=1$ is attainable:\\[2pt]
+     $\displaystyle \cos\theta=-\frac15.$\\[5pt]
+     The rotation exists; the fixed red triangle in
+     Figure~\ref{fig:five-three-five} is the failure.};
+\end{tikzpicture}
+\caption{Normal cross-section of rotation about
+$A=\operatorname{aff}\{r_0,r_1,r_2\}$.  The three exceptional vertices have
+the same radius $\sqrt{5/12}$, so the displayed unit chords are attainable.}
+\label{fig:three-apex-rotation}
+\end{figure}
+
+\subsection{The valid twelve-point set and its twist freedom}
+
+The standard construction keeps only two reflected apices.  Choose
+$r_0,r_1$, and an isometry $\rho$ fixing both of them and satisfying
+\[
+ \lVert q_0-\rho(q_0)\rVert
+ =\lVert q_1-\rho(q_1)\rVert=1.
+\]
+Then
+\[
+ P=S\cup\rho(S)\cup\{r_0,r_1\}
+\]
+has $5+5+2=12$ distinct points and is almost equidistant.  Indeed, each
+simplex copy is a unit clique.  Moreover, $r_k$ is at unit distance from
+every point of either copy except $q_k$ and $\rho(q_k)$.  The only triple not
+settled immediately by those unit edges would contain
+$r_k,q_k,\rho(q_k)$, and its last two points are unit by the displayed
+condition.  With only two reflected apices there is no three-point middle
+set that could repeat the preceding obstruction.
+
+There is, however, no uniqueness in dimension four.  To see the freedom
+directly, translate the midpoint of $r_0r_1$ to the origin and put
+\[
+ c=\frac{q_0+q_1}{2},
+ \qquad
+ H=(q_1-q_0)^\perp.
+\]
+Here $H$ is three-dimensional and $c,q_2,q_3,q_4\in H$.  Choose any
+two-plane $V\subset H$ containing the line $\mathbb Rc$.  Rotate $V$ through
+the fixed angle $\theta$ and fix $V^\perp$ pointwise.  Since
+\[
+ \lVert c\rVert^2=\frac{15}{16},
+ \qquad
+ 2\lVert c\rVert^2(1-\cos\theta)=1,
+ \qquad
+ \cos\theta=\frac7{15},
+\]
+this isometry moves both $q_0$ and $q_1$ by one and fixes $r_0,r_1$.  Thus
+every such $V$ gives a valid twelve-point construction.
+
+Planes in the three-space $H$ that contain $\mathbb Rc$ form a continuous
+one-parameter family.  More explicitly, choose an orthonormal basis $e,f$ of
+$H\cap c^\perp$ and set
+\[
+ w_\phi=\cos\phi\,e+\sin\phi\,f,
+ \qquad
+ V_\phi=\operatorname{span}\{c,w_\phi\}.
+\]
+The construction above gives a set $P_\phi$ for every $\phi$.  Required unit
+distances are unchanged, but non-required cross-distances vary.  For example,
+choose $e$ in the direction of the component of $q_2$ orthogonal to $c$ and
+obtain $f$ from $q_3$ by Gram--Schmidt.  Then
+\begin{equation}
+ \lVert q_2-\rho_\phi(q_2)\rVert^2
+ =\frac19+\frac{16}{45}\cos^2\phi.
+ \label{eq:varying-cross-distance}
+\end{equation}
+Figure~\ref{fig:twist-family} illustrates this continuous choice.
+
+\begin{figure}[!htbp]
+\centering
+\begin{tikzpicture}[scale=0.85,transform shape,font=\small]
+  \coordinate (O) at (0,0);
+  \coordinate (C) at (7.0,0);
+  \coordinate (E) at (0,1.15);
+  \coordinate (W) at (0.82,0.78);
+
+  \fill[blue!20,opacity=0.72]
+    ($(O)-(E)$)--($(C)-(E)$)--($(C)+(E)$)--($(O)+(E)$)--cycle;
+  \draw[blue!65!black]
+    ($(O)-(E)$)--($(C)-(E)$)--($(C)+(E)$)--($(O)+(E)$)--cycle;
+  \fill[green!25!white,opacity=0.72]
+    ($(O)-(W)$)--($(C)-(W)$)--($(C)+(W)$)--($(O)+(W)$)--cycle;
+  \draw[green!45!black]
+    ($(O)-(W)$)--($(C)-(W)$)--($(C)+(W)$)--($(O)+(W)$)--cycle;
+
+  \draw[-{Latex[length=2mm]},black,very thick] (O)--(C)
+    node[midway,below=3pt] {$\mathbb Rc$};
+  \draw[-{Latex[length=2mm]},blue!65!black,thick] (O)--(E)
+    node[left] {$e$};
+  \draw[-{Latex[length=2mm]},green!45!black,thick] (O)--(W)
+    node[above right] {$w_\phi$};
+  \draw[-{Latex[length=2mm]},purple!70!black,thick]
+    (0,0.70) arc[start angle=90,end angle=43.55,radius=0.70];
+  \node[purple!70!black] at (0.36,0.79) {$\phi$};
+  \node[blue!65!black] at (6.45,0.92) {$V_0$};
+  \node[green!45!black] at (7.32,0.55) {$V_\phi$};
+  \node[gray!65!black] at (3.5,-1.48)
+    {schematic view inside the three-space $H$};
+\end{tikzpicture}
+\caption{Twist freedom in the valid $5+2+5$ construction.  The planes
+$V_0,V_\phi\subset H$ share $\mathbb Rc$; twisting the rotation plane changes
+optional cross-distances while preserving every required unit edge.}
+\label{fig:twist-family}
+\end{figure}
+
+To certify noncongruence without retaining any labels, use the symmetric
+distance invariant
+\[
+ I(P)=\sum_{\{x,y\}\subset P}\lVert x-y\rVert^6.
+\]
+In the standard centered coordinates
+$q_i=(e_i-\frac15\mathbf1)/\sqrt2$ in the sum-zero hyperplane of
+$\mathbb R^5$, with the Gram--Schmidt convention just described, exact
+calculation gives
+\[
+ I(P_0)=\frac{4544767}{24000},
+ \qquad
+ I(P_{\pi/6})=\frac{4907693}{25920}.
+\]
+The invariant values differ, so $P_0$ and $P_{\pi/6}$ are noncongruent.
+Moreover, \eqref{eq:varying-cross-distance} ranges over an interval, whereas
+a fixed unlabelled twelve-point set has only $\binom{12}{2}=66$ pair
+distances.  Thus the family contains continuously many congruence classes.
 
 \end{document}
